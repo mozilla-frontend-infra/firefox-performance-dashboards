@@ -8,8 +8,14 @@
   "scripts": {
     "build": "neutrino build",
     "start": "neutrino start",
+    "precommit": "lint-staged",
     "lint": "neutrino lint",
     "test": "neutrino test"
+  },
+  "lint-staged": {
+    "*.js*": [
+      "neutrino lint"
+    ]
   },
   "dependencies": {
     "prop-types": "^15.6.2",
@@ -21,6 +27,8 @@
     "@neutrinojs/airbnb": "^8.3.0",
     "@neutrinojs/jest": "^8.3.0",
     "@neutrinojs/react": "^8.3.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.1.2",
     "neutrino": "^8.3.0"
   }
 }
