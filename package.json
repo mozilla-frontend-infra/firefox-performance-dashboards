@@ -1,0 +1,26 @@
+{
+  "name": "js-perf-dashboard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:armenzg/js-perf-dashboard.git",
+  "author": "Armen Zambrano G. <armenzg@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "neutrino build",
+    "start": "neutrino start",
+    "lint": "neutrino lint",
+    "test": "neutrino test"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-hot-loader": "^4.3.4"
+  },
+  "devDependencies": {
+    "@neutrinojs/airbnb": "^8.3.0",
+    "@neutrinojs/jest": "^8.3.0",
+    "@neutrinojs/react": "^8.3.0",
+    "neutrino": "^8.3.0"
+  }
+}
