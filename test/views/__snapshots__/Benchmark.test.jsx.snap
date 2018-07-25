@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="header"
+  >
+    <form
+      autoComplete="off"
+      className="Picker-root-1"
+    >
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-2"
+      >
+        <label
+          className="MuiFormLabel-root-11 MuiInputLabel-root-6 MuiInputLabel-formControl-7 MuiInputLabel-animated-10 MuiInputLabel-shrink-9"
+          data-shrink={true}
+          htmlFor={undefined}
+        >
+          Platform
+        </label>
+        <div
+          className="MuiInput-root-21 MuiInput-formControl-22 MuiInput-underline-25"
+        >
+          <div
+            className="MuiSelect-root-16"
+          >
+            <div
+              aria-haspopup="true"
+              aria-owns={null}
+              aria-pressed="false"
+              className="MuiSelect-select-17 MuiSelect-selectMenu-18 MuiInput-input-29"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              Windows 10 64bit
+            </div>
+            <input
+              autoComplete={undefined}
+              autoFocus={undefined}
+              defaultValue={undefined}
+              id={undefined}
+              name="platform"
+              onKeyDown={undefined}
+              onKeyUp={undefined}
+              placeholder={undefined}
+              rows={undefined}
+              type="hidden"
+              value="win10"
+            />
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root-34 MuiSelect-icon-20"
+              color={undefined}
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M7 10l5 5 5-5z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </form>
+    <form
+      autoComplete="off"
+      className="Picker-root-1"
+    >
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-2"
+      >
+        <label
+          className="MuiFormLabel-root-11 MuiInputLabel-root-6 MuiInputLabel-formControl-7 MuiInputLabel-animated-10 MuiInputLabel-shrink-9"
+          data-shrink={true}
+          htmlFor={undefined}
+        >
+          Benchmark
+        </label>
+        <div
+          className="MuiInput-root-21 MuiInput-formControl-22 MuiInput-underline-25"
+        >
+          <div
+            className="MuiSelect-root-16"
+          >
+            <div
+              aria-haspopup="true"
+              aria-owns={null}
+              aria-pressed="false"
+              className="MuiSelect-select-17 MuiSelect-selectMenu-18 MuiInput-input-29"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              ARES6
+            </div>
+            <input
+              autoComplete={undefined}
+              autoFocus={undefined}
+              defaultValue={undefined}
+              id={undefined}
+              name="benchmark"
+              onKeyDown={undefined}
+              onKeyUp={undefined}
+              placeholder={undefined}
+              rows={undefined}
+              type="hidden"
+              value="ARES6"
+            />
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root-34 MuiSelect-icon-20"
+              color={undefined}
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M7 10l5 5 5-5z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    Graph
+  </div>
+</div>
+`;
