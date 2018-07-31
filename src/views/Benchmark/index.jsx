@@ -50,6 +50,8 @@ class Benchmark extends Component {
   }
 
   async onChange(event) {
+    // Clear the plotted graphs
+    this.setState({ data: null });
     if (event.target.name === 'platform') {
       this.setState({
         benchmark: Object.keys(CONFIG[event.target.value].benchmarks)[0],
@@ -83,7 +85,7 @@ class Benchmark extends Component {
     return (
       <div>
         <Header onChange={this.onChange} {...this.state} />
-        {this.state.perfherderUrl &&
+        {this.state.data &&
           Object.values(data).sort(sortAlphabetically).map(el => (
             <div key={el.meta.test} className={this.props.classes.center}>
               <a href={el.meta.url} target="_blank" rel="noopener noreferrer">{el.meta.test}</a>
