@@ -19,10 +19,13 @@
   },
   "dependencies": {
     "@material-ui/core": "^1.4.1",
+    "@mozilla-frontend-infra/perf-goggles": "^1.1.0",
+    "metrics-graphics": "^2.15.6",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-hot-loader": "^4.3.4"
+    "react-hot-loader": "^4.3.4",
+    "react-metrics-graphics": "^1.0.6"
   },
   "devDependencies": {
     "@neutrinojs/airbnb": "^8.3.0",
