@@ -24,28 +24,18 @@ class Benchmark extends Component {
 
   state = {
     platform: 'win10',
-    benchmark: 'raptor-motionmark-animometer-firefox',
+    benchmark: 'motionmark-animometer',
   }
 
   async componentDidMount() {
     const { platform, benchmark } = this.state;
-    this.fetchData(
-      CONFIG[platform].options.frameworkId,
-      CONFIG[platform].perfherderKey,
-      benchmark,
-      CONFIG[platform].options.buildType,
-    );
+    this.fetchData(platform, benchmark);
   }
 
   componentDidUpdate(prevProps, prevState) {
     const { platform, benchmark } = this.state;
     if (benchmark !== prevState.benchmark || platform !== prevState.platform) {
-      this.fetchData(
-        CONFIG[platform].options.frameworkId,
-        CONFIG[platform].perfherderKey,
-        benchmark,
-        CONFIG[platform].options.buildType,
-      );
+      this.fetchData(platform, benchmark);
     }
   }
 
@@ -60,12 +50,12 @@ class Benchmark extends Component {
     this.setState({ [event.target.name]: event.target.value });
   }
 
-  async fetchData(frameworkId, perfherderKey, benchmark, option) {
+  async fetchData(platform, benchmark) {
     const { perfherderUrl, data } = await subbenchmarksData(
-      frameworkId,
-      perfherderKey,
-      benchmark,
-      option,
+      CONFIG[platform].options.frameworkId,
+      CONFIG[platform].platform,
+      CONFIG[platform].benchmarks[benchmark].compare[0],
+      CONFIG[platform].options.buildType,
     );
     this.setState({ perfherderUrl, data });
   }
