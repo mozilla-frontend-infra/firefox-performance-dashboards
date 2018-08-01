@@ -33,25 +33,25 @@ const CONFIG = {
     label: 'Linux 64bit',
     platform: 'linux64',
     benchmarks: BENCHMARKS,
-    options: RAPTOR_PGO_OPTIONS,
+    ...RAPTOR_PGO_OPTIONS,
   },
   mac: {
     label: 'Mac OS X',
     platform: 'osx-10-10',
     benchmarks: BENCHMARKS,
-    options: RAPTOR_OPT_OPTIONS,
+    ...RAPTOR_OPT_OPTIONS,
   },
   win7: {
     label: 'Windows 7 32bit',
     platform: 'windows7-32',
     benchmarks: BENCHMARKS,
-    options: RAPTOR_PGO_OPTIONS,
+    ...RAPTOR_PGO_OPTIONS,
   },
   win10: {
     label: 'Windows 10 64bit',
     platform: 'windows10-64',
     benchmarks: BENCHMARKS,
-    options: RAPTOR_PGO_OPTIONS,
+    ...RAPTOR_PGO_OPTIONS,
   },
 };
 

@@ -5,6 +5,7 @@ import MetricsGraphics from 'react-metrics-graphics';
 import { subbenchmarksData } from '@mozilla-frontend-infra/perf-goggles';
 import Header from '../../components/Header';
 import CONFIG from '../../config';
+import prepareData from '../../utils/prepareData';
 
 const styles = () => ({
   center: {
@@ -51,37 +52,38 @@ class Benchmark extends Component {
   }
 
   async fetchData(platform, benchmark) {
-    const { perfherderUrl, data } = await subbenchmarksData(
-      CONFIG[platform].options.frameworkId,
-      CONFIG[platform].platform,
-      CONFIG[platform].benchmarks[benchmark].compare[0],
-      CONFIG[platform].options.buildType,
-    );
-    this.setState({ perfherderUrl, data });
+    const allData = {};
+    const benchmarksToCompare = CONFIG[platform].benchmarks[benchmark].compare;
+    await Promise.all(benchmarksToCompare.map(async (benchmarkKey) => {
+      allData[benchmarkKey] = await subbenchmarksData(
+        CONFIG[platform].frameworkId,
+        CONFIG[platform].platform,
+        benchmarkKey,
+        CONFIG[platform].buildType,
+      );
+    }));
+    this.setState({ benchmarks: prepareData(allData) });
   }
 
   render() {
-    const { data } = this.state;
-
-    const sortAlphabetically = (a, b) => {
-      if (a.meta.test < b.meta.test) {
-        return -1;
-      } else if (a.meta.test > b.meta.test) {
-        return 1;
-      }
-      return 0;
-    };
+    const { benchmarks } = this.state;
 
     return (
       <div>
         <Header onChange={this.onChange} {...this.state} />
-        {this.state.data &&
-          Object.values(data).sort(sortAlphabetically).map(el => (
-            <div key={el.meta.test} className={this.props.classes.center}>
-              <a href={el.meta.url} target="_blank" rel="noopener noreferrer">{el.meta.test}</a>
+        {this.state.benchmarks &&
+          Object.values(benchmarks).map(({ data, meta, urls }) => (
+            <div key={meta.test} className={this.props.classes.center}>
+              <div>
+                {urls.map(url => (
+                  <a key={url} href={url} target="_blank" rel="noopener noreferrer">
+                    {meta.test}
+                  </a>
+                ))}
+              </div>
               <MetricsGraphics
-                key={el.meta.test}
-                data={el.data}
+                key={meta.test}
+                data={data}
                 x_accessor="datetime"
                 y_accessor="value"
                 min_y_from_data
