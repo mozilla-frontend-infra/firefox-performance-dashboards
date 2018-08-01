@@ -5,11 +5,10 @@ import MetricsGraphics from 'react-metrics-graphics';
 import { subbenchmarksData } from '@mozilla-frontend-infra/perf-goggles';
 import Header from '../../components/Header';
 import CONFIG from '../../config';
+import prepareData from '../../utils/prepareData';
 
 const styles = () => ({
-  center: {
-    textAlign: 'center',
-  },
+  root: {},
 });
 
 class Benchmark extends Component {
@@ -24,34 +23,24 @@ class Benchmark extends Component {
 
   state = {
     platform: 'win10',
-    benchmark: 'raptor-motionmark-animometer-firefox',
+    benchmark: 'motionmark-animometer',
   }
 
   async componentDidMount() {
     const { platform, benchmark } = this.state;
-    this.fetchData(
-      CONFIG[platform].options.frameworkId,
-      CONFIG[platform].perfherderKey,
-      benchmark,
-      CONFIG[platform].options.buildType,
-    );
+    this.fetchData(platform, benchmark);
   }
 
   componentDidUpdate(prevProps, prevState) {
     const { platform, benchmark } = this.state;
     if (benchmark !== prevState.benchmark || platform !== prevState.platform) {
-      this.fetchData(
-        CONFIG[platform].options.frameworkId,
-        CONFIG[platform].perfherderKey,
-        benchmark,
-        CONFIG[platform].options.buildType,
-      );
+      this.fetchData(platform, benchmark);
     }
   }
 
   async onChange(event) {
     // Clear the plotted graphs
-    this.setState({ data: null });
+    this.setState({ benchmarkData: null });
     if (event.target.name === 'platform') {
       this.setState({
         benchmark: Object.keys(CONFIG[event.target.value].benchmarks)[0],
@@ -60,45 +49,58 @@ class Benchmark extends Component {
     this.setState({ [event.target.name]: event.target.value });
   }
 
-  async fetchData(frameworkId, perfherderKey, benchmark, option) {
-    const { perfherderUrl, data } = await subbenchmarksData(
-      frameworkId,
-      perfherderKey,
-      benchmark,
-      option,
-    );
-    this.setState({ perfherderUrl, data });
+  async fetchData(platform, benchmark) {
+    const allData = {};
+    const benchmarksToCompare = CONFIG[platform].benchmarks[benchmark].compare;
+    await Promise.all(benchmarksToCompare.map(async (benchmarkKey) => {
+      allData[benchmarkKey] = await subbenchmarksData(
+        CONFIG[platform].frameworkId,
+        CONFIG[platform].platform,
+        benchmarkKey,
+        CONFIG[platform].buildType,
+      );
+    }));
+    this.setState({ benchmarkData: prepareData(allData) });
   }
 
   render() {
-    const { data } = this.state;
-
-    const sortAlphabetically = (a, b) => {
-      if (a.meta.test < b.meta.test) {
-        return -1;
-      } else if (a.meta.test > b.meta.test) {
-        return 1;
-      }
-      return 0;
-    };
+    const { benchmark, benchmarkData, platform } = this.state;
 
     return (
-      <div>
+      <div className={this.props.classes.root}>
         <Header onChange={this.onChange} {...this.state} />
-        {this.state.data &&
-          Object.values(data).sort(sortAlphabetically).map(el => (
-            <div key={el.meta.test} className={this.props.classes.center}>
-              <a href={el.meta.url} target="_blank" rel="noopener noreferrer">{el.meta.test}</a>
-              <MetricsGraphics
-                key={el.meta.test}
-                data={el.data}
-                x_accessor="datetime"
-                y_accessor="value"
-                min_y_from_data
-                full_width
-              />
+        {benchmarkData && Object.keys(benchmarkData).length > 0 &&
+          <div>
+            <div>
+              <h3>{CONFIG[platform].benchmarks[benchmark].label}</h3>
+              {Object.entries(benchmarkData.benchmark.urls).map((entry) => {
+                const browserKey = entry[0];
+                const url = entry[1];
+                return (
+                  <div key={url}>
+                    <span>All subbenchmarks for {browserKey} </span>
+                    <a key={url} href={url} target="_blank" rel="noopener noreferrer">link</a>
+                  </div>
+                );
+              })}
             </div>
-          ))
+            {Object.values(benchmarkData.subbenchmarks).map(({
+              data, jointUrl, meta, testName,
+            }) => (
+              <div key={testName}>
+                <h3>{testName}</h3>
+                <a href={jointUrl} target="_blank" rel="noopener noreferrer">link</a>
+                <MetricsGraphics
+                  key={meta.test}
+                  data={data}
+                  x_accessor="datetime"
+                  y_accessor="value"
+                  min_y_from_data
+                  full_width
+                />
+              </div>
+            ))}
+          </div>
         }
       </div>
     );

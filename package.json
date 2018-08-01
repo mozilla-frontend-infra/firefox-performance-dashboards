@@ -23,6 +23,7 @@
     "@mozilla-frontend-infra/perf-goggles": "^1.1.0",
     "metrics-graphics": "^2.15.6",
     "prop-types": "^15.6.2",
+    "query-string": "^6.1.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-hot-loader": "^4.3.4",

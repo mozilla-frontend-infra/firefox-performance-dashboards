@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div>
+<div
+  className="Benchmark-root-1"
+>
   <div
     className="Header-root-2"
   >
@@ -114,7 +116,7 @@ exports[`renders correctly 1`] = `
               placeholder={undefined}
               rows={undefined}
               type="hidden"
-              value="raptor-motionmark-animometer-firefox"
+              value="motionmark-animometer"
             />
             <svg
               aria-hidden="true"
