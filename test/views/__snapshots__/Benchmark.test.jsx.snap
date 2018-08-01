@@ -3,34 +3,34 @@
 exports[`renders correctly 1`] = `
 <div>
   <div
-    className="header"
+    className="Header-root-2"
   >
     <form
       autoComplete="off"
-      className="Picker-root-1"
+      className="Picker-root-3"
     >
       <div
         aria-describedby={undefined}
-        className="MuiFormControl-root-2"
+        className="MuiFormControl-root-4"
       >
         <label
-          className="MuiFormLabel-root-11 MuiInputLabel-root-6 MuiInputLabel-formControl-7 MuiInputLabel-animated-10 MuiInputLabel-shrink-9"
+          className="MuiFormLabel-root-13 MuiInputLabel-root-8 MuiInputLabel-formControl-9 MuiInputLabel-animated-12 MuiInputLabel-shrink-11"
           data-shrink={true}
           htmlFor={undefined}
         >
           Platform
         </label>
         <div
-          className="MuiInput-root-21 MuiInput-formControl-22 MuiInput-underline-25"
+          className="MuiInput-root-23 MuiInput-formControl-24 MuiInput-underline-27"
         >
           <div
-            className="MuiSelect-root-16"
+            className="MuiSelect-root-18"
           >
             <div
               aria-haspopup="true"
               aria-owns={null}
               aria-pressed="false"
-              className="MuiSelect-select-17 MuiSelect-selectMenu-18 MuiInput-input-29"
+              className="MuiSelect-select-19 MuiSelect-selectMenu-20 MuiInput-input-31"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -55,7 +55,7 @@ exports[`renders correctly 1`] = `
             />
             <svg
               aria-hidden="true"
-              className="MuiSvgIcon-root-34 MuiSelect-icon-20"
+              className="MuiSvgIcon-root-36 MuiSelect-icon-22"
               color={undefined}
               focusable="false"
               viewBox="0 0 24 24"
@@ -70,30 +70,30 @@ exports[`renders correctly 1`] = `
     </form>
     <form
       autoComplete="off"
-      className="Picker-root-1"
+      className="Picker-root-3"
     >
       <div
         aria-describedby={undefined}
-        className="MuiFormControl-root-2"
+        className="MuiFormControl-root-4"
       >
         <label
-          className="MuiFormLabel-root-11 MuiInputLabel-root-6 MuiInputLabel-formControl-7 MuiInputLabel-animated-10 MuiInputLabel-shrink-9"
+          className="MuiFormLabel-root-13 MuiInputLabel-root-8 MuiInputLabel-formControl-9 MuiInputLabel-animated-12 MuiInputLabel-shrink-11"
           data-shrink={true}
           htmlFor={undefined}
         >
           Benchmark
         </label>
         <div
-          className="MuiInput-root-21 MuiInput-formControl-22 MuiInput-underline-25"
+          className="MuiInput-root-23 MuiInput-formControl-24 MuiInput-underline-27"
         >
           <div
-            className="MuiSelect-root-16"
+            className="MuiSelect-root-18"
           >
             <div
               aria-haspopup="true"
               aria-owns={null}
               aria-pressed="false"
-              className="MuiSelect-select-17 MuiSelect-selectMenu-18 MuiInput-input-29"
+              className="MuiSelect-select-19 MuiSelect-selectMenu-20 MuiInput-input-31"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -101,7 +101,7 @@ exports[`renders correctly 1`] = `
               role="button"
               tabIndex={0}
             >
-              ARES6
+              MotionMark Animometer
             </div>
             <input
               autoComplete={undefined}
@@ -114,11 +114,11 @@ exports[`renders correctly 1`] = `
               placeholder={undefined}
               rows={undefined}
               type="hidden"
-              value="ARES6"
+              value="raptor-motionmark-animometer-firefox"
             />
             <svg
               aria-hidden="true"
-              className="MuiSvgIcon-root-34 MuiSelect-icon-20"
+              className="MuiSvgIcon-root-36 MuiSelect-icon-22"
               color={undefined}
               focusable="false"
               viewBox="0 0 24 24"
@@ -131,15 +131,6 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
     </form>
-  </div>
-  <div
-    style={
-      Object {
-        "textAlign": "center",
-      }
-    }
-  >
-    Graph
   </div>
 </div>
 `;

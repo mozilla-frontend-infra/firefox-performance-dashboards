@@ -1,10 +1,19 @@
 import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
 import Picker from '../../components/Picker';
 import CONFIG from '../../config';
-import './style.css';
 
-const Header = ({ benchmark, onChange, platform }) => (
-  <div className="header">
+const styles = () => ({
+  root: {
+    display: 'flex',
+    justifyContent: 'space-evenly',
+  },
+});
+
+const Header = ({
+  classes, benchmark, onChange, platform,
+}) => (
+  <div className={classes.root} >
     <Picker
       key="Platform selection"
       identifier="platform"
@@ -12,8 +21,8 @@ const Header = ({ benchmark, onChange, platform }) => (
       onSelection={onChange}
       selectedValue={platform}
       options={
-        Object.keys(CONFIG).reduce((res, elem) => {
-          res.push({ value: elem, label: CONFIG[elem].label });
+        Object.keys(CONFIG).reduce((res, platformKey) => {
+          res.push({ value: platformKey, label: CONFIG[platformKey].label });
           return res;
         }, [])
       }
@@ -25,8 +34,8 @@ const Header = ({ benchmark, onChange, platform }) => (
       onSelection={onChange}
       selectedValue={benchmark}
       options={
-        CONFIG[platform].benchmarks.reduce((res, elem) => {
-          res.push({ value: elem, label: elem });
+        Object.keys(CONFIG[platform].benchmarks).reduce((res, benchmarkKey) => {
+          res.push({ value: benchmarkKey, label: CONFIG[platform].benchmarks[benchmarkKey].label });
           return res;
         }, [])
       }
@@ -35,9 +44,10 @@ const Header = ({ benchmark, onChange, platform }) => (
 );
 
 Header.propTypes = ({
+  classes: PropTypes.shape().isRequired,
   benchmark: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   platform: PropTypes.string.isRequired,
 });
 
-export default Header;
+export default withStyles(styles)(Header);
