@@ -114,7 +114,7 @@ exports[`renders correctly 1`] = `
               placeholder={undefined}
               rows={undefined}
               type="hidden"
-              value="raptor-motionmark-animometer-firefox"
+              value="motionmark-animometer"
             />
             <svg
               aria-hidden="true"
