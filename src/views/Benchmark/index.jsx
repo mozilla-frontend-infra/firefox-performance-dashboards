@@ -42,7 +42,7 @@ class Benchmark extends Component {
 
   async onChange(event) {
     // Clear the plotted graphs
-    this.setState({ data: null });
+    this.setState({ subbenchmarks: null });
     if (event.target.name === 'platform') {
       this.setState({
         benchmark: Object.keys(CONFIG[event.target.value].benchmarks)[0],
@@ -62,17 +62,17 @@ class Benchmark extends Component {
         CONFIG[platform].buildType,
       );
     }));
-    this.setState({ benchmarks: prepareData(allData) });
+    this.setState({ subbenchmarks: prepareData(allData) });
   }
 
   render() {
-    const { benchmarks } = this.state;
+    const { subbenchmarks } = this.state;
 
     return (
       <div>
         <Header onChange={this.onChange} {...this.state} />
-        {this.state.benchmarks &&
-          Object.values(benchmarks).map(({ data, meta, key }) => (
+        {subbenchmarks &&
+          Object.values(subbenchmarks).map(({ data, meta, key }) => (
             <div key={key} className={this.props.classes.center}>
               <div>
                 {Object.values(meta).map(({ suite }) => (
