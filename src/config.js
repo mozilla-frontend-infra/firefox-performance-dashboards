@@ -1,5 +1,4 @@
 const RAPTOR_OPT_OPTIONS = { frameworkId: 10, buildType: 'opt' };
-const RAPTOR_PGO_OPTIONS = { frameworkId: 10, buildType: 'pgo' };
 
 const BENCHMARKS = {
   'motionmark-animometer': {
@@ -33,7 +32,7 @@ const CONFIG = {
     label: 'Linux 64bit',
     platform: 'linux64',
     benchmarks: BENCHMARKS,
-    ...RAPTOR_PGO_OPTIONS,
+    ...RAPTOR_OPT_OPTIONS,
   },
   mac: {
     label: 'Mac OS X',
@@ -45,13 +44,13 @@ const CONFIG = {
     label: 'Windows 7 32bit',
     platform: 'windows7-32',
     benchmarks: BENCHMARKS,
-    ...RAPTOR_PGO_OPTIONS,
+    ...RAPTOR_OPT_OPTIONS,
   },
   win10: {
     label: 'Windows 10 64bit',
     platform: 'windows10-64',
     benchmarks: BENCHMARKS,
-    ...RAPTOR_PGO_OPTIONS,
+    ...RAPTOR_OPT_OPTIONS,
   },
 };
 
