@@ -3,134 +3,219 @@
 exports[`renders correctly 1`] = `
 <div>
   <div
-    className="Header-root-2"
+    className="ResponsiveDrawer-root-3"
   >
-    <form
-      autoComplete="off"
-      className="Picker-root-3"
+    <header
+      className="MuiPaper-root-17 MuiPaper-elevation4-23 MuiAppBar-root-9 MuiAppBar-positionFixed-10 MuiAppBar-colorPrimary-15 mui-fixed ResponsiveDrawer-appBar-4"
     >
       <div
-        aria-describedby={undefined}
-        className="MuiFormControl-root-4"
+        className="MuiToolbar-root-44 MuiToolbar-regular-46 MuiToolbar-gutters-45"
       >
-        <label
-          className="MuiFormLabel-root-13 MuiInputLabel-root-8 MuiInputLabel-formControl-9 MuiInputLabel-animated-12 MuiInputLabel-shrink-11"
-          data-shrink={true}
-          htmlFor={undefined}
+        <button
+          aria-label="Open drawer"
+          className="MuiButtonBase-root-54 MuiIconButton-root-48 MuiIconButton-colorInherit-49 ResponsiveDrawer-navIconHide-5"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
         >
-          Platform
-        </label>
-        <div
-          className="MuiInput-root-23 MuiInput-formControl-24 MuiInput-underline-27"
-        >
-          <div
-            className="MuiSelect-root-18"
+          <span
+            className="MuiIconButton-label-53"
           >
-            <div
-              aria-haspopup="true"
-              aria-owns={null}
-              aria-pressed="false"
-              className="MuiSelect-select-19 MuiSelect-selectMenu-20 MuiInput-input-31"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              role="button"
-              tabIndex={0}
-            >
-              Windows 10 64bit
-            </div>
-            <input
-              autoComplete={undefined}
-              autoFocus={undefined}
-              defaultValue={undefined}
-              id={undefined}
-              name="platform"
-              onKeyDown={undefined}
-              onKeyUp={undefined}
-              placeholder={undefined}
-              rows={undefined}
-              type="hidden"
-              value="win10"
-            />
             <svg
               aria-hidden="true"
-              className="MuiSvgIcon-root-36 MuiSelect-icon-22"
+              className="MuiSvgIcon-root-57"
               color={undefined}
               focusable="false"
               viewBox="0 0 24 24"
             >
               <path
-                d="M7 10l5 5 5-5z"
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
               />
             </svg>
-          </div>
-        </div>
+          </span>
+          <span
+            className="MuiTouchRipple-root-64"
+          />
+        </button>
+        <h2
+          className="MuiTypography-root-71 MuiTypography-title-77 MuiTypography-colorInherit-90 MuiTypography-noWrap-87"
+        >
+          Responsive drawer
+        </h2>
       </div>
-    </form>
-    <form
-      autoComplete="off"
-      className="Picker-root-3"
+    </header>
+    <div
+      className="HiddenCss-smDown-100"
     >
       <div
-        aria-describedby={undefined}
-        className="MuiFormControl-root-4"
+        className="MuiDrawer-docked-110"
       >
-        <label
-          className="MuiFormLabel-root-13 MuiInputLabel-root-8 MuiInputLabel-formControl-9 MuiInputLabel-animated-12 MuiInputLabel-shrink-11"
-          data-shrink={true}
-          htmlFor={undefined}
-        >
-          Benchmark
-        </label>
         <div
-          className="MuiInput-root-23 MuiInput-formControl-24 MuiInput-underline-27"
+          className="MuiPaper-root-17 MuiPaper-elevation0-19 MuiDrawer-paper-111 ResponsiveDrawer-drawerPaper-7 MuiDrawer-paperAnchorLeft-112 MuiDrawer-paperAnchorDockedLeft-116"
         >
-          <div
-            className="MuiSelect-root-18"
-          >
+          <div>
             <div
-              aria-haspopup="true"
-              aria-owns={null}
-              aria-pressed="false"
-              className="MuiSelect-select-19 MuiSelect-selectMenu-20 MuiInput-input-31"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              role="button"
-              tabIndex={0}
-            >
-              MotionMark Animometer
-            </div>
-            <input
-              autoComplete={undefined}
-              autoFocus={undefined}
-              defaultValue={undefined}
-              id={undefined}
-              name="benchmark"
-              onKeyDown={undefined}
-              onKeyUp={undefined}
-              placeholder={undefined}
-              rows={undefined}
-              type="hidden"
-              value="motionmark-animometer"
+              className="ResponsiveDrawer-toolbar-6"
             />
-            <svg
-              aria-hidden="true"
-              className="MuiSvgIcon-root-36 MuiSelect-icon-22"
-              color={undefined}
-              focusable="false"
-              viewBox="0 0 24 24"
+            <hr
+              className="MuiDivider-root-121"
+            />
+            <div
+              className={undefined}
             >
-              <path
-                d="M7 10l5 5 5-5z"
-              />
-            </svg>
+              <form
+                autoComplete="off"
+                className="Picker-root-126"
+              >
+                <div
+                  aria-describedby={undefined}
+                  className="MuiFormControl-root-127"
+                >
+                  <label
+                    className="MuiFormLabel-root-136 MuiInputLabel-root-131 MuiInputLabel-formControl-132 MuiInputLabel-animated-135 MuiInputLabel-shrink-134"
+                    data-shrink={true}
+                    htmlFor={undefined}
+                  >
+                    Platform
+                  </label>
+                  <div
+                    className="MuiInput-root-146 MuiInput-formControl-147 MuiInput-underline-150"
+                  >
+                    <div
+                      className="MuiSelect-root-141"
+                    >
+                      <div
+                        aria-haspopup="true"
+                        aria-owns={null}
+                        aria-pressed="false"
+                        className="MuiSelect-select-142 MuiSelect-selectMenu-143 MuiInput-input-154"
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        Windows 10 64bit
+                      </div>
+                      <input
+                        autoComplete={undefined}
+                        autoFocus={undefined}
+                        defaultValue={undefined}
+                        id={undefined}
+                        name="platform"
+                        onKeyDown={undefined}
+                        onKeyUp={undefined}
+                        placeholder={undefined}
+                        rows={undefined}
+                        type="hidden"
+                        value="win10"
+                      />
+                      <svg
+                        aria-hidden="true"
+                        className="MuiSvgIcon-root-57 MuiSelect-icon-145"
+                        color={undefined}
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M7 10l5 5 5-5z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <form
+                autoComplete="off"
+                className="Picker-root-126"
+              >
+                <div
+                  aria-describedby={undefined}
+                  className="MuiFormControl-root-127"
+                >
+                  <label
+                    className="MuiFormLabel-root-136 MuiInputLabel-root-131 MuiInputLabel-formControl-132 MuiInputLabel-animated-135 MuiInputLabel-shrink-134"
+                    data-shrink={true}
+                    htmlFor={undefined}
+                  >
+                    Benchmark
+                  </label>
+                  <div
+                    className="MuiInput-root-146 MuiInput-formControl-147 MuiInput-underline-150"
+                  >
+                    <div
+                      className="MuiSelect-root-141"
+                    >
+                      <div
+                        aria-haspopup="true"
+                        aria-owns={null}
+                        aria-pressed="false"
+                        className="MuiSelect-select-142 MuiSelect-selectMenu-143 MuiInput-input-154"
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        MotionMark Animometer
+                      </div>
+                      <input
+                        autoComplete={undefined}
+                        autoFocus={undefined}
+                        defaultValue={undefined}
+                        id={undefined}
+                        name="benchmark"
+                        onKeyDown={undefined}
+                        onKeyUp={undefined}
+                        placeholder={undefined}
+                        rows={undefined}
+                        type="hidden"
+                        value="motionmark-animometer"
+                      />
+                      <svg
+                        aria-hidden="true"
+                        className="MuiSvgIcon-root-57 MuiSelect-icon-145"
+                        color={undefined}
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M7 10l5 5 5-5z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </form>
+    </div>
+    <main
+      className="ResponsiveDrawer-content-8"
+    >
+      <div
+        className="ResponsiveDrawer-toolbar-6"
+      />
+    </main>
   </div>
 </div>
 `;

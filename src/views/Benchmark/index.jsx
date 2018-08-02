@@ -3,7 +3,8 @@ import { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import MetricsGraphics from 'react-metrics-graphics';
 import { subbenchmarksData } from '@mozilla-frontend-infra/perf-goggles';
-import Header from '../../components/Header';
+import Drawer from '../../components/Drawer';
+import ResponsiveDrawer from '../../components/ResponsiveDrawer';
 import CONFIG from '../../config';
 import prepareData from '../../utils/prepareData';
 
@@ -30,6 +31,7 @@ class Benchmark extends Component {
   state = {
     platform: 'win10',
     benchmark: 'motionmark-animometer',
+    subbenchmarks: {},
   }
 
   async componentDidMount() {
@@ -74,9 +76,10 @@ class Benchmark extends Component {
 
     return (
       <div>
-        <Header onChange={this.onChange} {...this.state} />
-        {subbenchmarks &&
-          Object.values(subbenchmarks).map(({ data, meta, key }) => (
+        <ResponsiveDrawer
+          drawer={<Drawer onChange={this.onChange} {...this.state} />}
+        >
+          {Object.values(subbenchmarks).map(({ data, meta, key }) => (
             <div key={key} className={this.props.classes.center}>
               <div className={this.props.classes.evenlySpaced}>
                 {Object.values(meta).map(({ suite }) => (
@@ -94,8 +97,8 @@ class Benchmark extends Component {
                 full_width
               />
             </div>
-          ))
-        }
+          ))}
+        </ResponsiveDrawer>
       </div>
     );
   }
