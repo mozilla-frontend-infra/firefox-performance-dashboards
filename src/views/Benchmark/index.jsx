@@ -11,6 +11,10 @@ const styles = () => ({
   center: {
     textAlign: 'center',
   },
+  evenlySpaced: {
+    display: 'flex',
+    justifyContent: 'space-evenly',
+  },
 });
 
 class Benchmark extends Component {
@@ -74,7 +78,7 @@ class Benchmark extends Component {
         {subbenchmarks &&
           Object.values(subbenchmarks).map(({ data, meta, key }) => (
             <div key={key} className={this.props.classes.center}>
-              <div>
+              <div className={this.props.classes.evenlySpaced}>
                 {Object.values(meta).map(({ suite }) => (
                   <a key={meta[suite].url} href={meta[suite].url} target="_blank" rel="noopener noreferrer">
                     {suite}
