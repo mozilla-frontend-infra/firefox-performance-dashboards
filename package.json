@@ -8,9 +8,10 @@
   "scripts": {
     "build": "neutrino build",
     "start": "neutrino start",
-    "precommit": "lint-staged",
     "lint": "neutrino lint",
-    "test": "neutrino test"
+    "test": "neutrino test",
+    "precommit": "lint-staged",
+    "prepush": "neutrino test"
   },
   "lint-staged": {
     "*.js*": [
@@ -19,6 +20,7 @@
   },
   "dependencies": {
     "@material-ui/core": "^1.4.1",
+    "@material-ui/icons": "^2.0.0",
     "@mozilla-frontend-infra/perf-goggles": "^1.1.0",
     "metrics-graphics": "^2.15.6",
     "prop-types": "^15.6.2",

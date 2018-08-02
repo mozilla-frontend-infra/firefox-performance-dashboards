@@ -1,23 +1,28 @@
-const RAPTOR_OPT_OPTIONS = { frameworkId: 10, buildType: 'opt', extraOptions: [] };
-const RAPTOR_PGO_OPTIONS = { frameworkId: 10, buildType: 'pgo', extraOptions: [] };
+const RAPTOR_OPT_OPTIONS = { frameworkId: 10, buildType: 'opt' };
 
 const BENCHMARKS = {
-  'raptor-motionmark-animometer-firefox': {
+  'motionmark-animometer': {
+    compare: ['raptor-motionmark-animometer-firefox', 'raptor-motionmark-animometer-chrome'],
     label: 'MotionMark Animometer',
   },
-  'raptor-motionmark-htmlsuite-firefox': {
+  'motionmark-htmlsuite': {
+    compare: ['raptor-motionmark-htmlsuite-firefox', 'raptor-motionmark-htmlsuite-chrome'],
     label: 'MotionMark HtmlSuite',
   },
-  'raptor-speedometer-firefox': {
+  speedometer: {
+    compare: ['raptor-speedometer-firefox', 'raptor-speedometer-chrome'],
     label: 'Speedometer',
   },
-  'raptor-stylebench-firefox': {
+  stylebench: {
+    compare: ['raptor-stylebench-firefox', 'raptor-stylebench-chrome'],
     label: 'StyleBench',
   },
-  'raptor-sunspider-firefox': {
+  sunspider: {
+    compare: ['raptor-sunspider-firefox', 'raptor-sunspider-chrome'],
     label: 'SunSpider',
   },
-  'raptor-webaudio-firefox': {
+  webaudio: {
+    compare: ['raptor-webaudio-firefox', 'raptor-webaudio-chrome'],
     label: 'WebAudio',
   },
 };
@@ -25,27 +30,27 @@ const BENCHMARKS = {
 const CONFIG = {
   linux64: {
     label: 'Linux 64bit',
-    perfherderKey: 'linux64',
+    platform: 'linux64',
     benchmarks: BENCHMARKS,
-    options: RAPTOR_PGO_OPTIONS,
+    ...RAPTOR_OPT_OPTIONS,
   },
   mac: {
     label: 'Mac OS X',
-    perfherderKey: 'osx-10-10',
+    platform: 'osx-10-10',
     benchmarks: BENCHMARKS,
-    options: RAPTOR_OPT_OPTIONS,
+    ...RAPTOR_OPT_OPTIONS,
   },
   win7: {
     label: 'Windows 7 32bit',
-    perfherderKey: 'windows7-32',
+    platform: 'windows7-32',
     benchmarks: BENCHMARKS,
-    options: RAPTOR_PGO_OPTIONS,
+    ...RAPTOR_OPT_OPTIONS,
   },
   win10: {
     label: 'Windows 10 64bit',
-    perfherderKey: 'windows10-64',
+    platform: 'windows10-64',
     benchmarks: BENCHMARKS,
-    options: RAPTOR_PGO_OPTIONS,
+    ...RAPTOR_OPT_OPTIONS,
   },
 };
 

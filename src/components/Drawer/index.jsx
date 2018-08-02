@@ -13,7 +13,7 @@ const styles = () => ({
 const Header = ({
   classes, benchmark, onChange, platform,
 }) => (
-  <div className={classes.root} >
+  <div className={classes.root2} >
     <Picker
       key="Platform selection"
       identifier="platform"

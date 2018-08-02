@@ -3,12 +3,18 @@ import { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import MetricsGraphics from 'react-metrics-graphics';
 import { subbenchmarksData } from '@mozilla-frontend-infra/perf-goggles';
-import Header from '../../components/Header';
+import Drawer from '../../components/Drawer';
+import ResponsiveDrawer from '../../components/ResponsiveDrawer';
 import CONFIG from '../../config';
+import prepareData from '../../utils/prepareData';
 
 const styles = () => ({
   center: {
     textAlign: 'center',
+  },
+  evenlySpaced: {
+    display: 'flex',
+    justifyContent: 'space-evenly',
   },
 });
 
@@ -24,34 +30,25 @@ class Benchmark extends Component {
 
   state = {
     platform: 'win10',
-    benchmark: 'raptor-motionmark-animometer-firefox',
+    benchmark: 'motionmark-animometer',
+    subbenchmarks: {},
   }
 
   async componentDidMount() {
     const { platform, benchmark } = this.state;
-    this.fetchData(
-      CONFIG[platform].options.frameworkId,
-      CONFIG[platform].perfherderKey,
-      benchmark,
-      CONFIG[platform].options.buildType,
-    );
+    this.fetchData(platform, benchmark);
   }
 
   componentDidUpdate(prevProps, prevState) {
     const { platform, benchmark } = this.state;
     if (benchmark !== prevState.benchmark || platform !== prevState.platform) {
-      this.fetchData(
-        CONFIG[platform].options.frameworkId,
-        CONFIG[platform].perfherderKey,
-        benchmark,
-        CONFIG[platform].options.buildType,
-      );
+      this.fetchData(platform, benchmark);
     }
   }
 
   async onChange(event) {
     // Clear the plotted graphs
-    this.setState({ data: null });
+    this.setState({ subbenchmarks: null });
     if (event.target.name === 'platform') {
       this.setState({
         benchmark: Object.keys(CONFIG[event.target.value].benchmarks)[0],
@@ -60,46 +57,48 @@ class Benchmark extends Component {
     this.setState({ [event.target.name]: event.target.value });
   }
 
-  async fetchData(frameworkId, perfherderKey, benchmark, option) {
-    const { perfherderUrl, data } = await subbenchmarksData(
-      frameworkId,
-      perfherderKey,
-      benchmark,
-      option,
-    );
-    this.setState({ perfherderUrl, data });
+  async fetchData(platform, benchmark) {
+    const allData = {};
+    const benchmarksToCompare = CONFIG[platform].benchmarks[benchmark].compare;
+    await Promise.all(benchmarksToCompare.map(async (benchmarkKey) => {
+      allData[benchmarkKey] = await subbenchmarksData(
+        CONFIG[platform].frameworkId,
+        CONFIG[platform].platform,
+        benchmarkKey,
+        CONFIG[platform].buildType,
+      );
+    }));
+    this.setState({ subbenchmarks: prepareData(allData) });
   }
 
   render() {
-    const { data } = this.state;
-
-    const sortAlphabetically = (a, b) => {
-      if (a.meta.test < b.meta.test) {
-        return -1;
-      } else if (a.meta.test > b.meta.test) {
-        return 1;
-      }
-      return 0;
-    };
+    const { subbenchmarks } = this.state;
 
     return (
       <div>
-        <Header onChange={this.onChange} {...this.state} />
-        {this.state.data &&
-          Object.values(data).sort(sortAlphabetically).map(el => (
-            <div key={el.meta.test} className={this.props.classes.center}>
-              <a href={el.meta.url} target="_blank" rel="noopener noreferrer">{el.meta.test}</a>
+        <ResponsiveDrawer
+          drawer={<Drawer onChange={this.onChange} {...this.state} />}
+        >
+          {Object.values(subbenchmarks).map(({ data, meta, key }) => (
+            <div key={key} className={this.props.classes.center}>
+              <div className={this.props.classes.evenlySpaced}>
+                {Object.values(meta).map(({ suite }) => (
+                  <a key={meta[suite].url} href={meta[suite].url} target="_blank" rel="noopener noreferrer">
+                    {suite}
+                  </a>
+                ))}
+              </div>
               <MetricsGraphics
-                key={el.meta.test}
-                data={el.data}
+                key={meta.test}
+                data={data}
                 x_accessor="datetime"
                 y_accessor="value"
                 min_y_from_data
                 full_width
               />
             </div>
-          ))
-        }
+          ))}
+        </ResponsiveDrawer>
       </div>
     );
   }
