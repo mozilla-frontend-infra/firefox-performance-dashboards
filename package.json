@@ -8,9 +8,10 @@
   "scripts": {
     "build": "neutrino build",
     "start": "neutrino start",
-    "precommit": "lint-staged",
     "lint": "neutrino lint",
-    "test": "neutrino test"
+    "test": "neutrino test",
+    "precommit": "lint-staged",
+    "prepush": "neutrino test"
   },
   "lint-staged": {
     "*.js*": [
