@@ -4,10 +4,7 @@ import Picker from '../../components/Picker';
 import CONFIG from '../../config';
 
 const styles = () => ({
-  root: {
-    display: 'flex',
-    justifyContent: 'space-evenly',
-  },
+  root: {},
 });
 
 const Header = ({
