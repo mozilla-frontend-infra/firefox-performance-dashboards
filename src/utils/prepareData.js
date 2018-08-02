@@ -17,13 +17,14 @@ const prepareData = (benchmarks) => {
       if (!newData[meta.test]) {
         newData[meta.test] = {
           data: [subbenchmarkData],
-          meta,
-          urls: [perfherderUrl],
+          meta: {},
+          key: meta.test,
         };
       } else {
         newData[meta.test].data.push(subbenchmarkData);
-        newData[meta.test].urls.push(perfherderUrl);
       }
+      newData[meta.test].meta[meta.suite] = meta;
+      newData[meta.test].meta[meta.suite].perfherderUrl = perfherderUrl;
     });
   });
 

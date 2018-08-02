@@ -72,12 +72,12 @@ class Benchmark extends Component {
       <div>
         <Header onChange={this.onChange} {...this.state} />
         {this.state.benchmarks &&
-          Object.values(benchmarks).map(({ data, meta, urls }) => (
-            <div key={meta.test} className={this.props.classes.center}>
+          Object.values(benchmarks).map(({ data, meta, key }) => (
+            <div key={key} className={this.props.classes.center}>
               <div>
-                {urls.map(url => (
-                  <a key={url} href={url} target="_blank" rel="noopener noreferrer">
-                    {meta.test}
+                {Object.values(meta).map(({ suite }) => (
+                  <a key={meta[suite].url} href={meta[suite].url} target="_blank" rel="noopener noreferrer">
+                    {suite}
                   </a>
                 ))}
               </div>
