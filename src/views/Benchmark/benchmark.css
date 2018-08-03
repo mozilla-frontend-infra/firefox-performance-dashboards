@@ -1,0 +1,9 @@
+.legend {
+  border: 1px solid #000;
+  border-radius: 1em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: bottom;
+  margin: 0 .2em .1em 0;
+}

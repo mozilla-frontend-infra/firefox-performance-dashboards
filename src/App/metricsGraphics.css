@@ -1,0 +1,40 @@
+.chrome-color {
+  background-color: #ffcd02;
+}
+.firefox-color {
+  background-color: #e55525;
+}
+
+/* Metrics graphics lines */
+path.mg-line1 {
+  stroke-width: 2;
+}
+.mg-area1-color {
+  fill: #e55525;
+}
+.mg-line1-color {
+  stroke: #e55525;
+}
+.mg-hover-line1-color {
+  fill: #e55525;
+}
+.mg-line1-legend-color {
+  color: #e55525;
+  fill: #e55525;
+}
+path.mg-line2 {
+  stroke-width: 2;
+}
+.mg-area2-color {
+  fill: #ffcd02;
+}
+.mg-line2-color {
+  stroke: #ffcd02;
+}
+.mg-hover-line2-color {
+  fill: #ffcd02;
+}
+.mg-line2-legend-color {
+  color: #ffcd02;
+  fill: #ffcd02;
+}
