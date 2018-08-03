@@ -3,7 +3,8 @@ import { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import MetricsGraphics from 'react-metrics-graphics';
 import { subbenchmarksData } from '@mozilla-frontend-infra/perf-goggles';
-import Header from '../../components/Header';
+import Drawer from '../../components/Drawer';
+import ResponsiveDrawer from '../../components/ResponsiveDrawer';
 import CONFIG from '../../config';
 
 const styles = () => ({
@@ -25,6 +26,7 @@ class Benchmark extends Component {
   state = {
     platform: 'win10',
     benchmark: 'raptor-motionmark-animometer-firefox',
+    data: [],
   }
 
   async componentDidMount() {
@@ -84,9 +86,10 @@ class Benchmark extends Component {
 
     return (
       <div>
-        <Header onChange={this.onChange} {...this.state} />
-        {this.state.data &&
-          Object.values(data).sort(sortAlphabetically).map(el => (
+        <ResponsiveDrawer
+          drawer={<Drawer onChange={this.onChange} {...this.state} />}
+        >
+          {Object.values(data).sort(sortAlphabetically).map(el => (
             <div key={el.meta.test} className={this.props.classes.center}>
               <a href={el.meta.url} target="_blank" rel="noopener noreferrer">{el.meta.test}</a>
               <MetricsGraphics
@@ -98,8 +101,8 @@ class Benchmark extends Component {
                 full_width
               />
             </div>
-          ))
-        }
+          ))}
+        </ResponsiveDrawer>
       </div>
     );
   }
