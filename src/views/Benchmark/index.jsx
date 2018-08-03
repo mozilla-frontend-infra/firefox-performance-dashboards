@@ -2,6 +2,8 @@ import PropTypes from 'prop-types';
 import { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import MetricsGraphics from 'react-metrics-graphics';
+
+import { curveLinear } from 'd3';
 import { subbenchmarksData } from '@mozilla-frontend-infra/perf-goggles';
 import Header from '../../components/Header';
 import CONFIG from '../../config';
@@ -104,6 +106,7 @@ class Benchmark extends Component {
                   right="60"
                   legend={['Firefox', 'Chrome']}
                   aggregate_rollover
+                  interpolate={curveLinear}
                 />
               </div>
             ))}
