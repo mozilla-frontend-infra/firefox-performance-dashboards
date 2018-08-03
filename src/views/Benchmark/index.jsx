@@ -6,6 +6,7 @@ import { subbenchmarksData } from '@mozilla-frontend-infra/perf-goggles';
 import Header from '../../components/Header';
 import CONFIG from '../../config';
 import prepareData from '../../utils/prepareData';
+import './benchmark.css';
 
 const styles = () => ({
   root: {},
@@ -76,10 +77,13 @@ class Benchmark extends Component {
               {Object.entries(benchmarkData.benchmark.urls).map((entry) => {
                 const browserKey = entry[0];
                 const url = entry[1];
+                const classname = `legend ${browserKey === 'firefox' ? 'firefox-color' : 'chrome-color'}`;
+                const upperBrowser = browserKey.replace(/^\w/, c => c.toUpperCase());
                 return (
                   <div key={url}>
-                    <span>All subbenchmarks for {browserKey} </span>
-                    <a key={url} href={url} target="_blank" rel="noopener noreferrer">link</a>
+                    <span className={classname} />
+                    <span>{upperBrowser}:</span>
+                    <a key={url} href={url} target="_blank" rel="noopener noreferrer">all subbenchmarks</a>
                   </div>
                 );
               })}
