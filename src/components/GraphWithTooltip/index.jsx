@@ -48,7 +48,7 @@ class GraphWithTooltip extends Component {
           }}
         />
         {data && (
-          <div>
+          <div id={`mg-graph-parent-${this.props.uid}`}>
             <MetricsGraphics
               data={data}
               x_accessor="datetime"
@@ -62,7 +62,16 @@ class GraphWithTooltip extends Component {
                 tooltipEl.style.display = 'block';
                 tooltipEl.innerText = `value: ${d.value}`;
                 const popper = new Popper(document.documentElement, tooltipEl, { placement: 'top' });
-                popper.reference = select('.mg-line-rollover-circle').node();
+                popper.reference = select(`#mg-graph-parent-${this.props.uid} .mg-line-rollover-circle`).node();
+                // Depending on how you "enter" the graph with your mouse, you will somehow
+                // make that first line that you hovered over "special".
+                // When you switch from hovering from the first line to the second one you will
+                // notice that the tooltip will stay over the last data point from the
+                // first line that you were hovering over. You can only affect the position
+                // of the tooltip by returning to the first line.
+                // I think the style.opacity should always return 1, however, when we hover over
+                // data points from the second line you will notice that the console prints a 0
+                console.log(popper.reference.style.opacity);
                 popper.update();
               }}
               mouseout={() => {
