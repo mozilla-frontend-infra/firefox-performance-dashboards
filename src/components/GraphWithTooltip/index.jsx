@@ -47,8 +47,8 @@ class GraphWithTooltip extends Component {
             textAlign: 'left',
           }}
         />
-        {data && (
-          <div id={`mg-graph-parent-${this.props.uid}`}>
+        <div id={`mg-graph-parent-${this.props.uid}`}>
+          {data && (
             <MetricsGraphics
               data={data}
               x_accessor="datetime"
@@ -79,8 +79,8 @@ class GraphWithTooltip extends Component {
                 tooltipEl.style.display = 'none';
               }}
             />
-          </div>
-        )}
+          )}
+        </div>
       </div>
     );
   }
