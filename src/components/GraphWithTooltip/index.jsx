@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Component } from 'react';
 import MetricsGraphics from 'react-metrics-graphics';
-import { select } from 'd3';
+import { select } from 'd3-selection';
 import Popper from 'popper.js';
 
 class GraphWithTooltip extends Component {
