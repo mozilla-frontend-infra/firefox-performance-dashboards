@@ -3,6 +3,8 @@ import { Component } from 'react';
 import MetricsGraphics from 'react-metrics-graphics';
 import { select } from 'd3-selection';
 import Popper from 'popper.js';
+import { changesetUrl } from '../../utils/hg';
+import getDatumMeta from '../../utils/perfherder';
 
 class GraphWithTooltip extends Component {
   static propTypes = {
@@ -37,9 +39,10 @@ class GraphWithTooltip extends Component {
           id={this.state.tooltipId}
           style={{
             display: 'none',
+            borderRadius: '5px',
             minHeight: '32px',
-            minWidth: '100px',
-            padding: '12px',
+            width: '150px',
+            padding: '8px',
             marginBottom: '8px',
             backgroundColor: '#333',
             color: 'white',
@@ -57,26 +60,32 @@ class GraphWithTooltip extends Component {
               full_width
               right="60"
               legend={['Firefox', 'Chrome']}
-              mouseover={(d) => {
+              mouseover={async (d) => {
                 const tooltipEl = select(`#${this.state.tooltipId}`).node();
-                tooltipEl.style.display = 'block';
-                tooltipEl.innerText = `value: ${d.value}`;
+                // XXX: We can probably create a data structure with all this metadata
+                // in componentDidMount
+                // There's a flickering happening because of the fetch delaying us
+                const datumMeta = await getDatumMeta(d.push_id);
+                const url = changesetUrl(datumMeta.revision);
+                const link = document.createElement('a');
+                link.href = url;
+                const text = datumMeta.revision.substring(0, 8);
+                link.innerText = text;
+                // NOTE: There are sometimes race conditions so I'm updating
+                // the innerText and appending a child as close as possible to each other
+                tooltipEl.innerText = 'Revision:         ';
+                tooltipEl.appendChild(link);
                 const popper = new Popper(document.documentElement, tooltipEl, { placement: 'top' });
                 popper.reference = select(`#mg-graph-parent-${this.props.uid} .mg-line-rollover-circle`).node();
-                // Depending on how you "enter" the graph with your mouse, you will somehow
-                // make that first line that you hovered over "special".
-                // When you switch from hovering from the first line to the second one you will
-                // notice that the tooltip will stay over the last data point from the
-                // first line that you were hovering over. You can only affect the position
-                // of the tooltip by returning to the first line.
-                // I think the style.opacity should always return 1, however, when we hover over
-                // data points from the second line you will notice that the console prints a 0
-                console.log(popper.reference.style.opacity);
                 popper.update();
+                tooltipEl.style.display = 'block';
               }}
               mouseout={() => {
                 const tooltipEl = select(`#${this.state.tooltipId}`).node();
                 tooltipEl.style.display = 'none';
+                while (tooltipEl.firstChild) {
+                  tooltipEl.removeChild(tooltipEl.firstChild);
+                }
               }}
             />
           )}
