@@ -17,7 +17,7 @@ const prepareData = (benchmarks) => {
   Object.entries(benchmarks).forEach((entry) => {
     const browserKey = matchBrowser(entry[0]);
     const { data, perfherderUrl } = entry[1];
-    Object.values(data).sort(sortAlphabetically).forEach((elem) => {
+    Object.values(data).sort(sortAlphabetically).forEach(async (elem) => {
       const { meta } = elem;
       const subbenchmarkData = elem.data;
       if (!newData.benchmark) {

@@ -3,6 +3,8 @@ import { Component } from 'react';
 import MetricsGraphics from 'react-metrics-graphics';
 import { curveLinear } from 'd3';
 import Popper from 'popper.js';
+import { changesetUrl } from '../../utils/hg';
+import getDatumMeta from '../../utils/perfherder';
 
 class GraphWithTooltip extends Component {
   static propTypes = {
@@ -19,12 +21,21 @@ class GraphWithTooltip extends Component {
   }
 
   componentDidMount() {
-    const tooltipEl = document.querySelector(`#${this.state.tooltipId}`);
-    tooltipEl.addEventListener('mouseover', () => {
-      tooltipEl.style.display = 'block';
-    });
-    tooltipEl.addEventListener('mouseout', () => {
+    // We only want to clear the tooltip when the mouse leaves the graph
+    // rather than the circle
+    const graphEl = document.querySelector(`#mg-graph-parent-${this.props.uid}`);
+    // https://developer.mozilla.org/en-US/docs/Web/Events/mouseleave
+    // mouseleave does not bubble up
+    graphEl.addEventListener('mouseleave', () => {
+      // NOTE: If you move the mouse over the tooltip you will notice that
+      // the tooltip will cause a weird cycle of calling:
+      // MG OUT, GRAPH OUT, GRAPH leaving and MG mouseover
+      console.log('Mouse GRAPH leaving');
+      const tooltipEl = document.querySelector(`#${this.state.tooltipId}`);
       tooltipEl.style.display = 'none';
+    });
+    graphEl.addEventListener('mouseout', () => {
+      console.log('Mouse GRAPH OUT');
     });
   }
 
@@ -37,10 +48,9 @@ class GraphWithTooltip extends Component {
           id={this.state.tooltipId}
           style={{
             display: 'none',
-            minHeight: '32px',
-            minWidth: '100px',
-            padding: '12px',
-            marginBottom: '8px',
+            borderRadius: '5px',
+            padding: '0.7em',
+            marginBottom: '1em',
             backgroundColor: '#333',
             color: 'white',
             opacity: '0.7',
@@ -58,18 +68,30 @@ class GraphWithTooltip extends Component {
               right="60"
               legend={['Firefox', 'Chrome']}
               interpolate={curveLinear}
-              mouseover={(d) => {
+              mouseover={async (d) => {
+                console.log('Mouse MG mouseover');
                 const tooltipEl = document.querySelector(`#${this.state.tooltipId}`);
-                tooltipEl.style.display = 'block';
-                tooltipEl.innerText = `value: ${d.value}`;
+                const link = document.createElement('a');
+                const datumMeta = await getDatumMeta(d.push_id);
+                const url = changesetUrl(datumMeta.revision);
+                link.href = url;
+                link.innerText = datumMeta.revision.substring(0, 8);
+                while (tooltipEl.firstChild) {
+                  tooltipEl.removeChild(tooltipEl.firstChild);
+                }
+                tooltipEl.innerText = 'Revision: ';
+                tooltipEl.appendChild(link);
                 const popper = new Popper(document.documentElement, tooltipEl, { placement: 'top' });
                 popper.reference = document
                   .querySelector(`#mg-graph-parent-${this.props.uid} .mg-line${d.line_id}.mg-line-rollover-circle`);
                 popper.update();
+                tooltipEl.style.display = 'block';
               }}
               mouseout={() => {
-                const tooltipEl = document.querySelector(`#${this.state.tooltipId}`);
-                tooltipEl.style.display = 'none';
+                console.log('Mouse MG OUT');
+              }}
+              mouseleave={() => {
+                console.log('Mouse MG leaving');
               }}
             />
           )}
