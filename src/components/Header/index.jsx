@@ -34,13 +34,13 @@ const Header = ({
       onSelection={onChange}
       selectedValue={benchmark}
       options={
-        CONFIG.platforms[platform].benchmarks.reduce((res, benchmarkKey) => {
+        CONFIG.platforms[platform].benchmarks.sort().reduce((res, benchmarkKey) => {
           res.push({
             value: benchmarkKey,
             label: BENCHMARKS[benchmarkKey].label,
           });
           return res;
-        }, [])
+        }, [{ value: 'overview', label: 'Overview' }])
       }
     />
   </div>

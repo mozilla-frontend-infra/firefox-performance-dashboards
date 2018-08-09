@@ -1,15 +1,21 @@
 import { Component } from 'react';
 import MetricsGraphics from 'react-metrics-graphics';
 import { curveLinear } from 'd3';
-import { subbenchmarksData } from '@mozilla-frontend-infra/perf-goggles';
 import { withRouter } from 'react-router-dom';
+import { fetchBenchmarkData, subbenchmarksData } from '@mozilla-frontend-infra/perf-goggles';
 import Header from '../../components/Header';
+import Legend from '../../components/Legend';
 import { BENCHMARKS, CONFIG } from '../../config';
 import prepareData from '../../utils/prepareData';
-import './benchmark.css';
+import colorsAndLabels from '../../utils/colorsAndLabels';
+
+const validCombination = (platform, benchmark) => (
+  benchmark === 'overview' ||
+  (CONFIG.platforms[platform] && CONFIG.platforms[platform].benchmarks.includes(benchmark))
+);
 
 const DEFAULT_PLATFORM_SUITE = {
-  benchmark: 'motionmark-animometer',
+  benchmark: 'overview',
   platform: 'win10',
 };
 
@@ -34,7 +40,7 @@ export class Benchmark extends Component {
 
   componentDidMount() {
     const { platform, benchmark } = this.state;
-    if (CONFIG.platforms[platform] && CONFIG.platforms[platform].benchmarks.includes(benchmark)) {
+    if (validCombination(platform, benchmark)) {
       this.fetchData(platform, benchmark);
     } else {
       // eslint-disable-next-line react/no-did-mount-set-state
@@ -56,40 +62,53 @@ export class Benchmark extends Component {
     this.setState({ [event.target.name]: event.target.value });
     let redirection = CONFIG.default.landingPath;
     if (name === 'platform') {
-      redirection = `/${value}/${CONFIG.platforms[value].benchmarks[0]}`;
-      this.setState({ benchmark: CONFIG.platforms[value].benchmarks[0] });
-    } else if (CONFIG.platforms[this.state.platform].benchmarks.includes(value)) {
+      redirection = `/${value}/overview`;
+      this.setState({ platform: value, benchmark: 'overview' });
+    } else if (validCombination(this.state.platform, value)) {
       redirection = `/${this.state.platform}/${value}`;
     } else {
       // In the case the previous benchmark is cannot be chosen for this platform
-      redirection = `/${this.state.platform}/${CONFIG.platforms[value].benchmarks[0]}`;
+      redirection = `/${this.state.platform}/overview`;
     }
     // eslint-disable-next-line react/prop-types
     this.props.history.push(redirection);
   }
 
   async fetchData(platform, benchmark) {
-    const allData = {};
-    await Promise.all(BENCHMARKS[benchmark].compare
-      .map(async (benchmarkOptions) => {
-        allData[benchmarkOptions.suite] = await subbenchmarksData(
-          benchmarkOptions.frameworkId,
-          CONFIG.platforms[platform].platform,
-          benchmarkOptions.suite,
-          benchmarkOptions.buildType,
-        );
-      }));
-    this.setState({ benchmarkData: prepareData(allData) });
+    const benchmarkData = {};
+    if (benchmark === 'overview') {
+      const benchmarksToCompare = CONFIG.platforms[platform].benchmarks;
+      await Promise.all(benchmarksToCompare
+        .map(async (benchmarkKey) => {
+          const comparingBenchmarks = BENCHMARKS[benchmarkKey].compare;
+          await Promise.all(comparingBenchmarks
+            .map(async (benchmarkOptions) => {
+              benchmarkData[benchmarkOptions.suite] = await fetchBenchmarkData(
+                benchmarkOptions.frameworkId,
+                CONFIG.platforms[platform].platform,
+                benchmarkOptions.suite,
+                benchmarkOptions.buildType,
+              );
+              benchmarkData[benchmarkOptions.suite].configUID = benchmarkKey;
+            }));
+        }));
+    } else {
+      await Promise.all(BENCHMARKS[benchmark].compare
+        .map(async (benchmarkOptions) => {
+          benchmarkData[benchmarkOptions.suite] = await subbenchmarksData(
+            benchmarkOptions.frameworkId,
+            CONFIG.platforms[platform].platform,
+            benchmarkOptions.suite,
+            benchmarkOptions.buildType,
+          );
+          benchmarkData[benchmarkOptions.suite].configUID = benchmark;
+        }));
+    }
+    this.setState({ benchmarkData: prepareData(benchmarkData) });
   }
 
   render() {
     const { benchmark, benchmarkData } = this.state;
-    const colors = BENCHMARKS[benchmark] && BENCHMARKS[benchmark].colors
-      ? BENCHMARKS[benchmark].colors
-      : CONFIG.default.colors;
-    const labels = BENCHMARKS[benchmark] && BENCHMARKS[benchmark].labels
-      ? BENCHMARKS[benchmark].labels
-      : CONFIG.default.labels;
 
     return (
       <div>
@@ -97,39 +116,56 @@ export class Benchmark extends Component {
         {benchmarkData && Object.keys(benchmarkData).length > 0 &&
           <div>
             <div>
-              <h3>{BENCHMARKS[benchmark].label}</h3>
-              {Object.entries(benchmarkData.benchmark.urls).map((entry, index) => {
-                const url = entry[1];
+              {benchmark === 'overview' && <h3>Overview</h3>}
+              {benchmark !== 'overview' &&
+                <div>
+                  <h3>{BENCHMARKS[benchmark].label}</h3>
+                  {Object.entries(benchmarkData.benchmark.urls).map((entry, index) => {
+                    const url = entry[1];
+                    const { colors, labels } = colorsAndLabels(benchmark);
+                    return (
+                      <Legend
+                        key={url}
+                        label={labels[index]}
+                        labelColor={colors[index]}
+                      >
+                        <a key={url} href={url} target="_blank" rel="noopener noreferrer">
+                           all subbenchmarks
+                        </a>
+                      </Legend>
+                    );
+                  })}
+                  <hr />
+                </div>
+              }
+            </div>
+            {Object.keys(benchmarkData.subbenchmarks)
+              .sort()
+              .map(key => benchmarkData.subbenchmarks[key])
+              .map(({
+                data, jointUrl, configUID, title,
+              }) => {
+                const { colors, labels } = colorsAndLabels(configUID);
                 return (
-                  <div key={url}>
-                    <span className="legend" style={{ backgroundColor: colors[index] }} />
-                    <span>{labels[index]}: </span>
-                    <a key={url} href={url} target="_blank" rel="noopener noreferrer">all subbenchmarks</a>
+                  <div key={configUID}>
+                    <MetricsGraphics
+                      key={configUID}
+                      title={title}
+                      data={data}
+                      x_accessor="datetime"
+                      y_accessor="value"
+                      min_y_from_data
+                      full_width
+                      right="100"
+                      legend={labels}
+                      colors={colors}
+                      aggregate_rollover
+                      interpolate={curveLinear}
+                    />
+                    <a href={jointUrl} target="_blank" rel="noopener noreferrer">PerfHerder link</a>
                   </div>
                 );
-              })}
-            </div>
-            {Object.values(benchmarkData.subbenchmarks).map(({
-              data, jointUrl, meta, testName,
-            }) => (
-              <div key={testName}>
-                <h3>{testName}</h3>
-                <a href={jointUrl} target="_blank" rel="noopener noreferrer">link</a>
-                <MetricsGraphics
-                  key={meta.test}
-                  data={data}
-                  x_accessor="datetime"
-                  y_accessor="value"
-                  min_y_from_data
-                  full_width
-                  right="90"
-                  legend={labels}
-                  colors={colors}
-                  aggregate_rollover
-                  interpolate={curveLinear}
-                />
-              </div>
-            ))}
+            })}
           </div>
         }
       </div>

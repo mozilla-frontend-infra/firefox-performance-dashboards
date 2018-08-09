@@ -222,7 +222,7 @@ const DEFAULT_SUITES = [
 
 export const CONFIG = {
   default: {
-    landingPath: 'win10/motionmark-animometer',
+    landingPath: 'win10/overview',
     colors: ['#e55525', '#ffcd02'],
     labels: ['Firefox', 'Chrome'],
   },
@@ -233,7 +233,7 @@ export const CONFIG = {
       benchmarks: DEFAULT_SUITES
         .concat([
           'ares6', 'six-speed', 'sunspider-jsbench', 'web-tooling',
-          'unity-webgl', 'wasm-misc']).sort(),
+          'unity-webgl', 'wasm-misc']),
     },
     mac: {
       label: 'Mac OS X',
