@@ -118,9 +118,9 @@
     scroll "^2.0.3"
     warning "^4.0.1"
 
-"@mozilla-frontend-infra/perf-goggles@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@mozilla-frontend-infra/perf-goggles/-/perf-goggles-1.1.0.tgz#671dab20ec7a6a71ce9f5415be40d16e1be27609"
+"@mozilla-frontend-infra/perf-goggles@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@mozilla-frontend-infra/perf-goggles/-/perf-goggles-1.2.0.tgz#f70b796c7ac80c3badde84e88b2ef62b7a01184d"
   dependencies:
     isomorphic-fetch "^2.2.1"
     lodash.isequal "^4.5.0"

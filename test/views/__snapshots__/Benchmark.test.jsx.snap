@@ -101,7 +101,7 @@ exports[`renders correctly 1`] = `
               role="button"
               tabIndex={0}
             >
-              MotionMark Animometer
+              Overview
             </div>
             <input
               autoComplete={undefined}
@@ -114,7 +114,7 @@ exports[`renders correctly 1`] = `
               placeholder={undefined}
               rows={undefined}
               type="hidden"
-              value="motionmark-animometer"
+              value="overview"
             />
             <svg
               aria-hidden="true"
