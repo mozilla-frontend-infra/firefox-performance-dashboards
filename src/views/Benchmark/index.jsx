@@ -17,7 +17,7 @@ export class Benchmark extends Component {
   }
 
   static defaultProps = {
-    benchmark: 'motionmark-animometer',
+    benchmark: 'overview',
     platform: 'win10',
   }
 
@@ -54,21 +54,39 @@ export class Benchmark extends Component {
 
   async fetchData(platform, benchmark) {
     const benchmarkData = {};
-    const benchmarksToCompare = CONFIG[platform].benchmarks[benchmark].compare;
-    await Promise.all(benchmarksToCompare.map(async (benchmarkKey) => {
-      benchmarkData[benchmarkKey] = await fetchBenchmarkData(
-        CONFIG[platform].frameworkId,
-        CONFIG[platform].platform,
-        benchmarkKey,
-        CONFIG[platform].buildType,
-      );
-    }));
+    let benchmarksToCompare;
+    if (benchmark === 'overview') {
+      benchmarksToCompare = Object.values(CONFIG[platform].benchmarks)
+        .map(({ compare }) => compare);
+      await Promise.all(benchmarksToCompare
+        .map(async (comparingBenchmarks) => {
+          await Promise.all(comparingBenchmarks
+            .map(async (benchmarkKey) => {
+              benchmarkData[benchmarkKey] = await fetchBenchmarkData(
+                CONFIG[platform].frameworkId,
+                CONFIG[platform].platform,
+                benchmarkKey,
+                CONFIG[platform].buildType,
+              );
+            }));
+        }));
+    } else {
+      benchmarksToCompare = CONFIG[platform].benchmarks[benchmark].compare;
+      await Promise.all(benchmarksToCompare.map(async (benchmarkKey) => {
+        benchmarkData[benchmarkKey] = await fetchBenchmarkData(
+          CONFIG[platform].frameworkId,
+          CONFIG[platform].platform,
+          benchmarkKey,
+          CONFIG[platform].buildType,
+        );
+      }));
+    }
     this.setState({ benchmarkData: prepareData(benchmarkData) });
   }
 
   render() {
     const { benchmarkData } = this.state;
-    const { platform } = this.props;
+    const { benchmark, platform } = this.props;
 
     return (
       <div>
@@ -76,7 +94,11 @@ export class Benchmark extends Component {
         {benchmarkData && Object.keys(benchmarkData).length > 0 &&
           <div>
             <div>
-              <h3>Overview</h3>
+              <h3>
+                {benchmark !== 'overview' ?
+                  CONFIG[platform].benchmarks[benchmark].label : 'Overview'
+                }
+              </h3>
               {/* // XXX: Move colors to config.js */}
               {Object.keys(benchmarkData.benchmark.urls).map(label => (
                 <Legend
@@ -85,14 +107,15 @@ export class Benchmark extends Component {
                   labelColor={label === 'Firefox' ? '#e55525' : '#ffcd02'}
                 />
               ))}
+              <hr />
             </div>
             {Object.values(benchmarkData.subbenchmarks).map(({
               data, jointUrl, testUid,
             }) => (
               <div key={testUid}>
-                <h3>{CONFIG[platform].benchmarks[testUid].label}</h3>
-                <a href={jointUrl} target="_blank" rel="noopener noreferrer">link</a>
+                <a href={jointUrl} target="_blank" rel="noopener noreferrer">PerfHerder link</a>
                 <MetricsGraphics
+                  title={CONFIG[platform].benchmarks[testUid].label}
                   key={testUid}
                   data={data}
                   x_accessor="datetime"

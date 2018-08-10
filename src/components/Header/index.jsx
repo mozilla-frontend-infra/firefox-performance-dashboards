@@ -37,7 +37,7 @@ const Header = ({
         Object.keys(CONFIG[platform].benchmarks).reduce((res, benchmarkKey) => {
           res.push({ value: benchmarkKey, label: CONFIG[platform].benchmarks[benchmarkKey].label });
           return res;
-        }, [])
+        }, [{ value: 'overview', label: 'Overview' }])
       }
     />
   </div>
