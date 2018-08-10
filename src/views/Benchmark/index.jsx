@@ -4,7 +4,7 @@ import MetricsGraphics from 'react-metrics-graphics';
 import { curveLinear } from 'd3';
 // import { subbenchmarksData } from '@mozilla-frontend-infra/perf-goggles';
 import { withRouter } from 'react-router-dom';
-import { fetchBenchmarkData } from '../../utils/perfherder';
+import { fetchBenchmarkData, subbenchmarksData } from '../../utils/perfherder';
 import Header from '../../components/Header';
 import Legend from '../../components/Legend';
 import CONFIG from '../../config';
@@ -73,7 +73,7 @@ export class Benchmark extends Component {
     } else {
       benchmarksToCompare = CONFIG[platform].benchmarks[benchmark].compare;
       await Promise.all(benchmarksToCompare.map(async (benchmarkKey) => {
-        benchmarkData[benchmarkKey] = await fetchBenchmarkData(
+        benchmarkData[benchmarkKey] = await subbenchmarksData(
           CONFIG[platform].frameworkId,
           CONFIG[platform].platform,
           benchmarkKey,
@@ -111,24 +111,28 @@ export class Benchmark extends Component {
             </div>
             {Object.values(benchmarkData.subbenchmarks).map(({
               data, jointUrl, testUid,
-            }) => (
-              <div key={testUid}>
-                <a href={jointUrl} target="_blank" rel="noopener noreferrer">PerfHerder link</a>
-                <MetricsGraphics
-                  title={CONFIG[platform].benchmarks[testUid].label}
-                  key={testUid}
-                  data={data}
-                  x_accessor="datetime"
-                  y_accessor="value"
-                  min_y_from_data
-                  full_width
-                  right="60"
-                  legend={['Firefox', 'Chrome']}
-                  aggregate_rollover
-                  interpolate={curveLinear}
-                />
-              </div>
-            ))}
+            }) => {
+              const title = CONFIG[platform].benchmarks[testUid] ?
+                CONFIG[platform].benchmarks[testUid].label : testUid;
+              return (
+                <div key={testUid}>
+                  <MetricsGraphics
+                    title={title}
+                    key={testUid}
+                    data={data}
+                    x_accessor="datetime"
+                    y_accessor="value"
+                    min_y_from_data
+                    full_width
+                    right="60"
+                    legend={['Firefox', 'Chrome']}
+                    aggregate_rollover
+                    interpolate={curveLinear}
+                  />
+                  <a href={jointUrl} target="_blank" rel="noopener noreferrer">PerfHerder link</a>
+                </div>
+              );
+            })}
           </div>
         }
       </div>
