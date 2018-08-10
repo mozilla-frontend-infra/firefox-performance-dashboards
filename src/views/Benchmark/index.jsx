@@ -1,10 +1,8 @@
 import PropTypes from 'prop-types';
 import { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import MetricsGraphics from 'react-metrics-graphics';
-
-import { curveLinear } from 'd3';
 import { subbenchmarksData } from '@mozilla-frontend-infra/perf-goggles';
+import GraphWithTooltip from '../../components/GraphWithTooltip';
 import Header from '../../components/Header';
 import CONFIG from '../../config';
 import prepareData from '../../utils/prepareData';
@@ -90,25 +88,16 @@ class Benchmark extends Component {
                 );
               })}
             </div>
-            {Object.values(benchmarkData.subbenchmarks).map(({
-              data, jointUrl, meta, testName,
-            }) => (
-              <div key={testName}>
-                <h3>{testName}</h3>
-                <a href={jointUrl} target="_blank" rel="noopener noreferrer">link</a>
-                <MetricsGraphics
-                  key={meta.test}
-                  data={data}
-                  x_accessor="datetime"
-                  y_accessor="value"
-                  min_y_from_data
-                  full_width
-                  right="60"
-                  legend={['Firefox', 'Chrome']}
-                  aggregate_rollover
-                  interpolate={curveLinear}
-                />
-              </div>
+            {Object.values(benchmarkData.subbenchmarks)
+              .map(({ data, jointUrl, testName }, index) => (
+                <div key={testName}>
+                  <h3>{testName}</h3>
+                  <a href={jointUrl} target="_blank" rel="noopener noreferrer">link</a>
+                  <GraphWithTooltip
+                    data={data}
+                    uid={index.toString()}
+                  />
+                </div>
             ))}
           </div>
         }
