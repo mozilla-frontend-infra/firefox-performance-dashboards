@@ -1,35 +1,36 @@
-import PropTypes from 'prop-types';
 import { Component } from 'react';
-import { withStyles } from '@material-ui/core/styles';
 import MetricsGraphics from 'react-metrics-graphics';
-
 import { curveLinear } from 'd3';
 import { subbenchmarksData } from '@mozilla-frontend-infra/perf-goggles';
+import { withRouter } from 'react-router-dom';
 import Header from '../../components/Header';
 import CONFIG from '../../config';
 import prepareData from '../../utils/prepareData';
 import './benchmark.css';
 
-const styles = () => ({
-  root: {},
-});
-
-class Benchmark extends Component {
-  static propTypes = {
-    classes: PropTypes.shape().isRequired,
-  }
-
+export class Benchmark extends Component {
   constructor(props) {
     super(props);
     this.onChange = this.onChange.bind(this);
+    this.state = {
+      benchmark: 'motionmark-animometer',
+      platform: 'win10',
+    };
+    /* eslint-disable react/prop-types */
+    if (props.match) {
+      this.state = {
+        benchmark: props.match.params.benchmark,
+        platform: props.match.params.platform,
+      };
+    }
+    /* eslint-enable react/prop-types */
   }
 
   state = {
-    platform: 'win10',
-    benchmark: 'motionmark-animometer',
+    benchmarkData: null,
   }
 
-  async componentDidMount() {
+  componentDidMount() {
     const { platform, benchmark } = this.state;
     this.fetchData(platform, benchmark);
   }
@@ -41,26 +42,27 @@ class Benchmark extends Component {
     }
   }
 
-  async onChange(event) {
+  onChange(event) {
     // Clear the plotted graphs
     this.setState({ benchmarkData: null });
-    if (event.target.name === 'platform') {
-      this.setState({
-        benchmark: Object.keys(CONFIG[event.target.value].benchmarks)[0],
-      });
-    }
     this.setState({ [event.target.name]: event.target.value });
+    const redirection = event.target.name === 'platform'
+      ? `/${event.target.value}/motionmark-animometer`
+      : `/${this.state.platform}/${event.target.value}`;
+    // eslint-disable-next-line react/prop-types
+    this.props.history.push(redirection);
   }
 
   async fetchData(platform, benchmark) {
     const allData = {};
-    const benchmarksToCompare = CONFIG[platform].benchmarks[benchmark].compare;
+    const platformConfig = CONFIG.platforms[platform];
+    const benchmarksToCompare = platformConfig.benchmarks[benchmark].compare;
     await Promise.all(benchmarksToCompare.map(async (benchmarkKey) => {
       allData[benchmarkKey] = await subbenchmarksData(
-        CONFIG[platform].frameworkId,
-        CONFIG[platform].platform,
+        platformConfig.frameworkId,
+        platformConfig.platform,
         benchmarkKey,
-        CONFIG[platform].buildType,
+        platformConfig.buildType,
       );
     }));
     this.setState({ benchmarkData: prepareData(allData) });
@@ -70,12 +72,12 @@ class Benchmark extends Component {
     const { benchmark, benchmarkData, platform } = this.state;
 
     return (
-      <div className={this.props.classes.root}>
+      <div>
         <Header onChange={this.onChange} {...this.state} />
         {benchmarkData && Object.keys(benchmarkData).length > 0 &&
           <div>
             <div>
-              <h3>{CONFIG[platform].benchmarks[benchmark].label}</h3>
+              <h3>{CONFIG.platforms[platform].benchmarks[benchmark].label}</h3>
               {Object.entries(benchmarkData.benchmark.urls).map((entry) => {
                 const browserKey = entry[0];
                 const url = entry[1];
@@ -117,4 +119,7 @@ class Benchmark extends Component {
   }
 }
 
-export default withStyles(styles)(Benchmark);
+// We export the class without withRouter() for our tests while
+// the default export includes it. Read more in here:
+// https://github.com/airbnb/enzyme/issues/1112#issuecomment-357278022
+export default withRouter(Benchmark);

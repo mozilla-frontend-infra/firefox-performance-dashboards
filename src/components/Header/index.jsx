@@ -21,8 +21,8 @@ const Header = ({
       onSelection={onChange}
       selectedValue={platform}
       options={
-        Object.keys(CONFIG).reduce((res, platformKey) => {
-          res.push({ value: platformKey, label: CONFIG[platformKey].label });
+        Object.keys(CONFIG.platforms).reduce((res, platformKey) => {
+          res.push({ value: platformKey, label: CONFIG.platforms[platformKey].label });
           return res;
         }, [])
       }
@@ -34,8 +34,11 @@ const Header = ({
       onSelection={onChange}
       selectedValue={benchmark}
       options={
-        Object.keys(CONFIG[platform].benchmarks).reduce((res, benchmarkKey) => {
-          res.push({ value: benchmarkKey, label: CONFIG[platform].benchmarks[benchmarkKey].label });
+        Object.keys(CONFIG.platforms[platform].benchmarks).reduce((res, benchmarkKey) => {
+          res.push({
+            value: benchmarkKey,
+            label: CONFIG.platforms[platform].benchmarks[benchmarkKey].label,
+          });
           return res;
         }, [])
       }
