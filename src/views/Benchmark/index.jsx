@@ -1,26 +1,20 @@
-import PropTypes from 'prop-types';
 import { Component } from 'react';
 import MetricsGraphics from 'react-metrics-graphics';
 import { curveLinear } from 'd3';
 import { subbenchmarksData } from '@mozilla-frontend-infra/perf-goggles';
-import { withRouter } from 'react-router-dom';
+import axios from 'axios';
+import { parse } from 'query-string';
+// import { Redirect } from 'react-router-dom';
 import Header from '../../components/Header';
 import CONFIG from '../../config';
 import prepareData from '../../utils/prepareData';
 import './benchmark.css';
 
-class Benchmark extends Component {
-  static propTypes = {
-    benchmark: PropTypes.string.isRequired,
-    history: PropTypes.shape({
-      push: PropTypes.func.isRequired,
-    }).isRequired,
-    platform: PropTypes.string.isRequired,
-  }
-
+export default class Benchmark extends Component {
   constructor(props) {
     super(props);
     this.onChange = this.onChange.bind(this);
+    this.state = this.queryParams();
   }
 
   state = {
@@ -28,28 +22,34 @@ class Benchmark extends Component {
   }
 
   async componentDidMount() {
-    const { platform, benchmark } = this.props;
+    const { platform, benchmark } = this.queryParams();
     this.fetchData(platform, benchmark);
   }
 
-  componentDidUpdate(prevProps) {
-    const { platform, benchmark } = this.props;
-    if (benchmark !== prevProps.benchmark || platform !== prevProps.platform) {
-      this.fetchData(platform, benchmark);
-    }
-  }
-
   async onChange(event) {
+    event.preventDefault();
     // Clear the plotted graphs
     this.setState({ benchmarkData: null });
-    let redirection;
+    let { platform, benchmark } = this.queryParams();
     if (event.target.name === 'platform') {
+      platform = event.target.value;
       // When changing platforms we should switch to the 'overview' for it
-      redirection = `/?platform=${event.target.value}&benchmark=overview`;
+      // redirection = `/?platform=${event.target.value}&benchmark=overview`;
     } else {
-      redirection = `/?platform=${this.props.platform}&benchmark=${event.target.value}`;
+      benchmark = event.target.value;
+      // redirection = `/?platform=${this.props.platform}&benchmark=${event.target.value}`;
     }
-    this.props.history.push(redirection);
+    const result = await axios.post('/', { platform, benchmark });
+    console.log(result);
+  }
+
+  queryParams() {
+    const {
+      platform = 'win10',
+      benchmark = 'motionmark-animometer', // XXX: Fix this
+      // eslint-disable-next-line react/prop-types
+    } = parse(this.props.location.search);
+    return { platform, benchmark };
   }
 
   async fetchData(platform, benchmark) {
@@ -68,11 +68,15 @@ class Benchmark extends Component {
 
   render() {
     const { benchmarkData } = this.state;
-    const { benchmark, platform } = this.props;
+    const { platform, benchmark } = this.queryParams();
 
     return (
       <div>
-        <Header onChange={this.onChange} {...this.props} />
+        <Header
+          benchmark={benchmark}
+          platform={platform}
+          onChange={this.onChange}
+        />
         {benchmarkData && Object.keys(benchmarkData).length > 0 &&
           <div>
             <div>
@@ -117,5 +121,3 @@ class Benchmark extends Component {
     );
   }
 }
-
-export default withRouter(Benchmark);
