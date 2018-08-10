@@ -28,7 +28,8 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-hot-loader": "^4.3.4",
-    "react-metrics-graphics": "^1.0.6"
+    "react-metrics-graphics": "^1.0.6",
+    "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
     "@neutrinojs/airbnb": "^8.3.0",
