@@ -42,12 +42,9 @@ class Benchmark extends Component {
   async onChange(event) {
     // Clear the plotted graphs
     this.setState({ benchmarkData: null });
-    let redirection;
-    if (event.target.name === 'platform') {
-      redirection = `/?platform=${event.target.value}&benchmark=motionmark-animometer`;
-    } else {
-      redirection = `/?platform=${this.props.platform}&benchmark=${event.target.value}`;
-    }
+    const redirection = event.target.name === 'platform'
+      ? `/?platform=${event.target.value}&benchmark=motionmark-animometer`
+      : `/?platform=${this.props.platform}&benchmark=${event.target.value}`;
     this.props.history.push(redirection);
   }
 
