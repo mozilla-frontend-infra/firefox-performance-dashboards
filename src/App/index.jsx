@@ -1,24 +1,23 @@
-import { parse } from 'query-string';
-import { Redirect, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import Benchmark from '../views/Benchmark';
 import './metricsGraphics.css';
 
 export default () => (
-  <Switch>
-    <Route
-      path="/"
-      render={({ location }) => {
-        const { platform, benchmark } = parse(location.search);
-        if (!platform || !benchmark) {
-          return <Redirect to="/?platform=win10&benchmark=motionmark-animometer" />;
-        }
-        return (
-          <Benchmark
-            platform={platform}
-            benchmark={benchmark}
-          />
-        );
-      }}
-    />
-  </Switch>
+  <BrowserRouter>
+    <Switch>
+      <Route
+        path="/:platform/:benchmark"
+        render={({ match }) => {
+          const { platform, benchmark } = match.params;
+          return (
+            <Benchmark
+              platform={platform}
+              benchmark={benchmark}
+            />
+          );
+        }}
+      />
+      <Redirect to="/win10/motionmark-animometer" />
+    </Switch>
+  </BrowserRouter>
 );

@@ -40,8 +40,8 @@ class Benchmark extends Component {
     // Clear the plotted graphs
     this.setState({ benchmarkData: null });
     const redirection = event.target.name === 'platform'
-      ? `/?platform=${event.target.value}&benchmark=motionmark-animometer`
-      : `/?platform=${this.props.platform}&benchmark=${event.target.value}`;
+      ? `/${event.target.value}/motionmark-animometer`
+      : `/${this.props.platform}/${event.target.value}`;
     // eslint-disable-next-line react/prop-types
     this.props.history.push(redirection);
   }
