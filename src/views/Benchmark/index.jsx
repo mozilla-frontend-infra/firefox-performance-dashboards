@@ -3,13 +3,13 @@ import { Component } from 'react';
 import MetricsGraphics from 'react-metrics-graphics';
 import { curveLinear } from 'd3';
 import { subbenchmarksData } from '@mozilla-frontend-infra/perf-goggles';
-import { withRouter } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import Header from '../../components/Header';
 import CONFIG from '../../config';
 import prepareData from '../../utils/prepareData';
 import './benchmark.css';
 
-class Benchmark extends Component {
+export default class Benchmark extends Component {
   static propTypes = {
     benchmark: PropTypes.string.isRequired,
     platform: PropTypes.string.isRequired,
@@ -29,21 +29,16 @@ class Benchmark extends Component {
     this.fetchData(platform, benchmark);
   }
 
-  componentDidUpdate(prevProps) {
-    const { platform, benchmark } = this.props;
-    if (benchmark !== prevProps.benchmark || platform !== prevProps.platform) {
-      this.fetchData(platform, benchmark);
-    }
-  }
-
   async onChange(event) {
     // Clear the plotted graphs
     this.setState({ benchmarkData: null });
-    const redirection = event.target.name === 'platform'
-      ? `/?platform=${event.target.value}&benchmark=motionmark-animometer`
-      : `/?platform=${this.props.platform}&benchmark=${event.target.value}`;
-    // eslint-disable-next-line react/prop-types
-    this.props.history.push(redirection);
+    let redirection;
+    if (event.target.name === 'platform') {
+      redirection = `/?platform=${event.target.value}&benchmark=motionmark-animometer`;
+    } else {
+      redirection = `/?platform=${this.props.platform}&benchmark=${event.target.value}`;
+    }
+    this.setState({ redirection });
   }
 
   async fetchData(platform, benchmark) {
@@ -61,8 +56,11 @@ class Benchmark extends Component {
   }
 
   render() {
+    if (this.state.redirection) {
+      return <Redirect to={this.state.redirection} />;
+    }
     const { benchmarkData } = this.state;
-    const { benchmark, platform } = this.props;
+    const { platform, benchmark } = this.props;
 
     return (
       <div>
@@ -111,5 +109,3 @@ class Benchmark extends Component {
     );
   }
 }
-
-export default withRouter(Benchmark);
