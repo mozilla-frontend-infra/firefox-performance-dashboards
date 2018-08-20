@@ -21,6 +21,7 @@
   "dependencies": {
     "@material-ui/core": "^1.4.1",
     "@mozilla-frontend-infra/perf-goggles": "^1.1.0",
+    "axios": "^0.18.0",
     "d3": "^5.5.0",
     "metrics-graphics": "^2.15.6",
     "prop-types": "^15.6.2",
@@ -28,7 +29,8 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-hot-loader": "^4.3.4",
-    "react-metrics-graphics": "^1.0.6"
+    "react-metrics-graphics": "^1.0.6",
+    "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
     "@neutrinojs/airbnb": "^8.3.0",
