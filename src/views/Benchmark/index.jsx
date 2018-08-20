@@ -12,9 +12,6 @@ import './benchmark.css';
 class Benchmark extends Component {
   static propTypes = {
     benchmark: PropTypes.string.isRequired,
-    history: PropTypes.shape({
-      push: PropTypes.func.isRequired,
-    }).isRequired,
     platform: PropTypes.string.isRequired,
   }
 
@@ -45,6 +42,7 @@ class Benchmark extends Component {
     const redirection = event.target.name === 'platform'
       ? `/?platform=${event.target.value}&benchmark=motionmark-animometer`
       : `/?platform=${this.props.platform}&benchmark=${event.target.value}`;
+    // eslint-disable-next-line react/prop-types
     this.props.history.push(redirection);
   }
 
