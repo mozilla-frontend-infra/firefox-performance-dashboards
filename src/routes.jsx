@@ -10,7 +10,7 @@ const Routes = () => (
       render={({ location }) => {
         const { platform, benchmark } = parse(location.search);
         if (!platform || !benchmark) {
-          return <Redirect to="/?platform=win10&benchmark=overview" />;
+          return <Redirect to="/?platform=win10&benchmark=motionmark-animometer" />;
         }
         return (
           <Benchmark

@@ -44,8 +44,7 @@ class Benchmark extends Component {
     this.setState({ benchmarkData: null });
     let redirection;
     if (event.target.name === 'platform') {
-      // When changing platforms we should switch to the 'overview' for it
-      redirection = `/?platform=${event.target.value}&benchmark=overview`;
+      redirection = `/?platform=${event.target.value}&benchmark=motionmark-animometer`;
     } else {
       redirection = `/?platform=${this.props.platform}&benchmark=${event.target.value}`;
     }
