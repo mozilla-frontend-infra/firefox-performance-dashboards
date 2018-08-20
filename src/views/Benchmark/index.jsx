@@ -1,22 +1,23 @@
 import PropTypes from 'prop-types';
 import { Component } from 'react';
-import { withStyles } from '@material-ui/core/styles';
 import MetricsGraphics from 'react-metrics-graphics';
-
 import { curveLinear } from 'd3';
 import { subbenchmarksData } from '@mozilla-frontend-infra/perf-goggles';
+import { withRouter } from 'react-router-dom';
 import Header from '../../components/Header';
 import CONFIG from '../../config';
 import prepareData from '../../utils/prepareData';
 import './benchmark.css';
 
-const styles = () => ({
-  root: {},
-});
-
-class Benchmark extends Component {
+export class Benchmark extends Component {
   static propTypes = {
-    classes: PropTypes.shape().isRequired,
+    benchmark: PropTypes.string,
+    platform: PropTypes.string,
+  }
+
+  static defaultProps = {
+    benchmark: 'motionmark-animometer',
+    platform: 'win10',
   }
 
   constructor(props) {
@@ -25,18 +26,17 @@ class Benchmark extends Component {
   }
 
   state = {
-    platform: 'win10',
-    benchmark: 'motionmark-animometer',
+    benchmarkData: null,
   }
 
   async componentDidMount() {
-    const { platform, benchmark } = this.state;
+    const { platform, benchmark } = this.props;
     this.fetchData(platform, benchmark);
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    const { platform, benchmark } = this.state;
-    if (benchmark !== prevState.benchmark || platform !== prevState.platform) {
+  componentDidUpdate(prevProps) {
+    const { platform, benchmark } = this.props;
+    if (benchmark !== prevProps.benchmark || platform !== prevProps.platform) {
       this.fetchData(platform, benchmark);
     }
   }
@@ -44,12 +44,11 @@ class Benchmark extends Component {
   async onChange(event) {
     // Clear the plotted graphs
     this.setState({ benchmarkData: null });
-    if (event.target.name === 'platform') {
-      this.setState({
-        benchmark: Object.keys(CONFIG[event.target.value].benchmarks)[0],
-      });
-    }
-    this.setState({ [event.target.name]: event.target.value });
+    const redirection = event.target.name === 'platform'
+      ? `/${event.target.value}/motionmark-animometer`
+      : `/${this.props.platform}/${event.target.value}`;
+    // eslint-disable-next-line react/prop-types
+    this.props.history.push(redirection);
   }
 
   async fetchData(platform, benchmark) {
@@ -67,11 +66,12 @@ class Benchmark extends Component {
   }
 
   render() {
-    const { benchmark, benchmarkData, platform } = this.state;
+    const { benchmarkData } = this.state;
+    const { benchmark, platform } = this.props;
 
     return (
-      <div className={this.props.classes.root}>
-        <Header onChange={this.onChange} {...this.state} />
+      <div>
+        <Header onChange={this.onChange} {...this.props} />
         {benchmarkData && Object.keys(benchmarkData).length > 0 &&
           <div>
             <div>
@@ -117,4 +117,7 @@ class Benchmark extends Component {
   }
 }
 
-export default withStyles(styles)(Benchmark);
+// We export the class without withRouter() for our tests while
+// the default export includes it. Read more in here:
+// https://github.com/airbnb/enzyme/issues/1112#issuecomment-357278022
+export default withRouter(Benchmark);
