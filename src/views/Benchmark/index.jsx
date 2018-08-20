@@ -9,10 +9,15 @@ import CONFIG from '../../config';
 import prepareData from '../../utils/prepareData';
 import './benchmark.css';
 
-class Benchmark extends Component {
+export class Benchmark extends Component {
   static propTypes = {
-    benchmark: PropTypes.string.isRequired,
-    platform: PropTypes.string.isRequired,
+    benchmark: PropTypes.string,
+    platform: PropTypes.string,
+  }
+
+  static defaultProps = {
+    benchmark: 'motionmark-animometer',
+    platform: 'win10',
   }
 
   constructor(props) {
@@ -112,4 +117,7 @@ class Benchmark extends Component {
   }
 }
 
+// We export the class without withRouter() for our tests while
+// the default export includes it. Read more in here:
+// https://github.com/airbnb/enzyme/issues/1112#issuecomment-357278022
 export default withRouter(Benchmark);
