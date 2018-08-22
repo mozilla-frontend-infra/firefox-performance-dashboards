@@ -91,6 +91,48 @@ export const BENCHMARKS = {
     ],
     label: 'WebAudio',
   },
+  'unity-webgl': {
+    compare: [
+      {
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-unity-webgl-firefox',
+        buildType: 'opt',
+      },
+      {
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-unity-webgl-chrome',
+        buildType: 'opt',
+      },
+    ],
+    label: 'Unity WebGL',
+  },
+  'wasm-misc': {
+    compare: [
+      {
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-wasm-misc-firefox',
+        buildType: 'opt',
+      },
+      {
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-wasm-misc-baseline-firefox',
+        buildType: 'opt',
+      },
+      {
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-wasm-misc-ion-firefox',
+        buildType: 'opt',
+      },
+      {
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-wasm-misc-chrome',
+        buildType: 'opt',
+      },
+    ],
+    colors: ['#e55525', 'red', 'brown', '#ffcd02'],
+    labels: ['Firefox', 'Firefox (baseline)', 'Firefox (Ion)', 'Chrome'],
+    label: 'Wasm Miscellaneous',
+  },
 };
 
 const DEFAULT_SUITES = [
@@ -111,7 +153,7 @@ export const CONFIG = {
     linux64: {
       label: 'Linux 64bit',
       platform: 'linux64',
-      benchmarks: DEFAULT_SUITES,
+      benchmarks: DEFAULT_SUITES.concat('unity-webgl', 'wasm-misc').sort(),
     },
     mac: {
       label: 'Mac OS X',
