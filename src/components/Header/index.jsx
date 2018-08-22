@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Picker from '../../components/Picker';
-import CONFIG from '../../config';
+import { BENCHMARKS, CONFIG } from '../../config';
 
 const styles = () => ({
   root: {
@@ -34,10 +34,10 @@ const Header = ({
       onSelection={onChange}
       selectedValue={benchmark}
       options={
-        Object.keys(CONFIG.platforms[platform].benchmarks).reduce((res, benchmarkKey) => {
+        CONFIG.platforms[platform].benchmarks.reduce((res, benchmarkKey) => {
           res.push({
             value: benchmarkKey,
-            label: CONFIG.platforms[platform].benchmarks[benchmarkKey].label,
+            label: BENCHMARKS[benchmarkKey].label,
           });
           return res;
         }, [])
