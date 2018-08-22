@@ -1,4 +1,5 @@
 const RAPTOR_FRAMEWORK_ID = 10;
+const JSBENCH_FRAMEWORK_ID = 11;
 
 export const BENCHMARKS = {
   'motionmark-animometer': {
@@ -91,6 +92,70 @@ export const BENCHMARKS = {
     ],
     label: 'WebAudio',
   },
+  ares6: {
+    compare: [
+      {
+        frameworkId: JSBENCH_FRAMEWORK_ID,
+        suite: 'ares6-sm',
+        buildType: 'opt',
+      },
+      {
+        frameworkId: JSBENCH_FRAMEWORK_ID,
+        suite: 'ares6-v8',
+        buildType: 'opt',
+      },
+    ],
+    labels: ['SpiderMonkey', 'Chrome v8'],
+    label: 'Ares6',
+  },
+  'six-speed': {
+    compare: [
+      {
+        frameworkId: JSBENCH_FRAMEWORK_ID,
+        suite: 'six-speed-sm',
+        buildType: 'opt',
+      },
+      {
+        frameworkId: JSBENCH_FRAMEWORK_ID,
+        suite: 'six-speed-v8',
+        buildType: 'opt',
+      },
+    ],
+    labels: ['SpiderMonkey', 'Chrome v8'],
+    label: 'Six Speed',
+  },
+  sunspisder: {
+    compare: [
+      {
+        frameworkId: JSBENCH_FRAMEWORK_ID,
+        suite: 'sunspider-sm',
+        buildType: 'opt',
+      },
+      {
+        frameworkId: JSBENCH_FRAMEWORK_ID,
+        suite: 'sunspider-v8',
+        buildType: 'opt',
+      },
+    ],
+    labels: ['SpiderMonkey', 'Chrome v8'],
+    label: 'Sun Spider',
+  },
+  'web-tooling': {
+    compare: [
+      {
+        frameworkId: JSBENCH_FRAMEWORK_ID,
+        suite: 'web-tooling-benchmark-sm',
+        buildType: 'opt',
+      },
+      {
+        frameworkId: JSBENCH_FRAMEWORK_ID,
+        suite: 'web-tooling-benchmark-v8',
+        buildType: 'opt',
+      },
+    ],
+    labels: ['SpiderMonkey', 'Chrome v8'],
+    label: 'Web Tooling Benchmark',
+  },
 };
 
 const DEFAULT_SUITES = [
@@ -111,7 +176,8 @@ export const CONFIG = {
     linux64: {
       label: 'Linux 64bit',
       platform: 'linux64',
-      benchmarks: DEFAULT_SUITES,
+      benchmarks: DEFAULT_SUITES
+        .concat(['ares6', 'six-speed', 'sunspider', 'web-tooling']).sort(),
     },
     mac: {
       label: 'Mac OS X',
