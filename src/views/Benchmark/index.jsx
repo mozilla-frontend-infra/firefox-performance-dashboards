@@ -103,7 +103,7 @@ export class Benchmark extends Component {
                 return (
                   <div key={url}>
                     <span className="legend" style={{ backgroundColor: colors[index] }} />
-                    <span>{labels[index]}:</span>
+                    <span>{labels[index]}: </span>
                     <a key={url} href={url} target="_blank" rel="noopener noreferrer">all subbenchmarks</a>
                   </div>
                 );

@@ -1,8 +1,5 @@
 import { parse } from 'query-string';
 
-const matchBrowser = testName => testName
-  .replace(/raptor.*-(.*)/, (match, firstMatch) => firstMatch);
-
 const sortAlphabetically = (a, b) => {
   if (a.meta.test < b.meta.test) {
     return -1;
@@ -15,18 +12,18 @@ const sortAlphabetically = (a, b) => {
 const prepareData = (benchmarks) => {
   const newData = {};
   Object.entries(benchmarks).forEach((entry) => {
-    const browserKey = matchBrowser(entry[0]);
+    const suite = entry[0];
     const { data, perfherderUrl } = entry[1];
     Object.values(data).sort(sortAlphabetically).forEach((elem) => {
       const { meta } = elem;
       const subbenchmarkData = elem.data;
       if (!newData.benchmark) {
         newData.benchmark = { urls: {} };
-        newData.benchmark.urls[browserKey] = perfherderUrl;
+        newData.benchmark.urls[suite] = perfherderUrl;
         newData.subbenchmarks = {};
       }
-      if (!newData.benchmark.urls[browserKey]) {
-        newData.benchmark.urls[browserKey] = perfherderUrl;
+      if (!newData.benchmark.urls[suite]) {
+        newData.benchmark.urls[suite] = perfherderUrl;
       }
       if (!newData.subbenchmarks[meta.test]) {
         newData.subbenchmarks[meta.test] = {
