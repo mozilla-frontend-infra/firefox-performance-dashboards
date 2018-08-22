@@ -8,14 +8,16 @@ import { BENCHMARKS, CONFIG } from '../../config';
 import prepareData from '../../utils/prepareData';
 import './benchmark.css';
 
+const DEFAULT_PLATFORM_SUITE = {
+  benchmark: 'motionmark-animometer',
+  platform: 'win10',
+};
+
 export class Benchmark extends Component {
   constructor(props) {
     super(props);
     this.onChange = this.onChange.bind(this);
-    this.state = {
-      benchmark: 'motionmark-animometer',
-      platform: 'win10',
-    };
+    this.state = DEFAULT_PLATFORM_SUITE;
     /* eslint-disable react/prop-types */
     if (props.match) {
       this.state = {
@@ -32,7 +34,12 @@ export class Benchmark extends Component {
 
   componentDidMount() {
     const { platform, benchmark } = this.state;
-    this.fetchData(platform, benchmark);
+    if (CONFIG.platforms[platform] && CONFIG.platforms[platform].benchmarks.includes(benchmark)) {
+      this.fetchData(platform, benchmark);
+    } else {
+      // eslint-disable-next-line react/no-did-mount-set-state
+      this.setState(DEFAULT_PLATFORM_SUITE);
+    }
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -45,10 +52,18 @@ export class Benchmark extends Component {
   onChange(event) {
     // Clear the plotted graphs
     this.setState({ benchmarkData: null });
+    const { name, value } = event.target;
     this.setState({ [event.target.name]: event.target.value });
-    const redirection = event.target.name === 'platform'
-      ? `/${event.target.value}/motionmark-animometer`
-      : `/${this.state.platform}/${event.target.value}`;
+    let redirection = CONFIG.default.landingPath;
+    if (name === 'platform') {
+      redirection = `/${value}/${CONFIG.platforms[value].benchmarks[0]}`;
+      this.setState({ benchmark: CONFIG.platforms[value].benchmarks[0] });
+    } else if (CONFIG.platforms[value].benchmarks.includes(value)) {
+      redirection = `/${this.state.platform}/${value}`;
+    } else {
+      // In the case the previous benchmark is cannot be chosen for this platform
+      redirection = `/${this.state.platform}/${CONFIG.platforms[value].benchmarks[0]}`;
+    }
     // eslint-disable-next-line react/prop-types
     this.props.history.push(redirection);
   }
@@ -69,10 +84,10 @@ export class Benchmark extends Component {
 
   render() {
     const { benchmark, benchmarkData } = this.state;
-    const colors = BENCHMARKS[benchmark].colors
+    const colors = BENCHMARKS[benchmark] && BENCHMARKS[benchmark].colors
       ? BENCHMARKS[benchmark].colors
       : CONFIG.default.colors;
-    const labels = BENCHMARKS[benchmark].labels
+    const labels = BENCHMARKS[benchmark] && BENCHMARKS[benchmark].labels
       ? BENCHMARKS[benchmark].labels
       : CONFIG.default.labels;
 
