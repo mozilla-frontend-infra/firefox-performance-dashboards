@@ -104,6 +104,7 @@ const DEFAULT_SUITES = [
 export const CONFIG = {
   default: {
     landingPath: 'win10/motionmark-animometer',
+    colors: ['#e55525', '#ffcd02'],
   },
   platforms: {
     linux64: {
