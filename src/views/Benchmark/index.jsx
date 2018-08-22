@@ -4,7 +4,7 @@ import { curveLinear } from 'd3';
 import { subbenchmarksData } from '@mozilla-frontend-infra/perf-goggles';
 import { withRouter } from 'react-router-dom';
 import Header from '../../components/Header';
-import CONFIG from '../../config';
+import { BENCHMARKS, CONFIG } from '../../config';
 import prepareData from '../../utils/prepareData';
 import './benchmark.css';
 
@@ -55,21 +55,20 @@ export class Benchmark extends Component {
 
   async fetchData(platform, benchmark) {
     const allData = {};
-    const platformConfig = CONFIG.platforms[platform];
-    const benchmarksToCompare = platformConfig.benchmarks[benchmark].compare;
-    await Promise.all(benchmarksToCompare.map(async (benchmarkKey) => {
-      allData[benchmarkKey] = await subbenchmarksData(
-        platformConfig.frameworkId,
-        platformConfig.platform,
-        benchmarkKey,
-        platformConfig.buildType,
-      );
-    }));
+    await Promise.all(BENCHMARKS[benchmark].compare
+      .map(async (benchmarkOptions) => {
+        allData[benchmarkOptions.suite] = await subbenchmarksData(
+          benchmarkOptions.frameworkId,
+          CONFIG.platforms[platform].platform,
+          benchmarkOptions.suite,
+          benchmarkOptions.buildType,
+        );
+      }));
     this.setState({ benchmarkData: prepareData(allData) });
   }
 
   render() {
-    const { benchmark, benchmarkData, platform } = this.state;
+    const { benchmark, benchmarkData } = this.state;
 
     return (
       <div>
@@ -77,7 +76,7 @@ export class Benchmark extends Component {
         {benchmarkData && Object.keys(benchmarkData).length > 0 &&
           <div>
             <div>
-              <h3>{CONFIG.platforms[platform].benchmarks[benchmark].label}</h3>
+              <h3>{BENCHMARKS[benchmark].label}</h3>
               {Object.entries(benchmarkData.benchmark.urls).map((entry) => {
                 const browserKey = entry[0];
                 const url = entry[1];
