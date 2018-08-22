@@ -72,6 +72,9 @@ export class Benchmark extends Component {
     const colors = BENCHMARKS[benchmark].colors
       ? BENCHMARKS[benchmark].colors
       : CONFIG.default.colors;
+    const labels = BENCHMARKS[benchmark].labels
+      ? BENCHMARKS[benchmark].labels
+      : CONFIG.default.labels;
 
     return (
       <div>
@@ -81,13 +84,11 @@ export class Benchmark extends Component {
             <div>
               <h3>{BENCHMARKS[benchmark].label}</h3>
               {Object.entries(benchmarkData.benchmark.urls).map((entry, index) => {
-                const browserKey = entry[0];
                 const url = entry[1];
-                const upperBrowser = browserKey.replace(/^\w/, c => c.toUpperCase());
                 return (
                   <div key={url}>
                     <span className="legend" style={{ backgroundColor: colors[index] }} />
-                    <span>{upperBrowser}:</span>
+                    <span>{labels[index]}:</span>
                     <a key={url} href={url} target="_blank" rel="noopener noreferrer">all subbenchmarks</a>
                   </div>
                 );
@@ -106,8 +107,8 @@ export class Benchmark extends Component {
                   y_accessor="value"
                   min_y_from_data
                   full_width
-                  right="60"
-                  legend={['Firefox', 'Chrome']}
+                  right="90"
+                  legend={labels}
                   colors={colors}
                   aggregate_rollover
                   interpolate={curveLinear}
