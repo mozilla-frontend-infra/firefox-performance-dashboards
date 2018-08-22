@@ -1,4 +1,5 @@
 const RAPTOR_FRAMEWORK_ID = 10;
+const JSBENCH_FRAMEWORK_ID = 11;
 
 export const BENCHMARKS = {
   'motionmark-animometer': {
@@ -133,6 +134,65 @@ export const BENCHMARKS = {
     labels: ['Firefox', 'Firefox (baseline)', 'Firefox (Ion)', 'Chrome'],
     label: 'Wasm Miscellaneous',
   },
+  ares6: {
+    compare: [
+      {
+        frameworkId: JSBENCH_FRAMEWORK_ID,
+        suite: 'ares6-sm',
+        buildType: 'opt',
+      },
+      {
+        frameworkId: JSBENCH_FRAMEWORK_ID,
+        suite: 'ares6-v8',
+        buildType: 'opt',
+      },
+    ],
+    labels: ['SpiderMonkey', 'Chrome v8'],
+    label: 'Ares6 (JS shell)',
+  },
+  'six-speed': {
+    compare: [
+      {
+        frameworkId: JSBENCH_FRAMEWORK_ID,
+        suite: 'six-speed-sm',
+        buildType: 'opt',
+      },
+      {
+        frameworkId: JSBENCH_FRAMEWORK_ID,
+        suite: 'six-speed-v8',
+        buildType: 'opt',
+      },
+    ],
+    labels: ['SpiderMonkey', 'Chrome v8'],
+    label: 'Six Speed (JS shell)',
+  },
+  'sunspider-jsbench': {
+    compare: [
+      {
+        frameworkId: JSBENCH_FRAMEWORK_ID,
+        suite: 'sunspider-sm',
+        buildType: 'opt',
+      },
+    ],
+    labels: ['SpiderMonkey'],
+    label: 'Sun Spider (JS shell)',
+  },
+  'web-tooling': {
+    compare: [
+      {
+        frameworkId: JSBENCH_FRAMEWORK_ID,
+        suite: 'web-tooling-benchmark-sm',
+        buildType: 'opt',
+      },
+      {
+        frameworkId: JSBENCH_FRAMEWORK_ID,
+        suite: 'web-tooling-benchmark-v8',
+        buildType: 'opt',
+      },
+    ],
+    labels: ['SpiderMonkey', 'Chrome v8'],
+    label: 'Web Tooling (JS shell)',
+  },
 };
 
 const DEFAULT_SUITES = [
@@ -140,6 +200,7 @@ const DEFAULT_SUITES = [
   'motionmark-htmlsuite',
   'speedometer',
   'stylebench',
+  'sunspider',
   'webaudio',
 ];
 
@@ -153,7 +214,10 @@ export const CONFIG = {
     linux64: {
       label: 'Linux 64bit',
       platform: 'linux64',
-      benchmarks: DEFAULT_SUITES.concat('unity-webgl', 'wasm-misc').sort(),
+      benchmarks: DEFAULT_SUITES
+        .concat([
+          'ares6', 'six-speed', 'sunspider-jsbench', 'web-tooling',
+          'unity-webgl', 'wasm-misc']).sort(),
     },
     mac: {
       label: 'Mac OS X',
