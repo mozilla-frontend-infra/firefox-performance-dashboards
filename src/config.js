@@ -2,6 +2,21 @@ const RAPTOR_FRAMEWORK_ID = 10;
 const JSBENCH_FRAMEWORK_ID = 11;
 
 export const BENCHMARKS = {
+  'assorted-dom': {
+    compare: [
+      {
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-assorted-dom-firefox',
+        buildType: 'opt',
+      },
+      {
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-assorted-dom-chrome',
+        buildType: 'opt',
+      },
+    ],
+    label: 'Assorted DOM',
+  },
   'motionmark-animometer': {
     compare: [
       {
@@ -196,6 +211,7 @@ export const BENCHMARKS = {
 };
 
 const DEFAULT_SUITES = [
+  'assorted-dom',
   'motionmark-animometer',
   'motionmark-htmlsuite',
   'speedometer',
@@ -222,7 +238,8 @@ export const CONFIG = {
     mac: {
       label: 'Mac OS X',
       platform: 'osx-10-10',
-      benchmarks: DEFAULT_SUITES,
+      benchmarks: DEFAULT_SUITES
+        .filter(e => e !== 'assorted-dom'),
     },
     win7: {
       label: 'Windows 7 32bit',
