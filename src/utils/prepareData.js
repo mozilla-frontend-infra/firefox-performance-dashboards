@@ -21,6 +21,12 @@ const sortAlphabetically = (a, b) => {
   return 0;
 };
 
+const datumToChartJSformat = data =>
+  data.map(({ datetime, value }) => ({
+    x: datetime,
+    y: value,
+  }));
+
 // This function overlays data from different browsers
 const prepareData = (benchmarks) => {
   const newData = { config: {}, subbenchmarks: {} };
@@ -44,16 +50,19 @@ const prepareData = (benchmarks) => {
       const uid = meta.test ? meta.test : configUID;
       if (!newData.subbenchmarks[uid]) {
         newData.subbenchmarks[uid] = {
-          colors,
-          data: [],
-          labels,
+          chartJsData: {
+            datasets: [],
+          },
           meta: {},
           configUID,
+          title: meta.test ? meta.test : BENCHMARKS[configUID].label,
         };
-        newData.subbenchmarks[uid].title = meta.test
-          ? meta.test : BENCHMARKS[configUID].label;
       }
-      newData.subbenchmarks[uid].data.push(data);
+      newData.subbenchmarks[uid].chartJsData.datasets.push({
+        label: BENCHMARKS[configUID].compare[suite].label,
+        backgroundColor: BENCHMARKS[configUID].compare[suite].color,
+        data: datumToChartJSformat(data),
+      });
 
       if (!newData.subbenchmarks[uid].jointUrl) {
         newData.subbenchmarks[uid].jointUrl = meta.url;

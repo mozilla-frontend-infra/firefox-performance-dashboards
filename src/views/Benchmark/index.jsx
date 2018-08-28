@@ -1,6 +1,5 @@
 import { Component } from 'react';
-import MetricsGraphics from 'react-metrics-graphics';
-import { curveLinear } from 'd3';
+import Chart from 'react-chartjs-2';
 import { withRouter } from 'react-router-dom';
 import { fetchBenchmarkData, subbenchmarksData } from '@mozilla-frontend-infra/perf-goggles';
 import Header from '../../components/Header';
@@ -117,7 +116,7 @@ export class Benchmark extends Component {
         {benchmarkData && Object.keys(benchmarkData).length > 0 &&
           <div>
             <div>
-              {benchmark === 'overview' && <h3>Overview</h3>}
+              {benchmark === 'overview' && <h1>Overview</h1>}
               {benchmark !== 'overview' &&
                 <div>
                   <h3>{BENCHMARKS[benchmark].label}</h3>
@@ -142,25 +141,34 @@ export class Benchmark extends Component {
               .sort()
               .map(key => benchmarkData.subbenchmarks[key])
               .map(({
-                data, jointUrl, title, colors, labels,
+                chartJsData, jointUrl, configUID, title,
               }) => (
-                <div key={title}>
-                  <MetricsGraphics
-                    title={title}
-                    data={data}
-                    x_accessor="datetime"
-                    y_accessor="value"
-                    min_y_from_data
-                    full_width
-                    right="100"
-                    legend={labels}
-                    colors={colors}
-                    aggregate_rollover
-                    interpolate={curveLinear}
+                <div key={title} >
+                  <h2>{title}</h2>
+                  <Chart
+                    key={configUID}
+                    type="scatter"
+                    data={chartJsData}
+                    height={200}
+                    options={{
+                      maintainAspectRatio: false,
+                      scales: {
+                        xAxes: [
+                          {
+                            type: 'time',
+                            time: {
+                                displayFormats: {
+                                  hour: 'MMM D',
+                                },
+                            },
+                          },
+                        ],
+                      },
+                    }}
                   />
                   <a href={jointUrl} target="_blank" rel="noopener noreferrer">PerfHerder link</a>
                 </div>
-              ))}
+                ))}
           </div>
         }
       </div>
