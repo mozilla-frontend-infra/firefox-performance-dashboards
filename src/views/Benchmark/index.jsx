@@ -7,7 +7,6 @@ import Header from '../../components/Header';
 import Legend from '../../components/Legend';
 import { BENCHMARKS, CONFIG } from '../../config';
 import prepareData from '../../utils/prepareData';
-import colorsAndLabels from '../../utils/colorsAndLabels';
 
 const validCombination = (platform, benchmark) => (
   benchmark === 'overview' ||
@@ -120,21 +119,19 @@ export class Benchmark extends Component {
               {benchmark !== 'overview' &&
                 <div>
                   <h3>{BENCHMARKS[benchmark].label}</h3>
-                  {Object.entries(benchmarkData.benchmark.urls).map((entry, index) => {
-                    const url = entry[1];
-                    const { colors, labels } = colorsAndLabels(benchmark);
-                    return (
-                      <Legend
-                        key={url}
-                        label={labels[index]}
-                        labelColor={colors[index]}
-                      >
-                        <a key={url} href={url} target="_blank" rel="noopener noreferrer">
-                           all subbenchmarks
-                        </a>
-                      </Legend>
-                    );
-                  })}
+                  {Object.values(benchmarkData.config).map(({
+                    color, label, suite, url,
+                  }) => (
+                    <Legend
+                      key={suite}
+                      label={label}
+                      labelColor={color}
+                    >
+                      <a key={url} href={url} target="_blank" rel="noopener noreferrer">
+                         all subbenchmarks
+                      </a>
+                    </Legend>
+                    ))}
                   <hr />
                 </div>
               }
@@ -143,28 +140,25 @@ export class Benchmark extends Component {
               .sort()
               .map(key => benchmarkData.subbenchmarks[key])
               .map(({
-                data, jointUrl, configUID, title,
-              }) => {
-                const { colors, labels } = colorsAndLabels(configUID);
-                return (
-                  <div key={title}>
-                    <MetricsGraphics
-                      title={title}
-                      data={data}
-                      x_accessor="datetime"
-                      y_accessor="value"
-                      min_y_from_data
-                      full_width
-                      right="100"
-                      legend={labels}
-                      colors={colors}
-                      aggregate_rollover
-                      interpolate={curveLinear}
-                    />
-                    <a href={jointUrl} target="_blank" rel="noopener noreferrer">PerfHerder link</a>
-                  </div>
-                );
-            })}
+                data, jointUrl, title, colors, labels,
+              }) => (
+                <div key={title}>
+                  <MetricsGraphics
+                    title={title}
+                    data={data}
+                    x_accessor="datetime"
+                    y_accessor="value"
+                    min_y_from_data
+                    full_width
+                    right="100"
+                    legend={labels}
+                    colors={colors}
+                    aggregate_rollover
+                    interpolate={curveLinear}
+                  />
+                  <a href={jointUrl} target="_blank" rel="noopener noreferrer">PerfHerder link</a>
+                </div>
+              ))}
           </div>
         }
       </div>
