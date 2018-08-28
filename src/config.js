@@ -158,21 +158,21 @@ export const BENCHMARKS = {
     compare: {
       'raptor-wasm-misc-firefox': {
         color: '#e55525',
-        label: 'Firefox',
+        label: 'Firefox (tiering)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-misc-firefox',
         buildType: 'opt',
       },
       'raptor-wasm-misc-baseline-firefox': {
         color: 'red',
-        label: 'Firefox (baseline)',
+        label: 'Firefox (wasm-baseline)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-misc-baseline-firefox',
         buildType: 'opt',
       },
       'raptor-wasm-misc-ion-firefox': {
         color: 'brown',
-        label: 'Firefox (Ion)',
+        label: 'Firefox (wasm-ion)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-misc-ion-firefox',
         buildType: 'opt',
@@ -186,8 +186,8 @@ export const BENCHMARKS = {
       },
     },
     colors: ['#e55525', 'red', 'brown', '#ffcd02'],
-    labels: ['Firefox', 'Firefox (baseline)', 'Firefox (Ion)', 'Chrome'],
-    label: 'Wasm Miscellaneous',
+    labels: ['Firefox (tiering)', 'Firefox (wasm-baseline)', 'Firefox (wasm-ion)', 'Chrome'],
+    label: 'WebAssembly Embenchen',
   },
   ares6: {
     compare: {
