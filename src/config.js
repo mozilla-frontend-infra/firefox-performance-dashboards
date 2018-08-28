@@ -146,8 +146,8 @@ export const BENCHMARKS = {
       },
     ],
     colors: ['#e55525', 'red', 'brown', '#ffcd02'],
-    labels: ['Firefox', 'Firefox (baseline)', 'Firefox (Ion)', 'Chrome'],
-    label: 'Wasm Miscellaneous',
+    labels: ['Firefox (tiering)', 'Firefox (wasm-baseline)', 'Firefox (wasm-ion)', 'Chrome'],
+    label: 'WebAssembly Embenchen',
   },
   ares6: {
     compare: [
