@@ -141,7 +141,7 @@ export class Benchmark extends Component {
               .sort()
               .map(key => benchmarkData.subbenchmarks[key])
               .map(({
-                chartJsData, jointUrl, configUID, title,
+                chartJsData, jointUrl, configUID, inverseYaxis = false, title,
               }) => (
                 <div key={title} >
                   <h2>{title}</h2>
@@ -160,6 +160,13 @@ export class Benchmark extends Component {
                                 displayFormats: {
                                   hour: 'MMM D',
                                 },
+                            },
+                          },
+                        ],
+                        yAxes: [
+                          {
+                            ticks: {
+                              reverse: inverseYaxis,
                             },
                           },
                         ],

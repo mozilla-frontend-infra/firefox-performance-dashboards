@@ -63,6 +63,7 @@ const prepareData = (benchmarks) => {
         backgroundColor: BENCHMARKS[configUID].compare[suite].color,
         data: datumToChartJSformat(data),
       });
+      newData.subbenchmarks[uid].inverseYaxis = (meta.lower_is_better === false);
 
       if (!newData.subbenchmarks[uid].jointUrl) {
         newData.subbenchmarks[uid].jointUrl = meta.url;
