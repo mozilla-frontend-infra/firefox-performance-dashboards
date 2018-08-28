@@ -2,7 +2,6 @@ import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 // eslint-disable-next-line import/no-named-as-default
 import Benchmark from '../views/Benchmark';
 import { CONFIG } from '../config';
-import './metricsGraphics.css';
 
 export default () => (
   <BrowserRouter>
