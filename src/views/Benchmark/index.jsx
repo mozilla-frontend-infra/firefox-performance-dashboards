@@ -147,9 +147,8 @@ export class Benchmark extends Component {
               }) => {
                 const { colors, labels } = colorsAndLabels(configUID);
                 return (
-                  <div key={configUID}>
+                  <div key={title}>
                     <MetricsGraphics
-                      key={configUID}
                       title={title}
                       data={data}
                       x_accessor="datetime"
