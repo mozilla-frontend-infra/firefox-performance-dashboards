@@ -1,4 +1,5 @@
 import { parse } from 'query-string';
+import colorsAndLabels from './colorsAndLabels';
 import { BENCHMARKS } from '../config';
 
 const sortAlphabetically = (a, b) => {
@@ -14,26 +15,29 @@ const sortAlphabetically = (a, b) => {
 
 // This function overlays data from different browsers
 const prepareData = (benchmarks) => {
-  const newData = {};
-  Object.entries(benchmarks).forEach((entry) => {
-    const suite = entry[0];
+  const newData = { config: {}, subbenchmarks: {} };
+  Object.entries(benchmarks).forEach((entry, suiteIndex) => {
+    const suite = entry[0]; // e.g. raptor-assorted-dom-chrome
     const { data, configUID, perfherderUrl } = entry[1];
+    const { colors, labels } = colorsAndLabels(configUID);
+    if (!newData.config[suite]) {
+      newData.config[suite] = {
+        color: colors[suiteIndex],
+        label: labels[suiteIndex],
+        url: perfherderUrl,
+        suite,
+      };
+    }
     Object.values(data).sort(sortAlphabetically).forEach((elem) => {
       const { meta } = elem;
       const dataPoints = elem.data;
-      if (!newData.benchmark) {
-        newData.benchmark = { urls: {} };
-        newData.benchmark.urls[suite] = perfherderUrl;
-        newData.subbenchmarks = {};
-      }
-      if (!newData.benchmark.urls[suite]) {
-        newData.benchmark.urls[suite] = perfherderUrl;
-      }
       // A parent benchmark does not have meta.test
       const uid = meta.test ? meta.test : configUID;
       if (!newData.subbenchmarks[uid]) {
         newData.subbenchmarks[uid] = {
+          colors,
           data: [dataPoints],
+          labels,
           meta: {},
           configUID,
         };
