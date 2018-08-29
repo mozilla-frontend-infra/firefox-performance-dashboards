@@ -79,9 +79,10 @@ export class Benchmark extends Component {
       const benchmarksToCompare = CONFIG.platforms[platform].benchmarks;
       await Promise.all(benchmarksToCompare
         .map(async (benchmarkKey) => {
-          const comparingBenchmarks = BENCHMARKS[benchmarkKey].compare;
+          const comparingBenchmarks = Object.keys(BENCHMARKS[benchmarkKey].compare);
           await Promise.all(comparingBenchmarks
-            .map(async (benchmarkOptions) => {
+            .map(async (modeKey) => {
+              const benchmarkOptions = BENCHMARKS[benchmarkKey].compare[modeKey];
               benchmarkData[benchmarkOptions.suite] = await fetchBenchmarkData(
                 benchmarkOptions.frameworkId,
                 CONFIG.platforms[platform].platform,
@@ -92,8 +93,9 @@ export class Benchmark extends Component {
             }));
         }));
     } else {
-      await Promise.all(BENCHMARKS[benchmark].compare
-        .map(async (benchmarkOptions) => {
+      await Promise.all(Object.keys(BENCHMARKS[benchmark].compare)
+        .map(async (modeKey) => {
+          const benchmarkOptions = BENCHMARKS[benchmark].compare[modeKey];
           benchmarkData[benchmarkOptions.suite] = await subbenchmarksData(
             benchmarkOptions.frameworkId,
             CONFIG.platforms[platform].platform,

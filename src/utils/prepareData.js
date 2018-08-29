@@ -1,6 +1,14 @@
 import { parse } from 'query-string';
-import colorsAndLabels from './colorsAndLabels';
-import { BENCHMARKS } from '../config';
+import { CONFIG, BENCHMARKS } from '../config';
+
+const colorsAndLabels = configUID => ({
+  colors: BENCHMARKS[configUID].colors
+    ? BENCHMARKS[configUID].colors
+    : CONFIG.default.colors,
+  labels: BENCHMARKS[configUID].labels
+    ? BENCHMARKS[configUID].labels
+    : CONFIG.default.labels,
+});
 
 const sortAlphabetically = (a, b) => {
   const aValue = a.meta.test || a.meta.suite;
@@ -16,9 +24,10 @@ const sortAlphabetically = (a, b) => {
 // This function overlays data from different browsers
 const prepareData = (benchmarks) => {
   const newData = { config: {}, subbenchmarks: {} };
+  // We're iterating through each mode
   Object.entries(benchmarks).forEach((entry, suiteIndex) => {
     const suite = entry[0]; // e.g. raptor-assorted-dom-chrome
-    const { data, configUID, perfherderUrl } = entry[1];
+    const { configUID, perfherderUrl } = entry[1];
     const { colors, labels } = colorsAndLabels(configUID);
     if (!newData.config[suite]) {
       newData.config[suite] = {
@@ -28,24 +37,24 @@ const prepareData = (benchmarks) => {
         suite,
       };
     }
-    Object.values(data).sort(sortAlphabetically).forEach((elem) => {
-      const { meta } = elem;
-      const dataPoints = elem.data;
+    // We're either iterating through each test
+    // or through an array of 1 representing the overview score
+    Object.values(entry[1].data).sort(sortAlphabetically).forEach(({ data, meta }) => {
       // A parent benchmark does not have meta.test
       const uid = meta.test ? meta.test : configUID;
       if (!newData.subbenchmarks[uid]) {
         newData.subbenchmarks[uid] = {
           colors,
-          data: [dataPoints],
+          data: [],
           labels,
           meta: {},
           configUID,
         };
         newData.subbenchmarks[uid].title = meta.test
           ? meta.test : BENCHMARKS[configUID].label;
-      } else {
-        newData.subbenchmarks[uid].data.push(dataPoints);
       }
+      newData.subbenchmarks[uid].data.push(data);
+
       if (!newData.subbenchmarks[uid].jointUrl) {
         newData.subbenchmarks[uid].jointUrl = meta.url;
       } else {
