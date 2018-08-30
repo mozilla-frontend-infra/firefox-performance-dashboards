@@ -21,6 +21,17 @@ const sortAlphabetically = (a, b) => {
   return 0;
 };
 
+const sortByLabel = (a, b) => {
+  const aValue = BENCHMARKS[a[1].configUID].compare[a[0]].label;
+  const bValue = BENCHMARKS[b[1].configUID].compare[b[0]].label;
+  if (aValue > bValue) {
+    return -1;
+  } else if (aValue < bValue) {
+    return 1;
+  }
+  return 0;
+};
+
 const dataToChartJSformat = data =>
   data.map(({ datetime, value }) => ({
     x: datetime,
@@ -31,7 +42,7 @@ const dataToChartJSformat = data =>
 const prepareData = (benchmarks) => {
   const newData = { config: {}, subbenchmarks: {} };
   // We're iterating through each mode
-  Object.entries(benchmarks).forEach((entry, suiteIndex) => {
+  Object.entries(benchmarks).sort(sortByLabel).forEach((entry, suiteIndex) => {
     const suite = entry[0]; // e.g. raptor-assorted-dom-chrome
     const { configUID, perfherderUrl } = entry[1];
     const { colors, labels } = colorsAndLabels(configUID);
