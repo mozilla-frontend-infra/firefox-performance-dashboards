@@ -276,7 +276,7 @@ const DEFAULT_SUITES = [
 
 export const CONFIG = {
   default: {
-    landingPath: 'win10/overview',
+    landingPath: '/win10/overview',
     colors: ['#e55525', '#ffcd02'],
     labels: ['Firefox', 'Chrome'],
   },

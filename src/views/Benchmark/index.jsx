@@ -1,97 +1,48 @@
 import { Component } from 'react';
-import { withRouter } from 'react-router-dom';
-import Header from '../../components/Header';
+import PropTypes from 'prop-types';
 import Graphs from '../../components/Graphs';
-import { CONFIG } from '../../config';
 import fetchData from '../../utils/fetchData';
+import { BENCHMARKS } from '../../config';
 
-const validCombination = (platform, benchmark) => (
-  benchmark === 'overview' ||
-  (CONFIG.platforms[platform] && CONFIG.platforms[platform].benchmarks.includes(benchmark))
-);
-
-const DEFAULT_PLATFORM_SUITE = {
-  benchmark: 'overview',
-  platform: 'win10',
-};
-
-export class Benchmark extends Component {
-  constructor(props) {
-    super(props);
-    this.onChange = this.onChange.bind(this);
-    this.state = DEFAULT_PLATFORM_SUITE;
-    /* eslint-disable react/prop-types */
-    if (props.match) {
-      this.state = {
-        benchmark: props.match.params.benchmark,
-        platform: props.match.params.platform,
-      };
-    }
-    /* eslint-enable react/prop-types */
+class Benchmark extends Component {
+  static propTypes = {
+    benchmark: PropTypes.string.isRequired,
+    platform: PropTypes.string.isRequired,
   }
 
   state = {
-    benchmarkData: null,
+    benchmarkData: {},
   }
 
   componentDidMount() {
-    const { platform, benchmark } = this.state;
-    if (validCombination(platform, benchmark)) {
-      this.fetchData(platform, benchmark);
-    } else {
-      // eslint-disable-next-line react/no-did-mount-set-state
-      this.setState(DEFAULT_PLATFORM_SUITE);
-    }
+    const { platform, benchmark } = this.props;
+    this.fetchData(platform, benchmark);
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    const { platform, benchmark } = this.state;
-    if (benchmark !== prevState.benchmark || platform !== prevState.platform) {
+  componentDidUpdate(prevProps) {
+    const { platform, benchmark } = this.props;
+    if (benchmark !== prevProps.benchmark || platform !== prevProps.platform) {
       this.fetchData(platform, benchmark);
     }
-  }
-
-  onChange(event) {
-    // Clear the plotted graphs
-    this.setState({ benchmarkData: null });
-    const { name, value } = event.target;
-    this.setState({ [event.target.name]: event.target.value });
-    let redirection = CONFIG.default.landingPath;
-    if (name === 'platform') {
-      redirection = `/${value}/overview`;
-      this.setState({ platform: value, benchmark: 'overview' });
-    } else if (validCombination(this.state.platform, value)) {
-      redirection = `/${this.state.platform}/${value}`;
-    } else {
-      // In the case the previous benchmark is cannot be chosen for this platform
-      redirection = `/${this.state.platform}/overview`;
-    }
-    // eslint-disable-next-line react/prop-types
-    this.props.history.push(redirection);
   }
 
   async fetchData(platform, benchmark) {
-    this.setState({ benchmarkData: fetchData(platform, benchmark) });
+    this.setState({ benchmarkData: {} });
+    this.setState({ benchmarkData: await fetchData(platform, benchmark) });
   }
 
   render() {
-    const { benchmark, benchmarkData } = this.state;
+    const { benchmarkData } = this.state;
+    const label = this.props.benchmark === 'overview'
+      ? 'Overview' : BENCHMARKS[this.props.benchmark].label;
 
-    return (
-      <div>
-        <Header onChange={this.onChange} {...this.state} />
-        {benchmarkData && Object.keys(benchmarkData).length > 0 &&
-          <Graphs
-            benchmark={benchmark}
-            benchmarkData={benchmarkData}
-          />
-        }
-      </div>
+    return (Object.keys(benchmarkData).length > 0 &&
+      <Graphs
+        topTitle={label}
+        benchmarkData={benchmarkData}
+      />
     );
   }
 }
 
-// We export the class without withRouter() for our tests while
-// the default export includes it. Read more in here:
-// https://github.com/airbnb/enzyme/issues/1112#issuecomment-357278022
-export default withRouter(Benchmark);
+export default Benchmark;
