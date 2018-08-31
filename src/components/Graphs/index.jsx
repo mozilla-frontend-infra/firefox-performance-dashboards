@@ -1,18 +1,16 @@
 import PropTypes from 'prop-types';
 import Legend from '../../components/Legend';
 import Chart from '../../components/Chart';
-import { BENCHMARKS } from '../../config';
 
-const Graphs = ({ benchmark, benchmarkData }) => (
+const Graphs = ({ benchmarkData, topTitle }) => (
   <div>
     <div>
-      {benchmark === 'overview' && <h1>Overview</h1>}
-      {benchmark !== 'overview' &&
-        <div>
-          <h1>{BENCHMARKS[benchmark].label}</h1>
-          {Object.values(benchmarkData.config).map(({
-            color, label, suite, url,
-          }) => (
+      <h1>{topTitle}</h1>
+      {topTitle !== 'Overview' &&
+        Object.values(benchmarkData.config).map(({
+          color, label, suite, url,
+        }) => (
+          label &&
             <Legend
               key={suite}
               label={label}
@@ -22,9 +20,7 @@ const Graphs = ({ benchmark, benchmarkData }) => (
                  all subbenchmarks
               </a>
             </Legend>
-            ))}
-          <hr />
-        </div>
+        ))
       }
     </div>
     {Object.keys(benchmarkData.subbenchmarks)
@@ -43,8 +39,8 @@ const Graphs = ({ benchmark, benchmarkData }) => (
 );
 
 Graphs.propTypes = {
-  benchmark: PropTypes.string.isRequired,
   benchmarkData: PropTypes.shape({}).isRequired,
+  topTitle: PropTypes.string.isRequired,
 };
 
 export default Graphs;

@@ -10,7 +10,7 @@ const styles = () => ({
   },
 });
 
-const Header = ({
+const Pickers = ({
   classes, benchmark, onChange, platform,
 }) => (
   <div className={classes.root} >
@@ -46,11 +46,11 @@ const Header = ({
   </div>
 );
 
-Header.propTypes = ({
+Pickers.propTypes = ({
   classes: PropTypes.shape().isRequired,
   benchmark: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   platform: PropTypes.string.isRequired,
 });
 
-export default withStyles(styles)(Header);
+export default withStyles(styles)(Pickers);

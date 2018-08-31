@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
 import Chart from 'react-chartjs-2';
 
-const Graphs = ({ configUID, chartJsData }) => (
+const Graphs = ({ chartJsData }) => (
   <Chart
-    key={configUID}
     type="scatter"
     data={chartJsData}
     height={50}
@@ -25,7 +24,6 @@ const Graphs = ({ configUID, chartJsData }) => (
 );
 
 Graphs.propTypes = {
-  configUID: PropTypes.string.isRequired,
   chartJsData: PropTypes.shape({}).isRequired,
 };
 
