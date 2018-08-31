@@ -1,9 +1,8 @@
 import { Component } from 'react';
-import Chart from 'react-chartjs-2';
 import { withRouter } from 'react-router-dom';
 import { fetchBenchmarkData, subbenchmarksData } from '@mozilla-frontend-infra/perf-goggles';
 import Header from '../../components/Header';
-import Legend from '../../components/Legend';
+import Graphs from '../../components/Graphs';
 import { BENCHMARKS, CONFIG } from '../../config';
 import prepareData from '../../utils/prepareData';
 
@@ -114,61 +113,10 @@ export class Benchmark extends Component {
       <div>
         <Header onChange={this.onChange} {...this.state} />
         {benchmarkData && Object.keys(benchmarkData).length > 0 &&
-          <div>
-            <div>
-              {benchmark === 'overview' && <h1>Overview</h1>}
-              {benchmark !== 'overview' &&
-                <div>
-                  <h1>{BENCHMARKS[benchmark].label}</h1>
-                  {Object.values(benchmarkData.config).map(({
-                    color, label, suite, url,
-                  }) => (
-                    <Legend
-                      key={suite}
-                      label={label}
-                      labelColor={color}
-                    >
-                      <a key={url} href={url} target="_blank" rel="noopener noreferrer">
-                         all subbenchmarks
-                      </a>
-                    </Legend>
-                    ))}
-                  <hr />
-                </div>
-              }
-            </div>
-            {Object.keys(benchmarkData.subbenchmarks)
-              .sort()
-              .map(key => benchmarkData.subbenchmarks[key])
-              .map(({
-                chartJsData, jointUrl, configUID, title,
-              }) => (
-                <div key={title}>
-                  <h2>{title}</h2>
-                  <Chart
-                    key={configUID}
-                    type="scatter"
-                    data={chartJsData}
-                    height={50}
-                    options={{
-                      scales: {
-                        xAxes: [
-                          {
-                            type: 'time',
-                            time: {
-                                displayFormats: {
-                                  hour: 'MMM D',
-                                },
-                            },
-                          },
-                        ],
-                      },
-                    }}
-                  />
-                  <a href={jointUrl} target="_blank" rel="noopener noreferrer">PerfHerder link</a>
-                </div>
-              ))}
-          </div>
+          <Graphs
+            benchmark={benchmark}
+            benchmarkData={benchmarkData}
+          />
         }
       </div>
     );
