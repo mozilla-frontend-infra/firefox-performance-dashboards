@@ -2,7 +2,6 @@ import { Component } from 'react';
 import PropTypes from 'prop-types';
 import Graphs from '../../components/Graphs';
 import fetchData from '../../utils/fetchData';
-import { BENCHMARKS } from '../../config';
 
 class Benchmark extends Component {
   static propTypes = {
@@ -33,13 +32,11 @@ class Benchmark extends Component {
 
   render() {
     const { benchmarkData } = this.state;
-    const label = this.props.benchmark === 'overview'
-      ? 'Overview' : BENCHMARKS[this.props.benchmark].label;
 
     return (Object.keys(benchmarkData).length > 0 &&
       <Graphs
-        topTitle={label}
         benchmarkData={benchmarkData}
+        overviewMode={this.props.benchmark === 'overview'}
       />
     );
   }

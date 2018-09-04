@@ -1,14 +1,5 @@
 import { parse } from 'query-string';
-import { CONFIG, BENCHMARKS } from '../config';
-
-const colorsAndLabels = configUID => ({
-  colors: BENCHMARKS[configUID].colors
-    ? BENCHMARKS[configUID].colors
-    : CONFIG.default.colors,
-  labels: BENCHMARKS[configUID].labels
-    ? BENCHMARKS[configUID].labels
-    : CONFIG.default.labels,
-});
+import { BENCHMARKS } from '../config';
 
 const sortAlphabetically = (a, b) => {
   const aValue = a.meta.test || a.meta.suite;
@@ -22,8 +13,8 @@ const sortAlphabetically = (a, b) => {
 };
 
 const sortByLabel = (a, b) => {
-  const aValue = BENCHMARKS[a[1].configUID].compare[a[0]].label;
-  const bValue = BENCHMARKS[b[1].configUID].compare[b[0]].label;
+  const aValue = a[1].label;
+  const bValue = b[1].label;
   if (aValue > bValue) {
     return -1;
   } else if (aValue < bValue) {
@@ -42,14 +33,16 @@ const dataToChartJSformat = data =>
 const prepareData = (benchmarks) => {
   const newData = { topLabelsConfig: {}, graphs: {} };
   // We're iterating through each mode
-  Object.entries(benchmarks).sort(sortByLabel).forEach((entry, suiteIndex) => {
+  Object.entries(benchmarks).sort(sortByLabel).forEach((entry) => {
     const suite = entry[0]; // e.g. raptor-assorted-dom-chrome
-    const { configUID, perfherderUrl } = entry[1];
-    const { colors, labels } = colorsAndLabels(configUID);
-    if (!newData.topLabelsConfig[suite]) {
+    const {
+      color, configUID, label, perfherderUrl,
+    } = entry[1];
+    // It is used when we have labels at the top of the page
+    if (!newData.topLabelsConfig[suite] && !suite.includes('overview')) {
       newData.topLabelsConfig[suite] = {
-        color: colors[suiteIndex],
-        label: labels[suiteIndex],
+        color,
+        label,
         url: perfherderUrl,
         suite,
       };
@@ -58,7 +51,8 @@ const prepareData = (benchmarks) => {
     // or through an array of 1 representing the overview score
     Object.values(entry[1].data).sort(sortAlphabetically).forEach(({ data, meta }) => {
       // A parent benchmark does not have meta.test
-      const uid = meta.test ? meta.test : configUID;
+      const uid = meta.test ? meta.test : `${configUID}-overview`;
+
       if (!newData.graphs[uid]) {
         newData.graphs[uid] = {
           chartJsData: {
@@ -70,8 +64,8 @@ const prepareData = (benchmarks) => {
         };
       }
       newData.graphs[uid].chartJsData.datasets.push({
-        label: BENCHMARKS[configUID].compare[suite].label,
-        backgroundColor: BENCHMARKS[configUID].compare[suite].color,
+        label,
+        backgroundColor: color,
         data: dataToChartJSformat(data),
       });
       // Remove this condition once PerfHerder has been updated
