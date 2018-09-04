@@ -21,6 +21,7 @@ const ChartJSWrapper = ({ chartJsData, inverseYaxis }) => (
         yAxes: [
           {
             ticks: {
+              beginAtZero: true,
               reverse: inverseYaxis,
             },
           },
