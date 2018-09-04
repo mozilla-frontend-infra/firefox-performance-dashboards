@@ -27,11 +27,11 @@ const Graphs = ({ benchmarkData, topTitle }) => (
       .sort()
       .map(key => benchmarkData.subbenchmarks[key])
       .map(({
-        chartJsData, configUID, jointUrl, title,
+        chartJsData, configUID, jointUrl, title, inverseYaxis = false,
       }) => (
         <div key={title}>
           <h2>{title}</h2>
-          <Chart configUID={configUID} chartJsData={chartJsData} />
+          <Chart configUID={configUID} chartJsData={chartJsData} inverseYaxis={inverseYaxis} />
           <a href={jointUrl} target="_blank" rel="noopener noreferrer">PerfHerder link</a>
         </div>
       ))}

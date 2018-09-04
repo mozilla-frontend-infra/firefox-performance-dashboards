@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import Chart from 'react-chartjs-2';
 
-const Graphs = ({ chartJsData }) => (
+const Graphs = ({ chartJsData, inverseYaxis }) => (
   <Chart
     type="scatter"
     data={chartJsData}
@@ -18,6 +18,13 @@ const Graphs = ({ chartJsData }) => (
             },
           },
         ],
+        yAxes: [
+          {
+            ticks: {
+              reverse: inverseYaxis,
+            },
+          },
+        ],
       },
     }}
   />
@@ -25,6 +32,11 @@ const Graphs = ({ chartJsData }) => (
 
 Graphs.propTypes = {
   chartJsData: PropTypes.shape({}).isRequired,
+  inverseYaxis: PropTypes.bool,
+};
+
+Graphs.defaultProps = {
+  inverseYaxis: false,
 };
 
 export default Graphs;
