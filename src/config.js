@@ -1,3 +1,4 @@
+const TALOS_FRAMEWORK_ID = 1;
 const RAPTOR_FRAMEWORK_ID = 10;
 const JSBENCH_FRAMEWORK_ID = 11;
 
@@ -20,6 +21,19 @@ export const BENCHMARKS = {
       },
     },
     label: 'Assorted DOM',
+  },
+  kraken: {
+    compare: {
+      kraken: {
+        color: '#e55525',
+        label: 'Firefox',
+        frameworkId: TALOS_FRAMEWORK_ID,
+        suite: 'kraken',
+        buildType: 'opt',
+        extraOptions: ['e10s', 'stylo'],
+      },
+    },
+    label: 'Kraken',
   },
   'motionmark-animometer': {
     compare: {
@@ -266,6 +280,7 @@ export const BENCHMARKS = {
 
 const DEFAULT_SUITES = [
   'assorted-dom',
+  'kraken',
   'motionmark-animometer',
   'motionmark-htmlsuite',
   'speedometer',
