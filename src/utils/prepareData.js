@@ -74,6 +74,10 @@ const prepareData = (benchmarks) => {
         backgroundColor: BENCHMARKS[configUID].compare[suite].color,
         data: dataToChartJSformat(data),
       });
+      // Remove this condition once PerfHerder has been updated
+      if (configUID !== 'assorted-dom' && configUID !== 'sunspider') {
+        newData.subbenchmarks[uid].inverseYaxis = (meta.lower_is_better === false);
+      }
 
       if (!newData.subbenchmarks[uid].jointUrl) {
         newData.subbenchmarks[uid].jointUrl = meta.url;
