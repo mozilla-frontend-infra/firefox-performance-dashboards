@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import Legend from '../../components/Legend';
-import Chart from '../../components/Chart';
+import ChartJSWrapper from '../../components/ChartJSWrapper';
 
 const Graphs = ({ benchmarkData, topTitle }) => (
   <div>
@@ -27,11 +27,11 @@ const Graphs = ({ benchmarkData, topTitle }) => (
       .sort()
       .map(key => benchmarkData.subbenchmarks[key])
       .map(({
-        chartJsData, configUID, jointUrl, title, inverseYaxis = false,
+        chartJsData, jointUrl, title, inverseYaxis = false,
       }) => (
         <div key={title}>
           <h2>{title}</h2>
-          <Chart configUID={configUID} chartJsData={chartJsData} inverseYaxis={inverseYaxis} />
+          <ChartJSWrapper chartJsData={chartJsData} inverseYaxis={inverseYaxis} />
           <a href={jointUrl} target="_blank" rel="noopener noreferrer">PerfHerder link</a>
         </div>
       ))}
