@@ -12,26 +12,34 @@ const fetchData = async (platform, benchmark) => {
         await Promise.all(comparingBenchmarks
           .map(async (modeKey) => {
             const benchmarkOptions = BENCHMARKS[benchmarkKey].compare[modeKey];
-            benchmarkData[benchmarkOptions.suite] = await fetchBenchmarkData(
+            const data = await fetchBenchmarkData(
               benchmarkOptions.frameworkId,
               CONFIG.platforms[platform].platform,
               benchmarkOptions.suite,
               benchmarkOptions.buildType,
+              benchmarkOptions.extraOptions,
             );
-            benchmarkData[benchmarkOptions.suite].configUID = benchmarkKey;
+            if (data) {
+              benchmarkData[benchmarkOptions.suite] = data;
+              benchmarkData[benchmarkOptions.suite].configUID = benchmarkKey;
+            }
           }));
       }));
   } else {
     await Promise.all(Object.keys(BENCHMARKS[benchmark].compare)
       .map(async (modeKey) => {
         const benchmarkOptions = BENCHMARKS[benchmark].compare[modeKey];
-        benchmarkData[benchmarkOptions.suite] = await subbenchmarksData(
+        const data = await subbenchmarksData(
           benchmarkOptions.frameworkId,
           CONFIG.platforms[platform].platform,
           benchmarkOptions.suite,
           benchmarkOptions.buildType,
+          benchmarkOptions.extraOptions,
         );
-        benchmarkData[benchmarkOptions.suite].configUID = benchmark;
+        if (data) {
+          benchmarkData[benchmarkOptions.suite] = data;
+          benchmarkData[benchmarkOptions.suite].configUID = benchmark;
+        }
       }));
   }
   return prepareData(benchmarkData);
