@@ -18,7 +18,7 @@ const dataToChartJSformat = data =>
     y: value,
   }));
 
-const chartJsOptions = () => ({
+const chartJsOptions = (reverse, scaleLabel) => ({
   scales: {
     xAxes: [
       {
@@ -34,11 +34,25 @@ const chartJsOptions = () => ({
       {
         ticks: {
           beginAtZero: true,
+          reverse,
+        },
+        scaleLabel: {
+          display: true,
+          labelString: scaleLabel,
         },
       },
     ],
   },
 });
+
+const generateChartJsOptions = (configUID, meta) => {
+  // Remove assorted-dom & sunspider once PerfHerder has been updated
+  const reversed = (configUID !== 'assorted-dom' && configUID !== 'sunspider')
+    ? (meta.lower_is_better === false) : false;
+  const scaleLabel = (BENCHMARKS[configUID].scaleLabel)
+    ? BENCHMARKS[configUID].scaleLabel : 'Execution time (ms)';
+  return chartJsOptions(reversed, scaleLabel);
+};
 
 // This function overlays data from different browsers
 const prepareData = (benchmarks) => {
@@ -65,7 +79,7 @@ const prepareData = (benchmarks) => {
       if (!newData.graphs[uid]) {
         newData.graphs[uid] = {
           chartJsData: { datasets: [] },
-          chartJsOptions: chartJsOptions(),
+          chartJsOptions: generateChartJsOptions(configUID, meta),
           jointUrl: meta.url,
           title: meta.test ? meta.test : BENCHMARKS[configUID].label,
         };
@@ -75,11 +89,6 @@ const prepareData = (benchmarks) => {
         backgroundColor: color,
         data: dataToChartJSformat(test.data),
       });
-      // Remove this condition once PerfHerder has been updated
-      if (configUID !== 'assorted-dom' && configUID !== 'sunspider') {
-        newData.graphs[uid].chartJsOptions.scales.yAxes[0].ticks.reverse =
-          (meta.lower_is_better === false);
-      }
 
       if (newData.graphs[uid].jointUrl) {
         // We're joining the different series for each subbenchmark

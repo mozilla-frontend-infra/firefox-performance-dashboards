@@ -18,23 +18,17 @@
       "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1750719,1,10",
       "suite": "raptor-unity-webgl-chrome"
     },
-    "raptor-sunspider-chrome": {
-      "color": "#ffcd02",
-      "label": "Chrome",
-      "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1730498,1,10",
-      "suite": "raptor-sunspider-chrome"
-    },
     "raptor-assorted-dom-chrome": {
       "color": "#ffcd02",
       "label": "Chrome",
       "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1762623,1,10",
       "suite": "raptor-assorted-dom-chrome"
     },
-    "raptor-motionmark-htmlsuite-chrome": {
+    "raptor-sunspider-chrome": {
       "color": "#ffcd02",
       "label": "Chrome",
-      "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1731007,1,10",
-      "suite": "raptor-motionmark-htmlsuite-chrome"
+      "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1730498,1,10",
+      "suite": "raptor-sunspider-chrome"
     },
     "raptor-stylebench-chrome": {
       "color": "#ffcd02",
@@ -42,17 +36,29 @@
       "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1714844,1,10",
       "suite": "raptor-stylebench-chrome"
     },
-    "raptor-speedometer-chrome": {
+    "raptor-motionmark-htmlsuite-chrome": {
       "color": "#ffcd02",
       "label": "Chrome",
-      "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1714897,1,10",
-      "suite": "raptor-speedometer-chrome"
+      "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1731007,1,10",
+      "suite": "raptor-motionmark-htmlsuite-chrome"
     },
     "raptor-motionmark-animometer-chrome": {
       "color": "#ffcd02",
       "label": "Chrome",
       "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1730980,1,10",
       "suite": "raptor-motionmark-animometer-chrome"
+    },
+    "raptor-speedometer-chrome": {
+      "color": "#ffcd02",
+      "label": "Chrome",
+      "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1714897,1,10",
+      "suite": "raptor-speedometer-chrome"
+    },
+    "ares6-v8": {
+      "color": "#ffcd02",
+      "label": "Chrome v8",
+      "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760205,1,11",
+      "suite": "ares6-v8"
     },
     "six-speed-v8": {
       "color": "#ffcd02",
@@ -66,17 +72,29 @@
       "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760218,1,11",
       "suite": "web-tooling-benchmark-v8"
     },
-    "ares6-v8": {
-      "color": "#ffcd02",
-      "label": "Chrome v8",
-      "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760205,1,11",
-      "suite": "ares6-v8"
-    },
     "raptor-speedometer-firefox": {
       "color": "#e55525",
       "label": "Firefox",
       "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1706436,1,10",
       "suite": "raptor-speedometer-firefox"
+    },
+    "raptor-webaudio-firefox": {
+      "color": "#e55525",
+      "label": "Firefox",
+      "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1728907,1,10",
+      "suite": "raptor-webaudio-firefox"
+    },
+    "raptor-assorted-dom-firefox": {
+      "color": "#e55525",
+      "label": "Firefox",
+      "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1762616,1,10",
+      "suite": "raptor-assorted-dom-firefox"
+    },
+    "raptor-stylebench-firefox": {
+      "color": "#e55525",
+      "label": "Firefox",
+      "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1707667,1,10",
+      "suite": "raptor-stylebench-firefox"
     },
     "kraken": {
       "color": "#e55525",
@@ -84,11 +102,17 @@
       "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1648846,1,1",
       "suite": "kraken"
     },
-    "raptor-stylebench-firefox": {
+    "raptor-unity-webgl-firefox": {
       "color": "#e55525",
       "label": "Firefox",
-      "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1707667,1,10",
-      "suite": "raptor-stylebench-firefox"
+      "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1750735,1,10",
+      "suite": "raptor-unity-webgl-firefox"
+    },
+    "raptor-motionmark-animometer-firefox": {
+      "color": "#e55525",
+      "label": "Firefox",
+      "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1707657,1,10",
+      "suite": "raptor-motionmark-animometer-firefox"
     },
     "raptor-motionmark-htmlsuite-firefox": {
       "color": "#e55525",
@@ -101,30 +125,6 @@
       "label": "Firefox",
       "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1730526,1,10",
       "suite": "raptor-sunspider-firefox"
-    },
-    "raptor-motionmark-animometer-firefox": {
-      "color": "#e55525",
-      "label": "Firefox",
-      "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1707657,1,10",
-      "suite": "raptor-motionmark-animometer-firefox"
-    },
-    "raptor-assorted-dom-firefox": {
-      "color": "#e55525",
-      "label": "Firefox",
-      "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1762616,1,10",
-      "suite": "raptor-assorted-dom-firefox"
-    },
-    "raptor-webaudio-firefox": {
-      "color": "#e55525",
-      "label": "Firefox",
-      "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1728907,1,10",
-      "suite": "raptor-webaudio-firefox"
-    },
-    "raptor-unity-webgl-firefox": {
-      "color": "#e55525",
-      "label": "Firefox",
-      "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1750735,1,10",
-      "suite": "raptor-unity-webgl-firefox"
     },
     "raptor-wasm-misc-firefox": {
       "color": "#e55525",
@@ -144,17 +144,17 @@
       "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1764083,1,10",
       "suite": "raptor-wasm-misc-ion-firefox"
     },
-    "six-speed-sm": {
-      "color": "#e55525",
-      "label": "SpiderMonkey",
-      "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760249,1,11",
-      "suite": "six-speed-sm"
-    },
     "sunspider-sm": {
       "color": "#e55525",
       "label": "SpiderMonkey",
       "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760107,1,11",
       "suite": "sunspider-sm"
+    },
+    "six-speed-sm": {
+      "color": "#e55525",
+      "label": "SpiderMonkey",
+      "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760249,1,11",
+      "suite": "six-speed-sm"
     },
     "ares6-sm": {
       "color": "#e55525",
@@ -276,6 +276,10 @@
               "ticks": {
                 "beginAtZero": true,
                 "reverse": false
+              },
+              "scaleLabel": {
+                "display": true,
+                "labelString": "Execution time (ms)"
               }
             }
           ]
@@ -474,6 +478,10 @@
               "ticks": {
                 "beginAtZero": true,
                 "reverse": false
+              },
+              "scaleLabel": {
+                "display": true,
+                "labelString": "Execution time (ms)"
               }
             }
           ]
@@ -588,6 +596,10 @@
               "ticks": {
                 "beginAtZero": true,
                 "reverse": true
+              },
+              "scaleLabel": {
+                "display": true,
+                "labelString": "Score"
               }
             }
           ]
@@ -595,119 +607,6 @@
       },
       "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1750719,1,10&series=mozilla-central,1750719,1,10&series=mozilla-central,1750735,1,10",
       "title": "Unity WebGL"
-    },
-    "sunspider-overview": {
-      "chartJsData": {
-        "datasets": [
-          {
-            "label": "Chrome",
-            "backgroundColor": "#ffcd02",
-            "data": [
-              {
-                "x": "2018-09-05T16:02:03.000Z",
-                "y": 307.6
-              },
-              {
-                "x": "2018-09-05T18:13:29.000Z",
-                "y": 310.14
-              },
-              {
-                "x": "2018-09-05T21:58:50.000Z",
-                "y": 308.86
-              },
-              {
-                "x": "2018-09-05T22:25:44.000Z",
-                "y": 309.68
-              },
-              {
-                "x": "2018-09-06T04:37:07.000Z",
-                "y": 314.34
-              },
-              {
-                "x": "2018-09-06T04:38:16.000Z",
-                "y": 305.98
-              },
-              {
-                "x": "2018-09-06T09:50:12.000Z",
-                "y": 308.66
-              },
-              {
-                "x": "2018-09-06T09:51:47.000Z",
-                "y": 309.48
-              },
-              {
-                "x": "2018-09-06T09:54:17.000Z",
-                "y": 308.7
-              }
-            ]
-          },
-          {
-            "label": "Firefox",
-            "backgroundColor": "#e55525",
-            "data": [
-              {
-                "x": "2018-09-05T16:02:03.000Z",
-                "y": 219
-              },
-              {
-                "x": "2018-09-05T18:13:29.000Z",
-                "y": 218.52
-              },
-              {
-                "x": "2018-09-05T21:58:50.000Z",
-                "y": 218.54
-              },
-              {
-                "x": "2018-09-05T22:25:44.000Z",
-                "y": 217.94
-              },
-              {
-                "x": "2018-09-06T04:37:07.000Z",
-                "y": 216.96
-              },
-              {
-                "x": "2018-09-06T04:38:16.000Z",
-                "y": 219.92
-              },
-              {
-                "x": "2018-09-06T09:50:12.000Z",
-                "y": 218.34
-              },
-              {
-                "x": "2018-09-06T09:51:47.000Z",
-                "y": 217.88
-              },
-              {
-                "x": "2018-09-06T09:54:17.000Z",
-                "y": 218.96
-              }
-            ]
-          }
-        ]
-      },
-      "chartJsOptions": {
-        "scales": {
-          "xAxes": [
-            {
-              "type": "time",
-              "time": {
-                "displayFormats": {
-                  "hour": "MMM D"
-                }
-              }
-            }
-          ],
-          "yAxes": [
-            {
-              "ticks": {
-                "beginAtZero": true
-              }
-            }
-          ]
-        }
-      },
-      "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1730498,1,10&series=mozilla-central,1730498,1,10&series=mozilla-central,1730526,1,10",
-      "title": "SunSpider"
     },
     "assorted-dom-overview": {
       "chartJsData": {
@@ -813,7 +712,12 @@
           "yAxes": [
             {
               "ticks": {
-                "beginAtZero": true
+                "beginAtZero": true,
+                "reverse": false
+              },
+              "scaleLabel": {
+                "display": true,
+                "labelString": "Execution time (ms)"
               }
             }
           ]
@@ -822,7 +726,7 @@
       "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1762623,1,10&series=mozilla-central,1762623,1,10&series=mozilla-central,1762616,1,10",
       "title": "Assorted DOM"
     },
-    "motionmark-htmlsuite-overview": {
+    "sunspider-overview": {
       "chartJsData": {
         "datasets": [
           {
@@ -831,39 +735,39 @@
             "data": [
               {
                 "x": "2018-09-05T16:02:03.000Z",
-                "y": 54.33
+                "y": 307.6
               },
               {
                 "x": "2018-09-05T18:13:29.000Z",
-                "y": 54.22
+                "y": 310.14
               },
               {
                 "x": "2018-09-05T21:58:50.000Z",
-                "y": 54.2
+                "y": 308.86
               },
               {
                 "x": "2018-09-05T22:25:44.000Z",
-                "y": 54.34
+                "y": 309.68
               },
               {
                 "x": "2018-09-06T04:37:07.000Z",
-                "y": 54.54
+                "y": 314.34
               },
               {
                 "x": "2018-09-06T04:38:16.000Z",
-                "y": 54.26
+                "y": 305.98
               },
               {
                 "x": "2018-09-06T09:50:12.000Z",
-                "y": 54.44
+                "y": 308.66
               },
               {
                 "x": "2018-09-06T09:51:47.000Z",
-                "y": 54.29
+                "y": 309.48
               },
               {
                 "x": "2018-09-06T09:54:17.000Z",
-                "y": 54.37
+                "y": 308.7
               }
             ]
           },
@@ -873,39 +777,39 @@
             "data": [
               {
                 "x": "2018-09-05T16:02:03.000Z",
-                "y": 27.27
+                "y": 219
               },
               {
                 "x": "2018-09-05T18:13:29.000Z",
-                "y": 27.16
+                "y": 218.52
               },
               {
                 "x": "2018-09-05T21:58:50.000Z",
-                "y": 27.23
+                "y": 218.54
               },
               {
                 "x": "2018-09-05T22:25:44.000Z",
-                "y": 27.21
+                "y": 217.94
               },
               {
                 "x": "2018-09-06T04:37:07.000Z",
-                "y": 27.25
+                "y": 216.96
               },
               {
                 "x": "2018-09-06T04:38:16.000Z",
-                "y": 27.23
+                "y": 219.92
               },
               {
                 "x": "2018-09-06T09:50:12.000Z",
-                "y": 27.25
+                "y": 218.34
               },
               {
                 "x": "2018-09-06T09:51:47.000Z",
-                "y": 27.23
+                "y": 217.88
               },
               {
                 "x": "2018-09-06T09:54:17.000Z",
-                "y": 27.3
+                "y": 218.96
               }
             ]
           }
@@ -927,14 +831,18 @@
             {
               "ticks": {
                 "beginAtZero": true,
-                "reverse": true
+                "reverse": false
+              },
+              "scaleLabel": {
+                "display": true,
+                "labelString": "Execution time (ms)"
               }
             }
           ]
         }
       },
-      "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1731007,1,10&series=mozilla-central,1731007,1,10&series=mozilla-central,1707740,1,10",
-      "title": "MotionMark HtmlSuite"
+      "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1730498,1,10&series=mozilla-central,1730498,1,10&series=mozilla-central,1730526,1,10",
+      "title": "SunSpider"
     },
     "stylebench-overview": {
       "chartJsData": {
@@ -1042,6 +950,10 @@
               "ticks": {
                 "beginAtZero": true,
                 "reverse": true
+              },
+              "scaleLabel": {
+                "display": true,
+                "labelString": "Execution time (ms)"
               }
             }
           ]
@@ -1049,6 +961,234 @@
       },
       "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1714844,1,10&series=mozilla-central,1714844,1,10&series=mozilla-central,1707667,1,10",
       "title": "StyleBench"
+    },
+    "motionmark-htmlsuite-overview": {
+      "chartJsData": {
+        "datasets": [
+          {
+            "label": "Chrome",
+            "backgroundColor": "#ffcd02",
+            "data": [
+              {
+                "x": "2018-09-05T16:02:03.000Z",
+                "y": 54.33
+              },
+              {
+                "x": "2018-09-05T18:13:29.000Z",
+                "y": 54.22
+              },
+              {
+                "x": "2018-09-05T21:58:50.000Z",
+                "y": 54.2
+              },
+              {
+                "x": "2018-09-05T22:25:44.000Z",
+                "y": 54.34
+              },
+              {
+                "x": "2018-09-06T04:37:07.000Z",
+                "y": 54.54
+              },
+              {
+                "x": "2018-09-06T04:38:16.000Z",
+                "y": 54.26
+              },
+              {
+                "x": "2018-09-06T09:50:12.000Z",
+                "y": 54.44
+              },
+              {
+                "x": "2018-09-06T09:51:47.000Z",
+                "y": 54.29
+              },
+              {
+                "x": "2018-09-06T09:54:17.000Z",
+                "y": 54.37
+              }
+            ]
+          },
+          {
+            "label": "Firefox",
+            "backgroundColor": "#e55525",
+            "data": [
+              {
+                "x": "2018-09-05T16:02:03.000Z",
+                "y": 27.27
+              },
+              {
+                "x": "2018-09-05T18:13:29.000Z",
+                "y": 27.16
+              },
+              {
+                "x": "2018-09-05T21:58:50.000Z",
+                "y": 27.23
+              },
+              {
+                "x": "2018-09-05T22:25:44.000Z",
+                "y": 27.21
+              },
+              {
+                "x": "2018-09-06T04:37:07.000Z",
+                "y": 27.25
+              },
+              {
+                "x": "2018-09-06T04:38:16.000Z",
+                "y": 27.23
+              },
+              {
+                "x": "2018-09-06T09:50:12.000Z",
+                "y": 27.25
+              },
+              {
+                "x": "2018-09-06T09:51:47.000Z",
+                "y": 27.23
+              },
+              {
+                "x": "2018-09-06T09:54:17.000Z",
+                "y": 27.3
+              }
+            ]
+          }
+        ]
+      },
+      "chartJsOptions": {
+        "scales": {
+          "xAxes": [
+            {
+              "type": "time",
+              "time": {
+                "displayFormats": {
+                  "hour": "MMM D"
+                }
+              }
+            }
+          ],
+          "yAxes": [
+            {
+              "ticks": {
+                "beginAtZero": true,
+                "reverse": true
+              },
+              "scaleLabel": {
+                "display": true,
+                "labelString": "Execution time (ms)"
+              }
+            }
+          ]
+        }
+      },
+      "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1731007,1,10&series=mozilla-central,1731007,1,10&series=mozilla-central,1707740,1,10",
+      "title": "MotionMark HtmlSuite"
+    },
+    "motionmark-animometer-overview": {
+      "chartJsData": {
+        "datasets": [
+          {
+            "label": "Chrome",
+            "backgroundColor": "#ffcd02",
+            "data": [
+              {
+                "x": "2018-09-05T16:02:03.000Z",
+                "y": 45.74
+              },
+              {
+                "x": "2018-09-05T18:13:29.000Z",
+                "y": 45.74
+              },
+              {
+                "x": "2018-09-05T22:25:44.000Z",
+                "y": 45.85
+              },
+              {
+                "x": "2018-09-06T04:37:07.000Z",
+                "y": 45.74
+              },
+              {
+                "x": "2018-09-06T04:38:16.000Z",
+                "y": 45.8
+              },
+              {
+                "x": "2018-09-06T09:50:12.000Z",
+                "y": 45.72
+              },
+              {
+                "x": "2018-09-06T09:51:47.000Z",
+                "y": 45.76
+              }
+            ]
+          },
+          {
+            "label": "Firefox",
+            "backgroundColor": "#e55525",
+            "data": [
+              {
+                "x": "2018-09-05T16:02:03.000Z",
+                "y": 42.65
+              },
+              {
+                "x": "2018-09-05T18:13:29.000Z",
+                "y": 42.37
+              },
+              {
+                "x": "2018-09-05T21:58:50.000Z",
+                "y": 42
+              },
+              {
+                "x": "2018-09-05T22:25:44.000Z",
+                "y": 42.6
+              },
+              {
+                "x": "2018-09-06T04:37:07.000Z",
+                "y": 42.67
+              },
+              {
+                "x": "2018-09-06T04:38:16.000Z",
+                "y": 42.06
+              },
+              {
+                "x": "2018-09-06T09:50:12.000Z",
+                "y": 42.64
+              },
+              {
+                "x": "2018-09-06T09:51:47.000Z",
+                "y": 42.94
+              },
+              {
+                "x": "2018-09-06T09:54:17.000Z",
+                "y": 42.93
+              }
+            ]
+          }
+        ]
+      },
+      "chartJsOptions": {
+        "scales": {
+          "xAxes": [
+            {
+              "type": "time",
+              "time": {
+                "displayFormats": {
+                  "hour": "MMM D"
+                }
+              }
+            }
+          ],
+          "yAxes": [
+            {
+              "ticks": {
+                "beginAtZero": true,
+                "reverse": true
+              },
+              "scaleLabel": {
+                "display": true,
+                "labelString": "Execution time (ms)"
+              }
+            }
+          ]
+        }
+      },
+      "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1730980,1,10&series=mozilla-central,1730980,1,10&series=mozilla-central,1707657,1,10",
+      "title": "MotionMark Animometer"
     },
     "speedometer-overview": {
       "chartJsData": {
@@ -1156,6 +1296,10 @@
               "ticks": {
                 "beginAtZero": true,
                 "reverse": true
+              },
+              "scaleLabel": {
+                "display": true,
+                "labelString": "Score"
               }
             }
           ]
@@ -1164,82 +1308,98 @@
       "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1714897,1,10&series=mozilla-central,1714897,1,10&series=mozilla-central,1706436,1,10",
       "title": "Speedometer"
     },
-    "motionmark-animometer-overview": {
+    "ares6-overview": {
       "chartJsData": {
         "datasets": [
           {
-            "label": "Chrome",
+            "label": "Chrome v8",
             "backgroundColor": "#ffcd02",
             "data": [
               {
                 "x": "2018-09-05T16:02:03.000Z",
-                "y": 45.74
+                "y": 50.5
               },
               {
                 "x": "2018-09-05T18:13:29.000Z",
-                "y": 45.74
+                "y": 50.9
+              },
+              {
+                "x": "2018-09-05T21:08:18.000Z",
+                "y": 50.86
+              },
+              {
+                "x": "2018-09-05T21:58:50.000Z",
+                "y": 50.61
               },
               {
                 "x": "2018-09-05T22:25:44.000Z",
-                "y": 45.85
+                "y": 50.99
               },
               {
                 "x": "2018-09-06T04:37:07.000Z",
-                "y": 45.74
+                "y": 50.2
               },
               {
                 "x": "2018-09-06T04:38:16.000Z",
-                "y": 45.8
+                "y": 50.1
               },
               {
                 "x": "2018-09-06T09:50:12.000Z",
-                "y": 45.72
+                "y": 51.42
               },
               {
                 "x": "2018-09-06T09:51:47.000Z",
-                "y": 45.76
+                "y": 51.06
+              },
+              {
+                "x": "2018-09-06T09:54:17.000Z",
+                "y": 50.73
               }
             ]
           },
           {
-            "label": "Firefox",
+            "label": "SpiderMonkey",
             "backgroundColor": "#e55525",
             "data": [
               {
                 "x": "2018-09-05T16:02:03.000Z",
-                "y": 42.65
+                "y": 59.4
               },
               {
                 "x": "2018-09-05T18:13:29.000Z",
-                "y": 42.37
+                "y": 115.37
+              },
+              {
+                "x": "2018-09-05T21:08:18.000Z",
+                "y": 58.79
               },
               {
                 "x": "2018-09-05T21:58:50.000Z",
-                "y": 42
+                "y": 58.8
               },
               {
                 "x": "2018-09-05T22:25:44.000Z",
-                "y": 42.6
+                "y": 59.11
               },
               {
                 "x": "2018-09-06T04:37:07.000Z",
-                "y": 42.67
+                "y": 58.95
               },
               {
                 "x": "2018-09-06T04:38:16.000Z",
-                "y": 42.06
+                "y": 59.26
               },
               {
                 "x": "2018-09-06T09:50:12.000Z",
-                "y": 42.64
+                "y": 59
               },
               {
                 "x": "2018-09-06T09:51:47.000Z",
-                "y": 42.94
+                "y": 59.27
               },
               {
                 "x": "2018-09-06T09:54:17.000Z",
-                "y": 42.93
+                "y": 59.4
               }
             ]
           }
@@ -1261,14 +1421,18 @@
             {
               "ticks": {
                 "beginAtZero": true,
-                "reverse": true
+                "reverse": false
+              },
+              "scaleLabel": {
+                "display": true,
+                "labelString": "Execution time (ms)"
               }
             }
           ]
         }
       },
-      "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1730980,1,10&series=mozilla-central,1730980,1,10&series=mozilla-central,1707657,1,10",
-      "title": "MotionMark Animometer"
+      "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760205,1,11&series=mozilla-central,1760205,1,11&series=mozilla-central,1760236,1,11",
+      "title": "Ares6 (JS shell)"
     },
     "six-speed-overview": {
       "chartJsData": {
@@ -1384,6 +1548,10 @@
               "ticks": {
                 "beginAtZero": true,
                 "reverse": false
+              },
+              "scaleLabel": {
+                "display": true,
+                "labelString": "Execution time (ms)"
               }
             }
           ]
@@ -1506,6 +1674,10 @@
               "ticks": {
                 "beginAtZero": true,
                 "reverse": false
+              },
+              "scaleLabel": {
+                "display": true,
+                "labelString": "Score"
               }
             }
           ]
@@ -1513,128 +1685,6 @@
       },
       "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760218,1,11&series=mozilla-central,1760218,1,11&series=mozilla-central,1760187,1,11",
       "title": "Web Tooling (JS shell)"
-    },
-    "ares6-overview": {
-      "chartJsData": {
-        "datasets": [
-          {
-            "label": "Chrome v8",
-            "backgroundColor": "#ffcd02",
-            "data": [
-              {
-                "x": "2018-09-05T16:02:03.000Z",
-                "y": 50.5
-              },
-              {
-                "x": "2018-09-05T18:13:29.000Z",
-                "y": 50.9
-              },
-              {
-                "x": "2018-09-05T21:08:18.000Z",
-                "y": 50.86
-              },
-              {
-                "x": "2018-09-05T21:58:50.000Z",
-                "y": 50.61
-              },
-              {
-                "x": "2018-09-05T22:25:44.000Z",
-                "y": 50.99
-              },
-              {
-                "x": "2018-09-06T04:37:07.000Z",
-                "y": 50.2
-              },
-              {
-                "x": "2018-09-06T04:38:16.000Z",
-                "y": 50.1
-              },
-              {
-                "x": "2018-09-06T09:50:12.000Z",
-                "y": 51.42
-              },
-              {
-                "x": "2018-09-06T09:51:47.000Z",
-                "y": 51.06
-              },
-              {
-                "x": "2018-09-06T09:54:17.000Z",
-                "y": 50.73
-              }
-            ]
-          },
-          {
-            "label": "SpiderMonkey",
-            "backgroundColor": "#e55525",
-            "data": [
-              {
-                "x": "2018-09-05T16:02:03.000Z",
-                "y": 59.4
-              },
-              {
-                "x": "2018-09-05T18:13:29.000Z",
-                "y": 115.37
-              },
-              {
-                "x": "2018-09-05T21:08:18.000Z",
-                "y": 58.79
-              },
-              {
-                "x": "2018-09-05T21:58:50.000Z",
-                "y": 58.8
-              },
-              {
-                "x": "2018-09-05T22:25:44.000Z",
-                "y": 59.11
-              },
-              {
-                "x": "2018-09-06T04:37:07.000Z",
-                "y": 58.95
-              },
-              {
-                "x": "2018-09-06T04:38:16.000Z",
-                "y": 59.26
-              },
-              {
-                "x": "2018-09-06T09:50:12.000Z",
-                "y": 59
-              },
-              {
-                "x": "2018-09-06T09:51:47.000Z",
-                "y": 59.27
-              },
-              {
-                "x": "2018-09-06T09:54:17.000Z",
-                "y": 59.4
-              }
-            ]
-          }
-        ]
-      },
-      "chartJsOptions": {
-        "scales": {
-          "xAxes": [
-            {
-              "type": "time",
-              "time": {
-                "displayFormats": {
-                  "hour": "MMM D"
-                }
-              }
-            }
-          ],
-          "yAxes": [
-            {
-              "ticks": {
-                "beginAtZero": true,
-                "reverse": false
-              }
-            }
-          ]
-        }
-      },
-      "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760205,1,11&series=mozilla-central,1760205,1,11&series=mozilla-central,1760236,1,11",
-      "title": "Ares6 (JS shell)"
     },
     "kraken-overview": {
       "chartJsData": {
@@ -1700,6 +1750,10 @@
               "ticks": {
                 "beginAtZero": true,
                 "reverse": false
+              },
+              "scaleLabel": {
+                "display": true,
+                "labelString": "Execution time (ms)"
               }
             }
           ]
@@ -1776,6 +1830,10 @@
               "ticks": {
                 "beginAtZero": true,
                 "reverse": false
+              },
+              "scaleLabel": {
+                "display": true,
+                "labelString": "Execution time (ms)"
               }
             }
           ]
