@@ -7,6 +7,7 @@ const styles = () => ({
   root: {
     display: 'flex',
     justifyContent: 'space-evenly',
+    textAlign: 'center',
   },
 });
 
