@@ -7,7 +7,7 @@ const Graphs = ({ benchmarkData, topTitle }) => (
     <div>
       <h1>{topTitle}</h1>
       {topTitle !== 'Overview' &&
-        Object.values(benchmarkData.config).map(({
+        Object.values(benchmarkData.topLabelsConfig).map(({
           color, label, suite, url,
         }) => (
           label &&
@@ -23,9 +23,9 @@ const Graphs = ({ benchmarkData, topTitle }) => (
         ))
       }
     </div>
-    {Object.keys(benchmarkData.subbenchmarks)
+    {Object.keys(benchmarkData.graphs)
       .sort()
-      .map(key => benchmarkData.subbenchmarks[key])
+      .map(key => benchmarkData.graphs[key])
       .map(({
         chartJsData, jointUrl, title, inverseYaxis = false,
       }) => (
