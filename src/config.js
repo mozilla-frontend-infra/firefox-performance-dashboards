@@ -279,7 +279,6 @@ export const BENCHMARKS = {
 };
 
 const DEFAULT_SUITES = [
-  'assorted-dom',
   'kraken',
   'motionmark-animometer',
   'motionmark-htmlsuite',
@@ -301,7 +300,7 @@ export const CONFIG = {
       platform: 'linux64',
       benchmarks: DEFAULT_SUITES
         .concat([
-          'ares6', 'six-speed', 'sunspider-jsbench', 'web-tooling',
+          'assorted-dom', 'ares6', 'six-speed', 'sunspider-jsbench', 'web-tooling',
           'unity-webgl', 'wasm-misc']),
     },
     mac: {
