@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
+import CircularIndeterminate from '../../components/CircularIndeterminate';
 import Graphs from '../../components/Graphs';
 import fetchData from '../../utils/fetchData';
 
@@ -33,12 +34,14 @@ class Benchmark extends Component {
   render() {
     const { benchmarkData } = this.state;
 
-    return (Object.keys(benchmarkData).length > 0 &&
-      <Graphs
-        benchmarkData={benchmarkData}
-        overviewMode={this.props.benchmark === 'overview'}
-      />
-    );
+    return (Object.keys(benchmarkData).length === 0)
+      ? <CircularIndeterminate />
+      : (
+        <Graphs
+          benchmarkData={benchmarkData}
+          overviewMode={this.props.benchmark === 'overview'}
+        />
+      );
   }
 }
 
