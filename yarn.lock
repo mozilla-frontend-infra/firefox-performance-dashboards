@@ -122,9 +122,9 @@
     recompose "^0.29.0"
     warning "^4.0.1"
 
-"@mozilla-frontend-infra/perf-goggles@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@mozilla-frontend-infra/perf-goggles/-/perf-goggles-1.2.0.tgz#f70b796c7ac80c3badde84e88b2ef62b7a01184d"
+"@mozilla-frontend-infra/perf-goggles@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@mozilla-frontend-infra/perf-goggles/-/perf-goggles-1.3.0.tgz#228baa215b4d3d6d8b86919958936dd8617a2325"
   dependencies:
     isomorphic-fetch "^2.2.1"
     lodash.isequal "^4.5.0"

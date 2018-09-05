@@ -291,6 +291,7 @@ const DEFAULT_SUITES = [
 export const CONFIG = {
   default: {
     landingPath: '/win10/overview',
+    timeRange: 90 * 24 * 3600,
     colors: ['#e55525', '#ffcd02'],
     labels: ['Firefox', 'Chrome'],
   },
