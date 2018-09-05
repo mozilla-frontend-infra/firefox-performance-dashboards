@@ -24,9 +24,9 @@ const fetchData = async (platform, benchmark) => {
           ALL_DATA[key] = {
             ...data,
             configUID,
-            suite: benchmarkOptions.suite,
             color,
             label: fetchMethod === fetchBenchmarkData ? benchmarkOptions.label : label,
+            suite: benchmarkOptions.suite,
           };
         }
       }));

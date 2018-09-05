@@ -1,43 +1,18 @@
 import PropTypes from 'prop-types';
 import Chart from 'react-chartjs-2';
 
-const ChartJSWrapper = ({ chartJsData, inverseYaxis }) => (
+const ChartJSWrapper = ({ chartJsData, chartJsOptions }) => (
   <Chart
     type="scatter"
     data={chartJsData}
     height={50}
-    options={{
-      scales: {
-        xAxes: [
-          {
-            type: 'time',
-            time: {
-                displayFormats: {
-                  hour: 'MMM D',
-                },
-            },
-          },
-        ],
-        yAxes: [
-          {
-            ticks: {
-              beginAtZero: true,
-              reverse: inverseYaxis,
-            },
-          },
-        ],
-      },
-    }}
+    options={chartJsOptions}
   />
 );
 
 ChartJSWrapper.propTypes = {
   chartJsData: PropTypes.shape({}).isRequired,
-  inverseYaxis: PropTypes.bool,
-};
-
-ChartJSWrapper.defaultProps = {
-  inverseYaxis: false,
+  chartJsOptions: PropTypes.shape({}).isRequired,
 };
 
 export default ChartJSWrapper;

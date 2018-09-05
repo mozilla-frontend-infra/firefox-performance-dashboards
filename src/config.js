@@ -300,14 +300,13 @@ export const CONFIG = {
       platform: 'linux64',
       benchmarks: DEFAULT_SUITES
         .concat([
-          'assorted-dom', 'ares6', 'six-speed', 'sunspider-jsbench', 'web-tooling',
-          'unity-webgl', 'wasm-misc']),
+          'assorted-dom', 'ares6', 'six-speed', 'sunspider-jsbench', 'unity-webgl',
+          'wasm-misc', 'web-tooling']),
     },
     mac: {
       label: 'Mac OS X',
       platform: 'osx-10-10',
-      benchmarks: DEFAULT_SUITES
-        .filter(e => e !== 'assorted-dom'),
+      benchmarks: DEFAULT_SUITES,
     },
     win7: {
       label: 'Windows 7 32bit',
