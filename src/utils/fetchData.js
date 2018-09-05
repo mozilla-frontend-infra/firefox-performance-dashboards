@@ -5,7 +5,7 @@ import prepareData from './prepareData';
 const fetchData = async (platform, benchmark) => {
   const ALL_DATA = {};
 
-  const fetchIt = async (fetchMethod, configUID) => {
+  const fetchIt = async (fetchMethod, configUID, timeRange = CONFIG.default.timeRange) => {
     const comparingBenchmarks = Object.keys(BENCHMARKS[configUID].compare);
     return Promise.all(comparingBenchmarks
       .map(async (modeKey) => {
@@ -16,6 +16,7 @@ const fetchData = async (platform, benchmark) => {
           benchmarkOptions.suite,
           benchmarkOptions.buildType,
           benchmarkOptions.extraOptions,
+          timeRange,
         );
         if (data) {
           const { color, label } = BENCHMARKS[configUID].compare[benchmarkOptions.suite];
