@@ -46,9 +46,7 @@ const chartJsOptions = (reverse, scaleLabel) => ({
 });
 
 const generateChartJsOptions = (configUID, meta) => {
-  // Remove assorted-dom & sunspider once PerfHerder has been updated
-  const reversed = (configUID !== 'assorted-dom' && configUID !== 'sunspider')
-    ? (meta.lower_is_better === false) : false;
+  const reversed = (meta.lower_is_better === false);
   const scaleLabel = (BENCHMARKS[configUID].scaleLabel)
     ? BENCHMARKS[configUID].scaleLabel : 'Execution time (ms)';
   return chartJsOptions(reversed, scaleLabel);
