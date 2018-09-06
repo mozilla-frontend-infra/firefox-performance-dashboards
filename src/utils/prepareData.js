@@ -83,18 +83,17 @@ const prepareData = (benchmarks) => {
           jointUrl: meta.url,
           title: meta.test ? meta.test : BENCHMARKS[configUID].label,
         };
+      } else {
+        // We're joining the different series for each subbenchmark
+        const { series } = parse(meta.url);
+        newData.graphs[uid].jointUrl += `&series=${series}`;
       }
+
       newData.graphs[uid].chartJsData.datasets.push({
         label,
         backgroundColor: color,
         data: dataToChartJSformat(test.data),
       });
-
-      if (newData.graphs[uid].jointUrl) {
-        // We're joining the different series for each subbenchmark
-        const { series } = parse(meta.url);
-        newData.graphs[uid].jointUrl += `&series=${series}`;
-      }
     });
   });
 
