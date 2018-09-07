@@ -46,10 +46,13 @@ const chartJsOptions = (reverse, scaleLabel) => ({
 });
 
 const generateChartJsOptions = (configUID, meta) => {
-  const reversed = (meta.lower_is_better === false);
-  const scaleLabel = (BENCHMARKS[configUID].scaleLabel)
-    ? BENCHMARKS[configUID].scaleLabel : 'Execution time (ms)';
-  return chartJsOptions(reversed, scaleLabel);
+  const higherIsBetter = (meta.lower_is_better === false);
+  const reversed = higherIsBetter;
+  let yLabel = higherIsBetter ? 'Score' : 'Execution time (ms)';
+  if (BENCHMARKS[configUID].scaleLabel) {
+    yLabel = BENCHMARKS[configUID].scaleLabel;
+  }
+  return chartJsOptions(reversed, yLabel);
 };
 
 // This function overlays data from different browsers

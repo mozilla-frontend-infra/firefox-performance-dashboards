@@ -91,7 +91,6 @@ export const BENCHMARKS = {
       },
     },
     label: 'Speedometer',
-    scaleLabel: 'Score',
   },
   stylebench: {
     compare: {
@@ -168,7 +167,6 @@ export const BENCHMARKS = {
       },
     },
     label: 'Unity WebGL',
-    scaleLabel: 'Score',
   },
   'wasm-misc': {
     compare: {
@@ -297,7 +295,6 @@ export const BENCHMARKS = {
     },
     labels: ['SpiderMonkey', 'Chrome v8'],
     label: 'Web Tooling (JS shell)',
-    scaleLabel: 'Score',
   },
 };
 

@@ -953,7 +953,7 @@
               },
               "scaleLabel": {
                 "display": true,
-                "labelString": "Execution time (ms)"
+                "labelString": "Score"
               }
             }
           ]
@@ -1071,7 +1071,7 @@
               },
               "scaleLabel": {
                 "display": true,
-                "labelString": "Execution time (ms)"
+                "labelString": "Score"
               }
             }
           ]
@@ -1181,7 +1181,7 @@
               },
               "scaleLabel": {
                 "display": true,
-                "labelString": "Execution time (ms)"
+                "labelString": "Score"
               }
             }
           ]
@@ -1425,7 +1425,7 @@
               },
               "scaleLabel": {
                 "display": true,
-                "labelString": "Score"
+                "labelString": "Execution time (ms)"
               }
             }
           ]
