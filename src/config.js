@@ -225,6 +225,26 @@ export const BENCHMARKS = {
     labels: ['SpiderMonkey', 'Chrome v8'],
     label: 'Ares6 (JS shell)',
   },
+  octane: {
+    compare: {
+      'octane-sm': {
+        color: '#e55525',
+        label: 'SpiderMonkey',
+        frameworkId: JSBENCH_FRAMEWORK_ID,
+        suite: 'octane-sm',
+        buildType: 'opt',
+      },
+      'octane-v8': {
+        color: '#ffcd02',
+        label: 'Chrome v8',
+        frameworkId: JSBENCH_FRAMEWORK_ID,
+        suite: 'octane-v8',
+        buildType: 'opt',
+      },
+    },
+    labels: ['SpiderMonkey', 'Chrome v8'],
+    label: 'Octane (JS shell)',
+  },
   'six-speed': {
     compare: {
       'six-speed-sm': {
@@ -304,8 +324,9 @@ export const CONFIG = {
       platform: 'linux64',
       benchmarks: DEFAULT_SUITES
         .concat([
-          'assorted-dom', 'ares6', 'six-speed', 'sunspider-jsbench', 'unity-webgl',
-          'wasm-misc', 'web-tooling']),
+          'assorted-dom', 'ares6', 'octane', 'six-speed',
+          'sunspider-jsbench', 'unity-webgl', 'wasm-misc',
+          'web-tooling']),
     },
     mac: {
       label: 'Mac OS X',
