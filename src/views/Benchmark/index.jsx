@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
+import ErrorPanel from '@mozilla-frontend-infra/components/ErrorPanel';
 import CircularIndeterminate from '../../components/CircularIndeterminate';
 import Graphs from '../../components/Graphs';
 import fetchData from '../../utils/fetchData';
@@ -27,12 +28,27 @@ class Benchmark extends Component {
   }
 
   async fetchData(platform, benchmark) {
-    this.setState({ benchmarkData: {} });
-    this.setState({ benchmarkData: await fetchData(platform, benchmark) });
+    try {
+      this.setState({ benchmarkData: await fetchData(platform, benchmark) });
+    } catch (e) {
+      // TODO: Once we have Sentry support we can just report it
+      // eslint-disable-next-line
+      console.error(e);
+      this.setState({ errorMessage: 'We have failed to fetch the data. Try again.' });
+    }
   }
 
   render() {
-    const { benchmarkData } = this.state;
+    const { benchmarkData, errorMessage } = this.state;
+
+    if (errorMessage) {
+      return (
+        <ErrorPanel
+          disableStackTrace={false}
+          error={new Error(errorMessage)}
+        />
+      );
+    }
 
     return (Object.keys(benchmarkData).length === 0)
       ? <CircularIndeterminate />

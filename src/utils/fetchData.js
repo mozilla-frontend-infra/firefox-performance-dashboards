@@ -6,6 +6,8 @@ const fetchData = async (platform, benchmark) => {
   const ALL_DATA = {};
 
   const fetchIt = async (fetchMethod, configUID, timeRange = CONFIG.default.timeRange) => {
+    throw Error('My error');
+    // eslint-disable-next-line
     const comparingBenchmarks = Object.keys(BENCHMARKS[configUID].compare);
     return Promise.all(comparingBenchmarks
       .map(async (modeKey) => {
