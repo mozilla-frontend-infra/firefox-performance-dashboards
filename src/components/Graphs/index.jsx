@@ -29,12 +29,16 @@ const Graphs = ({ benchmarkData, overviewMode }) => (
     }
     {Object.keys(benchmarkData.graphs)
       .sort(overviewMode ? undefined : sortOverviewFirst)
-      .map(key => benchmarkData.graphs[key])
+      .map((key) => {
+        const graph = benchmarkData.graphs[key];
+        graph.anchor = key;
+        return graph;
+      })
       .map(({
-        chartJsData, chartJsOptions, jointUrl, title,
+        chartJsData, chartJsOptions, jointUrl, title, anchor,
       }) => (
         <div key={title}>
-          <h2>{title}</h2>
+          <h2 id={anchor}>{title}</h2>
           <ChartJSWrapper chartJsData={chartJsData} chartJsOptions={chartJsOptions} />
           <a href={jointUrl} target="_blank" rel="noopener noreferrer">PerfHerder link</a>
         </div>
