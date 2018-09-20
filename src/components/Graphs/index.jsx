@@ -36,7 +36,7 @@ const Graphs = ({ benchmarkData, overviewMode }) => (
         <div key={title}>
           <h2>{title}</h2>
           <ChartJSWrapper chartJsData={chartJsData} chartJsOptions={chartJsOptions} />
-          <a href={jointUrl} target="_blank" rel="noopener noreferrer">PerfHerder link</a>
+        <a href={jointUrl} target="_blank" rel="noopener noreferrer"><i class="material-icons">link</i></a>
         </div>
       ))}
   </div>
