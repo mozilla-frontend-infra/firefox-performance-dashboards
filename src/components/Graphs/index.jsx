@@ -12,8 +12,8 @@ const sortOverviewFirst = (a, b) => {
 };
 
 const inlineBlock = {
- display: 'inline-block',
- margin: '10px'
+  display: 'inline-block',
+  margin: '10px',
 };
 
 
@@ -44,7 +44,7 @@ const Graphs = ({ benchmarkData, overviewMode }) => (
         <div key={title}>
           <h2 style={inlineBlock}>{title}</h2>
           <div style={inlineBlock}>
-          <a href={jointUrl} target="_blank" rel="noopener noreferrer"><Link/></a>
+            <a href={jointUrl} target="_blank" rel="noopener noreferrer"><Link /></a>
           </div>
           <ChartJSWrapper chartJsData={chartJsData} chartJsOptions={chartJsOptions} />
 
