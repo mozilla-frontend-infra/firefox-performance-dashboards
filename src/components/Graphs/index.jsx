@@ -1,6 +1,8 @@
+import Link from '@material-ui/icons/Link';
 import PropTypes from 'prop-types';
 import Legend from '../../components/Legend';
 import ChartJSWrapper from '../../components/ChartJSWrapper';
+
 
 const sortOverviewFirst = (a, b) => {
   if (a.includes('overview') || b.includes('overview')) {
@@ -8,6 +10,12 @@ const sortOverviewFirst = (a, b) => {
   }
   return (a <= b ? -1 : 1);
 };
+
+const inlineBlock = {
+ display: 'inline-block',
+ margin: '10px'
+};
+
 
 const Graphs = ({ benchmarkData, overviewMode }) => (
   <div>
@@ -34,9 +42,12 @@ const Graphs = ({ benchmarkData, overviewMode }) => (
         chartJsData, chartJsOptions, jointUrl, title,
       }) => (
         <div key={title}>
-          <h2>{title}</h2>
+          <h2 style={inlineBlock}>{title}</h2>
+          <div style={inlineBlock}>
+          <a href={jointUrl} target="_blank" rel="noopener noreferrer"><Link/></a>
+          </div>
           <ChartJSWrapper chartJsData={chartJsData} chartJsOptions={chartJsOptions} />
-          <a href={jointUrl} target="_blank" rel="noopener noreferrer">PerfHerder link</a>
+
         </div>
       ))}
   </div>
