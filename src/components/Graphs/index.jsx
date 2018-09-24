@@ -5,8 +5,11 @@ import Legend from '../../components/Legend';
 import ChartJSWrapper from '../../components/ChartJSWrapper';
 
 const sortOverviewFirst = (a, b) => {
-  if (a.includes('overview') || b.includes('overview')) {
+  if (a.includes('overview')) {
     return -1;
+  }
+  if (b.includes('overview')) {
+    return 1;
   }
   return (a <= b ? -1 : 1);
 };
