@@ -1,3 +1,5 @@
+import LinkIcon from '@material-ui/icons/Link';
+import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import Legend from '../../components/Legend';
 import ChartJSWrapper from '../../components/ChartJSWrapper';
@@ -9,7 +11,17 @@ const sortOverviewFirst = (a, b) => {
   return (a <= b ? -1 : 1);
 };
 
-const Graphs = ({ benchmarkData, overviewMode }) => (
+const styles = () => ({
+  benchmarkTitle: {
+    display: 'inline-block',
+    margin: 10,
+  },
+  linkIcon: {
+    marginBottom: -5,
+  },
+});
+
+const Graphs = ({ classes, benchmarkData, overviewMode }) => (
   <div>
     {!overviewMode &&
       Object.values(benchmarkData.topLabelsConfig).map(({
@@ -34,9 +46,9 @@ const Graphs = ({ benchmarkData, overviewMode }) => (
         chartJsData, chartJsOptions, jointUrl, title,
       }) => (
         <div key={title}>
-          <h2>{title}</h2>
+          <h2 className={classes.benchmarkTitle}>{title}</h2>
+          <a href={jointUrl} target="_blank" rel="noopener noreferrer"><LinkIcon className={classes.linkIcon} /></a>
           <ChartJSWrapper chartJsData={chartJsData} chartJsOptions={chartJsOptions} />
-          <a href={jointUrl} target="_blank" rel="noopener noreferrer">PerfHerder link</a>
         </div>
       ))}
   </div>
@@ -45,6 +57,7 @@ const Graphs = ({ benchmarkData, overviewMode }) => (
 Graphs.propTypes = {
   benchmarkData: PropTypes.shape({}).isRequired,
   overviewMode: PropTypes.bool.isRequired,
+  classes: PropTypes.shape({}).isRequired,
 };
 
-export default Graphs;
+export default withStyles(styles)(Graphs);
