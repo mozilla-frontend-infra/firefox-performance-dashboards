@@ -3,12 +3,18 @@ import { AppContainer } from 'react-hot-loader';
 import App from './App';
 
 const root = document.getElementById('root');
+
+const styles = {
+  fontFamily: 'Roboto, sans-serif',
+};
+
 const load = () => render(
-  (
+  <div style={styles}>
     <AppContainer>
       <App />
     </AppContainer>
-  ), root,
+  </div>
+  , root,
 );
 
 // This is needed for Hot Module Replacement
