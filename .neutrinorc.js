@@ -5,7 +5,10 @@ module.exports = {
       '@neutrinojs/react',
       {
         html: {
-          title: 'js-perf-dashboard'
+          title: 'js-perf-dashboard',
+          links:[
+            "https://fonts.googleapis.com/css?family=Roboto"
+          ]
         }
       }
     ],
