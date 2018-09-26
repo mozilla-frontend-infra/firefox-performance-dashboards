@@ -1,10 +1,18 @@
+import { withStyles } from '@material-ui/core';
+import PropTypes from 'prop-types';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import Benchmark from '../views/Benchmark';
 import Navigation from '../components/Navigation';
 import { CONFIG } from '../config';
 import validCombination from '../utils/validCombination';
 
-export default () => (
+const styles = () => ({
+  container: {
+    fontFamily: 'Roboto',
+  },
+});
+
+const App = ({ classes }) => (
   <BrowserRouter>
     <Switch>
       <Route
@@ -15,7 +23,7 @@ export default () => (
             return <Redirect to={CONFIG.default.landingPath} />;
           }
           return (
-            <div>
+            <div className={classes.container}>
               <Navigation platform={platform} benchmark={benchmark} />
               <Benchmark {...match.params} />
             </div>
@@ -26,3 +34,9 @@ export default () => (
     </Switch>
   </BrowserRouter>
 );
+
+App.propTypes = {
+  classes: PropTypes.shape({}).isRequired,
+};
+
+export default withStyles(styles)(App);
