@@ -129,9 +129,9 @@
     "@babel/runtime" "7.0.0"
     recompose "^0.29.0"
 
-"@mozilla-frontend-infra/perf-goggles@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@mozilla-frontend-infra/perf-goggles/-/perf-goggles-2.0.0.tgz#96484488e9490b31797dc5838a2642534420acd3"
+"@mozilla-frontend-infra/perf-goggles@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@mozilla-frontend-infra/perf-goggles/-/perf-goggles-2.0.1.tgz#514bb39128beb07e29882849607d0efa90284fb8"
   dependencies:
     isomorphic-fetch "^2.2.1"
     lodash.isequal "^4.5.0"
