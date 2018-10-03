@@ -7,8 +7,8 @@ import { BENCHMARKS, CONFIG } from '../../config';
 const styles = () => ({
   root: {
     display: 'flex',
-    justifyContent: 'space-evenly',
     textAlign: 'center',
+    padding: '15px',
   },
 });
 

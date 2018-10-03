@@ -310,8 +310,8 @@ const DEFAULT_SUITES = [
 
 export const CONFIG = {
   default: {
-    landingPath: '/win10/overview',
-    timeRange: 90 * 24 * 3600,
+    landingPath: '/win10/overview?numDays=90',
+    timeRange: 90, // 90 days
     colors: ['#e55525', '#ffcd02'],
     labels: ['Firefox', 'Chrome'],
   },
@@ -342,3 +342,6 @@ export const CONFIG = {
     },
   },
 };
+
+// Upper limit for the time range slider measured in days
+export const TIMERANGE_UPPER_LIMIT = 365;

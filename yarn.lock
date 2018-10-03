@@ -722,6 +722,15 @@
     "@babel/runtime" "7.0.0"
     recompose "^0.29.0"
 
+"@material-ui/lab@3.0.0-alpha.18":
+  version "3.0.0-alpha.18"
+  resolved "https://registry.yarnpkg.com/@material-ui/lab/-/lab-3.0.0-alpha.18.tgz#d3c3a77364fefa7be9d759ed080a5c2b6b97b8ac"
+  integrity sha512-WSOY4vi0AEIsVgOyr4TccHF/EonCqnLIQmhqDGK5SegWOEVSsPq3Tw4nQgu+Yd+4lNAP9WUefSasjuZ5vBjIwQ==
+  dependencies:
+    "@babel/runtime" "7.0.0"
+    classnames "^2.2.5"
+    keycode "^2.1.9"
+
 "@mozilla-frontend-infra/perf-goggles@^2.0.1":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@mozilla-frontend-infra/perf-goggles/-/perf-goggles-2.0.1.tgz#514bb39128beb07e29882849607d0efa90284fb8"

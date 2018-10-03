@@ -22,13 +22,20 @@ const App = ({ classes }) => (
         path="/:platform/:benchmark"
         render={({ match }) => {
           const { platform, benchmark } = match.params;
-          if (!validCombination(platform, benchmark)) {
+          // eslint-disable-next-line no-restricted-globals
+          const searchParams = new URLSearchParams(location.search);
+          const timeRange = Math.round(searchParams.get('numDays'));
+          if (!validCombination(platform, benchmark, timeRange)) {
             return <Redirect to={CONFIG.default.landingPath} />;
           }
           return (
             <div className={classes.container}>
-              <Navigation platform={platform} benchmark={benchmark} />
-              <Benchmark {...match.params} />
+              <Navigation
+                platform={platform}
+                benchmark={benchmark}
+                timeRange={timeRange}
+              />
+              <Benchmark {...match.params} timeRange={timeRange} />
             </div>
           );
         }}
