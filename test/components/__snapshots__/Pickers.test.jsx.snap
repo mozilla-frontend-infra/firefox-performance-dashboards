@@ -69,6 +69,60 @@ exports[`renders correctly 1`] = `
         className="MuiFormLabel-root-14 MuiFormLabel-filled-18 MuiInputLabel-root-7 MuiInputLabel-formControl-8 MuiInputLabel-animated-11 MuiInputLabel-shrink-10"
         data-shrink={true}
       >
+        Time range
+      </label>
+      <div
+        className="MuiInputBase-root-41 MuiInput-root-28 MuiInput-underline-32 MuiInputBase-formControl-42 MuiInput-formControl-29"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiSelect-root-21"
+        >
+          <div
+            aria-haspopup="true"
+            aria-owns={null}
+            aria-pressed="false"
+            className="MuiSelect-select-22 MuiSelect-selectMenu-25 MuiInputBase-input-51 MuiInput-input-36"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            Last 90 days
+          </div>
+          <input
+            name="timeRange"
+            type="hidden"
+            value="90"
+          />
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root-58 MuiSelect-icon-27"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </form>
+  <form
+    autoComplete="off"
+    className="Picker-root-2"
+  >
+    <div
+      className="MuiFormControl-root-3"
+    >
+      <label
+        className="MuiFormLabel-root-14 MuiFormLabel-filled-18 MuiInputLabel-root-7 MuiInputLabel-formControl-8 MuiInputLabel-animated-11 MuiInputLabel-shrink-10"
+        data-shrink={true}
+      >
         Benchmark
       </label>
       <div

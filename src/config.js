@@ -310,8 +310,8 @@ const DEFAULT_SUITES = [
 
 export const CONFIG = {
   default: {
-    landingPath: '/win10/overview',
-    timeRange: 90 * 24 * 3600,
+    landingPath: '/win10/overview/90',
+    timeRange: 90, // 90 days
     colors: ['#e55525', '#ffcd02'],
     labels: ['Firefox', 'Chrome'],
   },
@@ -342,3 +342,9 @@ export const CONFIG = {
     },
   },
 };
+
+export const TIME_RANGE_OPTIONS = [
+  1, 2, 7, 14, 30, 60, 90, 365,
+];
+
+export const TIME_RANGE_LIMIT = 736969;

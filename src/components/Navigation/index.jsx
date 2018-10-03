@@ -7,6 +7,7 @@ class Navigation extends Component {
   static propTypes = {
     benchmark: PropTypes.string.isRequired,
     platform: PropTypes.string.isRequired,
+    timeRange: PropTypes.string.isRequired,
   };
 
   constructor(props) {
@@ -16,18 +17,37 @@ class Navigation extends Component {
 
   onChange(event) {
     const { name, value } = event.target;
-    const { history, platform } = this.props;
+    const {
+      history, platform, benchmark, timeRange,
+    } = this.props;
     let newPlatform;
     let newBenchmark;
-    if (name === 'platform') {
-      newPlatform = value;
-      newBenchmark = 'overview';
-    } else {
-      newPlatform = platform;
-      newBenchmark = value;
+    let newTimeRange;
+
+    switch (name) {
+      case 'platform':
+        newPlatform = value;
+        newBenchmark = 'overview';
+        newTimeRange = timeRange;
+        break;
+      case 'benchmark':
+        newPlatform = platform;
+        newBenchmark = value;
+        newTimeRange = timeRange;
+        break;
+      case 'timeRange':
+        newPlatform = platform;
+        newBenchmark = benchmark;
+        newTimeRange = value;
+        break;
+      default:
+        newPlatform = 'win10';
+        newBenchmark = 'overview';
+        newTimeRange = '90';
+        return;
     }
     // eslint-disable-next-line react/prop-types
-    history.push(`/${newPlatform}/${newBenchmark}`);
+    history.push(`/${newPlatform}/${newBenchmark}/${newTimeRange}`);
   }
 
   render() {

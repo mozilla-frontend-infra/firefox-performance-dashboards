@@ -19,15 +19,15 @@ const App = ({ classes }) => (
   <BrowserRouter>
     <Switch>
       <Route
-        path="/:platform/:benchmark"
+        path="/:platform/:benchmark/:timeRange"
         render={({ match }) => {
-          const { platform, benchmark } = match.params;
-          if (!validCombination(platform, benchmark)) {
+          const { platform, benchmark, timeRange } = match.params;
+          if (!validCombination(platform, benchmark, timeRange)) {
             return <Redirect to={CONFIG.default.landingPath} />;
           }
           return (
             <div className={classes.container}>
-              <Navigation platform={platform} benchmark={benchmark} />
+              <Navigation platform={platform} benchmark={benchmark} timeRange={timeRange} />
               <Benchmark {...match.params} />
             </div>
           );
