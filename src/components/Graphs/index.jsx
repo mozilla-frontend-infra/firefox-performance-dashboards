@@ -1,8 +1,9 @@
+import React from 'react';
 import LinkIcon from '@material-ui/icons/Link';
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
-import Legend from '../../components/Legend';
-import ChartJSWrapper from '../../components/ChartJSWrapper';
+import Legend from '../Legend';
+import ChartJSWrapper from '../ChartJSWrapper';
 
 const sortOverviewFirst = (a, b) => {
   if (a.includes('overview')) {
@@ -26,11 +27,12 @@ const styles = () => ({
 
 const Graphs = ({ classes, benchmarkData, overviewMode }) => (
   <div>
-    {!overviewMode &&
-      Object.values(benchmarkData.topLabelsConfig).map(({
+    {!overviewMode
+      && Object.values(benchmarkData.topLabelsConfig).map(({
         color, label, suite, url,
       }) => (
-        label &&
+        label
+          && (
           <Legend
             key={suite}
             label={label}
@@ -40,6 +42,7 @@ const Graphs = ({ classes, benchmarkData, overviewMode }) => (
                all subbenchmarks
             </a>
           </Legend>
+          )
       ))
     }
     {Object.keys(benchmarkData.graphs)

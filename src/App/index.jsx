@@ -1,6 +1,9 @@
+import React from 'react';
 import { withStyles } from '@material-ui/core';
 import PropTypes from 'prop-types';
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import {
+  BrowserRouter, Redirect, Route, Switch,
+} from 'react-router-dom';
 import Benchmark from '../views/Benchmark';
 import Navigation from '../components/Navigation';
 import { CONFIG } from '../config';
