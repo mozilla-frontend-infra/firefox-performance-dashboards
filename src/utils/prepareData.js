@@ -7,11 +7,10 @@ const sortByLabel = (a, b) => {
   return a.label <= b.label ? -1 : 1;
 };
 
-const dataToChartJSformat = data =>
-  data.map(({ datetime, value }) => ({
-    x: datetime,
-    y: value,
-  }));
+const dataToChartJSformat = data => data.map(({ datetime, value }) => ({
+  x: datetime,
+  y: value,
+}));
 
 const chartJsOptions = (reverse, scaleLabel) => ({
   scales: {

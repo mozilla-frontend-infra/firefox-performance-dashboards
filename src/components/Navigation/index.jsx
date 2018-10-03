@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Component } from 'react';
+import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import Pickers from '../Pickers';
 
@@ -7,7 +7,7 @@ class Navigation extends Component {
   static propTypes = {
     benchmark: PropTypes.string.isRequired,
     platform: PropTypes.string.isRequired,
-  }
+  };
 
   constructor(props) {
     super(props);
@@ -16,17 +16,18 @@ class Navigation extends Component {
 
   onChange(event) {
     const { name, value } = event.target;
+    const { history, platform } = this.props;
     let newPlatform;
     let newBenchmark;
     if (name === 'platform') {
       newPlatform = value;
       newBenchmark = 'overview';
     } else {
-      newPlatform = this.props.platform;
+      newPlatform = platform;
       newBenchmark = value;
     }
     // eslint-disable-next-line react/prop-types
-    this.props.history.push(`/${newPlatform}/${newBenchmark}`);
+    history.push(`/${newPlatform}/${newBenchmark}`);
   }
 
   render() {

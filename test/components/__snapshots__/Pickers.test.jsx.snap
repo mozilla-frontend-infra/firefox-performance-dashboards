@@ -9,27 +9,26 @@ exports[`renders correctly 1`] = `
     className="Picker-root-2"
   >
     <div
-      aria-describedby={undefined}
       className="MuiFormControl-root-3"
     >
       <label
-        className="MuiFormLabel-root-12 MuiFormLabel-filled-16 MuiInputLabel-root-7 MuiInputLabel-formControl-8 MuiInputLabel-animated-11 MuiInputLabel-shrink-10"
+        className="MuiFormLabel-root-14 MuiFormLabel-filled-18 MuiInputLabel-root-7 MuiInputLabel-formControl-8 MuiInputLabel-animated-11 MuiInputLabel-shrink-10"
         data-shrink={true}
-        htmlFor={undefined}
       >
         Platform
       </label>
       <div
-        className="MuiInput-root-24 MuiInput-formControl-25 MuiInput-underline-28"
+        className="MuiInputBase-root-41 MuiInput-root-28 MuiInput-underline-32 MuiInputBase-formControl-42 MuiInput-formControl-29"
+        onClick={[Function]}
       >
         <div
-          className="MuiSelect-root-19"
+          className="MuiSelect-root-21"
         >
           <div
             aria-haspopup="true"
             aria-owns={null}
             aria-pressed="false"
-            className="MuiSelect-select-20 MuiSelect-selectMenu-21 MuiInput-input-32"
+            className="MuiSelect-select-22 MuiSelect-selectMenu-25 MuiInputBase-input-51 MuiInput-input-36"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -40,23 +39,15 @@ exports[`renders correctly 1`] = `
             Windows 10 64bit
           </div>
           <input
-            autoComplete={undefined}
-            autoFocus={undefined}
-            defaultValue={undefined}
-            id={undefined}
             name="platform"
-            onKeyDown={undefined}
-            onKeyUp={undefined}
-            placeholder={undefined}
-            rows={undefined}
             type="hidden"
             value="win10"
           />
           <svg
             aria-hidden="true"
-            className="MuiSvgIcon-root-37 MuiSelect-icon-23"
-            color={undefined}
+            className="MuiSvgIcon-root-58 MuiSelect-icon-27"
             focusable="false"
+            role="presentation"
             viewBox="0 0 24 24"
           >
             <path
@@ -72,27 +63,26 @@ exports[`renders correctly 1`] = `
     className="Picker-root-2"
   >
     <div
-      aria-describedby={undefined}
       className="MuiFormControl-root-3"
     >
       <label
-        className="MuiFormLabel-root-12 MuiFormLabel-filled-16 MuiInputLabel-root-7 MuiInputLabel-formControl-8 MuiInputLabel-animated-11 MuiInputLabel-shrink-10"
+        className="MuiFormLabel-root-14 MuiFormLabel-filled-18 MuiInputLabel-root-7 MuiInputLabel-formControl-8 MuiInputLabel-animated-11 MuiInputLabel-shrink-10"
         data-shrink={true}
-        htmlFor={undefined}
       >
         Benchmark
       </label>
       <div
-        className="MuiInput-root-24 MuiInput-formControl-25 MuiInput-underline-28"
+        className="MuiInputBase-root-41 MuiInput-root-28 MuiInput-underline-32 MuiInputBase-formControl-42 MuiInput-formControl-29"
+        onClick={[Function]}
       >
         <div
-          className="MuiSelect-root-19"
+          className="MuiSelect-root-21"
         >
           <div
             aria-haspopup="true"
             aria-owns={null}
             aria-pressed="false"
-            className="MuiSelect-select-20 MuiSelect-selectMenu-21 MuiInput-input-32"
+            className="MuiSelect-select-22 MuiSelect-selectMenu-25 MuiInputBase-input-51 MuiInput-input-36"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -103,23 +93,15 @@ exports[`renders correctly 1`] = `
             Overview
           </div>
           <input
-            autoComplete={undefined}
-            autoFocus={undefined}
-            defaultValue={undefined}
-            id={undefined}
             name="benchmark"
-            onKeyDown={undefined}
-            onKeyUp={undefined}
-            placeholder={undefined}
-            rows={undefined}
             type="hidden"
             value="overview"
           />
           <svg
             aria-hidden="true"
-            className="MuiSvgIcon-root-37 MuiSelect-icon-23"
-            color={undefined}
+            className="MuiSvgIcon-root-58 MuiSelect-icon-27"
             focusable="false"
+            role="presentation"
             viewBox="0 0 24 24"
           >
             <path
