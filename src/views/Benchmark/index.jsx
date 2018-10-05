@@ -8,7 +8,7 @@ class Benchmark extends Component {
   static propTypes = {
     benchmark: PropTypes.string.isRequired,
     platform: PropTypes.string.isRequired,
-    timeRange: PropTypes.string.isRequired,
+    timeRange: PropTypes.number.isRequired,
   };
 
   state = {
@@ -16,6 +16,7 @@ class Benchmark extends Component {
   };
 
   componentDidMount() {
+    this.mounted = true;
     const { platform, benchmark, timeRange } = this.props;
     this.fetchData(platform, benchmark, timeRange);
   }
@@ -30,9 +31,15 @@ class Benchmark extends Component {
     }
   }
 
+  componentWillUnmount() {
+    this.mounted = false;
+  }
+
   async fetchData(platform, benchmark, timeRange) {
-    this.setState({ benchmarkData: {} });
-    this.setState({ benchmarkData: await fetchData(platform, benchmark, timeRange) });
+    if (this.mounted) {
+      this.setState({ benchmarkData: {} });
+      this.setState({ benchmarkData: await fetchData(platform, benchmark, timeRange) });
+    }
   }
 
   render() {

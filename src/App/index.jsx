@@ -19,16 +19,23 @@ const App = ({ classes }) => (
   <BrowserRouter>
     <Switch>
       <Route
-        path="/:platform/:benchmark/:timeRange"
+        path="/:platform/:benchmark"
         render={({ match }) => {
-          const { platform, benchmark, timeRange } = match.params;
+          const { platform, benchmark } = match.params;
+          // eslint-disable-next-line no-restricted-globals
+          const searchParams = new URLSearchParams(location.search);
+          const timeRange = Math.round(searchParams.get('numDays'));
           if (!validCombination(platform, benchmark, timeRange)) {
             return <Redirect to={CONFIG.default.landingPath} />;
           }
           return (
             <div className={classes.container}>
-              <Navigation platform={platform} benchmark={benchmark} timeRange={timeRange} />
-              <Benchmark {...match.params} />
+              <Navigation
+                platform={platform}
+                benchmark={benchmark}
+                timeRange={timeRange}
+              />
+              <Benchmark {...match.params} timeRange={timeRange} />
             </div>
           );
         }}

@@ -1,8 +1,7 @@
 import queryPerfData from '@mozilla-frontend-infra/perf-goggles';
 import { BENCHMARKS, CONFIG } from '../config';
 import prepareData from './prepareData';
-
-const convertToMs = value => (value * 24 * 3600);
+import { convertToSeconds } from './timeRangeUtils';
 
 const fetchData = async (platform, benchmark, range) => {
   const ALL_DATA = {};
@@ -18,7 +17,9 @@ const fetchData = async (platform, benchmark, range) => {
           option: benchmarkOptions.buildType,
           ...benchmarkOptions,
         };
-        const data = await queryPerfData(seriesConfig, includeSubtests, convertToMs(timeRange));
+        const data = await queryPerfData(
+          seriesConfig, includeSubtests, convertToSeconds(timeRange),
+        );
         if (data) {
           const { suite } = benchmarkOptions;
           const { color, label } = BENCHMARKS[configUID].compare[suite];

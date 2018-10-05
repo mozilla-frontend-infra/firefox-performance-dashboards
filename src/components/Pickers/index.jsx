@@ -3,18 +3,17 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Picker from '../Picker';
 import { BENCHMARKS, CONFIG } from '../../config';
-import buildTimeRangeOptions from '../../utils/buildTimeRangeOptions';
 
 const styles = () => ({
   root: {
     display: 'flex',
-    justifyContent: 'space-evenly',
     textAlign: 'center',
+    padding: '15px',
   },
 });
 
 const Pickers = ({
-  classes, benchmark, onChange, platform, timeRange,
+  classes, benchmark, onChange, platform,
 }) => (
   <div className={classes.root}>
     <Picker
@@ -29,14 +28,6 @@ const Pickers = ({
           return res;
         }, [])
       }
-    />
-    <Picker
-      key="Time range"
-      identifier="timeRange"
-      topLabel="Time range"
-      onSelection={onChange}
-      selectedValue={timeRange}
-      options={buildTimeRangeOptions(timeRange)}
     />
     <Picker
       key="Benchmark selection"
@@ -62,7 +53,6 @@ Pickers.propTypes = ({
   benchmark: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   platform: PropTypes.string.isRequired,
-  timeRange: PropTypes.string.isRequired,
 });
 
 export default withStyles(styles)(Pickers);
