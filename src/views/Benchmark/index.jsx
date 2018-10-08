@@ -40,6 +40,7 @@ class Benchmark extends Component {
         <Graphs
           benchmarkData={benchmarkData}
           overviewMode={this.props.benchmark === 'overview'}
+          platform={this.props.platform}
         />
       );
   }
