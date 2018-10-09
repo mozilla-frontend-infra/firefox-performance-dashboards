@@ -1,435 +1,100 @@
 {
-  "overview-ares6-sm": {
-    "data": {
-      "0bae7e5fb769123dc4504aea0458898f63bee0dd": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "id": 553649820,
-            "job_id": 197648505,
-            "push_timestamp": 1536163323,
-            "signature_id": 1760236,
-            "push_id": 375535,
-            "value": 59.4
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "id": 553805967,
-            "job_id": 197669935,
-            "push_timestamp": 1536171209,
-            "signature_id": 1760236,
-            "push_id": 375610,
-            "value": 115.37
-          },
-          {
-            "datetime": "2018-09-05T21:08:18.000Z",
-            "id": 554007261,
-            "job_id": 197707309,
-            "push_timestamp": 1536181698,
-            "signature_id": 1760236,
-            "push_id": 375702,
-            "value": 58.79
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "id": 554049203,
-            "job_id": 197715267,
-            "push_timestamp": 1536184730,
-            "signature_id": 1760236,
-            "push_id": 375730,
-            "value": 58.8
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "id": 554079825,
-            "job_id": 197721273,
-            "push_timestamp": 1536186344,
-            "signature_id": 1760236,
-            "push_id": 375752,
-            "value": 59.11
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "id": 554339115,
-            "job_id": 197766718,
-            "push_timestamp": 1536208627,
-            "signature_id": 1760236,
-            "push_id": 375888,
-            "value": 58.95
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "id": 554347523,
-            "job_id": 197768090,
-            "push_timestamp": 1536208696,
-            "signature_id": 1760236,
-            "push_id": 375889,
-            "value": 59.26
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "id": 554509117,
-            "job_id": 197798558,
-            "push_timestamp": 1536227412,
-            "signature_id": 1760236,
-            "push_id": 375970,
-            "value": 59
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "id": 554513512,
-            "job_id": 197799083,
-            "push_timestamp": 1536227507,
-            "signature_id": 1760236,
-            "push_id": 375971,
-            "value": 59.27
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "id": 554519912,
-            "job_id": 197801023,
-            "push_timestamp": 1536227657,
-            "signature_id": 1760236,
-            "push_id": 375975,
-            "value": 59.4
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760236,1,11",
-          "parentSignatureHash": "0bae7e5fb769123dc4504aea0458898f63bee0dd",
-          "id": 1760236,
-          "framework_id": 11,
-          "machine_platform": "linux64",
-          "suite": "ares6-sm",
-          "has_subtests": true,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
-        }
+  "1648846": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "job_id": 201674448,
+        "value": 920.5,
+        "signature_id": 1648846,
+        "push_id": 383851,
+        "id": 579149707,
+        "push_timestamp": 1537966541
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "job_id": 201685755,
+        "value": 911.7,
+        "signature_id": 1648846,
+        "push_id": 383877,
+        "id": 579224765,
+        "push_timestamp": 1537970312
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "job_id": 201795713,
+        "value": 916.4,
+        "signature_id": 1648846,
+        "push_id": 384116,
+        "id": 580140208,
+        "push_timestamp": 1537998556
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "job_id": 201795500,
+        "value": 909.2,
+        "signature_id": 1648846,
+        "push_id": 384118,
+        "id": 580126519,
+        "push_timestamp": 1537998701
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "job_id": 201797122,
+        "value": 924.6,
+        "signature_id": 1648846,
+        "push_id": 384119,
+        "id": 580159294,
+        "push_timestamp": 1537998753
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "job_id": 201849746,
+        "value": 909.1,
+        "signature_id": 1648846,
+        "push_id": 384220,
+        "id": 580550835,
+        "push_timestamp": 1538018003
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "job_id": 201849395,
+        "value": 918.2,
+        "signature_id": 1648846,
+        "push_id": 384221,
+        "id": 580523425,
+        "push_timestamp": 1538018046
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "job_id": 201897112,
+        "value": 918.8,
+        "signature_id": 1648846,
+        "push_id": 384313,
+        "id": 581057051,
+        "push_timestamp": 1538039827
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "job_id": 201901843,
+        "value": 927.2,
+        "signature_id": 1648846,
+        "push_id": 384314,
+        "id": 581074236,
+        "push_timestamp": 1538039893
       }
-    },
-    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760236,1,11",
-    "configUID": "ares6",
-    "color": "#e55525",
-    "label": "SpiderMonkey",
-    "suite": "ares6-sm"
-  },
-  "overview-ares6-v8": {
-    "data": {
-      "0888261930ba07211c14d060dcbd919cfe2176a8": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "id": 553648679,
-            "signature_id": 1760205,
-            "value": 50.5,
-            "push_id": 375535,
-            "job_id": 197648423,
-            "push_timestamp": 1536163323
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "id": 553796321,
-            "signature_id": 1760205,
-            "value": 50.9,
-            "push_id": 375610,
-            "job_id": 197670041,
-            "push_timestamp": 1536171209
-          },
-          {
-            "datetime": "2018-09-05T21:08:18.000Z",
-            "id": 554006625,
-            "signature_id": 1760205,
-            "value": 50.86,
-            "push_id": 375702,
-            "job_id": 197707325,
-            "push_timestamp": 1536181698
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "id": 554048712,
-            "signature_id": 1760205,
-            "value": 50.61,
-            "push_id": 375730,
-            "job_id": 197715392,
-            "push_timestamp": 1536184730
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "id": 554079109,
-            "signature_id": 1760205,
-            "value": 50.99,
-            "push_id": 375752,
-            "job_id": 197721376,
-            "push_timestamp": 1536186344
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "id": 554337681,
-            "signature_id": 1760205,
-            "value": 50.2,
-            "push_id": 375888,
-            "job_id": 197766901,
-            "push_timestamp": 1536208627
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "id": 554346233,
-            "signature_id": 1760205,
-            "value": 50.1,
-            "push_id": 375889,
-            "job_id": 197768133,
-            "push_timestamp": 1536208696
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "id": 554508735,
-            "signature_id": 1760205,
-            "value": 51.42,
-            "push_id": 375970,
-            "job_id": 197798458,
-            "push_timestamp": 1536227412
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "id": 554511460,
-            "signature_id": 1760205,
-            "value": 51.06,
-            "push_id": 375971,
-            "job_id": 197798968,
-            "push_timestamp": 1536227507
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "id": 554602172,
-            "signature_id": 1760205,
-            "value": 50.73,
-            "push_id": 375975,
-            "job_id": 197818983,
-            "push_timestamp": 1536227657
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760205,1,11",
-          "parentSignatureHash": "0888261930ba07211c14d060dcbd919cfe2176a8",
-          "id": 1760205,
-          "framework_id": 11,
-          "machine_platform": "linux64",
-          "suite": "ares6-v8",
-          "has_subtests": true,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
-        }
-      }
-    },
-    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760205,1,11",
-    "configUID": "ares6",
-    "color": "#ffcd02",
-    "label": "Chrome v8",
-    "suite": "ares6-v8"
-  },
-  "overview-raptor-assorted-dom-firefox": {
-    "data": {
-      "b25cc780ef12a59804e12f7e0f729dbf9294d090": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "push_id": 375535,
-            "signature_id": 1762616,
-            "value": 19.95,
-            "push_timestamp": 1536163323,
-            "id": 553650239,
-            "job_id": 197648418
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "push_id": 375610,
-            "signature_id": 1762616,
-            "value": 20.4,
-            "push_timestamp": 1536171209,
-            "id": 553797602,
-            "job_id": 197669867
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "push_id": 375730,
-            "signature_id": 1762616,
-            "value": 20.1,
-            "push_timestamp": 1536184730,
-            "id": 554049951,
-            "job_id": 197715316
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "push_id": 375752,
-            "signature_id": 1762616,
-            "value": 20.4,
-            "push_timestamp": 1536186344,
-            "id": 554079551,
-            "job_id": 197721391
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "push_id": 375888,
-            "signature_id": 1762616,
-            "value": 19.5,
-            "push_timestamp": 1536208627,
-            "id": 554339036,
-            "job_id": 197766730
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "push_id": 375889,
-            "signature_id": 1762616,
-            "value": 20.3,
-            "push_timestamp": 1536208696,
-            "id": 554347311,
-            "job_id": 197768277
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "push_id": 375970,
-            "signature_id": 1762616,
-            "value": 20.3,
-            "push_timestamp": 1536227412,
-            "id": 554509028,
-            "job_id": 197798565
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "push_id": 375971,
-            "signature_id": 1762616,
-            "value": 20.2,
-            "push_timestamp": 1536227507,
-            "id": 554513073,
-            "job_id": 197798991
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "push_id": 375975,
-            "signature_id": 1762616,
-            "value": 20.65,
-            "push_timestamp": 1536227657,
-            "id": 554519874,
-            "job_id": 197800838
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1762616,1,10",
-          "parentSignatureHash": "b25cc780ef12a59804e12f7e0f729dbf9294d090",
-          "machine_platform": "linux64",
-          "id": 1762616,
-          "framework_id": 10,
-          "has_subtests": true,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
-          "suite": "raptor-assorted-dom-firefox"
-        }
-      }
-    },
-    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1762616,1,10",
-    "configUID": "assorted-dom",
-    "color": "#e55525",
-    "label": "Firefox",
-    "suite": "raptor-assorted-dom-firefox"
-  },
-  "overview-kraken": {
-    "data": {
-      "123a08fb5b7095bf46b82502d49f9b71e16aa3ad": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "id": 553677998,
-            "job_id": 197648315,
-            "push_timestamp": 1536163323,
-            "signature_id": 1648846,
-            "push_id": 375535,
-            "value": 918.7
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "id": 553817786,
-            "job_id": 197670031,
-            "push_timestamp": 1536171209,
-            "signature_id": 1648846,
-            "push_id": 375610,
-            "value": 918
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "id": 554072729,
-            "job_id": 197715293,
-            "push_timestamp": 1536184730,
-            "signature_id": 1648846,
-            "push_id": 375730,
-            "value": 910.4
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "id": 554104948,
-            "job_id": 197721227,
-            "push_timestamp": 1536186344,
-            "signature_id": 1648846,
-            "push_id": 375752,
-            "value": 917.2
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "id": 554357315,
-            "job_id": 197766897,
-            "push_timestamp": 1536208627,
-            "signature_id": 1648846,
-            "push_id": 375888,
-            "value": 910
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "id": 554363181,
-            "job_id": 197768251,
-            "push_timestamp": 1536208696,
-            "signature_id": 1648846,
-            "push_id": 375889,
-            "value": 924.2
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "id": 554529188,
-            "job_id": 197798547,
-            "push_timestamp": 1536227412,
-            "signature_id": 1648846,
-            "push_id": 375970,
-            "value": 928
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "id": 554532572,
-            "job_id": 197799143,
-            "push_timestamp": 1536227507,
-            "signature_id": 1648846,
-            "push_id": 375971,
-            "value": 907.8
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "id": 554540530,
-            "job_id": 197800882,
-            "push_timestamp": 1536227657,
-            "signature_id": 1648846,
-            "push_id": 375975,
-            "value": 923.8
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1648846,1,1",
-          "parentSignatureHash": "123a08fb5b7095bf46b82502d49f9b71e16aa3ad",
-          "id": 1648846,
-          "framework_id": 1,
-          "machine_platform": "linux64",
-          "suite": "kraken",
-          "has_subtests": true,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
-          "extra_options": [
-            "e10s",
-            "stylo"
-          ]
-        }
-      }
+    ],
+    "meta": {
+      "parentSignatureHash": "123a08fb5b7095bf46b82502d49f9b71e16aa3ad",
+      "framework_id": 1,
+      "machine_platform": "linux64",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "id": 1648846,
+      "has_subtests": true,
+      "suite": "kraken",
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ]
     },
     "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1648846,1,1",
     "configUID": "kraken",
@@ -437,949 +102,99 @@
     "label": "Firefox",
     "suite": "kraken"
   },
-  "overview-raptor-assorted-dom-chrome": {
-    "data": {
-      "898fce18e2311b8517fb57629494fe194c2de84e": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "id": 553652857,
-            "signature_id": 1762623,
-            "value": 466.85,
-            "push_id": 375535,
-            "job_id": 197648318,
-            "push_timestamp": 1536163323
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "id": 553800097,
-            "signature_id": 1762623,
-            "value": 464.7,
-            "push_id": 375610,
-            "job_id": 197669971,
-            "push_timestamp": 1536171209
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "id": 554050660,
-            "signature_id": 1762623,
-            "value": 467.05,
-            "push_id": 375730,
-            "job_id": 197715410,
-            "push_timestamp": 1536184730
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "id": 554082565,
-            "signature_id": 1762623,
-            "value": 459.65,
-            "push_id": 375752,
-            "job_id": 197721216,
-            "push_timestamp": 1536186344
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "id": 554341635,
-            "signature_id": 1762623,
-            "value": 474.35,
-            "push_id": 375888,
-            "job_id": 197766805,
-            "push_timestamp": 1536208627
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "id": 554348608,
-            "signature_id": 1762623,
-            "value": 459,
-            "push_id": 375889,
-            "job_id": 197768248,
-            "push_timestamp": 1536208696
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "id": 554509384,
-            "signature_id": 1762623,
-            "value": 468.7,
-            "push_id": 375970,
-            "job_id": 197798590,
-            "push_timestamp": 1536227412
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "id": 554514551,
-            "signature_id": 1762623,
-            "value": 464.8,
-            "push_id": 375971,
-            "job_id": 197799141,
-            "push_timestamp": 1536227507
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "id": 554521620,
-            "signature_id": 1762623,
-            "value": 467,
-            "push_id": 375975,
-            "job_id": 197800832,
-            "push_timestamp": 1536227657
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1762623,1,10",
-          "parentSignatureHash": "898fce18e2311b8517fb57629494fe194c2de84e",
-          "machine_platform": "linux64",
-          "framework_id": 10,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
-          "has_subtests": true,
-          "suite": "raptor-assorted-dom-chrome",
-          "id": 1762623
-        }
+  "1706436": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "signature_id": 1706436,
+        "push_id": 383851,
+        "push_timestamp": 1537966541,
+        "id": 579129366,
+        "value": 72.62,
+        "job_id": 201674319
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "signature_id": 1706436,
+        "push_id": 383877,
+        "push_timestamp": 1537970312,
+        "id": 579202859,
+        "value": 72.41,
+        "job_id": 201685615
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "signature_id": 1706436,
+        "push_id": 384116,
+        "push_timestamp": 1537998556,
+        "id": 580114997,
+        "value": 72.45,
+        "job_id": 201795762
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "signature_id": 1706436,
+        "push_id": 384118,
+        "push_timestamp": 1537998701,
+        "id": 580102853,
+        "value": 73.16,
+        "job_id": 201795503
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "signature_id": 1706436,
+        "push_id": 384119,
+        "push_timestamp": 1537998753,
+        "id": 580134207,
+        "value": 71.36,
+        "job_id": 201797086
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "signature_id": 1706436,
+        "push_id": 384220,
+        "push_timestamp": 1538018003,
+        "id": 580512363,
+        "value": 72.72,
+        "job_id": 201849632
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "signature_id": 1706436,
+        "push_id": 384221,
+        "push_timestamp": 1538018046,
+        "id": 580491234,
+        "value": 72.89,
+        "job_id": 201849440
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "signature_id": 1706436,
+        "push_id": 384313,
+        "push_timestamp": 1538039827,
+        "id": 581032714,
+        "value": 73.16,
+        "job_id": 201897063
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "signature_id": 1706436,
+        "push_id": 384314,
+        "push_timestamp": 1538039893,
+        "id": 581044636,
+        "value": 72.46,
+        "job_id": 201901847
       }
-    },
-    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1762623,1,10",
-    "configUID": "assorted-dom",
-    "color": "#ffcd02",
-    "label": "Chrome",
-    "suite": "raptor-assorted-dom-chrome"
-  },
-  "overview-raptor-motionmark-animometer-firefox": {
-    "data": {
-      "8a2598f722b18043d5ed05941f7de56f7efc1978": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "id": 553666633,
-            "job_id": 197648421,
-            "push_timestamp": 1536163323,
-            "signature_id": 1707657,
-            "push_id": 375535,
-            "value": 42.65
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "id": 553811920,
-            "job_id": 197670040,
-            "push_timestamp": 1536171209,
-            "signature_id": 1707657,
-            "push_id": 375610,
-            "value": 42.37
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "id": 554061474,
-            "job_id": 197715380,
-            "push_timestamp": 1536184730,
-            "signature_id": 1707657,
-            "push_id": 375730,
-            "value": 42
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "id": 554096897,
-            "job_id": 197721285,
-            "push_timestamp": 1536186344,
-            "signature_id": 1707657,
-            "push_id": 375752,
-            "value": 42.6
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "id": 554351861,
-            "job_id": 197766792,
-            "push_timestamp": 1536208627,
-            "signature_id": 1707657,
-            "push_id": 375888,
-            "value": 42.67
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "id": 554356678,
-            "job_id": 197768116,
-            "push_timestamp": 1536208696,
-            "signature_id": 1707657,
-            "push_id": 375889,
-            "value": 42.06
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "id": 554519887,
-            "job_id": 197798556,
-            "push_timestamp": 1536227412,
-            "signature_id": 1707657,
-            "push_id": 375970,
-            "value": 42.64
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "id": 554526412,
-            "job_id": 197799186,
-            "push_timestamp": 1536227507,
-            "signature_id": 1707657,
-            "push_id": 375971,
-            "value": 42.94
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "id": 554532441,
-            "job_id": 197800975,
-            "push_timestamp": 1536227657,
-            "signature_id": 1707657,
-            "push_id": 375975,
-            "value": 42.93
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1707657,1,10",
-          "parentSignatureHash": "8a2598f722b18043d5ed05941f7de56f7efc1978",
-          "machine_platform": "linux64",
-          "id": 1707657,
-          "framework_id": 10,
-          "has_subtests": true,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
-          "lower_is_better": false,
-          "suite": "raptor-motionmark-animometer-firefox"
-        }
-      }
-    },
-    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1707657,1,10",
-    "configUID": "motionmark-animometer",
-    "color": "#e55525",
-    "label": "Firefox",
-    "suite": "raptor-motionmark-animometer-firefox"
-  },
-  "overview-six-speed-sm": {
-    "data": {
-      "73faa0899bec4035028bf2a2f50bbf90aaccc3db": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "push_id": 375535,
-            "signature_id": 1760249,
-            "value": 10951,
-            "push_timestamp": 1536163323,
-            "id": 553647479,
-            "job_id": 197648384
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "push_id": 375610,
-            "signature_id": 1760249,
-            "value": 10832,
-            "push_timestamp": 1536171209,
-            "id": 553794101,
-            "job_id": 197669907
-          },
-          {
-            "datetime": "2018-09-05T21:08:18.000Z",
-            "push_id": 375702,
-            "signature_id": 1760249,
-            "value": 10914,
-            "push_timestamp": 1536181698,
-            "id": 554005610,
-            "job_id": 197707297
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "push_id": 375730,
-            "signature_id": 1760249,
-            "value": 10882,
-            "push_timestamp": 1536184730,
-            "id": 554046399,
-            "job_id": 197715314
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "push_id": 375752,
-            "signature_id": 1760249,
-            "value": 11023,
-            "push_timestamp": 1536186344,
-            "id": 554076928,
-            "job_id": 197721276
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "push_id": 375888,
-            "signature_id": 1760249,
-            "value": 10928,
-            "push_timestamp": 1536208627,
-            "id": 554336781,
-            "job_id": 197766697
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "push_id": 375889,
-            "signature_id": 1760249,
-            "value": 10987,
-            "push_timestamp": 1536208696,
-            "id": 554344141,
-            "job_id": 197768219
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "push_id": 375970,
-            "signature_id": 1760249,
-            "value": 10874,
-            "push_timestamp": 1536227412,
-            "id": 554508443,
-            "job_id": 197798581
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "push_id": 375971,
-            "signature_id": 1760249,
-            "value": 10996,
-            "push_timestamp": 1536227507,
-            "id": 554510539,
-            "job_id": 197799022
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "push_id": 375975,
-            "signature_id": 1760249,
-            "value": 10828,
-            "push_timestamp": 1536227657,
-            "id": 554516999,
-            "job_id": 197800928
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760249,1,11",
-          "parentSignatureHash": "73faa0899bec4035028bf2a2f50bbf90aaccc3db",
-          "machine_platform": "linux64",
-          "framework_id": 11,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
-          "has_subtests": true,
-          "suite": "six-speed-sm",
-          "id": 1760249
-        }
-      }
-    },
-    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760249,1,11",
-    "configUID": "six-speed",
-    "color": "#e55525",
-    "label": "SpiderMonkey",
-    "suite": "six-speed-sm"
-  },
-  "overview-six-speed-v8": {
-    "data": {
-      "cf434a6a6de4cb794920c929ed7d292379375493": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "id": 553647363,
-            "job_id": 197648468,
-            "push_timestamp": 1536163323,
-            "signature_id": 1760134,
-            "push_id": 375535,
-            "value": 20473
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "id": 553794300,
-            "job_id": 197669910,
-            "push_timestamp": 1536171209,
-            "signature_id": 1760134,
-            "push_id": 375610,
-            "value": 20499
-          },
-          {
-            "datetime": "2018-09-05T21:08:18.000Z",
-            "id": 554005870,
-            "job_id": 197707286,
-            "push_timestamp": 1536181698,
-            "signature_id": 1760134,
-            "push_id": 375702,
-            "value": 20553
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "id": 554046648,
-            "job_id": 197715324,
-            "push_timestamp": 1536184730,
-            "signature_id": 1760134,
-            "push_id": 375730,
-            "value": 20524
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "id": 554077092,
-            "job_id": 197721419,
-            "push_timestamp": 1536186344,
-            "signature_id": 1760134,
-            "push_id": 375752,
-            "value": 20521
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "id": 554336859,
-            "job_id": 197766706,
-            "push_timestamp": 1536208627,
-            "signature_id": 1760134,
-            "push_id": 375888,
-            "value": 20573
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "id": 554344256,
-            "job_id": 197768237,
-            "push_timestamp": 1536208696,
-            "signature_id": 1760134,
-            "push_id": 375889,
-            "value": 20581
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "id": 554508593,
-            "job_id": 197798555,
-            "push_timestamp": 1536227412,
-            "signature_id": 1760134,
-            "push_id": 375970,
-            "value": 20448
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "id": 554510766,
-            "job_id": 197799079,
-            "push_timestamp": 1536227507,
-            "signature_id": 1760134,
-            "push_id": 375971,
-            "value": 20721
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "id": 554517140,
-            "job_id": 197800856,
-            "push_timestamp": 1536227657,
-            "signature_id": 1760134,
-            "push_id": 375975,
-            "value": 20544
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760134,1,11",
-          "parentSignatureHash": "cf434a6a6de4cb794920c929ed7d292379375493",
-          "machine_platform": "linux64",
-          "framework_id": 11,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
-          "has_subtests": true,
-          "suite": "six-speed-v8",
-          "id": 1760134
-        }
-      }
-    },
-    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760134,1,11",
-    "configUID": "six-speed",
-    "color": "#ffcd02",
-    "label": "Chrome v8",
-    "suite": "six-speed-v8"
-  },
-  "overview-raptor-motionmark-animometer-chrome": {
-    "data": {
-      "370d409602bd068b582d3aa39dd70355a525c70a": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "id": 553670119,
-            "job_id": 197648534,
-            "push_timestamp": 1536163323,
-            "signature_id": 1730980,
-            "push_id": 375535,
-            "value": 45.74
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "id": 553812543,
-            "job_id": 197669922,
-            "push_timestamp": 1536171209,
-            "signature_id": 1730980,
-            "push_id": 375610,
-            "value": 45.74
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "id": 554097207,
-            "job_id": 197721373,
-            "push_timestamp": 1536186344,
-            "signature_id": 1730980,
-            "push_id": 375752,
-            "value": 45.85
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "id": 554353017,
-            "job_id": 197766694,
-            "push_timestamp": 1536208627,
-            "signature_id": 1730980,
-            "push_id": 375888,
-            "value": 45.74
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "id": 554357065,
-            "job_id": 197768100,
-            "push_timestamp": 1536208696,
-            "signature_id": 1730980,
-            "push_id": 375889,
-            "value": 45.8
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "id": 554520211,
-            "job_id": 197798571,
-            "push_timestamp": 1536227412,
-            "signature_id": 1730980,
-            "push_id": 375970,
-            "value": 45.72
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "id": 554527766,
-            "job_id": 197799001,
-            "push_timestamp": 1536227507,
-            "signature_id": 1730980,
-            "push_id": 375971,
-            "value": 45.76
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1730980,1,10",
-          "parentSignatureHash": "370d409602bd068b582d3aa39dd70355a525c70a",
-          "machine_platform": "linux64",
-          "framework_id": 10,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
-          "lower_is_better": false,
-          "has_subtests": true,
-          "suite": "raptor-motionmark-animometer-chrome",
-          "id": 1730980
-        }
-      }
-    },
-    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1730980,1,10",
-    "configUID": "motionmark-animometer",
-    "color": "#ffcd02",
-    "label": "Chrome",
-    "suite": "raptor-motionmark-animometer-chrome"
-  },
-  "overview-raptor-motionmark-htmlsuite-firefox": {
-    "data": {
-      "f21f262859cb3e7119cb6104c44d942ee84db7b4": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "id": 553673138,
-            "job_id": 197648365,
-            "push_timestamp": 1536163323,
-            "signature_id": 1707740,
-            "push_id": 375535,
-            "value": 27.27
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "id": 553814943,
-            "job_id": 197669934,
-            "push_timestamp": 1536171209,
-            "signature_id": 1707740,
-            "push_id": 375610,
-            "value": 27.16
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "id": 554066563,
-            "job_id": 197715448,
-            "push_timestamp": 1536184730,
-            "signature_id": 1707740,
-            "push_id": 375730,
-            "value": 27.23
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "id": 554098817,
-            "job_id": 197721225,
-            "push_timestamp": 1536186344,
-            "signature_id": 1707740,
-            "push_id": 375752,
-            "value": 27.21
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "id": 554354713,
-            "job_id": 197766785,
-            "push_timestamp": 1536208627,
-            "signature_id": 1707740,
-            "push_id": 375888,
-            "value": 27.25
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "id": 554359232,
-            "job_id": 197768214,
-            "push_timestamp": 1536208696,
-            "signature_id": 1707740,
-            "push_id": 375889,
-            "value": 27.23
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "id": 554523149,
-            "job_id": 197798475,
-            "push_timestamp": 1536227412,
-            "signature_id": 1707740,
-            "push_id": 375970,
-            "value": 27.25
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "id": 554529302,
-            "job_id": 197799072,
-            "push_timestamp": 1536227507,
-            "signature_id": 1707740,
-            "push_id": 375971,
-            "value": 27.23
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "id": 554535717,
-            "job_id": 197800890,
-            "push_timestamp": 1536227657,
-            "signature_id": 1707740,
-            "push_id": 375975,
-            "value": 27.3
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1707740,1,10",
-          "parentSignatureHash": "f21f262859cb3e7119cb6104c44d942ee84db7b4",
-          "machine_platform": "linux64",
-          "framework_id": 10,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
-          "lower_is_better": false,
-          "has_subtests": true,
-          "suite": "raptor-motionmark-htmlsuite-firefox",
-          "id": 1707740
-        }
-      }
-    },
-    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1707740,1,10",
-    "configUID": "motionmark-htmlsuite",
-    "color": "#e55525",
-    "label": "Firefox",
-    "suite": "raptor-motionmark-htmlsuite-firefox"
-  },
-  "overview-raptor-motionmark-htmlsuite-chrome": {
-    "data": {
-      "be10a4db8bae7f2a9c6f8fa7819ccfad54a6ae37": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "push_id": 375535,
-            "signature_id": 1731007,
-            "value": 54.33,
-            "push_timestamp": 1536163323,
-            "id": 553672779,
-            "job_id": 197648488
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "push_id": 375610,
-            "signature_id": 1731007,
-            "value": 54.22,
-            "push_timestamp": 1536171209,
-            "id": 553814960,
-            "job_id": 197669859
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "push_id": 375730,
-            "signature_id": 1731007,
-            "value": 54.2,
-            "push_timestamp": 1536184730,
-            "id": 554066986,
-            "job_id": 197715345
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "push_id": 375752,
-            "signature_id": 1731007,
-            "value": 54.34,
-            "push_timestamp": 1536186344,
-            "id": 554099557,
-            "job_id": 197721384
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "push_id": 375888,
-            "signature_id": 1731007,
-            "value": 54.54,
-            "push_timestamp": 1536208627,
-            "id": 554355042,
-            "job_id": 197766847
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "push_id": 375889,
-            "signature_id": 1731007,
-            "value": 54.26,
-            "push_timestamp": 1536208696,
-            "id": 554359220,
-            "job_id": 197768265
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "push_id": 375970,
-            "signature_id": 1731007,
-            "value": 54.44,
-            "push_timestamp": 1536227412,
-            "id": 554524086,
-            "job_id": 197798642
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "push_id": 375971,
-            "signature_id": 1731007,
-            "value": 54.29,
-            "push_timestamp": 1536227507,
-            "id": 554529556,
-            "job_id": 197799096
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "push_id": 375975,
-            "signature_id": 1731007,
-            "value": 54.37,
-            "push_timestamp": 1536227657,
-            "id": 554535914,
-            "job_id": 197800944
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1731007,1,10",
-          "parentSignatureHash": "be10a4db8bae7f2a9c6f8fa7819ccfad54a6ae37",
-          "machine_platform": "linux64",
-          "framework_id": 10,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
-          "lower_is_better": false,
-          "has_subtests": true,
-          "suite": "raptor-motionmark-htmlsuite-chrome",
-          "id": 1731007
-        }
-      }
-    },
-    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1731007,1,10",
-    "configUID": "motionmark-htmlsuite",
-    "color": "#ffcd02",
-    "label": "Chrome",
-    "suite": "raptor-motionmark-htmlsuite-chrome"
-  },
-  "overview-sunspider-sm": {
-    "data": {
-      "068b321f0801b327b040ab32a900798172c2fa47": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "push_id": 375535,
-            "signature_id": 1760107,
-            "value": 201,
-            "push_timestamp": 1536163323,
-            "id": 553646903,
-            "job_id": 197648500
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "push_id": 375610,
-            "signature_id": 1760107,
-            "value": 197,
-            "push_timestamp": 1536171209,
-            "id": 553793893,
-            "job_id": 197669981
-          },
-          {
-            "datetime": "2018-09-05T21:08:18.000Z",
-            "push_id": 375702,
-            "signature_id": 1760107,
-            "value": 199,
-            "push_timestamp": 1536181698,
-            "id": 554005456,
-            "job_id": 197707291
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "push_id": 375730,
-            "signature_id": 1760107,
-            "value": 192,
-            "push_timestamp": 1536184730,
-            "id": 554046528,
-            "job_id": 197715258
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "push_id": 375752,
-            "signature_id": 1760107,
-            "value": 207,
-            "push_timestamp": 1536186344,
-            "id": 554076881,
-            "job_id": 197721247
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "push_id": 375888,
-            "signature_id": 1760107,
-            "value": 191,
-            "push_timestamp": 1536208627,
-            "id": 554336707,
-            "job_id": 197766831
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "push_id": 375889,
-            "signature_id": 1760107,
-            "value": 202,
-            "push_timestamp": 1536208696,
-            "id": 554344041,
-            "job_id": 197768026
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "push_id": 375970,
-            "signature_id": 1760107,
-            "value": 199,
-            "push_timestamp": 1536227412,
-            "id": 554508323,
-            "job_id": 197798564
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "push_id": 375971,
-            "signature_id": 1760107,
-            "value": 204,
-            "push_timestamp": 1536227507,
-            "id": 554510483,
-            "job_id": 197799077
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "push_id": 375975,
-            "signature_id": 1760107,
-            "value": 206,
-            "push_timestamp": 1536227657,
-            "id": 554516757,
-            "job_id": 197800837
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760107,1,11",
-          "parentSignatureHash": "068b321f0801b327b040ab32a900798172c2fa47",
-          "machine_platform": "linux64",
-          "id": 1760107,
-          "framework_id": 11,
-          "has_subtests": true,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
-          "suite": "sunspider-sm"
-        }
-      }
-    },
-    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760107,1,11",
-    "configUID": "sunspider-jsbench",
-    "color": "#e55525",
-    "label": "SpiderMonkey",
-    "suite": "sunspider-sm"
-  },
-  "overview-raptor-speedometer-firefox": {
-    "data": {
-      "1d381cf4f638f564bbcec59b749665b2392b8be5": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "id": 553654423,
-            "job_id": 197648511,
-            "push_timestamp": 1536163323,
-            "signature_id": 1706436,
-            "push_id": 375535,
-            "value": 72.34
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "id": 553800977,
-            "job_id": 197669882,
-            "push_timestamp": 1536171209,
-            "signature_id": 1706436,
-            "push_id": 375610,
-            "value": 72
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "id": 554052327,
-            "job_id": 197715467,
-            "push_timestamp": 1536184730,
-            "signature_id": 1706436,
-            "push_id": 375730,
-            "value": 71.77
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "id": 554083976,
-            "job_id": 197721397,
-            "push_timestamp": 1536186344,
-            "signature_id": 1706436,
-            "push_id": 375752,
-            "value": 72.4
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "id": 554342831,
-            "job_id": 197766803,
-            "push_timestamp": 1536208627,
-            "signature_id": 1706436,
-            "push_id": 375888,
-            "value": 72.46
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "id": 554350246,
-            "job_id": 197768162,
-            "push_timestamp": 1536208696,
-            "signature_id": 1706436,
-            "push_id": 375889,
-            "value": 71.92
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "id": 554510716,
-            "job_id": 197798453,
-            "push_timestamp": 1536227412,
-            "signature_id": 1706436,
-            "push_id": 375970,
-            "value": 72.12
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "id": 554515595,
-            "job_id": 197799021,
-            "push_timestamp": 1536227507,
-            "signature_id": 1706436,
-            "push_id": 375971,
-            "value": 72.46
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "id": 554523620,
-            "job_id": 197800959,
-            "push_timestamp": 1536227657,
-            "signature_id": 1706436,
-            "push_id": 375975,
-            "value": 72.28
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1706436,1,10",
-          "parentSignatureHash": "1d381cf4f638f564bbcec59b749665b2392b8be5",
-          "id": 1706436,
-          "framework_id": 10,
-          "machine_platform": "linux64",
-          "suite": "raptor-speedometer-firefox",
-          "lower_is_better": false,
-          "has_subtests": true,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
-        }
-      }
+    ],
+    "meta": {
+      "parentSignatureHash": "1d381cf4f638f564bbcec59b749665b2392b8be5",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "framework_id": 10,
+      "machine_platform": "linux64",
+      "lower_is_better": false,
+      "id": 1706436,
+      "has_subtests": true,
+      "suite": "raptor-speedometer-firefox"
     },
     "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1706436,1,10",
     "configUID": "speedometer",
@@ -1387,435 +202,199 @@
     "label": "Firefox",
     "suite": "raptor-speedometer-firefox"
   },
-  "overview-raptor-speedometer-chrome": {
-    "data": {
-      "bf4fcd6df34988c8aea87ccda51b0f70b4141643": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "id": 553653949,
-            "signature_id": 1714897,
-            "value": 92.57,
-            "push_id": 375535,
-            "job_id": 197648317,
-            "push_timestamp": 1536163323
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "id": 553800769,
-            "signature_id": 1714897,
-            "value": 92.2,
-            "push_id": 375610,
-            "job_id": 197669966,
-            "push_timestamp": 1536171209
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "id": 554052200,
-            "signature_id": 1714897,
-            "value": 93.54,
-            "push_id": 375730,
-            "job_id": 197715415,
-            "push_timestamp": 1536184730
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "id": 554083829,
-            "signature_id": 1714897,
-            "value": 92.83,
-            "push_id": 375752,
-            "job_id": 197721280,
-            "push_timestamp": 1536186344
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "id": 554343414,
-            "signature_id": 1714897,
-            "value": 93.1,
-            "push_id": 375888,
-            "job_id": 197766754,
-            "push_timestamp": 1536208627
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "id": 554349733,
-            "signature_id": 1714897,
-            "value": 91.72,
-            "push_id": 375889,
-            "job_id": 197768178,
-            "push_timestamp": 1536208696
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "id": 554511177,
-            "signature_id": 1714897,
-            "value": 92.44,
-            "push_id": 375970,
-            "job_id": 197798637,
-            "push_timestamp": 1536227412
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "id": 554515518,
-            "signature_id": 1714897,
-            "value": 92.92,
-            "push_id": 375971,
-            "job_id": 197799171,
-            "push_timestamp": 1536227507
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "id": 554523486,
-            "signature_id": 1714897,
-            "value": 92.44,
-            "push_id": 375975,
-            "job_id": 197801030,
-            "push_timestamp": 1536227657
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1714897,1,10",
-          "parentSignatureHash": "bf4fcd6df34988c8aea87ccda51b0f70b4141643",
-          "machine_platform": "linux64",
-          "framework_id": 10,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
-          "lower_is_better": false,
-          "has_subtests": true,
-          "suite": "raptor-speedometer-chrome",
-          "id": 1714897
-        }
+  "1707657": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "push_id": 383851,
+        "signature_id": 1707657,
+        "value": 42.69,
+        "job_id": 201674293,
+        "id": 579136157,
+        "push_timestamp": 1537966541
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "push_id": 383877,
+        "signature_id": 1707657,
+        "value": 42.68,
+        "job_id": 201685770,
+        "id": 579216342,
+        "push_timestamp": 1537970312
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "push_id": 384116,
+        "signature_id": 1707657,
+        "value": 42.72,
+        "job_id": 201795671,
+        "id": 580125194,
+        "push_timestamp": 1537998556
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "push_id": 384118,
+        "signature_id": 1707657,
+        "value": 42.62,
+        "job_id": 201795558,
+        "id": 580114176,
+        "push_timestamp": 1537998701
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "push_id": 384119,
+        "signature_id": 1707657,
+        "value": 42.63,
+        "job_id": 201796963,
+        "id": 580146828,
+        "push_timestamp": 1537998753
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "push_id": 384220,
+        "signature_id": 1707657,
+        "value": 42.53,
+        "job_id": 201849747,
+        "id": 580529938,
+        "push_timestamp": 1538018003
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "push_id": 384221,
+        "signature_id": 1707657,
+        "value": 42.48,
+        "job_id": 201849533,
+        "id": 580516199,
+        "push_timestamp": 1538018046
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "push_id": 384313,
+        "signature_id": 1707657,
+        "value": 42.56,
+        "job_id": 201896957,
+        "id": 581035884,
+        "push_timestamp": 1538039827
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "push_id": 384314,
+        "signature_id": 1707657,
+        "value": 42.56,
+        "job_id": 201901816,
+        "id": 581055900,
+        "push_timestamp": 1538039893
       }
+    ],
+    "meta": {
+      "parentSignatureHash": "8a2598f722b18043d5ed05941f7de56f7efc1978",
+      "framework_id": 10,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "machine_platform": "linux64",
+      "lower_is_better": false,
+      "has_subtests": true,
+      "id": 1707657,
+      "suite": "raptor-motionmark-animometer-firefox"
     },
-    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1714897,1,10",
-    "configUID": "speedometer",
-    "color": "#ffcd02",
-    "label": "Chrome",
-    "suite": "raptor-speedometer-chrome"
-  },
-  "overview-web-tooling-benchmark-sm": {
-    "data": {
-      "06fcb9c04a4279271ee4167a05b4ac28da5060f0": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "id": 553649689,
-            "signature_id": 1760187,
-            "value": 5.76,
-            "push_id": 375535,
-            "job_id": 197648352,
-            "push_timestamp": 1536163323
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "id": 553797105,
-            "signature_id": 1760187,
-            "value": 5.86,
-            "push_id": 375610,
-            "job_id": 197669864,
-            "push_timestamp": 1536171209
-          },
-          {
-            "datetime": "2018-09-05T21:08:18.000Z",
-            "id": 554007019,
-            "signature_id": 1760187,
-            "value": 5.79,
-            "push_id": 375702,
-            "job_id": 197707302,
-            "push_timestamp": 1536181698
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "id": 554048672,
-            "signature_id": 1760187,
-            "value": 5.9,
-            "push_id": 375730,
-            "job_id": 197715291,
-            "push_timestamp": 1536184730
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "id": 554079254,
-            "signature_id": 1760187,
-            "value": 6.05,
-            "push_id": 375752,
-            "job_id": 197721339,
-            "push_timestamp": 1536186344
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "id": 554339023,
-            "signature_id": 1760187,
-            "value": 5.8,
-            "push_id": 375888,
-            "job_id": 197766839,
-            "push_timestamp": 1536208627
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "id": 554347261,
-            "signature_id": 1760187,
-            "value": 5.83,
-            "push_id": 375889,
-            "job_id": 197768281,
-            "push_timestamp": 1536208696
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "id": 554508991,
-            "signature_id": 1760187,
-            "value": 5.9,
-            "push_id": 375970,
-            "job_id": 197798560,
-            "push_timestamp": 1536227412
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "id": 554512458,
-            "signature_id": 1760187,
-            "value": 5.83,
-            "push_id": 375971,
-            "job_id": 197799070,
-            "push_timestamp": 1536227507
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "id": 554519664,
-            "signature_id": 1760187,
-            "value": 5.84,
-            "push_id": 375975,
-            "job_id": 197800878,
-            "push_timestamp": 1536227657
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760187,1,11",
-          "parentSignatureHash": "06fcb9c04a4279271ee4167a05b4ac28da5060f0",
-          "id": 1760187,
-          "framework_id": 11,
-          "machine_platform": "linux64",
-          "suite": "web-tooling-benchmark-sm",
-          "has_subtests": true,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
-        }
-      }
-    },
-    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760187,1,11",
-    "configUID": "web-tooling",
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1707657,1,10",
+    "configUID": "motionmark-animometer",
     "color": "#e55525",
-    "label": "SpiderMonkey",
-    "suite": "web-tooling-benchmark-sm"
+    "label": "Firefox",
+    "suite": "raptor-motionmark-animometer-firefox"
   },
-  "overview-web-tooling-benchmark-v8": {
-    "data": {
-      "620f90feca6c0916ca8e593737eb6bf6d0301f68": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "push_id": 375535,
-            "signature_id": 1760218,
-            "value": 4.51,
-            "push_timestamp": 1536163323,
-            "id": 553649741,
-            "job_id": 197648299
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "push_id": 375610,
-            "signature_id": 1760218,
-            "value": 4.59,
-            "push_timestamp": 1536171209,
-            "id": 553797436,
-            "job_id": 197669961
-          },
-          {
-            "datetime": "2018-09-05T21:08:18.000Z",
-            "push_id": 375702,
-            "signature_id": 1760218,
-            "value": 4.56,
-            "push_timestamp": 1536181698,
-            "id": 554007309,
-            "job_id": 197707295
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "push_id": 375730,
-            "signature_id": 1760218,
-            "value": 4.54,
-            "push_timestamp": 1536184730,
-            "id": 554049814,
-            "job_id": 197715365
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "push_id": 375752,
-            "signature_id": 1760218,
-            "value": 4.55,
-            "push_timestamp": 1536186344,
-            "id": 554079858,
-            "job_id": 197721303
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "push_id": 375888,
-            "signature_id": 1760218,
-            "value": 4.54,
-            "push_timestamp": 1536208627,
-            "id": 554339245,
-            "job_id": 197766780
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "push_id": 375889,
-            "signature_id": 1760218,
-            "value": 4.63,
-            "push_timestamp": 1536208696,
-            "id": 554347648,
-            "job_id": 197768226
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "push_id": 375970,
-            "signature_id": 1760218,
-            "value": 4.55,
-            "push_timestamp": 1536227412,
-            "id": 554509137,
-            "job_id": 197798467
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "push_id": 375971,
-            "signature_id": 1760218,
-            "value": 4.53,
-            "push_timestamp": 1536227507,
-            "id": 554513496,
-            "job_id": 197798949
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "push_id": 375975,
-            "signature_id": 1760218,
-            "value": 4.53,
-            "push_timestamp": 1536227657,
-            "id": 554519913,
-            "job_id": 197800829
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760218,1,11",
-          "parentSignatureHash": "620f90feca6c0916ca8e593737eb6bf6d0301f68",
-          "machine_platform": "linux64",
-          "id": 1760218,
-          "framework_id": 11,
-          "has_subtests": true,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
-          "suite": "web-tooling-benchmark-v8"
-        }
+  "1707667": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "signature_id": 1707667,
+        "push_id": 383851,
+        "push_timestamp": 1537966541,
+        "id": 579132006,
+        "value": 40.31,
+        "job_id": 201674388
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "signature_id": 1707667,
+        "push_id": 383877,
+        "push_timestamp": 1537970312,
+        "id": 579212156,
+        "value": 40,
+        "job_id": 201685790
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "signature_id": 1707667,
+        "push_id": 384116,
+        "push_timestamp": 1537998556,
+        "id": 580114042,
+        "value": 40.09,
+        "job_id": 201795808
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "signature_id": 1707667,
+        "push_id": 384118,
+        "push_timestamp": 1537998701,
+        "id": 580103568,
+        "value": 40.1,
+        "job_id": 201795641
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "signature_id": 1707667,
+        "push_id": 384119,
+        "push_timestamp": 1537998753,
+        "id": 580132668,
+        "value": 40.61,
+        "job_id": 201797069
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "signature_id": 1707667,
+        "push_id": 384220,
+        "push_timestamp": 1538018003,
+        "id": 580500374,
+        "value": 40.27,
+        "job_id": 201849606
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "signature_id": 1707667,
+        "push_id": 384221,
+        "push_timestamp": 1538018046,
+        "id": 580494514,
+        "value": 40.72,
+        "job_id": 201849535
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "signature_id": 1707667,
+        "push_id": 384313,
+        "push_timestamp": 1538039827,
+        "id": 581026879,
+        "value": 40.04,
+        "job_id": 201896989
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "signature_id": 1707667,
+        "push_id": 384314,
+        "push_timestamp": 1538039893,
+        "id": 581038686,
+        "value": 40.19,
+        "job_id": 201901770
       }
-    },
-    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760218,1,11",
-    "configUID": "web-tooling",
-    "color": "#ffcd02",
-    "label": "Chrome v8",
-    "suite": "web-tooling-benchmark-v8"
-  },
-  "overview-raptor-stylebench-firefox": {
-    "data": {
-      "7fd99c81a08b518b93a6da9b4ec1190a67755351": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "push_id": 375535,
-            "signature_id": 1707667,
-            "value": 39.44,
-            "push_timestamp": 1536163323,
-            "id": 553652720,
-            "job_id": 197648463
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "push_id": 375610,
-            "signature_id": 1707667,
-            "value": 39.68,
-            "push_timestamp": 1536171209,
-            "id": 553798907,
-            "job_id": 197669958
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "push_id": 375730,
-            "signature_id": 1707667,
-            "value": 39.6,
-            "push_timestamp": 1536184730,
-            "id": 554050820,
-            "job_id": 197715438
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "push_id": 375752,
-            "signature_id": 1707667,
-            "value": 39.38,
-            "push_timestamp": 1536186344,
-            "id": 554081499,
-            "job_id": 197721331
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "push_id": 375888,
-            "signature_id": 1707667,
-            "value": 39.57,
-            "push_timestamp": 1536208627,
-            "id": 554340299,
-            "job_id": 197766692
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "push_id": 375889,
-            "signature_id": 1707667,
-            "value": 39.36,
-            "push_timestamp": 1536208696,
-            "id": 554348293,
-            "job_id": 197768143
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "push_id": 375970,
-            "signature_id": 1707667,
-            "value": 39.38,
-            "push_timestamp": 1536227412,
-            "id": 554509857,
-            "job_id": 197798601
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "push_id": 375971,
-            "signature_id": 1707667,
-            "value": 39.44,
-            "push_timestamp": 1536227507,
-            "id": 554514069,
-            "job_id": 197799016
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "push_id": 375975,
-            "signature_id": 1707667,
-            "value": 39.21,
-            "push_timestamp": 1536227657,
-            "id": 554520350,
-            "job_id": 197801007
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1707667,1,10",
-          "parentSignatureHash": "7fd99c81a08b518b93a6da9b4ec1190a67755351",
-          "id": 1707667,
-          "framework_id": 10,
-          "machine_platform": "linux64",
-          "suite": "raptor-stylebench-firefox",
-          "lower_is_better": false,
-          "has_subtests": true,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
-        }
-      }
+    ],
+    "meta": {
+      "parentSignatureHash": "7fd99c81a08b518b93a6da9b4ec1190a67755351",
+      "framework_id": 10,
+      "machine_platform": "linux64",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "id": 1707667,
+      "has_subtests": true,
+      "suite": "raptor-stylebench-firefox",
+      "lower_is_better": false
     },
     "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1707667,1,10",
     "configUID": "stylebench",
@@ -1823,104 +402,199 @@
     "label": "Firefox",
     "suite": "raptor-stylebench-firefox"
   },
-  "overview-raptor-stylebench-chrome": {
-    "data": {
-      "b8c52c36c4c462d611952cc5e6fd9b781d0e07cf": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "id": 553659209,
-            "job_id": 197648441,
-            "push_timestamp": 1536163323,
-            "signature_id": 1714844,
-            "push_id": 375535,
-            "value": 15.23
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "id": 553805787,
-            "job_id": 197670028,
-            "push_timestamp": 1536171209,
-            "signature_id": 1714844,
-            "push_id": 375610,
-            "value": 15.23
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "id": 554054799,
-            "job_id": 197715446,
-            "push_timestamp": 1536184730,
-            "signature_id": 1714844,
-            "push_id": 375730,
-            "value": 15.31
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "id": 554086496,
-            "job_id": 197721403,
-            "push_timestamp": 1536186344,
-            "signature_id": 1714844,
-            "push_id": 375752,
-            "value": 15.39
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "id": 554345101,
-            "job_id": 197766821,
-            "push_timestamp": 1536208627,
-            "signature_id": 1714844,
-            "push_id": 375888,
-            "value": 15.3
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "id": 554352253,
-            "job_id": 197768181,
-            "push_timestamp": 1536208696,
-            "signature_id": 1714844,
-            "push_id": 375889,
-            "value": 15.32
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "id": 554512670,
-            "job_id": 197798533,
-            "push_timestamp": 1536227412,
-            "signature_id": 1714844,
-            "push_id": 375970,
-            "value": 15.44
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "id": 554517743,
-            "job_id": 197799102,
-            "push_timestamp": 1536227507,
-            "signature_id": 1714844,
-            "push_id": 375971,
-            "value": 15.31
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "id": 554526509,
-            "job_id": 197800917,
-            "push_timestamp": 1536227657,
-            "signature_id": 1714844,
-            "push_id": 375975,
-            "value": 15.32
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1714844,1,10",
-          "parentSignatureHash": "b8c52c36c4c462d611952cc5e6fd9b781d0e07cf",
-          "machine_platform": "linux64",
-          "framework_id": 10,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
-          "lower_is_better": false,
-          "has_subtests": true,
-          "suite": "raptor-stylebench-chrome",
-          "id": 1714844
-        }
+  "1707740": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "push_timestamp": 1537966541,
+        "job_id": 201674335,
+        "signature_id": 1707740,
+        "value": 27.51,
+        "push_id": 383851,
+        "id": 579140061
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "push_timestamp": 1537970312,
+        "job_id": 201685796,
+        "signature_id": 1707740,
+        "value": 27.6,
+        "push_id": 383877,
+        "id": 579222093
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "push_timestamp": 1537998556,
+        "job_id": 201795664,
+        "signature_id": 1707740,
+        "value": 27.39,
+        "push_id": 384116,
+        "id": 580129646
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "push_timestamp": 1537998701,
+        "job_id": 201795546,
+        "signature_id": 1707740,
+        "value": 27.43,
+        "push_id": 384118,
+        "id": 580117597
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "push_timestamp": 1537998753,
+        "job_id": 201797053,
+        "signature_id": 1707740,
+        "value": 27.11,
+        "push_id": 384119,
+        "id": 580152278
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "push_timestamp": 1538018003,
+        "job_id": 201849759,
+        "signature_id": 1707740,
+        "value": 27.43,
+        "push_id": 384220,
+        "id": 580532675
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "push_timestamp": 1538018046,
+        "job_id": 201849307,
+        "signature_id": 1707740,
+        "value": 27.65,
+        "push_id": 384221,
+        "id": 580495471
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "push_timestamp": 1538039827,
+        "job_id": 201897084,
+        "signature_id": 1707740,
+        "value": 27.58,
+        "push_id": 384313,
+        "id": 581044240
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "push_timestamp": 1538039893,
+        "job_id": 201901764,
+        "signature_id": 1707740,
+        "value": 27.51,
+        "push_id": 384314,
+        "id": 581058247
       }
+    ],
+    "meta": {
+      "parentSignatureHash": "f21f262859cb3e7119cb6104c44d942ee84db7b4",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "framework_id": 10,
+      "machine_platform": "linux64",
+      "lower_is_better": false,
+      "id": 1707740,
+      "has_subtests": true,
+      "suite": "raptor-motionmark-htmlsuite-firefox"
+    },
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1707740,1,10",
+    "configUID": "motionmark-htmlsuite",
+    "color": "#e55525",
+    "label": "Firefox",
+    "suite": "raptor-motionmark-htmlsuite-firefox"
+  },
+  "1714844": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "push_timestamp": 1537966541,
+        "job_id": 201674476,
+        "signature_id": 1714844,
+        "value": 15.23,
+        "push_id": 383851,
+        "id": 579136698
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "push_timestamp": 1537970312,
+        "job_id": 201685805,
+        "signature_id": 1714844,
+        "value": 15.33,
+        "push_id": 383877,
+        "id": 579220095
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "push_timestamp": 1537998556,
+        "job_id": 201795820,
+        "signature_id": 1714844,
+        "value": 15.26,
+        "push_id": 384116,
+        "id": 580126851
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "push_timestamp": 1537998701,
+        "job_id": 201795502,
+        "signature_id": 1714844,
+        "value": 15.17,
+        "push_id": 384118,
+        "id": 580104746
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "push_timestamp": 1537998753,
+        "job_id": 201797006,
+        "signature_id": 1714844,
+        "value": 15.39,
+        "push_id": 384119,
+        "id": 580134113
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "push_timestamp": 1538018003,
+        "job_id": 201849612,
+        "signature_id": 1714844,
+        "value": 15.3,
+        "push_id": 384220,
+        "id": 580511396
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "push_timestamp": 1538018046,
+        "job_id": 201849484,
+        "signature_id": 1714844,
+        "value": 15.43,
+        "push_id": 384221,
+        "id": 580500676
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "push_timestamp": 1538039827,
+        "job_id": 201897046,
+        "signature_id": 1714844,
+        "value": 15.13,
+        "push_id": 384313,
+        "id": 581029244
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "push_timestamp": 1538039893,
+        "job_id": 201901959,
+        "signature_id": 1714844,
+        "value": 15.35,
+        "push_id": 384314,
+        "id": 581050522
+      }
+    ],
+    "meta": {
+      "parentSignatureHash": "b8c52c36c4c462d611952cc5e6fd9b781d0e07cf",
+      "framework_id": 10,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "machine_platform": "linux64",
+      "lower_is_better": false,
+      "has_subtests": true,
+      "id": 1714844,
+      "suite": "raptor-stylebench-chrome"
     },
     "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1714844,1,10",
     "configUID": "stylebench",
@@ -1928,937 +602,198 @@
     "label": "Chrome",
     "suite": "raptor-stylebench-chrome"
   },
-  "overview-raptor-sunspider-firefox": {
-    "data": {
-      "8cf51051a1db60dd69fccf47a66945c8c5d9762f": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "id": 553649178,
-            "signature_id": 1730526,
-            "value": 219,
-            "push_id": 375535,
-            "job_id": 197648453,
-            "push_timestamp": 1536163323
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "id": 553797607,
-            "signature_id": 1730526,
-            "value": 218.52,
-            "push_id": 375610,
-            "job_id": 197669942,
-            "push_timestamp": 1536171209
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "id": 554048522,
-            "signature_id": 1730526,
-            "value": 218.54,
-            "push_id": 375730,
-            "job_id": 197715416,
-            "push_timestamp": 1536184730
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "id": 554079536,
-            "signature_id": 1730526,
-            "value": 217.94,
-            "push_id": 375752,
-            "job_id": 197721243,
-            "push_timestamp": 1536186344
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "id": 554338952,
-            "signature_id": 1730526,
-            "value": 216.96,
-            "push_id": 375888,
-            "job_id": 197766845,
-            "push_timestamp": 1536208627
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "id": 554346959,
-            "signature_id": 1730526,
-            "value": 219.92,
-            "push_id": 375889,
-            "job_id": 197768125,
-            "push_timestamp": 1536208696
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "id": 554508893,
-            "signature_id": 1730526,
-            "value": 218.34,
-            "push_id": 375970,
-            "job_id": 197798468,
-            "push_timestamp": 1536227412
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "id": 554511756,
-            "signature_id": 1730526,
-            "value": 217.88,
-            "push_id": 375971,
-            "job_id": 197799013,
-            "push_timestamp": 1536227507
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "id": 554519475,
-            "signature_id": 1730526,
-            "value": 218.96,
-            "push_id": 375975,
-            "job_id": 197801033,
-            "push_timestamp": 1536227657
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1730526,1,10",
-          "parentSignatureHash": "8cf51051a1db60dd69fccf47a66945c8c5d9762f",
-          "machine_platform": "linux64",
-          "framework_id": 10,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
-          "has_subtests": true,
-          "suite": "raptor-sunspider-firefox",
-          "id": 1730526
-        }
+  "1714897": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "job_id": 201674310,
+        "value": 92.49,
+        "signature_id": 1714897,
+        "push_id": 383851,
+        "id": 579126657,
+        "push_timestamp": 1537966541
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "job_id": 201685807,
+        "value": 92.31,
+        "signature_id": 1714897,
+        "push_id": 383877,
+        "id": 579215374,
+        "push_timestamp": 1537970312
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "job_id": 201795835,
+        "value": 92.02,
+        "signature_id": 1714897,
+        "push_id": 384116,
+        "id": 580122844,
+        "push_timestamp": 1537998556
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "job_id": 201795593,
+        "value": 92.34,
+        "signature_id": 1714897,
+        "push_id": 384118,
+        "id": 580107321,
+        "push_timestamp": 1537998701
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "job_id": 201796863,
+        "value": 92.29,
+        "signature_id": 1714897,
+        "push_id": 384119,
+        "id": 580130274,
+        "push_timestamp": 1537998753
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "job_id": 201849757,
+        "value": 92.06,
+        "signature_id": 1714897,
+        "push_id": 384220,
+        "id": 580510233,
+        "push_timestamp": 1538018003
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "job_id": 201849479,
+        "value": 91.9,
+        "signature_id": 1714897,
+        "push_id": 384221,
+        "id": 580500171,
+        "push_timestamp": 1538018046
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "job_id": 201897123,
+        "value": 92.59,
+        "signature_id": 1714897,
+        "push_id": 384313,
+        "id": 581030406,
+        "push_timestamp": 1538039827
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "job_id": 201901896,
+        "value": 92.41,
+        "signature_id": 1714897,
+        "push_id": 384314,
+        "id": 581048285,
+        "push_timestamp": 1538039893
       }
+    ],
+    "meta": {
+      "parentSignatureHash": "bf4fcd6df34988c8aea87ccda51b0f70b4141643",
+      "framework_id": 10,
+      "machine_platform": "linux64",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "id": 1714897,
+      "has_subtests": true,
+      "suite": "raptor-speedometer-chrome",
+      "lower_is_better": false
     },
-    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1730526,1,10",
-    "configUID": "sunspider",
-    "color": "#e55525",
-    "label": "Firefox",
-    "suite": "raptor-sunspider-firefox"
-  },
-  "overview-raptor-sunspider-chrome": {
-    "data": {
-      "afe27c2d78c009c35dba29afd2b45327b763b361": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "id": 553652492,
-            "job_id": 197648408,
-            "push_timestamp": 1536163323,
-            "signature_id": 1730498,
-            "push_id": 375535,
-            "value": 307.6
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "id": 553800013,
-            "job_id": 197669897,
-            "push_timestamp": 1536171209,
-            "signature_id": 1730498,
-            "push_id": 375610,
-            "value": 310.14
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "id": 554050539,
-            "job_id": 197715322,
-            "push_timestamp": 1536184730,
-            "signature_id": 1730498,
-            "push_id": 375730,
-            "value": 308.86
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "id": 554081478,
-            "job_id": 197721343,
-            "push_timestamp": 1536186344,
-            "signature_id": 1730498,
-            "push_id": 375752,
-            "value": 309.68
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "id": 554341527,
-            "job_id": 197766880,
-            "push_timestamp": 1536208627,
-            "signature_id": 1730498,
-            "push_id": 375888,
-            "value": 314.34
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "id": 554349419,
-            "job_id": 197768072,
-            "push_timestamp": 1536208696,
-            "signature_id": 1730498,
-            "push_id": 375889,
-            "value": 305.98
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "id": 554509194,
-            "job_id": 197798497,
-            "push_timestamp": 1536227412,
-            "signature_id": 1730498,
-            "push_id": 375970,
-            "value": 308.66
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "id": 554514932,
-            "job_id": 197799185,
-            "push_timestamp": 1536227507,
-            "signature_id": 1730498,
-            "push_id": 375971,
-            "value": 309.48
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "id": 554521529,
-            "job_id": 197800844,
-            "push_timestamp": 1536227657,
-            "signature_id": 1730498,
-            "push_id": 375975,
-            "value": 308.7
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1730498,1,10",
-          "parentSignatureHash": "afe27c2d78c009c35dba29afd2b45327b763b361",
-          "id": 1730498,
-          "framework_id": 10,
-          "machine_platform": "linux64",
-          "suite": "raptor-sunspider-chrome",
-          "has_subtests": true,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
-        }
-      }
-    },
-    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1730498,1,10",
-    "configUID": "sunspider",
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1714897,1,10",
+    "configUID": "speedometer",
     "color": "#ffcd02",
     "label": "Chrome",
-    "suite": "raptor-sunspider-chrome"
+    "suite": "raptor-speedometer-chrome"
   },
-  "overview-raptor-unity-webgl-firefox": {
-    "data": {
-      "da8004f6dfa4f7b385974803012201a277ae4f6d": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "id": 553678736,
-            "job_id": 197648297,
-            "push_timestamp": 1536163323,
-            "signature_id": 1750735,
-            "push_id": 375535,
-            "value": 780
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "id": 553817627,
-            "job_id": 197670032,
-            "push_timestamp": 1536171209,
-            "signature_id": 1750735,
-            "push_id": 375610,
-            "value": 783
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "id": 554071596,
-            "job_id": 197715346,
-            "push_timestamp": 1536184730,
-            "signature_id": 1750735,
-            "push_id": 375730,
-            "value": 783
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "id": 554103599,
-            "job_id": 197721360,
-            "push_timestamp": 1536186344,
-            "signature_id": 1750735,
-            "push_id": 375752,
-            "value": 774
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "id": 554357295,
-            "job_id": 197766745,
-            "push_timestamp": 1536208627,
-            "signature_id": 1750735,
-            "push_id": 375888,
-            "value": 766
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "id": 554362828,
-            "job_id": 197768050,
-            "push_timestamp": 1536208696,
-            "signature_id": 1750735,
-            "push_id": 375889,
-            "value": 775
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "id": 554528710,
-            "job_id": 197798566,
-            "push_timestamp": 1536227412,
-            "signature_id": 1750735,
-            "push_id": 375970,
-            "value": 771
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "id": 554532254,
-            "job_id": 197798996,
-            "push_timestamp": 1536227507,
-            "signature_id": 1750735,
-            "push_id": 375971,
-            "value": 772
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "id": 554540459,
-            "job_id": 197801002,
-            "push_timestamp": 1536227657,
-            "signature_id": 1750735,
-            "push_id": 375975,
-            "value": 775
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1750735,1,10",
-          "parentSignatureHash": "da8004f6dfa4f7b385974803012201a277ae4f6d",
-          "machine_platform": "linux64",
-          "id": 1750735,
-          "framework_id": 10,
-          "has_subtests": true,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
-          "lower_is_better": false,
-          "suite": "raptor-unity-webgl-firefox"
-        }
+  "1728907": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "push_timestamp": 1537966541,
+        "job_id": 201674397,
+        "signature_id": 1728907,
+        "value": 142,
+        "push_id": 383851,
+        "id": 579131747
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "push_timestamp": 1537970312,
+        "job_id": 201685753,
+        "signature_id": 1728907,
+        "value": 144,
+        "push_id": 383877,
+        "id": 579204408
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "push_timestamp": 1537998556,
+        "job_id": 201795783,
+        "signature_id": 1728907,
+        "value": 145,
+        "push_id": 384116,
+        "id": 580117671
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "push_timestamp": 1537998701,
+        "job_id": 201795583,
+        "signature_id": 1728907,
+        "value": 145,
+        "push_id": 384118,
+        "id": 580102216
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "push_timestamp": 1537998753,
+        "job_id": 201796992,
+        "signature_id": 1728907,
+        "value": 143,
+        "push_id": 384119,
+        "id": 580127410
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "push_timestamp": 1538018003,
+        "job_id": 201849722,
+        "signature_id": 1728907,
+        "value": 144,
+        "push_id": 384220,
+        "id": 580511471
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "push_timestamp": 1538018046,
+        "job_id": 201849496,
+        "signature_id": 1728907,
+        "value": 147,
+        "push_id": 384221,
+        "id": 580490203
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "push_timestamp": 1538039827,
+        "job_id": 201897080,
+        "signature_id": 1728907,
+        "value": 143,
+        "push_id": 384313,
+        "id": 581029253
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "push_timestamp": 1538039893,
+        "job_id": 201901945,
+        "signature_id": 1728907,
+        "value": 143,
+        "push_id": 384314,
+        "id": 581045563
       }
-    },
-    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1750735,1,10",
-    "configUID": "unity-webgl",
-    "color": "#e55525",
-    "label": "Firefox",
-    "suite": "raptor-unity-webgl-firefox"
-  },
-  "overview-raptor-unity-webgl-chrome": {
-    "data": {
-      "9590ef1e8c8b24b129cb75ec1714916147f92908": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "id": 553679423,
-            "signature_id": 1750719,
-            "value": 1792,
-            "push_id": 375535,
-            "job_id": 197648389,
-            "push_timestamp": 1536163323
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "id": 553818435,
-            "signature_id": 1750719,
-            "value": 1802,
-            "push_id": 375610,
-            "job_id": 197670029,
-            "push_timestamp": 1536171209
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "id": 554072059,
-            "signature_id": 1750719,
-            "value": 1766,
-            "push_id": 375730,
-            "job_id": 197715377,
-            "push_timestamp": 1536184730
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "id": 554106784,
-            "signature_id": 1750719,
-            "value": 1788,
-            "push_id": 375752,
-            "job_id": 197721259,
-            "push_timestamp": 1536186344
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "id": 554358536,
-            "signature_id": 1750719,
-            "value": 1784,
-            "push_id": 375888,
-            "job_id": 197766733,
-            "push_timestamp": 1536208627
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "id": 554363913,
-            "signature_id": 1750719,
-            "value": 1794,
-            "push_id": 375889,
-            "job_id": 197768099,
-            "push_timestamp": 1536208696
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "id": 554529601,
-            "signature_id": 1750719,
-            "value": 1795,
-            "push_id": 375970,
-            "job_id": 197798636,
-            "push_timestamp": 1536227412
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "id": 554533276,
-            "signature_id": 1750719,
-            "value": 1779,
-            "push_id": 375971,
-            "job_id": 197798934,
-            "push_timestamp": 1536227507
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "id": 554542085,
-            "signature_id": 1750719,
-            "value": 1792,
-            "push_id": 375975,
-            "job_id": 197800907,
-            "push_timestamp": 1536227657
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1750719,1,10",
-          "parentSignatureHash": "9590ef1e8c8b24b129cb75ec1714916147f92908",
-          "machine_platform": "linux64",
-          "framework_id": 10,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
-          "lower_is_better": false,
-          "has_subtests": true,
-          "suite": "raptor-unity-webgl-chrome",
-          "id": 1750719
-        }
-      }
-    },
-    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1750719,1,10",
-    "configUID": "unity-webgl",
-    "color": "#ffcd02",
-    "label": "Chrome",
-    "suite": "raptor-unity-webgl-chrome"
-  },
-  "overview-raptor-wasm-misc-firefox": {
-    "data": {
-      "e237c02f090477f372087cea726ffea71324bafd": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "id": 553656886,
-            "signature_id": 1762630,
-            "value": 39788,
-            "push_id": 375535,
-            "job_id": 197648362,
-            "push_timestamp": 1536163323
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "id": 553805123,
-            "signature_id": 1762630,
-            "value": 39715.3,
-            "push_id": 375610,
-            "job_id": 197669885,
-            "push_timestamp": 1536171209
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "id": 554054591,
-            "signature_id": 1762630,
-            "value": 39679.23,
-            "push_id": 375730,
-            "job_id": 197715294,
-            "push_timestamp": 1536184730
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "id": 554085923,
-            "signature_id": 1762630,
-            "value": 39654.69,
-            "push_id": 375752,
-            "job_id": 197721212,
-            "push_timestamp": 1536186344
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "id": 554344342,
-            "signature_id": 1762630,
-            "value": 39676.96,
-            "push_id": 375888,
-            "job_id": 197766743,
-            "push_timestamp": 1536208627
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "id": 554350538,
-            "signature_id": 1762630,
-            "value": 39647.41,
-            "push_id": 375889,
-            "job_id": 197768052,
-            "push_timestamp": 1536208696
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "id": 554511654,
-            "signature_id": 1762630,
-            "value": 39699.75,
-            "push_id": 375970,
-            "job_id": 197798557,
-            "push_timestamp": 1536227412
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "id": 554516542,
-            "signature_id": 1762630,
-            "value": 39704.23,
-            "push_id": 375971,
-            "job_id": 197799085,
-            "push_timestamp": 1536227507
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "id": 554525477,
-            "signature_id": 1762630,
-            "value": 39743.07,
-            "push_id": 375975,
-            "job_id": 197801045,
-            "push_timestamp": 1536227657
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1762630,1,10",
-          "parentSignatureHash": "e237c02f090477f372087cea726ffea71324bafd",
-          "machine_platform": "linux64",
-          "framework_id": 10,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
-          "has_subtests": true,
-          "suite": "raptor-wasm-misc-firefox",
-          "id": 1762630
-        }
-      }
-    },
-    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1762630,1,10",
-    "configUID": "wasm-misc",
-    "color": "#e55525",
-    "label": "Firefox (tiering)",
-    "suite": "raptor-wasm-misc-firefox"
-  },
-  "overview-raptor-wasm-misc-baseline-firefox": {
-    "data": {
-      "082f6456802cceb8fdd4d4a58c7d409a023ae593": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "id": 553660243,
-            "signature_id": 1764107,
-            "value": 70355.79,
-            "push_id": 375535,
-            "job_id": 197648346,
-            "push_timestamp": 1536163323
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "id": 553807251,
-            "signature_id": 1764107,
-            "value": 70361.8,
-            "push_id": 375610,
-            "job_id": 197669886,
-            "push_timestamp": 1536171209
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "id": 554055703,
-            "signature_id": 1764107,
-            "value": 70378.5,
-            "push_id": 375730,
-            "job_id": 197715311,
-            "push_timestamp": 1536184730
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "id": 554089705,
-            "signature_id": 1764107,
-            "value": 70266.66,
-            "push_id": 375752,
-            "job_id": 197721294,
-            "push_timestamp": 1536186344
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "id": 554347080,
-            "signature_id": 1764107,
-            "value": 70315.88,
-            "push_id": 375888,
-            "job_id": 197766782,
-            "push_timestamp": 1536208627
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "id": 554353419,
-            "signature_id": 1764107,
-            "value": 70312.59,
-            "push_id": 375889,
-            "job_id": 197768107,
-            "push_timestamp": 1536208696
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "id": 554513896,
-            "signature_id": 1764107,
-            "value": 70300.99,
-            "push_id": 375970,
-            "job_id": 197798446,
-            "push_timestamp": 1536227412
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "id": 554519151,
-            "signature_id": 1764107,
-            "value": 70317.84,
-            "push_id": 375971,
-            "job_id": 197799080,
-            "push_timestamp": 1536227507
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "id": 554528366,
-            "signature_id": 1764107,
-            "value": 70304.15,
-            "push_id": 375975,
-            "job_id": 197800897,
-            "push_timestamp": 1536227657
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1764107,1,10",
-          "parentSignatureHash": "082f6456802cceb8fdd4d4a58c7d409a023ae593",
-          "machine_platform": "linux64",
-          "framework_id": 10,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
-          "has_subtests": true,
-          "suite": "raptor-wasm-misc-baseline-firefox",
-          "id": 1764107
-        }
-      }
-    },
-    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1764107,1,10",
-    "configUID": "wasm-misc",
-    "color": "red",
-    "label": "Firefox (wasm-baseline)",
-    "suite": "raptor-wasm-misc-baseline-firefox"
-  },
-  "overview-raptor-wasm-misc-ion-firefox": {
-    "data": {
-      "88feb0b811e7409adc0119a9e423fbfd6ce113c8": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "id": 553656449,
-            "job_id": 197648313,
-            "push_timestamp": 1536163323,
-            "signature_id": 1764083,
-            "push_id": 375535,
-            "value": 40238.88
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "id": 553804469,
-            "job_id": 197669999,
-            "push_timestamp": 1536171209,
-            "signature_id": 1764083,
-            "push_id": 375610,
-            "value": 40457.79
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "id": 554054429,
-            "job_id": 197715349,
-            "push_timestamp": 1536184730,
-            "signature_id": 1764083,
-            "push_id": 375730,
-            "value": 40178.81
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "id": 554085236,
-            "job_id": 197721214,
-            "push_timestamp": 1536186344,
-            "signature_id": 1764083,
-            "push_id": 375752,
-            "value": 40379.06
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "id": 554344221,
-            "job_id": 197766891,
-            "push_timestamp": 1536208627,
-            "signature_id": 1764083,
-            "push_id": 375888,
-            "value": 40253.3
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "id": 554350596,
-            "job_id": 197768307,
-            "push_timestamp": 1536208696,
-            "signature_id": 1764083,
-            "push_id": 375889,
-            "value": 40191.63
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "id": 554511650,
-            "job_id": 197798640,
-            "push_timestamp": 1536227412,
-            "signature_id": 1764083,
-            "push_id": 375970,
-            "value": 40094.78
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "id": 554516575,
-            "job_id": 197799094,
-            "push_timestamp": 1536227507,
-            "signature_id": 1764083,
-            "push_id": 375971,
-            "value": 40282.85
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "id": 554524441,
-            "job_id": 197800919,
-            "push_timestamp": 1536227657,
-            "signature_id": 1764083,
-            "push_id": 375975,
-            "value": 40189.26
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1764083,1,10",
-          "parentSignatureHash": "88feb0b811e7409adc0119a9e423fbfd6ce113c8",
-          "machine_platform": "linux64",
-          "framework_id": 10,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
-          "has_subtests": true,
-          "suite": "raptor-wasm-misc-ion-firefox",
-          "id": 1764083
-        }
-      }
-    },
-    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1764083,1,10",
-    "configUID": "wasm-misc",
-    "color": "brown",
-    "label": "Firefox (wasm-ion)",
-    "suite": "raptor-wasm-misc-ion-firefox"
-  },
-  "overview-raptor-wasm-misc-chrome": {
-    "data": {
-      "7a9edcfc8f2975801625c34114d74777870b4af8": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "id": 553662801,
-            "job_id": 197648306,
-            "push_timestamp": 1536163323,
-            "signature_id": 1762654,
-            "push_id": 375535,
-            "value": 87860.07
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "id": 553809978,
-            "job_id": 197669906,
-            "push_timestamp": 1536171209,
-            "signature_id": 1762654,
-            "push_id": 375610,
-            "value": 88028.2
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "id": 554059781,
-            "job_id": 197715372,
-            "push_timestamp": 1536184730,
-            "signature_id": 1762654,
-            "push_id": 375730,
-            "value": 87967.48
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "id": 554092201,
-            "job_id": 197721267,
-            "push_timestamp": 1536186344,
-            "signature_id": 1762654,
-            "push_id": 375752,
-            "value": 88120.16
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "id": 554349346,
-            "job_id": 197766669,
-            "push_timestamp": 1536208627,
-            "signature_id": 1762654,
-            "push_id": 375888,
-            "value": 87907.89
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "id": 554354858,
-            "job_id": 197768232,
-            "push_timestamp": 1536208696,
-            "signature_id": 1762654,
-            "push_id": 375889,
-            "value": 88321.57
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "id": 554516355,
-            "job_id": 197798520,
-            "push_timestamp": 1536227412,
-            "signature_id": 1762654,
-            "push_id": 375970,
-            "value": 87968.51
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "id": 554521608,
-            "job_id": 197798936,
-            "push_timestamp": 1536227507,
-            "signature_id": 1762654,
-            "push_id": 375971,
-            "value": 88171.76
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "id": 554529477,
-            "job_id": 197800851,
-            "push_timestamp": 1536227657,
-            "signature_id": 1762654,
-            "push_id": 375975,
-            "value": 87835.58
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1762654,1,10",
-          "parentSignatureHash": "7a9edcfc8f2975801625c34114d74777870b4af8",
-          "id": 1762654,
-          "framework_id": 10,
-          "machine_platform": "linux64",
-          "suite": "raptor-wasm-misc-chrome",
-          "has_subtests": true,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
-        }
-      }
-    },
-    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1762654,1,10",
-    "configUID": "wasm-misc",
-    "color": "#ffcd02",
-    "label": "Chrome",
-    "suite": "raptor-wasm-misc-chrome"
-  },
-  "overview-raptor-webaudio-firefox": {
-    "data": {
-      "15c317fa32bdc8983fa9a4adaa1d18b59c451ca4": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "id": 553649283,
-            "job_id": 197648381,
-            "push_timestamp": 1536163323,
-            "signature_id": 1728907,
-            "push_id": 375535,
-            "value": 145
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "id": 553797198,
-            "job_id": 197669930,
-            "push_timestamp": 1536171209,
-            "signature_id": 1728907,
-            "push_id": 375610,
-            "value": 144
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "id": 554048568,
-            "job_id": 197715361,
-            "push_timestamp": 1536184730,
-            "signature_id": 1728907,
-            "push_id": 375730,
-            "value": 145
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "id": 554079753,
-            "job_id": 197721321,
-            "push_timestamp": 1536186344,
-            "signature_id": 1728907,
-            "push_id": 375752,
-            "value": 142
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "id": 554339128,
-            "job_id": 197766660,
-            "push_timestamp": 1536208627,
-            "signature_id": 1728907,
-            "push_id": 375888,
-            "value": 144
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "id": 554347143,
-            "job_id": 197768160,
-            "push_timestamp": 1536208696,
-            "signature_id": 1728907,
-            "push_id": 375889,
-            "value": 145
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "id": 554508942,
-            "job_id": 197798426,
-            "push_timestamp": 1536227412,
-            "signature_id": 1728907,
-            "push_id": 375970,
-            "value": 145
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "id": 554512602,
-            "job_id": 197799146,
-            "push_timestamp": 1536227507,
-            "signature_id": 1728907,
-            "push_id": 375971,
-            "value": 151
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "id": 554519446,
-            "job_id": 197800854,
-            "push_timestamp": 1536227657,
-            "signature_id": 1728907,
-            "push_id": 375975,
-            "value": 143
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1728907,1,10",
-          "parentSignatureHash": "15c317fa32bdc8983fa9a4adaa1d18b59c451ca4",
-          "id": 1728907,
-          "framework_id": 10,
-          "machine_platform": "linux64",
-          "suite": "raptor-webaudio-firefox",
-          "has_subtests": true,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
-        }
-      }
+    ],
+    "meta": {
+      "parentSignatureHash": "15c317fa32bdc8983fa9a4adaa1d18b59c451ca4",
+      "has_subtests": true,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "suite": "raptor-webaudio-firefox",
+      "machine_platform": "linux64",
+      "id": 1728907,
+      "framework_id": 10
     },
     "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1728907,1,10",
     "configUID": "webaudio",
@@ -2866,108 +801,2181 @@
     "label": "Firefox",
     "suite": "raptor-webaudio-firefox"
   },
-  "overview-raptor-webaudio-chrome": {
-    "data": {
-      "db94d25869df9698074ab40b99054fdffed60f76": {
-        "data": [
-          {
-            "datetime": "2018-09-05T16:02:03.000Z",
-            "push_id": 375535,
-            "signature_id": 1728949,
-            "value": 192,
-            "push_timestamp": 1536163323,
-            "id": 553657824,
-            "job_id": 197648438
-          },
-          {
-            "datetime": "2018-09-05T18:13:29.000Z",
-            "push_id": 375610,
-            "signature_id": 1728949,
-            "value": 166,
-            "push_timestamp": 1536171209,
-            "id": 553800474,
-            "job_id": 197669937
-          },
-          {
-            "datetime": "2018-09-05T21:58:50.000Z",
-            "push_id": 375730,
-            "signature_id": 1728949,
-            "value": 165,
-            "push_timestamp": 1536184730,
-            "id": 554052080,
-            "job_id": 197715335
-          },
-          {
-            "datetime": "2018-09-05T22:25:44.000Z",
-            "push_id": 375752,
-            "signature_id": 1728949,
-            "value": 165,
-            "push_timestamp": 1536186344,
-            "id": 554083249,
-            "job_id": 197721203
-          },
-          {
-            "datetime": "2018-09-06T04:37:07.000Z",
-            "push_id": 375888,
-            "signature_id": 1728949,
-            "value": 165,
-            "push_timestamp": 1536208627,
-            "id": 554342184,
-            "job_id": 197766710
-          },
-          {
-            "datetime": "2018-09-06T04:38:16.000Z",
-            "push_id": 375889,
-            "signature_id": 1728949,
-            "value": 165,
-            "push_timestamp": 1536208696,
-            "id": 554350113,
-            "job_id": 197768234
-          },
-          {
-            "datetime": "2018-09-06T09:50:12.000Z",
-            "push_id": 375970,
-            "signature_id": 1728949,
-            "value": 165,
-            "push_timestamp": 1536227412,
-            "id": 554511113,
-            "job_id": 197798631
-          },
-          {
-            "datetime": "2018-09-06T09:51:47.000Z",
-            "push_id": 375971,
-            "signature_id": 1728949,
-            "value": 165,
-            "push_timestamp": 1536227507,
-            "id": 554515384,
-            "job_id": 197798935
-          },
-          {
-            "datetime": "2018-09-06T09:54:17.000Z",
-            "push_id": 375975,
-            "signature_id": 1728949,
-            "value": 165,
-            "push_timestamp": 1536227657,
-            "id": 554522854,
-            "job_id": 197800916
-          }
-        ],
-        "meta": {
-          "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1728949,1,10",
-          "parentSignatureHash": "db94d25869df9698074ab40b99054fdffed60f76",
-          "machine_platform": "linux64",
-          "id": 1728949,
-          "framework_id": 10,
-          "has_subtests": true,
-          "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
-          "suite": "raptor-webaudio-chrome"
-        }
+  "1728949": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "signature_id": 1728949,
+        "push_id": 383851,
+        "push_timestamp": 1537966541,
+        "id": 579135496,
+        "value": 167,
+        "job_id": 201674399
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "signature_id": 1728949,
+        "push_id": 383877,
+        "push_timestamp": 1537970312,
+        "id": 579211433,
+        "value": 165,
+        "job_id": 201685751
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "signature_id": 1728949,
+        "push_id": 384116,
+        "push_timestamp": 1537998556,
+        "id": 580118189,
+        "value": 164,
+        "job_id": 201795790
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "signature_id": 1728949,
+        "push_id": 384118,
+        "push_timestamp": 1537998701,
+        "id": 580103254,
+        "value": 166,
+        "job_id": 201795629
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "signature_id": 1728949,
+        "push_id": 384119,
+        "push_timestamp": 1537998753,
+        "id": 580128874,
+        "value": 164,
+        "job_id": 201796856
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "signature_id": 1728949,
+        "push_id": 384220,
+        "push_timestamp": 1538018003,
+        "id": 580504956,
+        "value": 165,
+        "job_id": 201849581
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "signature_id": 1728949,
+        "push_id": 384221,
+        "push_timestamp": 1538018046,
+        "id": 580489306,
+        "value": 166,
+        "job_id": 201849409
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "signature_id": 1728949,
+        "push_id": 384313,
+        "push_timestamp": 1538039827,
+        "id": 581029386,
+        "value": 164,
+        "job_id": 201897095
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "signature_id": 1728949,
+        "push_id": 384314,
+        "push_timestamp": 1538039893,
+        "id": 581047322,
+        "value": 166,
+        "job_id": 201901826
       }
+    ],
+    "meta": {
+      "parentSignatureHash": "db94d25869df9698074ab40b99054fdffed60f76",
+      "has_subtests": true,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "suite": "raptor-webaudio-chrome",
+      "machine_platform": "linux64",
+      "id": 1728949,
+      "framework_id": 10
     },
     "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1728949,1,10",
     "configUID": "webaudio",
     "color": "#ffcd02",
     "label": "Chrome",
     "suite": "raptor-webaudio-chrome"
+  },
+  "1730498": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "push_timestamp": 1537966541,
+        "job_id": 201674308,
+        "signature_id": 1730498,
+        "value": 308.52,
+        "push_id": 383851,
+        "id": 579127874
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "push_timestamp": 1537970312,
+        "job_id": 201685856,
+        "signature_id": 1730498,
+        "value": 310.46,
+        "push_id": 383877,
+        "id": 579212272
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "push_timestamp": 1537998556,
+        "job_id": 201795676,
+        "signature_id": 1730498,
+        "value": 310.3,
+        "push_id": 384116,
+        "id": 580108872
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "push_timestamp": 1537998701,
+        "job_id": 201795620,
+        "signature_id": 1730498,
+        "value": 307.56,
+        "push_id": 384118,
+        "id": 580102506
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "push_timestamp": 1537998753,
+        "job_id": 201796852,
+        "signature_id": 1730498,
+        "value": 308.68,
+        "push_id": 384119,
+        "id": 580125158
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "push_timestamp": 1538018003,
+        "job_id": 201849614,
+        "signature_id": 1730498,
+        "value": 311.4,
+        "push_id": 384220,
+        "id": 580507175
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "push_timestamp": 1538018046,
+        "job_id": 201849330,
+        "signature_id": 1730498,
+        "value": 314.92,
+        "push_id": 384221,
+        "id": 580474853
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "push_timestamp": 1538039827,
+        "job_id": 201897146,
+        "signature_id": 1730498,
+        "value": 309.08,
+        "push_id": 384313,
+        "id": 581028998
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "push_timestamp": 1538039893,
+        "job_id": 201901753,
+        "signature_id": 1730498,
+        "value": 310.76,
+        "push_id": 384314,
+        "id": 581038648
+      }
+    ],
+    "meta": {
+      "parentSignatureHash": "afe27c2d78c009c35dba29afd2b45327b763b361",
+      "has_subtests": true,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "suite": "raptor-sunspider-chrome",
+      "machine_platform": "linux64",
+      "id": 1730498,
+      "framework_id": 10
+    },
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1730498,1,10",
+    "configUID": "sunspider",
+    "color": "#ffcd02",
+    "label": "Chrome",
+    "suite": "raptor-sunspider-chrome"
+  },
+  "1730526": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "signature_id": 1730526,
+        "push_id": 383851,
+        "push_timestamp": 1537966541,
+        "id": 579129267,
+        "value": 219.48,
+        "job_id": 201674366
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "signature_id": 1730526,
+        "push_id": 383877,
+        "push_timestamp": 1537970312,
+        "id": 579197226,
+        "value": 220.1,
+        "job_id": 201685621
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "signature_id": 1730526,
+        "push_id": 384116,
+        "push_timestamp": 1537998556,
+        "id": 580109053,
+        "value": 218.42,
+        "job_id": 201795681
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "signature_id": 1730526,
+        "push_id": 384118,
+        "push_timestamp": 1537998701,
+        "id": 580102989,
+        "value": 219.56,
+        "job_id": 201795642
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "signature_id": 1730526,
+        "push_id": 384119,
+        "push_timestamp": 1537998753,
+        "id": 580126031,
+        "value": 218.96,
+        "job_id": 201796977
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "signature_id": 1730526,
+        "push_id": 384220,
+        "push_timestamp": 1538018003,
+        "id": 580500505,
+        "value": 218.18,
+        "job_id": 201849685
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "signature_id": 1730526,
+        "push_id": 384221,
+        "push_timestamp": 1538018046,
+        "id": 580473472,
+        "value": 217.26,
+        "job_id": 201849333
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "signature_id": 1730526,
+        "push_id": 384313,
+        "push_timestamp": 1538039827,
+        "id": 581021083,
+        "value": 220.3,
+        "job_id": 201896960
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "signature_id": 1730526,
+        "push_id": 384314,
+        "push_timestamp": 1538039893,
+        "id": 581043139,
+        "value": 218.08,
+        "job_id": 201901908
+      }
+    ],
+    "meta": {
+      "parentSignatureHash": "8cf51051a1db60dd69fccf47a66945c8c5d9762f",
+      "framework_id": 10,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "machine_platform": "linux64",
+      "has_subtests": true,
+      "id": 1730526,
+      "suite": "raptor-sunspider-firefox"
+    },
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1730526,1,10",
+    "configUID": "sunspider",
+    "color": "#e55525",
+    "label": "Firefox",
+    "suite": "raptor-sunspider-firefox"
+  },
+  "1730980": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "signature_id": 1730980,
+        "push_id": 383851,
+        "push_timestamp": 1537966541,
+        "id": 579143257,
+        "value": 45.75,
+        "job_id": 201674500
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "signature_id": 1730980,
+        "push_id": 383877,
+        "push_timestamp": 1537970312,
+        "id": 579223461,
+        "value": 45.73,
+        "job_id": 201685802
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "signature_id": 1730980,
+        "push_id": 384116,
+        "push_timestamp": 1537998556,
+        "id": 580133756,
+        "value": 45.59,
+        "job_id": 201795787
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "signature_id": 1730980,
+        "push_id": 384118,
+        "push_timestamp": 1537998701,
+        "id": 580121520,
+        "value": 45.72,
+        "job_id": 201795612
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "signature_id": 1730980,
+        "push_id": 384119,
+        "push_timestamp": 1537998753,
+        "id": 580150012,
+        "value": 45.77,
+        "job_id": 201797048
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "signature_id": 1730980,
+        "push_id": 384220,
+        "push_timestamp": 1538018003,
+        "id": 580536406,
+        "value": 45.65,
+        "job_id": 201849775
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "signature_id": 1730980,
+        "push_id": 384221,
+        "push_timestamp": 1538018046,
+        "id": 580499944,
+        "value": 45.7,
+        "job_id": 201849423
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "signature_id": 1730980,
+        "push_id": 384313,
+        "push_timestamp": 1538039827,
+        "id": 581039433,
+        "value": 45.76,
+        "job_id": 201897002
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "signature_id": 1730980,
+        "push_id": 384314,
+        "push_timestamp": 1538039893,
+        "id": 581056867,
+        "value": 45.63,
+        "job_id": 201901809
+      }
+    ],
+    "meta": {
+      "parentSignatureHash": "370d409602bd068b582d3aa39dd70355a525c70a",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "framework_id": 10,
+      "machine_platform": "linux64",
+      "lower_is_better": false,
+      "id": 1730980,
+      "has_subtests": true,
+      "suite": "raptor-motionmark-animometer-chrome"
+    },
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1730980,1,10",
+    "configUID": "motionmark-animometer",
+    "color": "#ffcd02",
+    "label": "Chrome",
+    "suite": "raptor-motionmark-animometer-chrome"
+  },
+  "1731007": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "signature_id": 1731007,
+        "push_id": 383851,
+        "push_timestamp": 1537966541,
+        "id": 579139076,
+        "value": 54.1,
+        "job_id": 201674270
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "signature_id": 1731007,
+        "push_id": 383877,
+        "push_timestamp": 1537970312,
+        "id": 579216966,
+        "value": 54.47,
+        "job_id": 201685638
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "signature_id": 1731007,
+        "push_id": 384116,
+        "push_timestamp": 1537998556,
+        "id": 580146077,
+        "value": 54.45,
+        "job_id": 201795854
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "signature_id": 1731007,
+        "push_id": 384118,
+        "push_timestamp": 1537998701,
+        "id": 580120554,
+        "value": 54.36,
+        "job_id": 201795553
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "signature_id": 1731007,
+        "push_id": 384119,
+        "push_timestamp": 1537998753,
+        "id": 580151402,
+        "value": 54.38,
+        "job_id": 201797026
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "signature_id": 1731007,
+        "push_id": 384220,
+        "push_timestamp": 1538018003,
+        "id": 580529661,
+        "value": 54.18,
+        "job_id": 201849561
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "signature_id": 1731007,
+        "push_id": 384221,
+        "push_timestamp": 1538018046,
+        "id": 580515440,
+        "value": 54.32,
+        "job_id": 201849397
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "signature_id": 1731007,
+        "push_id": 384313,
+        "push_timestamp": 1538039827,
+        "id": 581045087,
+        "value": 54.23,
+        "job_id": 201897083
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "signature_id": 1731007,
+        "push_id": 384314,
+        "push_timestamp": 1538039893,
+        "id": 581068697,
+        "value": 54.19,
+        "job_id": 201901840
+      }
+    ],
+    "meta": {
+      "parentSignatureHash": "be10a4db8bae7f2a9c6f8fa7819ccfad54a6ae37",
+      "framework_id": 10,
+      "machine_platform": "linux64",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "id": 1731007,
+      "has_subtests": true,
+      "suite": "raptor-motionmark-htmlsuite-chrome",
+      "lower_is_better": false
+    },
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1731007,1,10",
+    "configUID": "motionmark-htmlsuite",
+    "color": "#ffcd02",
+    "label": "Chrome",
+    "suite": "raptor-motionmark-htmlsuite-chrome"
+  },
+  "1750719": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "push_timestamp": 1537966541,
+        "job_id": 201674238,
+        "signature_id": 1750719,
+        "value": 1789,
+        "push_id": 383851,
+        "id": 579143623
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "push_timestamp": 1537970312,
+        "job_id": 201685666,
+        "signature_id": 1750719,
+        "value": 1856,
+        "push_id": 383877,
+        "id": 579224833
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "push_timestamp": 1537998556,
+        "job_id": 201795788,
+        "signature_id": 1750719,
+        "value": 1867,
+        "push_id": 384116,
+        "id": 580151252
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "push_timestamp": 1537998701,
+        "job_id": 201795533,
+        "signature_id": 1750719,
+        "value": 1874,
+        "push_id": 384118,
+        "id": 580127932
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "push_timestamp": 1537998753,
+        "job_id": 201797062,
+        "signature_id": 1750719,
+        "value": 1789,
+        "push_id": 384119,
+        "id": 580157177
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "push_timestamp": 1538018003,
+        "job_id": 201849776,
+        "signature_id": 1750719,
+        "value": 1792,
+        "push_id": 384220,
+        "id": 580553762
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "push_timestamp": 1538018046,
+        "job_id": 201849309,
+        "signature_id": 1750719,
+        "value": 1794,
+        "push_id": 384221,
+        "id": 580507929
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "push_timestamp": 1538039827,
+        "job_id": 201896927,
+        "signature_id": 1750719,
+        "value": 1855,
+        "push_id": 384313,
+        "id": 581044830
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "push_timestamp": 1538039893,
+        "job_id": 201901860,
+        "signature_id": 1750719,
+        "value": 1793,
+        "push_id": 384314,
+        "id": 581078942
+      }
+    ],
+    "meta": {
+      "parentSignatureHash": "9590ef1e8c8b24b129cb75ec1714916147f92908",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "framework_id": 10,
+      "machine_platform": "linux64",
+      "lower_is_better": false,
+      "id": 1750719,
+      "has_subtests": true,
+      "suite": "raptor-unity-webgl-chrome"
+    },
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1750719,1,10",
+    "configUID": "unity-webgl",
+    "color": "#ffcd02",
+    "label": "Chrome",
+    "suite": "raptor-unity-webgl-chrome"
+  },
+  "1750735": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "signature_id": 1750735,
+        "push_id": 383851,
+        "push_timestamp": 1537966541,
+        "id": 579144762,
+        "value": 783,
+        "job_id": 201674342
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "signature_id": 1750735,
+        "push_id": 384116,
+        "push_timestamp": 1537998556,
+        "id": 580138002,
+        "value": 774,
+        "job_id": 201795680
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "signature_id": 1750735,
+        "push_id": 384118,
+        "push_timestamp": 1537998701,
+        "id": 580128438,
+        "value": 777,
+        "job_id": 201795542
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "signature_id": 1750735,
+        "push_id": 384119,
+        "push_timestamp": 1537998753,
+        "id": 580158514,
+        "value": 781,
+        "job_id": 201797125
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "signature_id": 1750735,
+        "push_id": 384220,
+        "push_timestamp": 1538018003,
+        "id": 580535959,
+        "value": 781,
+        "job_id": 201849568
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "signature_id": 1750735,
+        "push_id": 384221,
+        "push_timestamp": 1538018046,
+        "id": 580514364,
+        "value": 773,
+        "job_id": 201849406
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "signature_id": 1750735,
+        "push_id": 384313,
+        "push_timestamp": 1538039827,
+        "id": 581051153,
+        "value": 779,
+        "job_id": 201897104
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "signature_id": 1750735,
+        "push_id": 384314,
+        "push_timestamp": 1538039893,
+        "id": 581075052,
+        "value": 736,
+        "job_id": 201901927
+      }
+    ],
+    "meta": {
+      "parentSignatureHash": "da8004f6dfa4f7b385974803012201a277ae4f6d",
+      "has_subtests": true,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "lower_is_better": false,
+      "suite": "raptor-unity-webgl-firefox",
+      "machine_platform": "linux64",
+      "id": 1750735,
+      "framework_id": 10
+    },
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1750735,1,10",
+    "configUID": "unity-webgl",
+    "color": "#e55525",
+    "label": "Firefox",
+    "suite": "raptor-unity-webgl-firefox"
+  },
+  "1760107": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "job_id": 201674320,
+        "value": 200,
+        "signature_id": 1760107,
+        "push_id": 383851,
+        "id": 579123704,
+        "push_timestamp": 1537966541
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "job_id": 201685737,
+        "value": 195,
+        "signature_id": 1760107,
+        "push_id": 383877,
+        "id": 579201180,
+        "push_timestamp": 1537970312
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "job_id": 201795733,
+        "value": 198,
+        "signature_id": 1760107,
+        "push_id": 384116,
+        "id": 580107194,
+        "push_timestamp": 1537998556
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "job_id": 201795465,
+        "value": 197,
+        "signature_id": 1760107,
+        "push_id": 384118,
+        "id": 580093974,
+        "push_timestamp": 1537998701
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "job_id": 201797068,
+        "value": 188,
+        "signature_id": 1760107,
+        "push_id": 384119,
+        "id": 580126040,
+        "push_timestamp": 1537998753
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "job_id": 201849779,
+        "value": 195,
+        "signature_id": 1760107,
+        "push_id": 384220,
+        "id": 580505178,
+        "push_timestamp": 1538018003
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "job_id": 201849400,
+        "value": 195,
+        "signature_id": 1760107,
+        "push_id": 384221,
+        "id": 580472386,
+        "push_timestamp": 1538018046
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "job_id": 201897010,
+        "value": 197,
+        "signature_id": 1760107,
+        "push_id": 384313,
+        "id": 581019792,
+        "push_timestamp": 1538039827
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "job_id": 201901841,
+        "value": 203,
+        "signature_id": 1760107,
+        "push_id": 384314,
+        "id": 581038632,
+        "push_timestamp": 1538039893
+      }
+    ],
+    "meta": {
+      "parentSignatureHash": "068b321f0801b327b040ab32a900798172c2fa47",
+      "framework_id": 11,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "machine_platform": "linux64",
+      "has_subtests": true,
+      "id": 1760107,
+      "suite": "sunspider-sm"
+    },
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760107,1,11",
+    "configUID": "sunspider-jsbench",
+    "color": "#e55525",
+    "label": "SpiderMonkey",
+    "suite": "sunspider-sm"
+  },
+  "1760134": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "job_id": 201674285,
+        "value": 20470,
+        "signature_id": 1760134,
+        "push_id": 383851,
+        "id": 579121114,
+        "push_timestamp": 1537966541
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "job_id": 201685576,
+        "value": 20449,
+        "signature_id": 1760134,
+        "push_id": 383877,
+        "id": 579191727,
+        "push_timestamp": 1537970312
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "job_id": 201795714,
+        "value": 20574,
+        "signature_id": 1760134,
+        "push_id": 384116,
+        "id": 580107731,
+        "push_timestamp": 1537998556
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "job_id": 201795483,
+        "value": 20595,
+        "signature_id": 1760134,
+        "push_id": 384118,
+        "id": 580094754,
+        "push_timestamp": 1537998701
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "job_id": 201796979,
+        "value": 20565,
+        "signature_id": 1760134,
+        "push_id": 384119,
+        "id": 580132201,
+        "push_timestamp": 1537998753
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "job_id": 201849774,
+        "value": 20565,
+        "signature_id": 1760134,
+        "push_id": 384220,
+        "id": 580506230,
+        "push_timestamp": 1538018003
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "job_id": 201849401,
+        "value": 20584,
+        "signature_id": 1760134,
+        "push_id": 384221,
+        "id": 580472292,
+        "push_timestamp": 1538018046
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "job_id": 201897041,
+        "value": 20507,
+        "signature_id": 1760134,
+        "push_id": 384313,
+        "id": 581021991,
+        "push_timestamp": 1538039827
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "job_id": 201901851,
+        "value": 20680,
+        "signature_id": 1760134,
+        "push_id": 384314,
+        "id": 581044697,
+        "push_timestamp": 1538039893
+      }
+    ],
+    "meta": {
+      "parentSignatureHash": "cf434a6a6de4cb794920c929ed7d292379375493",
+      "has_subtests": true,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "suite": "six-speed-v8",
+      "machine_platform": "linux64",
+      "id": 1760134,
+      "framework_id": 11
+    },
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760134,1,11",
+    "configUID": "six-speed",
+    "color": "#ffcd02",
+    "label": "Chrome v8",
+    "suite": "six-speed-v8"
+  },
+  "1760187": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "push_id": 383851,
+        "signature_id": 1760187,
+        "value": 5.83,
+        "job_id": 201674287,
+        "id": 579123387,
+        "push_timestamp": 1537966541
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "push_id": 383877,
+        "signature_id": 1760187,
+        "value": 5.87,
+        "job_id": 201685695,
+        "id": 579201295,
+        "push_timestamp": 1537970312
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "push_id": 384116,
+        "signature_id": 1760187,
+        "value": 5.88,
+        "job_id": 201795830,
+        "id": 580120222,
+        "push_timestamp": 1537998556
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "push_id": 384118,
+        "signature_id": 1760187,
+        "value": 5.92,
+        "job_id": 201795645,
+        "id": 580102332,
+        "push_timestamp": 1537998701
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "push_id": 384119,
+        "signature_id": 1760187,
+        "value": 5.82,
+        "job_id": 201796888,
+        "id": 580124487,
+        "push_timestamp": 1537998753
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "push_id": 384220,
+        "signature_id": 1760187,
+        "value": 5.19,
+        "job_id": 201849762,
+        "id": 580505871,
+        "push_timestamp": 1538018003
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "push_id": 384221,
+        "signature_id": 1760187,
+        "value": 5.82,
+        "job_id": 201849407,
+        "id": 580487602,
+        "push_timestamp": 1538018046
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "push_id": 384313,
+        "signature_id": 1760187,
+        "value": 5.82,
+        "job_id": 201896964,
+        "id": 581020469,
+        "push_timestamp": 1538039827
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "push_id": 384314,
+        "signature_id": 1760187,
+        "value": 5.82,
+        "job_id": 201901893,
+        "id": 581042446,
+        "push_timestamp": 1538039893
+      }
+    ],
+    "meta": {
+      "parentSignatureHash": "06fcb9c04a4279271ee4167a05b4ac28da5060f0",
+      "framework_id": 11,
+      "machine_platform": "linux64",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "id": 1760187,
+      "has_subtests": true,
+      "suite": "web-tooling-benchmark-sm",
+      "lower_is_better": false
+    },
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760187,1,11",
+    "configUID": "web-tooling",
+    "color": "#e55525",
+    "label": "SpiderMonkey",
+    "suite": "web-tooling-benchmark-sm"
+  },
+  "1760205": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "push_id": 383851,
+        "signature_id": 1760205,
+        "value": 50.66,
+        "job_id": 201674364,
+        "id": 579126195,
+        "push_timestamp": 1537966541
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "push_id": 383877,
+        "signature_id": 1760205,
+        "value": 50.08,
+        "job_id": 201685625,
+        "id": 579212067,
+        "push_timestamp": 1537970312
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "push_id": 384116,
+        "signature_id": 1760205,
+        "value": 50.71,
+        "job_id": 201795844,
+        "id": 580117720,
+        "push_timestamp": 1537998556
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "push_id": 384118,
+        "signature_id": 1760205,
+        "value": 51.37,
+        "job_id": 201795485,
+        "id": 580094494,
+        "push_timestamp": 1537998701
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "push_id": 384119,
+        "signature_id": 1760205,
+        "value": 50.73,
+        "job_id": 201796859,
+        "id": 580122385,
+        "push_timestamp": 1537998753
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "push_id": 384220,
+        "signature_id": 1760205,
+        "value": 51.05,
+        "job_id": 201849667,
+        "id": 580507432,
+        "push_timestamp": 1538018003
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "push_id": 384221,
+        "signature_id": 1760205,
+        "value": 50.18,
+        "job_id": 201849308,
+        "id": 580464457,
+        "push_timestamp": 1538018046
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "push_id": 384313,
+        "signature_id": 1760205,
+        "value": 50.95,
+        "job_id": 201897043,
+        "id": 581020816,
+        "push_timestamp": 1538039827
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "push_id": 384314,
+        "signature_id": 1760205,
+        "value": 50.39,
+        "job_id": 201901754,
+        "id": 581035549,
+        "push_timestamp": 1538039893
+      }
+    ],
+    "meta": {
+      "parentSignatureHash": "0888261930ba07211c14d060dcbd919cfe2176a8",
+      "framework_id": 11,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "machine_platform": "linux64",
+      "has_subtests": true,
+      "id": 1760205,
+      "suite": "ares6-v8"
+    },
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760205,1,11",
+    "configUID": "ares6",
+    "color": "#ffcd02",
+    "label": "Chrome v8",
+    "suite": "ares6-v8"
+  },
+  "1760218": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "push_timestamp": 1537966541,
+        "job_id": 201674461,
+        "signature_id": 1760218,
+        "value": 4.55,
+        "push_id": 383851,
+        "id": 579135088
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "push_timestamp": 1537970312,
+        "job_id": 201685658,
+        "signature_id": 1760218,
+        "value": 4.52,
+        "push_id": 383877,
+        "id": 579202444
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "push_timestamp": 1537998556,
+        "job_id": 201795782,
+        "signature_id": 1760218,
+        "value": 4.51,
+        "push_id": 384116,
+        "id": 580113317
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "push_timestamp": 1537998701,
+        "job_id": 201795513,
+        "signature_id": 1760218,
+        "value": 4.55,
+        "push_id": 384118,
+        "id": 580100033
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "push_timestamp": 1537998753,
+        "job_id": 201797110,
+        "signature_id": 1760218,
+        "value": 4.6,
+        "push_id": 384119,
+        "id": 580131618
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "push_timestamp": 1538018003,
+        "job_id": 201849552,
+        "signature_id": 1760218,
+        "value": 4.54,
+        "push_id": 384220,
+        "id": 580497429
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "push_timestamp": 1538018046,
+        "job_id": 201849359,
+        "signature_id": 1760218,
+        "value": 4.56,
+        "push_id": 384221,
+        "id": 580471590
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "push_timestamp": 1538039827,
+        "job_id": 201897033,
+        "signature_id": 1760218,
+        "value": 4.51,
+        "push_id": 384313,
+        "id": 581026835
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "push_timestamp": 1538039893,
+        "job_id": 201901965,
+        "signature_id": 1760218,
+        "value": 4.51,
+        "push_id": 384314,
+        "id": 581048881
+      }
+    ],
+    "meta": {
+      "parentSignatureHash": "620f90feca6c0916ca8e593737eb6bf6d0301f68",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "framework_id": 11,
+      "machine_platform": "linux64",
+      "lower_is_better": false,
+      "id": 1760218,
+      "has_subtests": true,
+      "suite": "web-tooling-benchmark-v8"
+    },
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760218,1,11",
+    "configUID": "web-tooling",
+    "color": "#ffcd02",
+    "label": "Chrome v8",
+    "suite": "web-tooling-benchmark-v8"
+  },
+  "1760236": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "push_id": 383851,
+        "signature_id": 1760236,
+        "value": 58.94,
+        "job_id": 201674602,
+        "id": 579136044,
+        "push_timestamp": 1537966541
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "push_id": 383877,
+        "signature_id": 1760236,
+        "value": 58.7,
+        "job_id": 201685785,
+        "id": 579209385,
+        "push_timestamp": 1537970312
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "push_id": 384116,
+        "signature_id": 1760236,
+        "value": 59.4,
+        "job_id": 201795656,
+        "id": 580105188,
+        "push_timestamp": 1537998556
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "push_id": 384118,
+        "signature_id": 1760236,
+        "value": 59.54,
+        "job_id": 201795636,
+        "id": 580100975,
+        "push_timestamp": 1537998701
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "push_id": 384119,
+        "signature_id": 1760236,
+        "value": 59.76,
+        "job_id": 201796968,
+        "id": 580132990,
+        "push_timestamp": 1537998753
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "push_id": 384220,
+        "signature_id": 1760236,
+        "value": 59.08,
+        "job_id": 201849738,
+        "id": 580503946,
+        "push_timestamp": 1538018003
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "push_id": 384221,
+        "signature_id": 1760236,
+        "value": 59.73,
+        "job_id": 201849314,
+        "id": 580465515,
+        "push_timestamp": 1538018046
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "push_id": 384313,
+        "signature_id": 1760236,
+        "value": 59.16,
+        "job_id": 201896980,
+        "id": 581022121,
+        "push_timestamp": 1538039827
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "push_id": 384314,
+        "signature_id": 1760236,
+        "value": 59.22,
+        "job_id": 201901783,
+        "id": 581037975,
+        "push_timestamp": 1538039893
+      }
+    ],
+    "meta": {
+      "parentSignatureHash": "0bae7e5fb769123dc4504aea0458898f63bee0dd",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "framework_id": 11,
+      "machine_platform": "linux64",
+      "id": 1760236,
+      "has_subtests": true,
+      "suite": "ares6-sm"
+    },
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760236,1,11",
+    "configUID": "ares6",
+    "color": "#e55525",
+    "label": "SpiderMonkey",
+    "suite": "ares6-sm"
+  },
+  "1760249": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "push_timestamp": 1537966541,
+        "job_id": 201674394,
+        "signature_id": 1760249,
+        "value": 10945,
+        "push_id": 383851,
+        "id": 579126282
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "push_timestamp": 1537970312,
+        "job_id": 201685779,
+        "signature_id": 1760249,
+        "value": 10813,
+        "push_id": 383877,
+        "id": 579205338
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "push_timestamp": 1537998556,
+        "job_id": 201795775,
+        "signature_id": 1760249,
+        "value": 11322,
+        "push_id": 384116,
+        "id": 580107542
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "push_timestamp": 1537998701,
+        "job_id": 201795640,
+        "signature_id": 1760249,
+        "value": 10959,
+        "push_id": 384118,
+        "id": 580100143
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "push_timestamp": 1537998753,
+        "job_id": 201797015,
+        "signature_id": 1760249,
+        "value": 11281,
+        "push_id": 384119,
+        "id": 580124098
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "push_timestamp": 1538018003,
+        "job_id": 201849666,
+        "signature_id": 1760249,
+        "value": 11209,
+        "push_id": 384220,
+        "id": 580504422
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "push_timestamp": 1538018046,
+        "job_id": 201849463,
+        "signature_id": 1760249,
+        "value": 10960,
+        "push_id": 384221,
+        "id": 580486510
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "push_timestamp": 1538039827,
+        "job_id": 201897022,
+        "signature_id": 1760249,
+        "value": 11337,
+        "push_id": 384313,
+        "id": 581018628
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "push_timestamp": 1538039893,
+        "job_id": 201901807,
+        "signature_id": 1760249,
+        "value": 11131,
+        "push_id": 384314,
+        "id": 581035735
+      }
+    ],
+    "meta": {
+      "parentSignatureHash": "73faa0899bec4035028bf2a2f50bbf90aaccc3db",
+      "framework_id": 11,
+      "machine_platform": "linux64",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "id": 1760249,
+      "has_subtests": true,
+      "suite": "six-speed-sm"
+    },
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760249,1,11",
+    "configUID": "six-speed",
+    "color": "#e55525",
+    "label": "SpiderMonkey",
+    "suite": "six-speed-sm"
+  },
+  "1762616": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "signature_id": 1762616,
+        "push_id": 383851,
+        "push_timestamp": 1537966541,
+        "id": 579131740,
+        "value": 20.8,
+        "job_id": 201674384
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "signature_id": 1762616,
+        "push_id": 383877,
+        "push_timestamp": 1537970312,
+        "id": 579198427,
+        "value": 20.15,
+        "job_id": 201685701
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "signature_id": 1762616,
+        "push_id": 384116,
+        "push_timestamp": 1537998556,
+        "id": 580114820,
+        "value": 20.45,
+        "job_id": 201795848
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "signature_id": 1762616,
+        "push_id": 384118,
+        "push_timestamp": 1537998701,
+        "id": 580099191,
+        "value": 26.6,
+        "job_id": 201795498
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "signature_id": 1762616,
+        "push_id": 384119,
+        "push_timestamp": 1537998753,
+        "id": 580124422,
+        "value": 25.6,
+        "job_id": 201796952
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "signature_id": 1762616,
+        "push_id": 384220,
+        "push_timestamp": 1538018003,
+        "id": 580508749,
+        "value": 25.65,
+        "job_id": 201849661
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "signature_id": 1762616,
+        "push_id": 384221,
+        "push_timestamp": 1538018046,
+        "id": 580492366,
+        "value": 20.25,
+        "job_id": 201849483
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "signature_id": 1762616,
+        "push_id": 384313,
+        "push_timestamp": 1538039827,
+        "id": 581024494,
+        "value": 26.3,
+        "job_id": 201897034
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "signature_id": 1762616,
+        "push_id": 384314,
+        "push_timestamp": 1538039893,
+        "id": 581046502,
+        "value": 20.6,
+        "job_id": 201901880
+      }
+    ],
+    "meta": {
+      "parentSignatureHash": "b25cc780ef12a59804e12f7e0f729dbf9294d090",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "framework_id": 10,
+      "machine_platform": "linux64",
+      "id": 1762616,
+      "has_subtests": true,
+      "suite": "raptor-assorted-dom-firefox"
+    },
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1762616,1,10",
+    "configUID": "assorted-dom",
+    "color": "#e55525",
+    "label": "Firefox",
+    "suite": "raptor-assorted-dom-firefox"
+  },
+  "1762623": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "push_timestamp": 1537966541,
+        "job_id": 201674330,
+        "signature_id": 1762623,
+        "value": 460.05,
+        "push_id": 383851,
+        "id": 579126650
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "push_timestamp": 1537970312,
+        "job_id": 201685654,
+        "signature_id": 1762623,
+        "value": 464.6,
+        "push_id": 383877,
+        "id": 579205212
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "push_timestamp": 1537998556,
+        "job_id": 201795704,
+        "signature_id": 1762623,
+        "value": 467.55,
+        "push_id": 384116,
+        "id": 580111796
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "push_timestamp": 1537998701,
+        "job_id": 201795426,
+        "signature_id": 1762623,
+        "value": 464.5,
+        "push_id": 384118,
+        "id": 580098709
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "push_timestamp": 1537998753,
+        "job_id": 201797096,
+        "signature_id": 1762623,
+        "value": 462.1,
+        "push_id": 384119,
+        "id": 580134591
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "push_timestamp": 1538018003,
+        "job_id": 201849692,
+        "signature_id": 1762623,
+        "value": 463.2,
+        "push_id": 384220,
+        "id": 580510582
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "push_timestamp": 1538018046,
+        "job_id": 201849466,
+        "signature_id": 1762623,
+        "value": 463.2,
+        "push_id": 384221,
+        "id": 580493122
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "push_timestamp": 1538039827,
+        "job_id": 201897115,
+        "signature_id": 1762623,
+        "value": 465.1,
+        "push_id": 384313,
+        "id": 581032310
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "push_timestamp": 1538039893,
+        "job_id": 201901751,
+        "signature_id": 1762623,
+        "value": 552,
+        "push_id": 384314,
+        "id": 581039227
+      }
+    ],
+    "meta": {
+      "parentSignatureHash": "898fce18e2311b8517fb57629494fe194c2de84e",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "framework_id": 10,
+      "machine_platform": "linux64",
+      "id": 1762623,
+      "has_subtests": true,
+      "suite": "raptor-assorted-dom-chrome"
+    },
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1762623,1,10",
+    "configUID": "assorted-dom",
+    "color": "#ffcd02",
+    "label": "Chrome",
+    "suite": "raptor-assorted-dom-chrome"
+  },
+  "1762630": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "signature_id": 1762630,
+        "push_id": 383851,
+        "push_timestamp": 1537966541,
+        "id": 579133101,
+        "value": 39585.05,
+        "job_id": 201674348
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "signature_id": 1762630,
+        "push_id": 383877,
+        "push_timestamp": 1537970312,
+        "id": 579208980,
+        "value": 39814.1,
+        "job_id": 201685640
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "signature_id": 1762630,
+        "push_id": 384116,
+        "push_timestamp": 1537998556,
+        "id": 580116989,
+        "value": 39778.5,
+        "job_id": 201795734
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "signature_id": 1762630,
+        "push_id": 384118,
+        "push_timestamp": 1537998701,
+        "id": 580104890,
+        "value": 39980.98,
+        "job_id": 201795575
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "signature_id": 1762630,
+        "push_id": 384119,
+        "push_timestamp": 1537998753,
+        "id": 580142086,
+        "value": 39904.18,
+        "job_id": 201796875
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "signature_id": 1762630,
+        "push_id": 384220,
+        "push_timestamp": 1538018003,
+        "id": 580505110,
+        "value": 39536.99,
+        "job_id": 201849565
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "signature_id": 1762630,
+        "push_id": 384221,
+        "push_timestamp": 1538018046,
+        "id": 580499593,
+        "value": 39776.28,
+        "job_id": 201849490
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "signature_id": 1762630,
+        "push_id": 384313,
+        "push_timestamp": 1538039827,
+        "id": 581034410,
+        "value": 39400.3,
+        "job_id": 201897001
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "signature_id": 1762630,
+        "push_id": 384314,
+        "push_timestamp": 1538039893,
+        "id": 581041612,
+        "value": 39900.41,
+        "job_id": 201901736
+      }
+    ],
+    "meta": {
+      "parentSignatureHash": "e237c02f090477f372087cea726ffea71324bafd",
+      "has_subtests": true,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "suite": "raptor-wasm-misc-firefox",
+      "machine_platform": "linux64",
+      "id": 1762630,
+      "framework_id": 10
+    },
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1762630,1,10",
+    "configUID": "wasm-misc",
+    "color": "#e55525",
+    "label": "Firefox (tiering)",
+    "suite": "raptor-wasm-misc-firefox"
+  },
+  "1762654": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "push_timestamp": 1537966541,
+        "job_id": 201674528,
+        "signature_id": 1762654,
+        "value": 87791.28,
+        "push_id": 383851,
+        "id": 579139961
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "push_timestamp": 1537970312,
+        "job_id": 201685743,
+        "signature_id": 1762654,
+        "value": 125634.12,
+        "push_id": 383877,
+        "id": 579216892
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "push_timestamp": 1537998556,
+        "job_id": 201795863,
+        "signature_id": 1762654,
+        "value": 88048.61,
+        "push_id": 384116,
+        "id": 580133379
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "push_timestamp": 1537998701,
+        "job_id": 201795448,
+        "signature_id": 1762654,
+        "value": 88046,
+        "push_id": 384118,
+        "id": 580105270
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "push_timestamp": 1537998753,
+        "job_id": 201796988,
+        "signature_id": 1762654,
+        "value": 87891.43,
+        "push_id": 384119,
+        "id": 580149025
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "push_timestamp": 1538018003,
+        "job_id": 201849749,
+        "signature_id": 1762654,
+        "value": 88007.08,
+        "push_id": 384220,
+        "id": 580532182
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "push_timestamp": 1538018046,
+        "job_id": 201849448,
+        "signature_id": 1762654,
+        "value": 87806.59,
+        "push_id": 384221,
+        "id": 580492526
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "push_timestamp": 1538039827,
+        "job_id": 201896956,
+        "signature_id": 1762654,
+        "value": 88064.53,
+        "push_id": 384313,
+        "id": 581029690
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "push_timestamp": 1538039893,
+        "job_id": 201901886,
+        "signature_id": 1762654,
+        "value": 87803.78,
+        "push_id": 384314,
+        "id": 581055311
+      }
+    ],
+    "meta": {
+      "parentSignatureHash": "7a9edcfc8f2975801625c34114d74777870b4af8",
+      "framework_id": 10,
+      "machine_platform": "linux64",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "id": 1762654,
+      "has_subtests": true,
+      "suite": "raptor-wasm-misc-chrome"
+    },
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1762654,1,10",
+    "configUID": "wasm-misc",
+    "color": "#ffcd02",
+    "label": "Chrome",
+    "suite": "raptor-wasm-misc-chrome"
+  },
+  "1764083": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "push_id": 383851,
+        "signature_id": 1764083,
+        "value": 40040.93,
+        "job_id": 201674417,
+        "id": 579136095,
+        "push_timestamp": 1537966541
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "push_id": 383877,
+        "signature_id": 1764083,
+        "value": 40126.81,
+        "job_id": 201685632,
+        "id": 579205439,
+        "push_timestamp": 1537970312
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "push_id": 384116,
+        "signature_id": 1764083,
+        "value": 40087.76,
+        "job_id": 201795797,
+        "id": 580123726,
+        "push_timestamp": 1537998556
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "push_id": 384118,
+        "signature_id": 1764083,
+        "value": 40227.42,
+        "job_id": 201795527,
+        "id": 580100063,
+        "push_timestamp": 1537998701
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "push_id": 384119,
+        "signature_id": 1764083,
+        "value": 40205.54,
+        "job_id": 201797107,
+        "id": 580139177,
+        "push_timestamp": 1537998753
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "push_id": 384220,
+        "signature_id": 1764083,
+        "value": 40123.05,
+        "job_id": 201849643,
+        "id": 580508410,
+        "push_timestamp": 1538018003
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "push_id": 384221,
+        "signature_id": 1764083,
+        "value": 40012.78,
+        "job_id": 201849492,
+        "id": 580500106,
+        "push_timestamp": 1538018046
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "push_id": 384313,
+        "signature_id": 1764083,
+        "value": 39909.44,
+        "job_id": 201897148,
+        "id": 581032271,
+        "push_timestamp": 1538039827
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "push_id": 384314,
+        "signature_id": 1764083,
+        "value": 40122.56,
+        "job_id": 201901920,
+        "id": 581050286,
+        "push_timestamp": 1538039893
+      }
+    ],
+    "meta": {
+      "parentSignatureHash": "88feb0b811e7409adc0119a9e423fbfd6ce113c8",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "framework_id": 10,
+      "machine_platform": "linux64",
+      "id": 1764083,
+      "has_subtests": true,
+      "suite": "raptor-wasm-misc-ion-firefox"
+    },
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1764083,1,10",
+    "configUID": "wasm-misc",
+    "color": "brown",
+    "label": "Firefox (wasm-ion)",
+    "suite": "raptor-wasm-misc-ion-firefox"
+  },
+  "1764107": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "job_id": 201674424,
+        "value": 70439.18,
+        "signature_id": 1764107,
+        "push_id": 383851,
+        "id": 579138124,
+        "push_timestamp": 1537966541
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "job_id": 201685672,
+        "value": 70619.46,
+        "signature_id": 1764107,
+        "push_id": 383877,
+        "id": 579210672,
+        "push_timestamp": 1537970312
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "job_id": 201795728,
+        "value": 70365.52,
+        "signature_id": 1764107,
+        "push_id": 384116,
+        "id": 580121179,
+        "push_timestamp": 1537998556
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "job_id": 201795638,
+        "value": 70353.43,
+        "signature_id": 1764107,
+        "push_id": 384118,
+        "id": 580108111,
+        "push_timestamp": 1537998701
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "job_id": 201797024,
+        "value": 70288.7,
+        "signature_id": 1764107,
+        "push_id": 384119,
+        "id": 580139358,
+        "push_timestamp": 1537998753
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "job_id": 201849671,
+        "value": 70540.02,
+        "signature_id": 1764107,
+        "push_id": 384220,
+        "id": 580519618,
+        "push_timestamp": 1538018003
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "job_id": 201849387,
+        "value": 70418.25,
+        "signature_id": 1764107,
+        "push_id": 384221,
+        "id": 580498434,
+        "push_timestamp": 1538018046
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "job_id": 201896975,
+        "value": 70391.57,
+        "signature_id": 1764107,
+        "push_id": 384313,
+        "id": 581030154,
+        "push_timestamp": 1538039827
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "job_id": 201901844,
+        "value": 70526.53,
+        "signature_id": 1764107,
+        "push_id": 384314,
+        "id": 581055132,
+        "push_timestamp": 1538039893
+      }
+    ],
+    "meta": {
+      "parentSignatureHash": "082f6456802cceb8fdd4d4a58c7d409a023ae593",
+      "framework_id": 10,
+      "machine_platform": "linux64",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "id": 1764107,
+      "has_subtests": true,
+      "suite": "raptor-wasm-misc-baseline-firefox"
+    },
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1764107,1,10",
+    "configUID": "wasm-misc",
+    "color": "red",
+    "label": "Firefox (wasm-baseline)",
+    "suite": "raptor-wasm-misc-baseline-firefox"
+  },
+  "1775624": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "signature_id": 1775624,
+        "push_id": 383851,
+        "push_timestamp": 1537966541,
+        "id": 579121272,
+        "value": 18514,
+        "job_id": 201674525
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "signature_id": 1775624,
+        "push_id": 383877,
+        "push_timestamp": 1537970312,
+        "id": 579202510,
+        "value": 18499,
+        "job_id": 201685754
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "signature_id": 1775624,
+        "push_id": 384116,
+        "push_timestamp": 1537998556,
+        "id": 580103361,
+        "value": 18248,
+        "job_id": 201795658
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "signature_id": 1775624,
+        "push_id": 384118,
+        "push_timestamp": 1537998701,
+        "id": 580098371,
+        "value": 18115,
+        "job_id": 201795539
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "signature_id": 1775624,
+        "push_id": 384119,
+        "push_timestamp": 1537998753,
+        "id": 580122988,
+        "value": 18520,
+        "job_id": 201796893
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "signature_id": 1775624,
+        "push_id": 384220,
+        "push_timestamp": 1538018003,
+        "id": 580504361,
+        "value": 18494,
+        "job_id": 201849768
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "signature_id": 1775624,
+        "push_id": 384221,
+        "push_timestamp": 1538018046,
+        "id": 580487703,
+        "value": 18300,
+        "job_id": 201849501
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "signature_id": 1775624,
+        "push_id": 384313,
+        "push_timestamp": 1538039827,
+        "id": 581022315,
+        "value": 17934,
+        "job_id": 201897020
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "signature_id": 1775624,
+        "push_id": 384314,
+        "push_timestamp": 1538039893,
+        "id": 581034131,
+        "value": 18311,
+        "job_id": 201901747
+      }
+    ],
+    "meta": {
+      "parentSignatureHash": "9d27ecdcc8995b449ce65b2585b2d4ffe7a7dbc2",
+      "has_subtests": true,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "lower_is_better": false,
+      "suite": "octane-v8",
+      "machine_platform": "linux64",
+      "id": 1775624,
+      "framework_id": 11
+    },
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1775624,1,11",
+    "configUID": "octane",
+    "color": "#ffcd02",
+    "label": "Chrome v8",
+    "suite": "octane-v8"
+  },
+  "1775643": {
+    "data": [
+      {
+        "datetime": "2018-09-26T12:55:41.000Z",
+        "push_timestamp": 1537966541,
+        "job_id": 201674379,
+        "signature_id": 1775643,
+        "value": 34661,
+        "push_id": 383851,
+        "id": 579131863
+      },
+      {
+        "datetime": "2018-09-26T13:58:32.000Z",
+        "push_timestamp": 1537970312,
+        "job_id": 201685586,
+        "signature_id": 1775643,
+        "value": 35435,
+        "push_id": 383877,
+        "id": 579193681
+      },
+      {
+        "datetime": "2018-09-26T21:49:16.000Z",
+        "push_timestamp": 1537998556,
+        "job_id": 201795735,
+        "signature_id": 1775643,
+        "value": 35142,
+        "push_id": 384116,
+        "id": 580107240
+      },
+      {
+        "datetime": "2018-09-26T21:51:41.000Z",
+        "push_timestamp": 1537998701,
+        "job_id": 201795565,
+        "signature_id": 1775643,
+        "value": 35316,
+        "push_id": 384118,
+        "id": 580098901
+      },
+      {
+        "datetime": "2018-09-26T21:52:33.000Z",
+        "push_timestamp": 1537998753,
+        "job_id": 201797023,
+        "signature_id": 1775643,
+        "value": 34735,
+        "push_id": 384119,
+        "id": 580124633
+      },
+      {
+        "datetime": "2018-09-27T03:13:23.000Z",
+        "push_timestamp": 1538018003,
+        "job_id": 201849715,
+        "signature_id": 1775643,
+        "value": 35397,
+        "push_id": 384220,
+        "id": 580497704
+      },
+      {
+        "datetime": "2018-09-27T03:14:06.000Z",
+        "push_timestamp": 1538018046,
+        "job_id": 201849517,
+        "signature_id": 1775643,
+        "value": 34601,
+        "push_id": 384221,
+        "id": 580473541
+      },
+      {
+        "datetime": "2018-09-27T09:17:07.000Z",
+        "push_timestamp": 1538039827,
+        "job_id": 201897029,
+        "signature_id": 1775643,
+        "value": 34917,
+        "push_id": 384313,
+        "id": 581027830
+      },
+      {
+        "datetime": "2018-09-27T09:18:13.000Z",
+        "push_timestamp": 1538039893,
+        "job_id": 201901824,
+        "signature_id": 1775643,
+        "value": 35171,
+        "push_id": 384314,
+        "id": 581034876
+      }
+    ],
+    "meta": {
+      "parentSignatureHash": "3c0fa9c4a96f067ac4cbc05c55e54c95de1bf835",
+      "has_subtests": true,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "lower_is_better": false,
+      "suite": "octane-sm",
+      "machine_platform": "linux64",
+      "id": 1775643,
+      "framework_id": 11
+    },
+    "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1775643,1,11",
+    "configUID": "octane",
+    "color": "#e55525",
+    "label": "SpiderMonkey",
+    "suite": "octane-sm"
   }
 }

@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import CircularIndeterminate from '../../components/CircularIndeterminate';
 import Graphs from '../../components/Graphs';
@@ -8,11 +8,11 @@ class Benchmark extends Component {
   static propTypes = {
     benchmark: PropTypes.string.isRequired,
     platform: PropTypes.string.isRequired,
-  }
+  };
 
   state = {
     benchmarkData: {},
-  }
+  };
 
   componentDidMount() {
     const { platform, benchmark } = this.props;
@@ -32,6 +32,7 @@ class Benchmark extends Component {
   }
 
   render() {
+    const { benchmark, platform } = this.props;
     const { benchmarkData } = this.state;
 
     return (Object.keys(benchmarkData).length === 0)
@@ -39,8 +40,8 @@ class Benchmark extends Component {
       : (
         <Graphs
           benchmarkData={benchmarkData}
-          overviewMode={this.props.benchmark === 'overview'}
-          platform={this.props.platform}
+          platform={platform}
+          overviewMode={benchmark === 'overview'}
         />
       );
   }

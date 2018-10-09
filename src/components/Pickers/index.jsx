@@ -1,6 +1,7 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Picker from '../../components/Picker';
+import Picker from '../Picker';
 import { BENCHMARKS, CONFIG } from '../../config';
 
 const styles = () => ({
@@ -14,7 +15,7 @@ const styles = () => ({
 const Pickers = ({
   classes, benchmark, onChange, platform,
 }) => (
-  <div className={classes.root} >
+  <div className={classes.root}>
     <Picker
       key="Platform selection"
       identifier="platform"

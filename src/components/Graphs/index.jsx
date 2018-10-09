@@ -1,13 +1,17 @@
+import React from 'react';
 import LinkIcon from '@material-ui/icons/Link';
 import ArrowDownward from '@material-ui/icons/ArrowDownward';
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
-import Legend from '../../components/Legend';
-import ChartJSWrapper from '../../components/ChartJSWrapper';
+import Legend from '../Legend';
+import ChartJSWrapper from '../ChartJSWrapper';
 
 const sortOverviewFirst = (a, b) => {
-  if (a.includes('overview') || b.includes('overview')) {
+  if (a.includes('overview')) {
     return -1;
+  }
+  if (b.includes('overview')) {
+    return 1;
   }
   return (a <= b ? -1 : 1);
 };
@@ -29,11 +33,12 @@ const Graphs = ({
   platform,
 }) => (
   <div>
-    {!overviewMode &&
-      Object.values(benchmarkData.topLabelsConfig).map(({
+    {!overviewMode
+      && Object.values(benchmarkData.topLabelsConfig).map(({
         color, label, suite, url,
       }) => (
-        label &&
+        label
+          && (
           <Legend
             key={suite}
             label={label}
@@ -43,6 +48,7 @@ const Graphs = ({
                all subbenchmarks
             </a>
           </Legend>
+          )
       ))
     }
     {Object.keys(benchmarkData.graphs)
