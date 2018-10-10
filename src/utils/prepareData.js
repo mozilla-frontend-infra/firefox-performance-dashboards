@@ -68,6 +68,7 @@ const prepareData = (benchmarks) => {
 
     if (!newData.graphs[uid]) {
       newData.graphs[uid] = {
+        configUID,
         chartJsData: { datasets: [] },
         chartJsOptions: generateChartJsOptions(configUID, meta),
         jointUrl: perfherderUrl,
