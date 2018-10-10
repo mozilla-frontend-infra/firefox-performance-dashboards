@@ -298,7 +298,8 @@
         }
       },
       "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1731007,1,10&series=mozilla-central,1707740,1,10",
-      "title": "MotionMark HtmlSuite"
+      "title": "MotionMark HtmlSuite",
+      "configUID": "motionmark-htmlsuite"
     },
     "stylebench-overview": {
       "chartJsData": {
@@ -416,7 +417,8 @@
         }
       },
       "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1714844,1,10&series=mozilla-central,1707667,1,10",
-      "title": "StyleBench"
+      "title": "StyleBench",
+      "configUID": "stylebench"
     },
     "speedometer-overview": {
       "chartJsData": {
@@ -534,7 +536,8 @@
         }
       },
       "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1714897,1,10&series=mozilla-central,1706436,1,10",
-      "title": "Speedometer"
+      "title": "Speedometer",
+      "configUID": "speedometer"
     },
     "unity-webgl-overview": {
       "chartJsData": {
@@ -648,7 +651,8 @@
         }
       },
       "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1750719,1,10&series=mozilla-central,1750735,1,10",
-      "title": "Unity WebGL"
+      "title": "Unity WebGL",
+      "configUID": "unity-webgl"
     },
     "webaudio-overview": {
       "chartJsData": {
@@ -766,7 +770,8 @@
         }
       },
       "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1728949,1,10&series=mozilla-central,1728907,1,10",
-      "title": "WebAudio"
+      "title": "WebAudio",
+      "configUID": "webaudio"
     },
     "assorted-dom-overview": {
       "chartJsData": {
@@ -884,7 +889,8 @@
         }
       },
       "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1762623,1,10&series=mozilla-central,1762616,1,10",
-      "title": "Assorted DOM"
+      "title": "Assorted DOM",
+      "configUID": "assorted-dom"
     },
     "wasm-misc-overview": {
       "chartJsData": {
@@ -1086,7 +1092,8 @@
         }
       },
       "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1762654,1,10&series=mozilla-central,1762630,1,10&series=mozilla-central,1764107,1,10&series=mozilla-central,1764083,1,10",
-      "title": "WebAssembly Embenchen"
+      "title": "WebAssembly Embenchen",
+      "configUID": "wasm-misc"
     },
     "motionmark-animometer-overview": {
       "chartJsData": {
@@ -1204,7 +1211,8 @@
         }
       },
       "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1730980,1,10&series=mozilla-central,1707657,1,10",
-      "title": "MotionMark Animometer"
+      "title": "MotionMark Animometer",
+      "configUID": "motionmark-animometer"
     },
     "sunspider-overview": {
       "chartJsData": {
@@ -1322,7 +1330,8 @@
         }
       },
       "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1730498,1,10&series=mozilla-central,1730526,1,10",
-      "title": "SunSpider"
+      "title": "SunSpider",
+      "configUID": "sunspider"
     },
     "ares6-overview": {
       "chartJsData": {
@@ -1440,7 +1449,8 @@
         }
       },
       "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760205,1,11&series=mozilla-central,1760236,1,11",
-      "title": "Ares6 (JS shell)"
+      "title": "Ares6 (JS shell)",
+      "configUID": "ares6"
     },
     "web-tooling-overview": {
       "chartJsData": {
@@ -1558,7 +1568,8 @@
         }
       },
       "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760218,1,11&series=mozilla-central,1760187,1,11",
-      "title": "Web Tooling (JS shell)"
+      "title": "Web Tooling (JS shell)",
+      "configUID": "web-tooling"
     },
     "six-speed-overview": {
       "chartJsData": {
@@ -1676,7 +1687,8 @@
         }
       },
       "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760134,1,11&series=mozilla-central,1760249,1,11",
-      "title": "Six Speed (JS shell)"
+      "title": "Six Speed (JS shell)",
+      "configUID": "six-speed"
     },
     "octane-overview": {
       "chartJsData": {
@@ -1794,7 +1806,8 @@
         }
       },
       "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1775624,1,11&series=mozilla-central,1775643,1,11",
-      "title": "Octane (JS shell)"
+      "title": "Octane (JS shell)",
+      "configUID": "octane"
     },
     "kraken-overview": {
       "chartJsData": {
@@ -1870,7 +1883,8 @@
         }
       },
       "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1648846,1,1",
-      "title": "Kraken"
+      "title": "Kraken",
+      "configUID": "kraken"
     },
     "sunspider-jsbench-overview": {
       "chartJsData": {
@@ -1946,7 +1960,8 @@
         }
       },
       "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760107,1,11",
-      "title": "Sun Spider (JS shell)"
+      "title": "Sun Spider (JS shell)",
+      "configUID": "sunspider-jsbench"
     }
   }
 }
