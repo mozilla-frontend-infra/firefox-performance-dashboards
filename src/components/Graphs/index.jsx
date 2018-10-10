@@ -31,6 +31,7 @@ const Graphs = ({
   benchmarkData,
   overviewMode,
   platform,
+  benchmark,
 }) => (
   <div>
     {!overviewMode
@@ -60,7 +61,7 @@ const Graphs = ({
         <div key={title}>
           <h2 className={classes.benchmarkTitle}>{title}</h2>
           <a href={jointUrl} target="_blank" rel="noopener noreferrer"><LinkIcon className={classes.linkIcon} /></a>
-          <a href={`/${platform}/${title.replace(/\s+/g, '-').toLowerCase()}`} rel="noopener noreferrer"><ArrowDownward className={classes.linkIcon} /></a>
+          <a href={`/${platform}/${benchmark}`} rel="noopener noreferrer"><ArrowDownward className={classes.linkIcon} /></a>
           <ChartJSWrapper chartJsData={chartJsData} chartJsOptions={chartJsOptions} />
         </div>
       ))}
@@ -72,6 +73,7 @@ Graphs.propTypes = {
   overviewMode: PropTypes.bool.isRequired,
   classes: PropTypes.shape({}).isRequired,
   platform: PropTypes.string.isRequired,
+  benchmark: PropTypes.string.isRequired,
 };
 
 export default withStyles(styles)(Graphs);
