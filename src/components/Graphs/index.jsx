@@ -61,7 +61,10 @@ const Graphs = ({
         <div key={title}>
           <h2 className={classes.benchmarkTitle}>{title}</h2>
           <a href={jointUrl} target="_blank" rel="noopener noreferrer"><LinkIcon className={classes.linkIcon} /></a>
-          {overviewMode ? <Link to={`/${platform}/${configUID}`} rel="noopener noreferrer"><ArrowDownward className={classes.linkIcon} /></Link> : null }
+          {overviewMode
+            ? <Link to={`/${platform}/${configUID}`} rel="noopener noreferrer"><ArrowDownward className={classes.linkIcon} /></Link>
+            : null
+          }
           <ChartJSWrapper chartJsData={chartJsData} chartJsOptions={chartJsOptions} />
         </div>
       ))}

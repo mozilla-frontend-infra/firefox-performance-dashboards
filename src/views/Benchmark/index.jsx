@@ -42,7 +42,6 @@ class Benchmark extends Component {
           benchmarkData={benchmarkData}
           platform={platform}
           overviewMode={benchmark === 'overview'}
-          benchmark={benchmark}
         />
       );
   }
