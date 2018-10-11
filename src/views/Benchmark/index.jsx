@@ -43,7 +43,7 @@ class Benchmark extends Component {
   }
 
   render() {
-    const { benchmark } = this.props;
+    const { benchmark, platform } = this.props;
     const { benchmarkData } = this.state;
 
     return (Object.keys(benchmarkData).length === 0)
@@ -51,6 +51,7 @@ class Benchmark extends Component {
       : (
         <Graphs
           benchmarkData={benchmarkData}
+          platform={platform}
           overviewMode={benchmark === 'overview'}
         />
       );

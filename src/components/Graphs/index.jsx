@@ -1,7 +1,9 @@
 import React from 'react';
 import LinkIcon from '@material-ui/icons/Link';
+import ArrowDownward from '@material-ui/icons/ArrowDownward';
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import Legend from '../Legend';
 import ChartJSWrapper from '../ChartJSWrapper';
 
@@ -25,7 +27,12 @@ const styles = () => ({
   },
 });
 
-const Graphs = ({ classes, benchmarkData, overviewMode }) => (
+const Graphs = ({
+  classes,
+  benchmarkData,
+  overviewMode,
+  platform,
+}) => (
   <div>
     {!overviewMode
       && Object.values(benchmarkData.topLabelsConfig).map(({
@@ -49,11 +56,15 @@ const Graphs = ({ classes, benchmarkData, overviewMode }) => (
       .sort(overviewMode ? undefined : sortOverviewFirst)
       .map(key => benchmarkData.graphs[key])
       .map(({
-        chartJsData, chartJsOptions, jointUrl, title,
+        configUID, chartJsData, chartJsOptions, jointUrl, title,
       }) => (
         <div key={title}>
           <h2 className={classes.benchmarkTitle}>{title}</h2>
           <a href={jointUrl} target="_blank" rel="noopener noreferrer"><LinkIcon className={classes.linkIcon} /></a>
+          {overviewMode
+            ? <Link to={`/${platform}/${configUID}`} rel="noopener noreferrer"><ArrowDownward className={classes.linkIcon} /></Link>
+            : null
+          }
           <ChartJSWrapper chartJsData={chartJsData} chartJsOptions={chartJsOptions} />
         </div>
       ))}
@@ -64,6 +75,7 @@ Graphs.propTypes = {
   benchmarkData: PropTypes.shape({}).isRequired,
   overviewMode: PropTypes.bool.isRequired,
   classes: PropTypes.shape({}).isRequired,
+  platform: PropTypes.string.isRequired,
 };
 
 export default withStyles(styles)(Graphs);
