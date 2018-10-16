@@ -6,7 +6,9 @@ import {
 } from 'react-router-dom';
 import Benchmark from '../views/Benchmark';
 import Navigation from '../components/Navigation';
-import { CONFIG } from '../config';
+// import { CONFIG } from '../config';
+import DEFAULT_DESKTOP_BENCHMARKS from '../configuration/js-team/appDefaults';
+
 import validCombination from '../utils/validCombination';
 
 const styles = () => ({
@@ -26,7 +28,7 @@ const App = ({ classes }) => (
           const searchParams = new URLSearchParams(location.search);
           const timeRange = Math.round(searchParams.get('numDays'));
           if (!validCombination(platform, benchmark, timeRange)) {
-            return <Redirect to={CONFIG.default.landingPath} />;
+            return <Redirect to={DEFAULT_DESKTOP_BENCHMARKS.landingPath} />;
           }
           return (
             <div className={classes.container}>
@@ -40,7 +42,7 @@ const App = ({ classes }) => (
           );
         }}
       />
-      <Redirect to={CONFIG.default.landingPath} />
+      <Redirect to={DEFAULT_DESKTOP_BENCHMARKS.landingPath} />
     </Switch>
   </BrowserRouter>
 );
