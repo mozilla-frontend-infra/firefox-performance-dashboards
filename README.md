@@ -3,8 +3,7 @@
 # Firefox performance dashboard
 The Firefox performance dashboard allows seeing what Firefox's current performance is.
 
-You can file issues in [here](https://github.com/mozilla-frontend-infra/firefox-performance-dashboard
-/issues).
+You can file issues in [here](https://github.com/mozilla-frontend-infra/firefox-performance-dashboard/issues).
 
 # Requirements
 
