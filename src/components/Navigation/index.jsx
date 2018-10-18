@@ -16,12 +16,12 @@ const styles = () => ({
 });
 
 const Pickers = Loadable({
-  loader: () => import('../Pickers'),
+  loader: () => import(/* webpackChunkName: 'Pickers' */ '../Pickers'),
   loading: Loading,
 });
 
 const Slider = Loadable({
-  loader: () => import('../Slider'),
+  loader: () => import(/* webpackChunkName: 'Slider' */ '../Slider'),
   loading: Loading,
 });
 

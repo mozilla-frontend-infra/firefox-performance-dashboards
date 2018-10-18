@@ -8,12 +8,12 @@ import Loadable from 'react-loadable';
 import Loading from '../Loading';
 
 const Legend = Loadable({
-  loader: () => import('../Legend'),
+  loader: () => import(/* webpackChunkName: 'Legend' */ '../Legend'),
   loading: Loading,
 });
 
 const ChartJSWrapper = Loadable({
-  loader: () => import('../ChartJSWrapper'),
+  loader: () => import(/* webpackChunkName: 'ChartJSWrapper' */ '../ChartJSWrapper'),
   loading: Loading,
 });
 
