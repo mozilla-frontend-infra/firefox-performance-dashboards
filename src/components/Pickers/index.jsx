@@ -23,6 +23,7 @@ const Pickers = ({
       onSelection={onChange}
       selectedValue={platform}
       options={
+        // how to pass platforms in picker option?
         Object.keys(CONFIG.platforms).reduce((res, platformKey) => {
           res.push({ value: platformKey, label: CONFIG.platforms[platformKey].label });
           return res;

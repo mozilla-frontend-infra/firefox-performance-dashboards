@@ -298,7 +298,7 @@ export const BENCHMARKS = {
   },
 };
 
-const DEFAULT_SUITES = [
+export const DEFAULT_SUITES = [
   'kraken',
   'motionmark-animometer',
   'motionmark-htmlsuite',
@@ -309,12 +309,6 @@ const DEFAULT_SUITES = [
 ];
 
 export const CONFIG = {
-  default: {
-    landingPath: '/win10/overview?numDays=90',
-    timeRange: 90, // 90 days
-    colors: ['#e55525', '#ffcd02'],
-    labels: ['Firefox', 'Chrome'],
-  },
   platforms: {
     linux64: {
       label: 'Linux 64bit',
