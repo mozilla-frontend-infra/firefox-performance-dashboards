@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
-import Pickers from '../Pickers';
-import Slider from '../Slider';
+import Loadable from 'react-loadable';
 import { generateLastDaysLabel } from '../../utils/timeRangeUtils';
+import Loading from '../Loading';
 
 const styles = () => ({
   root: {
@@ -13,6 +13,16 @@ const styles = () => ({
     textAlign: 'center',
     padding: '15px',
   },
+});
+
+const Pickers = Loadable({
+  loader: () => import(/* webpackChunkName: 'Pickers' */ '../Pickers'),
+  loading: Loading,
+});
+
+const Slider = Loadable({
+  loader: () => import(/* webpackChunkName: 'Slider' */ '../Slider'),
+  loading: Loading,
 });
 
 class Navigation extends Component {
@@ -27,7 +37,10 @@ class Navigation extends Component {
     const { name, value } = event.target;
     const {
       // eslint-disable-next-line react/prop-types
-      history, platform, benchmark, timeRange,
+      history,
+      platform,
+      benchmark,
+      timeRange,
     } = this.props;
 
     let newPlatform = platform;
@@ -73,4 +86,4 @@ class Navigation extends Component {
 }
 
 // withRouter() allow us to use this.props.history to push a new address
-export default withRouter((withStyles(styles))(Navigation));
+export default withRouter(withStyles(styles)(Navigation));

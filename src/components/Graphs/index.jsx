@@ -4,8 +4,18 @@ import ArrowDownward from '@material-ui/icons/ArrowDownward';
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import Legend from '../Legend';
-import ChartJSWrapper from '../ChartJSWrapper';
+import Loadable from 'react-loadable';
+import Loading from '../Loading';
+
+const Legend = Loadable({
+  loader: () => import(/* webpackChunkName: 'Legend' */ '../Legend'),
+  loading: Loading,
+});
+
+const ChartJSWrapper = Loadable({
+  loader: () => import(/* webpackChunkName: 'ChartJSWrapper' */ '../ChartJSWrapper'),
+  loading: Loading,
+});
 
 const sortOverviewFirst = (a, b) => {
   if (a.includes('overview')) {
@@ -14,7 +24,7 @@ const sortOverviewFirst = (a, b) => {
   if (b.includes('overview')) {
     return 1;
   }
-  return (a <= b ? -1 : 1);
+  return a <= b ? -1 : 1;
 };
 
 const styles = () => ({
@@ -28,30 +38,21 @@ const styles = () => ({
 });
 
 const Graphs = ({
-  classes,
-  benchmarkData,
-  overviewMode,
-  platform,
+  classes, benchmarkData, overviewMode, platform,
 }) => (
   <div>
     {!overviewMode
-      && Object.values(benchmarkData.topLabelsConfig).map(({
-        color, label, suite, url,
-      }) => (
-        label
-          && (
-          <Legend
-            key={suite}
-            label={label}
-            labelColor={color}
-          >
-            <a key={url} href={url} target="_blank" rel="noopener noreferrer">
-               all subbenchmarks
-            </a>
-          </Legend>
-          )
-      ))
-    }
+      && Object.values(benchmarkData.topLabelsConfig).map(
+        ({
+          color, label, suite, url,
+        }) => label && (
+        <Legend key={suite} label={label} labelColor={color}>
+          <a key={url} href={url} target="_blank" rel="noopener noreferrer">
+                all subbenchmarks
+          </a>
+        </Legend>
+        ),
+      )}
     {Object.keys(benchmarkData.graphs)
       .sort(overviewMode ? undefined : sortOverviewFirst)
       .map(key => benchmarkData.graphs[key])
@@ -60,12 +61,18 @@ const Graphs = ({
       }) => (
         <div key={title}>
           <h2 className={classes.benchmarkTitle}>{title}</h2>
-          <a href={jointUrl} target="_blank" rel="noopener noreferrer"><LinkIcon className={classes.linkIcon} /></a>
-          {overviewMode
-            ? <Link to={`/${platform}/${configUID}`} rel="noopener noreferrer"><ArrowDownward className={classes.linkIcon} /></Link>
-            : null
-          }
-          <ChartJSWrapper chartJsData={chartJsData} chartJsOptions={chartJsOptions} />
+          <a href={jointUrl} target="_blank" rel="noopener noreferrer">
+            <LinkIcon className={classes.linkIcon} />
+          </a>
+          {overviewMode ? (
+            <Link to={`/${platform}/${configUID}`} rel="noopener noreferrer">
+              <ArrowDownward className={classes.linkIcon} />
+            </Link>
+          ) : null}
+          <ChartJSWrapper
+            chartJsData={chartJsData}
+            chartJsOptions={chartJsOptions}
+          />
         </div>
       ))}
   </div>
