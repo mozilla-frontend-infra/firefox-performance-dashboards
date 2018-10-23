@@ -8,6 +8,7 @@ import Benchmark from '../views/Benchmark';
 import Navigation from '../components/Navigation';
 import DASHBOARD_CONFIG from '../configuration/appDefaults';
 import validCombination from '../utils/validCombination';
+import platforms from '../configuration/js-team/index';
 
 const styles = () => ({
   container: {
@@ -28,13 +29,29 @@ const App = ({ classes }) => (
           if (!validCombination(platform, benchmark, timeRange)) {
             return <Redirect to={DASHBOARD_CONFIG.landingPath} />;
           }
-          // if valid then navigation banao, aur benchmark banao
+
+          const platformOptions = Object.keys(platforms).reduce((res, platformKey) => {
+            res.push({ value: platformKey, label: platforms[platformKey].label });
+            return res;
+          }, []);
+
+          const benchmarkOptions = Object.keys(platforms[platform].benchmarks)
+            .sort().reduce((res, benchmarkKey) => {
+              res.push({
+                value: benchmarkKey,
+                label: platforms[platform].benchmarks[benchmarkKey].label,
+              });
+              return res;
+            }, [{ value: 'overview', label: 'Overview' }]);
+
           return (
             <div className={classes.container}>
               <Navigation
                 platform={platform}
                 benchmark={benchmark}
                 timeRange={timeRange}
+                benchmarkOptions={benchmarkOptions}
+                platformOptions={platformOptions}
               />
               <Benchmark {...match.params} timeRange={timeRange} />
             </div>

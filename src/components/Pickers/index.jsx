@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Picker from '../Picker';
-import { BENCHMARKS, CONFIG } from '../../config';
 
 const styles = () => ({
   root: {
@@ -13,7 +12,7 @@ const styles = () => ({
 });
 
 const Pickers = ({
-  classes, benchmark, onChange, platform,
+  classes, benchmark, onChange, platform, benchmarkOptions, platformOptions,
 }) => (
   <div className={classes.root}>
     <Picker
@@ -22,13 +21,7 @@ const Pickers = ({
       topLabel="Platform"
       onSelection={onChange}
       selectedValue={platform}
-      options={
-        // how to pass platforms in picker option?
-        Object.keys(CONFIG.platforms).reduce((res, platformKey) => {
-          res.push({ value: platformKey, label: CONFIG.platforms[platformKey].label });
-          return res;
-        }, [])
-      }
+      options={platformOptions}
     />
     <Picker
       key="Benchmark selection"
@@ -36,15 +29,7 @@ const Pickers = ({
       topLabel="Benchmark"
       onSelection={onChange}
       selectedValue={benchmark}
-      options={
-        CONFIG.platforms[platform].benchmarks.sort().reduce((res, benchmarkKey) => {
-          res.push({
-            value: benchmarkKey,
-            label: BENCHMARKS[benchmarkKey].label,
-          });
-          return res;
-        }, [{ value: 'overview', label: 'Overview' }])
-      }
+      options={benchmarkOptions}
     />
   </div>
 );
@@ -54,6 +39,8 @@ Pickers.propTypes = ({
   benchmark: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   platform: PropTypes.string.isRequired,
+  benchmarkOptions: PropTypes.arrayOf(PropTypes.object).isRequired,
+  platformOptions: PropTypes.arrayOf(PropTypes.object).isRequired,
 });
 
 export default withStyles(styles)(Pickers);

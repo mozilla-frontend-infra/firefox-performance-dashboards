@@ -1,9 +1,10 @@
-import { CONFIG, TIMERANGE_UPPER_LIMIT } from '../config';
+import { TIMERANGE_UPPER_LIMIT } from '../config';
+import platforms from '../configuration/js-team/index';
 
 const validCombination = (platform, benchmark, timeRange) => (
-  CONFIG.platforms[platform] && (
+  platforms[platform] && (
     benchmark === 'overview'
-    || CONFIG.platforms[platform].benchmarks.includes(benchmark)
+    || (benchmark in platforms[platform].benchmarks)
   ) && (
     !!Math.round(timeRange) && parseInt(timeRange, 10) <= TIMERANGE_UPPER_LIMIT
   )

@@ -1,8 +1,8 @@
-import { SETTINGS } from '../appDefaults';
+import SETTINGS from '../perfherderSettings';
 
-const { TALOS_FRAMEWORK_ID, RAPTOR_FRAMEWORK_ID, JSBENCH_FRAMEWORK_ID } = SETTINGS.frameworks;
+const { frameworkIds } = SETTINGS;
 
-const LINUX64_CONFIG = {
+const Linux64 = {
   label: 'Linux 64bit',
   benchmarks: {
     kraken: {
@@ -10,7 +10,7 @@ const LINUX64_CONFIG = {
         kraken: {
           color: '#e55525',
           label: 'Firefox',
-          frameworkId: TALOS_FRAMEWORK_ID,
+          frameworkId: frameworkIds.talos,
           suite: 'kraken',
           buildType: 'opt',
           extraOptions: ['e10s', 'stylo'],
@@ -23,14 +23,14 @@ const LINUX64_CONFIG = {
         'raptor-motionmark-animometer-firefox': {
           color: '#e55525',
           label: 'Firefox',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-motionmark-animometer-firefox',
           buildType: 'opt',
         },
         'raptor-motionmark-animometer-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-motionmark-animometer-chrome',
           buildType: 'opt',
         },
@@ -42,14 +42,14 @@ const LINUX64_CONFIG = {
         'raptor-motionmark-htmlsuite-firefox': {
           color: '#e55525',
           label: 'Firefox',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-motionmark-htmlsuite-firefox',
           buildType: 'opt',
         },
         'raptor-motionmark-htmlsuite-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-motionmark-htmlsuite-chrome',
           buildType: 'opt',
         },
@@ -61,14 +61,14 @@ const LINUX64_CONFIG = {
         'raptor-speedometer-firefox': {
           color: '#e55525',
           label: 'Firefox',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-speedometer-firefox',
           buildType: 'opt',
         },
         'raptor-speedometer-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-speedometer-chrome',
           buildType: 'opt',
         },
@@ -80,14 +80,14 @@ const LINUX64_CONFIG = {
         'raptor-stylebench-firefox': {
           color: '#e55525',
           label: 'Firefox',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-stylebench-firefox',
           buildType: 'opt',
         },
         'raptor-stylebench-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-stylebench-chrome',
           buildType: 'opt',
         },
@@ -99,14 +99,14 @@ const LINUX64_CONFIG = {
         'raptor-sunspider-firefox': {
           color: '#e55525',
           label: 'Firefox',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-sunspider-firefox',
           buildType: 'opt',
         },
         'raptor-sunspider-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-sunspider-chrome',
           buildType: 'opt',
         },
@@ -118,14 +118,14 @@ const LINUX64_CONFIG = {
         'raptor-webaudio-firefox': {
           color: '#e55525',
           label: 'Firefox',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-webaudio-firefox',
           buildType: 'opt',
         },
         'raptor-webaudio-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-webaudio-chrome',
           buildType: 'opt',
         },
@@ -137,14 +137,14 @@ const LINUX64_CONFIG = {
         'raptor-assorted-dom-firefox': {
           color: '#e55525',
           label: 'Firefox',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-assorted-dom-firefox',
           buildType: 'opt',
         },
         'raptor-assorted-dom-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-assorted-dom-chrome',
           buildType: 'opt',
         },
@@ -156,14 +156,14 @@ const LINUX64_CONFIG = {
         'ares6-sm': {
           color: '#e55525',
           label: 'SpiderMonkey',
-          frameworkId: JSBENCH_FRAMEWORK_ID,
+          frameworkId: frameworkIds.jsbench,
           suite: 'ares6-sm',
           buildType: 'opt',
         },
         'ares6-v8': {
           color: '#ffcd02',
           label: 'Chrome v8',
-          frameworkId: JSBENCH_FRAMEWORK_ID,
+          frameworkId: frameworkIds.jsbench,
           suite: 'ares6-v8',
           buildType: 'opt',
         },
@@ -176,14 +176,14 @@ const LINUX64_CONFIG = {
         'octane-sm': {
           color: '#e55525',
           label: 'SpiderMonkey',
-          frameworkId: JSBENCH_FRAMEWORK_ID,
+          frameworkId: frameworkIds.jsbench,
           suite: 'octane-sm',
           buildType: 'opt',
         },
         'octane-v8': {
           color: '#ffcd02',
           label: 'Chrome v8',
-          frameworkId: JSBENCH_FRAMEWORK_ID,
+          frameworkId: frameworkIds.jsbench,
           suite: 'octane-v8',
           buildType: 'opt',
         },
@@ -196,14 +196,14 @@ const LINUX64_CONFIG = {
         'six-speed-sm': {
           color: '#e55525',
           label: 'SpiderMonkey',
-          frameworkId: JSBENCH_FRAMEWORK_ID,
+          frameworkId: frameworkIds.jsbench,
           suite: 'six-speed-sm',
           buildType: 'opt',
         },
         'six-speed-v8': {
           color: '#ffcd02',
           label: 'Chrome v8',
-          frameworkId: JSBENCH_FRAMEWORK_ID,
+          frameworkId: frameworkIds.jsbench,
           suite: 'six-speed-v8',
           buildType: 'opt',
         },
@@ -216,7 +216,7 @@ const LINUX64_CONFIG = {
         'sunspider-sm': {
           color: '#e55525',
           label: 'SpiderMonkey',
-          frameworkId: JSBENCH_FRAMEWORK_ID,
+          frameworkId: frameworkIds.jsbench,
           suite: 'sunspider-sm',
           buildType: 'opt',
         },
@@ -229,14 +229,14 @@ const LINUX64_CONFIG = {
         'raptor-unity-webgl-firefox': {
           color: '#e55525',
           label: 'Firefox',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-unity-webgl-firefox',
           buildType: 'opt',
         },
         'raptor-unity-webgl-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-unity-webgl-chrome',
           buildType: 'opt',
         },
@@ -248,28 +248,28 @@ const LINUX64_CONFIG = {
         'raptor-wasm-misc-firefox': {
           color: '#e55525',
           label: 'Firefox (tiering)',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-wasm-misc-firefox',
           buildType: 'opt',
         },
         'raptor-wasm-misc-baseline-firefox': {
           color: 'red',
           label: 'Firefox (wasm-baseline)',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-wasm-misc-baseline-firefox',
           buildType: 'opt',
         },
         'raptor-wasm-misc-ion-firefox': {
           color: 'brown',
           label: 'Firefox (wasm-ion)',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-wasm-misc-ion-firefox',
           buildType: 'opt',
         },
         'raptor-wasm-misc-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-wasm-misc-chrome',
           buildType: 'opt',
         },
@@ -283,14 +283,14 @@ const LINUX64_CONFIG = {
         'web-tooling-benchmark-sm': {
           color: '#e55525',
           label: 'SpiderMonkey',
-          frameworkId: JSBENCH_FRAMEWORK_ID,
+          frameworkId: frameworkIds.jsbench,
           suite: 'web-tooling-benchmark-sm',
           buildType: 'opt',
         },
         'web-tooling-benchmark-v8': {
           color: '#ffcd02',
           label: 'Chrome v8',
-          frameworkId: JSBENCH_FRAMEWORK_ID,
+          frameworkId: frameworkIds.jsbench,
           suite: 'web-tooling-benchmark-v8',
           buildType: 'opt',
         },
@@ -302,18 +302,4 @@ const LINUX64_CONFIG = {
   },
 };
 
-// export default LINUX64_CONFIG;
-// 'kraken',
-// 'motionmark-animometer',
-// 'motionmark-htmlsuite',
-// 'speedometer',
-// 'stylebench',
-// 'sunspider',
-// 'webaudio',
-
-// linux extra
-// 'assorted-dom', 'ares6', 'octane', 'six-speed',
-// 'sunspider-jsbench', 'unity-webgl', 'wasm-misc',
-// 'web-tooling'
-
-export default LINUX64_CONFIG;
+export default Linux64;

@@ -1,5 +1,6 @@
 import { parse } from 'query-string';
-import { BENCHMARKS } from '../config';
+// import { BENCHMARKS } from '../config';
+import linux64 from '../configuration/js-team/linux64';
 
 // eslint-disable-next-line arrow-body-style
 const sortByLabel = (a, b) => {
@@ -43,8 +44,8 @@ const generateChartJsOptions = (configUID, meta) => {
   const higherIsBetter = (meta.lower_is_better === false);
   const reversed = higherIsBetter;
   let yLabel = higherIsBetter ? 'Score' : 'Execution time (ms)';
-  if (BENCHMARKS[configUID].scaleLabel) {
-    yLabel = BENCHMARKS[configUID].scaleLabel;
+  if (linux64.benchmarks[configUID].scaleLabel) {
+    yLabel = linux64.benchmarks[configUID].scaleLabel;
   }
   return chartJsOptions(reversed, yLabel);
 };
@@ -64,7 +65,7 @@ const prepareData = (benchmarks) => {
       };
     }
     const uid = meta.test ? meta.test : `${configUID}-overview`;
-    const title = meta.test ? meta.test : BENCHMARKS[configUID].label;
+    const title = meta.test ? meta.test : linux64.benchmarks[configUID].label;
 
     if (!newData.graphs[uid]) {
       newData.graphs[uid] = {

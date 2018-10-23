@@ -1,28 +1,37 @@
-import { SETTINGS } from '../appDefaults';
+import SETTINGS from '../perfherderSettings';
 
-const { RAPTOR_FRAMEWORK_ID } = SETTINGS.frameworks;
+const { frameworkIds } = SETTINGS;
 
-const ANDROID_CONFIG = {
-  label: 'Android', // This is used for the title of the page
+const AndroidConfig = {
+  label: 'Android',
   benchmarks: {
     speedometer: {
-      label: 'Speedometer', // This is the title for the graph
-      compare: [ // I have changed this to an array
+      label: 'Speedometer',
+      compare: [
         {
           color: '#e55525',
           label: 'Moto G5 (arm7)',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
-          project: 'mozilla-central', // This is new
-          platform: 'android-hw-g5-7-0-arm7-api-16', // This is new
+          frameworkId: frameworkIds.raptor,
+          project: 'mozilla-central',
+          platform: 'android-hw-g5-7-0-arm7-api-16',
           suite: 'raptor-speedometer-geckoview',
           buildType: 'opt',
         },
         {
           color: '#ffcd02',
           label: 'Pixel 2 (arm7)',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
-          project: 'mozilla-central', // This is new
-          platform: 'android-hw-p2-8-0-arm7-api-16', // This is new
+          frameworkId: frameworkIds.raptor,
+          project: 'mozilla-central',
+          platform: 'android-hw-p2-8-0-arm7-api-16',
+          suite: 'raptor-speedometer-geckoview',
+          buildType: 'opt',
+        },
+        {
+          color: '#ffcd02',
+          label: 'Pixel 2 (ARM64)',
+          frameworkId: frameworkIds.raptor,
+          project: 'mozilla-central',
+          platform: 'android-hw-p2-8-0-android-aarch64',
           suite: 'raptor-speedometer-geckoview',
           buildType: 'opt',
         },
@@ -31,4 +40,4 @@ const ANDROID_CONFIG = {
   },
 };
 
-export default ANDROID_CONFIG;
+export default AndroidConfig;

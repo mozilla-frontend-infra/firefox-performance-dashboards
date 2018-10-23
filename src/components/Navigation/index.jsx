@@ -21,6 +21,8 @@ class Navigation extends Component {
     benchmark: PropTypes.string.isRequired,
     platform: PropTypes.string.isRequired,
     timeRange: PropTypes.number.isRequired,
+    benchmarkOptions: PropTypes.arrayOf(PropTypes.object).isRequired,
+    platformOptions: PropTypes.arrayOf(PropTypes.object).isRequired,
   };
 
   handlePathChange = (event) => {
@@ -49,7 +51,7 @@ class Navigation extends Component {
 
   render() {
     const {
-      classes, platform, benchmark, timeRange,
+      classes, platform, benchmark, timeRange, benchmarkOptions, platformOptions,
     } = this.props;
     return (
       <div className={classes.root}>
@@ -57,6 +59,8 @@ class Navigation extends Component {
           onChange={this.handlePathChange}
           platform={platform}
           benchmark={benchmark}
+          benchmarkOptions={benchmarkOptions}
+          platformOptions={platformOptions}
         />
         <Slider
           identifier="timeRange"

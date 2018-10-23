@@ -1,8 +1,8 @@
-import { SETTINGS } from '../appDefaults';
+import SETTINGS from '../perfherderSettings';
 
-const { TALOS_FRAMEWORK_ID, RAPTOR_FRAMEWORK_ID } = SETTINGS.frameworks;
+const { frameworkIds } = SETTINGS;
 
-const WIN10_CONFIG = {
+const Win10Config = {
   label: 'Windows 10 64bit',
   benchmarks: {
     kraken: {
@@ -10,7 +10,7 @@ const WIN10_CONFIG = {
         kraken: {
           color: '#e55525',
           label: 'Firefox',
-          frameworkId: TALOS_FRAMEWORK_ID,
+          frameworkId: frameworkIds.talos,
           suite: 'kraken',
           buildType: 'opt',
           extraOptions: ['e10s', 'stylo'],
@@ -23,14 +23,14 @@ const WIN10_CONFIG = {
         'raptor-motionmark-animometer-firefox': {
           color: '#e55525',
           label: 'Firefox',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-motionmark-animometer-firefox',
           buildType: 'opt',
         },
         'raptor-motionmark-animometer-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-motionmark-animometer-chrome',
           buildType: 'opt',
         },
@@ -42,14 +42,14 @@ const WIN10_CONFIG = {
         'raptor-motionmark-htmlsuite-firefox': {
           color: '#e55525',
           label: 'Firefox',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-motionmark-htmlsuite-firefox',
           buildType: 'opt',
         },
         'raptor-motionmark-htmlsuite-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-motionmark-htmlsuite-chrome',
           buildType: 'opt',
         },
@@ -61,14 +61,14 @@ const WIN10_CONFIG = {
         'raptor-speedometer-firefox': {
           color: '#e55525',
           label: 'Firefox',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-speedometer-firefox',
           buildType: 'opt',
         },
         'raptor-speedometer-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-speedometer-chrome',
           buildType: 'opt',
         },
@@ -80,14 +80,14 @@ const WIN10_CONFIG = {
         'raptor-stylebench-firefox': {
           color: '#e55525',
           label: 'Firefox',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-stylebench-firefox',
           buildType: 'opt',
         },
         'raptor-stylebench-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-stylebench-chrome',
           buildType: 'opt',
         },
@@ -99,14 +99,14 @@ const WIN10_CONFIG = {
         'raptor-sunspider-firefox': {
           color: '#e55525',
           label: 'Firefox',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-sunspider-firefox',
           buildType: 'opt',
         },
         'raptor-sunspider-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-sunspider-chrome',
           buildType: 'opt',
         },
@@ -118,14 +118,14 @@ const WIN10_CONFIG = {
         'raptor-webaudio-firefox': {
           color: '#e55525',
           label: 'Firefox',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-webaudio-firefox',
           buildType: 'opt',
         },
         'raptor-webaudio-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
-          frameworkId: RAPTOR_FRAMEWORK_ID,
+          frameworkId: frameworkIds.raptor,
           suite: 'raptor-webaudio-chrome',
           buildType: 'opt',
         },
@@ -135,4 +135,4 @@ const WIN10_CONFIG = {
   },
 };
 
-export default WIN10_CONFIG;
+export default Win10Config;
