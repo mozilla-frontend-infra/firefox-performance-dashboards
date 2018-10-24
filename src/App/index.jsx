@@ -8,6 +8,7 @@ import Benchmark from '../views/Benchmark';
 import Navigation from '../components/Navigation';
 import { CONFIG } from '../config';
 import validCombination from '../utils/validCombination';
+import Footer from '../components/Footer';
 
 const styles = () => ({
   container: {
@@ -36,6 +37,7 @@ const App = ({ classes }) => (
                 timeRange={timeRange}
               />
               <Benchmark {...match.params} timeRange={timeRange} />
+              <Footer />
             </div>
           );
         }}
