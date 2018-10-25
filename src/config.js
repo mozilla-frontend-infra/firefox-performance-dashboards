@@ -203,6 +203,41 @@ export const BENCHMARKS = {
     labels: ['Firefox (tiering)', 'Firefox (wasm-baseline)', 'Firefox (wasm-ion)', 'Chrome'],
     label: 'WebAssembly Embenchen',
   },
+  'wasm-godot': {
+    compare: {
+      'raptor-wasm-godot-firefox': {
+        color: '#e55525',
+        label: 'Firefox (tiering)',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-wasm-godot-firefox',
+        buildType: 'opt',
+      },
+      'raptor-wasm-godot-baseline-firefox': {
+        color: 'red',
+        label: 'Firefox (wasm-baseline)',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-wasm-godot-baseline-firefox',
+        buildType: 'opt',
+      },
+      'raptor-wasm-godot-ion-firefox': {
+        color: 'brown',
+        label: 'Firefox (wasm-ion)',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-wasm-godot-ion-firefox',
+        buildType: 'opt',
+      },
+      'raptor-wasm-godot-chrome': {
+        color: '#ffcd02',
+        label: 'Chrome',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-wasm-godot-chrome',
+        buildType: 'opt',
+      },
+    },
+    colors: ['#e55525', 'red', 'brown', '#ffcd02'],
+    labels: ['Firefox (tiering)', 'Firefox (wasm-baseline)', 'Firefox (wasm-ion)', 'Chrome'],
+    label: 'WebAssembly Godot',
+  },
   ares6: {
     compare: {
       'ares6-sm': {
@@ -306,6 +341,7 @@ const DEFAULT_SUITES = [
   'stylebench',
   'sunspider',
   'webaudio',
+  'wasm-godot',
 ];
 
 export const CONFIG = {
