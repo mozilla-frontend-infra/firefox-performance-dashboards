@@ -6,10 +6,8 @@ const registerTooltipPlugin = () => {
     beforeRender(chart) {
       this.pluginTooltips = [];
       const globalChartObj = Chart;
-      // Process only if a data point was clicked
+      // Process only if a data point was clicked on current chart object
       if (globalChartObj.lastClickedDataPoint) {
-        // As we update all charts to clean any open pluginTooltips
-        // This will make sure only target chart gets updated with tooltip data
         // eslint-disable-next-line no-underscore-dangle
         if (globalChartObj.lastClickedDataPoint._chart.chart.id !== chart.id) {
           return;
