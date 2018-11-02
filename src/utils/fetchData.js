@@ -15,7 +15,7 @@ const fetchData = async (platform, benchmark, range) => {
       .map(async (modeKey) => {
         const benchmarkOptions = linux64.benchmarks[configUID].compare[modeKey];
         const seriesConfig = {
-          platform: platforms[platform].platform,
+          platform: platforms[platform].platform, // get platform against benchmark
           option: benchmarkOptions.buildType,
           ...benchmarkOptions,
         };

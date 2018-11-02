@@ -23,6 +23,7 @@ const Linux64 = {
         'raptor-motionmark-animometer-firefox': {
           color: '#e55525',
           label: 'Firefox',
+          platform: 'linux64',
           frameworkId: frameworkIds.raptor,
           suite: 'raptor-motionmark-animometer-firefox',
           buildType: 'opt',
@@ -30,6 +31,7 @@ const Linux64 = {
         'raptor-motionmark-animometer-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
+          platform: 'linux64-nightly',
           frameworkId: frameworkIds.raptor,
           suite: 'raptor-motionmark-animometer-chrome',
           buildType: 'opt',
@@ -42,6 +44,7 @@ const Linux64 = {
         'raptor-motionmark-htmlsuite-firefox': {
           color: '#e55525',
           label: 'Firefox',
+          platform: 'linux64',
           frameworkId: frameworkIds.raptor,
           suite: 'raptor-motionmark-htmlsuite-firefox',
           buildType: 'opt',
@@ -49,6 +52,7 @@ const Linux64 = {
         'raptor-motionmark-htmlsuite-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
+          platform: 'linux64-nightly',
           frameworkId: frameworkIds.raptor,
           suite: 'raptor-motionmark-htmlsuite-chrome',
           buildType: 'opt',
@@ -61,6 +65,7 @@ const Linux64 = {
         'raptor-speedometer-firefox': {
           color: '#e55525',
           label: 'Firefox',
+          platform: 'linux64',
           frameworkId: frameworkIds.raptor,
           suite: 'raptor-speedometer-firefox',
           buildType: 'opt',
@@ -68,6 +73,7 @@ const Linux64 = {
         'raptor-speedometer-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
+          platform: 'linux64-nightly',
           frameworkId: frameworkIds.raptor,
           suite: 'raptor-speedometer-chrome',
           buildType: 'opt',
@@ -80,6 +86,7 @@ const Linux64 = {
         'raptor-stylebench-firefox': {
           color: '#e55525',
           label: 'Firefox',
+          platform: 'linux64',
           frameworkId: frameworkIds.raptor,
           suite: 'raptor-stylebench-firefox',
           buildType: 'opt',
@@ -87,6 +94,7 @@ const Linux64 = {
         'raptor-stylebench-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
+          platform: 'linux64-nightly',
           frameworkId: frameworkIds.raptor,
           suite: 'raptor-stylebench-chrome',
           buildType: 'opt',
@@ -99,6 +107,7 @@ const Linux64 = {
         'raptor-sunspider-firefox': {
           color: '#e55525',
           label: 'Firefox',
+          platform: 'linux64',
           frameworkId: frameworkIds.raptor,
           suite: 'raptor-sunspider-firefox',
           buildType: 'opt',
@@ -106,6 +115,7 @@ const Linux64 = {
         'raptor-sunspider-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
+          platform: 'linux64-nightly',
           frameworkId: frameworkIds.raptor,
           suite: 'raptor-sunspider-chrome',
           buildType: 'opt',
@@ -118,6 +128,7 @@ const Linux64 = {
         'raptor-webaudio-firefox': {
           color: '#e55525',
           label: 'Firefox',
+          platform: 'linux64',
           frameworkId: frameworkIds.raptor,
           suite: 'raptor-webaudio-firefox',
           buildType: 'opt',
@@ -125,6 +136,7 @@ const Linux64 = {
         'raptor-webaudio-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
+          platform: 'linux64-nightly',
           frameworkId: frameworkIds.raptor,
           suite: 'raptor-webaudio-chrome',
           buildType: 'opt',
@@ -137,6 +149,7 @@ const Linux64 = {
         'raptor-assorted-dom-firefox': {
           color: '#e55525',
           label: 'Firefox',
+          platform: 'linux64',
           frameworkId: frameworkIds.raptor,
           suite: 'raptor-assorted-dom-firefox',
           buildType: 'opt',
@@ -144,6 +157,7 @@ const Linux64 = {
         'raptor-assorted-dom-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
+          platform: 'linux64-nightly',
           frameworkId: frameworkIds.raptor,
           suite: 'raptor-assorted-dom-chrome',
           buildType: 'opt',
@@ -156,6 +170,7 @@ const Linux64 = {
         'ares6-sm': {
           color: '#e55525',
           label: 'SpiderMonkey',
+          platform: 'linux64',
           frameworkId: frameworkIds.jsbench,
           suite: 'ares6-sm',
           buildType: 'opt',
@@ -163,6 +178,7 @@ const Linux64 = {
         'ares6-v8': {
           color: '#ffcd02',
           label: 'Chrome v8',
+          platform: 'linux64-nightly',
           frameworkId: frameworkIds.jsbench,
           suite: 'ares6-v8',
           buildType: 'opt',
@@ -176,6 +192,7 @@ const Linux64 = {
         'octane-sm': {
           color: '#e55525',
           label: 'SpiderMonkey',
+          platform: 'linux64',
           frameworkId: frameworkIds.jsbench,
           suite: 'octane-sm',
           buildType: 'opt',
@@ -183,6 +200,7 @@ const Linux64 = {
         'octane-v8': {
           color: '#ffcd02',
           label: 'Chrome v8',
+          platform: 'linux64-nightly',
           frameworkId: frameworkIds.jsbench,
           suite: 'octane-v8',
           buildType: 'opt',
@@ -196,6 +214,7 @@ const Linux64 = {
         'six-speed-sm': {
           color: '#e55525',
           label: 'SpiderMonkey',
+          platform: 'linux64',
           frameworkId: frameworkIds.jsbench,
           suite: 'six-speed-sm',
           buildType: 'opt',
@@ -203,6 +222,7 @@ const Linux64 = {
         'six-speed-v8': {
           color: '#ffcd02',
           label: 'Chrome v8',
+          platform: 'linux64-nightly',
           frameworkId: frameworkIds.jsbench,
           suite: 'six-speed-v8',
           buildType: 'opt',
@@ -216,6 +236,7 @@ const Linux64 = {
         'sunspider-sm': {
           color: '#e55525',
           label: 'SpiderMonkey',
+          platform: 'linux64',
           frameworkId: frameworkIds.jsbench,
           suite: 'sunspider-sm',
           buildType: 'opt',
@@ -229,6 +250,7 @@ const Linux64 = {
         'raptor-unity-webgl-firefox': {
           color: '#e55525',
           label: 'Firefox',
+          platform: 'linux64',
           frameworkId: frameworkIds.raptor,
           suite: 'raptor-unity-webgl-firefox',
           buildType: 'opt',
@@ -236,6 +258,7 @@ const Linux64 = {
         'raptor-unity-webgl-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
+          platform: 'linux64-nightly',
           frameworkId: frameworkIds.raptor,
           suite: 'raptor-unity-webgl-chrome',
           buildType: 'opt',
@@ -248,6 +271,7 @@ const Linux64 = {
         'raptor-wasm-misc-firefox': {
           color: '#e55525',
           label: 'Firefox (tiering)',
+          platform: 'linux64',
           frameworkId: frameworkIds.raptor,
           suite: 'raptor-wasm-misc-firefox',
           buildType: 'opt',
@@ -255,6 +279,7 @@ const Linux64 = {
         'raptor-wasm-misc-baseline-firefox': {
           color: 'red',
           label: 'Firefox (wasm-baseline)',
+          platform: 'linux64',
           frameworkId: frameworkIds.raptor,
           suite: 'raptor-wasm-misc-baseline-firefox',
           buildType: 'opt',
@@ -263,12 +288,14 @@ const Linux64 = {
           color: 'brown',
           label: 'Firefox (wasm-ion)',
           frameworkId: frameworkIds.raptor,
+          platform: 'linux64',
           suite: 'raptor-wasm-misc-ion-firefox',
           buildType: 'opt',
         },
         'raptor-wasm-misc-chrome': {
           color: '#ffcd02',
           label: 'Chrome',
+          platform: 'linux64-nightly',
           frameworkId: frameworkIds.raptor,
           suite: 'raptor-wasm-misc-chrome',
           buildType: 'opt',
@@ -283,6 +310,7 @@ const Linux64 = {
         'web-tooling-benchmark-sm': {
           color: '#e55525',
           label: 'SpiderMonkey',
+          platform: 'linux64',
           frameworkId: frameworkIds.jsbench,
           suite: 'web-tooling-benchmark-sm',
           buildType: 'opt',
@@ -290,6 +318,7 @@ const Linux64 = {
         'web-tooling-benchmark-v8': {
           color: '#ffcd02',
           label: 'Chrome v8',
+          platform: 'linux64-nightly',
           frameworkId: frameworkIds.jsbench,
           suite: 'web-tooling-benchmark-v8',
           buildType: 'opt',
