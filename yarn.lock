@@ -731,10 +731,10 @@
     classnames "^2.2.5"
     keycode "^2.1.9"
 
-"@mozilla-frontend-infra/perf-goggles@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@mozilla-frontend-infra/perf-goggles/-/perf-goggles-2.0.1.tgz#514bb39128beb07e29882849607d0efa90284fb8"
-  integrity sha512-ehl5ZGG5I0il+U3h21ZQ8ZfRfTq/Xl3SIURK46gseYLHVC3dBVx/XHMIAP0hjA0ScY/U7faMlhr6k8QdJtk0kQ==
+"@mozilla-frontend-infra/perf-goggles@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@mozilla-frontend-infra/perf-goggles/-/perf-goggles-3.0.0.tgz#b8c6d4f2dc83f22f8bec153b0afe5bec52ba1438"
+  integrity sha512-DcUZXc/zRF5CN3QWL72hBjojhnKwzsDvprja1HMeZTwhi1wl5fDS7/OJr+ztumt0k9Pi+Z2BQngsgaTLudMUtA==
   dependencies:
     isomorphic-fetch "^2.2.1"
     lodash.isequal "^4.5.0"

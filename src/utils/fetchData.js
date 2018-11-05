@@ -18,7 +18,7 @@ const fetchData = async (platform, benchmark, range) => {
           ...benchmarkOptions,
         };
         const data = await queryPerfData(
-          seriesConfig, includeSubtests, convertToSeconds(timeRange),
+          seriesConfig, { includeSubtests, timeRange: convertToSeconds(timeRange) },
         );
         if (data) {
           const { suite } = benchmarkOptions;
