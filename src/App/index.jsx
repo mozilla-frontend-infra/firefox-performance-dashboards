@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import Benchmark from '../views/Benchmark';
 import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 import { CONFIG } from '../config';
 import validCombination from '../utils/validCombination';
 
@@ -36,6 +37,7 @@ const App = ({ classes }) => (
                 timeRange={timeRange}
               />
               <Benchmark {...match.params} timeRange={timeRange} />
+              <Footer />
             </div>
           );
         }}
