@@ -35,6 +35,9 @@ const styles = () => ({
   linkIcon: {
     marginBottom: -5,
   },
+  benchmarkId: {
+    textDecoration: 'none',
+  },
 });
 
 const Graphs = ({
@@ -55,12 +58,20 @@ const Graphs = ({
       )}
     {Object.keys(benchmarkData.graphs)
       .sort(overviewMode ? undefined : sortOverviewFirst)
-      .map(key => benchmarkData.graphs[key])
+      .map(key => (
+        {
+          id: key,
+          ...benchmarkData.graphs[key],
+        }
+      ))
       .map(({
-        configUID, chartJsData, chartJsOptions, jointUrl, title,
+        configUID, chartJsData, chartJsOptions, jointUrl, title, id,
       }) => (
         <div key={title}>
-          <h2 className={classes.benchmarkTitle}>{title}</h2>
+          <h2 className={classes.benchmarkTitle}>
+            <a className={classes.benchmarkId} id={id} href={`#${id}`}> # </a>
+            {title}
+          </h2>
           <a href={jointUrl} target="_blank" rel="noopener noreferrer">
             <LinkIcon className={classes.linkIcon} />
           </a>
