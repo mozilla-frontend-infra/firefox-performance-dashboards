@@ -23,8 +23,8 @@ const Pickers = ({
       onSelection={onChange}
       selectedValue={platform}
       options={
-        Object.keys(CONFIG.platforms).reduce((res, platformKey) => {
-          res.push({ value: platformKey, label: CONFIG.platforms[platformKey].label });
+        Object.keys(CONFIG.views).reduce((res, platformKey) => {
+          res.push({ value: platformKey, label: CONFIG.views[platformKey].label });
           return res;
         }, [])
       }
@@ -36,7 +36,7 @@ const Pickers = ({
       onSelection={onChange}
       selectedValue={benchmark}
       options={
-        CONFIG.platforms[platform].benchmarks.sort().reduce((res, benchmarkKey) => {
+        CONFIG.views[platform].benchmarks.sort().reduce((res, benchmarkKey) => {
           res.push({
             value: benchmarkKey,
             label: BENCHMARKS[benchmarkKey].label,

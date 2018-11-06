@@ -3,48 +3,49 @@ import { BENCHMARKS, CONFIG } from '../config';
 import prepareData from './prepareData';
 import { convertToSeconds } from './timeRangeUtils';
 
-const fetchData = async (platform, benchmark, range) => {
+const fetchData = async (view, benchmark, timeRange = CONFIG.default.timeRange) => {
   const ALL_DATA = {};
 
-  const fetchIt = async (configUID, overview = false, timeRange = CONFIG.default.timeRange) => {
-    const includeSubtests = !overview;
-    const comparingBenchmarks = Object.keys(BENCHMARKS[configUID].compare);
-    return Promise.all(comparingBenchmarks
-      .map(async (modeKey) => {
-        const benchmarkOptions = BENCHMARKS[configUID].compare[modeKey];
-        const seriesConfig = {
-          platform: CONFIG.platforms[platform].platform,
-          option: benchmarkOptions.buildType,
-          ...benchmarkOptions,
+  const fetchIt = async (config, options) => {
+    const response = await queryPerfData(config, options);
+    if (response) {
+      Object.values(response).forEach((series) => {
+        ALL_DATA[series.meta.id] = {
+          ...series,
+          ...config,
         };
-        const data = await queryPerfData(
-          seriesConfig, { includeSubtests, timeRange: convertToSeconds(timeRange) },
-        );
-        if (data) {
-          const { suite } = benchmarkOptions;
-          const { color, label } = BENCHMARKS[configUID].compare[suite];
-
-          Object.values(data).forEach((series) => {
-            ALL_DATA[series.meta.id] = {
-              ...series,
-              configUID,
-              color,
-              label,
-              suite,
-            };
-          });
-        }
-      }));
+      });
+    }
   };
 
   if (benchmark === 'overview') {
-    const benchmarksToCompare = CONFIG.platforms[platform].benchmarks;
-    await Promise.all(benchmarksToCompare
-      .map(async (configUID) => {
-        await fetchIt(configUID, true, range);
-      }));
+    const { benchmarks } = CONFIG.views[view];
+    await Promise.all(
+      benchmarks.map(async (configUID) => {
+        await Promise.all(
+          Object.values(BENCHMARKS[configUID].compare).map(async config => (
+            fetchIt({
+              configUID,
+              ...config,
+              platform: CONFIG.views[view].platform,
+            },
+            { timeRange: convertToSeconds(timeRange) })
+          )),
+        );
+      }),
+    );
   } else {
-    await fetchIt(benchmark, false, range);
+    const configUID = benchmark;
+    await Promise.all(
+      Object.values(BENCHMARKS[configUID].compare).map(async config => (
+        fetchIt({
+          configUID,
+          ...config,
+          platform: CONFIG.views[view].platform,
+        },
+        { includeSubtests: true, timeRange: convertToSeconds(timeRange) })
+      )),
+    );
   }
   return prepareData(ALL_DATA);
 };
