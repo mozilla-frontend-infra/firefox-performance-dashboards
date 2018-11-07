@@ -272,6 +272,7 @@
         ]
       },
       "chartJsOptions": {
+        "maintainAspectRatio": false,
         "scales": {
           "xAxes": [
             {
@@ -391,6 +392,7 @@
         ]
       },
       "chartJsOptions": {
+        "maintainAspectRatio": false,
         "scales": {
           "xAxes": [
             {
@@ -510,6 +512,7 @@
         ]
       },
       "chartJsOptions": {
+        "maintainAspectRatio": false,
         "scales": {
           "xAxes": [
             {
@@ -625,6 +628,7 @@
         ]
       },
       "chartJsOptions": {
+        "maintainAspectRatio": false,
         "scales": {
           "xAxes": [
             {
@@ -744,6 +748,7 @@
         ]
       },
       "chartJsOptions": {
+        "maintainAspectRatio": false,
         "scales": {
           "xAxes": [
             {
@@ -863,6 +868,7 @@
         ]
       },
       "chartJsOptions": {
+        "maintainAspectRatio": false,
         "scales": {
           "xAxes": [
             {
@@ -1066,6 +1072,7 @@
         ]
       },
       "chartJsOptions": {
+        "maintainAspectRatio": false,
         "scales": {
           "xAxes": [
             {
@@ -1185,6 +1192,7 @@
         ]
       },
       "chartJsOptions": {
+        "maintainAspectRatio": false,
         "scales": {
           "xAxes": [
             {
@@ -1304,6 +1312,7 @@
         ]
       },
       "chartJsOptions": {
+        "maintainAspectRatio": false,
         "scales": {
           "xAxes": [
             {
@@ -1423,6 +1432,7 @@
         ]
       },
       "chartJsOptions": {
+        "maintainAspectRatio": false,
         "scales": {
           "xAxes": [
             {
@@ -1542,6 +1552,7 @@
         ]
       },
       "chartJsOptions": {
+        "maintainAspectRatio": false,
         "scales": {
           "xAxes": [
             {
@@ -1661,6 +1672,7 @@
         ]
       },
       "chartJsOptions": {
+        "maintainAspectRatio": false,
         "scales": {
           "xAxes": [
             {
@@ -1780,6 +1792,7 @@
         ]
       },
       "chartJsOptions": {
+        "maintainAspectRatio": false,
         "scales": {
           "xAxes": [
             {
@@ -1857,6 +1870,7 @@
         ]
       },
       "chartJsOptions": {
+        "maintainAspectRatio": false,
         "scales": {
           "xAxes": [
             {
@@ -1934,6 +1948,7 @@
         ]
       },
       "chartJsOptions": {
+        "maintainAspectRatio": false,
         "scales": {
           "xAxes": [
             {
