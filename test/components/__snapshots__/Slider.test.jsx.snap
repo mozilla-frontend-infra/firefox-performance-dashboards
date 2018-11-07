@@ -6,7 +6,7 @@ exports[`renders correctly 1`] = `
   className="Slider-root-1"
 >
   <label
-    className="MuiFormLabel-root-10 MuiInputLabel-root-3 MuiInputLabel-animated-7 Slider-label-2"
+    className="MuiFormLabel-root-14 MuiInputLabel-root-3 MuiInputLabel-animated-11 Slider-label-2"
     htmlFor="test"
   >
     Test
@@ -18,7 +18,7 @@ exports[`renders correctly 1`] = `
     aria-valuemax={30}
     aria-valuemin={10}
     aria-valuenow={15}
-    className="MuiSlider-root-24"
+    className="MuiSlider-root-28"
     onClick={[Function]}
     onMouseDown={[Function]}
     onMouseLeave={[Function]}
@@ -31,10 +31,10 @@ exports[`renders correctly 1`] = `
     title="test"
   >
     <div
-      className="MuiSlider-container-25"
+      className="MuiSlider-container-29"
     >
       <div
-        className="MuiSlider-track-26 MuiSlider-trackBefore-27"
+        className="MuiSlider-track-30 MuiSlider-trackBefore-31"
         style={
           Object {
             "width": "25%",
@@ -42,7 +42,7 @@ exports[`renders correctly 1`] = `
         }
       />
       <button
-        className="MuiButtonBase-root-37 MuiSlider-thumb-29"
+        className="MuiButtonBase-root-41 MuiSlider-thumb-33"
         onBlur={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -63,7 +63,7 @@ exports[`renders correctly 1`] = `
         type="button"
       />
       <div
-        className="MuiSlider-track-26 MuiSlider-trackAfter-28"
+        className="MuiSlider-track-30 MuiSlider-trackAfter-32"
         style={
           Object {
             "width": "calc(100% - 5px)",

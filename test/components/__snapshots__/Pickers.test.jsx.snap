@@ -12,23 +12,22 @@ exports[`renders correctly 1`] = `
       className="MuiFormControl-root-3"
     >
       <label
-        className="MuiFormLabel-root-14 MuiFormLabel-filled-18 MuiInputLabel-root-7 MuiInputLabel-formControl-8 MuiInputLabel-animated-11 MuiInputLabel-shrink-10"
+        className="MuiFormLabel-root-18 MuiFormLabel-filled-22 MuiInputLabel-root-7 MuiInputLabel-formControl-12 MuiInputLabel-animated-15 MuiInputLabel-shrink-14"
         data-shrink={true}
       >
         Platform
       </label>
       <div
-        className="MuiInputBase-root-41 MuiInput-root-28 MuiInput-underline-32 MuiInputBase-formControl-42 MuiInput-formControl-29"
+        className="MuiInputBase-root-45 MuiInput-root-32 MuiInput-underline-36 MuiInputBase-formControl-46 MuiInput-formControl-33"
         onClick={[Function]}
       >
         <div
-          className="MuiSelect-root-21"
+          className="MuiSelect-root-25"
         >
           <div
             aria-haspopup="true"
-            aria-owns={null}
             aria-pressed="false"
-            className="MuiSelect-select-22 MuiSelect-selectMenu-25 MuiInputBase-input-51 MuiInput-input-36"
+            className="MuiSelect-select-26 MuiSelect-selectMenu-29 MuiInputBase-input-55 MuiInput-input-40"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -45,7 +44,7 @@ exports[`renders correctly 1`] = `
           />
           <svg
             aria-hidden="true"
-            className="MuiSvgIcon-root-58 MuiSelect-icon-27"
+            className="MuiSvgIcon-root-62 MuiSelect-icon-31"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
@@ -66,23 +65,22 @@ exports[`renders correctly 1`] = `
       className="MuiFormControl-root-3"
     >
       <label
-        className="MuiFormLabel-root-14 MuiFormLabel-filled-18 MuiInputLabel-root-7 MuiInputLabel-formControl-8 MuiInputLabel-animated-11 MuiInputLabel-shrink-10"
+        className="MuiFormLabel-root-18 MuiFormLabel-filled-22 MuiInputLabel-root-7 MuiInputLabel-formControl-12 MuiInputLabel-animated-15 MuiInputLabel-shrink-14"
         data-shrink={true}
       >
         Benchmark
       </label>
       <div
-        className="MuiInputBase-root-41 MuiInput-root-28 MuiInput-underline-32 MuiInputBase-formControl-42 MuiInput-formControl-29"
+        className="MuiInputBase-root-45 MuiInput-root-32 MuiInput-underline-36 MuiInputBase-formControl-46 MuiInput-formControl-33"
         onClick={[Function]}
       >
         <div
-          className="MuiSelect-root-21"
+          className="MuiSelect-root-25"
         >
           <div
             aria-haspopup="true"
-            aria-owns={null}
             aria-pressed="false"
-            className="MuiSelect-select-22 MuiSelect-selectMenu-25 MuiInputBase-input-51 MuiInput-input-36"
+            className="MuiSelect-select-26 MuiSelect-selectMenu-29 MuiInputBase-input-55 MuiInput-input-40"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -99,7 +97,7 @@ exports[`renders correctly 1`] = `
           />
           <svg
             aria-hidden="true"
-            className="MuiSvgIcon-root-58 MuiSelect-icon-27"
+            className="MuiSvgIcon-root-62 MuiSelect-icon-31"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
