@@ -13,6 +13,7 @@ const dataToChartJSformat = data => data.map(({ datetime, value }) => ({
 }));
 
 const chartJsOptions = (reverse, scaleLabel) => ({
+  maintainAspectRatio: false,
   scales: {
     xAxes: [
       {
