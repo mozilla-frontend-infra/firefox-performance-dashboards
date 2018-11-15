@@ -376,6 +376,11 @@ export const CONFIG = {
       platform: 'windows10-64',
       benchmarks: DEFAULT_SUITES,
     },
+    win10Laptops: {
+      label: 'Windows 10 64bit (laptops)',
+      platform: 'windows10-64-ux',
+      benchmarks: DEFAULT_SUITES,
+    },
   },
 };
 
