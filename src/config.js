@@ -331,6 +331,90 @@ export const BENCHMARKS = {
     labels: ['SpiderMonkey', 'Chrome v8'],
     label: 'Web Tooling (JS shell)',
   },
+  'tp6-amazon': {
+    compare: {
+      'raptor-tp6-amazon-firefox': {
+        color: '#e55525',
+        label: 'Firefox',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-amazon-firefox',
+        option: 'opt',
+      },
+    },
+    label: 'Tp6 Amazon',
+  },
+  'tp6-docs': {
+    compare: {
+      'raptor-tp6-docs-firefox': {
+        color: '#e55525',
+        label: 'Firefox',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-docs-firefox',
+        option: 'opt',
+      },
+    },
+    label: 'Tp6 Docs',
+  },
+  'tp6-facebook': {
+    compare: {
+      'raptor-tp6-facebook-firefox': {
+        color: '#e55525',
+        label: 'Firefox',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-facebook-firefox',
+        option: 'opt',
+      },
+    },
+    label: 'Tp6 Facebook',
+  },
+  'tp6-google': {
+    compare: {
+      'raptor-tp6-google-firefox': {
+        color: '#e55525',
+        label: 'Firefox',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-google-firefox',
+        option: 'opt',
+      },
+    },
+    label: 'Tp6 Google',
+  },
+  'tp6-sheets': {
+    compare: {
+      'raptor-tp6-sheets-firefox': {
+        color: '#e55525',
+        label: 'Firefox',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-sheets-firefox',
+        option: 'opt',
+      },
+    },
+    label: 'Tp6 Sheets',
+  },
+  'tp6-slides': {
+    compare: {
+      'raptor-tp6-slides-firefox': {
+        color: '#e55525',
+        label: 'Firefox',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-slides-firefox',
+        option: 'opt',
+      },
+    },
+    label: 'Tp6 Slides',
+  },
+  'tp6-youtube': {
+    compare: {
+      'raptor-tp6-youtube-firefox': {
+        color: '#e55525',
+        label: 'Firefox',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-youtube-firefox',
+        option: 'opt',
+      },
+    },
+    label: 'Tp6 YouTube',
+  },
 };
 
 const DEFAULT_SUITES = [
@@ -340,6 +424,13 @@ const DEFAULT_SUITES = [
   'speedometer',
   'stylebench',
   'sunspider',
+  'tp6-amazon',
+  'tp6-docs',
+  'tp6-facebook',
+  'tp6-google',
+  'tp6-sheets',
+  'tp6-slides',
+  'tp6-youtube',
   'webaudio',
   'wasm-godot',
 ];
