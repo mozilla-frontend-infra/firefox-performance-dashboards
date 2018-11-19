@@ -6,7 +6,7 @@ const ChartJSWrapper = ({ chartJsData, chartJsOptions }) => (
   <Chart
     type="scatter"
     data={chartJsData}
-    height={50}
+    height={110}
     options={chartJsOptions}
   />
 );

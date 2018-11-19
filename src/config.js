@@ -437,8 +437,8 @@ const DEFAULT_SUITES = [
 
 export const CONFIG = {
   default: {
-    landingPath: '/win10/overview?numDays=90',
-    timeRange: 90, // 90 days
+    landingPath: '/win10/overview?numDays=60',
+    timeRange: 60, // # days
     colors: ['#e55525', '#ffcd02'],
     labels: ['Firefox', 'Chrome'],
   },

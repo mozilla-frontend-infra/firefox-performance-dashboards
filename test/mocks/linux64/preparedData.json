@@ -287,7 +287,7 @@
           "yAxes": [
             {
               "ticks": {
-                "beginAtZero": true,
+                "beginAtZero": false,
                 "reverse": true
               },
               "scaleLabel": {
@@ -407,7 +407,7 @@
           "yAxes": [
             {
               "ticks": {
-                "beginAtZero": true,
+                "beginAtZero": false,
                 "reverse": true
               },
               "scaleLabel": {
@@ -527,7 +527,7 @@
           "yAxes": [
             {
               "ticks": {
-                "beginAtZero": true,
+                "beginAtZero": false,
                 "reverse": true
               },
               "scaleLabel": {
@@ -643,7 +643,7 @@
           "yAxes": [
             {
               "ticks": {
-                "beginAtZero": true,
+                "beginAtZero": false,
                 "reverse": true
               },
               "scaleLabel": {
@@ -763,7 +763,7 @@
           "yAxes": [
             {
               "ticks": {
-                "beginAtZero": true,
+                "beginAtZero": false,
                 "reverse": false
               },
               "scaleLabel": {
@@ -883,7 +883,7 @@
           "yAxes": [
             {
               "ticks": {
-                "beginAtZero": true,
+                "beginAtZero": false,
                 "reverse": false
               },
               "scaleLabel": {
@@ -1087,7 +1087,7 @@
           "yAxes": [
             {
               "ticks": {
-                "beginAtZero": true,
+                "beginAtZero": false,
                 "reverse": false
               },
               "scaleLabel": {
@@ -1207,7 +1207,7 @@
           "yAxes": [
             {
               "ticks": {
-                "beginAtZero": true,
+                "beginAtZero": false,
                 "reverse": true
               },
               "scaleLabel": {
@@ -1327,7 +1327,7 @@
           "yAxes": [
             {
               "ticks": {
-                "beginAtZero": true,
+                "beginAtZero": false,
                 "reverse": false
               },
               "scaleLabel": {
@@ -1447,7 +1447,7 @@
           "yAxes": [
             {
               "ticks": {
-                "beginAtZero": true,
+                "beginAtZero": false,
                 "reverse": false
               },
               "scaleLabel": {
@@ -1567,7 +1567,7 @@
           "yAxes": [
             {
               "ticks": {
-                "beginAtZero": true,
+                "beginAtZero": false,
                 "reverse": true
               },
               "scaleLabel": {
@@ -1687,7 +1687,7 @@
           "yAxes": [
             {
               "ticks": {
-                "beginAtZero": true,
+                "beginAtZero": false,
                 "reverse": false
               },
               "scaleLabel": {
@@ -1807,7 +1807,7 @@
           "yAxes": [
             {
               "ticks": {
-                "beginAtZero": true,
+                "beginAtZero": false,
                 "reverse": true
               },
               "scaleLabel": {
@@ -1885,7 +1885,7 @@
           "yAxes": [
             {
               "ticks": {
-                "beginAtZero": true,
+                "beginAtZero": false,
                 "reverse": false
               },
               "scaleLabel": {
@@ -1963,7 +1963,7 @@
           "yAxes": [
             {
               "ticks": {
-                "beginAtZero": true,
+                "beginAtZero": false,
                 "reverse": false
               },
               "scaleLabel": {
