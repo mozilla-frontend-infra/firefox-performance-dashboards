@@ -65,7 +65,7 @@ const Graphs = ({
             <LinkIcon className={classes.linkIcon} />
           </a>
           {overviewMode ? (
-            <Link to={`/${platform}/${configUID}?numDays=90`} rel="noopener noreferrer">
+            <Link to={`/${platform}/${configUID}?numDays=60`} rel="noopener noreferrer">
               <ArrowDownward className={classes.linkIcon} />
             </Link>
           ) : null}

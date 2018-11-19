@@ -28,7 +28,7 @@ const chartJsOptions = (reverse, scaleLabel) => ({
     yAxes: [
       {
         ticks: {
-          beginAtZero: true,
+          beginAtZero: false,
           reverse,
         },
         scaleLabel: {
