@@ -27,7 +27,8 @@ const fetchData = async (view, benchmark, timeRange = CONFIG.default.timeRange) 
             fetchIt({
               configUID,
               ...config,
-              platform: CONFIG.views[view].platform,
+              platform: config.suite.includes('-chrome')
+                ? `${CONFIG.views[view].platform}-nightly` : CONFIG.views[view].platform,
             },
             { timeRange: convertToSeconds(timeRange) })
           )),
@@ -41,7 +42,8 @@ const fetchData = async (view, benchmark, timeRange = CONFIG.default.timeRange) 
         fetchIt({
           configUID,
           ...config,
-          platform: CONFIG.views[view].platform,
+          platform: config.suite.includes('-chrome')
+            ? `${CONFIG.views[view].platform}-nightly` : CONFIG.views[view].platform,
         },
         { includeSubtests: true, timeRange: convertToSeconds(timeRange) })
       )),
