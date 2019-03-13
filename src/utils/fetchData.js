@@ -7,14 +7,20 @@ const fetchData = async (view, benchmark, timeRange = CONFIG.default.timeRange) 
   const ALL_DATA = {};
 
   const fetchIt = async (config, options) => {
-    const response = await queryPerfData(config, options);
-    if (response) {
-      Object.values(response).forEach((series) => {
-        ALL_DATA[series.meta.id] = {
-          ...series,
-          ...config,
-        };
-      });
+    try {
+      const response = await queryPerfData(config, options);
+      if (response) {
+        Object.values(response).forEach((series) => {
+          ALL_DATA[series.meta.id] = {
+            ...series,
+            ...config,
+          };
+        });
+      }
+    } catch (error) {
+      // If we don't let it propragate the rest of the app will continue to work
+      // eslint-disable-next-line no-console
+      console.error(`We failed to fetch ${config.suite}`);
     }
   };
 
