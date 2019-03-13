@@ -191,6 +191,13 @@ export const BENCHMARKS = {
         suite: 'raptor-wasm-misc-ion-firefox',
         option: 'opt',
       },
+      'raptor-wasm-misc-cranelift-firefox': {
+        color: 'yellow',
+        label: 'Firefox (wasm-cranelift)',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-wasm-misc-cranelift-firefox',
+        option: 'opt',
+      },
       'raptor-wasm-misc-chrome': {
         color: '#ffcd02',
         label: 'Chrome',
@@ -224,6 +231,13 @@ export const BENCHMARKS = {
         label: 'Firefox (wasm-ion)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-godot-ion-firefox',
+        option: 'opt',
+      },
+      'raptor-wasm-godot-cranelift-firefox': {
+        color: 'yellow',
+        label: 'Firefox (wasm-cranelift)',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-wasm-godot-cranelift-firefox',
         option: 'opt',
       },
       'raptor-wasm-godot-chrome': {
