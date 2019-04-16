@@ -795,7 +795,7 @@
     lodash.isequal "^4.5.0"
     query-string "^6.1.0"
 
-"@neutrinojs/airbnb@^9.0.0-beta.0":
+"@neutrinojs/airbnb@^9.0.0-rc.0":
   version "9.0.0-rc.0"
   resolved "https://registry.yarnpkg.com/@neutrinojs/airbnb/-/airbnb-9.0.0-rc.0.tgz#a2a8aef715f6fe103006f091d10791dd23894552"
   integrity sha512-A+6XfqekUDB5aot8UaETjm63qelyuRjD3B9wjW/3z1KwwFghsDtxHyyYljujnqYupa+udV1vfg04YsyYVmKDKA==
@@ -866,7 +866,7 @@
     file-loader "^2.0.0"
     url-loader "^1.1.2"
 
-"@neutrinojs/jest@^9.0.0-beta.0":
+"@neutrinojs/jest@^9.0.0-rc.0":
   version "9.0.0-rc.0"
   resolved "https://registry.yarnpkg.com/@neutrinojs/jest/-/jest-9.0.0-rc.0.tgz#3c74fc53fe3f032beb53c9846e2ce1291aac4bc3"
   integrity sha512-oFN8MirxxE4wfLW4snA//3+iCwXEVGzWjkjat47LLOUXDhTQR+RDqeFladcoin7tiYFGSVO7HkHSTfZnW9elkw==
@@ -877,7 +877,7 @@
     deepmerge "^1.5.2"
     eslint-plugin-jest "^22.0.1"
 
-"@neutrinojs/react@^9.0.0-beta.0":
+"@neutrinojs/react@^9.0.0-rc.0":
   version "9.0.0-rc.0"
   resolved "https://registry.yarnpkg.com/@neutrinojs/react/-/react-9.0.0-rc.0.tgz#5c73369794066b0f1b6910ce0faa7a839acf1c49"
   integrity sha512-6Q8U2UwPWVRqlqVv90pa8OT0Al9Fyqx5SIM+UAF2ZIOWTTsR1sBOnruZlauBSwL8qvf7BWGivvK55PErqkP0Jg==
@@ -5977,7 +5977,7 @@ neo-async@^2.5.0, neo-async@^2.6.0:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.0.tgz#b9d15e4d71c6762908654b5183ed38b753340835"
   integrity sha512-MFh0d/Wa7vkKO3Y3LlacqAEeHK0mckVqzDieUKTT+KGxi+zIpeVsFxymkIiRpbpDziHc290Xr9A1O4Om7otoRA==
 
-neutrino@^9.0.0-beta.0:
+neutrino@^9.0.0-rc.0:
   version "9.0.0-rc.0"
   resolved "https://registry.yarnpkg.com/neutrino/-/neutrino-9.0.0-rc.0.tgz#7fc5d1c55779778f2f9e46ee4c7fd9fa356fc789"
   integrity sha512-2CvArWrHLgmLTPVY4GIjWpmzPXqb/YWyDISwJ7uwA9X38zzaIRuSxtdPSMLJWk6CskiLM2qGBXUY5L1NKGBzdg==
