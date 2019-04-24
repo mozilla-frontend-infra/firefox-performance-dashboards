@@ -2,79 +2,79 @@
   "topLabelsConfig": {
     "raptor-motionmark-htmlsuite-chrome": {
       "color": "#ffcd02",
-      "label": "Chrome",
+      "label": "Chromium",
       "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1731007,1,10",
       "suite": "raptor-motionmark-htmlsuite-chrome"
     },
     "raptor-stylebench-chrome": {
       "color": "#ffcd02",
-      "label": "Chrome",
+      "label": "Chromium",
       "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1714844,1,10",
       "suite": "raptor-stylebench-chrome"
     },
     "raptor-speedometer-chrome": {
       "color": "#ffcd02",
-      "label": "Chrome",
+      "label": "Chromium",
       "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1714897,1,10",
       "suite": "raptor-speedometer-chrome"
     },
     "raptor-unity-webgl-chrome": {
       "color": "#ffcd02",
-      "label": "Chrome",
+      "label": "Chromium",
       "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1750719,1,10",
       "suite": "raptor-unity-webgl-chrome"
     },
     "raptor-webaudio-chrome": {
       "color": "#ffcd02",
-      "label": "Chrome",
+      "label": "Chromium",
       "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1728949,1,10",
       "suite": "raptor-webaudio-chrome"
     },
     "raptor-assorted-dom-chrome": {
       "color": "#ffcd02",
-      "label": "Chrome",
+      "label": "Chromium",
       "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1762623,1,10",
       "suite": "raptor-assorted-dom-chrome"
     },
     "raptor-wasm-misc-chrome": {
       "color": "#ffcd02",
-      "label": "Chrome",
+      "label": "Chromium",
       "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1762654,1,10",
       "suite": "raptor-wasm-misc-chrome"
     },
     "raptor-motionmark-animometer-chrome": {
       "color": "#ffcd02",
-      "label": "Chrome",
+      "label": "Chromium",
       "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1730980,1,10",
       "suite": "raptor-motionmark-animometer-chrome"
     },
     "raptor-sunspider-chrome": {
       "color": "#ffcd02",
-      "label": "Chrome",
+      "label": "Chromium",
       "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1730498,1,10",
       "suite": "raptor-sunspider-chrome"
     },
     "ares6-v8": {
       "color": "#ffcd02",
-      "label": "Chrome v8",
+      "label": "Chromium v8",
       "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760205,1,11",
       "suite": "ares6-v8"
     },
     "web-tooling-benchmark-v8": {
       "color": "#ffcd02",
-      "label": "Chrome v8",
+      "label": "Chromium v8",
       "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760218,1,11",
       "suite": "web-tooling-benchmark-v8"
     },
     "six-speed-v8": {
       "color": "#ffcd02",
-      "label": "Chrome v8",
+      "label": "Chromium v8",
       "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760134,1,11",
       "suite": "six-speed-v8"
     },
     "octane-v8": {
       "color": "#ffcd02",
-      "label": "Chrome v8",
+      "label": "Chromium v8",
       "url": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1775624,1,11",
       "suite": "octane-v8"
     },
@@ -186,7 +186,7 @@
       "chartJsData": {
         "datasets": [
           {
-            "label": "Chrome",
+            "label": "Chromium",
             "backgroundColor": "#ffcd02",
             "data": [
               {
@@ -306,7 +306,7 @@
       "chartJsData": {
         "datasets": [
           {
-            "label": "Chrome",
+            "label": "Chromium",
             "backgroundColor": "#ffcd02",
             "data": [
               {
@@ -426,7 +426,7 @@
       "chartJsData": {
         "datasets": [
           {
-            "label": "Chrome",
+            "label": "Chromium",
             "backgroundColor": "#ffcd02",
             "data": [
               {
@@ -546,7 +546,7 @@
       "chartJsData": {
         "datasets": [
           {
-            "label": "Chrome",
+            "label": "Chromium",
             "backgroundColor": "#ffcd02",
             "data": [
               {
@@ -662,7 +662,7 @@
       "chartJsData": {
         "datasets": [
           {
-            "label": "Chrome",
+            "label": "Chromium",
             "backgroundColor": "#ffcd02",
             "data": [
               {
@@ -782,7 +782,7 @@
       "chartJsData": {
         "datasets": [
           {
-            "label": "Chrome",
+            "label": "Chromium",
             "backgroundColor": "#ffcd02",
             "data": [
               {
@@ -902,7 +902,7 @@
       "chartJsData": {
         "datasets": [
           {
-            "label": "Chrome",
+            "label": "Chromium",
             "backgroundColor": "#ffcd02",
             "data": [
               {
@@ -1106,7 +1106,7 @@
       "chartJsData": {
         "datasets": [
           {
-            "label": "Chrome",
+            "label": "Chromium",
             "backgroundColor": "#ffcd02",
             "data": [
               {
@@ -1226,7 +1226,7 @@
       "chartJsData": {
         "datasets": [
           {
-            "label": "Chrome",
+            "label": "Chromium",
             "backgroundColor": "#ffcd02",
             "data": [
               {
@@ -1346,7 +1346,7 @@
       "chartJsData": {
         "datasets": [
           {
-            "label": "Chrome v8",
+            "label": "Chromium v8",
             "backgroundColor": "#ffcd02",
             "data": [
               {
@@ -1466,7 +1466,7 @@
       "chartJsData": {
         "datasets": [
           {
-            "label": "Chrome v8",
+            "label": "Chromium v8",
             "backgroundColor": "#ffcd02",
             "data": [
               {
@@ -1586,7 +1586,7 @@
       "chartJsData": {
         "datasets": [
           {
-            "label": "Chrome v8",
+            "label": "Chromium v8",
             "backgroundColor": "#ffcd02",
             "data": [
               {
@@ -1706,7 +1706,7 @@
       "chartJsData": {
         "datasets": [
           {
-            "label": "Chrome v8",
+            "label": "Chromium v8",
             "backgroundColor": "#ffcd02",
             "data": [
               {
