@@ -14,7 +14,7 @@ export const BENCHMARKS = {
       },
       'raptor-assorted-dom-chrome': {
         color: '#ffcd02',
-        label: 'Chrome',
+        label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-assorted-dom-chrome',
         option: 'opt',
@@ -46,7 +46,7 @@ export const BENCHMARKS = {
       },
       'raptor-motionmark-animometer-chrome': {
         color: '#ffcd02',
-        label: 'Chrome',
+        label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-motionmark-animometer-chrome',
         option: 'opt',
@@ -65,7 +65,7 @@ export const BENCHMARKS = {
       },
       'raptor-motionmark-htmlsuite-chrome': {
         color: '#ffcd02',
-        label: 'Chrome',
+        label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-motionmark-htmlsuite-chrome',
         option: 'opt',
@@ -84,7 +84,7 @@ export const BENCHMARKS = {
       },
       'raptor-speedometer-chrome': {
         color: '#ffcd02',
-        label: 'Chrome',
+        label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-speedometer-chrome',
         option: 'opt',
@@ -103,7 +103,7 @@ export const BENCHMARKS = {
       },
       'raptor-stylebench-chrome': {
         color: '#ffcd02',
-        label: 'Chrome',
+        label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-stylebench-chrome',
         option: 'opt',
@@ -122,7 +122,7 @@ export const BENCHMARKS = {
       },
       'raptor-sunspider-chrome': {
         color: '#ffcd02',
-        label: 'Chrome',
+        label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-sunspider-chrome',
         option: 'opt',
@@ -141,7 +141,7 @@ export const BENCHMARKS = {
       },
       'raptor-webaudio-chrome': {
         color: '#ffcd02',
-        label: 'Chrome',
+        label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-webaudio-chrome',
         option: 'opt',
@@ -160,7 +160,7 @@ export const BENCHMARKS = {
       },
       'raptor-unity-webgl-chrome': {
         color: '#ffcd02',
-        label: 'Chrome',
+        label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-unity-webgl-chrome',
         option: 'opt',
@@ -200,14 +200,14 @@ export const BENCHMARKS = {
       },
       'raptor-wasm-misc-chrome': {
         color: '#ffcd02',
-        label: 'Chrome',
+        label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-misc-chrome',
         option: 'opt',
       },
     },
     colors: ['#e55525', 'red', 'brown', '#ffcd02'],
-    labels: ['Firefox (tiering)', 'Firefox (wasm-baseline)', 'Firefox (wasm-ion)', 'Chrome'],
+    labels: ['Firefox (tiering)', 'Firefox (wasm-baseline)', 'Firefox (wasm-ion)', 'Chromium'],
     label: 'WebAssembly Embenchen',
   },
   'wasm-godot': {
@@ -242,14 +242,14 @@ export const BENCHMARKS = {
       },
       'raptor-wasm-godot-chrome': {
         color: '#ffcd02',
-        label: 'Chrome',
+        label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-godot-chrome',
         option: 'opt',
       },
     },
     colors: ['#e55525', 'red', 'brown', '#ffcd02'],
-    labels: ['Firefox (tiering)', 'Firefox (wasm-baseline)', 'Firefox (wasm-ion)', 'Chrome'],
+    labels: ['Firefox (tiering)', 'Firefox (wasm-baseline)', 'Firefox (wasm-ion)', 'Chromium'],
     label: 'WebAssembly Godot',
   },
   ares6: {
@@ -263,13 +263,13 @@ export const BENCHMARKS = {
       },
       'ares6-v8': {
         color: '#ffcd02',
-        label: 'Chrome v8',
+        label: 'Chromium v8',
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'ares6-v8',
         option: 'opt',
       },
     },
-    labels: ['SpiderMonkey', 'Chrome v8'],
+    labels: ['SpiderMonkey', 'Chromium v8'],
     label: 'Ares6 (JS shell)',
   },
   octane: {
@@ -283,13 +283,13 @@ export const BENCHMARKS = {
       },
       'octane-v8': {
         color: '#ffcd02',
-        label: 'Chrome v8',
+        label: 'Chromium v8',
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'octane-v8',
         option: 'opt',
       },
     },
-    labels: ['SpiderMonkey', 'Chrome v8'],
+    labels: ['SpiderMonkey', 'Chromium v8'],
     label: 'Octane (JS shell)',
   },
   'six-speed': {
@@ -303,13 +303,13 @@ export const BENCHMARKS = {
       },
       'six-speed-v8': {
         color: '#ffcd02',
-        label: 'Chrome v8',
+        label: 'Chromium v8',
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'six-speed-v8',
         option: 'opt',
       },
     },
-    labels: ['SpiderMonkey', 'Chrome v8'],
+    labels: ['SpiderMonkey', 'Chromium v8'],
     label: 'Six Speed (JS shell)',
   },
   'sunspider-jsbench': {
@@ -336,13 +336,13 @@ export const BENCHMARKS = {
       },
       'web-tooling-benchmark-v8': {
         color: '#ffcd02',
-        label: 'Chrome v8',
+        label: 'Chromium v8',
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'web-tooling-benchmark-v8',
         option: 'opt',
       },
     },
-    labels: ['SpiderMonkey', 'Chrome v8'],
+    labels: ['SpiderMonkey', 'Chromium v8'],
     label: 'Web Tooling (JS shell)',
   },
   'tp6-amazon': {
@@ -454,7 +454,7 @@ export const CONFIG = {
     landingPath: '/win10/overview?numDays=60',
     timeRange: 60, // # days
     colors: ['#e55525', '#ffcd02'],
-    labels: ['Firefox', 'Chrome'],
+    labels: ['Firefox', 'Chromium'],
   },
   views: {
     linux64: {

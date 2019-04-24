@@ -599,7 +599,7 @@
     "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1714844,1,10",
     "configUID": "stylebench",
     "color": "#ffcd02",
-    "label": "Chrome",
+    "label": "Chromium",
     "suite": "raptor-stylebench-chrome"
   },
   "1714897": {
@@ -699,7 +699,7 @@
     "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1714897,1,10",
     "configUID": "speedometer",
     "color": "#ffcd02",
-    "label": "Chrome",
+    "label": "Chromium",
     "suite": "raptor-speedometer-chrome"
   },
   "1728907": {
@@ -897,7 +897,7 @@
     "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1728949,1,10",
     "configUID": "webaudio",
     "color": "#ffcd02",
-    "label": "Chrome",
+    "label": "Chromium",
     "suite": "raptor-webaudio-chrome"
   },
   "1730498": {
@@ -996,7 +996,7 @@
     "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1730498,1,10",
     "configUID": "sunspider",
     "color": "#ffcd02",
-    "label": "Chrome",
+    "label": "Chromium",
     "suite": "raptor-sunspider-chrome"
   },
   "1730526": {
@@ -1195,7 +1195,7 @@
     "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1730980,1,10",
     "configUID": "motionmark-animometer",
     "color": "#ffcd02",
-    "label": "Chrome",
+    "label": "Chromium",
     "suite": "raptor-motionmark-animometer-chrome"
   },
   "1731007": {
@@ -1295,7 +1295,7 @@
     "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1731007,1,10",
     "configUID": "motionmark-htmlsuite",
     "color": "#ffcd02",
-    "label": "Chrome",
+    "label": "Chromium",
     "suite": "raptor-motionmark-htmlsuite-chrome"
   },
   "1750719": {
@@ -1395,7 +1395,7 @@
     "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1750719,1,10",
     "configUID": "unity-webgl",
     "color": "#ffcd02",
-    "label": "Chrome",
+    "label": "Chromium",
     "suite": "raptor-unity-webgl-chrome"
   },
   "1750735": {
@@ -1684,7 +1684,7 @@
     "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760134,1,11",
     "configUID": "six-speed",
     "color": "#ffcd02",
-    "label": "Chrome v8",
+    "label": "Chromium v8",
     "suite": "six-speed-v8"
   },
   "1760187": {
@@ -1883,7 +1883,7 @@
     "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760205,1,11",
     "configUID": "ares6",
     "color": "#ffcd02",
-    "label": "Chrome v8",
+    "label": "Chromium v8",
     "suite": "ares6-v8"
   },
   "1760218": {
@@ -1983,7 +1983,7 @@
     "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760218,1,11",
     "configUID": "web-tooling",
     "color": "#ffcd02",
-    "label": "Chrome v8",
+    "label": "Chromium v8",
     "suite": "web-tooling-benchmark-v8"
   },
   "1760236": {
@@ -2379,7 +2379,7 @@
     "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1762623,1,10",
     "configUID": "assorted-dom",
     "color": "#ffcd02",
-    "label": "Chrome",
+    "label": "Chromium",
     "suite": "raptor-assorted-dom-chrome"
   },
   "1762630": {
@@ -2577,7 +2577,7 @@
     "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1762654,1,10",
     "configUID": "wasm-misc",
     "color": "#ffcd02",
-    "label": "Chrome",
+    "label": "Chromium",
     "suite": "raptor-wasm-misc-chrome"
   },
   "1764083": {
@@ -2875,7 +2875,7 @@
     "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1775624,1,11",
     "configUID": "octane",
     "color": "#ffcd02",
-    "label": "Chrome v8",
+    "label": "Chromium v8",
     "suite": "octane-v8"
   },
   "1775643": {
