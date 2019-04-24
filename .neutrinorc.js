@@ -8,7 +8,7 @@ module.exports = {
       '@neutrinojs/react',
       {
         html: {
-          title: 'JavaScript Performance Dashboard',
+          title: 'Firefox Performance Dashboard',
         },
         // Read https://stackoverflow.com/a/36623117
         // This is the key to making React Router work with neutrino
