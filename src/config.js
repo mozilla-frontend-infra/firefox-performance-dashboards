@@ -642,6 +642,11 @@ export const CONFIG = {
       platform: 'windows10-64-ux',
       benchmarks: DEFAULT_SUITES,
     },
+    windows10Aarch64: {
+      label: 'Windows 10 ARM64',
+      platform: 'windows10-aarch64',
+      benchmarks: DEFAULT_SUITES,
+    },
   },
 };
 
