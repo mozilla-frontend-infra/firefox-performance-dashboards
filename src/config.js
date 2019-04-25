@@ -429,6 +429,150 @@ export const BENCHMARKS = {
     },
     label: 'Tp6 YouTube',
   },
+  'tp6-imdb': {
+    compare: {
+      'raptor-tp6-imdb-firefox': {
+        color: '#e55525',
+        label: 'Firefox',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-imdb-firefox',
+        option: 'opt',
+      },
+    },
+    label: 'Tp6 Imdb',
+  },
+  'tp6-imgur': {
+    compare: {
+      'raptor-tp6-imgur-firefox': {
+        color: '#e55525',
+        label: 'Firefox',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-imgur-firefox',
+        option: 'opt',
+      },
+    },
+    label: 'Tp6 Imgur',
+  },
+  'tp6-wikia': {
+    compare: {
+      'raptor-tp6-wikia-firefox': {
+        color: '#e55525',
+        label: 'Firefox',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-wikia-firefox',
+        option: 'opt',
+      },
+    },
+    label: 'Tp6 Wikia',
+  },
+  'tp6-bing': {
+    compare: {
+      'raptor-tp6-bing-firefox': {
+        color: '#e55525',
+        label: 'Firefox',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-bing-firefox',
+        option: 'opt',
+      },
+    },
+    label: 'Tp6 Bing',
+  },
+  'tp6-yandex': {
+    compare: {
+      'raptor-tp6-yandex-firefox': {
+        color: '#e55525',
+        label: 'Firefox',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-yandex-firefox',
+        option: 'opt',
+      },
+    },
+    label: 'Tp6 Yandex',
+  },
+  'tp6-apple': {
+    compare: {
+      'raptor-tp6-apple-firefox': {
+        color: '#e55525',
+        label: 'Firefox',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-apple-firefox',
+        option: 'opt',
+      },
+    },
+    label: 'Tp6 Apple',
+  },
+  'tp6-microsoft': {
+    compare: {
+      'raptor-tp6-microsoft-firefox': {
+        color: '#e55525',
+        label: 'Firefox',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-microsoft-firefox',
+        option: 'opt',
+      },
+    },
+    label: 'Tp6 Microsoft',
+  },
+  'tp6-reddit': {
+    compare: {
+      'raptor-tp6-reddit-firefox': {
+        color: '#e55525',
+        label: 'Firefox',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-reddit-firefox',
+        option: 'opt',
+      },
+    },
+    label: 'Tp6 Reddit',
+  },
+  'tp6-yahoo-news': {
+    compare: {
+      'raptor-tp6-yahoo-news-firefox': {
+        color: '#e55525',
+        label: 'Firefox',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-yahoo-news-firefox',
+        option: 'opt',
+      },
+    },
+    label: 'Tp6 Yahoo News',
+  },
+  'tp6-instagram': {
+    compare: {
+      'raptor-tp6-instagram-firefox': {
+        color: '#e55525',
+        label: 'Firefox',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-instagram-firefox',
+        option: 'opt',
+      },
+    },
+    label: 'Tp6 Instagram',
+  },
+  'tp6-twitter': {
+    compare: {
+      'raptor-tp6-twitter-firefox': {
+        color: '#e55525',
+        label: 'Firefox',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-twitter-firefox',
+        option: 'opt',
+      },
+    },
+    label: 'Tp6 Twitter',
+  },
+  'tp6-yahoo-mail': {
+    compare: {
+      'raptor-tp6-yahoo-mail-firefox': {
+        color: '#e55525',
+        label: 'Firefox',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-yahoo-mail-firefox',
+        option: 'opt',
+      },
+    },
+    label: 'Tp6 Yahoo Mail',
+  },
 };
 
 const DEFAULT_SUITES = [
@@ -439,12 +583,24 @@ const DEFAULT_SUITES = [
   'stylebench',
   'sunspider',
   'tp6-amazon',
-  'tp6-docs',
   'tp6-facebook',
   'tp6-google',
+  'tp6-youtube',
+  'tp6-docs',
   'tp6-sheets',
   'tp6-slides',
-  'tp6-youtube',
+  'tp6-imdb',
+  'tp6-imgur',
+  'tp6-wikia',
+  'tp6-bing',
+  'tp6-yandex',
+  'tp6-apple',
+  'tp6-microsoft',
+  'tp6-reddit',
+  'tp6-yahoo-news',
+  'tp6-instagram',
+  'tp6-twitter',
+  'tp6-yahoo-mail',
   'webaudio',
   'wasm-godot',
 ];
