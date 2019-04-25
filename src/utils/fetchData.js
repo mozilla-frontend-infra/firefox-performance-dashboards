@@ -3,6 +3,16 @@ import { BENCHMARKS, CONFIG } from '../config';
 import prepareData from './prepareData';
 import { convertToSeconds } from './timeRangeUtils';
 
+export const transformPlatform = (suite, platform) => {
+  let pf = platform;
+  Object.entries(CONFIG.platformTransformations).forEach(([includesPattern, transformation]) => {
+    if (suite.endsWith(includesPattern)) {
+      pf = transformation(platform);
+    }
+  });
+  return pf;
+};
+
 const fetchData = async (view, benchmark, timeRange = CONFIG.default.timeRange) => {
   const ALL_DATA = {};
 
@@ -33,8 +43,7 @@ const fetchData = async (view, benchmark, timeRange = CONFIG.default.timeRange) 
             fetchIt({
               configUID,
               ...config,
-              platform: config.suite.includes('-chrome')
-                ? `${CONFIG.views[view].platform}-nightly` : CONFIG.views[view].platform,
+              platform: transformPlatform(config.suite, CONFIG.views[view].platform),
             },
             { timeRange: convertToSeconds(timeRange) })
           )),
@@ -48,8 +57,7 @@ const fetchData = async (view, benchmark, timeRange = CONFIG.default.timeRange) 
         fetchIt({
           configUID,
           ...config,
-          platform: config.suite.includes('-chrome')
-            ? `${CONFIG.views[view].platform}-nightly` : CONFIG.views[view].platform,
+          platform: transformPlatform(config.suite, CONFIG.views[view].platform),
         },
         { includeSubtests: true, timeRange: convertToSeconds(timeRange) })
       )),

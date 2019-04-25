@@ -612,6 +612,9 @@ export const CONFIG = {
     colors: ['#e55525', '#ffcd02'],
     labels: ['Firefox', 'Chromium'],
   },
+  platformTransformations: {
+    '-chrome': platform => `${platform}-nightly`,
+  },
   views: {
     linux64: {
       label: 'Linux 64bit',
