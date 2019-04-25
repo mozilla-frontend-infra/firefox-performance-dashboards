@@ -43,7 +43,10 @@ const fetchData = async (view, benchmark, timeRange = CONFIG.default.timeRange) 
             fetchIt({
               configUID,
               ...config,
-              platform: transformPlatform(config.suite, CONFIG.views[view].platform),
+              platform: transformPlatform(
+                config.suite,
+                CONFIG.views[view].platform || config.platform,
+              ),
             },
             { timeRange: convertToSeconds(timeRange) })
           )),
@@ -57,7 +60,10 @@ const fetchData = async (view, benchmark, timeRange = CONFIG.default.timeRange) 
         fetchIt({
           configUID,
           ...config,
-          platform: transformPlatform(config.suite, CONFIG.views[view].platform),
+          platform: transformPlatform(
+            config.suite,
+            CONFIG.views[view].platform || config.platform,
+          ),
         },
         { includeSubtests: true, timeRange: convertToSeconds(timeRange) })
       )),

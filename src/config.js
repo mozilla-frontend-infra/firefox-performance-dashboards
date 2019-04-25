@@ -573,7 +573,40 @@ export const BENCHMARKS = {
     },
     label: 'Tp6 Yahoo Mail',
   },
+  speedometerGeckoview: {
+    compare: {
+      motoG5: {
+        color: '#e55525',
+        label: 'Moto G5 (armv7)',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-speedometer-geckoview',
+        option: 'pgo',
+        platform: 'android-hw-g5-7-0-arm7-api-16',
+      },
+      pixel2arm7: {
+        color: '#ffcd02',
+        label: 'Pixel 2 (arm7)',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-speedometer-geckoview',
+        option: 'opt',
+        platform: 'android-hw-p2-8-0-arm7-api-16-pgo',
+      },
+      pixel2arm64: {
+        color: '#45a1ff',
+        label: 'Pixel 2 (ARM64)',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-speedometer-geckoview',
+        option: 'opt',
+        platform: 'android-hw-p2-8-0-android-aarch64',
+      },
+    },
+    label: 'Speedometer',
+  },
 };
+
+const ANDROID_SUITES = [
+  'speedometerGeckoview',
+];
 
 const DEFAULT_SUITES = [
   'kraken',
@@ -649,6 +682,10 @@ export const CONFIG = {
       label: 'Windows 10 ARM64',
       platform: 'windows10-aarch64',
       benchmarks: DEFAULT_SUITES,
+    },
+    android: {
+      label: 'Android',
+      benchmarks: ANDROID_SUITES,
     },
   },
 };
