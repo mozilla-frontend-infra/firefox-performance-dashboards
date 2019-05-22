@@ -12,11 +12,11 @@ export const BENCHMARKS = {
         suite: 'raptor-assorted-dom-firefox',
         option: 'opt',
       },
-      'raptor-assorted-dom-chrome': {
+      'raptor-assorted-dom-chromium': {
         color: '#ffcd02',
         label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-assorted-dom-chrome',
+        suite: 'raptor-assorted-dom-chromium',
         option: 'opt',
       },
     },
@@ -44,11 +44,11 @@ export const BENCHMARKS = {
         suite: 'raptor-motionmark-animometer-firefox',
         option: 'opt',
       },
-      'raptor-motionmark-animometer-chrome': {
+      'raptor-motionmark-animometer-chromium': {
         color: '#ffcd02',
         label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-motionmark-animometer-chrome',
+        suite: 'raptor-motionmark-animometer-chromium',
         option: 'opt',
       },
     },
@@ -63,11 +63,11 @@ export const BENCHMARKS = {
         suite: 'raptor-motionmark-htmlsuite-firefox',
         option: 'opt',
       },
-      'raptor-motionmark-htmlsuite-chrome': {
+      'raptor-motionmark-htmlsuite-chromium': {
         color: '#ffcd02',
         label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-motionmark-htmlsuite-chrome',
+        suite: 'raptor-motionmark-htmlsuite-chromium',
         option: 'opt',
       },
     },
@@ -82,11 +82,11 @@ export const BENCHMARKS = {
         suite: 'raptor-speedometer-firefox',
         option: 'opt',
       },
-      'raptor-speedometer-chrome': {
+      'raptor-speedometer-chromium': {
         color: '#ffcd02',
         label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-speedometer-chrome',
+        suite: 'raptor-speedometer-chromium',
         option: 'opt',
       },
     },
@@ -101,11 +101,11 @@ export const BENCHMARKS = {
         suite: 'raptor-stylebench-firefox',
         option: 'opt',
       },
-      'raptor-stylebench-chrome': {
+      'raptor-stylebench-chromium': {
         color: '#ffcd02',
         label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-stylebench-chrome',
+        suite: 'raptor-stylebench-chromium',
         option: 'opt',
       },
     },
@@ -120,11 +120,11 @@ export const BENCHMARKS = {
         suite: 'raptor-sunspider-firefox',
         option: 'opt',
       },
-      'raptor-sunspider-chrome': {
+      'raptor-sunspider-chromium': {
         color: '#ffcd02',
         label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-sunspider-chrome',
+        suite: 'raptor-sunspider-chromium',
         option: 'opt',
       },
     },
@@ -139,11 +139,11 @@ export const BENCHMARKS = {
         suite: 'raptor-webaudio-firefox',
         option: 'opt',
       },
-      'raptor-webaudio-chrome': {
+      'raptor-webaudio-chromium': {
         color: '#ffcd02',
         label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-webaudio-chrome',
+        suite: 'raptor-webaudio-chromium',
         option: 'opt',
       },
     },
@@ -158,11 +158,11 @@ export const BENCHMARKS = {
         suite: 'raptor-unity-webgl-firefox',
         option: 'opt',
       },
-      'raptor-unity-webgl-chrome': {
+      'raptor-unity-webgl-chromium': {
         color: '#ffcd02',
         label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-unity-webgl-chrome',
+        suite: 'raptor-unity-webgl-chromium',
         option: 'opt',
       },
     },
@@ -198,11 +198,11 @@ export const BENCHMARKS = {
         suite: 'raptor-wasm-misc-cranelift-firefox',
         option: 'opt',
       },
-      'raptor-wasm-misc-chrome': {
+      'raptor-wasm-misc-chromium': {
         color: '#ffcd02',
         label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-wasm-misc-chrome',
+        suite: 'raptor-wasm-misc-chromium',
         option: 'opt',
       },
     },
@@ -240,11 +240,11 @@ export const BENCHMARKS = {
         suite: 'raptor-wasm-godot-cranelift-firefox',
         option: 'opt',
       },
-      'raptor-wasm-godot-chrome': {
+      'raptor-wasm-godot-chromium': {
         color: '#ffcd02',
         label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-wasm-godot-chrome',
+        suite: 'raptor-wasm-godot-chromium',
         option: 'opt',
       },
     },
@@ -1456,7 +1456,8 @@ export const CONFIG = {
     labels: ['Firefox', 'Chromium'],
   },
   platformTransformations: {
-    '-chrome': platform => `${platform}-nightly`,
+    // If the suite ends with the patterm modify the platform
+    '-chromium': platform => `${platform}-shippable`,
   },
   views: {
     linux64: {
