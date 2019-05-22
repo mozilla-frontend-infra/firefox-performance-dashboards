@@ -2,18 +2,23 @@ const TALOS_FRAMEWORK_ID = 1;
 const RAPTOR_FRAMEWORK_ID = 10;
 const JSBENCH_FRAMEWORK_ID = 11;
 
+const COLORS = {
+  chromium: '#e55525',
+  firefox: '#4285F4',
+};
+
 export const BENCHMARKS = {
   'assorted-dom': {
     compare: {
       'raptor-assorted-dom-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-assorted-dom-firefox',
         option: 'opt',
       },
       'raptor-assorted-dom-chromium': {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-assorted-dom-chromium',
@@ -25,7 +30,7 @@ export const BENCHMARKS = {
   kraken: {
     compare: {
       kraken: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: TALOS_FRAMEWORK_ID,
         suite: 'kraken',
@@ -38,14 +43,14 @@ export const BENCHMARKS = {
   'motionmark-animometer': {
     compare: {
       'raptor-motionmark-animometer-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-motionmark-animometer-firefox',
         option: 'opt',
       },
       'raptor-motionmark-animometer-chromium': {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-motionmark-animometer-chromium',
@@ -57,14 +62,14 @@ export const BENCHMARKS = {
   'motionmark-htmlsuite': {
     compare: {
       'raptor-motionmark-htmlsuite-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-motionmark-htmlsuite-firefox',
         option: 'opt',
       },
       'raptor-motionmark-htmlsuite-chromium': {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-motionmark-htmlsuite-chromium',
@@ -76,14 +81,14 @@ export const BENCHMARKS = {
   speedometer: {
     compare: {
       'raptor-speedometer-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-speedometer-firefox',
         option: 'opt',
       },
       'raptor-speedometer-chromium': {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-speedometer-chromium',
@@ -95,14 +100,14 @@ export const BENCHMARKS = {
   stylebench: {
     compare: {
       'raptor-stylebench-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-stylebench-firefox',
         option: 'opt',
       },
       'raptor-stylebench-chromium': {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-stylebench-chromium',
@@ -114,14 +119,14 @@ export const BENCHMARKS = {
   sunspider: {
     compare: {
       'raptor-sunspider-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-sunspider-firefox',
         option: 'opt',
       },
       'raptor-sunspider-chromium': {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-sunspider-chromium',
@@ -133,14 +138,14 @@ export const BENCHMARKS = {
   webaudio: {
     compare: {
       'raptor-webaudio-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-webaudio-firefox',
         option: 'opt',
       },
       'raptor-webaudio-chromium': {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-webaudio-chromium',
@@ -152,14 +157,14 @@ export const BENCHMARKS = {
   'unity-webgl': {
     compare: {
       'raptor-unity-webgl-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-unity-webgl-firefox',
         option: 'opt',
       },
       'raptor-unity-webgl-chromium': {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-unity-webgl-chromium',
@@ -171,7 +176,7 @@ export const BENCHMARKS = {
   'wasm-misc': {
     compare: {
       'raptor-wasm-misc-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox (tiering)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-misc-firefox',
@@ -199,21 +204,21 @@ export const BENCHMARKS = {
         option: 'opt',
       },
       'raptor-wasm-misc-chromium': {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-misc-chromium',
         option: 'opt',
       },
     },
-    colors: ['#e55525', 'red', 'brown', '#ffcd02'],
+    colors: [COLORS.chromium, 'red', 'brown', COLORS.firefox],
     labels: ['Firefox (tiering)', 'Firefox (wasm-baseline)', 'Firefox (wasm-ion)', 'Chromium'],
     label: 'WebAssembly Embenchen',
   },
   'wasm-godot': {
     compare: {
       'raptor-wasm-godot-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox (tiering)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-godot-firefox',
@@ -241,28 +246,28 @@ export const BENCHMARKS = {
         option: 'opt',
       },
       'raptor-wasm-godot-chromium': {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-godot-chromium',
         option: 'opt',
       },
     },
-    colors: ['#e55525', 'red', 'brown', '#ffcd02'],
+    colors: [COLORS.chromium, 'red', 'brown', COLORS.firefox],
     labels: ['Firefox (tiering)', 'Firefox (wasm-baseline)', 'Firefox (wasm-ion)', 'Chromium'],
     label: 'WebAssembly Godot',
   },
   ares6: {
     compare: {
       'ares6-sm': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'SpiderMonkey',
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'ares6-sm',
         option: 'opt',
       },
       'ares6-v8': {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Chromium v8',
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'ares6-v8',
@@ -275,14 +280,14 @@ export const BENCHMARKS = {
   octane: {
     compare: {
       'octane-sm': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'SpiderMonkey',
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'octane-sm',
         option: 'opt',
       },
       'octane-v8': {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Chromium v8',
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'octane-v8',
@@ -295,14 +300,14 @@ export const BENCHMARKS = {
   'six-speed': {
     compare: {
       'six-speed-sm': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'SpiderMonkey',
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'six-speed-sm',
         option: 'opt',
       },
       'six-speed-v8': {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Chromium v8',
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'six-speed-v8',
@@ -315,7 +320,7 @@ export const BENCHMARKS = {
   'sunspider-jsbench': {
     compare: {
       'sunspider-sm': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'SpiderMonkey',
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'sunspider-sm',
@@ -328,14 +333,14 @@ export const BENCHMARKS = {
   'web-tooling': {
     compare: {
       'web-tooling-benchmark-sm': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'SpiderMonkey',
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'web-tooling-benchmark-sm',
         option: 'opt',
       },
       'web-tooling-benchmark-v8': {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Chromium v8',
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'web-tooling-benchmark-v8',
@@ -348,7 +353,7 @@ export const BENCHMARKS = {
   'tp6-amazon': {
     compare: {
       'raptor-tp6-amazon-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-amazon-firefox',
@@ -360,7 +365,7 @@ export const BENCHMARKS = {
   'tp6-docs': {
     compare: {
       'raptor-tp6-docs-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-docs-firefox',
@@ -372,7 +377,7 @@ export const BENCHMARKS = {
   'tp6-facebook': {
     compare: {
       'raptor-tp6-facebook-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-facebook-firefox',
@@ -384,7 +389,7 @@ export const BENCHMARKS = {
   'tp6-google': {
     compare: {
       'raptor-tp6-google-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-google-firefox',
@@ -396,7 +401,7 @@ export const BENCHMARKS = {
   'tp6-sheets': {
     compare: {
       'raptor-tp6-sheets-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-sheets-firefox',
@@ -408,7 +413,7 @@ export const BENCHMARKS = {
   'tp6-slides': {
     compare: {
       'raptor-tp6-slides-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-slides-firefox',
@@ -420,7 +425,7 @@ export const BENCHMARKS = {
   'tp6-youtube': {
     compare: {
       'raptor-tp6-youtube-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-youtube-firefox',
@@ -432,7 +437,7 @@ export const BENCHMARKS = {
   'tp6-imdb': {
     compare: {
       'raptor-tp6-imdb-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-imdb-firefox',
@@ -444,7 +449,7 @@ export const BENCHMARKS = {
   'tp6-imgur': {
     compare: {
       'raptor-tp6-imgur-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-imgur-firefox',
@@ -456,7 +461,7 @@ export const BENCHMARKS = {
   'tp6-wikia': {
     compare: {
       'raptor-tp6-wikia-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-wikia-firefox',
@@ -468,7 +473,7 @@ export const BENCHMARKS = {
   'tp6-bing': {
     compare: {
       'raptor-tp6-bing-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-bing-firefox',
@@ -480,7 +485,7 @@ export const BENCHMARKS = {
   'tp6-yandex': {
     compare: {
       'raptor-tp6-yandex-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-yandex-firefox',
@@ -492,7 +497,7 @@ export const BENCHMARKS = {
   'tp6-apple': {
     compare: {
       'raptor-tp6-apple-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-apple-firefox',
@@ -504,7 +509,7 @@ export const BENCHMARKS = {
   'tp6-microsoft': {
     compare: {
       'raptor-tp6-microsoft-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-microsoft-firefox',
@@ -516,7 +521,7 @@ export const BENCHMARKS = {
   'tp6-reddit': {
     compare: {
       'raptor-tp6-reddit-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-reddit-firefox',
@@ -528,7 +533,7 @@ export const BENCHMARKS = {
   'tp6-yahoo-news': {
     compare: {
       'raptor-tp6-yahoo-news-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-yahoo-news-firefox',
@@ -540,7 +545,7 @@ export const BENCHMARKS = {
   'tp6-instagram': {
     compare: {
       'raptor-tp6-instagram-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-instagram-firefox',
@@ -552,7 +557,7 @@ export const BENCHMARKS = {
   'tp6-twitter': {
     compare: {
       'raptor-tp6-twitter-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-twitter-firefox',
@@ -564,7 +569,7 @@ export const BENCHMARKS = {
   'tp6-yahoo-mail': {
     compare: {
       'raptor-tp6-yahoo-mail-firefox': {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-yahoo-mail-firefox',
@@ -576,7 +581,7 @@ export const BENCHMARKS = {
   'speedometer-geckoview': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-speedometer-geckoview',
@@ -584,7 +589,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-speedometer-geckoview',
@@ -605,7 +610,7 @@ export const BENCHMARKS = {
   'tp6m-amazon': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-amazon-geckoview',
@@ -613,7 +618,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-amazon-geckoview',
@@ -634,7 +639,7 @@ export const BENCHMARKS = {
   'tp6m-facebook': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-facebook-geckoview',
@@ -642,7 +647,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-facebook-geckoview',
@@ -663,7 +668,7 @@ export const BENCHMARKS = {
   'tp6m-google': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-google-geckoview',
@@ -671,7 +676,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-google-geckoview',
@@ -692,7 +697,7 @@ export const BENCHMARKS = {
   'tp6m-youtube': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-youtube-geckoview',
@@ -700,7 +705,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-youtube-geckoview',
@@ -721,7 +726,7 @@ export const BENCHMARKS = {
   'tp6m-bing': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-bing-geckoview',
@@ -729,7 +734,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-bing-geckoview',
@@ -750,7 +755,7 @@ export const BENCHMARKS = {
   'tp6m-bing-restaurants': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-bing-restaurants-geckoview',
@@ -758,7 +763,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-bing-restaurants-geckoview',
@@ -779,7 +784,7 @@ export const BENCHMARKS = {
   'tp6m-ebay-kleinanzeigen': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-ebay-kleinanzeigen-geckoview',
@@ -787,7 +792,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-ebay-kleinanzeigen-geckoview',
@@ -808,7 +813,7 @@ export const BENCHMARKS = {
   'tp6m-ebay-kleinanzeigen-search': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-ebay-kleinanzeigen-search-geckoview',
@@ -816,7 +821,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-ebay-kleinanzeigen-search-geckoview',
@@ -837,7 +842,7 @@ export const BENCHMARKS = {
   'tp6m-instagram': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-instagram-geckoview',
@@ -845,7 +850,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-instagram-geckoview',
@@ -866,7 +871,7 @@ export const BENCHMARKS = {
   'tp6m-google-maps': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-google-maps-geckoview',
@@ -874,7 +879,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-google-maps-geckoview',
@@ -895,7 +900,7 @@ export const BENCHMARKS = {
   'tp6m-google-restaurants': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-google-restaurants-geckoview',
@@ -903,7 +908,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-google-restaurants-geckoview',
@@ -924,7 +929,7 @@ export const BENCHMARKS = {
   'tp6m-booking': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-booking-geckoview',
@@ -932,7 +937,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-booking-geckoview',
@@ -953,7 +958,7 @@ export const BENCHMARKS = {
   'tp6m-cnn-ampstories': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-cnn-ampstories-geckoview',
@@ -961,7 +966,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-cnn-ampstories-geckoview',
@@ -982,7 +987,7 @@ export const BENCHMARKS = {
   'tp6m-amazon-search': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-amazon-search-geckoview',
@@ -990,7 +995,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-amazon-search-geckoview',
@@ -1011,7 +1016,7 @@ export const BENCHMARKS = {
   'tp6m-wikipedia': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-wikipedia-geckoview',
@@ -1019,7 +1024,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-wikipedia-geckoview',
@@ -1040,7 +1045,7 @@ export const BENCHMARKS = {
   'tp6m-youtube-watch': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-youtube-watch-geckoview',
@@ -1048,7 +1053,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-youtube-watch-geckoview',
@@ -1069,7 +1074,7 @@ export const BENCHMARKS = {
   'tp6m-bbc': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-bbc-geckoview',
@@ -1077,7 +1082,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-bbc-geckoview',
@@ -1098,7 +1103,7 @@ export const BENCHMARKS = {
   'tp6m-reddit': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-reddit-geckoview',
@@ -1106,7 +1111,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-reddit-geckoview',
@@ -1127,7 +1132,7 @@ export const BENCHMARKS = {
   'tp6m-stackoverflow': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-stackoverflow-geckoview',
@@ -1135,7 +1140,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-stackoverflow-geckoview',
@@ -1156,7 +1161,7 @@ export const BENCHMARKS = {
   'tp6m-imdb': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-imdb-geckoview',
@@ -1164,7 +1169,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-imdb-geckoview',
@@ -1185,7 +1190,7 @@ export const BENCHMARKS = {
   'tp6m-jianshu': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-jianshu-geckoview',
@@ -1193,7 +1198,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-jianshu-geckoview',
@@ -1214,7 +1219,7 @@ export const BENCHMARKS = {
   'tp6m-microsoft-support': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-microsoft--supportgeckoview',
@@ -1222,7 +1227,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-microsoft--supportgeckoview',
@@ -1243,7 +1248,7 @@ export const BENCHMARKS = {
   'tp6m-allrecipes': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-allrecipes-geckoview',
@@ -1251,7 +1256,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-allrecipes-geckoview',
@@ -1272,7 +1277,7 @@ export const BENCHMARKS = {
   'tp6m-espn': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-espn-geckoview',
@@ -1280,7 +1285,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-espn-geckoview',
@@ -1301,7 +1306,7 @@ export const BENCHMARKS = {
   'tp6m-web-de': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-web-de-geckoview',
@@ -1309,7 +1314,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-web-de-geckoview',
@@ -1330,7 +1335,7 @@ export const BENCHMARKS = {
   'tp6m-facebook-cristiano': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-facebook-cristiano-geckoview',
@@ -1338,7 +1343,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-facebook-cristiano-geckoview',
@@ -1359,7 +1364,7 @@ export const BENCHMARKS = {
   'tp6m-aframeio-animation': {
     compare: {
       motoG5: {
-        color: '#e55525',
+        color: COLORS.chromium,
         label: 'Moto G5 (armv7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-aframeio-animation-geckoview',
@@ -1367,7 +1372,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-g5-7-0-arm7-api-16',
       },
       pixel2arm7: {
-        color: '#ffcd02',
+        color: COLORS.firefox,
         label: 'Pixel 2 (arm7)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-aframeio-animation-geckoview',
@@ -1452,7 +1457,7 @@ export const CONFIG = {
   default: {
     landingPath: '/win10/overview?numDays=60',
     timeRange: 60, // # days
-    colors: ['#e55525', '#ffcd02'],
+    colors: [COLORS.firefox, COLORS.chromium],
     labels: ['Firefox', 'Chromium'],
   },
   platformTransformations: {
