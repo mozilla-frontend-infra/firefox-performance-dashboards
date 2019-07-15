@@ -24,6 +24,7 @@
     "@material-ui/lab": "3.0.0-alpha.18",
     "@mozilla-frontend-infra/perf-goggles": "^3.0.0",
     "chart.js": "^2",
+    "lodash": "^4.17.13",
     "prop-types": "^15",
     "query-string": "^6",
     "react": "^16",
