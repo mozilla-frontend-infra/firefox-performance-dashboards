@@ -1,6 +1,9 @@
 [![Build status][travis-image]][travis-url]
 
 # Firefox performance dashboard
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/mozilla-frontend-infra/firefox-performance-dashboard.svg)](https://greenkeeper.io/)
+
 The Firefox performance dashboard allows seeing what Firefox's current performance is.
 
 You can file issues in [here](https://github.com/mozilla-frontend-infra/firefox-performance-dashboard/issues).
