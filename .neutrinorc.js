@@ -1,21 +1,25 @@
+/* eslint-disable import/no-extraneous-dependencies */
+const airbnb = require('@neutrinojs/airbnb');
+const react = require('@neutrinojs/react');
+const jest = require('@neutrinojs/jest');
+
 module.exports = {
   options: {
     root: __dirname,
   },
   use: [
-    '@neutrinojs/airbnb',
-    [
-      '@neutrinojs/react',
-      {
-        html: {
-          title: 'Firefox Performance Dashboard',
+    airbnb({
+      eslint: {
+        rules: {
+          'react/prop-types': 0,
         },
-        // Read https://stackoverflow.com/a/36623117
-        // This is the key to making React Router work with neutrino
-        // Fix issue with nested routes e.g /index/garbage
-        publicPath: '/',
       },
-    ],
-    '@neutrinojs/jest',
+    }),
+    react({
+      html: {
+        title: 'Firefox Performance Dashboard',
+      },
+    }),
+    jest(),
   ],
 };
