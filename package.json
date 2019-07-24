@@ -34,8 +34,8 @@
     "react-hot-loader": "^4",
     "react-loadable": "^5.5.0",
     "react-router-dom": "^4",
-    "typeface-roboto": "^0.0.75",
-    "snyk": "^1.197.0"
+    "snyk": "^1.197.0",
+    "typeface-roboto": "^0.0.75"
   },
   "devDependencies": {
     "@neutrinojs/airbnb": "9.0.0-rc.3",
