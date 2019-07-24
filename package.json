@@ -23,7 +23,7 @@
   "dependencies": {
     "@material-ui/core": "^3",
     "@material-ui/icons": "^3",
-    "@material-ui/lab": "3.0.0-alpha.18",
+    "@material-ui/lab": "3.0.0-alpha.30",
     "@mozilla-frontend-infra/perf-goggles": "^3.0.0",
     "chart.js": "^2",
     "prop-types": "^15",
