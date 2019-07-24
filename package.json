@@ -38,19 +38,19 @@
     "snyk": "^1.197.0"
   },
   "devDependencies": {
-    "@neutrinojs/airbnb": "^9.0.0-rc.0",
-    "@neutrinojs/jest": "^9.0.0-rc.0",
-    "@neutrinojs/react": "^9.0.0-rc.0",
-    "eslint": "^5",
-    "husky": "^0.14.3",
-    "jest": "^24",
-    "lint-staged": "^7.1.2",
-    "neutrino": "^9.0.0-rc.0",
-    "raf": "^3.4.0",
-    "react-test-renderer": "^16.4.1",
-    "webpack": "^4",
-    "webpack-cli": "^3",
-    "webpack-dev-server": "^3.1.11"
+    "@neutrinojs/airbnb": "9.0.0-rc.0",
+    "@neutrinojs/jest": "9.0.0-rc.0",
+    "@neutrinojs/react": "9.0.0-rc.0",
+    "eslint": "5.16.0",
+    "husky": "0.14.3",
+    "jest": "24.7.1",
+    "lint-staged": "7.3.0",
+    "neutrino": "9.0.0-rc.0",
+    "raf": "3.4.1",
+    "react-test-renderer": "16.8.6",
+    "webpack": "4.30.0",
+    "webpack-cli": "3.3.0",
+    "webpack-dev-server": "3.3.1"
   },
   "snyk": true
 }
