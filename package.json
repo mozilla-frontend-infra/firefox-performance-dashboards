@@ -38,7 +38,7 @@
     "snyk": "^1.197.0"
   },
   "devDependencies": {
-    "@neutrinojs/airbnb": "9.0.0-rc.0",
+    "@neutrinojs/airbnb": "9.0.0-rc.3",
     "@neutrinojs/jest": "9.0.0-rc.0",
     "@neutrinojs/react": "9.0.0-rc.0",
     "eslint": "5.16.0",
