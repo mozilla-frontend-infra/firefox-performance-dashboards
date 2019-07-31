@@ -1606,7 +1606,7 @@ export const CONFIG = {
     },
     mac: {
       label: 'Mac OS X',
-      platform: 'osx-10-10',
+      platform: 'macosx1014-64-shippable',
       benchmarks: DEFAULT_SUITES,
     },
     win7: {
