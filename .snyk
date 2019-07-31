@@ -8,17 +8,3 @@ patch:
         patched: '2019-07-22T20:08:50.470Z'
     - react-hot-loader > lodash:
         patched: '2019-07-22T20:08:50.470Z'
-    - react-chartjs-2 > lodash:
-        patched: '2019-07-23T12:50:40.115Z'
-    - react-hot-loader > lodash:
-        patched: '2019-07-23T12:50:40.115Z'
-    - snyk > inquirer > lodash:
-        patched: '2019-07-23T12:50:40.115Z'
-    - snyk > snyk-nodejs-lockfile-parser > lodash:
-        patched: '2019-07-23T12:50:40.115Z'
-    - snyk > @snyk/dep-graph > graphlib > lodash:
-        patched: '2019-07-23T12:50:40.115Z'
-    - snyk > snyk-go-plugin > graphlib > lodash:
-        patched: '2019-07-23T12:50:40.115Z'
-    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
-        patched: '2019-07-23T12:50:40.115Z'
