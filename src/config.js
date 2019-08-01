@@ -554,6 +554,18 @@ export const BENCHMARKS = {
     },
     label: 'Tp6 Instagram',
   },
+  'tp6-twitch': {
+    compare: {
+      'raptor-tp6-twitch-firefox': {
+        color: COLORS.firefox,
+        label: 'Firefox',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-twitch-firefox',
+        option: 'opt',
+      },
+    },
+    label: 'Tp6 Twitch',
+  },
   'tp6-twitter': {
     compare: {
       'raptor-tp6-twitter-firefox': {
@@ -625,6 +637,18 @@ export const BENCHMARKS = {
       },
     },
     label: 'Tp6 Linkedin',
+  },
+  'tp6-netflix': {
+    compare: {
+      'raptor-tp6-netflix-firefox': {
+        color: COLORS.firefox,
+        label: 'Firefox',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-netflix-firefox',
+        option: 'opt',
+      },
+    },
+    label: 'Tp6 Netflix',
   },
   'tp6-office': {
     compare: {
@@ -1563,6 +1587,7 @@ const DEFAULT_SUITES = [
   'tp6-imgur',
   'tp6-instagram',
   'tp6-linkedin',
+  'tp6-netflix',
   'tp6-microsoft',
   'tp6-office',
   'tp6-outlook',
@@ -1572,6 +1597,7 @@ const DEFAULT_SUITES = [
   'tp6-sheets',
   'tp6-slides',
   'tp6-tumblr',
+  'tp6-twitch',
   'tp6-twitter',
   'tp6-wikia',
   'tp6-wikipedia',
