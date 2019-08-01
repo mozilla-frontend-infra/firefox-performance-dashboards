@@ -1342,7 +1342,7 @@
       "title": "SunSpider",
       "configUID": "sunspider"
     },
-    "ares6-overview": {
+    "ares6-jsshell-overview": {
       "chartJsData": {
         "datasets": [
           {
@@ -1460,7 +1460,7 @@
       },
       "jointUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760205,1,11&series=mozilla-central,1760236,1,11",
       "title": "Ares6 (JS shell)",
-      "configUID": "ares6"
+      "configUID": "ares6-jsshell"
     },
     "web-tooling-overview": {
       "chartJsData": {
