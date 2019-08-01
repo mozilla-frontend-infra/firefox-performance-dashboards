@@ -1619,9 +1619,9 @@ export const CONFIG = {
       platform: 'windows10-64',
       benchmarks: DEFAULT_SUITES,
     },
-    win10Laptops: {
-      label: 'Windows 10 64bit (laptops)',
-      platform: 'windows10-64-ux',
+    win10ref2017: {
+      label: 'Windows 10 64bit (2017 reference laptop)',
+      platform: 'windows10-64-ref-hw-2017',
       benchmarks: DEFAULT_SUITES,
     },
     windows10Aarch64: {
