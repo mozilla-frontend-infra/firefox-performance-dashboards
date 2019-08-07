@@ -1075,6 +1075,35 @@ export const BENCHMARKS = {
     },
     label: 'Tp6 Booking',
   },
+  'tp6m-cnn': {
+    compare: {
+      motoG5: {
+        color: COLORS.firefox,
+        label: 'Moto G5 (armv7)',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6m-cnn-geckoview',
+        option: 'pgo',
+        platform: 'android-hw-g5-7-0-arm7-api-16',
+      },
+      pixel2arm7: {
+        color: COLORS.chromium,
+        label: 'Pixel 2 (arm7)',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6m-cnn-geckoview',
+        option: 'pgo',
+        platform: 'android-hw-p2-8-0-arm7-api-16',
+      },
+      pixel2arm64: {
+        color: '#45a1ff',
+        label: 'Pixel 2 (ARM64)',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6m-cnn-geckoview',
+        option: 'opt',
+        platform: 'android-hw-p2-8-0-android-aarch64',
+      },
+    },
+    label: 'Tp6 CNN',
+  },
   'tp6m-cnn-ampstories': {
     compare: {
       motoG5: {
@@ -1102,7 +1131,7 @@ export const BENCHMARKS = {
         platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
-    label: 'Tp6 CNN',
+    label: 'Tp6 CNN AMP Stories',
   },
   'tp6m-amazon-search': {
     compare: {
@@ -1522,6 +1551,7 @@ const ANDROID_SUITES = [
   'tp6m-bing',
   'tp6m-bing-restaurants',
   'tp6m-booking',
+  'tp6m-cnn',
   'tp6m-cnn-ampstories',
   'tp6m-ebay-kleinanzeigen',
   'tp6m-ebay-kleinanzeigen-search',
