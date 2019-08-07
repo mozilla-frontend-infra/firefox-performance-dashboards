@@ -477,17 +477,17 @@ export const BENCHMARKS = {
     },
     label: 'Tp6 Imgur',
   },
-  'tp6-wikia': {
+  'tp6-fandom': {
     compare: {
-      'raptor-tp6-wikia-firefox': {
+      'raptor-tp6-fandom-firefox': {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-wikia-firefox',
+        suite: 'raptor-tp6-fandom-firefox',
         option: 'opt',
       },
     },
-    label: 'Tp6 Wikia',
+    label: 'Tp6 Fandom',
   },
   'tp6-bing': {
     compare: {
@@ -1649,7 +1649,7 @@ const DEFAULT_SUITES = [
   'tp6-tumblr',
   'tp6-twitch',
   'tp6-twitter',
-  'tp6-wikia',
+  'tp6-fandom',
   'tp6-wikipedia',
   'tp6-yahoo-mail',
   'tp6-yahoo-news',
