@@ -1881,7 +1881,7 @@
       "suite": "ares6-v8"
     },
     "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760205,1,11",
-    "configUID": "ares6",
+    "configUID": "ares6-jsshell",
     "color": "#ffcd02",
     "label": "Chromium v8",
     "suite": "ares6-v8"
@@ -2080,7 +2080,7 @@
       "suite": "ares6-sm"
     },
     "perfherderUrl": "https://treeherder.mozilla.org/perf.html#/graphs?timerange=1209600&series=mozilla-central,1760236,1,11",
-    "configUID": "ares6",
+    "configUID": "ares6-jsshell",
     "color": "#e55525",
     "label": "SpiderMonkey",
     "suite": "ares6-sm"

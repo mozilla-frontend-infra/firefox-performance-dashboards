@@ -257,7 +257,7 @@ export const BENCHMARKS = {
     labels: ['Firefox (tiering)', 'Firefox (wasm-baseline)', 'Firefox (wasm-ion)', 'Chromium'],
     label: 'WebAssembly Godot',
   },
-  ares6: {
+  'ares6-jsshell': {
     compare: {
       'ares6-sm': {
         color: COLORS.firefox,
@@ -276,6 +276,25 @@ export const BENCHMARKS = {
     },
     labels: ['SpiderMonkey', 'Chromium v8'],
     label: 'Ares6 (JS shell)',
+  },
+  ares6: {
+    compare: {
+      'raptor-ares6-firefox': {
+        color: COLORS.firefox,
+        label: 'Firefox',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-ares6-firefox',
+        option: 'opt',
+      },
+      'raptor-ares6-chromium': {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-ares6-chromium',
+        option: 'opt',
+      },
+    },
+    label: 'Ares6',
   },
   octane: {
     compare: {
@@ -1598,6 +1617,7 @@ const ANDROID_SUITES = [
 ];
 
 const DEFAULT_SUITES = [
+  'ares6',
   'kraken',
   'motionmark-animometer',
   'motionmark-htmlsuite',
@@ -1656,7 +1676,7 @@ export const CONFIG = {
       platform: 'linux64',
       benchmarks: DEFAULT_SUITES
         .concat([
-          'assorted-dom', 'ares6', 'octane', 'six-speed',
+          'assorted-dom', 'ares6-jsshell', 'octane', 'six-speed',
           'sunspider-jsbench', 'unity-webgl', 'wasm-misc',
           'web-tooling']),
     },
