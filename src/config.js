@@ -371,11 +371,18 @@ export const BENCHMARKS = {
   },
   'tp6-amazon': {
     compare: {
-      'raptor-tp6-amazon-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-amazon-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-amazon-chromium',
         option: 'opt',
       },
     },
@@ -383,11 +390,18 @@ export const BENCHMARKS = {
   },
   'tp6-docs': {
     compare: {
-      'raptor-tp6-docs-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-docs-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-docs-chromium',
         option: 'opt',
       },
     },
@@ -395,11 +409,18 @@ export const BENCHMARKS = {
   },
   'tp6-facebook': {
     compare: {
-      'raptor-tp6-facebook-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-facebook-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-facebook-chromium',
         option: 'opt',
       },
     },
@@ -407,11 +428,18 @@ export const BENCHMARKS = {
   },
   'tp6-google': {
     compare: {
-      'raptor-tp6-google-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-google-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-google-chromium',
         option: 'opt',
       },
     },
@@ -419,11 +447,18 @@ export const BENCHMARKS = {
   },
   'tp6-sheets': {
     compare: {
-      'raptor-tp6-sheets-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-sheets-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-sheets-chromium',
         option: 'opt',
       },
     },
@@ -431,11 +466,18 @@ export const BENCHMARKS = {
   },
   'tp6-slides': {
     compare: {
-      'raptor-tp6-slides-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-slides-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-slides-chromium',
         option: 'opt',
       },
     },
@@ -443,11 +485,18 @@ export const BENCHMARKS = {
   },
   'tp6-youtube': {
     compare: {
-      'raptor-tp6-youtube-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-youtube-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-youtube-chromium',
         option: 'opt',
       },
     },
@@ -455,11 +504,18 @@ export const BENCHMARKS = {
   },
   'tp6-imdb': {
     compare: {
-      'raptor-tp6-imdb-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-imdb-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-imdb-chromium',
         option: 'opt',
       },
     },
@@ -467,11 +523,18 @@ export const BENCHMARKS = {
   },
   'tp6-imgur': {
     compare: {
-      'raptor-tp6-imgur-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-imgur-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-imgur-chromium',
         option: 'opt',
       },
     },
@@ -479,11 +542,18 @@ export const BENCHMARKS = {
   },
   'tp6-fandom': {
     compare: {
-      'raptor-tp6-fandom-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-fandom-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-fandom-chromium',
         option: 'opt',
       },
     },
@@ -491,11 +561,18 @@ export const BENCHMARKS = {
   },
   'tp6-bing': {
     compare: {
-      'raptor-tp6-bing-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-bing-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-bing-chromium',
         option: 'opt',
       },
     },
@@ -503,11 +580,18 @@ export const BENCHMARKS = {
   },
   'tp6-yandex': {
     compare: {
-      'raptor-tp6-yandex-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-yandex-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-yandex-chromium',
         option: 'opt',
       },
     },
@@ -515,11 +599,18 @@ export const BENCHMARKS = {
   },
   'tp6-apple': {
     compare: {
-      'raptor-tp6-apple-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-apple-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-apple-chromium',
         option: 'opt',
       },
     },
@@ -527,11 +618,18 @@ export const BENCHMARKS = {
   },
   'tp6-microsoft': {
     compare: {
-      'raptor-tp6-microsoft-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-microsoft-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-microsoft-chromium',
         option: 'opt',
       },
     },
@@ -539,11 +637,18 @@ export const BENCHMARKS = {
   },
   'tp6-reddit': {
     compare: {
-      'raptor-tp6-reddit-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-reddit-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-reddit-chromium',
         option: 'opt',
       },
     },
@@ -551,11 +656,18 @@ export const BENCHMARKS = {
   },
   'tp6-yahoo-news': {
     compare: {
-      'raptor-tp6-yahoo-news-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-yahoo-news-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-yahoo-news-chromium',
         option: 'opt',
       },
     },
@@ -563,11 +675,18 @@ export const BENCHMARKS = {
   },
   'tp6-instagram': {
     compare: {
-      'raptor-tp6-instagram-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-instagram-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-instagram-chromium',
         option: 'opt',
       },
     },
@@ -575,11 +694,18 @@ export const BENCHMARKS = {
   },
   'tp6-twitch': {
     compare: {
-      'raptor-tp6-twitch-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-twitch-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-twitch-chromium',
         option: 'opt',
       },
     },
@@ -587,11 +713,18 @@ export const BENCHMARKS = {
   },
   'tp6-twitter': {
     compare: {
-      'raptor-tp6-twitter-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-twitter-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-twitter-chromium',
         option: 'opt',
       },
     },
@@ -599,11 +732,18 @@ export const BENCHMARKS = {
   },
   'tp6-yahoo-mail': {
     compare: {
-      'raptor-tp6-yahoo-mail-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-yahoo-mail-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-yahoo-mail-chromium',
         option: 'opt',
       },
     },
@@ -611,7 +751,7 @@ export const BENCHMARKS = {
   },
   'tp6-binast-instagram': {
     compare: {
-      'raptor-tp6-binast-instagram-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
@@ -623,11 +763,18 @@ export const BENCHMARKS = {
   },
   'tp6-ebay': {
     compare: {
-      'raptor-tp6-ebay-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-ebay-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-ebay-chromium',
         option: 'opt',
       },
     },
@@ -635,11 +782,18 @@ export const BENCHMARKS = {
   },
   'tp6-google-mail': {
     compare: {
-      'raptor-tp6-google-mail-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-google-mail-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-google-mail-chromium',
         option: 'opt',
       },
     },
@@ -647,11 +801,18 @@ export const BENCHMARKS = {
   },
   'tp6-linkedin': {
     compare: {
-      'raptor-tp6-linkedin-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-linkedin-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-linkedin-chromium',
         option: 'opt',
       },
     },
@@ -659,11 +820,18 @@ export const BENCHMARKS = {
   },
   'tp6-netflix': {
     compare: {
-      'raptor-tp6-netflix-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-netflix-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-netflix-chromium',
         option: 'opt',
       },
     },
@@ -671,11 +839,18 @@ export const BENCHMARKS = {
   },
   'tp6-office': {
     compare: {
-      'raptor-tp6-office-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-office-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-office-chromium',
         option: 'opt',
       },
     },
@@ -683,11 +858,18 @@ export const BENCHMARKS = {
   },
   'tp6-outlook': {
     compare: {
-      'raptor-tp6-outlook-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-outlook-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-outlook-chromium',
         option: 'opt',
       },
     },
@@ -695,11 +877,18 @@ export const BENCHMARKS = {
   },
   'tp6-paypal': {
     compare: {
-      'raptor-tp6-paypal-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-paypal-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-paypal-chromium',
         option: 'opt',
       },
     },
@@ -707,11 +896,18 @@ export const BENCHMARKS = {
   },
   'tp6-pinterest': {
     compare: {
-      'raptor-tp6-pinterest-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-pinterest-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-pinterest-chromium',
         option: 'opt',
       },
     },
@@ -719,11 +915,18 @@ export const BENCHMARKS = {
   },
   'tp6-tumblr': {
     compare: {
-      'raptor-tp6-tumblr-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-tumblr-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-tumblr-chromium',
         option: 'opt',
       },
     },
@@ -731,11 +934,18 @@ export const BENCHMARKS = {
   },
   'tp6-wikipedia': {
     compare: {
-      'raptor-tp6-wikipedia-firefox': {
+      firefox: {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6-wikipedia-firefox',
+        option: 'opt',
+      },
+      chromium: {
+        color: COLORS.chromium,
+        label: 'Chromium',
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: 'raptor-tp6-wikipedia-chromium',
         option: 'opt',
       },
     },
@@ -1667,8 +1877,11 @@ export const CONFIG = {
     labels: ['Firefox', 'Chromium'],
   },
   platformTransformations: {
-    // If the suite ends with the patterm modify the platform
-    '-chromium': platform => `${platform}-shippable`,
+    // If the suite ends with the pattern modify the platform
+    '-chromium': function appendShippable(platform) {
+      const suffix = '-shippable';
+      return platform.endsWith(suffix) ? platform : `${platform}${suffix}`;
+    },
   },
   views: {
     linux64: {
