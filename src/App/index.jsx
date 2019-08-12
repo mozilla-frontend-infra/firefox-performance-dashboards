@@ -19,6 +19,7 @@ const styles = () => ({
 const App = ({ classes }) => (
   <BrowserRouter>
     <Switch>
+      <Redirect from="/win10Laptops/:benchmark" to="/win10ref2017/:benchmark" />
       <Route
         path="/:platform/:benchmark"
         render={({ match }) => {
