@@ -81,11 +81,13 @@ const prepareData = (benchmarks) => {
       newData.graphs[uid].jointUrl += `&series=${series}`;
     }
 
-    newData.graphs[uid].chartJsData.datasets.push({
-      label,
-      backgroundColor: color,
-      data: dataToChartJSformat(data),
-    });
+    if (data) {
+      newData.graphs[uid].chartJsData.datasets.push({
+        label,
+        backgroundColor: color,
+        data: dataToChartJSformat(data),
+      });
+    }
   });
 
   return newData;
