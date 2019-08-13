@@ -1929,7 +1929,7 @@ const DEFAULT_SUITES = [
 export const CONFIG = {
   default: {
     landingPath: '/win10/overview?numDays=60',
-    timeRange: 60, // # days
+    dayRange: 60, // # days
     colors: [COLORS.firefox, COLORS.chromium],
     labels: ['Firefox', 'Chromium'],
   },
@@ -1939,6 +1939,7 @@ export const CONFIG = {
       const suffix = '-shippable';
       return platform.endsWith(suffix) ? platform : `${platform}${suffix}`;
     },
+
   },
   views: {
     linux64: {
@@ -1984,3 +1985,44 @@ export const CONFIG = {
 
 // Upper limit for the time range slider measured in days
 export const TIMERANGE_UPPER_LIMIT = 365;
+
+
+const platformAdjustments = (seriesConfig, viewConfig) => {
+  // The Android benchmarks have a platform defined per series
+  if (!seriesConfig.platform) {
+    let { platform } = viewConfig;
+    // XXX: We need to refactor this
+    if (seriesConfig.suite.endsWith('-chromium')) {
+      platform = `${platform}-shippable`;
+    }
+    // eslint-disable-next-line no-param-reassign
+    seriesConfig.platform = platform;
+  }
+};
+
+// Given a view configuration return a data structure with the data
+// structure needed to query Treeherder
+export const queryInfo = (viewConfig, benchmark) => {
+  const info = {};
+  const { benchmarks } = viewConfig;
+  if (benchmark === 'overview' && benchmarks) {
+    benchmarks.forEach((configUID) => {
+      info[configUID] = BENCHMARKS[configUID];
+      info[configUID].includeSubtests = false;
+      info[configUID].benchmarkUID = configUID;
+      // We need to set the platform for fetching data from Treeherder
+      Object.values(BENCHMARKS[configUID].compare).forEach((seriesConfig) => {
+        platformAdjustments(seriesConfig, viewConfig);
+      });
+    });
+  } else {
+    Object.values(BENCHMARKS[benchmark].compare).forEach((seriesConfig) => {
+      info[benchmark] = BENCHMARKS[benchmark];
+      info[benchmark].includeSubtests = true;
+      info[benchmark].benchmarkUID = benchmark;
+      platformAdjustments(seriesConfig, viewConfig);
+    });
+  }
+
+  return info;
+};
