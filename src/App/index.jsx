@@ -19,13 +19,15 @@ const styles = () => ({
 const App = ({ classes }) => (
   <BrowserRouter>
     <Switch>
+      <Redirect from="/win10Laptops/:benchmark" to="/win10ref2017/:benchmark" />
       <Route
         path="/:platform/:benchmark"
         render={({ match }) => {
           const { platform, benchmark } = match.params;
           // eslint-disable-next-line no-restricted-globals
           const searchParams = new URLSearchParams(location.search);
-          const timeRange = Math.round(searchParams.get('numDays'));
+          const numDays = searchParams.get('numDays');
+          const timeRange = numDays ? Math.round(numDays) : CONFIG.default.timeRange;
           if (!validCombination(platform, benchmark, timeRange)) {
             return <Redirect to={CONFIG.default.landingPath} />;
           }

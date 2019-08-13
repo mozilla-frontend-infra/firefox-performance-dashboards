@@ -12,9 +12,15 @@ const styles = () => ({
 });
 
 const ChartJSWrapper = ({ classes, chartJsData, chartJsOptions }) => (
-  <div className={classes.chartJSWrapper}>
-    <Chart type="scatter" data={chartJsData} options={chartJsOptions} />
-  </div>
+  chartJsData.datasets.length !== 0 ? (
+    <div className={classes.chartJSWrapper}>
+      <Chart type="scatter" data={chartJsData} options={chartJsOptions} />
+    </div>
+  ) : (
+    <div className={classes.chartJSWrapper}>
+      <span>No data to plot</span>
+    </div>
+  )
 );
 
 ChartJSWrapper.propTypes = {

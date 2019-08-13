@@ -173,6 +173,59 @@ export const BENCHMARKS = {
     },
     label: 'Unity WebGL',
   },
+  displaylist_mutate: {
+    compare: {
+      'displaylist-firefox': {
+        color: COLORS.firefox,
+        label: 'Firefox',
+        frameworkId: TALOS_FRAMEWORK_ID,
+        suite: 'displaylist_mutate',
+        option: 'opt',
+        extraOptions: ['e10s', 'stylo'],
+      },
+    },
+    label: 'Displaylist mutate',
+  },
+  glvideo: {
+    compare: {
+      glvideo: {
+        color: COLORS.firefox,
+        label: 'Firefox',
+        frameworkId: TALOS_FRAMEWORK_ID,
+        suite: 'glvideo',
+        test: 'Mean tick time across 100 ticks: ',
+        option: 'opt',
+        extraOptions: ['e10s', 'stylo'],
+      },
+    },
+    label: 'Gl Video',
+  },
+  rasterflood_gradient: {
+    compare: {
+      rasterflood_gradient: {
+        color: COLORS.firefox,
+        label: 'Firefox',
+        frameworkId: TALOS_FRAMEWORK_ID,
+        suite: 'rasterflood_gradient',
+        option: 'opt',
+        extraOptions: ['e10s', 'stylo'],
+      },
+    },
+    label: 'Rasterflood (Gradient)',
+  },
+  rasterflood_svg: {
+    compare: {
+      rasterflood: {
+        color: COLORS.firefox,
+        label: 'Firefox',
+        frameworkId: TALOS_FRAMEWORK_ID,
+        suite: 'rasterflood_svg',
+        option: 'opt',
+        extraOptions: ['e10s', 'stylo'],
+      },
+    },
+    label: 'Rasterflood SVG',
+  },
   'wasm-misc': {
     compare: {
       'raptor-wasm-misc-firefox': {
@@ -1828,9 +1881,13 @@ const ANDROID_SUITES = [
 
 const DEFAULT_SUITES = [
   'ares6',
+  'displaylist_mutate',
+  'glvideo',
   'kraken',
   'motionmark-animometer',
   'motionmark-htmlsuite',
+  'rasterflood_gradient',
+  'rasterflood_svg',
   'speedometer',
   'stylebench',
   'sunspider',
@@ -1908,9 +1965,9 @@ export const CONFIG = {
       platform: 'windows10-64',
       benchmarks: DEFAULT_SUITES,
     },
-    win10Laptops: {
-      label: 'Windows 10 64bit (laptops)',
-      platform: 'windows10-64-ux',
+    win10ref2017: {
+      label: 'Windows 10 64bit (2017 reference laptop)',
+      platform: 'windows10-64-ref-hw-2017',
       benchmarks: DEFAULT_SUITES,
     },
     windows10Aarch64: {
