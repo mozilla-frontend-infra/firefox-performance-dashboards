@@ -9,9 +9,7 @@
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development",
     "test": "jest",
-    "lint": "eslint --cache --ext mjs,jsx,js --format codeframe \".*.js\" src test",
-    "precommit": "lint-staged",
-    "prepush": "yarn test"
+    "lint": "eslint --cache --ext mjs,jsx,js --format codeframe \".*.js\" src test"
   },
   "lint-staged": {
     "*.js[x]": [
@@ -48,5 +46,11 @@
     "webpack": "4.39.1",
     "webpack-cli": "3.3.6",
     "webpack-dev-server": "3.8.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn test"
+    }
   }
 }
