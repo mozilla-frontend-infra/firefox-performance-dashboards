@@ -7,7 +7,7 @@ const sortByLabel = (a, b) => {
   return a.label <= b.label ? -1 : 1;
 };
 
-const dataToChartJSformat = data => data.map(({ datetime, value }) => ({
+export const dataToChartJSformat = data => data.map(({ datetime, value }) => ({
   x: datetime,
   y: value,
 }));
@@ -40,13 +40,10 @@ const chartJsOptions = (reverse, scaleLabel) => ({
   },
 });
 
-const generateChartJsOptions = (configUID, meta) => {
+export const generateChartJsOptions = (meta) => {
   const higherIsBetter = (meta.lower_is_better === false);
   const reversed = higherIsBetter;
-  let yLabel = higherIsBetter ? 'Score' : 'Execution time (ms)';
-  if (BENCHMARKS[configUID].scaleLabel) {
-    yLabel = BENCHMARKS[configUID].scaleLabel;
-  }
+  const yLabel = higherIsBetter ? 'Score' : 'Execution time (ms)';
   return chartJsOptions(reversed, yLabel);
 };
 
