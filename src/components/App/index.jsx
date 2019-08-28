@@ -7,8 +7,7 @@ import Footer from '../Footer';
 import Navigation from '../Navigation';
 import PerfherderGraph from '../PerfherderGraph';
 // import fetchData from '../../utils/fetchData';
-import overviewInfo from '../../utils/overviewInfo';
-import { convertToSeconds } from '../../utils/timeRangeUtils';
+import { queryInfo } from '../../config';
 
 const styles = () => ({
   container: {
@@ -31,20 +30,18 @@ class App extends Component {
 
   state = {
     benchmarkData: {},
-    benchmarks: [],
+    benchmarks: {},
   };
 
   constructor(props) {
     super(props);
-    if (props.benchmark === 'overview') {
-      this.state.benchmarks = overviewInfo(props.viewPlatform);
-    }
+    this.state.benchmarks = queryInfo(props.viewConfig, props.benchmark, props.dayRange);
   }
 
   componentDidMount() {
     this.mounted = true;
-    const { viewPlatform, benchmark, dayRange } = this.props;
-    this.fetchData(viewPlatform, benchmark, dayRange);
+    // const { viewPlatform, benchmark, dayRange } = this.props;
+    // this.fetchData(viewPlatform, benchmark, dayRange);
   }
 
   componentDidUpdate(prevProps) {
@@ -64,14 +61,14 @@ class App extends Component {
   // async fetchData(viewPlatform, benchmark, dayRange) {
   fetchData() {
     if (this.mounted) {
-      this.setState({ benchmarkData: {} });
+      // this.setState({ benchmarks: {} });
       // this.setState({ benchmarkData: await fetchData(viewPlatform, benchmark, dayRange) });
     }
   }
 
   render() {
     const {
-      classes, benchmark, viewConfig, viewPlatform, dayRange,
+      classes, benchmark, viewPlatform, dayRange,
     } = this.props;
     // eslint-disable-next-line
     const { benchmarkData, benchmarks } = this.state;
@@ -83,48 +80,19 @@ class App extends Component {
           benchmark={benchmark}
           dayRange={dayRange}
         />
-        { benchmark === 'overview' ? (
-          Object.keys(benchmarks).sort().map((benchmarkUID) => {
-            const benchmarkConfig = benchmarks[benchmarkUID];
-            // We need to set the platform for fetching data from Treeherder
-            Object.values(benchmarkConfig.compare).forEach((seriesConfig) => {
-              let { platform } = viewConfig;
-              // XXX: We need to refactor this
-              if (seriesConfig.suite.endsWith('-chromium')) {
-                platform = `${platform}-shippable`;
-              }
-              // eslint-disable-next-line no-param-reassign
-              seriesConfig.platform = platform;
-            });
-            return (
-              <div key={benchmarkConfig.label}>
-                <PerfherderGraph
-                  extraLink={`/${viewPlatform}/${benchmarkUID}?numDays=${dayRange}`}
-                  title={benchmarkConfig.label}
-                  series={benchmarkConfig.compare}
-                  options={{ timeRange: convertToSeconds(dayRange) }}
-                />
-              </div>
-            );
-            // <div key={title}>
-            //   <h2 className={classes.benchmarkTitle}>{title}</h2>
-            //   <a href={jointUrl} target="_blank" rel="noopener noreferrer">
-            //     <LinkIcon className={classes.linkIcon} />
-            //   </a>
-            //   {overviewMode ? (
-            //     <Link to={`/${platform}/${configUID}?numDays=60`} rel="noopener noreferrer">
-            //       <ArrowDownward className={classes.linkIcon} />
-            //     </Link>
-            //   ) : null}
-            //   <ChartJSWrapper
-            //     chartJsData={chartJsData}
-            //     chartJsOptions={chartJsOptions}
-            //   />
-            // </div>
-          })
-        ) : (
-          <div />
-        )}
+        {Object.keys(benchmarks).sort().map((benchmarkUID) => {
+          const { compare, label, options } = benchmarks[benchmarkUID];
+          return (
+            <div key={label}>
+              <PerfherderGraph
+                extraLink={`/${viewPlatform}/${benchmarkUID}?numDays=${dayRange}`}
+                title={label}
+                series={compare}
+                options={options}
+              />
+            </div>
+          );
+        })}
         <Footer />
       </div>
     );

@@ -16,6 +16,16 @@ const ChartJSWrapper = Loadable({
   loading: Loading,
 });
 
+const sortOverviewFirst = (a, b) => {
+  if (a.overview) {
+    return -1;
+  }
+  if (b.overview) {
+    return 1;
+  }
+  return a.title <= b.title ? -1 : 1;
+};
+
 const styles = () => ({
   benchmarkTitle: {
     display: 'inline-block',
@@ -45,37 +55,43 @@ class PerferhderGraph extends React.Component {
 
   async componentDidMount() {
     let chartJsOptions;
-    const { series, options } = this.props;
+    const { series, options, title } = this.props;
     Object.values(series).forEach(async (config) => {
       const response = await queryPerfData(config, options);
 
       // We can have multiple subtests for a single call to queryPerfData
-      Object.values(response).forEach((info) => {
+      Object.values(response).forEach(({ data, meta, perfherderUrl }) => {
         if (!chartJsOptions) {
-          chartJsOptions = generateChartJsOptions(info.meta);
+          chartJsOptions = generateChartJsOptions(meta);
         }
         // XXX: Need to fix this later
-        const graphUid = info.meta.has_subtests ? 'overview' : config.label;
+        const graphUid = meta.test || `${title}-overview`;
+        const graphTitle = meta.test || title;
         this.setState((state) => {
           if (!state.data[graphUid]) {
             // eslint-disable-next-line no-param-reassign
             state.data[graphUid] = {
               chartJsData: { datasets: [] },
               chartJsOptions,
-              jointUrl: info.perfherderUrl,
+              jointUrl: perfherderUrl,
+              title: graphTitle,
             };
           } else {
             // We need to merge two different perfherder URLs
             // We're joining the different series for each subbenchmark
-            const parsedUrl = parse(info.perfherderUrl);
+            const parsedUrl = parse(perfherderUrl);
             // eslint-disable-next-line no-param-reassign
             state.data[graphUid].jointUrl += `&series=${parsedUrl.series}`;
           }
           state.data[graphUid].chartJsData.datasets.push({
             label: config.label,
             backgroundColor: config.color,
-            data: dataToChartJSformat(info.data),
+            data: dataToChartJSformat(data),
           });
+          if (!meta.test) {
+            // eslint-disable-next-line no-param-reassign
+            state.data[graphUid].overview = true;
+          }
           return state;
         });
       });
@@ -83,10 +99,13 @@ class PerferhderGraph extends React.Component {
   }
 
   render() {
-    const { classes, title, extraLink } = this.props;
+    const { classes, extraLink } = this.props;
     const { data } = this.state;
     return (
-      Object.entries(data).map(([key, { chartJsData, chartJsOptions, jointUrl }]) => (
+      Object.values(data).sort(sortOverviewFirst).map(({
+        // eslint-disable-next-line
+        chartJsData, chartJsOptions, jointUrl, title,
+      }) => (
         <div key={title}>
           <h2 className={classes.benchmarkTitle}>{title}</h2>
           <a href={jointUrl} target="_blank" rel="noopener noreferrer">
@@ -98,7 +117,6 @@ class PerferhderGraph extends React.Component {
             </Link>
           ) : null}
           <ChartJSWrapper
-            key={key}
             chartJsData={chartJsData}
             chartJsOptions={chartJsOptions}
           />

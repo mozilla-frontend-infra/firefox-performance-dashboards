@@ -1,3 +1,5 @@
+import { convertToSeconds } from './utils/timeRangeUtils';
+
 const TALOS_FRAMEWORK_ID = 1;
 const RAPTOR_FRAMEWORK_ID = 10;
 const JSBENCH_FRAMEWORK_ID = 11;
@@ -1884,7 +1886,7 @@ const DEFAULT_SUITES = [
   // 'displaylist_mutate',
   // 'glvideo',
   // 'kraken',
-  // 'motionmark-animometer',
+  'motionmark-animometer',
   // 'motionmark-htmlsuite',
   // 'rasterflood_gradient',
   // 'rasterflood_svg',
@@ -1985,3 +1987,44 @@ export const CONFIG = {
 
 // Upper limit for the time range slider measured in days
 export const TIMERANGE_UPPER_LIMIT = 365;
+
+// Given a view configuration return a data structure with the data
+// structure needed to query Treeherder
+export const queryInfo = (viewConfig, benchmark, dayRange) => {
+  const info = {};
+  const { benchmarks } = viewConfig;
+  if (benchmark === 'overview') {
+    benchmarks.forEach((configUID) => {
+      info[configUID] = BENCHMARKS[configUID];
+      info[configUID].options = { timeRange: convertToSeconds(dayRange) };
+      // We need to set the platform for fetching data from Treeherder
+      Object.values(info[configUID].compare).forEach((seriesConfig) => {
+        let { platform } = viewConfig;
+        // XXX: We need to refactor this
+        if (seriesConfig.suite.endsWith('-chromium')) {
+          platform = `${platform}-shippable`;
+        }
+        // eslint-disable-next-line no-param-reassign
+        seriesConfig.platform = platform;
+      });
+    });
+  } else {
+    Object.values(BENCHMARKS[benchmark].compare).forEach((seriesConfig) => {
+      info[benchmark] = BENCHMARKS[benchmark];
+      info[benchmark].options = {
+        includeSubtests: true,
+        timeRange: convertToSeconds(dayRange),
+      };
+      let { platform } = viewConfig;
+      // XXX: We need to refactor this
+      if (seriesConfig.suite.endsWith('-chromium')) {
+        platform = `${platform}-shippable`;
+      }
+      // eslint-disable-next-line no-param-reassign
+      seriesConfig.platform = platform;
+      // { includeSubtests: true, timeRange: convertToSeconds(timeRange) })
+    });
+  }
+
+  return info;
+};
