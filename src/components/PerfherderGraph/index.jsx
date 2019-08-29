@@ -9,7 +9,7 @@ import queryPerfData from '@mozilla-frontend-infra/perf-goggles';
 import Loadable from 'react-loadable';
 import Loading from '../Loading';
 import { generateChartJsOptions, dataToChartJSformat } from '../../utils/prepareData';
-
+import { convertToSeconds } from '../../utils/timeRangeUtils';
 
 const ChartJSWrapper = Loadable({
   loader: () => import(/* webpackChunkName: 'ChartJSWrapper' */ '../ChartJSWrapper'),
@@ -36,46 +36,71 @@ const styles = () => ({
   },
 });
 
+const options = (dayRange, includeSubtests) => ({
+  timeRange: convertToSeconds(dayRange), includeSubtests,
+});
+
 class PerferhderGraph extends React.Component {
   static propTypes = {
     classes: PropTypes.shape({}).isRequired,
     extraLink: PropTypes.string,
-    options: PropTypes.shape({}).isRequired,
+    dayRange: PropTypes.number.isRequired,
+    includeSubtests: PropTypes.bool,
     series: PropTypes.shape({}).isRequired,
     title: PropTypes.string.isRequired,
   };
 
   static defaultProps = {
     extraLink: undefined,
+    includeSubtests: false,
   };
 
   state = {
     data: {},
   };
 
-  async componentDidMount() {
+  componentDidMount() {
+    this.fetchData();
+  }
+
+  componentDidUpdate(prevProps) {
+    const { dayRange, includeSubtests } = this.props;
+    if (dayRange !== prevProps.dayRange || includeSubtests !== prevProps.includeSubtests) {
+      this.fetchData();
+    }
+  }
+
+  fetchData() {
     let chartJsOptions;
-    const { series, options, title } = this.props;
+    const {
+      series, dayRange, includeSubtests, title,
+    } = this.props;
+    this.setState({ data: {} });
     Object.values(series).forEach(async (config) => {
-      const response = await queryPerfData(config, options);
+      // XXX: Not using a wrapping Promise.all() causes the graphs in the
+      // overview to load sequentially
+      const response = await queryPerfData(config, options(dayRange, includeSubtests));
 
       // We can have multiple subtests for a single call to queryPerfData
       Object.values(response).forEach(({ data, meta, perfherderUrl }) => {
         if (!chartJsOptions) {
           chartJsOptions = generateChartJsOptions(meta);
         }
-        // XXX: Need to fix this later
         const graphUid = meta.test || `${title}-overview`;
         const graphTitle = meta.test || title;
+        const dataStructure = {
+          chartJsData: { datasets: [] },
+          chartJsOptions,
+          jointUrl: perfherderUrl,
+          title: graphTitle,
+        };
+        if (!meta.test) {
+          dataStructure.overview = true;
+        }
         this.setState((state) => {
           if (!state.data[graphUid]) {
             // eslint-disable-next-line no-param-reassign
-            state.data[graphUid] = {
-              chartJsData: { datasets: [] },
-              chartJsOptions,
-              jointUrl: perfherderUrl,
-              title: graphTitle,
-            };
+            state.data[graphUid] = dataStructure;
           } else {
             // We need to merge two different perfherder URLs
             // We're joining the different series for each subbenchmark
@@ -88,10 +113,6 @@ class PerferhderGraph extends React.Component {
             backgroundColor: config.color,
             data: dataToChartJSformat(data),
           });
-          if (!meta.test) {
-            // eslint-disable-next-line no-param-reassign
-            state.data[graphUid].overview = true;
-          }
           return state;
         });
       });
@@ -103,7 +124,6 @@ class PerferhderGraph extends React.Component {
     const { data } = this.state;
     return (
       Object.values(data).sort(sortOverviewFirst).map(({
-        // eslint-disable-next-line
         chartJsData, chartJsOptions, jointUrl, title,
       }) => (
         <div key={title}>

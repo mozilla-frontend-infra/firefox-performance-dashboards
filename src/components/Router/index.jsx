@@ -21,6 +21,8 @@ const Router = () => (
           if (!validCombination(platform, benchmark, dayRange)) {
             return <Redirect to={CONFIG.default.landingPath} />;
           }
+          console.log('ROUTE');
+          console.log(benchmark);
           return (
             <App
               viewConfig={CONFIG.views[platform]}

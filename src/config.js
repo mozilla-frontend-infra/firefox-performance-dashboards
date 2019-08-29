@@ -1,5 +1,3 @@
-import { convertToSeconds } from './utils/timeRangeUtils';
-
 const TALOS_FRAMEWORK_ID = 1;
 const RAPTOR_FRAMEWORK_ID = 10;
 const JSBENCH_FRAMEWORK_ID = 11;
@@ -1990,15 +1988,15 @@ export const TIMERANGE_UPPER_LIMIT = 365;
 
 // Given a view configuration return a data structure with the data
 // structure needed to query Treeherder
-export const queryInfo = (viewConfig, benchmark, dayRange) => {
+export const queryInfo = (viewConfig, benchmark) => {
   const info = {};
   const { benchmarks } = viewConfig;
-  if (benchmark === 'overview') {
+  if (benchmark === 'overview' && benchmarks) {
     benchmarks.forEach((configUID) => {
       info[configUID] = BENCHMARKS[configUID];
-      info[configUID].options = { timeRange: convertToSeconds(dayRange) };
+      info[configUID].includeSubtests = false;
       // We need to set the platform for fetching data from Treeherder
-      Object.values(info[configUID].compare).forEach((seriesConfig) => {
+      Object.values(BENCHMARKS[configUID].compare).forEach((seriesConfig) => {
         let { platform } = viewConfig;
         // XXX: We need to refactor this
         if (seriesConfig.suite.endsWith('-chromium')) {
@@ -2011,10 +2009,7 @@ export const queryInfo = (viewConfig, benchmark, dayRange) => {
   } else {
     Object.values(BENCHMARKS[benchmark].compare).forEach((seriesConfig) => {
       info[benchmark] = BENCHMARKS[benchmark];
-      info[benchmark].options = {
-        includeSubtests: true,
-        timeRange: convertToSeconds(dayRange),
-      };
+      info[benchmark].includeSubtests = true;
       let { platform } = viewConfig;
       // XXX: We need to refactor this
       if (seriesConfig.suite.endsWith('-chromium')) {
@@ -2022,7 +2017,6 @@ export const queryInfo = (viewConfig, benchmark, dayRange) => {
       }
       // eslint-disable-next-line no-param-reassign
       seriesConfig.platform = platform;
-      // { includeSubtests: true, timeRange: convertToSeconds(timeRange) })
     });
   }
 

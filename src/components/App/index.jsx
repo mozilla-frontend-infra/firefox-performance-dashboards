@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core';
 import PropTypes from 'prop-types';
-// import Benchmark from '../../views/Benchmark';
-// import Overview from '../../views/Overview';
 import Footer from '../Footer';
 import Navigation from '../Navigation';
 import PerfherderGraph from '../PerfherderGraph';
-// import fetchData from '../../utils/fetchData';
 import { queryInfo } from '../../config';
 
 const styles = () => ({
@@ -15,6 +12,7 @@ const styles = () => ({
   },
 });
 
+// eslint-disable-next-line
 class App extends Component {
   static propTypes = {
     classes: PropTypes.shape({}).isRequired,
@@ -28,50 +26,11 @@ class App extends Component {
     dayRange: PropTypes.number.isRequired,
   };
 
-  state = {
-    benchmarkData: {},
-    benchmarks: {},
-  };
-
-  constructor(props) {
-    super(props);
-    this.state.benchmarks = queryInfo(props.viewConfig, props.benchmark, props.dayRange);
-  }
-
-  componentDidMount() {
-    this.mounted = true;
-    // const { viewPlatform, benchmark, dayRange } = this.props;
-    // this.fetchData(viewPlatform, benchmark, dayRange);
-  }
-
-  componentDidUpdate(prevProps) {
-    const { viewPlatform, benchmark, dayRange } = this.props;
-    if (benchmark !== prevProps.benchmark
-      || viewPlatform !== prevProps.viewPlatform
-      || dayRange !== prevProps.dayRange
-    ) {
-      this.fetchData(viewPlatform, benchmark, dayRange);
-    }
-  }
-
-  componentWillUnmount() {
-    this.mounted = false;
-  }
-
-  // async fetchData(viewPlatform, benchmark, dayRange) {
-  fetchData() {
-    if (this.mounted) {
-      // this.setState({ benchmarks: {} });
-      // this.setState({ benchmarkData: await fetchData(viewPlatform, benchmark, dayRange) });
-    }
-  }
-
   render() {
     const {
-      classes, benchmark, viewPlatform, dayRange,
+      classes, benchmark, viewConfig, viewPlatform, dayRange,
     } = this.props;
-    // eslint-disable-next-line
-    const { benchmarkData, benchmarks } = this.state;
+    const benchmarks = queryInfo(viewConfig, benchmark);
 
     return (
       <div className={classes.container}>
@@ -81,14 +40,15 @@ class App extends Component {
           dayRange={dayRange}
         />
         {Object.keys(benchmarks).sort().map((benchmarkUID) => {
-          const { compare, label, options } = benchmarks[benchmarkUID];
+          const { compare, label, includeSubtests } = benchmarks[benchmarkUID];
           return (
-            <div key={label}>
+            <div key={benchmarkUID}>
               <PerfherderGraph
                 extraLink={`/${viewPlatform}/${benchmarkUID}?numDays=${dayRange}`}
                 title={label}
                 series={compare}
-                options={options}
+                includeSubtests={includeSubtests}
+                dayRange={dayRange}
               />
             </div>
           );
