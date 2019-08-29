@@ -1998,13 +1998,16 @@ export const queryInfo = (viewConfig, benchmark) => {
       info[configUID].benchmarkUID = configUID;
       // We need to set the platform for fetching data from Treeherder
       Object.values(BENCHMARKS[configUID].compare).forEach((seriesConfig) => {
-        let { platform } = viewConfig;
-        // XXX: We need to refactor this
-        if (seriesConfig.suite.endsWith('-chromium')) {
-          platform = `${platform}-shippable`;
+        // The Android benchmarks have a platform defined per series
+        if (!seriesConfig.platform) {
+          let { platform } = viewConfig;
+          // XXX: We need to refactor this
+          if (seriesConfig.suite.endsWith('-chromium')) {
+            platform = `${platform}-shippable`;
+          }
+          // eslint-disable-next-line no-param-reassign
+          seriesConfig.platform = platform;
         }
-        // eslint-disable-next-line no-param-reassign
-        seriesConfig.platform = platform;
       });
     });
   } else {
@@ -2012,13 +2015,16 @@ export const queryInfo = (viewConfig, benchmark) => {
       info[benchmark] = BENCHMARKS[benchmark];
       info[benchmark].includeSubtests = true;
       info[benchmark].benchmarkUID = benchmark;
-      let { platform } = viewConfig;
-      // XXX: We need to refactor this
-      if (seriesConfig.suite.endsWith('-chromium')) {
-        platform = `${platform}-shippable`;
+      // The Android benchmarks have a platform defined per series
+      if (!seriesConfig.platform) {
+        let { platform } = viewConfig;
+        // XXX: We need to refactor this
+        if (seriesConfig.suite.endsWith('-chromium')) {
+          platform = `${platform}-shippable`;
+        }
+        // eslint-disable-next-line no-param-reassign
+        seriesConfig.platform = platform;
       }
-      // eslint-disable-next-line no-param-reassign
-      seriesConfig.platform = platform;
     });
   }
 
