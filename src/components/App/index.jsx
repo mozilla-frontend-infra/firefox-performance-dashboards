@@ -6,6 +6,8 @@ import Navigation from '../Navigation';
 import PerfherderGraph from '../PerfherderGraph';
 import { queryInfo } from '../../config';
 
+const sortByLabel = (a, b) => (a.label <= b.label ? -1 : 1);
+
 const styles = () => ({
   container: {
     fontFamily: 'Roboto',
@@ -39,20 +41,19 @@ class App extends Component {
           benchmark={benchmark}
           dayRange={dayRange}
         />
-        {Object.keys(benchmarks).sort().map((benchmarkUID) => {
-          const { compare, label, includeSubtests } = benchmarks[benchmarkUID];
-          return (
-            <div key={benchmarkUID}>
-              <PerfherderGraph
-                extraLink={`/${viewPlatform}/${benchmarkUID}?numDays=${dayRange}`}
-                title={label}
-                series={Object.values(compare)}
-                includeSubtests={includeSubtests}
-                dayRange={dayRange}
-              />
-            </div>
-          );
-        })}
+        {Object.values(benchmarks).sort(sortByLabel).map(({
+          benchmarkUID, compare, label, includeSubtests,
+        }) => (
+          <div key={label}>
+            <PerfherderGraph
+              extraLink={`/${viewPlatform}/${benchmarkUID}?numDays=${dayRange}`}
+              title={label}
+              series={Object.values(compare)}
+              includeSubtests={includeSubtests}
+              dayRange={dayRange}
+            />
+          </div>
+        ))}
         <Footer />
       </div>
     );

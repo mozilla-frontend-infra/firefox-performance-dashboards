@@ -98,7 +98,8 @@ class PerferhderGraph extends React.Component {
           chartJsOptions = generateChartJsOptions(meta);
         }
         const graphUid = meta.test || `${title}-overview`;
-        const graphTitle = meta.test || title;
+        // Considering includeSubtests is because glvideo has the 'test' property set
+        const graphTitle = !includeSubtests ? title : meta.test || title;
         const dataStructure = {
           chartJsData: { datasets: [] },
           chartJsOptions,
