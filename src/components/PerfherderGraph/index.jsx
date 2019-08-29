@@ -135,14 +135,14 @@ class PerferhderGraph extends React.Component {
     const { data } = this.state;
     return (
       Object.values(data).sort(sortOverviewFirst).map(({
-        chartJsData, chartJsOptions, jointUrl, title,
+        chartJsData, chartJsOptions, jointUrl, title, overview,
       }) => (
         <div key={title}>
           <h2 className={classes.benchmarkTitle}>{title}</h2>
           <a href={jointUrl} target="_blank" rel="noopener noreferrer">
             <LinkIcon className={classes.linkIcon} />
           </a>
-          {extraLink ? (
+          {extraLink && overview ? (
             <Link to={extraLink} rel="noopener noreferrer">
               <ArrowDownward className={classes.linkIcon} />
             </Link>
