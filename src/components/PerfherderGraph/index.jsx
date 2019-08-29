@@ -120,11 +120,23 @@ class PerferhderGraph extends React.Component {
             // eslint-disable-next-line no-param-reassign
             state.data[graphUid].jointUrl += `&series=${parsedUrl.series}`;
           }
-          state.data[graphUid].chartJsData.datasets.push({
-            label: config.label,
-            backgroundColor: config.color,
-            data: dataToChartJSformat(data),
+          let combined = false;
+          // This is useful when we want to combine different series. For instance, a benchmark
+          // changes the platform on which it runs, thus, requirying to merge data from both
+          state.data[graphUid].chartJsData.datasets.forEach((dataset) => {
+            if (dataset.label === config.label) {
+              // eslint-disable-next-line no-param-reassign
+              dataset.data = dataset.data.concat(dataToChartJSformat(data));
+              combined = true;
+            }
           });
+          if (!combined) {
+            state.data[graphUid].chartJsData.datasets.push({
+              label: config.label,
+              backgroundColor: config.color,
+              data: dataToChartJSformat(data),
+            });
+          }
           return state;
         });
       });

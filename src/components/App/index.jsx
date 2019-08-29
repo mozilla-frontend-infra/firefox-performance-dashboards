@@ -21,7 +21,7 @@ class App extends Component {
     benchmark: PropTypes.string.isRequired,
     viewConfig: PropTypes.shape({
       label: PropTypes.string.isRequired,
-      platform: PropTypes.string,
+      platform: PropTypes.arrayOf(PropTypes.string),
       benchmarks: PropTypes.arrayOf(PropTypes.string).isRequired,
     }).isRequired,
     viewPlatform: PropTypes.string.isRequired,
