@@ -1986,6 +1986,20 @@ export const CONFIG = {
 // Upper limit for the time range slider measured in days
 export const TIMERANGE_UPPER_LIMIT = 365;
 
+
+const platformAdjustments = (seriesConfig, viewConfig) => {
+  // The Android benchmarks have a platform defined per series
+  if (!seriesConfig.platform) {
+    let { platform } = viewConfig;
+    // XXX: We need to refactor this
+    if (seriesConfig.suite.endsWith('-chromium')) {
+      platform = `${platform}-shippable`;
+    }
+    // eslint-disable-next-line no-param-reassign
+    seriesConfig.platform = platform;
+  }
+};
+
 // Given a view configuration return a data structure with the data
 // structure needed to query Treeherder
 export const queryInfo = (viewConfig, benchmark) => {
@@ -1998,16 +2012,7 @@ export const queryInfo = (viewConfig, benchmark) => {
       info[configUID].benchmarkUID = configUID;
       // We need to set the platform for fetching data from Treeherder
       Object.values(BENCHMARKS[configUID].compare).forEach((seriesConfig) => {
-        // The Android benchmarks have a platform defined per series
-        if (!seriesConfig.platform) {
-          let { platform } = viewConfig;
-          // XXX: We need to refactor this
-          if (seriesConfig.suite.endsWith('-chromium')) {
-            platform = `${platform}-shippable`;
-          }
-          // eslint-disable-next-line no-param-reassign
-          seriesConfig.platform = platform;
-        }
+        platformAdjustments(seriesConfig, viewConfig);
       });
     });
   } else {
@@ -2015,16 +2020,7 @@ export const queryInfo = (viewConfig, benchmark) => {
       info[benchmark] = BENCHMARKS[benchmark];
       info[benchmark].includeSubtests = true;
       info[benchmark].benchmarkUID = benchmark;
-      // The Android benchmarks have a platform defined per series
-      if (!seriesConfig.platform) {
-        let { platform } = viewConfig;
-        // XXX: We need to refactor this
-        if (seriesConfig.suite.endsWith('-chromium')) {
-          platform = `${platform}-shippable`;
-        }
-        // eslint-disable-next-line no-param-reassign
-        seriesConfig.platform = platform;
-      }
+      platformAdjustments(seriesConfig, viewConfig);
     });
   }
 
