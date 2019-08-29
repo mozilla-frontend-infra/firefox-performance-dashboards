@@ -46,7 +46,7 @@ class App extends Component {
               <PerfherderGraph
                 extraLink={`/${viewPlatform}/${benchmarkUID}?numDays=${dayRange}`}
                 title={label}
-                series={compare}
+                series={Object.values(compare)}
                 includeSubtests={includeSubtests}
                 dayRange={dayRange}
               />

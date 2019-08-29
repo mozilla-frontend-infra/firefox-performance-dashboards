@@ -46,7 +46,14 @@ class PerferhderGraph extends React.Component {
     extraLink: PropTypes.string,
     dayRange: PropTypes.number.isRequired,
     includeSubtests: PropTypes.bool,
-    series: PropTypes.shape({}).isRequired,
+    series: PropTypes.arrayOf(PropTypes.shape({
+      color: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      frameworkId: PropTypes.number.isRequired,
+      option: PropTypes.string.isRequired,
+      platform: PropTypes.string.isRequired,
+      suite: PropTypes.string.isRequired,
+    })).isRequired,
     title: PropTypes.string.isRequired,
   };
 
@@ -64,8 +71,12 @@ class PerferhderGraph extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    const { dayRange, includeSubtests } = this.props;
-    if (dayRange !== prevProps.dayRange || includeSubtests !== prevProps.includeSubtests) {
+    const { dayRange, includeSubtests, series } = this.props;
+    if (
+      dayRange !== prevProps.dayRange
+      || includeSubtests !== prevProps.includeSubtests
+      || series !== prevProps.series
+    ) {
       this.fetchData();
     }
   }
@@ -76,7 +87,7 @@ class PerferhderGraph extends React.Component {
       series, dayRange, includeSubtests, title,
     } = this.props;
     this.setState({ data: {} });
-    Object.values(series).forEach(async (config) => {
+    series.forEach(async (config) => {
       // XXX: Not using a wrapping Promise.all() causes the graphs in the
       // overview to load sequentially
       const response = await queryPerfData(config, options(dayRange, includeSubtests));
