@@ -5,10 +5,10 @@ import LinkIcon from '@material-ui/icons/Link';
 import ArrowDownward from '@material-ui/icons/ArrowDownward';
 import { withStyles } from '@material-ui/core/styles';
 import { parse } from 'query-string';
-import queryPerfData from '@mozilla-frontend-infra/perf-goggles';
 import Loadable from 'react-loadable';
 import Loading from '../Loading';
 import CircularIndeterminate from '../CircularIndeterminate';
+import queryPerfData from '../../utils/perfherder';
 import { generateChartJsOptions, dataToChartJSformat } from '../../utils/chartJs';
 import { convertToSeconds } from '../../utils/timeRangeUtils';
 

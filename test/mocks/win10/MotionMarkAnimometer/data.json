@@ -1,0 +1,956 @@
+{
+  "372d02d9a8185394e19f33759b089baac6a82a79": [
+    {
+      "push_timestamp": 1532730345,
+      "signature_id": 1708525,
+      "id": 517549569,
+      "job_id": 190642857,
+      "value": 39.6,
+      "push_id": 361248
+    },
+    {
+      "push_timestamp": 1532730688,
+      "signature_id": 1708525,
+      "id": 517545054,
+      "job_id": 190642132,
+      "value": 39.49,
+      "push_id": 361250
+    },
+    {
+      "push_timestamp": 1532730822,
+      "signature_id": 1708525,
+      "id": 517545959,
+      "job_id": 190642494,
+      "value": 39.49,
+      "push_id": 361251
+    },
+    {
+      "push_timestamp": 1532771090,
+      "signature_id": 1708525,
+      "id": 517827276,
+      "job_id": 190691204,
+      "value": 39.47,
+      "push_id": 361320
+    },
+    {
+      "push_timestamp": 1532771201,
+      "signature_id": 1708525,
+      "id": 517831369,
+      "job_id": 190692290,
+      "value": 39.54,
+      "push_id": 361321
+    },
+    {
+      "push_timestamp": 1532814430,
+      "signature_id": 1708525,
+      "id": 518072197,
+      "job_id": 190745405,
+      "value": 39.51,
+      "push_id": 361396
+    },
+    {
+      "push_timestamp": 1532814542,
+      "signature_id": 1708525,
+      "id": 518081912,
+      "job_id": 190746848,
+      "value": 39.48,
+      "push_id": 361397
+    },
+    {
+      "push_timestamp": 1532857514,
+      "signature_id": 1708525,
+      "id": 518219032,
+      "job_id": 190780461,
+      "value": 39.54,
+      "push_id": 361436
+    },
+    {
+      "push_timestamp": 1532857575,
+      "signature_id": 1708525,
+      "id": 518225067,
+      "job_id": 190781342,
+      "value": 39.56,
+      "push_id": 361437
+    },
+    {
+      "push_timestamp": 1532944276,
+      "signature_id": 1708525,
+      "id": 518580183,
+      "job_id": 190855065,
+      "value": 39.52,
+      "push_id": 361568
+    },
+    {
+      "push_timestamp": 1532944369,
+      "signature_id": 1708525,
+      "id": 518584983,
+      "job_id": 190855620,
+      "value": 39.52,
+      "push_id": 361569
+    },
+    {
+      "push_timestamp": 1532968452,
+      "signature_id": 1708525,
+      "id": 518855309,
+      "job_id": 190933442,
+      "value": 39.49,
+      "push_id": 361712
+    },
+    {
+      "push_timestamp": 1532968557,
+      "signature_id": 1708525,
+      "id": 518868645,
+      "job_id": 190936491,
+      "value": 39.56,
+      "push_id": 361714
+    }
+  ],
+  "d1e0e3b3fa84f097fdc4a4de504f26ff5d8534d7": [
+    {
+      "push_timestamp": 1532730345,
+      "signature_id": 1708520,
+      "id": 517549564,
+      "job_id": 190642857,
+      "value": 43.83,
+      "push_id": 361248
+    },
+    {
+      "push_timestamp": 1532730688,
+      "signature_id": 1708520,
+      "id": 517545049,
+      "job_id": 190642132,
+      "value": 45.16,
+      "push_id": 361250
+    },
+    {
+      "push_timestamp": 1532730822,
+      "signature_id": 1708520,
+      "id": 517545954,
+      "job_id": 190642494,
+      "value": 43.94,
+      "push_id": 361251
+    },
+    {
+      "push_timestamp": 1532771090,
+      "signature_id": 1708520,
+      "id": 517827271,
+      "job_id": 190691204,
+      "value": 46.18,
+      "push_id": 361320
+    },
+    {
+      "push_timestamp": 1532771201,
+      "signature_id": 1708520,
+      "id": 517831364,
+      "job_id": 190692290,
+      "value": 45.64,
+      "push_id": 361321
+    },
+    {
+      "push_timestamp": 1532814430,
+      "signature_id": 1708520,
+      "id": 518072177,
+      "job_id": 190745405,
+      "value": 44.34,
+      "push_id": 361396
+    },
+    {
+      "push_timestamp": 1532814542,
+      "signature_id": 1708520,
+      "id": 518081895,
+      "job_id": 190746848,
+      "value": 44.8,
+      "push_id": 361397
+    },
+    {
+      "push_timestamp": 1532857514,
+      "signature_id": 1708520,
+      "id": 518219025,
+      "job_id": 190780461,
+      "value": 44.43,
+      "push_id": 361436
+    },
+    {
+      "push_timestamp": 1532857575,
+      "signature_id": 1708520,
+      "id": 518225062,
+      "job_id": 190781342,
+      "value": 44.47,
+      "push_id": 361437
+    },
+    {
+      "push_timestamp": 1532944276,
+      "signature_id": 1708520,
+      "id": 518580178,
+      "job_id": 190855065,
+      "value": 44.81,
+      "push_id": 361568
+    },
+    {
+      "push_timestamp": 1532944369,
+      "signature_id": 1708520,
+      "id": 518584969,
+      "job_id": 190855620,
+      "value": 46.23,
+      "push_id": 361569
+    },
+    {
+      "push_timestamp": 1532968452,
+      "signature_id": 1708520,
+      "id": 518855297,
+      "job_id": 190933442,
+      "value": 44.33,
+      "push_id": 361712
+    },
+    {
+      "push_timestamp": 1532968557,
+      "signature_id": 1708520,
+      "id": 518868635,
+      "job_id": 190936491,
+      "value": 45.61,
+      "push_id": 361714
+    }
+  ],
+  "dee06cb22b43acee1e27f20042d7f92f87759a89": [
+    {
+      "push_timestamp": 1532730345,
+      "signature_id": 1708524,
+      "id": 517549568,
+      "job_id": 190642857,
+      "value": 5.76,
+      "push_id": 361248
+    },
+    {
+      "push_timestamp": 1532730688,
+      "signature_id": 1708524,
+      "id": 517545053,
+      "job_id": 190642132,
+      "value": 5.52,
+      "push_id": 361250
+    },
+    {
+      "push_timestamp": 1532730822,
+      "signature_id": 1708524,
+      "id": 517545958,
+      "job_id": 190642494,
+      "value": 5.46,
+      "push_id": 361251
+    },
+    {
+      "push_timestamp": 1532771090,
+      "signature_id": 1708524,
+      "id": 517827275,
+      "job_id": 190691204,
+      "value": 5.6,
+      "push_id": 361320
+    },
+    {
+      "push_timestamp": 1532771201,
+      "signature_id": 1708524,
+      "id": 517831368,
+      "job_id": 190692290,
+      "value": 5.58,
+      "push_id": 361321
+    },
+    {
+      "push_timestamp": 1532814430,
+      "signature_id": 1708524,
+      "id": 518072193,
+      "job_id": 190745405,
+      "value": 5.66,
+      "push_id": 361396
+    },
+    {
+      "push_timestamp": 1532814542,
+      "signature_id": 1708524,
+      "id": 518081907,
+      "job_id": 190746848,
+      "value": 5.48,
+      "push_id": 361397
+    },
+    {
+      "push_timestamp": 1532857514,
+      "signature_id": 1708524,
+      "id": 518219031,
+      "job_id": 190780461,
+      "value": 5.47,
+      "push_id": 361436
+    },
+    {
+      "push_timestamp": 1532857575,
+      "signature_id": 1708524,
+      "id": 518225066,
+      "job_id": 190781342,
+      "value": 5.67,
+      "push_id": 361437
+    },
+    {
+      "push_timestamp": 1532944276,
+      "signature_id": 1708524,
+      "id": 518580182,
+      "job_id": 190855065,
+      "value": 5.46,
+      "push_id": 361568
+    },
+    {
+      "push_timestamp": 1532944369,
+      "signature_id": 1708524,
+      "id": 518584980,
+      "job_id": 190855620,
+      "value": 5.52,
+      "push_id": 361569
+    },
+    {
+      "push_timestamp": 1532968452,
+      "signature_id": 1708524,
+      "id": 518855307,
+      "job_id": 190933442,
+      "value": 5.44,
+      "push_id": 361712
+    },
+    {
+      "push_timestamp": 1532968557,
+      "signature_id": 1708524,
+      "id": 518868644,
+      "job_id": 190936491,
+      "value": 5.63,
+      "push_id": 361714
+    }
+  ],
+  "75951bd249364f8c70a94f624e096cdbb7ef56b9": [
+    {
+      "push_timestamp": 1532730345,
+      "signature_id": 1708526,
+      "id": 517549570,
+      "job_id": 190642857,
+      "value": 39.87,
+      "push_id": 361248
+    },
+    {
+      "push_timestamp": 1532730688,
+      "signature_id": 1708526,
+      "id": 517545055,
+      "job_id": 190642132,
+      "value": 39.61,
+      "push_id": 361250
+    },
+    {
+      "push_timestamp": 1532730822,
+      "signature_id": 1708526,
+      "id": 517545960,
+      "job_id": 190642494,
+      "value": 39.75,
+      "push_id": 361251
+    },
+    {
+      "push_timestamp": 1532771090,
+      "signature_id": 1708526,
+      "id": 517827277,
+      "job_id": 190691204,
+      "value": 39.81,
+      "push_id": 361320
+    },
+    {
+      "push_timestamp": 1532771201,
+      "signature_id": 1708526,
+      "id": 517831370,
+      "job_id": 190692290,
+      "value": 39.76,
+      "push_id": 361321
+    },
+    {
+      "push_timestamp": 1532814430,
+      "signature_id": 1708526,
+      "id": 518072200,
+      "job_id": 190745405,
+      "value": 39.88,
+      "push_id": 361396
+    },
+    {
+      "push_timestamp": 1532814542,
+      "signature_id": 1708526,
+      "id": 518081916,
+      "job_id": 190746848,
+      "value": 39.89,
+      "push_id": 361397
+    },
+    {
+      "push_timestamp": 1532857514,
+      "signature_id": 1708526,
+      "id": 518219033,
+      "job_id": 190780461,
+      "value": 39.83,
+      "push_id": 361436
+    },
+    {
+      "push_timestamp": 1532857575,
+      "signature_id": 1708526,
+      "id": 518225068,
+      "job_id": 190781342,
+      "value": 39.85,
+      "push_id": 361437
+    },
+    {
+      "push_timestamp": 1532944276,
+      "signature_id": 1708526,
+      "id": 518580184,
+      "job_id": 190855065,
+      "value": 39.88,
+      "push_id": 361568
+    },
+    {
+      "push_timestamp": 1532944369,
+      "signature_id": 1708526,
+      "id": 518584984,
+      "job_id": 190855620,
+      "value": 40.02,
+      "push_id": 361569
+    },
+    {
+      "push_timestamp": 1532968452,
+      "signature_id": 1708526,
+      "id": 518855311,
+      "job_id": 190933442,
+      "value": 39.87,
+      "push_id": 361712
+    },
+    {
+      "push_timestamp": 1532968557,
+      "signature_id": 1708526,
+      "id": 518868647,
+      "job_id": 190936491,
+      "value": 39.89,
+      "push_id": 361714
+    }
+  ],
+  "ea3e4ebf1933f3d17aaf1640d7e82b844031fdb6": [
+    {
+      "push_timestamp": 1532730345,
+      "signature_id": 1708527,
+      "id": 517549571,
+      "job_id": 190642857,
+      "value": 48.66,
+      "push_id": 361248
+    },
+    {
+      "push_timestamp": 1532730688,
+      "signature_id": 1708527,
+      "id": 517545056,
+      "job_id": 190642132,
+      "value": 48.88,
+      "push_id": 361250
+    },
+    {
+      "push_timestamp": 1532730822,
+      "signature_id": 1708527,
+      "id": 517545961,
+      "job_id": 190642494,
+      "value": 49.01,
+      "push_id": 361251
+    },
+    {
+      "push_timestamp": 1532771090,
+      "signature_id": 1708527,
+      "id": 517827278,
+      "job_id": 190691204,
+      "value": 48.84,
+      "push_id": 361320
+    },
+    {
+      "push_timestamp": 1532771201,
+      "signature_id": 1708527,
+      "id": 517831371,
+      "job_id": 190692290,
+      "value": 48.62,
+      "push_id": 361321
+    },
+    {
+      "push_timestamp": 1532814430,
+      "signature_id": 1708527,
+      "id": 518072205,
+      "job_id": 190745405,
+      "value": 49.04,
+      "push_id": 361396
+    },
+    {
+      "push_timestamp": 1532814542,
+      "signature_id": 1708527,
+      "id": 518081918,
+      "job_id": 190746848,
+      "value": 48.48,
+      "push_id": 361397
+    },
+    {
+      "push_timestamp": 1532857514,
+      "signature_id": 1708527,
+      "id": 518219035,
+      "job_id": 190780461,
+      "value": 49.48,
+      "push_id": 361436
+    },
+    {
+      "push_timestamp": 1532857575,
+      "signature_id": 1708527,
+      "id": 518225069,
+      "job_id": 190781342,
+      "value": 48.91,
+      "push_id": 361437
+    },
+    {
+      "push_timestamp": 1532944276,
+      "signature_id": 1708527,
+      "id": 518580185,
+      "job_id": 190855065,
+      "value": 48.87,
+      "push_id": 361568
+    },
+    {
+      "push_timestamp": 1532944369,
+      "signature_id": 1708527,
+      "id": 518584985,
+      "job_id": 190855620,
+      "value": 49.45,
+      "push_id": 361569
+    },
+    {
+      "push_timestamp": 1532968452,
+      "signature_id": 1708527,
+      "id": 518855313,
+      "job_id": 190933442,
+      "value": 48.79,
+      "push_id": 361712
+    },
+    {
+      "push_timestamp": 1532968557,
+      "signature_id": 1708527,
+      "id": 518868648,
+      "job_id": 190936491,
+      "value": 48.89,
+      "push_id": 361714
+    }
+  ],
+  "7572d06a0da6a9e6f77089d083355bde0dd1d7c4": [
+    {
+      "push_timestamp": 1532730345,
+      "signature_id": 1708521,
+      "id": 517549565,
+      "job_id": 190642857,
+      "value": 54.3,
+      "push_id": 361248
+    },
+    {
+      "push_timestamp": 1532730688,
+      "signature_id": 1708521,
+      "id": 517545050,
+      "job_id": 190642132,
+      "value": 53.98,
+      "push_id": 361250
+    },
+    {
+      "push_timestamp": 1532730822,
+      "signature_id": 1708521,
+      "id": 517545955,
+      "job_id": 190642494,
+      "value": 54.48,
+      "push_id": 361251
+    },
+    {
+      "push_timestamp": 1532771090,
+      "signature_id": 1708521,
+      "id": 517827272,
+      "job_id": 190691204,
+      "value": 55.23,
+      "push_id": 361320
+    },
+    {
+      "push_timestamp": 1532771201,
+      "signature_id": 1708521,
+      "id": 517831365,
+      "job_id": 190692290,
+      "value": 54.63,
+      "push_id": 361321
+    },
+    {
+      "push_timestamp": 1532814430,
+      "signature_id": 1708521,
+      "id": 518072180,
+      "job_id": 190745405,
+      "value": 55.07,
+      "push_id": 361396
+    },
+    {
+      "push_timestamp": 1532814542,
+      "signature_id": 1708521,
+      "id": 518081898,
+      "job_id": 190746848,
+      "value": 54.29,
+      "push_id": 361397
+    },
+    {
+      "push_timestamp": 1532857514,
+      "signature_id": 1708521,
+      "id": 518219026,
+      "job_id": 190780461,
+      "value": 54.5,
+      "push_id": 361436
+    },
+    {
+      "push_timestamp": 1532857575,
+      "signature_id": 1708521,
+      "id": 518225063,
+      "job_id": 190781342,
+      "value": 54.04,
+      "push_id": 361437
+    },
+    {
+      "push_timestamp": 1532944276,
+      "signature_id": 1708521,
+      "id": 518580179,
+      "job_id": 190855065,
+      "value": 54.35,
+      "push_id": 361568
+    },
+    {
+      "push_timestamp": 1532944369,
+      "signature_id": 1708521,
+      "id": 518584972,
+      "job_id": 190855620,
+      "value": 54.72,
+      "push_id": 361569
+    },
+    {
+      "push_timestamp": 1532968452,
+      "signature_id": 1708521,
+      "id": 518855299,
+      "job_id": 190933442,
+      "value": 54.24,
+      "push_id": 361712
+    },
+    {
+      "push_timestamp": 1532968557,
+      "signature_id": 1708521,
+      "id": 518868637,
+      "job_id": 190936491,
+      "value": 54.3,
+      "push_id": 361714
+    }
+  ],
+  "46525071b25c5057dba1ed933744e35246c7c8e7": [
+    {
+      "push_timestamp": 1532730345,
+      "signature_id": 1708523,
+      "id": 517549567,
+      "job_id": 190642857,
+      "value": 58.89,
+      "push_id": 361248
+    },
+    {
+      "push_timestamp": 1532730688,
+      "signature_id": 1708523,
+      "id": 517545052,
+      "job_id": 190642132,
+      "value": 58.66,
+      "push_id": 361250
+    },
+    {
+      "push_timestamp": 1532730822,
+      "signature_id": 1708523,
+      "id": 517545957,
+      "job_id": 190642494,
+      "value": 58.82,
+      "push_id": 361251
+    },
+    {
+      "push_timestamp": 1532771090,
+      "signature_id": 1708523,
+      "id": 517827274,
+      "job_id": 190691204,
+      "value": 58.7,
+      "push_id": 361320
+    },
+    {
+      "push_timestamp": 1532771201,
+      "signature_id": 1708523,
+      "id": 517831367,
+      "job_id": 190692290,
+      "value": 58.99,
+      "push_id": 361321
+    },
+    {
+      "push_timestamp": 1532814430,
+      "signature_id": 1708523,
+      "id": 518072189,
+      "job_id": 190745405,
+      "value": 58.74,
+      "push_id": 361396
+    },
+    {
+      "push_timestamp": 1532814542,
+      "signature_id": 1708523,
+      "id": 518081904,
+      "job_id": 190746848,
+      "value": 58.75,
+      "push_id": 361397
+    },
+    {
+      "push_timestamp": 1532857514,
+      "signature_id": 1708523,
+      "id": 518219029,
+      "job_id": 190780461,
+      "value": 58.71,
+      "push_id": 361436
+    },
+    {
+      "push_timestamp": 1532857575,
+      "signature_id": 1708523,
+      "id": 518225065,
+      "job_id": 190781342,
+      "value": 58.86,
+      "push_id": 361437
+    },
+    {
+      "push_timestamp": 1532944276,
+      "signature_id": 1708523,
+      "id": 518580181,
+      "job_id": 190855065,
+      "value": 58.95,
+      "push_id": 361568
+    },
+    {
+      "push_timestamp": 1532944369,
+      "signature_id": 1708523,
+      "id": 518584977,
+      "job_id": 190855620,
+      "value": 58.97,
+      "push_id": 361569
+    },
+    {
+      "push_timestamp": 1532968452,
+      "signature_id": 1708523,
+      "id": 518855305,
+      "job_id": 190933442,
+      "value": 58.81,
+      "push_id": 361712
+    },
+    {
+      "push_timestamp": 1532968557,
+      "signature_id": 1708523,
+      "id": 518868642,
+      "job_id": 190936491,
+      "value": 58.99,
+      "push_id": 361714
+    }
+  ],
+  "8509fcc09f8dcbd129ee4de39fc1bc5d282d30b6": [
+    {
+      "push_timestamp": 1532730345,
+      "signature_id": 1708522,
+      "id": 517549566,
+      "job_id": 190642857,
+      "value": 58.86,
+      "push_id": 361248
+    },
+    {
+      "push_timestamp": 1532730688,
+      "signature_id": 1708522,
+      "id": 517545051,
+      "job_id": 190642132,
+      "value": 59.05,
+      "push_id": 361250
+    },
+    {
+      "push_timestamp": 1532730822,
+      "signature_id": 1708522,
+      "id": 517545956,
+      "job_id": 190642494,
+      "value": 59.02,
+      "push_id": 361251
+    },
+    {
+      "push_timestamp": 1532771090,
+      "signature_id": 1708522,
+      "id": 517827273,
+      "job_id": 190691204,
+      "value": 58.93,
+      "push_id": 361320
+    },
+    {
+      "push_timestamp": 1532771201,
+      "signature_id": 1708522,
+      "id": 517831366,
+      "job_id": 190692290,
+      "value": 59.12,
+      "push_id": 361321
+    },
+    {
+      "push_timestamp": 1532814430,
+      "signature_id": 1708522,
+      "id": 518072184,
+      "job_id": 190745405,
+      "value": 58.85,
+      "push_id": 361396
+    },
+    {
+      "push_timestamp": 1532814542,
+      "signature_id": 1708522,
+      "id": 518081901,
+      "job_id": 190746848,
+      "value": 59.02,
+      "push_id": 361397
+    },
+    {
+      "push_timestamp": 1532857514,
+      "signature_id": 1708522,
+      "id": 518219028,
+      "job_id": 190780461,
+      "value": 59.07,
+      "push_id": 361436
+    },
+    {
+      "push_timestamp": 1532857575,
+      "signature_id": 1708522,
+      "id": 518225064,
+      "job_id": 190781342,
+      "value": 58.99,
+      "push_id": 361437
+    },
+    {
+      "push_timestamp": 1532944276,
+      "signature_id": 1708522,
+      "id": 518580180,
+      "job_id": 190855065,
+      "value": 59.15,
+      "push_id": 361568
+    },
+    {
+      "push_timestamp": 1532944369,
+      "signature_id": 1708522,
+      "id": 518584975,
+      "job_id": 190855620,
+      "value": 59.05,
+      "push_id": 361569
+    },
+    {
+      "push_timestamp": 1532968452,
+      "signature_id": 1708522,
+      "id": 518855302,
+      "job_id": 190933442,
+      "value": 59.04,
+      "push_id": 361712
+    },
+    {
+      "push_timestamp": 1532968557,
+      "signature_id": 1708522,
+      "id": 518868640,
+      "job_id": 190936491,
+      "value": 59.05,
+      "push_id": 361714
+    }
+  ],
+  "2ab92a97a4e938bef82858c8472ac417ff4e9ed2": [
+    {
+      "push_timestamp": 1532730345,
+      "signature_id": 1708528,
+      "id": 517549572,
+      "job_id": 190642857,
+      "value": 57.38,
+      "push_id": 361248
+    },
+    {
+      "push_timestamp": 1532730688,
+      "signature_id": 1708528,
+      "id": 517545057,
+      "job_id": 190642132,
+      "value": 58,
+      "push_id": 361250
+    },
+    {
+      "push_timestamp": 1532730822,
+      "signature_id": 1708528,
+      "id": 517545962,
+      "job_id": 190642494,
+      "value": 57.76,
+      "push_id": 361251
+    },
+    {
+      "push_timestamp": 1532771090,
+      "signature_id": 1708528,
+      "id": 517827279,
+      "job_id": 190691204,
+      "value": 58.09,
+      "push_id": 361320
+    },
+    {
+      "push_timestamp": 1532771201,
+      "signature_id": 1708528,
+      "id": 517831372,
+      "job_id": 190692290,
+      "value": 58.06,
+      "push_id": 361321
+    },
+    {
+      "push_timestamp": 1532814430,
+      "signature_id": 1708528,
+      "id": 518072208,
+      "job_id": 190745405,
+      "value": 57.67,
+      "push_id": 361396
+    },
+    {
+      "push_timestamp": 1532814542,
+      "signature_id": 1708528,
+      "id": 518081922,
+      "job_id": 190746848,
+      "value": 57.37,
+      "push_id": 361397
+    },
+    {
+      "push_timestamp": 1532857514,
+      "signature_id": 1708528,
+      "id": 518219036,
+      "job_id": 190780461,
+      "value": 57.6,
+      "push_id": 361436
+    },
+    {
+      "push_timestamp": 1532857575,
+      "signature_id": 1708528,
+      "id": 518225070,
+      "job_id": 190781342,
+      "value": 58.46,
+      "push_id": 361437
+    },
+    {
+      "push_timestamp": 1532944276,
+      "signature_id": 1708528,
+      "id": 518580186,
+      "job_id": 190855065,
+      "value": 58.49,
+      "push_id": 361568
+    },
+    {
+      "push_timestamp": 1532944369,
+      "signature_id": 1708528,
+      "id": 518584986,
+      "job_id": 190855620,
+      "value": 57.81,
+      "push_id": 361569
+    },
+    {
+      "push_timestamp": 1532968452,
+      "signature_id": 1708528,
+      "id": 518855317,
+      "job_id": 190933442,
+      "value": 57.8,
+      "push_id": 361712
+    },
+    {
+      "push_timestamp": 1532968557,
+      "signature_id": 1708528,
+      "id": 518868649,
+      "job_id": 190936491,
+      "value": 57.69,
+      "push_id": 361714
+    }
+  ]
+}

@@ -1,0 +1,518 @@
+{
+  "8f014459793e2e94c3244d5edeaada0452b0c627": {
+    "suite": "raptor-motionmark-htmlsuite-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1708858,
+    "lower_is_better": false
+  },
+  "39b3c6ad907f357f299c9bdb64f6fad58cc35808": {
+    "suite": "raptor-motionmark-animometer-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1708836,
+    "lower_is_better": false
+  },
+  "81f1c431c8dd0787891670bf58587334e5e5bbd3": {
+    "suite": "raptor-google-slides-firefox",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-google-slides-firefox-fnbpaint",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1731166
+  },
+  "244b53e1fabb1167aedc943ea16ab107340d3164": {
+    "suite": "raptor-speedometer-chrome",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1727612,
+    "lower_is_better": false
+  },
+  "74f9454b72825391cf0d3824e19c0080898a26d8": {
+    "suite": "raptor-motionmark-animometer-chrome",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1731095,
+    "lower_is_better": false
+  },
+  "613d21d47387b558b04b4ba99b4edc99a24ba1b2": {
+    "suite": "raptor-google-docs-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1731746
+  },
+  "9ad671fb568a5b3027af35b5d42fc6dd385f25ed": {
+    "suite": "raptor-motionmark-animometer-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1708519,
+    "lower_is_better": false
+  },
+  "f4e0bfa60b0f1068b643c1ca0f8fa79ad61b98f3": {
+    "suite": "raptor-tp6-youtube-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1731815
+  },
+  "d70265345a7fee68899bfe5eb304979db9ae1e01": {
+    "suite": "raptor-tp6-google-firefox",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-tp6-google-firefox-fnbpaint",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1731040
+  },
+  "ec1727eb6fa0be6b2de939fe4d0949c7c7626329": {
+    "suite": "raptor-tp6-google-firefox",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-tp6-google-firefox-fnbpaint",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1731152
+  },
+  "d24a8f18d5b41edcb9f22b0f620c2a456dcf2780": {
+    "suite": "raptor-motionmark-animometer-chrome",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1731154,
+    "lower_is_better": false
+  },
+  "b50fa2074324ccd9a21ee7dd5f06edacbcdee2f2": {
+    "suite": "raptor-webaudio-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1729138
+  },
+  "06b3b507ceb4c273828f03d7d127ac5d038ffe38": {
+    "suite": "raptor-tp6-youtube-firefox",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-tp6-youtube-firefox-fnbpaint",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1731041
+  },
+  "2fa885c97d418e58ed36464bf52460dcdf9326ea": {
+    "suite": "raptor-tp6-amazon-firefox",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-tp6-amazon-firefox-fnbpaint",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1731038
+  },
+  "1fee54d15b64b7e80d7391338c1882a8254b6b7d": {
+    "suite": "raptor-firefox-tp6-facebook",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-firefox-tp6-facebook-fnbpaint",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1711572
+  },
+  "5fcb75ad43914f67bf254a75cda41f123488379b": {
+    "suite": "raptor-sunspider-chrome",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1730689,
+    "lower_is_better": false
+  },
+  "25ad06d278fe5c4873b5f4782f183b02804f4ac3": {
+    "suite": "raptor-google-sheets-firefox",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-google-sheets-firefox-fnbpaint",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1731043
+  },
+  "7fb97664cac5f44ffadc26b2f022e4c68c35efd8": {
+    "suite": "raptor-speedometer-chrome",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1727184,
+    "lower_is_better": false
+  },
+  "fee739b45f7960e4a520d8e0bd781dd9d0a3bec4": {
+    "suite": "raptor-motionmark-htmlsuite-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1711481,
+    "lower_is_better": false
+  },
+  "c578e1e3f8f16e898c481741267853809ab0ba55": {
+    "suite": "raptor-tp6-amazon-firefox",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-tp6-amazon-firefox-fnbpaint",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1731150
+  },
+  "b3689041b2cc3756e5fe5aedd123771726cf1e07": {
+    "suite": "raptor-tp6-amazon-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1731806
+  },
+  "3cd7b959ad9ad269280c47ff91375e03c1d1d9f9": {
+    "suite": "raptor-tp6-google-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1731770
+  },
+  "a3e755833e8ef2794cb27f8d1506c8c4197039d9": {
+    "suite": "raptor-tp6-youtube-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1731773
+  },
+  "c7224d91ff946000a79ea534e0be23ebd75bbd16": {
+    "suite": "raptor-sunspider-chrome",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1730813,
+    "lower_is_better": false
+  },
+  "a00f58c9b8be25332d2d20e89e70bab2c4f65e7e": {
+    "suite": "raptor-google-slides-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1731803
+  },
+  "5d28b6dd744f9c5453c17049336d22326482dcfb": {
+    "suite": "raptor-stylebench-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1707878,
+    "lower_is_better": false
+  },
+  "daa820fa256841f7abb566f21eaf8248fb782dd6": {
+    "suite": "raptor-google-slides-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1731752
+  },
+  "32a86af34bdb8010b565e78247750caf0774db9b": {
+    "suite": "raptor-motionmark-htmlsuite-chrome",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1731167,
+    "lower_is_better": false
+  },
+  "07f4c14da6bc9668b70738875e42cdb24f9a9903": {
+    "suite": "raptor-stylebench-chrome",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1727131,
+    "lower_is_better": false
+  },
+  "e15c4939966bfae1ea94be75c57dbc843ae6295e": {
+    "suite": "raptor-firefox-tp6-youtube",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-firefox-tp6-youtube-fnbpaint",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1713537
+  },
+  "46c3b4ff0d759e4d297a02bcdd916fc94c8c20d3": {
+    "suite": "raptor-firefox-tp6-google",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-firefox-tp6-google-fnbpaint",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1711573
+  },
+  "aea9309b6086f08c03b8281be629b20b0f0a8cd8": {
+    "suite": "raptor-google-docs-firefox",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-google-docs-firefox-fnbpaint",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1731164
+  },
+  "d9f8d72e29cd77ca16301517bb9d533658152ab8": {
+    "suite": "raptor-webaudio-chrome",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1729159
+  },
+  "8fcdc1c9f02f494654553c61e24aea1a3f970603": {
+    "suite": "raptor-firefox-tp6-google",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-firefox-tp6-google-fnbpaint",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1713535
+  },
+  "e61003ddaae6aebb6f0b4cb99c574938215d9288": {
+    "suite": "raptor-google-docs-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1731797
+  },
+  "a8e484ef244aa1cf0c7926248e929c11d14664d2": {
+    "suite": "raptor-tp6-facebook-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1731767
+  },
+  "fe2f96765bfab95b6d916b984623fe7beb96367e": {
+    "suite": "raptor-webaudio-chrome",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1729054
+  },
+  "46e1d49640a402a048682a45bdbf81f6bf05934f": {
+    "suite": "raptor-firefox-tp6-amazon",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-firefox-tp6-amazon-fnbpaint",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1713533
+  },
+  "eb49f6c5ab882e82a813feae231e4fe9aa77a885": {
+    "suite": "raptor-google-sheets-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1731800
+  },
+  "4fe1a74aaa0b5de88f313f6399ce66ecce5a7dd9": {
+    "suite": "raptor-motionmark-htmlsuite-chrome",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1731075,
+    "lower_is_better": false
+  },
+  "de671caa803d15f6951e3cbbfb709305453c5767": {
+    "suite": "raptor-google-slides-firefox",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-google-slides-firefox-fnbpaint",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1731044
+  },
+  "30fef9d53a5873c7c782252c1ed33b3a28c55d9b": {
+    "suite": "raptor-stylebench-chrome",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1727773,
+    "lower_is_better": false
+  },
+  "e04c0d600f92e74df9e282100b1628ad39db727e": {
+    "suite": "raptor-sunspider-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1730841,
+    "lower_is_better": false
+  },
+  "6ed812e2c4c6cf6e2525dc3fad4490a794c5b818": {
+    "suite": "raptor-firefox-tp6-youtube",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-firefox-tp6-youtube-fnbpaint",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1711575
+  },
+  "2b65d91bf42ba0e0e62a92d8bcb842019503003d": {
+    "suite": "raptor-tp6-facebook-firefox",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-tp6-facebook-firefox-fnbpaint",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1731039
+  },
+  "a46e914b5af2eed571b3b8840914d4741782f180": {
+    "suite": "raptor-speedometer-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1709566,
+    "lower_is_better": false
+  },
+  "d05924ad6712375cbc7f1b45e33b507593279603": {
+    "suite": "raptor-tp6-amazon-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1731764
+  },
+  "d083ea056f30625035a4dc29ef069960037a06b8": {
+    "suite": "raptor-speedometer-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1708244,
+    "lower_is_better": false
+  },
+  "6892083f8af6422cd3ddd59fd9ce360d082674f8": {
+    "suite": "raptor-google-sheets-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1731749
+  },
+  "9ac373554e70a14addadf4538c1457b4eed8e312": {
+    "suite": "raptor-webaudio-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1729012
+  },
+  "793b8e6b9cbdce74b11a08a9e4d60fc08072b45b": {
+    "suite": "raptor-firefox-tp6-google",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-firefox-tp6-google-hero:hero",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1713536
+  },
+  "81b0d0022a89da4e2b87257acc31a0db367ffebd": {
+    "suite": "raptor-tp6-google-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1731812
+  },
+  "a44bcd4b72f143fd38eb0cd2c4d6be828119711c": {
+    "suite": "raptor-firefox-tp6-google",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-firefox-tp6-google-hero:hero",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1711574
+  },
+  "f1841ec3f67d2c1ed5a3fb17d8f5db09238a6d01": {
+    "suite": "raptor-tp6-youtube-firefox",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-tp6-youtube-firefox-fnbpaint",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1731153
+  },
+  "e04acd6a084893319b02d2059edc560c02a82d3f": {
+    "suite": "raptor-tp6-facebook-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1731809
+  },
+  "d37c5bec0680e8855b4477e8997ce4d5c5e7a68a": {
+    "suite": "raptor-firefox-tp6-amazon",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-firefox-tp6-amazon-fnbpaint",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1711571
+  },
+  "8f654351e7b6218a2050a0ec3ea46f34cc5cc683": {
+    "suite": "raptor-stylebench-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1709186,
+    "lower_is_better": false
+  },
+  "757c6249f815b86f7eaca8d8de251a6b1768cd6d": {
+    "suite": "raptor-tp6-facebook-firefox",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-tp6-facebook-firefox-fnbpaint",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1731151
+  },
+  "ecbd242a79c4070c10fed74d6383830e09f2ea83": {
+    "suite": "raptor-google-docs-firefox",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-google-docs-firefox-fnbpaint",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1731042
+  },
+  "3519c27f21a57077b16b48eeafbd7a4f8bd68039": {
+    "suite": "raptor-sunspider-firefox",
+    "has_subtests": true,
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1730582,
+    "lower_is_better": false
+  },
+  "8b5add0477ee98cf59629dc127c6a9d3cf41d331": {
+    "suite": "raptor-firefox-tp6-facebook",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-firefox-tp6-facebook-fnbpaint",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1713534
+  },
+  "625d6bbcaf0fb090e6db8171c3b826a8aa6ca6d3": {
+    "suite": "raptor-google-sheets-firefox",
+    "machine_platform": "windows10-64",
+    "framework_id": 10,
+    "test": "raptor-google-sheets-firefox-fnbpaint",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1731165
+  }
+}

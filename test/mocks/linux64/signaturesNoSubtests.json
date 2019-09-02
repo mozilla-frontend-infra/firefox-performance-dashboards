@@ -1,0 +1,4986 @@
+{
+  "485273b8a6cf1000a974817006a5587e396b9169": {
+    "suite": "sessionrestore_no_auto_restore",
+    "test": "sessionrestore_no_auto_restore",
+    "id": 1652015,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "7ecf7ce77b27d174d3e36e379eeafefd878ab583": {
+    "suite": "tps",
+    "id": 1353266,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "bd3d000a1b5b2db4fcc760963b11bce0197387f7": {
+    "suite": "tresize",
+    "test": "Network_lo_packets_tx",
+    "id": 33458,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "7dcb9c38508c01f64e47f411a20dc047b37b1d22": {
+    "suite": "ts_paint_webext",
+    "test": "ts_paint_webext",
+    "id": 1507877,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "cc9ebfc103249566dd70b521ed2682266002e005": {
+    "suite": "rasterflood_gradient",
+    "id": 1618022,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "4e7dfbcf093e50cc85566c22aa0a97405b7da492": {
+    "suite": "tpaint",
+    "id": 1517540,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "2923a9bff14f67e2c1bbda64996203bd8a558dad": {
+    "suite": "tsvg_static",
+    "id": 1455970,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "a7289375c6afdbb5b1b996aa84726bf1a1d1617c": {
+    "suite": "tsvgr_opacity",
+    "id": 1325623,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "3dad3177b3cd74880dd33d4e43279ffea0f0347d": {
+    "suite": "basic_compositor_video",
+    "id": 1352674,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "0ffa8067f2c659fc502e0aa6540a7c4100f48788": {
+    "suite": "rasterflood_svg",
+    "id": 1618021,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "94f6b5e5e2a169b5e5221589dddcaab3b2188f5f": {
+    "suite": "ARES6",
+    "id": 1659449,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "e07db8723eb3d3dd3b103c811228476db020b884": {
+    "suite": "tresize",
+    "test": "Network_eth0_packets_tx",
+    "id": 34664,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "7590eb71e8668da75b489db99a30775625fd15bc": {
+    "suite": "tscrollx",
+    "id": 1325700,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "9938d4ea4f2afa10840fb3f7ef1e7e389ed13891": {
+    "suite": "tresize",
+    "test": "Network_lo_packets_tx",
+    "id": 35451,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "95976671ecd3925c3d194421f0f1c991fa6fca71": {
+    "suite": "tp6_google",
+    "id": 1646894,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "4ac072004ea185659e3a65ce4a3403f891a35c56": {
+    "suite": "a11yr",
+    "id": 1323596,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "8cba34a5b756cc4c005381526f637533c22f2f31": {
+    "suite": "tp5o",
+    "test": "responsiveness",
+    "id": 1324888,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "3b2ab39d998135ba405ed312261abe6800b24ff0": {
+    "suite": "tp5o_scroll",
+    "id": 1654240,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "9c6a5d701fb260dc35f52dabe38e2e28adae02c0": {
+    "suite": "tp5o",
+    "id": 1551044,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "b73d08a0239c1ecd0a89e39b9664672c210c63fc": {
+    "suite": "tp6_youtube",
+    "id": 1568038,
+    "extra_options": [
+      "1_thread",
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "0fb74a3de048e57e1b03cc65c9e5ac3b9d8d531e": {
+    "suite": "sessionrestore_no_auto_restore",
+    "test": "sessionrestore_no_auto_restore",
+    "id": 1647501,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "54aafe1d20a4668f0357f6f4e67d9de5db4d76a6": {
+    "suite": "tps",
+    "id": 1649637,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "a5e76e9bd9f938df318873ac5f88b85e4b6f2d9c": {
+    "suite": "tscrollx",
+    "id": 1353246,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "39c6bd9082aa9150a5fa05b51f8119c50a12bd31": {
+    "suite": "tsvg_static",
+    "id": 1455750,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "0ace2110762ed6b66c7c1d174adbdd662693efb1": {
+    "suite": "media_tests",
+    "test": "audio_playback_quality_delay_in_ms",
+    "id": 36153,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "4246bf3054af6acad6a0cece567e2c72170b84cc": {
+    "suite": "tp6_facebook",
+    "id": 1568052,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "824d93dff72b7b0a0c284a16aaef47bedb1ec032": {
+    "suite": "tpaint",
+    "id": 1647498,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "6ed155c696d0c0fd8cdc5145da685fff0036a989": {
+    "suite": "v8_7",
+    "test": "Richards",
+    "id": 11430,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "61c41ce33741ee40d827b85ad56feb9a3080352f": {
+    "suite": "motionmark_htmlsuite",
+    "id": 1649021,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "34dbf2ccb1c7a8c08b0fa6c3c33238e0f936fe64": {
+    "suite": "tsvgx",
+    "id": 1325587,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "27e74516d57a0fc54d8495de878a5e148a25212a": {
+    "suite": "v8_7",
+    "id": 1353026,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "35ffc6bc5083236262377514d0e12d28397b5b94": {
+    "suite": "tp6_google_heavy",
+    "id": 1574803,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "176ef53f12f48f16519e94baa7bae59433504ff5": {
+    "suite": "displaylist_mutate",
+    "id": 1648591,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "4cbbfc6d1566a05c1fb2e00745d6223cad14acbc": {
+    "suite": "sessionrestore",
+    "test": "sessionrestore",
+    "id": 1353221,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "d8afd5c19140da2ff9ac884171a122903a95465a": {
+    "suite": "tp5o_webext",
+    "test": "Main_RSS",
+    "id": 1550264,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "a104401cac07e5f6cae0340385672b63a3881318": {
+    "suite": "basic_compositor_video",
+    "id": 1550004,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "b4c899ae8cdfaecae2ed41e2053c363592b7426d": {
+    "suite": "tresize",
+    "test": "Network_eth0_bytes_tx",
+    "id": 35614,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "df2ce91e28a2960bc633d0e0e32969aa65ae3930": {
+    "suite": "ts_paint",
+    "test": "ts_paint",
+    "id": 1351517,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "b4b21ba1c506bb8fd6161e7bd2eda6e37dbe4326": {
+    "suite": "tpaint",
+    "test": "tpaint",
+    "id": 1323602,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "5ac6115291a0a259c66b972c21ee7a9d4a887271": {
+    "suite": "ts_paint_webext",
+    "test": "ts_paint_webext",
+    "id": 1493049,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "54f5a7bfca346542bb8f36e516888cc3a55da846": {
+    "suite": "tsvg_static",
+    "id": 1551466,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "2d6ef6692262698e35259ba482807388649d86b1": {
+    "suite": "tp6_amazon",
+    "id": 1568059,
+    "extra_options": [
+      "1_thread",
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "161df39dd46acb84e2b657a6c7eb757294c9ecdf": {
+    "suite": "cpstartup",
+    "test": "content-process-startup",
+    "id": 1652019,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "1c7302ddb339c1fa865ad6b6b87053ed723282ef": {
+    "suite": "rasterflood_gradient",
+    "id": 1618045,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "80984697abf1f1ff2b058e2d9f0b351fd9d12ad9": {
+    "suite": "tp5o",
+    "id": 1324797,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "c0929d81162c0ebc474249a6d1b81638617c395b": {
+    "suite": "tcanvasmark",
+    "id": 1550968,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "31eface8090b9cef6b7ae6972068e74f7b84b1fd": {
+    "suite": "media_tests",
+    "test": "audio_playback_quality_snr_in_db",
+    "id": 35363,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "1ad34c057c2020658a4c278fed767cba9ffcd59a": {
+    "suite": "bloom_basic",
+    "id": 1550386,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "8c9844b048fde48f4591c0f258d811c45bf70c13": {
+    "suite": "v8_7",
+    "test": "Splay",
+    "id": 11428,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "dfc8cf9c1e717dbdb10b89bf7450bd2e4d9ae994": {
+    "suite": "tp6_facebook",
+    "id": 1568056,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "0743151a7f10e7f8328ff360e55dda08fd3e57bb": {
+    "suite": "dromaeo_dom",
+    "id": 1322459,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "08223973eaf665b895fb30d136c560f13789c94a": {
+    "suite": "tp6_google",
+    "id": 1651441,
+    "extra_options": [
+      "1_thread",
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "b0e2c90d8a409b90242008110c3ef66d88c70593": {
+    "suite": "tcanvasmark",
+    "id": 1550097,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "1a54edc3623e68a6bc9111ce193ece0a768edd31": {
+    "suite": "glvideo",
+    "test": "Mean tick time across 100 ticks: ",
+    "id": 1550898,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "2225310a1c65eab760f49b3ef9a8f0545e96096f": {
+    "suite": "tresize",
+    "test": "Network_lo_bytes_rx",
+    "id": 27345,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "d25695d2268c978f5525d56e200d7d8d74be9dbd": {
+    "suite": "cpstartup",
+    "test": "content-process-startup",
+    "id": 1559692,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "3688aea2e3e48fba423134531f241573056e0cf4": {
+    "suite": "tp5o_scroll",
+    "id": 1353268,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "0253ea690eb07d30cd9efa2ef5a818928a4e2445": {
+    "suite": "tp5o_webext",
+    "test": "XRes",
+    "id": 1550266,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "3a79704ad12195523beef6e108a5de7903eedbd7": {
+    "suite": "speedometer",
+    "id": 1569583,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "140d36317c482f4448604a7abf1756cc5dbdfb06": {
+    "suite": "tresize",
+    "test": "tresize",
+    "id": 1324774,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "c582da43684b32a7c838a18ec73ef383e05bd299": {
+    "suite": "tresize",
+    "test": "tresize",
+    "id": 1550967,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "3cd8bad27f46ae6b18a6201ed11d377cff5eac40": {
+    "suite": "glterrain",
+    "id": 1649264,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "ebacd2321bed6b483dcd1bf79a7e3ce34ae494e5": {
+    "suite": "tp5o",
+    "test": "XRes",
+    "id": 1325751,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "9964ae2a77f38af15e7ddf4cccd6a348c8a27777": {
+    "suite": "perf_reftest_singletons",
+    "id": 1646973,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "0931ad0af306a41a185713853d624767ddc9dd15": {
+    "suite": "tabpaint",
+    "id": 1323605,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "d96f0b4799c624645105c63a2ba9f0b44ef3ca88": {
+    "suite": "tsvgr_opacity",
+    "id": 1551369,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "36b5d068710564f3c9bead8c9e8d4dbe7bf3a768": {
+    "suite": "tsvgx",
+    "id": 1353256,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "a1480009f6732009b22f4b6a31f4378bfe2113b2": {
+    "suite": "tp6_youtube",
+    "id": 1646895,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "fe954884b1cd806f1b3b519e6aa725bfb076cbe3": {
+    "suite": "tresize",
+    "test": "Network_eth0_bytes_rx",
+    "id": 35514,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "1e6dd5feb63262a73274976bff958d0b8654ec55": {
+    "suite": "dromaeo_css",
+    "id": 1326627,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "19eb98af27400e109806f72298c7366cedc12a55": {
+    "suite": "stylebench",
+    "id": 1634195,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "916514d3de64f8f4c9113feb02444a7596002658": {
+    "suite": "v8_7",
+    "test": "Richards",
+    "id": 28203,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "19ed9b7b01e133472e71682665f4843831bfbc89": {
+    "suite": "tresize",
+    "test": "tresize",
+    "id": 1550096,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "bce050415dedae531febf630028b5258e7f19880": {
+    "suite": "motionmark_htmlsuite",
+    "id": 1653918,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "3031bd6cceae158f572d099b408c8f97efef9bde": {
+    "suite": "tp5o_webext",
+    "test": "XRes",
+    "id": 1507932,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "1f102f987df372d7c565a4e4665aa33e5760b737": {
+    "suite": "cart",
+    "id": 1353262,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "7247f3a4cfceda7865a921a949e96e2577fbdea2": {
+    "suite": "tp5o_scroll",
+    "id": 1551113,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "26f1ce48bcc26a27c803298b96a2b66c11ca4dd6": {
+    "suite": "perf_reftest_singletons",
+    "id": 1555259,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "59aeea15ee40843b4c6a94af8dd7f8271b838eac": {
+    "suite": "v8_7",
+    "test": "Earley",
+    "id": 11362,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "ff25ce81abe56bf36110b9a2602f0090bb213f01": {
+    "suite": "bloom_basic_singleton",
+    "id": 1527378,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "1a21e90b7ec2288f4a04adf71564d8dac243f620": {
+    "suite": "bloom_basic_ref",
+    "id": 1507863,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "1ee437da5d40ec5c28d523e50090d48048b43917": {
+    "suite": "tps",
+    "id": 1330183,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "248d8dd553a6efcd55b5b73585ccda39567f980a": {
+    "suite": "tp6_youtube",
+    "id": 1651442,
+    "extra_options": [
+      "1_thread",
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "9dd66bd1977c949cc2db28f33b0f68c2af8b8494": {
+    "suite": "v8_7",
+    "test": "NavierStokes",
+    "id": 11352,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "c76d1cbefab371ea8e5e0db9b1f68f055e78b5ea": {
+    "suite": "tp5o",
+    "test": "Main_RSS",
+    "id": 1352767,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "d5218d77ac61c05d9d4a53125b8a6205f5c54d9a": {
+    "suite": "rasterflood_gradient",
+    "id": 1648593,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "bdcf5dbf9a46978dc9f4fc62012790d6763a3cb2": {
+    "suite": "bloom_basic",
+    "id": 1507862,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "27ba9ecfc6793c2a9357cc7c2328f9c4302b7314": {
+    "suite": "cpstartup",
+    "test": "content-process-startup",
+    "id": 1647505,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "48811e165461efccbd8a2dfcaf6c24b2a6a066ae": {
+    "suite": "media_tests",
+    "test": "audio_playback_quality_snr_in_db",
+    "id": 35635,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "00ab9f9f9241a67f9bfc376910ff8beb2fc0f8d1": {
+    "suite": "tp5o",
+    "id": 1352629,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "6e2f9d4967a6a9f12f04095fd7ebf2217484f18f": {
+    "suite": "displaylist_mutate",
+    "id": 1653401,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "9fb2d1259c7236c21a98e4021b3145a1fffe373d": {
+    "suite": "sessionrestore_many_windows",
+    "test": "sessionrestore_many_windows",
+    "id": 1514545,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "67202fa32f5dfcd6e06340c5df889ebb5b9e3d00": {
+    "suite": "tp5o_webext",
+    "test": "XRes",
+    "id": 1647996,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "9db5c2909418068b3004ea3911675ee3e6e5f6da": {
+    "suite": "about_preferences_basic",
+    "id": 1660552,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "79ea4f1551c1eeb0fdd2bf461847f65df25b4f05": {
+    "suite": "cart",
+    "id": 1353248,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "bb6e259f3d20fc559632600722a277dc2e67ef43": {
+    "suite": "dromaeo_dom",
+    "id": 1351237,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "651297aacda3c8c7433e1e28cd9322fbe3f57143": {
+    "suite": "v8_7",
+    "test": "Richards",
+    "id": 28156,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "ff2723032e6bee08807c0d0b082c8c6af3dca6f5": {
+    "suite": "tp5o",
+    "id": 1325650,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "6507403667114c0b895366032e9db7ebe7b3e33d": {
+    "suite": "tp6_facebook_heavy",
+    "id": 1646957,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "a4c043f3728f97c82cf525ddafcfa88f0252836f": {
+    "suite": "tsvgr_opacity",
+    "id": 1648239,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "36ceb7ab3ab2f4735a6b3b2b3e8520dab2925e12": {
+    "suite": "basic_compositor_video",
+    "id": 1324211,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "e86ee75556f6e0357b788d1172457108d0180fbe": {
+    "suite": "tresize",
+    "test": "Network_eth0_packets_tx",
+    "id": 29826,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "a6180a66037c3e43491296d0fbd2aef2b8ce065e": {
+    "suite": "dromaeo_css",
+    "id": 1353251,
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "a53d6e5b8e939bf834aa0ae7726f95f5ed88536b": {
+    "suite": "tscrollx",
+    "id": 1551453,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "6402224d23f731fe585e016ac5551b8f986917e4": {
+    "suite": "speedometer",
+    "id": 1569587,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "92cdcd15433f875130501ecca4499bd0f72da357": {
+    "suite": "kraken",
+    "id": 1325602,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "2f35b2104cecaee3a74dcafddc489a8f46e2c163": {
+    "suite": "tps",
+    "id": 1550774,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "8e8fa339c8cebb10ea74f623b028b1c382548319": {
+    "suite": "damp",
+    "id": 1550717,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "4cb2e591e2c0b7404c4d523b54d31f6458542cdf": {
+    "suite": "tp6_facebook_heavy",
+    "id": 1574763,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "b624764f723b55ca4a97e839370100132dbf7d47": {
+    "suite": "v8_7",
+    "id": 1352937,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "7d15984b02b70e8fb8474ffe4e0ecd1a85cb0788": {
+    "suite": "tp5o",
+    "test": "Private Bytes",
+    "id": 1353232,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "ce1b313532802d346b16d4cedd6ebe9c20d40b38": {
+    "suite": "tcanvasmark",
+    "id": 1353241,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "000e296fa1044c1b98a6aafac3604fe2364ecb7d": {
+    "suite": "sessionrestore_no_auto_restore",
+    "test": "sessionrestore_no_auto_restore",
+    "id": 1550092,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "38f1a84a3ca78381e812887af0fae0d57d832f94": {
+    "suite": "about_preferences_basic",
+    "id": 1660567,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "f7a7eb10a31d949a8a02f1cee45a5ef452889bf7": {
+    "suite": "kraken",
+    "id": 1326636,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "92a331f2f9854dfc449b3ecc864208aa3c50e6bf": {
+    "suite": "tp5o_webext",
+    "id": 1493050,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "056018e7faa0e8341f220ad150403b3bf1b2495e": {
+    "suite": "displaylist_mutate",
+    "id": 1577169,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "38c2a21f5d325d370deac49cbc21af941e231139": {
+    "suite": "ts_paint",
+    "test": "ts_paint",
+    "id": 1647497,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "01d0a6a83d253f10d22e6235a543c1c1e97e03b5": {
+    "suite": "v8_7",
+    "test": "Earley",
+    "id": 24605,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "c0d928c1e60b5975297a402af4156d9340a13a1d": {
+    "suite": "tabpaint",
+    "id": 1351522,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "d42a1494b443d50525a32eeb38622524f7a09c58": {
+    "suite": "tp6_youtube",
+    "id": 1568042,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "60f7878b5cd17f984c82ec4bc4427ac0a2bba5e7": {
+    "suite": "tp5o_webext",
+    "id": 1551277,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "c0ee429708255dd18dd27590cd8bbd4c7c2aaef8": {
+    "suite": "speedometer",
+    "id": 1651675,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "0beffdc8b6c1bc5bc0a0292a2947ad260d39e876": {
+    "suite": "tart",
+    "id": 1648242,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "e6761250cb7fa17d92a7a3d3e376ae79d75a1c85": {
+    "suite": "v8_7",
+    "test": "Decrypt",
+    "id": 11354,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "66863fe0a28b8d741be69000cebeb5b82bf2693d": {
+    "suite": "tp6_google",
+    "id": 1568049,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "534b6bb95c377f93e8db27b49b9a342b42fbfda7": {
+    "suite": "tsvgx",
+    "id": 1353238,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "eaf20f12ddfc01cb190a312f56681bbba6f21905": {
+    "suite": "tsvgx",
+    "id": 1550291,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "ad19f8e8e3065d53d5b55a302137fce80ec11366": {
+    "suite": "tresize",
+    "test": "tresize",
+    "id": 1651473,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "12b24af64dc7dc6ac2a332b90402f7d70875bcbe": {
+    "suite": "tp6_facebook",
+    "id": 1646906,
+    "extra_options": [
+      "1_thread",
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "6ecd7c3e149b249f11a46f4c0f526e5f8e31df2e": {
+    "suite": "tp5o_webext",
+    "id": 1550211,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "9970a4faf7832a9767abd3369fc03e3b989c23f9": {
+    "suite": "tp5o",
+    "test": "responsiveness",
+    "id": 1353235,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "5ca59948a94af48580c2ffe72dee9f6ae5a73f51": {
+    "suite": "cpstartup",
+    "test": "content-process-startup",
+    "id": 1559704,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "9ad6f982e88a4735890544b15c191f7229ffaa8a": {
+    "suite": "v8_7",
+    "test": "Boyer",
+    "id": 28158,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "f9465684ef4e74bdd45af604f08b7fda1752d62c": {
+    "suite": "bloom_basic",
+    "test": "http:",
+    "id": 1485312,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "4d8e9036f1282b609ffccfcb077a67a813b15e26": {
+    "suite": "kraken",
+    "id": 1353255,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "382820f2f64c7a5cbf1e04f8436defc892525f7f": {
+    "suite": "displaylist_mutate",
+    "id": 1577170,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "3962a0b47b65dfca4c3bb48d694e8a01e23cc50b": {
+    "suite": "ts_paint_webext",
+    "test": "ts_paint_webext",
+    "id": 1653030,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "af4c00eb39d490fbbe9d0a558a1fd91e51e858e8": {
+    "suite": "tabpaint",
+    "id": 1652016,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "79fb157eb94529568f02bd94de4a1bcb707d7c62": {
+    "suite": "tpaint",
+    "test": "tpaint",
+    "id": 1353220,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "9c37a233a77a340bc293fdd560636bce00b45b40": {
+    "suite": "tsvg_static",
+    "id": 1455744,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "49092979a9c8c788bfa8488dd1fd5c26efc6dae0": {
+    "suite": "v8_7",
+    "test": "Boyer",
+    "id": 11437,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "3fdba8e51e37be30d9831ba4cefa37e1ba580417": {
+    "suite": "dromaeo_css",
+    "id": 1353253,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "33495d45ddc6d575bf7bd217f868b36e26ca68b4": {
+    "suite": "tp5o_webext",
+    "test": "Main_RSS",
+    "id": 1493102,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "b70d0fef391b93c98da521bd243d85fa1e799277": {
+    "suite": "v8_7",
+    "test": "RayTrace",
+    "id": 11439,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "a3d80c2e06581942b5830d848b54546c13455f3f": {
+    "suite": "basic_compositor_video",
+    "id": 1653381,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "0e5abace8924b028dd0545980e07e515de7b977e": {
+    "suite": "tart",
+    "id": 1326674,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "db24f1411c8477163d90984a0581a273d820adaf": {
+    "suite": "sessionrestore_no_auto_restore",
+    "test": "sessionrestore_no_auto_restore",
+    "id": 1353223,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "d2800d425ef08fff8b394becb2cf4e87ec2640ba": {
+    "suite": "cpstartup",
+    "test": "content-process-startup",
+    "id": 1559703,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "9ba3d61d0e42594fa1fec680b5b304e839dc8fb8": {
+    "suite": "glvideo",
+    "test": "Mean tick time across 100 ticks: ",
+    "id": 1648590,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "054905c426e16aca2e90a056152d32e9f9616511": {
+    "suite": "a11yr",
+    "id": 1323608,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "a4d2e3da1f0ce0fc6de054cdcb21bbd81a5a7dcd": {
+    "suite": "perf_reftest_singletons",
+    "id": 1651474,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "8a4b3613b6c4993b6b25af151c9e496c7eb4b071": {
+    "suite": "ts_paint_heavy",
+    "test": "ts_paint_heavy",
+    "id": 1574758,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "e48f441013283ae0241fc2070bc35e95da1b5202": {
+    "suite": "glvideo",
+    "test": "Mean tick time across 100 ticks: ",
+    "id": 1653400,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "50280499266defab97a5f150c64a7dc33756d2e5": {
+    "suite": "a11yr",
+    "id": 1353217,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "3ff68dab85d334ade039992e6d8cd0ebc05cbcf4": {
+    "suite": "tsvgr_opacity",
+    "id": 1326670,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "872bc4d0b046a95344fb738e3e4a26d962f22bdf": {
+    "suite": "ts_paint",
+    "test": "ts_paint",
+    "id": 1550088,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "e2cd444403a702b3a77d254ba6372ca9cda28dae": {
+    "suite": "v8_7",
+    "test": "Earley",
+    "id": 28207,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "dc1e5502eb1d595618e6c7e142c80e60b0056449": {
+    "suite": "tp5o",
+    "test": "responsiveness",
+    "id": 1550084,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "17374d7482ea6af7a3ee0c544cba3a6fbaa76218": {
+    "suite": "tp6_facebook_heavy",
+    "id": 1651453,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "35e0dc669c1493cb7088b64482578236824d216a": {
+    "suite": "tcanvasmark",
+    "id": 1324773,
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "e76b6a9b4e846fd024bce98cb0a2240a252925be": {
+    "suite": "v8_7",
+    "test": "RegExp",
+    "id": 11360,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "e6809cb6c354be4aa00aec2729b135234291e149": {
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "id": 1352993,
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "suite": "media_tests"
+  },
+  "10218571e2f4e72a5bea2943b2043687523df438": {
+    "suite": "tp6_youtube",
+    "id": 1568050,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "42392fbe6bcf3f0cb4dbfa2966cefd081d01dc0a": {
+    "suite": "stylebench",
+    "id": 1634301,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "0fe481c390d20b45d70f4f585cbb908383786988": {
+    "suite": "rasterflood_svg",
+    "id": 1648592,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "bf95d97a4c98e04da0d19e868e26deffdb93a387": {
+    "suite": "tp5o_webext",
+    "test": "Private Bytes",
+    "id": 1507931,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "5d158721b834f148f5f313e4d4e3952208006b1c": {
+    "suite": "tp6_youtube",
+    "id": 1568034,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "b00d2367fbfcad44ac07235c55297cc427c570d4": {
+    "suite": "damp",
+    "id": 1352983,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "32b5c44f74200c7cb9abf6cc4189d5750bac1fd1": {
+    "suite": "tps",
+    "id": 1654554,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "e5f11cb4cbef16f01eee10037a37d803eaeb1111": {
+    "suite": "tsvgx",
+    "id": 1648231,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "33e2dce42b9fb7b3ca49ae4a4130cd6b4e3a3ffc": {
+    "suite": "tp6_amazon_heavy",
+    "id": 1646955,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "4df0fb2d885655e0f0e3d8a195ad4405588c3154": {
+    "suite": "tp5o",
+    "id": 1647786,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "17f87428e048a9786d3c8373d1e27696db7c1a35": {
+    "suite": "tscrollx",
+    "id": 1653252,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "50754fffad4980aac67d9b5cf25fb2f4ffc177b2": {
+    "suite": "bloom_basic",
+    "test": "http:",
+    "id": 1485316,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "8df739bd601cde4f9b80276b0c3572d4b90a0621": {
+    "suite": "ts_paint_webext",
+    "test": "ts_paint_webext",
+    "id": 1647943,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "ef0969d8c96b42293abc2b079742dd5e943537c7": {
+    "suite": "tp6_amazon",
+    "id": 1568039,
+    "extra_options": [
+      "1_thread",
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "9fc0684e53bc01d554e627db4d2c51760c6f4915": {
+    "suite": "tp6_google_heavy",
+    "id": 1646950,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "bed99d3fd00fed7e6862316f589bf0ea03dbc97e": {
+    "suite": "sessionrestore_many_windows",
+    "test": "sessionrestore_many_windows",
+    "id": 1647500,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "fbdc6d1f1096dd7022be9a2a741463d6abab0324": {
+    "suite": "tp5o_webext",
+    "test": "responsiveness",
+    "id": 1647997,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "67ab803918346f3a2527579850a3e43de5e27856": {
+    "suite": "media_tests",
+    "test": "audio_playback_quality_delay_in_ms",
+    "id": 28475,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "f31180ac041b38d9db4be9f8a1e0e319bd2dc336": {
+    "suite": "v8_7",
+    "test": "Encrypt",
+    "id": 28196,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "c5cef8fd00fe93e3670acea19b750569ac55ff37": {
+    "suite": "tsvgr_opacity",
+    "id": 1653218,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "258cedb10121da77cd4fcde72ce20c0f754376d1": {
+    "suite": "perf_reftest",
+    "id": 1556568,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "2d0c70a93801dfc0d92006da797fad6ddf508110": {
+    "suite": "speedometer",
+    "id": 1571040,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "b8ade217d7abe4bf00113b85adc479a86d8d1860": {
+    "suite": "tresize",
+    "test": "Network_lo_bytes_rx",
+    "id": 29453,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "309a9a9318bf9e81f2665dffe1b36ea64b5290e8": {
+    "suite": "tp5o_webext",
+    "id": 1653032,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "de19114aab8d47d91c2d3f23234e8cf56472f363": {
+    "suite": "perf_reftest",
+    "id": 1651939,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "b098bc2db637449cc1ae0931e694e1d102d4571c": {
+    "suite": "kraken",
+    "id": 1550275,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "b5e6b2938a52fa3c5ac6095c5c1075b0b808e426": {
+    "suite": "tp5o",
+    "test": "Main_RSS",
+    "id": 1325749,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "0913f3d989fce87f5ef592453b86412101a1739b": {
+    "suite": "tp5o_scroll",
+    "id": 1329791,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "03a1fd888197bb99949c672cffa8c466a65d6399": {
+    "suite": "glterrain",
+    "id": 1552237,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "cbcc1a47339e489172b6b9185793e60a9369bd70": {
+    "suite": "basic_compositor_video",
+    "id": 1324881,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "35e05ac169cbbd3cb0650ba719267dab93226862": {
+    "suite": "tresize",
+    "test": "Network_lo_bytes_rx",
+    "id": 34684,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "25efce3042ee2b40343ec3a163fb03574a339b45": {
+    "suite": "speedometer",
+    "id": 1571041,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "f09b662c34c234e7200d338e047581dbbe3ced4d": {
+    "suite": "ts_paint_flex",
+    "test": "ts_paint_flex",
+    "id": 1637087,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "f9422672456ec36723cc69e64c10e02cda9dd30f": {
+    "suite": "tp5o",
+    "id": 1353152,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "df3e643f921429c78e001fc34e1d78ecd78ac03f": {
+    "suite": "tp6_youtube_heavy",
+    "id": 1651451,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "559befa62275a5a9dae0c22eeed9354191e4526c": {
+    "suite": "tresize",
+    "test": "tresize",
+    "id": 1353240,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "2c1b18c36650325842deb2c1d0fd6da193d264a7": {
+    "suite": "kraken",
+    "id": 1353252,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "ca2c2fbbeea62b2f6262cfb0f9463301ddb3d764": {
+    "suite": "v8_7",
+    "test": "Decrypt",
+    "id": 28154,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "44c128934788a970b12935f53907f6da9f9be72b": {
+    "suite": "cart",
+    "id": 1326728,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "3e7f4391cabfa0dd7253beed294f8e91e453def2": {
+    "suite": "tp5o",
+    "test": "Main_RSS",
+    "id": 1353231,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "664c274bfcf996b14aa7771b6f2779531c309868": {
+    "suite": "tart_flex",
+    "id": 1647462,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "a17c4899b7d99c124b6d5453f9169cc973af982f": {
+    "suite": "tart",
+    "id": 1353259,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "4ffef272df73e84deb220b4d21d8f89a401101ba": {
+    "suite": "tp6_amazon",
+    "id": 1651439,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "61f6b38023425efa219d03f69e8fb39fbec6577f": {
+    "suite": "tresize",
+    "test": "tresize",
+    "id": 1324771,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "dcbe615b3c78de532c9afa5a5e3ce16b2a645b2b": {
+    "suite": "dromaeo_dom",
+    "id": 1322453,
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "64d6595d15aed5db235b13e81c3cbf8393d1139e": {
+    "suite": "bloom_basic",
+    "id": 1498293,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "0e819e2f7c9c7d8163600ecde1fe5aea7bcf12b9": {
+    "suite": "tresize",
+    "test": "Network_lo_packets_tx",
+    "id": 34011,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "27d6307070ce04b0120acb4ef8232b18eff28378": {
+    "suite": "tp5o_webext",
+    "test": "responsiveness",
+    "id": 1551360,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "3c10ee976fd60ff66efb150b4124fbff4cb2275d": {
+    "suite": "sessionrestore_no_auto_restore",
+    "test": "sessionrestore_no_auto_restore",
+    "id": 1351521,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "d160dff07e06e1961ef7106a91cd4a8a599293a1": {
+    "suite": "media_tests",
+    "test": "audio_playback_quality_snr_in_db",
+    "id": 36292,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "f2353a27f884ded65de714a0c2ee75386712f2a1": {
+    "suite": "a11yr",
+    "id": 1351513,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "ed73eaae870db9ec03e938a2415ececff9174289": {
+    "suite": "tp6_google_heavy",
+    "id": 1574760,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "8a95a2f778ea0089ed26a6f9174a7e6befd33537": {
+    "suite": "v8_7",
+    "test": "DeltaBlue",
+    "id": 11347,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "20a9fdbb222b81009d575624b4ec120981b483f3": {
+    "suite": "motionmark_animometer",
+    "id": 1649007,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "acd4a606b14ee8de6092813b1023868b11e795a5": {
+    "suite": "ts_paint_heavy",
+    "test": "ts_paint_heavy",
+    "id": 1574807,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "d9e3873faddb9fa9c2494946694fabbe17a22c0d": {
+    "suite": "tart",
+    "id": 1325637,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "2ebfd0b832c1c48628b4417bf4b8c8eaa33352b9": {
+    "suite": "sessionrestore_no_auto_restore",
+    "test": "sessionrestore_no_auto_restore",
+    "id": 1550955,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "06da3287bf7ed153cea21ed1435adf71a2f3e450": {
+    "suite": "v8_7",
+    "test": "RegExp",
+    "id": 28157,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "e3f03e34e8fe974161824ec27c4578f2aced652a": {
+    "suite": "bloom_basic",
+    "id": 1549927,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "2ec7d69d2ec9e56b2af560b80df7f5b520a18050": {
+    "suite": "tp6_amazon_heavy",
+    "id": 1574762,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "6f5658b705717214e9d6df677f29b397efeef99d": {
+    "suite": "tp5o",
+    "test": "XRes",
+    "id": 1353233,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "460af7f49b13d91a922199a102acd50087574747": {
+    "suite": "tcanvasmark",
+    "id": 1353052,
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "748f90bfe8895a733841ddb217169e043c72cc5d": {
+    "suite": "tp6_google",
+    "id": 1568037,
+    "extra_options": [
+      "1_thread",
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "9b6616a3594ba94f89f5670ade1f3154e81b600c": {
+    "suite": "bloom_basic_ref",
+    "test": "http:",
+    "id": 1485317,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "1599f6a0f2ba60b3621eb8b4134ddc45c28f2fe0": {
+    "suite": "tabpaint",
+    "id": 1647502,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "2bdf87f947726ff19ed1f88dc04871cee209cd58": {
+    "suite": "tp6_amazon_heavy",
+    "id": 1574805,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "0a6edf110fc4f8e54a8baa5f80d0e58439a13fee": {
+    "suite": "glvideo",
+    "test": "Mean tick time across 100 ticks: ",
+    "id": 1484143,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "f305a43917d199e7114001ba9024835bd68530a9": {
+    "suite": "ts_paint",
+    "test": "ts_paint",
+    "id": 1323612,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "cbde009696ceabdf5fca913f60ccfcbcd7d3a528": {
+    "suite": "tp5o",
+    "test": "Private Bytes",
+    "id": 1550082,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "91ee66e069fdeb63f2aaabf8b4cff8451273c461": {
+    "suite": "dromaeo_dom",
+    "id": 1646990,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "9c0028a9c871b51c8296485c8fc09b21fe41eec0": {
+    "suite": "ts_paint_flex",
+    "test": "ts_paint_flex",
+    "id": 1647493,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "0e5899c2b7327b24ebd7a169ec789b4d942c8f6c": {
+    "suite": "ts_paint",
+    "test": "ts_paint",
+    "id": 1353219,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "551e06a9fe1236002b670c5de0803673ad09ea64": {
+    "suite": "tresize",
+    "test": "Network_eth0_packets_rx",
+    "id": 33999,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "f99211fee55b701966dbc0772d8f1c161a2925c9": {
+    "suite": "rasterflood_gradient",
+    "id": 1653403,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "3d278568f72ca2be720ba0cfbf0bf32b73d28117": {
+    "suite": "cart",
+    "id": 1325731,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "46367d41c29b700ce48498ff49d753ec58fac194": {
+    "suite": "v8_7",
+    "test": "RegExp",
+    "id": 28205,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "12bb5447f4d6ca7fb3dceaca97b05831714824ef": {
+    "suite": "v8_7",
+    "test": "DeltaBlue",
+    "id": 28151,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "767057d264cee0036f829be719bc12f162e08ece": {
+    "suite": "glterrain",
+    "id": 1353270,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "285e32b27b415f323cd037df2bf9369ede71481f": {
+    "suite": "v8_7",
+    "test": "Encrypt",
+    "id": 28152,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "c9b1a8e608226897e4237ebd6899f3c95faa202c": {
+    "suite": "tp5o_webext",
+    "test": "Main_RSS",
+    "id": 1507930,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "ec70435b4c6f59b67beb6bf2b39a2bd73f512413": {
+    "suite": "tp6_amazon_heavy",
+    "id": 1651452,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "7a24867116d131ba105c1ef2fcd02f158ad32521": {
+    "suite": "tp5o_scroll",
+    "id": 1302021,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "264b7b8ddcd933591a907d605f489f9516b485d6": {
+    "suite": "tp5o_webext",
+    "id": 1647944,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "7765075340b97a78db8118635dab5693ac15b15e": {
+    "suite": "tp5o_webext",
+    "test": "responsiveness",
+    "id": 1493105,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "d03cdc477d48982ab6bd17158beb7497c8afee75": {
+    "suite": "tp5o",
+    "test": "responsiveness",
+    "id": 1647839,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "d9d527be5f54496018db05b134e32ac8bb192991": {
+    "suite": "tresize",
+    "test": "tresize",
+    "id": 1647461,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "3518bc387d6c46c40099a8b26293ef0e8f5f0a76": {
+    "suite": "tp6_facebook",
+    "id": 1568040,
+    "extra_options": [
+      "1_thread",
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "5d0289fdac88dd236692df779cdaed9567b508f9": {
+    "suite": "sessionrestore_many_windows",
+    "test": "sessionrestore_many_windows",
+    "id": 1550091,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "ae7d828bf9c33e62b671580c6cae725d1f475d90": {
+    "suite": "sessionrestore_many_windows",
+    "test": "sessionrestore_many_windows",
+    "id": 1652014,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "01c749a95624f2516aa039460c36f5fca13eb390": {
+    "suite": "tart",
+    "id": 1353245,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "158c32d385a7bf2803972f30b0e1fc6770fa1587": {
+    "suite": "tp5o_webext",
+    "id": 1507878,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "edaec66500db21d37602c99daa61ac983f21a6ac": {
+    "suite": "damp",
+    "id": 1328338,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "035433c5d82b244097a5e6d9051f70b71cd08ce3": {
+    "suite": "glterrain",
+    "id": 1302343,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "186867b0eb3966d94bfdf1efcd0dbf2bd83b1d19": {
+    "suite": "tp6_facebook",
+    "id": 1651444,
+    "extra_options": [
+      "1_thread",
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "f79b6a4f1f8f53326d3056f6c8008c0ff4de0a94": {
+    "suite": "damp",
+    "id": 1649531,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "2fb451a876e0332a94d719611e0e27631cdd5620": {
+    "suite": "tp5o",
+    "test": "Private Bytes",
+    "id": 1325750,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "a8ca686d17256289d1c1d769ddbb76ae29cec8e5": {
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "id": 1353111,
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "suite": "media_tests"
+  },
+  "e9bec78351ff47946d847d200642613b70edd23d": {
+    "suite": "glvideo",
+    "test": "Mean tick time across 100 ticks: ",
+    "id": 1484144,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "6a9cca55fbacea9f25edd3c1d52e3b4f19a7ba23": {
+    "suite": "tart",
+    "id": 1550303,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "43f4a232160422a1c12ddb7bd3c0783ef4e17a9e": {
+    "suite": "tp5o",
+    "test": "XRes",
+    "id": 1652645,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "1354d7c758bf12c4c2ac30f97c009c31a88ef1fc": {
+    "suite": "dromaeo_dom",
+    "id": 1550552,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "1bfe47428469e21fcd5fc6ce5333a4026db81fba": {
+    "suite": "motionmark_animometer",
+    "id": 1653908,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "4f31026568c32d4c19bb8ec5a9cc98de3374c318": {
+    "suite": "tp5o",
+    "test": "responsiveness",
+    "id": 1325753,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "0c5f569b8191f412e4b3a747a47b32021a5080af": {
+    "suite": "v8_7",
+    "test": "Encrypt",
+    "id": 11350,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "a439011d47ced6b5ce50fd407e3bc33dd8a65d71": {
+    "suite": "tp6_google",
+    "id": 1568053,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "68894ed53ab6da6517267f12e8650f39e4ad4c78": {
+    "suite": "displaylist_mutate",
+    "id": 1663494,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "be4464dafac457554b4517f04b93f779b29f7efb": {
+    "suite": "tps",
+    "id": 1328457,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "b56b9facc4ea2e7da4d1b339cdf0ef6ad3809ac1": {
+    "suite": "rasterflood_svg",
+    "id": 1653402,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "62b590b20d32c01029c4cfc88591fc4824dc016a": {
+    "suite": "tp5o",
+    "id": 1550029,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "1bcd090ffba2545e32ba756b2b9b63bf7203dc33": {
+    "suite": "tp5o_webext",
+    "test": "responsiveness",
+    "id": 1550267,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "4e96a30fa30b65f4bcf5fb9f8d116bc91c9c864d": {
+    "suite": "ts_paint_webext",
+    "test": "ts_paint_webext",
+    "id": 1550210,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "a1d5a4cd5909f7470b78cff790daa49d16c2d776": {
+    "suite": "ts_paint",
+    "test": "ts_paint",
+    "id": 1550940,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "3e71e9e0bbef7c6ede46535e6b6736aa5216a89b": {
+    "suite": "tp6_youtube_heavy",
+    "id": 1646952,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "c33ed297359f3953c42778ff8fe94d025950b9d6": {
+    "suite": "tresize",
+    "test": "Network_lo_bytes_tx",
+    "id": 35916,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "0c3171e1434fd5558eeb7967b733532424a9ca32": {
+    "suite": "tcanvasmark",
+    "id": 1324776,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "346e49cc6b0786691bd5513da246c939b333d878": {
+    "suite": "tsvgx",
+    "id": 1551361,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "fe5ab5e0eb317d93ba01ca93b8e0fcb599b1524c": {
+    "suite": "v8_7",
+    "test": "Boyer",
+    "id": 11363,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "673a20535a837f66c2114b0aed215e5542c6ec05": {
+    "suite": "sessionrestore",
+    "test": "sessionrestore",
+    "id": 1652013,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "87b8948766310c01b8667a76bd7f87d174164b9d": {
+    "suite": "bloom_basic_singleton",
+    "id": 1549801,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "99434fd6cbccf5568c651782f311bea1081bc9ff": {
+    "suite": "v8_7",
+    "test": "Richards",
+    "id": 11358,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "a20264b4683ad3ae2483813370c9a211daf2a348": {
+    "suite": "tp5o",
+    "test": "XRes",
+    "id": 1324886,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "f621453b931c9e4a1dc53887fee5a3cbf9b831e7": {
+    "suite": "tp6_youtube",
+    "id": 1568054,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "82ccbe60a16fcc320f76b5cd3b8e1970a5957c73": {
+    "suite": "dromaeo_css",
+    "id": 1551472,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "aaf7d0091b502d1596c9791a47cb25efeda8a5ff": {
+    "suite": "basic_compositor_video",
+    "id": 1648571,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "93309440519b2f74a64f1eb498bfd60e5604d9a0": {
+    "suite": "tp6_facebook",
+    "id": 1568044,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "d8bde8adc167a1143cf99d33f679eb734f3dedc7": {
+    "suite": "sessionrestore",
+    "test": "sessionrestore",
+    "id": 1323603,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "a21e703b11e045ec84421ff6e4d249c8d74cadd3": {
+    "suite": "v8_7",
+    "id": 1353027,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "76c27d28d257cb9af2eb2e99c673912d15231ae4": {
+    "suite": "tp6_amazon",
+    "id": 1646905,
+    "extra_options": [
+      "1_thread",
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "ea2e3d1b03726edb75e1d7407cd5cb6d7ad8af91": {
+    "suite": "tp5o",
+    "test": "XRes",
+    "id": 1352770,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "77417a92e0b1cfd78facfff7a261fef470e7b38d": {
+    "suite": "displaylist_mutate",
+    "id": 1663507,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "90b7e7ad5384989e8f051978fe4a06ae7897e131": {
+    "suite": "v8_7",
+    "test": "Boyer",
+    "id": 28209,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "7ecb06225bb13bb2d77f98ae059f8b7450dd8533": {
+    "suite": "glterrain",
+    "id": 1551318,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "08f3b36df98ea7888e75429df205b269251e1d07": {
+    "suite": "tresize",
+    "test": "Network_eth0_bytes_tx",
+    "id": 35606,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "726a741fd1dd1e9fb0b85bc9733658f6eabd07df": {
+    "suite": "ts_paint",
+    "test": "ts_paint",
+    "id": 1323599,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "15f74d04111e842def7af19e2f537421e478655f": {
+    "suite": "tp5o_webext",
+    "test": "XRes",
+    "id": 1653176,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "36b301caf0a4fa61b441ddd51e0dbd8b935881eb": {
+    "suite": "damp",
+    "id": 1353020,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "2c8196a0d74ec06d8c5eed41321c940291aebbf3": {
+    "suite": "dromaeo_css",
+    "id": 1325590,
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "130d27672206a5fcba689844b335cd07f88a5c15": {
+    "suite": "bloom_basic_singleton",
+    "id": 1550439,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "d5c8c138fc7b25438571cce9c0b3b513549d38c0": {
+    "suite": "glvideo",
+    "test": "Mean tick time across 100 ticks: ",
+    "id": 1550028,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "5b03c965caefcc69ed7155820f0d9ddec919d13e": {
+    "suite": "dromaeo_dom",
+    "id": 1550006,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "8215880edabb4c696cbb8067130ae5b226570742": {
+    "suite": "tabpaint",
+    "id": 1323616,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "ecfb94b87dfeb6718ed9a57a097f8ea88907907c": {
+    "suite": "tp6_amazon",
+    "id": 1568043,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "6f60500acbb8e13ea9a3ad684d8fade18aec088b": {
+    "suite": "tp5o_webext",
+    "test": "XRes",
+    "id": 1493104,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "3637eb6df8a54f46a8536652d797b1cc5f29cb6c": {
+    "suite": "v8_7",
+    "test": "NavierStokes",
+    "id": 11425,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "ddc2f73fea0eca56195a2cf41721bb9768fe4cf2": {
+    "suite": "tresize",
+    "test": "Network_eth0_bytes_tx",
+    "id": 31763,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "01851ae92f1e34a53e005f312ebdb7c578e3513d": {
+    "suite": "tp6_facebook",
+    "id": 1568036,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "4e714a801f334b874de0aeda22df6a21b8f40500": {
+    "suite": "JetStream",
+    "id": 1661172,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "4ab231a6c4ab320d1a1d283e09fa100aab66fa4a": {
+    "suite": "bloom_basic_ref",
+    "id": 1498294,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "6a1216719418be991de237fffb9cc0e7f7a74b49": {
+    "suite": "tp6_amazon",
+    "id": 1568051,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "d6e640794d999868902dc88ff0f4b19f5e16fa0f": {
+    "suite": "tp5o_webext",
+    "test": "XRes",
+    "id": 1551359,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "873ff2865b504e682624a3251ea3f30fa93af51a": {
+    "suite": "tp5o",
+    "test": "responsiveness",
+    "id": 1352773,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "c68ed2d6f1b521900865b0362693e79544c4ce21": {
+    "suite": "tresize",
+    "test": "Network_eth0_bytes_rx",
+    "id": 22572,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "3837dfbc7ce07a2df545132a1fa8f4db270b575f": {
+    "suite": "tp5o",
+    "test": "Private Bytes",
+    "id": 1551110,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "46ca6eb015193051661117a30bd39e6f25ee4744": {
+    "suite": "JetStream",
+    "id": 1661254,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "bbe81621117b9f3de1ee229f178978df6a8574d7": {
+    "suite": "tp6_google",
+    "id": 1646903,
+    "extra_options": [
+      "1_thread",
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "434f22b9541f60793476b2c137331bdb05093f1c": {
+    "suite": "tresize",
+    "test": "Network_lo_packets_rx",
+    "id": 36293,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "034b08556b4aba5f5c9055876239e25774a04b56": {
+    "suite": "tpaint",
+    "id": 1550089,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "d816936ecd2474b13579e9e9426c4e92c0c4d3a7": {
+    "suite": "perf_reftest_singletons",
+    "id": 1555126,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "216784ae2517f947276e45b49f9d4852341b2c7a": {
+    "suite": "tresize",
+    "test": "Network_lo_packets_rx",
+    "id": 34980,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "5f341e02474159d18443fb6d9105a632f64c6d6f": {
+    "suite": "v8_7",
+    "test": "RayTrace",
+    "id": 28159,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "35ad044a97143527ad7eba09bd99f9bbc8a7e1b4": {
+    "suite": "stylebench",
+    "id": 1651836,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "7108943d96d1712c45edf35226c2919dfedfeaa5": {
+    "suite": "tscrollx",
+    "id": 1550334,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "d55cbb82191fdc7ded69aa06f1cef61f011d7526": {
+    "suite": "tsvgx",
+    "id": 1326652,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "6c6be9e1b1ab50e64e63cdff983a0a2ef9371c97": {
+    "suite": "ARES6",
+    "id": 1659407,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "2c4c53dc1811b9ee562e351313d9787eb5f42372": {
+    "suite": "tscrollx",
+    "id": 1648273,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "4f390f64101a623c93b9716b4b824ef144c04c87": {
+    "suite": "tp5o",
+    "test": "Main_RSS",
+    "id": 1550081,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "dbabc57a93bbd6e9252852359fd5dee58dcd31e5": {
+    "suite": "tart_flex",
+    "id": 1637056,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "76a0e7f5c06367b8db8766488a2912d98995f4f8": {
+    "suite": "a11yr",
+    "id": 1550085,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "ba00a06e08d0481c8b387e5454d141fdf8764631": {
+    "suite": "perf_reftest",
+    "id": 1647506,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "0beecfc659a7cb388f99db76c38cca6cfac17796": {
+    "suite": "tart",
+    "id": 1551372,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "e4d425f26bd55e3fbbb993d190934e16159d605e": {
+    "suite": "a11yr",
+    "id": 1550927,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "301eff4031625811552a3c33cf22579b84962765": {
+    "suite": "tabpaint",
+    "id": 1550958,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "cb310218539b45f2bd8939d6090162d6858fdfc1": {
+    "suite": "glvideo",
+    "test": "Mean tick time across 100 ticks: ",
+    "id": 1484147,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "ff37541093cfbb4e12cebc464dd278aebfc37bb9": {
+    "suite": "sessionrestore",
+    "test": "sessionrestore",
+    "id": 1647499,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "502acd7a5d88e443b014f00f562b6539ba51f971": {
+    "suite": "tp5o_webext",
+    "test": "Private Bytes",
+    "id": 1551358,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "681dcf8968a0060c052f94c3416ed712ede83e68": {
+    "suite": "tp6_facebook",
+    "id": 1568060,
+    "extra_options": [
+      "1_thread",
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "ce676750835fa9261b5606260486b591fe796874": {
+    "suite": "media_tests",
+    "id": 1353120,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "66dbde001b68b274cd7b350641f995cc06c6e1a9": {
+    "suite": "sessionrestore",
+    "test": "sessionrestore",
+    "id": 1323614,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "c1a8d08c9a0f3015f16b67b1e9900b78d5ed300e": {
+    "suite": "tp5o_webext",
+    "test": "Private Bytes",
+    "id": 1493103,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "b45d8fda4e741ced74d2c968fae4aec78a99bd4d": {
+    "suite": "damp",
+    "id": 1551598,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "2ef6f33a2e4936055d36e8d98a07820dc094f0a5": {
+    "suite": "v8_7",
+    "test": "Decrypt",
+    "id": 28199,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "6751ba5c90df22cda250c93be76b4608edd7ab38": {
+    "suite": "v8_7",
+    "test": "Decrypt",
+    "id": 11427,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "cbeaebae631c8fa6ef419a85f5cdd19afb99e26d": {
+    "suite": "v8_7",
+    "test": "RayTrace",
+    "id": 28211,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "24f021fc61873fa0fbc4b08f807b70bdf44de21e": {
+    "suite": "tpaint",
+    "id": 1550944,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "61f6013261c81cd6a29a564266d9de207327052b": {
+    "suite": "tresize",
+    "test": "Network_eth0_packets_rx",
+    "id": 21453,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "b6f0fa8dccb383d9076646d4d06e54d32404b751": {
+    "suite": "ts_paint_webext",
+    "test": "ts_paint_webext",
+    "id": 1551273,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "1a57fa4d7a2bb967884359b86a3f1bc2a9b19be5": {
+    "suite": "kraken",
+    "id": 1653461,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "abda8f0143c9c395e26c8c9b817b1c73142293dd": {
+    "suite": "sessionrestore",
+    "test": "sessionrestore",
+    "id": 1351519,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "20feb5a680732d65835c0e18ab64d717f1897bfb": {
+    "suite": "tp6_facebook_heavy",
+    "id": 1574806,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "21a594b6a718797e548f23c55ac7850371033ae3": {
+    "suite": "ts_paint_heavy",
+    "test": "ts_paint_heavy",
+    "id": 1646893,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "652e3d4307a75b944b7490cf60c7415677d312e4": {
+    "suite": "ts_paint",
+    "test": "ts_paint",
+    "id": 1652011,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "a6ff04bc6bf9ff508c1a41204e65631d2b968f37": {
+    "suite": "dromaeo_dom",
+    "id": 1351506,
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "26b636eb5f4b710517b65b7a5c71239bca759646": {
+    "suite": "tp6_amazon",
+    "id": 1646896,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "5f1a4586275e5fb76258a4ea869a5f88f77477cc": {
+    "suite": "tp5o_scroll",
+    "id": 1649161,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "f2a02f3f7a06dd902af56af122c15216ac17366c": {
+    "suite": "stylebench",
+    "id": 1647389,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "9c42dc48424eb4a4967ff18ac402ad7c046e5f45": {
+    "suite": "tp5o_webext",
+    "test": "Private Bytes",
+    "id": 1550265,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "0820d08cc234624c6218f798718592fd17c80027": {
+    "suite": "tp5o",
+    "id": 1652392,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "14c50fb6806ac43042829a6f11f0ccc5b6e590cf": {
+    "suite": "cpstartup",
+    "test": "content-process-startup",
+    "id": 1559693,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "8954e8d4d7609ccdefc1be49a63363f0cdce707e": {
+    "suite": "tp5o",
+    "test": "Private Bytes",
+    "id": 1352769,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "ac32f1bb206bdfa87bef35dc6e73f803945c777e": {
+    "suite": "perf_reftest",
+    "id": 1558943,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "d22e336c3614c2b16d5e9b238ba67c087a6eeb85": {
+    "suite": "tp5o",
+    "test": "Main_RSS",
+    "id": 1324880,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "9a08384528234299ecb3df4462b18187f0b458a2": {
+    "suite": "glvideo",
+    "test": "Mean tick time across 100 ticks: ",
+    "id": 1484148,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "1fa1f70b90867eb3e18b7683bd04b81d19e47940": {
+    "suite": "speedometer",
+    "id": 1647228,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "940d1c6e599b8110240891eaa7ffef7fe45731c2": {
+    "suite": "v8_7",
+    "test": "Splay",
+    "id": 28155,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "db3bdddfe59200ffff12a5574fa5abd74f32d1ca": {
+    "suite": "tp6_amazon",
+    "id": 1568035,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "4a6acdde23af8a7e9c9c72263e11ca3acc636074": {
+    "suite": "tsvg_static",
+    "id": 1648286,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "4f248652dec2e62b457f91363c627f035bb91109": {
+    "suite": "bloom_basic_singleton",
+    "id": 1527377,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "60bcc1b34705f14eaa3e6d8108a323cefc14cb61": {
+    "suite": "sessionrestore_no_auto_restore",
+    "test": "sessionrestore_no_auto_restore",
+    "id": 1323615,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "600ab158ecfcae0f4c8bd031d1d8bf5eb440b34e": {
+    "suite": "tp5o",
+    "test": "Private Bytes",
+    "id": 1324883,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "e1559e6f6d310813030786d2a4a731ca87b7319a": {
+    "suite": "tp5o",
+    "test": "XRes",
+    "id": 1550083,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "c987021475bd301627c5f8f970f54e055f11df18": {
+    "suite": "tpaint",
+    "id": 1517546,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "9720513f236e35a4b7f2455d4409317c38e7fea1": {
+    "suite": "perf_reftest_singletons",
+    "id": 1555273,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "606d995f447e4327e60a38f31769cb00375d8ef3": {
+    "suite": "tart",
+    "id": 1653221,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "3e3d447aabf05aef83bd85a03525905aa238af22": {
+    "suite": "tpaint",
+    "test": "tpaint",
+    "id": 1351518,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "d13ecb415ae965d2d41b978bdeda8768b7699a05": {
+    "suite": "glterrain",
+    "id": 1330073,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "0ea13b9b6cc509b2bd5372f59504f4151d147802": {
+    "suite": "bloom_basic_ref",
+    "test": "http:",
+    "id": 1485313,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "a4db3441a4ab70628a716076ac952523ba52689e": {
+    "suite": "v8_7",
+    "test": "Encrypt",
+    "id": 11423,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "f969e2333fc259c71ab0d8bd155711112defcea6": {
+    "suite": "sessionrestore",
+    "test": "sessionrestore",
+    "id": 1550948,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "4f3eef4af68403a21a1f920a242161629f251725": {
+    "suite": "tp6_google",
+    "id": 1568033,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "947870e091eef0257755ce0e6fd6302e1704c15b": {
+    "suite": "dromaeo_dom",
+    "id": 1651445,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "a465ab70d3fcd1e3a2cd6df408e3c2ee8606f67f": {
+    "suite": "sessionrestore",
+    "test": "sessionrestore",
+    "id": 1550090,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "7f412bbe69cac3058f21fab9cc2597b360603ecd": {
+    "suite": "dromaeo_css",
+    "id": 1648839,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "efaeb8a25bc6de40d38a0be504fb9125e1d9642f": {
+    "suite": "sessionrestore_no_auto_restore",
+    "test": "sessionrestore_no_auto_restore",
+    "id": 1323604,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "266b7d9b565323a3b285260d9451f24f40b11806": {
+    "suite": "sessionrestore_many_windows",
+    "test": "sessionrestore_many_windows",
+    "id": 1550952,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "dcc3a303dcb6202de0e5ac6c8ed35f7d1cf405b7": {
+    "suite": "tp6_facebook",
+    "id": 1646897,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "97856a8731d3abca59e5d6ccf016354dcd69e29d": {
+    "suite": "media_tests",
+    "test": "audio_playback_quality_delay_in_ms",
+    "id": 36134,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "9bb58d8eafbc634dda788d5832ae28397bfd9bd9": {
+    "suite": "tresize",
+    "test": "Network_eth0_packets_rx",
+    "id": 33977,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "d0aa31b4a8617d5bda9bc8c5ca7bfa9a77c38c7c": {
+    "suite": "damp",
+    "id": 1654448,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "97ebb7d149624b98579bd40bf0981fcafd642a97": {
+    "suite": "tpaint",
+    "id": 1652012,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "400aff177de4d5f5fd7412a10b13392d50184165": {
+    "suite": "glterrain",
+    "id": 1654371,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "5135b87870312968e1643e15576db568388656a0": {
+    "suite": "v8_7",
+    "test": "Splay",
+    "id": 28201,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "fd3834acdfa55d29809f8f8328f9e786060e4fa9": {
+    "suite": "tp6_facebook",
+    "id": 1651440,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "439f7b6be67286f4cda43ed66a8711cb7356eb16": {
+    "suite": "tp6_youtube_heavy",
+    "id": 1574804,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "b87e5db802055cf8972d13e85c2f11a9d11ad467": {
+    "suite": "tp6_youtube",
+    "id": 1568058,
+    "extra_options": [
+      "1_thread",
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "504fd19ead4e6943a182b0f4dfaf628e7a1d3532": {
+    "suite": "perf_reftest",
+    "id": 1558931,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "b97a8a540045b6139d2ce67b9c8b9a2f5c2918de": {
+    "suite": "damp",
+    "id": 1330059,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "cbb7d8de9e7c44f583a8febf5eff0dbf5aaa842f": {
+    "suite": "tp5o_scroll",
+    "id": 1329789,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "e9e3729af84aaa4cc0afdff9b219d27230cda486": {
+    "suite": "tp5o",
+    "test": "XRes",
+    "id": 1647838,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "b001cac1fb21649bb343d36a648c8cd6dee0488e": {
+    "suite": "perf_reftest_singletons",
+    "id": 1555112,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "514189434bb45bd1256f68bf6b983f178e83d72a": {
+    "suite": "tps",
+    "id": 1551651,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "a0d56b8d1947b5f02273e078964d95bf1f56646f": {
+    "suite": "tp5o",
+    "test": "XRes",
+    "id": 1551111,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "3854156f848dce91e20e96379cdad5fe80077168": {
+    "suite": "tp6_google",
+    "id": 1568041,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "670136f153e63e4b7602d577a2819bb2d30ff7cc": {
+    "suite": "tp5o_webext",
+    "test": "Main_RSS",
+    "id": 1551357,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "cd536c19797584e507d7dff2d1a601c99b0a2441": {
+    "suite": "tp5o",
+    "test": "Main_RSS",
+    "id": 1551109,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "e81da5db1db5865dc830bdbdbfe7ec987d05a9f7": {
+    "suite": "tp6_youtube",
+    "id": 1646904,
+    "extra_options": [
+      "1_thread",
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "d9af2ac1242ea0e1fbadbf9f809ba8c10cda27a7": {
+    "suite": "tp6_youtube_heavy",
+    "id": 1574761,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "e226a4e6a2fa43e5f38480f0114c153644e77ff8": {
+    "suite": "basic_compositor_video",
+    "id": 1550879,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "e7754f5593188de8aaa57a1a85c03be0896bae04": {
+    "suite": "tpaint",
+    "test": "tpaint",
+    "id": 1323613,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "95e6d0f637637a571bef06ee9722215d4db3b9e6": {
+    "suite": "v8_7",
+    "test": "DeltaBlue",
+    "id": 28194,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "ff618b47d9d50ed7c4b49cc4413229fc939809f2": {
+    "suite": "tp6_amazon",
+    "id": 1568055,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "4800d8ae4f4e4aec4dba1618212dcfff72882efd": {
+    "suite": "ts_paint_heavy",
+    "test": "ts_paint_heavy",
+    "id": 1651413,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "dc6f8f1825f7fed5aff5832e5fe392a968244368": {
+    "suite": "sessionrestore_many_windows",
+    "test": "sessionrestore_many_windows",
+    "id": 1514540,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "00a56b5bc0258bcbbaa17986c40df773895fb0b2": {
+    "suite": "tscrollx",
+    "id": 1353261,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "30ed9c0fcc821320d160a098a12c922c2c3e1924": {
+    "suite": "a11yr",
+    "id": 1652008,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "ec00905eba090b7cfd7eacd597de48b0ee901f17": {
+    "suite": "tp5o_webext",
+    "test": "responsiveness",
+    "id": 1507933,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "be151ded4f12c812914b63d1e1793e72beabd5a7": {
+    "suite": "glterrain",
+    "id": 1330107,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "7f3dae9a992dd83bc19ba591d267c029bb2a8a1c": {
+    "suite": "dromaeo_css",
+    "id": 1653454,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "265c6af78f1059214fc652e3c1e2c9eb375a6f2e": {
+    "suite": "tps",
+    "id": 1353264,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "721e01b4b28bb845bc31ae5d4a320564b4d0295e": {
+    "suite": "tsvg_static",
+    "id": 1653265,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "b66185614129a05b3db3e0fda76dd4e294014cfd": {
+    "suite": "tp5o_webext",
+    "test": "responsiveness",
+    "id": 1653179,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "6897887eb9e886421dd063e9f08ea12140aa3870": {
+    "suite": "tp6_youtube",
+    "id": 1651438,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "a5c4b426bedd40cf2161f92de5144eb8c9a660b4": {
+    "suite": "tp5o_scroll",
+    "id": 1552134,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "004cf812bad4aad693ff6a48016437207028bf7d": {
+    "suite": "tp6_google",
+    "id": 1568057,
+    "extra_options": [
+      "1_thread",
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "123a08fb5b7095bf46b82502d49f9b71e16aa3ad": {
+    "suite": "kraken",
+    "id": 1648846,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "c92322d06cd6202082a0d8f562bed469bafe495c": {
+    "suite": "dromaeo_css",
+    "id": 1550268,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "9a017ad39f88f176018746fc26a64ed9f7c5af43": {
+    "suite": "v8_7",
+    "test": "RayTrace",
+    "id": 11365,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "fb814c90cb51f75be6b10d4299f61ff6e4a670a5": {
+    "suite": "tp6_google",
+    "id": 1651437,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "e3b23ff2331c27a53792c89dd54d743bc42353e9": {
+    "suite": "kraken",
+    "id": 1551479,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "4db2136e7fdacf8c6dbe6f22b08f13a09b5a651d": {
+    "suite": "tresize",
+    "test": "Network_lo_bytes_tx",
+    "id": 33960,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "fcefb979eac44d057f9c05434580ce7845f4c2d6": {
+    "suite": "a11yr",
+    "id": 1647494,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "574b0e1e802d2a565b1baf7b102e9b2b721c3e07": {
+    "suite": "tresize",
+    "test": "Network_lo_bytes_tx",
+    "id": 27474,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "9a9bcadab6109e46119217694445e0af6b5c5e86": {
+    "suite": "v8_7",
+    "test": "DeltaBlue",
+    "id": 11421,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "3d520374c94c3dd56e58827191a2cc580bc13bc5": {
+    "suite": "tabpaint",
+    "id": 1550093,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "4bfdf745d74718e7f39d71bf3ecdb9d45d968308": {
+    "suite": "tsvgx",
+    "id": 1653210,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "9900b7106dea114adf2a0b63afa8e9d99edc14ea": {
+    "suite": "v8_7",
+    "test": "Splay",
+    "id": 11356,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "1ebf6a62167770be610fb547e389da6677df01ee": {
+    "suite": "v8_7",
+    "test": "RegExp",
+    "id": 11433,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "dc4767073744d27be53a7837d09fe3f3fc4db8de": {
+    "suite": "v8_7",
+    "id": 1352935,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "daa14a68e4aa3225d21989f3f04d9773c06cd10b": {
+    "suite": "tresize",
+    "test": "Network_eth0_packets_tx",
+    "id": 34636,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "5672b657c5b23ed1c359257e1722e2ed25c7e785": {
+    "suite": "tsvgr_opacity",
+    "id": 1353243,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "e0584686ca0e4c4cc1c2219c57ccf25a5fbbf415": {
+    "suite": "v8_7",
+    "test": "NavierStokes",
+    "id": 28197,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "bbf8e5d8267164f7ecd222bc41cf2b93e9df7303": {
+    "suite": "tsvgr_opacity",
+    "id": 1353258,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "962e0336a9bc37bba1d688fb2629c71754104b44": {
+    "suite": "tsvgr_opacity",
+    "id": 1550300,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "f877b07fca1e5b5d304ba4c3d2f0c5e550dfe3e6": {
+    "suite": "tscrollx",
+    "id": 1326712,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "1a5c7ecb1244369aaf43326ff86be483474f89cd": {
+    "suite": "v8_7",
+    "test": "NavierStokes",
+    "id": 28153,
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "b111be54925b2805707f2c9c4c46863746d9199f": {
+    "suite": "tp6_amazon",
+    "id": 1651443,
+    "extra_options": [
+      "1_thread",
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "5388ad47a7018b752b06bbf1f2d0d0014b1c875a": {
+    "suite": "perf_reftest",
+    "id": 1556624,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "4f37c433f1f914b84b99727f9a26654788bdadc2": {
+    "suite": "tabpaint",
+    "id": 1353224,
+    "extra_options": [
+      "e10s"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "06d2e11c2434973c3f65e578fe7cdb4d3db5f8a9": {
+    "suite": "tsvg_static",
+    "id": 1455964,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "e08ae32265616b3a9920036ba38e795d23cc5772": {
+    "suite": "rasterflood_svg",
+    "id": 1618044,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "615d2e62c26931f0933c335f46e2fab231e86774": {
+    "suite": "tp5o",
+    "test": "responsiveness",
+    "id": 1551112,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "41bdd77aeb9c2fc0a58a600bb4d30e76e4426039": {
+    "suite": "tresize",
+    "test": "Network_lo_packets_rx",
+    "id": 28975,
+    "extra_options": [
+      "e10s"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "ccf8486531ada545f4cb0b62c3bd389aa50ee1e1": {
+    "suite": "tresize",
+    "test": "Network_eth0_bytes_rx",
+    "id": 35917,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "7a7d4eb0047a7362c07822c831d6fb930413672e": {
+    "suite": "tsvg_static",
+    "id": 1550347,
+    "extra_options": [
+      "e10s",
+      "stylo_disabled"
+    ],
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "5e06251fff8b0efd47cc11bb719602ef7f55a754": {
+    "suite": "tresize",
+    "test": "tresize",
+    "id": 1353051,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "c98656856e88edecf8ab73c6944e08445d5af763": {
+    "suite": "basic_compositor_video",
+    "id": 1352154,
+    "has_subtests": true,
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "5b53343034b1a082caa7e4374fcd6a8c4460fd1d": {
+    "suite": "v8_7",
+    "test": "Earley",
+    "id": 11435,
+    "extra_options": [
+      "e10s"
+    ],
+    "lower_is_better": false,
+    "machine_platform": "linux64",
+    "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+    "framework_id": 1
+  },
+  "09e3ff6a3faad0106fdbb282c243dd29127100fe": {
+    "suite": "tp5o",
+    "test": "responsiveness",
+    "id": 1652648,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  },
+  "efbb832ee136c473aebc52dcbe6cd4889cf7295f": {
+    "suite": "tp6_google_heavy",
+    "id": 1651450,
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "framework_id": 1
+  }
+}
