@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import LinkIcon from '@material-ui/icons/Link';
 import ArrowDownward from '@material-ui/icons/ArrowDownward';
 import { withStyles } from '@material-ui/core/styles';
-import { parse } from 'query-string';
+import { parse, stringify } from 'query-string';
 import Loadable from 'react-loadable';
 import Loading from '../Loading';
 import CircularIndeterminate from '../CircularIndeterminate';
@@ -40,6 +40,17 @@ const styles = () => ({
 const options = (dayRange, includeSubtests) => ({
   timeRange: convertToSeconds(dayRange), includeSubtests,
 });
+
+// There's a bug in perf-goggles that gives us the wrong timerange
+const fixUrl = (url, dayRange) => {
+  // There's a bug in query-string that makes it hard to parse Perf urls
+  const [baseUrl, queryString] = url.split('?');
+  const parsedStrings = parse(queryString);
+  // We overwrite the old timerange
+  parsedStrings.timerange = convertToSeconds(dayRange);
+  const newParams = stringify(parsedStrings, { encode: false, sort: false });
+  return `${baseUrl}?${newParams}`;
+};
 
 class PerferhderGraph extends React.Component {
   static propTypes = {
@@ -94,6 +105,7 @@ class PerferhderGraph extends React.Component {
       this.setState({ fetchedData: true });
       // We can have multiple subtests for a single call to queryPerfData
       Object.values(response).forEach(({ data, meta, perfherderUrl }) => {
+        const newUrl = fixUrl(perfherderUrl, dayRange);
         if (!chartJsOptions) {
           chartJsOptions = generateChartJsOptions(meta);
         }
@@ -103,7 +115,7 @@ class PerferhderGraph extends React.Component {
         const dataStructure = {
           chartJsData: { datasets: [] },
           chartJsOptions,
-          jointUrl: perfherderUrl,
+          jointUrl: newUrl,
           title: graphTitle,
         };
         if (!meta.test) {
@@ -116,7 +128,8 @@ class PerferhderGraph extends React.Component {
           } else {
             // We need to merge two different perfherder URLs
             // We're joining the different series for each subbenchmark
-            const parsedUrl = parse(perfherderUrl);
+            const queryString = newUrl.split('?')[1];
+            const parsedUrl = parse(queryString);
             // eslint-disable-next-line no-param-reassign
             state.data[graphUid].jointUrl += `&series=${parsedUrl.series}`;
           }
