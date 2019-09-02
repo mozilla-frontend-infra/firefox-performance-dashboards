@@ -12,55 +12,22 @@ it('Verify all benchmarks are defined', () => {
 });
 
 it('Query info', () => {
-  const benchmarks = queryInfo(CONFIG.views.linux64, 'wasm-misc');
+  const benchmarks = queryInfo(CONFIG.views.linux64, 'Base Content Explicit');
   expect(benchmarks).toStrictEqual({
-    'wasm-misc': {
-      benchmarkUID: 'wasm-misc',
-      compare: [
-        {
-          color: '#e55525',
-          label: 'Firefox (tiering)',
-          frameworkId: 10,
-          suite: 'raptor-wasm-misc-firefox',
-          option: 'opt',
-          platform: 'linux64',
-        },
-        {
-          color: 'red',
-          label: 'Firefox (wasm-baseline)',
-          frameworkId: 10,
-          suite: 'raptor-wasm-misc-baseline-firefox',
-          option: 'opt',
-          platform: 'linux64',
-        },
-        {
-          color: 'brown',
-          label: 'Firefox (wasm-ion)',
-          frameworkId: 10,
-          suite: 'raptor-wasm-misc-ion-firefox',
-          option: 'opt',
-          platform: 'linux64',
-        },
-        {
-          color: 'yellow',
-          label: 'Firefox (wasm-cranelift)',
-          frameworkId: 10,
-          suite: 'raptor-wasm-misc-cranelift-firefox',
-          option: 'opt',
-          platform: 'linux64',
-        },
-        {
-          color: '#4285F4',
-          label: 'Chromium',
-          frameworkId: 10,
-          suite: 'raptor-wasm-misc-chromium',
-          option: 'opt',
-          platform: 'linux64-shippable',
-        },
+    'Base Content Explicit': {
+      benchmarkUID: 'Base Content Explicit',
+      compare: [{
+        color: '#e55525',
+        frameworkId: 4,
+        label: 'Firefox',
+        option: 'opt',
+        platform: 'linux64-shippable',
+        suite: 'Base Content Explicit',
+      },
       ],
       includeSubtests: true,
-      label: 'WebAssembly Embenchen',
-      yLabel: undefined,
+      label: 'Base Content Explicit',
+      yLabel: 'Bytes',
     },
   });
 });
