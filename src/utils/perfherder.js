@@ -63,7 +63,9 @@ const perfherderGraphUrl = (
   signatureIds,
   timeRange = DEFAULT_TIMERANGE,
 ) => {
-  let baseDataUrl = `${TREEHERDER}/perf.html#/graphs?timerange=${timeRange}`;
+  const hash = '#';
+  // We are escaping the hash sign  because it messes up with Chrome's DevTools code unpacking
+  let baseDataUrl = `${TREEHERDER}/perf.html${hash}/graphs?timerange=${timeRange}`;
   baseDataUrl += `&${signatureIds.sort().map(id => `series=${project},${id},1,${frameworkId}`).join('&')}`;
   return baseDataUrl;
 };
@@ -125,15 +127,17 @@ const signaturesForPlatformSuite = async (seriesConfig) => {
 
 const findParentSignatureInfo = ({ option = 'pgo', extraOptions }, signatures, options) => {
   const result = [];
+  // Each signature is a potential candidate
   Object.keys(signatures).forEach((hash) => {
     const signature = signatures[hash];
     const optionCollection = options[signature.option_collection_hash];
     if (optionCollection && optionCollection.includes(option)) {
-      if (extraOptions && extraOptions.length > 0) {
-        if (isEqual(signature.extra_options, extraOptions)) {
-          result.push(signature);
-        }
-      } else {
+      if (!signature.extra_options && !extraOptions) {
+        result.push(signature);
+      } else if (
+        signature.extra_options && extraOptions
+        && isEqual(signature.extra_options, extraOptions)
+      ) {
         result.push(signature);
       }
     }
