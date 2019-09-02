@@ -7,7 +7,7 @@ const sortByLabel = (a, b) => {
   return a.label <= b.label ? -1 : 1;
 };
 
-export const dataToChartJSformat = data => data.map(({ datetime, value }) => ({
+export const dataToChartJSformat = (data = []) => data.map(({ datetime, value }) => ({
   x: datetime,
   y: value,
 }));
