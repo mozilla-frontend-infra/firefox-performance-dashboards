@@ -1,0 +1,4090 @@
+{
+    "db740898852c3fe978fc20a01b4b37e0143a77e7": {
+      "has_subtests": true,
+      "suite": "tp5o_webext",
+      "id": 1502670,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "5913f26470fa307f172a13586bbd5cd9610ec3c2": {
+      "suite": "displaylist_mutate",
+      "id": 1653602,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "804a3a8d921391a01fe253c75a6e376f97f43046": {
+      "has_subtests": true,
+      "suite": "tp5o_webext",
+      "id": 1552688,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "e624361e6a089ce93e40fd4557a58af379643e81": {
+      "suite": "sessionrestore",
+      "id": 1521627,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "sessionrestore",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "c833a107b6a083bcab978dab0b14daf26e358943": {
+      "suite": "tp5n",
+      "id": 1776945,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "time_to_session_store_window_restored_ms",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "14be17a94af5bdeceb0d2e737583f8834cbdff01": {
+      "suite": "tp6_youtube",
+      "id": 1535604,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "362d925d7c27ba84c3c0e84dd2f31eab321374a3": {
+      "has_subtests": true,
+      "suite": "cart",
+      "id": 1520972,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "7c5fcf1a3f7ad81581ee6661b117293903c5a8f2": {
+      "has_subtests": true,
+      "suite": "tabpaint",
+      "id": 1537983,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "2869c86a018c6e6eae66a69773d8b724bc77ba2c": {
+      "suite": "tp6_google_heavy",
+      "id": 1574787,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "1d11f8bb9e9656af8967a1774d798457c10269e9": {
+      "suite": "ts_paint",
+      "id": 1521625,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "ts_paint",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "2db31611957588a70591df0a23dbad2aa1ce0421": {
+      "suite": "tp6_google",
+      "id": 1552129,
+      "extra_options": [
+        "1_thread",
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "f66b1e4149e5e032952292715441693a0bd0c345": {
+      "suite": "tp6_facebook",
+      "id": 1534939,
+      "extra_options": [
+        "1_thread",
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "77fd55f5b7e01a6272ccaefe87243c9b68b463e9": {
+      "has_subtests": true,
+      "suite": "glterrain",
+      "id": 1553190,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "ed0b2111b1671d1c8c4ba89b9a667d8b65f1a654": {
+      "has_subtests": true,
+      "suite": "tp5o",
+      "id": 1550632,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "b192f807300011fbfed7c43c2e6876347dd1aecf": {
+      "suite": "tresize",
+      "id": 1552449,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "tresize",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "01e1ea58041be2af939df9ec1e11ea5f3ef49bd7": {
+      "suite": "tp5o_webext",
+      "id": 1538225,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "responsiveness",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "28c4fee1ef7d4e5d184aa628df7c94de208b7678": {
+      "has_subtests": true,
+      "suite": "damp",
+      "id": 1538275,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "2df654601b2744beeebf5ecf1cdb056f24c4dd44": {
+      "suite": "rasterflood_svg",
+      "id": 1650916,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "4839b98d394b7bd511d685044d8ec73251fcc686": {
+      "suite": "ts_paint_webext",
+      "id": 1538077,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "ts_paint_webext",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "9fb4100cba606a80ed5336a3071215d0dd10f025": {
+      "has_subtests": true,
+      "suite": "perf_reftest",
+      "id": 1558951,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "699e9fa0c46d9caba387d9bc945da51e3b3fb854": {
+      "suite": "Quantum_1",
+      "id": 1505938,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "5bcb83fc6350f478b33d1bb53dbe151474edd87b": {
+      "suite": "rasterflood_svg",
+      "id": 1618036,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "4d9f3cd3b2b93443e8ecee589d87106877b0016b": {
+      "suite": "bloom_basic_singleton",
+      "id": 1522523,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "be6543ec7eef581e51c8464200cf880be9ac129e": {
+      "suite": "tp5o",
+      "id": 1503209,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "responsiveness",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "87bf53b14b0cb93b46ac9f988d24bc976fe995cf": {
+      "suite": "tp6_youtube",
+      "id": 1534937,
+      "extra_options": [
+        "1_thread",
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "321f733b4536bc780011a877a099413368fc04f3": {
+      "suite": "ts_paint_heavy",
+      "id": 1574847,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "ts_paint_heavy",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "d83d0e0e267670590c269458bedbb71e9bc85dbb": {
+      "suite": "tpaint",
+      "id": 1502584,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "tpaint",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "a7e9fc544aaa74bc62b070d47d369c77ac7f9780": {
+      "suite": "glvideo",
+      "id": 1502841,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "Mean tick time across 100 ticks: ",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "52e157793495609118dc0fad31817a6468f752c7": {
+      "suite": "sessionrestore",
+      "id": 1550445,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "sessionrestore",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "46dc6bb121842c6cd39243b81a22cd0ff869c4eb": {
+      "suite": "ts_paint",
+      "id": 1538532,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "ts_paint",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "f94d125d83f4c90592be1dd04a6ea3db2c07b3db": {
+      "has_subtests": true,
+      "suite": "tsvgr_opacity",
+      "id": 1521705,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "98f9c3e856e53811c3129f6d9f6f12d2debbe3f6": {
+      "suite": "displaylist_mutate",
+      "id": 1577171,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "c0cfa92c6b399cdcadf84b87b9f63e183d683d8d": {
+      "has_subtests": true,
+      "suite": "stylebench",
+      "id": 1634619,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "48c68d3345ebd89a3e1ec14219784784fed05617": {
+      "suite": "tresize",
+      "id": 1538542,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "tresize",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "8866e9cd195c6c2f118dc6d5b681abc72cc725ee": {
+      "has_subtests": true,
+      "suite": "dromaeo_css",
+      "id": 1520895,
+      "lower_is_better": false,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "c5d7da2cf14b151fe94217395ac26a0e4c564b82": {
+      "has_subtests": true,
+      "suite": "tps",
+      "id": 1538328,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "1d2a194fc59a1e8a7635d05f9ecac80a73770bb5": {
+      "suite": "tpaint",
+      "id": 1538533,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "a02bba13c079ba701af5b028589cfc2d5c12065e": {
+      "suite": "tresize",
+      "id": 1787211,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "8d7c90e7b594fb49d176664605fe8a0373a27803": {
+      "has_subtests": true,
+      "suite": "a11yr",
+      "id": 1538529,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "f40e5bc23b46907f25dc013b76555d428919d7e0": {
+      "has_subtests": true,
+      "suite": "motionmark_htmlsuite",
+      "id": 1661503,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "7082fd4e57363151313c6215e6bb77b68fe4b775": {
+      "suite": "quantum_pageload_facebook",
+      "id": 1508904,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "61c5e52ec128bfd43e76569580b7ed10ce8d733e": {
+      "suite": "tp6_youtube",
+      "id": 1535584,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "27960b2242d8bcc55dfcfb45e520c2466afae5b8": {
+      "suite": "tp6_youtube",
+      "id": 1552130,
+      "extra_options": [
+        "1_thread",
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "ae625ba114d8c1278f37e79776d950d10c99b49c": {
+      "has_subtests": true,
+      "suite": "tscrollx",
+      "id": 1503274,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "6a61f50f72fcef6002a762752e3940c84931e7a6": {
+      "suite": "tp5n",
+      "id": 1776887,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "main_normal_fileio",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "6a17d8d2efc53afc4caa657dc93de593aae354e8": {
+      "suite": "tp5o_webext",
+      "id": 1552769,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "responsiveness",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "1930b80e25055adf0b3137e041e606d0825331bb": {
+      "suite": "cpstartup",
+      "id": 1559705,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "content-process-startup",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "2297bb39f5c69be24d9c7a96ecf6ea3de4c0f49b": {
+      "has_subtests": true,
+      "suite": "tsvg_static",
+      "id": 1502810,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "3e1ee76ef43194c5aa419a936fc554c14ffd5f43": {
+      "suite": "tpaint",
+      "id": 1550444,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "6e95abb989f8925d8cf7852eea07614cd8958098": {
+      "has_subtests": true,
+      "suite": "tp5o_scroll",
+      "id": 1521513,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "1c994c162fdf08a0e156e3117f0f7d51e7f75e0d": {
+      "has_subtests": true,
+      "suite": "displaylist_mutate",
+      "id": 1663679,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "9d0a139295badf4846f5f757d55ed59a995f4373": {
+      "has_subtests": true,
+      "suite": "tcanvasmark",
+      "id": 1502593,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "ca797014ab8879545d1011c1c20892dd0a6fb533": {
+      "suite": "ts_paint_heavy",
+      "id": 1661411,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "ts_paint_heavy",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "f420055b8fdfc37329c3f02dccf1fe6967c69258": {
+      "suite": "ts_paint_heavy",
+      "id": 1574782,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "ts_paint_heavy",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "69e2ad3c6c179cc4ff37a86ad087392c70d18bef": {
+      "suite": "bloom_basic",
+      "id": 1538488,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "9231795f851a167cb360e6e43fb1aad3b77d3806": {
+      "has_subtests": true,
+      "suite": "tsvgx",
+      "id": 1502723,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "190ff873a76e95b50748042f1d6cb21c7ce77575": {
+      "has_subtests": true,
+      "suite": "tsvgx",
+      "id": 1503232,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "5f1debbe710030548bb33faaa149d3009d722758": {
+      "suite": "tp5n",
+      "id": 1776943,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "nonmain_normal_fileio",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "c1ea90be01eecd577300791700af3661be7d36b6": {
+      "has_subtests": true,
+      "suite": "kraken",
+      "id": 1538993,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "7e2419d33fba364dc99770a2be2341812102138d": {
+      "suite": "tp5o",
+      "id": 1502654,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "responsiveness",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "1430f8fa959335b6a78c1832a371fb2767a61dc3": {
+      "suite": "bloom_basic_singleton",
+      "id": 1552128,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "5a37a8e3cbc33351f8564ae18d656bb55cc688c9": {
+      "suite": "ts_paint",
+      "id": 1550443,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "ts_paint",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "601576adb24ca0990e4c2c6f8520cf7f6058dd6a": {
+      "suite": "tresize",
+      "id": 1502592,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "tresize",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "bedf0983b83c05accbc7443fea21a0709f41d02c": {
+      "has_subtests": true,
+      "suite": "tp5o",
+      "id": 1538072,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "2dd6d8bb9ced1e775e32c62b83ce30678c5ee000": {
+      "suite": "tp6_amazon",
+      "id": 1550355,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "83476c94f3bb7349ea134fca7edc96b37962478c": {
+      "has_subtests": true,
+      "suite": "basic_compositor_video",
+      "id": 1552429,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "9f05f0c23eee865fa4a72a8c0bbe7418bb1694c3": {
+      "suite": "tp5o",
+      "id": 1538194,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "responsiveness",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "54743ff48e10d31dccf1ba89e13665e30757e9d4": {
+      "suite": "sessionrestore_no_auto_restore",
+      "id": 1552315,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "sessionrestore_no_auto_restore",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "980184b8049741891fdcd60158e1245f6c51f259": {
+      "has_subtests": true,
+      "suite": "tscrollx",
+      "id": 1538140,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "b2a50b6532ec5c1a63578b362fa28c18debb817b": {
+      "suite": "ts_paint_heavy",
+      "id": 1661492,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "ts_paint_heavy",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "85f5ef6d0216a483f05e71cacf2bd040b7af6558": {
+      "has_subtests": true,
+      "suite": "a11yr",
+      "id": 1502580,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "f342b78e76daffe49abd889a38a4910a1b0058ad": {
+      "suite": "quantum_pageload_amazon",
+      "id": 1508903,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "b8d73ce351c36fb3f136064b85a051b2c393decd": {
+      "suite": "quantum_pageload_facebook",
+      "id": 1508933,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "dae14628ce77e7c0c92518e0f90e759cec035fcd": {
+      "suite": "tp6_google_heavy",
+      "id": 1574848,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "ec2831f6c7da9f61eee0667a30439d8873440557": {
+      "has_subtests": true,
+      "suite": "about_preferences_basic",
+      "id": 1660607,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "56f971bde973a3edee958d7c4d975062f646d3a9": {
+      "suite": "quantum_pageload_facebook",
+      "id": 1527382,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "124f4a1330f355df9055a307c28cb2b8af528be6": {
+      "has_subtests": true,
+      "suite": "perf_reftest_singletons",
+      "id": 1555228,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "c848460b8638c0127d87fbe2f77297b6d2249be0": {
+      "has_subtests": true,
+      "suite": "tscrollx",
+      "id": 1502787,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "f687ee347bcbdc55828148af029908049de69b7f": {
+      "has_subtests": true,
+      "suite": "damp",
+      "id": 1502842,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "00522bdd8040e50a66008f3c33c464c63c762f6f": {
+      "suite": "tp5o",
+      "id": 1552428,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "responsiveness",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "63c4f8217f689f57fc862447aab499d61a85c88d": {
+      "suite": "tp5n",
+      "id": 1778378,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "mainthread_readbytes",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "0e8de51e6cae4f838ae72feced40dea2e7892c72": {
+      "suite": "glvideo",
+      "id": 1538581,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "Mean tick time across 100 ticks: ",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "ab946dde5104c5d335f6f592d038b516dca51d82": {
+      "has_subtests": true,
+      "suite": "glterrain",
+      "id": 1521616,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "263aca84db37b0638d2ab8ab73a7f179d2404c4a": {
+      "has_subtests": true,
+      "suite": "tsvgx",
+      "id": 1521688,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "ada730f8a61c3e00f17c42d9ddf694922e77ab90": {
+      "suite": "sessionrestore",
+      "id": 1538534,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "sessionrestore",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "0e8cd61ff3c7f7c45cbccbff002303deb3f238d4": {
+      "has_subtests": true,
+      "suite": "cart",
+      "id": 1521764,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "a6ff713fd07f05c645088e1bb866105d6fa75681": {
+      "suite": "quantum_pageload_google",
+      "id": 1527509,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "deb930f374a028b00f3f17a613cf19f9ffe8b326": {
+      "suite": "tp5n",
+      "id": 1776883,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "main_normal_netio",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "fd75e33f207c37d5b2af9f8bbe6ce2e2a8d626ee": {
+      "suite": "quantum_pageload_amazon",
+      "id": 1508932,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "5867fb3c108eb963085860a25c56acc2f2cebb5c": {
+      "suite": "tp6_youtube",
+      "id": 1550359,
+      "extra_options": [
+        "1_thread",
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "53e8d51ef7df9b014c51a4ce67f86d11da97cd2e": {
+      "has_subtests": true,
+      "suite": "stylebench",
+      "id": 1652779,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "4d7f7e779c188ce1f709ab2031b2167e3d3f5ae5": {
+      "has_subtests": true,
+      "suite": "basic_compositor_video",
+      "id": 1550366,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "15a824692389cd975bb75c1a20f018d89d3a1e2c": {
+      "suite": "tp6_google",
+      "id": 1535603,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "21aee62d795c007c7ec5fc01533d0ae63875a778": {
+      "suite": "tp6_facebook_heavy",
+      "id": 1574790,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "fbd9aab82203e641b6a4c717bd7509504b1e1ad9": {
+      "suite": "sessionrestore",
+      "id": 1502585,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "sessionrestore",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "cffa6701a086da12238ec2a09d5d536368bb489b": {
+      "has_subtests": true,
+      "suite": "damp",
+      "id": 1521409,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "11acdc305b861eac3d05bc32a31b602b5085949c": {
+      "suite": "sessionrestore",
+      "id": 1520603,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "sessionrestore",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "33ac09920bdbb520e48b3e1e9f0f4d0ad044649e": {
+      "suite": "tp5n",
+      "id": 1776891,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "mainthread_writecount",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "28a1ff0d6fa461e1dc6c890d880ec0d3cca40933": {
+      "has_subtests": true,
+      "suite": "dromaeo_css",
+      "id": 1521687,
+      "lower_is_better": false,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "2e2b666b2c9746ca9fe1184efc6f182c330e8398": {
+      "has_subtests": true,
+      "suite": "damp",
+      "id": 1539027,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "2c0d7c48f541132adfc918e3d3723d15b2458aff": {
+      "has_subtests": true,
+      "suite": "tart",
+      "id": 1550582,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "5a4da3f0d7e28b8f248ec9cbad58230f87df908d": {
+      "has_subtests": true,
+      "suite": "tsvg_static",
+      "id": 1521771,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "e5b0842d97051584d6d5bf5e057a7ac230185479": {
+      "suite": "bloom_basic",
+      "id": 1550256,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "38fae8e31635a7dd92c7bde1b297f25cd5f6cdd0": {
+      "suite": "tp6_google",
+      "id": 1535599,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "e96e30744d7ee11d3dbcb177ba7d0fbc2130d869": {
+      "has_subtests": true,
+      "suite": "dromaeo_css",
+      "id": 1502727,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "42ed8c0c5b333002a4014ad9a155f4cc977f2b55": {
+      "has_subtests": true,
+      "suite": "a11yr",
+      "id": 1520598,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "9ba1d565c7a175126beef3c49fc326d00e840ce7": {
+      "suite": "tp5n",
+      "id": 1776890,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "mainthread_readcount",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "7756f6e7699760710cc1df02c7a12843f9c51e72": {
+      "suite": "tp5n",
+      "id": 1776885,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "main_startup_netio",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "130a97ed63014b42d41a355dc61f80d1de854d1f": {
+      "suite": "tp6_facebook",
+      "id": 1534915,
+      "extra_options": [
+        "1_thread",
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "39dcfd5a6d20161ff4e7e59bb0b1bd318908968c": {
+      "suite": "bloom_basic",
+      "id": 1537963,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "806df37d3a6a5426f91df7143bd48d081b3661a2": {
+      "suite": "cpstartup",
+      "id": 1559696,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "content-process-startup",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "7c207334aaddef8b6c6d46b25fe48179bae49b31": {
+      "suite": "sessionrestore_no_auto_restore",
+      "id": 1538537,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "sessionrestore_no_auto_restore",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "9ef4e3fa8d78e5f459f804f2ddf0ee5e10e1c6a5": {
+      "suite": "tp6_facebook",
+      "id": 1535602,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "69024099a086c7016153dc490adb182ca93bd572": {
+      "has_subtests": true,
+      "suite": "perf_reftest_singletons",
+      "id": 1555401,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "87c86438006fcdbece8cce4c9cc6304f97c65cfe": {
+      "has_subtests": true,
+      "suite": "speedometer",
+      "id": 1570388,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "65ff2394075948873dd8ed840b42db146705d484": {
+      "has_subtests": true,
+      "suite": "tsvg_static",
+      "id": 1550626,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "9431d1f3f94cd1e4ba231b61cd5cea37efbe515e": {
+      "has_subtests": true,
+      "suite": "tsvgx",
+      "id": 1538058,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "e5e6b9e503ef24164999db24a1fd505c1d448996": {
+      "has_subtests": true,
+      "suite": "cart",
+      "id": 1503287,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "cf66cd6cd5de18060ca8085812327d7cbe46274c": {
+      "suite": "tp5n",
+      "id": 1778376,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "mainthread_readcount",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "aa78f3b02cec7ea3f126b920de7b45b7f6afa10c": {
+      "suite": "tp6_youtube",
+      "id": 1552124,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "fc02604576697de7ed462bf7545f4217547af615": {
+      "suite": "quantum_pageload_amazon",
+      "id": 1527381,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "d2dddc372626246d85b61c9c113a797880f71910": {
+      "has_subtests": true,
+      "suite": "glterrain",
+      "id": 1503049,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "6d7816f3058a69e43d6246527aae10f1fe5ccb1c": {
+      "has_subtests": true,
+      "suite": "tscrollx",
+      "id": 1550613,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "a920958825b36891e19495c0669eccc21c751c03": {
+      "suite": "tp6_youtube",
+      "id": 1535600,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "78fd32fcd82cb8bfa53b8c4a19f3f51b4e03ee1d": {
+      "suite": "ts_paint",
+      "id": 1503066,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "ts_paint",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "6e3331b5f26df7261a25db2c416de93fe07bf94b": {
+      "suite": "ts_paint_webext",
+      "id": 1538692,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "ts_paint_webext",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "eff3f5c099aa644b9be26d75be25cd627493c098": {
+      "has_subtests": true,
+      "suite": "kraken",
+      "id": 1538260,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "057f9f0a0e34aeb33988fa2b2983d32e86967c94": {
+      "has_subtests": true,
+      "suite": "perf_reftest",
+      "id": 1558935,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "b538b5689cc75305d67432eb230009dfb4485ee1": {
+      "suite": "tp6_google",
+      "id": 1534912,
+      "extra_options": [
+        "1_thread",
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "f662fda60fcfef71f97f3541aff009d2b5bb837e": {
+      "suite": "sessionrestore_no_auto_restore",
+      "id": 1502586,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "sessionrestore_no_auto_restore",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "750aea70dd4251860c1a6cfc34f817342f586301": {
+      "suite": "tp6_youtube",
+      "id": 1534913,
+      "extra_options": [
+        "1_thread",
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "0eadaaff11bf7f50881f20b7980d21143c08d555": {
+      "has_subtests": true,
+      "suite": "tart",
+      "id": 1538704,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "2215e7461c03e3d96f928f9db363fc72c4bb27cf": {
+      "has_subtests": true,
+      "suite": "perf_reftest",
+      "id": 1649821,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "91b7053b43a8e983e010491f538a23b4e2d8268f": {
+      "has_subtests": true,
+      "suite": "tcanvasmark",
+      "id": 1538009,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "300fe5263445c7461bacc82163e7584cc719cf22": {
+      "suite": "displaylist_mutate",
+      "id": 1650915,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "e14604db171ddc61d2227f4675c6ee72d9904a99": {
+      "has_subtests": true,
+      "suite": "basic_compositor_video",
+      "id": 1502816,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "666f5fb860d31d03c56e5125bfb04d82c17e33a1": {
+      "suite": "rasterflood_svg",
+      "id": 1618034,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "c1928ea25aaf10daa22e75d4ff4bc75341749db5": {
+      "suite": "tp5n",
+      "id": 1776944,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "main_normal_fileio",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "d2243f07baf4ce4cede3bd73c494a0876d65615e": {
+      "has_subtests": true,
+      "suite": "perf_reftest",
+      "id": 1556670,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "e8678989c1b33cbfeffe029d63ffc3ad30b532be": {
+      "has_subtests": true,
+      "suite": "tsvgr_opacity",
+      "id": 1502734,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "2b64e3fbf72d40b10c9db3c8c18e7bd6a9e37156": {
+      "suite": "tresize",
+      "id": 1503093,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "tresize",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "d7eb244e5baa45a48de6b5cff3db14f85a61f1fb": {
+      "suite": "bloom_basic_singleton",
+      "id": 1550290,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "9ed01f0c6078a1e660923d4bdd5c4bdfbcbeb8df": {
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "suite": "tpaint",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e",
+      "id": 1520602
+    },
+    "37bd2d0de9b65d08a7b119184851b926398b8c62": {
+      "has_subtests": true,
+      "suite": "perf_reftest_singletons",
+      "id": 1555203,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "d3a968d51b5910ee0036b6e12b4dfe94b85fbf02": {
+      "suite": "tp6_amazon",
+      "id": 1535605,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "4c4ffaba7a4c44f8a0d8f5c23ea8271894bb9fc4": {
+      "has_subtests": true,
+      "suite": "a11yr",
+      "id": 1550440,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "66d067914760d289c083877219690c57c815b252": {
+      "suite": "tp6_facebook",
+      "id": 1552132,
+      "extra_options": [
+        "1_thread",
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "407876d55248b06a79bd35ad225d78391ea1241e": {
+      "has_subtests": true,
+      "suite": "tsvg_static",
+      "id": 1538834,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "450fd8da5e19e77c319153823a0e3f118ab3cc25": {
+      "suite": "sessionrestore_many_windows",
+      "id": 1537980,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "sessionrestore_many_windows",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "a4844601e24681e476f12b4bebe31541a3a3a7a0": {
+      "suite": "sessionrestore",
+      "id": 1552313,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "sessionrestore",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "c5319a00eed487b30ee8223e0935e90f71ed9489": {
+      "suite": "tp6_amazon_heavy",
+      "id": 1574789,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "e4fea77dcbc035ae472a405af0d041417760cdc8": {
+      "suite": "sessionrestore",
+      "id": 1537979,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "sessionrestore",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "fb27d87569b21f13829ba006195b8b378fd5b39f": {
+      "has_subtests": true,
+      "suite": "dromaeo_css",
+      "id": 1538253,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "a59bffa7d0919fe8fc8b4b4aca26f3b8b81de87d": {
+      "has_subtests": true,
+      "suite": "tabpaint",
+      "id": 1538538,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "c02f26c0202fbfa009a40190f610bf4257c557a5": {
+      "has_subtests": true,
+      "suite": "tp5o",
+      "id": 1502602,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "fb6b43c2ba8a63fcf025a99cbd3f99920182101c": {
+      "has_subtests": true,
+      "suite": "dromaeo_css",
+      "id": 1552792,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "a41d0d3a81bf304265f9e12965fa9358e5caf030": {
+      "has_subtests": true,
+      "suite": "tp5o_scroll",
+      "id": 1502930,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "6c00666b51a96874ef0389cb6b91e996395f4a0a": {
+      "suite": "tp5n",
+      "id": 1776938,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "nonmain_normal_netio",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "1d117e18967d7f4c9b1558353693c19947d4dafa": {
+      "suite": "tp6_amazon",
+      "id": 1535585,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "99964625b72fabf22b0f881425383837770c7a0f": {
+      "suite": "glvideo",
+      "id": 1550385,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "Mean tick time across 100 ticks: ",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "c45a4a076ab7e3d2685b4c696c825506ab33b55f": {
+      "has_subtests": true,
+      "suite": "tart",
+      "id": 1520928,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "251469732f6f7a7e4badb6665d4f7b149fbeb24f": {
+      "has_subtests": true,
+      "suite": "kraken",
+      "id": 1552803,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "12d6b1f41961aa8254af16cfedd58d9ca6190798": {
+      "suite": "tp6_youtube",
+      "id": 1550354,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "43e2167af947282dbb69d05517031d54ec21fc87": {
+      "has_subtests": true,
+      "suite": "stylebench",
+      "id": 1650209,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "d784e89eca771d6245a33f88f6569d5c63e6376c": {
+      "has_subtests": true,
+      "suite": "a11yr",
+      "id": 1552308,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "9525bb9b68bda10ed26b7c1999ba40830827c792": {
+      "suite": "tpaint",
+      "id": 1517553,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "3a29b59dfa00f2b864784728b7fa73dd137038e0": {
+      "has_subtests": true,
+      "suite": "damp",
+      "id": 1521777,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "95df99e3dc318c2f32771c13f64ed0cbfcd74f59": {
+      "suite": "quantum_pageload_youtube",
+      "id": 1508902,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "c8dafca7385ba4f517a4ab14bdb532bac096bfff": {
+      "suite": "tp6_youtube_heavy",
+      "id": 1574849,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "15dfefd7c26e740032a5618f7f4921f10422b7fe": {
+      "has_subtests": true,
+      "suite": "tps",
+      "id": 1551547,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "292b1aa99795847a0f5e90268383dcfd5c87c60d": {
+      "suite": "tp6_amazon",
+      "id": 1534938,
+      "extra_options": [
+        "1_thread",
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "876f740c7a6b08e8262073f308e85ff62c8745b2": {
+      "suite": "tp6_google",
+      "id": 1550353,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "e26857328ed9b091e2c77f55e589c95a8aed536e": {
+      "has_subtests": true,
+      "suite": "displaylist_mutate",
+      "id": 1663562,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "0c9d9895c704b9d2f954c460d448e538a5a5ba28": {
+      "has_subtests": true,
+      "suite": "tcanvasmark",
+      "id": 1550430,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "21c5f99d74e8275a9d0968002d64e7f6ff435a54": {
+      "suite": "displaylist_mutate",
+      "id": 1577178,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "f442c7123ffe11386388c2a9b572fe853e31d197": {
+      "has_subtests": true,
+      "suite": "tps",
+      "id": 1552932,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "d2a54877735fc5331f3277c60dec21dba5d73f3b": {
+      "suite": "rasterflood_gradient",
+      "id": 1653613,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "13c388cdad11d118a5a625eade2131fa723cc71b": {
+      "has_subtests": true,
+      "suite": "damp",
+      "id": 1503303,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "ce65c519a61cc5b3a939cca5f3e442508ed89f8a": {
+      "has_subtests": true,
+      "suite": "tcanvasmark",
+      "id": 1552450,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "57c2f2db44502fd70d6c205a3e5d9a345c86208b": {
+      "has_subtests": true,
+      "suite": "tabpaint",
+      "id": 1550448,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "8cd093881859f797cb6955723a3c56f6cef8e1c8": {
+      "has_subtests": true,
+      "suite": "glterrain",
+      "id": 1538482,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "261d458b7a4e4d0ccaae084fda969bf39cc30ec5": {
+      "has_subtests": true,
+      "suite": "perf_reftest",
+      "id": 1652351,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "3fcd7c6ffcfe46ed0309d190a30472ca74832dba": {
+      "suite": "tp6_amazon_heavy",
+      "id": 1574850,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "529a32280695f67611296e41095d3d2a19ed70f3": {
+      "has_subtests": true,
+      "suite": "glterrain",
+      "id": 1551805,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "617f1e4d395ba7f325a79d5335d967cf49d56e97": {
+      "suite": "bloom_basic_singleton",
+      "id": 1522531,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "d3f424ca224e6817d335cd5b209272cb01ffc9de": {
+      "has_subtests": true,
+      "suite": "tabpaint",
+      "id": 1552316,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "bd5804372c24da8c32636680bfe7831460c10759": {
+      "has_subtests": true,
+      "suite": "tp5o",
+      "id": 1520841,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "d554681a57d858f77a7a3d8b58f5af9e82adae5c": {
+      "suite": "tp6_amazon",
+      "id": 1535601,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "5f6971ae5d01e037c21ce71dc9b536973ad45afc": {
+      "suite": "ts_paint",
+      "id": 1552311,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "ts_paint",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "fe5860f7d48636c0694a754e0bf7ace5fc91d02f": {
+      "has_subtests": true,
+      "suite": "stylebench",
+      "id": 1634513,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "0349a0a07e85feaf34b5f76ce1e57660c2d36306": {
+      "has_subtests": true,
+      "suite": "tsvgx",
+      "id": 1550570,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "754f160b2f9514a9777514b55c11058232668393": {
+      "has_subtests": true,
+      "suite": "tp5o_scroll",
+      "id": 1503407,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "158c15a3df24bbff74b59e7b02b097dab71bc39a": {
+      "suite": "bloom_basic_ref",
+      "id": 1503056,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "f3f2480f8fbbf7a2c8efbf68571201e5ff55c650": {
+      "has_subtests": true,
+      "suite": "tsvg_static",
+      "id": 1520979,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "6f11639c00ab4aa84ed9dd4aacc00266659163fb": {
+      "suite": "tp6_facebook",
+      "id": 1552126,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "e7caea89663f1e94f198311432ecbf89e9623a75": {
+      "suite": "ts_paint",
+      "id": 1502583,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "ts_paint",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "3ca3950a05944b908333d3e8d72dbfac65d1b0c6": {
+      "has_subtests": true,
+      "suite": "kraken",
+      "id": 1520902,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "f0596dfe024ef422e63d64c26f61e054eb3d0222": {
+      "suite": "bloom_basic",
+      "id": 1552127,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "46696d1718521c318c3774f64482166a7b85ae00": {
+      "suite": "tp5n",
+      "id": 1778375,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "mainthread_writebytes",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "5f4c01a5c4d6ea766639c3f543d06cf8d2c293f6": {
+      "suite": "cpstartup",
+      "id": 1649840,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "content-process-startup",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "2df8a89f331bf896968c9841d33d64df5d9a61e9": {
+      "suite": "tp5n",
+      "id": 1778377,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "mainthread_writecount",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "671cdfd8c12b8751fa9cacf1014dcfdee92b12a4": {
+      "has_subtests": true,
+      "suite": "cart",
+      "id": 1502800,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "e3993f2e19a3e06d12da9c7b9ff8a416d862ea06": {
+      "suite": "tp6_amazon",
+      "id": 1535589,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "af4f168a1affe0ac6d2b330d098fbf68e126bdea": {
+      "suite": "glvideo",
+      "id": 1552448,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "Mean tick time across 100 ticks: ",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "dadfe12765e78b2d83e0fdd7a2a228e1d3d90224": {
+      "has_subtests": true,
+      "suite": "tsvgr_opacity",
+      "id": 1538680,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "797a2bfbbac2c632f4f354aff7677a3df3c749a3": {
+      "has_subtests": true,
+      "suite": "speedometer",
+      "id": 1571695,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "5a1a809dcb298732e23ebbd8d47f303dfbd55c04": {
+      "suite": "tp6_amazon",
+      "id": 1534914,
+      "extra_options": [
+        "1_thread",
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "3811210884c22dc6045cbf1540d427f494d7e922": {
+      "suite": "tp5n",
+      "id": 1776889,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "mainthread_writebytes",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "c00763b23b39207671b795a12ba29d38ddc17f06": {
+      "has_subtests": true,
+      "suite": "tp5o",
+      "id": 1503157,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "d2034c5b7b5b09f5056be096fb0c0cc302dbaa8a": {
+      "suite": "tp6_facebook",
+      "id": 1535606,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "538c58c62b6342df499dc71aabbb709f650914f6": {
+      "suite": "tp6_facebook_heavy",
+      "id": 1574851,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "b580be33a5cab3e0b60ca66bc8b1b993118245b5": {
+      "suite": "tp6_google",
+      "id": 1534936,
+      "extra_options": [
+        "1_thread",
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "d1ea1bff12e88b283d028e528eab8872596bdcf1": {
+      "has_subtests": true,
+      "suite": "basic_compositor_video",
+      "id": 1503057,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "4f5eadc89192a21f9ca8e7632d4fe88e9f3d81e3": {
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "suite": "tpaint",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+      "id": 1521626
+    },
+    "07395148c79800e93f4913146087c5e6ecb008e5": {
+      "suite": "quantum_pageload_google",
+      "id": 1508901,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "b7794dcfc9a7522e7c1615e4a59b13ee86c0d7a6": {
+      "has_subtests": true,
+      "suite": "motionmark_htmlsuite",
+      "id": 1661659,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "8ade183f1b1059adb8eb5b87365c12b72f0ee876": {
+      "has_subtests": true,
+      "suite": "damp",
+      "id": 1552879,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "af6ed7d2f1403570f601af30927a2c95bf83a18b": {
+      "has_subtests": true,
+      "suite": "tps",
+      "id": 1539226,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "da25468b7c06ef5dfbc72900968787a6bee0511c": {
+      "suite": "tp5o",
+      "id": 1521686,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "responsiveness",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "90c8b521d93f39dcce12e24ee345033c601ec52b": {
+      "suite": "tp5o_webext",
+      "id": 1550878,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "responsiveness",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "22e2051c3538e3843adef234d4aa3eab078cde5b": {
+      "has_subtests": true,
+      "suite": "tsvgx",
+      "id": 1520917,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "8602ccb2a5d58ae6eaeb0394eb3b116980e30a4a": {
+      "suite": "sessionrestore_many_windows",
+      "id": 1550446,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "sessionrestore_many_windows",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "60d7cfb6de56567be2be29cb882093494290b3ce": {
+      "has_subtests": true,
+      "suite": "dromaeo_css",
+      "id": 1550977,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "be6032b74e5c65e733f105927222b0880c2e9822": {
+      "has_subtests": true,
+      "suite": "speedometer",
+      "id": 1652331,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "40871c83e214cd969ec0cd14e3ee59f6c515d39d": {
+      "suite": "rasterflood_gradient",
+      "id": 1650917,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "9689fda35600c7cde330a28f1e827f9de2888c1e": {
+      "has_subtests": true,
+      "suite": "tcanvasmark",
+      "id": 1503094,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "4ab57fc9335c8cb1b1aa8db1aa0a628e5059bf69": {
+      "has_subtests": true,
+      "suite": "ARES6",
+      "id": 1661556,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "17233930776cdd7ea223b64d08e0b5ec101d2014": {
+      "has_subtests": true,
+      "suite": "a11yr",
+      "id": 1537973,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "36578671cc81ecbfe9d9211e5e5a4ec8cdf4747d": {
+      "has_subtests": true,
+      "suite": "tscrollx",
+      "id": 1521751,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "7211b07bbff603ca81773db158fd1ac97c08f38f": {
+      "has_subtests": true,
+      "suite": "tp5o_webext",
+      "id": 1538702,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "dcd1b5afe8fd564909af31c11f23f0366509a8be": {
+      "suite": "tp6_youtube_heavy",
+      "id": 1574788,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "e16d3d1d015ed1795d030f3a71ba94daf7b79edd": {
+      "suite": "sessionrestore_no_auto_restore",
+      "id": 1520604,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "sessionrestore_no_auto_restore",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "a85b3a4196c00a59dad323fd874d52cbf197bdcf": {
+      "has_subtests": true,
+      "suite": "tcanvasmark",
+      "id": 1538543,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "82096c7a9340756e44dc600b155fec792598665a": {
+      "suite": "tresize",
+      "id": 1550429,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "tresize",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "23215fdfc9029a6b285b057047692f6968ab9b8e": {
+      "suite": "cpstartup",
+      "id": 1652483,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "content-process-startup",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "f2f522dba00540f3be61a2641c2edac6c4c9c174": {
+      "suite": "sessionrestore_many_windows",
+      "id": 1538535,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "sessionrestore_many_windows",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "aa66d326622ce3ee6f316ba182fc02dd03d67660": {
+      "suite": "quantum_pageload_youtube",
+      "id": 1527380,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "a9910f3611fd5e3aeef01a2e5e7aaa6d116b6699": {
+      "suite": "tp5n",
+      "id": 1776942,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "main_startup_netio",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "aea46425afa96faf908a0dc55a2e96fa06570584": {
+      "has_subtests": true,
+      "suite": "glterrain",
+      "id": 1539635,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "098c94fac76ed5758926cb8e9cce7e9efe0ea995": {
+      "has_subtests": true,
+      "suite": "tart",
+      "id": 1552481,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "ecb34228471453995d8621f318877263265a42b3": {
+      "has_subtests": true,
+      "suite": "tp5o_webext",
+      "id": 1503100,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "47a93f1c5ceec5ef83f764c2cea3e24bfb50beeb": {
+      "suite": "quantum_pageload_google",
+      "id": 1508930,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "12f4e7c36aa44a2083f6fc5d4b778aaf500a0e35": {
+      "suite": "tp5n",
+      "id": 1776886,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "nonmain_normal_fileio",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "ef8f0bbbffad9bfe5db6c51eec81502709ce1270": {
+      "has_subtests": true,
+      "suite": "tart",
+      "id": 1502738,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "4867e47acfcc3de020ffb94d9c2d5f736e9d3a69": {
+      "suite": "tp5n",
+      "id": 1776881,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "nonmain_normal_netio",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "d392656f76b74b59920506f5b28644fe5abe685d": {
+      "has_subtests": true,
+      "suite": "speedometer",
+      "id": 1570714,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "0df8be8d5268c86a08bdbbbf6378e690f9203b6f": {
+      "has_subtests": true,
+      "suite": "tabpaint",
+      "id": 1521629,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "6036831071e9416a60c91b3b87a71749e800e27b": {
+      "suite": "tp6_amazon",
+      "id": 1552131,
+      "extra_options": [
+        "1_thread",
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "7bdaad0fa21778103f4cd0d6bbe81fe3dc49040c": {
+      "has_subtests": true,
+      "suite": "tps",
+      "id": 1503356,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "52fb16306c948701c334fd7cfc398d7d6a8c3bdf": {
+      "has_subtests": true,
+      "suite": "tps",
+      "id": 1521830,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "a40bd6ba13861836e764d7ae6ff59941f2a59e9b": {
+      "has_subtests": true,
+      "suite": "a11yr",
+      "id": 1521622,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "51a97326e8a41702fade00cf0111816ab111f938": {
+      "suite": "rasterflood_svg",
+      "id": 1653607,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "b5fbb10993e58e5a962c32056668f097328d7caa": {
+      "suite": "sessionrestore_no_auto_restore",
+      "id": 1537981,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "sessionrestore_no_auto_restore",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "5250f8fefbc340017b209ea690b4d37a5a76e54e": {
+      "has_subtests": true,
+      "suite": "tp5o_scroll",
+      "id": 1553087,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "7778bff49055cbd6b537c82acefbca76bf1dbe74": {
+      "has_subtests": true,
+      "suite": "tabpaint",
+      "id": 1520605,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "8edd75003727a21fe1d7393002cd579f9858a171": {
+      "suite": "ts_paint",
+      "id": 1520601,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "ts_paint",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "c0a52e0b3ef42ee4d964e88c896c1b3cab94c7fc": {
+      "suite": "tp6_google",
+      "id": 1552123,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "6ec57e077dec594917859dbe5526923fffbb1ad6": {
+      "suite": "quantum_pageload_facebook",
+      "id": 1527512,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "3f7718e524e4978d18cb649db60dffbfdcf22e59": {
+      "suite": "sessionrestore_no_auto_restore",
+      "id": 1550447,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "sessionrestore_no_auto_restore",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "0a1dcf4e6a74c2130858974e74e4e244218e3a72": {
+      "has_subtests": true,
+      "suite": "tsvgr_opacity",
+      "id": 1552478,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "88ff5996e52d4e44d960aa86299e25f63a3ee407": {
+      "suite": "sessionrestore_no_auto_restore",
+      "id": 1521628,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "sessionrestore_no_auto_restore",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "ef02840461e2e029f125ecec6b65c1c93682b365": {
+      "suite": "tp6_facebook",
+      "id": 1550361,
+      "extra_options": [
+        "1_thread",
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "46d5aa32e38969454c13168601be2764ae4f086f": {
+      "has_subtests": true,
+      "suite": "tscrollx",
+      "id": 1520959,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "cc564fcab4ebb405a015f5e38fa0dc219792ad8d": {
+      "suite": "tp5o_webext",
+      "id": 1503156,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "responsiveness",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "2e395c914765006618b35d3eee8744313664b750": {
+      "suite": "tresize",
+      "id": 1538008,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "tresize",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "1372d76b5e35afa687de06f8159d5e8c437be91d": {
+      "suite": "tpaint",
+      "id": 1503068,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "tpaint",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "b34709c79b6de3d4e1a260a60da9717f20163d66": {
+      "has_subtests": true,
+      "suite": "motionmark_animometer",
+      "id": 1661649,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "59b4f837465cd4c0cd0c0580a294719d03924808": {
+      "has_subtests": true,
+      "suite": "dromaeo_css",
+      "id": 1503210,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "7858ce3b93a16ff07a04415a8850a04127c36804": {
+      "has_subtests": true,
+      "suite": "tp5o_scroll",
+      "id": 1538379,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "52b9ca915ebe441c621dc94c5c5970767079f38e": {
+      "suite": "glvideo",
+      "id": 1538007,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "Mean tick time across 100 ticks: ",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "ecd9aad9d13654c3f0524892d6afdb7a2add3d6f": {
+      "has_subtests": true,
+      "suite": "kraken",
+      "id": 1503217,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "cc1c307cf621e4a51d742a014f3cf63b7531f2f5": {
+      "has_subtests": true,
+      "suite": "tsvgr_opacity",
+      "id": 1550579,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "58d842bcab1627d36b1795a3eddd2533b4475b7a": {
+      "suite": "rasterflood_gradient",
+      "id": 1618035,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "115672e9733b7835e62659c5f24973f458db3c1f": {
+      "suite": "tp6_facebook",
+      "id": 1550356,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "2a3f3c13c2e5b17fad02d3defc9f018c1bf448ea": {
+      "suite": "tp6_facebook",
+      "id": 1535590,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "52cadacbcf0be1455d3ddb1a26aff330b35a0fb3": {
+      "suite": "glvideo",
+      "id": 1503092,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "Mean tick time across 100 ticks: ",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "e4e0081ff90530932c463fc917d113936690baa3": {
+      "has_subtests": true,
+      "suite": "tsvg_static",
+      "id": 1503297,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "94dbd91427ef2cbedd76b5199468e95bf95b9622": {
+      "suite": "bloom_basic",
+      "id": 1502590,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "900b5e944bc4ea53e2bbed6f8b10c28837d307a7": {
+      "has_subtests": true,
+      "suite": "kraken",
+      "id": 1521700,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "23443ed3439131b4380a9daee22221397760dc6f": {
+      "suite": "quantum_pageload_youtube",
+      "id": 1527510,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "d80fa1cc32cc106c960b794eb7cd1ea20a19f34e": {
+      "has_subtests": true,
+      "suite": "a11yr",
+      "id": 1503059,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "89861c9b57652e5dda8bea4f9b0f3b6879787d75": {
+      "has_subtests": true,
+      "suite": "speedometer",
+      "id": 1571711,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "7207561755a8cb6b27c68eafeef64d019c29045e": {
+      "has_subtests": true,
+      "suite": "tart",
+      "id": 1503243,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "217aed0e7697f1486cf5dd97fd9a62226b68a969": {
+      "has_subtests": true,
+      "suite": "tsvgx",
+      "id": 1552470,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "a5811b7de0ffdfe834238f831a4d0c8d1f3413e9": {
+      "has_subtests": true,
+      "suite": "tsvgx",
+      "id": 1538634,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "cf6d0f8ec11d60c27b2707a57e57164685c4d4ff": {
+      "suite": "tp5n",
+      "id": 1776941,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "nonmain_startup_fileio",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "ff19585681e4a21e8d1815b2a381af0707be7c8d": {
+      "suite": "bloom_basic_singleton",
+      "id": 1538487,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "9144ab2b119a7bc620bf4ab2ee0166173d7af6eb": {
+      "suite": "tp5n",
+      "id": 1776940,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "main_normal_netio",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "22a0985bd873492d70d49c335a21fd49a73c87cf": {
+      "has_subtests": true,
+      "suite": "ARES6",
+      "id": 1661712,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "701810eaf5567de708afa8eb0275f0d0f08e9bdb": {
+      "suite": "ts_paint_webext",
+      "id": 1502669,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "ts_paint_webext",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "92e5997ad7fe7b28c72f69f178dd0ac8f0498571": {
+      "suite": "tresize",
+      "id": 1787205,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "71044c96a6df38e760838e6447f61d20c3beb876": {
+      "has_subtests": true,
+      "suite": "tp5o",
+      "id": 1521634,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "9a87ee04cfdd9de412b22c413bd4bfbbbaf128e8": {
+      "suite": "tp5o",
+      "id": 1550695,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "responsiveness",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "5058f0b0ce189d658a443fc3ddf19eb6c8999a39": {
+      "suite": "tp5o",
+      "id": 1520893,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "responsiveness",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "84813a3aac5d53c7c0dabb1390df1c28b26ec139": {
+      "suite": "bloom_basic",
+      "id": 1503055,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "d7ae5e0c2617ecfbf632d7e55cb35e7e94f534cb": {
+      "suite": "tp6_amazon",
+      "id": 1552125,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "395ffefcd91d2d28bb34c9f1bae75409eb94b14a": {
+      "has_subtests": true,
+      "suite": "tp5o_webext",
+      "id": 1550806,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "fab583b119a51dfc29d32ee99f6cabfdb4444520": {
+      "suite": "ts_paint_webext",
+      "id": 1552685,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "ts_paint_webext",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "e4368b52792b6e7738b1451fd8c08bbd0210921d": {
+      "suite": "ts_paint_webext",
+      "id": 1550804,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "ts_paint_webext",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "51e96e26cb0b3c5fd3eef7d5026c7e8d99bb2f37": {
+      "suite": "bloom_basic_ref",
+      "id": 1502591,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "8ca3961a8c89fcc110eb10f6a839dd510a958c4c": {
+      "suite": "quantum_pageload_amazon",
+      "id": 1527511,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "c65da1513ac87f5543411c1e5721bae262f9beee": {
+      "suite": "tp6_google",
+      "id": 1550358,
+      "extra_options": [
+        "1_thread",
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "40d86c31979ff41839de8e3cc9b7ba98464b0c48": {
+      "has_subtests": true,
+      "suite": "tart",
+      "id": 1521711,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "aa70c183a41ee72e16b2fd01ece3790fcd71bc22": {
+      "has_subtests": true,
+      "suite": "perf_reftest_singletons",
+      "id": 1652022,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "4eaa252d0c65145c6de1387612b5e39cbe5bc830": {
+      "suite": "sessionrestore_many_windows",
+      "id": 1514544,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "sessionrestore_many_windows",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "b83ffbbbea9daa09057fcab2c2648e27a2998ede": {
+      "has_subtests": true,
+      "suite": "basic_compositor_video",
+      "id": 1538551,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "577f4c3e31bc186dbfebdef9e40571569764d613": {
+      "suite": "sessionrestore",
+      "id": 1503069,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "sessionrestore",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "baf0139190f0f3fca46930095a07a147c1a8d1e3": {
+      "has_subtests": true,
+      "suite": "tp5o",
+      "id": 1552369,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "177e98528def00a9399250b7fb71f2a3bdb6440e": {
+      "suite": "quantum_pageload_youtube",
+      "id": 1508931,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "81b143123b3d68326491b1358e7a00db4be60448": {
+      "has_subtests": true,
+      "suite": "dromaeo_css",
+      "id": 1538986,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "26e9d236bb08c7d91c05f911ac4c257b3206801f": {
+      "suite": "tp6_amazon",
+      "id": 1550360,
+      "extra_options": [
+        "1_thread",
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "ac0ceb5e254d455b35a76117cef9225ed4768340": {
+      "has_subtests": true,
+      "suite": "tps",
+      "id": 1502895,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "415858d6e639bfcf9ff5137a37d559e465137038": {
+      "suite": "tp5o",
+      "id": 1538732,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "responsiveness",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "0d398ff8ab8c34943913c38c50bdd5248edecb83": {
+      "has_subtests": true,
+      "suite": "JetStream",
+      "id": 1661515,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "d16c367bc2e2999be1d1267fec96e9dae873920e": {
+      "has_subtests": true,
+      "suite": "motionmark_animometer",
+      "id": 1661493,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "d0a5c873728adab73d2c4ebbbaf11b91941fd049": {
+      "suite": "ts_paint",
+      "id": 1537977,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "ts_paint",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "76d37f576761beb1500baabe8b5eef1dd2db4ed8": {
+      "has_subtests": true,
+      "suite": "perf_reftest_singletons",
+      "id": 1649828,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "754ffadd50454b3d3b241baade03b135f5383a38": {
+      "suite": "tp5n",
+      "id": 1776939,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "main_startup_fileio",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "5d8eef522b21f71623d31bd4ecdfbf83deda8f2d": {
+      "has_subtests": true,
+      "suite": "tsvg_static",
+      "id": 1538163,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "78be06d48cbcbf578f5aa448b0da03c87bf38eec": {
+      "suite": "tp5n",
+      "id": 1776892,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "mainthread_readbytes",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "20a0e5c85165f89bfba804de21715bbf47900f24": {
+      "has_subtests": true,
+      "suite": "glterrain",
+      "id": 1521984,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "1ae931c70e7d1525a517360a9f5f0fce5f4af2c9": {
+      "suite": "tp5o_webext",
+      "id": 1538864,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "responsiveness",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "bcde7040278eecdd4741ea1086d7fff32899ca88": {
+      "has_subtests": true,
+      "suite": "tp5o_scroll",
+      "id": 1551702,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "799db0d801c7248924e93ca5a0b770020498da69": {
+      "has_subtests": true,
+      "suite": "JetStream",
+      "id": 1661671,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "22fd251dfca189dca3e59d987af7eb4643e47df8": {
+      "suite": "cpstartup",
+      "id": 1559706,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "content-process-startup",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "aea56740bf668dd859d84f71e384023cc11e53e1": {
+      "suite": "sessionrestore_no_auto_restore",
+      "id": 1503072,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "sessionrestore_no_auto_restore",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "8ea7328413b7b756bb2756e24e863bbc0c3d2b2b": {
+      "has_subtests": true,
+      "suite": "tsvgr_opacity",
+      "id": 1520925,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "28e8bd5a75689fff0840101ac373945d059fef80": {
+      "has_subtests": true,
+      "suite": "tscrollx",
+      "id": 1552523,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "e3e3940e5854ff1bded84fd00263b7d11059ef79": {
+      "suite": "ts_paint_webext",
+      "id": 1503098,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "ts_paint_webext",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "4493d89fabbe560a2ae2d04eab2ad2adcad3787d": {
+      "has_subtests": true,
+      "suite": "damp",
+      "id": 1551494,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "0a99ee0789159bc9efbe66763db8350191222293": {
+      "suite": "sessionrestore_many_windows",
+      "id": 1514552,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "sessionrestore_many_windows",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "6dad0d4157ffc20c25f2de010c2b0b864f3ffeaf": {
+      "has_subtests": true,
+      "suite": "basic_compositor_video",
+      "id": 1537986,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "a9cd333dff68ce0812dc85e0657af4edfc51ebe3": {
+      "has_subtests": true,
+      "suite": "tabpaint",
+      "id": 1503074,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "8042816eadf153e05341c7cee7b2bb1fe44409bb": {
+      "has_subtests": true,
+      "suite": "tscrollx",
+      "id": 1538804,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "b267746b7939bce7a7323396ec1ccb0189899f79": {
+      "has_subtests": true,
+      "suite": "tsvgr_opacity",
+      "id": 1538066,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "f12e8c781a7a9f42a01567603674df74e9fe4143": {
+      "suite": "tp6_google",
+      "id": 1535583,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "47e116b3dd2d879046075f5e335b645375770dac": {
+      "has_subtests": true,
+      "suite": "tp5o",
+      "id": 1538597,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "d9b67ae2e6fdcc4fa67b80cdc41890590a5d05fc": {
+      "suite": "tp5n",
+      "id": 1776888,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "time_to_session_store_window_restored_ms",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "62c554a05b2595566a2ce339dd9ac85b5542eb49": {
+      "suite": "rasterflood_gradient",
+      "id": 1618037,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "e4bb14efada2a9dba182e7c8aa02eb7c71a41aea": {
+      "suite": "tp5o_webext",
+      "id": 1502722,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "responsiveness",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "f47b108ef6697aacd7074e442e5ac0de77100205": {
+      "has_subtests": true,
+      "suite": "tart",
+      "id": 1538069,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "a08bdc86a337f2ba0ee7e0595deb5853ede58fc6": {
+      "suite": "tp6_google",
+      "id": 1535587,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "352ec2f487fd3ab1a0c076883d0abde874a26d66": {
+      "suite": "bloom_basic_singleton",
+      "id": 1537962,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "16b619d44e3b37c5c7fd1574d10305edbe6337b1": {
+      "has_subtests": true,
+      "suite": "tp5o_webext",
+      "id": 1538079,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "8cf6292f760a6328f4a9e2742296fd5e77675cff": {
+      "has_subtests": true,
+      "suite": "about_preferences_basic",
+      "id": 1660577,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "c5bb0f6c6eafacd2907b14104858580f158cc7ae": {
+      "suite": "tp5n",
+      "id": 1776882,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "main_startup_fileio",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "17c2df00e21ce95919d7ed9d0c2c2c8009a35874": {
+      "has_subtests": true,
+      "suite": "speedometer",
+      "id": 1649837,
+      "lower_is_better": false,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "3fcaccb953863ca70d2223b48e0c02d199d6ec04": {
+      "suite": "tpaint",
+      "id": 1552312,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "0a99a60753d3d29f7a364481b236e52db325536f": {
+      "has_subtests": true,
+      "suite": "tp5o_scroll",
+      "id": 1539433,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "ecdb25cc1ffdbfd5c23f289104cea048943b03e2": {
+      "suite": "cpstartup",
+      "id": 1559699,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "content-process-startup",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "6f9360a513321a254c4594e4aeea8b6f5dd78364": {
+      "suite": "tp6_youtube",
+      "id": 1535588,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "2a63a0bc32c9c22edb7cbbb68df7cf244662a8d7": {
+      "has_subtests": true,
+      "suite": "kraken",
+      "id": 1550984,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "d29dac27e70dbc85ce365eeb1520a44f212a9424": {
+      "has_subtests": true,
+      "suite": "tps",
+      "id": 1521462,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "59ec856cb333acbd33940db0d563771dcef2a120": {
+      "suite": "Quantum_1",
+      "id": 1505939,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "a220b52059a910247d52dc83ea1ea92a1f4a42f2": {
+      "has_subtests": true,
+      "suite": "perf_reftest",
+      "id": 1556613,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "03eadf554ce6c46023b3f1b81ff561cb5cfa4569": {
+      "suite": "sessionrestore_many_windows",
+      "id": 1552314,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "sessionrestore_many_windows",
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "b83d0c9aa33131e530d5f4b17568c3da7985fc69": {
+      "suite": "quantum_pageload_google",
+      "id": 1527379,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "e1ca34204aa47e7ebd4a16b37105e102daf78cb5": {
+      "has_subtests": true,
+      "suite": "kraken",
+      "id": 1502746,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "719cc2f649ac9bd4361295666643eb6d319db580": {
+      "has_subtests": true,
+      "suite": "perf_reftest_singletons",
+      "id": 1555358,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "18983f13f41e96fd1802d7e2cfc4bc07d200ec04": {
+      "has_subtests": true,
+      "suite": "tsvgr_opacity",
+      "id": 1503240,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "cf2e9f6be7998c6ffd84076a78745b6922dd01fd": {
+      "suite": "tpaint",
+      "id": 1517547,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "93ae1feee4ed74c34b4af37a2b241c03440eaada": {
+      "has_subtests": true,
+      "suite": "tsvg_static",
+      "id": 1552543,
+      "extra_options": [
+        "e10s",
+        "stylo_disabled"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "20de714260c7feb9e745c3e5d67414c2a2e2cd71": {
+      "has_subtests": true,
+      "suite": "tabpaint",
+      "id": 1502587,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "57bab4291e28f8b5fb43c7f9fe988f8402722a17": {
+      "suite": "tp6_facebook",
+      "id": 1535586,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "e96b1f0625551c9f5192c5ecfbc17f9c167e035c": {
+      "suite": "tpaint",
+      "id": 1537978,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "908b62ac56352d84bf1dbd460f36f3d2cb35a92c": {
+      "suite": "tp5n",
+      "id": 1776884,
+      "extra_options": [
+        "e10s",
+        "stylo"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "test": "nonmain_startup_fileio",
+      "option_collection_hash": "102210fe594ee9b33d82058545b1ed14f4c8206e"
+    },
+    "331a4579e53dad36a1c5651146b90abe52f930d5": {
+      "has_subtests": true,
+      "suite": "glterrain",
+      "id": 1503510,
+      "extra_options": [
+        "e10s"
+      ],
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    },
+    "d86d8da92ebc91cdc542171997828977e2b0f655": {
+      "has_subtests": true,
+      "suite": "tp5o_scroll",
+      "id": 1521881,
+      "machine_platform": "windows10-64",
+      "framework_id": 1,
+      "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec"
+    }
+  }

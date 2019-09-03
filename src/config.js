@@ -1929,7 +1929,7 @@ const DEFAULT_SUITES = [
 export const CONFIG = {
   default: {
     landingPath: '/win10/overview?numDays=60',
-    timeRange: 60, // # days
+    dayRange: 60, // # days
     colors: [COLORS.firefox, COLORS.chromium],
     labels: ['Firefox', 'Chromium'],
   },
@@ -1939,11 +1939,12 @@ export const CONFIG = {
       const suffix = '-shippable';
       return platform.endsWith(suffix) ? platform : `${platform}${suffix}`;
     },
+
   },
   views: {
     linux64: {
       label: 'Linux 64bit',
-      platform: 'linux64',
+      platforms: ['linux64'],
       benchmarks: DEFAULT_SUITES
         .concat([
           'assorted-dom', 'ares6-jsshell', 'octane', 'six-speed',
@@ -1952,27 +1953,27 @@ export const CONFIG = {
     },
     mac: {
       label: 'Mac OS X',
-      platform: 'macosx1014-64-shippable',
+      platforms: ['macosx1014-64-shippable'],
       benchmarks: DEFAULT_SUITES,
     },
     win7: {
       label: 'Windows 7 32bit',
-      platform: 'windows7-32',
+      platforms: ['windows7-32'],
       benchmarks: DEFAULT_SUITES,
     },
     win10: {
       label: 'Windows 10 64bit',
-      platform: 'windows10-64',
+      platforms: ['windows10-64'],
       benchmarks: DEFAULT_SUITES,
     },
     win10ref2017: {
       label: 'Windows 10 64bit (2017 reference laptop)',
-      platform: 'windows10-64-ref-hw-2017',
+      platforms: ['windows10-64-ux', 'windows10-64-ref-hw-2017'],
       benchmarks: DEFAULT_SUITES,
     },
     windows10Aarch64: {
       label: 'Windows 10 ARM64',
-      platform: 'windows10-aarch64',
+      platforms: ['windows10-aarch64'],
       benchmarks: DEFAULT_SUITES,
     },
     android: {
@@ -1984,3 +1985,56 @@ export const CONFIG = {
 
 // Upper limit for the time range slider measured in days
 export const TIMERANGE_UPPER_LIMIT = 365;
+
+
+const processSeries = (seriesConfig, viewConfig) => {
+  const result = [];
+  // The Android benchmarks have a platform defined per series
+  if (!seriesConfig.platform) {
+    const { platforms } = viewConfig;
+    platforms.forEach((pf) => {
+      const newSeriesConfig = Object.assign({}, seriesConfig);
+      // Chrome jobs only run on -shippable platforms
+      newSeriesConfig.platform = seriesConfig.suite.endsWith('-chromium') ? `${pf}-shippable` : pf;
+      result.push(newSeriesConfig);
+    });
+  } else {
+    result.push(seriesConfig);
+  }
+  return result;
+};
+
+// Given a view configuration return a data structure with the data
+// structure needed to query Treeherder
+export const queryInfo = (viewConfig, benchmark) => {
+  const info = {};
+  const { benchmarks } = viewConfig;
+  if (benchmark === 'overview' && benchmarks) {
+    benchmarks.forEach((configUID) => {
+      info[configUID] = {
+        compare: [],
+        benchmarkUID: configUID,
+        includeSubtests: false,
+        label: BENCHMARKS[configUID].label,
+      };
+      // We need to set the platform for fetching data from Treeherder
+      Object.values(BENCHMARKS[configUID].compare).forEach((seriesConfig) => {
+        const oneOrMoreSeries = processSeries(seriesConfig, viewConfig);
+        info[configUID].compare = info[configUID].compare.concat(oneOrMoreSeries);
+      });
+    });
+  } else {
+    Object.values(BENCHMARKS[benchmark].compare).forEach((seriesConfig) => {
+      info[benchmark] = {
+        compare: [],
+        benchmarkUID: benchmark,
+        includeSubtests: true,
+        label: BENCHMARKS[benchmark].label,
+      };
+      const oneOrMoreSeries = processSeries(seriesConfig, viewConfig);
+      info[benchmark].compare = info[benchmark].compare.concat(oneOrMoreSeries);
+    });
+  }
+
+  return info;
+};

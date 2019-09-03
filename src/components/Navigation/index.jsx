@@ -30,7 +30,7 @@ class Navigation extends Component {
     classes: PropTypes.shape().isRequired,
     benchmark: PropTypes.string.isRequired,
     platform: PropTypes.string.isRequired,
-    timeRange: PropTypes.number.isRequired,
+    dayRange: PropTypes.number.isRequired,
   };
 
   handlePathChange = (event) => {
@@ -40,7 +40,7 @@ class Navigation extends Component {
       history,
       platform,
       benchmark,
-      timeRange,
+      dayRange,
     } = this.props;
 
     let newPlatform = platform;
@@ -51,7 +51,7 @@ class Navigation extends Component {
     } else {
       newBenchmark = value;
     }
-    history.push(`/${newPlatform}/${newBenchmark}?numDays=${timeRange}`);
+    history.push(`/${newPlatform}/${newBenchmark}?numDays=${dayRange}`);
   };
 
   handleSearchParamChange = (searchParam, value) => {
@@ -62,7 +62,7 @@ class Navigation extends Component {
 
   render() {
     const {
-      classes, platform, benchmark, timeRange,
+      classes, platform, benchmark, dayRange,
     } = this.props;
     return (
       <div className={classes.root}>
@@ -72,10 +72,10 @@ class Navigation extends Component {
           benchmark={benchmark}
         />
         <Slider
-          identifier="timeRange"
+          identifier="dayRange"
           label="Time range"
           searchParam="numDays"
-          selectedValue={timeRange}
+          selectedValue={dayRange}
           options={{ min: 1, max: 365, step: 1 }}
           onChangeUpdateTooltipFunc={generateLastDaysLabel}
           handleSliderChange={this.handleSearchParamChange}

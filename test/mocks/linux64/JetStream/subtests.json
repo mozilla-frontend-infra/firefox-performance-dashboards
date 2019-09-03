@@ -1,0 +1,562 @@
+{
+  "c78831002f530881442e59c58e3369cd3da07c05": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661263,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "n-body",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "d66256f1b98be529b549e3037b975f38bdb238f9": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661276,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "richards",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "459a037bc1d369810db6454e470f250c60e94a60": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661261,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "date-format-tofte",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "52cb63fd24286c01a5f4be8c8b887cf1daf2672b": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661285,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "pdfjs",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "bb66731a3c3cddca31ed228ae63696bd98b7b21a": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661287,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "mandreel-latency",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "4655da1de2dad10f6c65ebf83054d280e6321c37": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661260,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "crypto-sha1",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "79df0c3976a4f6abb7c341286dc57cee8eaf2bfb": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661270,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "gcc-loops.cpp",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "011b5eb2735ee55588bb4a18f0a5948041862877": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661283,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "splay-latency",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "7b66bf1704d2c21b605fa348fa3b9578a763ccd9": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661272,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "n-body.c",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "28486d5f17e538a6df8c68a7567ced6b5f97d2ed": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661284,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "navier-stokes",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "09b012fbf6ef6021a5d7d974b56492be6639e182": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661257,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "base64",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "df8dc061a90e118011bc6f0fb5f161c1c0ed5d98": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661274,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "towers.c",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "a7bc2ac3bb9f283adb757c4e3ac81dd87241888f": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661291,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "zlib",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "6557a4b9cd9c68319c81607997a7856b9346f7a6": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661288,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "gbemu",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "cc17f888984895a54042f85a13a58293bc6adbb5": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661267,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "container.cpp",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "25ad92f64bc2e8307bac590bcf070e87c9fb930e": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661294,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "geomean",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "b923326fcc256b39d7e2db683058c353a16929d3": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661275,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "code-multi-load",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "07b328a885ebcf9231210ce8c11813b1f7eab821": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661259,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "crypto-md5",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "531a3a95b263d26a5f69e23e1c7d821d0f92f6f5": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661277,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "delta-blue",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "be38187c0ed69420b80d79d0e16cdf19028785a5": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661273,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "quicksort.c",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "4cc843ea3d0792543bce4172bd567aa11654aa6a": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661279,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "proto-raytracer",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "274f708eb74499ac2a663d93de57cbae884cc254": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661256,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "3d-raytrace",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "99f137ed71cc5a0c21619a5304361d428110095c": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661282,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "splay",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "fb22bf47e7c36379790ebe721b85e97ef5a67ea3": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661293,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "cdjs",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "8987e5d4468e12a9d59441743ff3315dda5607b2": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661290,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "box2d",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "a96b808a09259e21e5d29aa9af78f7689d505239": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661269,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "float-mm.c",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "beca772019a1123828591314298e8a90ba740d62": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661281,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "regexp-2010",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "db3f0e40db9f2fa6c73427e0fadeba33bd3bc3f5": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661278,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "crypto",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "0460285604d8568542ea9a09a4a7191ab40d9028": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661266,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "bigfib.cpp",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "931fc0e8fac7617387d745212c3f7598d7c5b2cb": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661258,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "crypto-aes",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "0cce4a9ca11546ffc980f308927e84665e096a6c": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661271,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "hash-map",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "9ee84767facb9dbbafb1f443063bdd298f1768fe": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661289,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "code-first-load",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "4cc073fadff941731a7dd83e2465b755727b71db": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661292,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "typescript",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "6c529ad10d051a8b3b801f11fe38145122e10444": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661280,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "earley-boyer",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "50a140f04c5b65bd63fce3714523b225f31975ff": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661262,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "date-format-xparb",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "46e5900b911849853c4619293de8341a84bf5903": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661264,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "regex-dna",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "aa690141721251a97e28d6815a2f6ca8ad9eadb8": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661268,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "dry.c",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "55dfcc8f17ec8522262b26e314546f91d5461e74": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661265,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "tagcloud",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "2a9b5c767f102a34c0d80e219865821f6e1c397b": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661286,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "mandreel",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  },
+  "57367d367374043ff7db759b99d017cbc55deaa5": {
+    "extra_options": [
+      "e10s",
+      "stylo"
+    ],
+    "machine_platform": "linux64",
+    "framework_id": 1,
+    "id": 1661255,
+    "parent_signature": "46ca6eb015193051661117a30bd39e6f25ee4744",
+    "test": "3d-cube",
+    "suite": "JetStream",
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "lower_is_better": false
+  }
+}

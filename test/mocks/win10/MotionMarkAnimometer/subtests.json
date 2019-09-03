@@ -1,0 +1,92 @@
+{
+  "d1e0e3b3fa84f097fdc4a4de504f26ff5d8534d7": {
+    "parent_signature": "9ad671fb568a5b3027af35b5d42fc6dd385f25ed",
+    "test": "Suits",
+    "suite": "raptor-motionmark-animometer-firefox",
+    "lower_is_better": false,
+    "id": 1708520,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "machine_platform": "windows10-64",
+    "framework_id": 10
+  },
+  "2ab92a97a4e938bef82858c8472ac417ff4e9ed2": {
+    "parent_signature": "9ad671fb568a5b3027af35b5d42fc6dd385f25ed",
+    "test": "Canvas Arcs",
+    "suite": "raptor-motionmark-animometer-firefox",
+    "lower_is_better": false,
+    "id": 1708528,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "machine_platform": "windows10-64",
+    "framework_id": 10
+  },
+  "75951bd249364f8c70a94f624e096cdbb7ef56b9": {
+    "parent_signature": "9ad671fb568a5b3027af35b5d42fc6dd385f25ed",
+    "test": "Design",
+    "suite": "raptor-motionmark-animometer-firefox",
+    "lower_is_better": false,
+    "id": 1708526,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "machine_platform": "windows10-64",
+    "framework_id": 10
+  },
+  "ea3e4ebf1933f3d17aaf1640d7e82b844031fdb6": {
+    "parent_signature": "9ad671fb568a5b3027af35b5d42fc6dd385f25ed",
+    "test": "Canvas Lines",
+    "suite": "raptor-motionmark-animometer-firefox",
+    "lower_is_better": false,
+    "id": 1708527,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "machine_platform": "windows10-64",
+    "framework_id": 10
+  },
+  "7572d06a0da6a9e6f77089d083355bde0dd1d7c4": {
+    "parent_signature": "9ad671fb568a5b3027af35b5d42fc6dd385f25ed",
+    "test": "Paths",
+    "suite": "raptor-motionmark-animometer-firefox",
+    "lower_is_better": false,
+    "id": 1708521,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "machine_platform": "windows10-64",
+    "framework_id": 10
+  },
+  "372d02d9a8185394e19f33759b089baac6a82a79": {
+    "parent_signature": "9ad671fb568a5b3027af35b5d42fc6dd385f25ed",
+    "test": "Focus",
+    "suite": "raptor-motionmark-animometer-firefox",
+    "lower_is_better": false,
+    "id": 1708525,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "machine_platform": "windows10-64",
+    "framework_id": 10
+  },
+  "46525071b25c5057dba1ed933744e35246c7c8e7": {
+    "parent_signature": "9ad671fb568a5b3027af35b5d42fc6dd385f25ed",
+    "test": "Leaves",
+    "suite": "raptor-motionmark-animometer-firefox",
+    "lower_is_better": false,
+    "id": 1708523,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "machine_platform": "windows10-64",
+    "framework_id": 10
+  },
+  "8509fcc09f8dcbd129ee4de39fc1bc5d282d30b6": {
+    "parent_signature": "9ad671fb568a5b3027af35b5d42fc6dd385f25ed",
+    "test": "Multiply",
+    "suite": "raptor-motionmark-animometer-firefox",
+    "lower_is_better": false,
+    "id": 1708522,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "machine_platform": "windows10-64",
+    "framework_id": 10
+  },
+  "dee06cb22b43acee1e27f20042d7f92f87759a89": {
+    "parent_signature": "9ad671fb568a5b3027af35b5d42fc6dd385f25ed",
+    "test": "Images",
+    "suite": "raptor-motionmark-animometer-firefox",
+    "lower_is_better": false,
+    "id": 1708524,
+    "option_collection_hash": "f69e1b00908837bf0550250abb1645014317e8ec",
+    "machine_platform": "windows10-64",
+    "framework_id": 10
+  }
+}
