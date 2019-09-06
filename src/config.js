@@ -1939,7 +1939,6 @@ export const CONFIG = {
       const suffix = '-shippable';
       return platform.endsWith(suffix) ? platform : `${platform}${suffix}`;
     },
-
   },
   views: {
     linux64: {
@@ -2025,12 +2024,14 @@ export const queryInfo = (viewConfig, benchmark) => {
     });
   } else {
     Object.values(BENCHMARKS[benchmark].compare).forEach((seriesConfig) => {
-      info[benchmark] = {
-        compare: [],
-        benchmarkUID: benchmark,
-        includeSubtests: true,
-        label: BENCHMARKS[benchmark].label,
-      };
+      if (!info[benchmark]) {
+        info[benchmark] = {
+          compare: [],
+          benchmarkUID: benchmark,
+          includeSubtests: true,
+          label: BENCHMARKS[benchmark].label,
+        };
+      }
       const oneOrMoreSeries = processSeries(seriesConfig, viewConfig);
       info[benchmark].compare = info[benchmark].compare.concat(oneOrMoreSeries);
     });

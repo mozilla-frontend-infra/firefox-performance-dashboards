@@ -1,4 +1,4 @@
-import { BENCHMARKS, CONFIG } from '../src/config';
+import { BENCHMARKS, CONFIG, queryInfo } from '../src/config';
 
 it('Verify all benchmarks are defined', () => {
   Object.values(CONFIG.views).map(({ benchmarks }) => (
@@ -9,4 +9,57 @@ it('Verify all benchmarks are defined', () => {
       }
     })
   ));
+});
+
+it('Query info', () => {
+  const benchmarks = queryInfo(CONFIG.views.linux64, 'wasm-misc');
+  expect(benchmarks).toStrictEqual({
+    'wasm-misc': {
+      benchmarkUID: 'wasm-misc',
+      compare: [
+        {
+          color: '#e55525',
+          label: 'Firefox (tiering)',
+          frameworkId: 10,
+          suite: 'raptor-wasm-misc-firefox',
+          option: 'opt',
+          platform: 'linux64',
+        },
+        {
+          color: 'red',
+          label: 'Firefox (wasm-baseline)',
+          frameworkId: 10,
+          suite: 'raptor-wasm-misc-baseline-firefox',
+          option: 'opt',
+          platform: 'linux64',
+        },
+        {
+          color: 'brown',
+          label: 'Firefox (wasm-ion)',
+          frameworkId: 10,
+          suite: 'raptor-wasm-misc-ion-firefox',
+          option: 'opt',
+          platform: 'linux64',
+        },
+        {
+          color: 'yellow',
+          label: 'Firefox (wasm-cranelift)',
+          frameworkId: 10,
+          suite: 'raptor-wasm-misc-cranelift-firefox',
+          option: 'opt',
+          platform: 'linux64',
+        },
+        {
+          color: '#4285F4',
+          label: 'Chromium',
+          frameworkId: 10,
+          suite: 'raptor-wasm-misc-chromium',
+          option: 'opt',
+          platform: 'linux64-shippable',
+        },
+      ],
+      includeSubtests: true,
+      label: 'WebAssembly Embenchen',
+    },
+  });
 });
