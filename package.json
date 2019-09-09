@@ -8,13 +8,18 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development",
-    "test": "jest",
-    "lint": "eslint --cache --ext mjs,jsx,js --format codeframe \".*.js\" src test"
+    "test": "jest --coverage",
+    "lint": "eslint --cache --ext mjs,jsx,js --format codeframe \".*.js\" src test",
+    "codecov": "codecov && rm -rf coverage"
   },
   "lint-staged": {
     "*.js[x]": [
       "yarn lint"
     ]
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   },
   "dependencies": {
     "@material-ui/core": "^3",
@@ -36,6 +41,7 @@
     "@neutrinojs/airbnb": "9.0.0-rc.3",
     "@neutrinojs/jest": "9.0.0-rc.3",
     "@neutrinojs/react": "9.0.0-rc.3",
+    "codecov": "^3.5.0",
     "eslint": "5.16.0",
     "fetch-mock": "7.3.9",
     "husky": "3.0.5",
