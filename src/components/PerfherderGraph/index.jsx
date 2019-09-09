@@ -67,6 +67,7 @@ class PerferhderGraph extends React.Component {
       suite: PropTypes.string.isRequired,
     })).isRequired,
     title: PropTypes.string.isRequired,
+    yLabel: PropTypes.string.isRequired,
   };
 
   static defaultProps = {
@@ -97,7 +98,7 @@ class PerferhderGraph extends React.Component {
   async fetchData() {
     let chartJsOptions;
     const {
-      series, dayRange, includeSubtests, title,
+      series, dayRange, includeSubtests, title, yLabel,
     } = this.props;
     this.setState({ data: {} });
     Promise.all(series.map(async (config) => {
@@ -107,7 +108,7 @@ class PerferhderGraph extends React.Component {
       Object.values(response).forEach(({ data, meta, perfherderUrl }) => {
         const newUrl = fixUrl(perfherderUrl, dayRange);
         if (!chartJsOptions) {
-          chartJsOptions = generateChartJsOptions(meta);
+          chartJsOptions = generateChartJsOptions(meta, yLabel);
         }
         const graphUid = meta.test || `${title}-overview`;
         // Considering includeSubtests is because glvideo has the 'test' property set

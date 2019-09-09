@@ -42,7 +42,7 @@ class App extends Component {
           dayRange={dayRange}
         />
         {Object.values(benchmarks).sort(sortByLabel).map(({
-          benchmarkUID, compare, label, includeSubtests,
+          benchmarkUID, compare, label, includeSubtests, yLabel,
         }) => (
           <div key={label}>
             <PerfherderGraph
@@ -51,6 +51,7 @@ class App extends Component {
               series={Object.values(compare)}
               includeSubtests={includeSubtests}
               dayRange={dayRange}
+              yLabel={yLabel}
             />
           </div>
         ))}

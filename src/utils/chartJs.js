@@ -31,9 +31,9 @@ const chartJsOptions = (reverse, scaleLabel) => ({
   },
 });
 
-export const generateChartJsOptions = (meta) => {
+export const generateChartJsOptions = (meta, yLabel) => {
   const higherIsBetter = (meta.lower_is_better === false);
   const reversed = higherIsBetter;
-  const yLabel = higherIsBetter ? 'Score' : 'Execution time (ms)';
-  return chartJsOptions(reversed, yLabel);
+  const label = yLabel || (higherIsBetter ? 'Score' : 'Execution time (ms)');
+  return chartJsOptions(reversed, label);
 };

@@ -2015,6 +2015,7 @@ export const queryInfo = (viewConfig, benchmark) => {
         benchmarkUID: configUID,
         includeSubtests: false,
         label: BENCHMARKS[configUID].label,
+        yLabel: BENCHMARKS[configUID].yLabel,
       };
       // We need to set the platform for fetching data from Treeherder
       Object.values(BENCHMARKS[configUID].compare).forEach((seriesConfig) => {
@@ -2030,6 +2031,7 @@ export const queryInfo = (viewConfig, benchmark) => {
           benchmarkUID: benchmark,
           includeSubtests: true,
           label: BENCHMARKS[benchmark].label,
+          yLabel: BENCHMARKS[benchmark].yLabel,
         };
       }
       const oneOrMoreSeries = processSeries(seriesConfig, viewConfig);

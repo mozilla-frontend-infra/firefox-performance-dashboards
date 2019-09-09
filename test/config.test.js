@@ -60,6 +60,7 @@ it('Query info', () => {
       ],
       includeSubtests: true,
       label: 'WebAssembly Embenchen',
+      yLabel: undefined,
     },
   });
 });
