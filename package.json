@@ -50,7 +50,7 @@
     "neutrino": "9.0.0-rc.3",
     "raf": "3.4.1",
     "react-test-renderer": "16.9.0",
-    "webpack": "4.40.1",
+    "webpack": "4.40.2",
     "webpack-cli": "3.3.8",
     "webpack-dev-server": "3.8.0"
   },
