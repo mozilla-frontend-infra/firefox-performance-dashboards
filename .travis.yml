@@ -10,6 +10,6 @@ after_failure:
 - yarn build -- --inspect
 script:
 - yarn lint
-- yarn test
+- yarn test:coverage
 - yarn build
 after_success: yarn codecov

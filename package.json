@@ -8,7 +8,8 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development",
-    "test": "jest --coverage",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
     "lint": "eslint --cache --ext mjs,jsx,js --format codeframe \".*.js\" src test",
     "codecov": "codecov && rm -rf coverage"
   },
