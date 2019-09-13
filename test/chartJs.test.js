@@ -1,4 +1,4 @@
-import { generateChartJsOptions } from '../src/utils/chartJs';
+import { addPunctuationToNumbers, generateChartJsOptions } from '../src/utils/chartJs';
 
 it('Options with yLabel', () => {
   const yLabel = 'foo';
@@ -12,7 +12,9 @@ it('Options with yLabel', () => {
       }],
       yAxes: [{
         scaleLabel: { display: true, labelString: yLabel },
-        ticks: { beginAtZero: false, reverse: false },
+        ticks: {
+          callback: options.scales.yAxes[0].ticks.callback, beginAtZero: false, reverse: false,
+        },
       }],
     },
   });
@@ -29,7 +31,9 @@ it('Option with higher is better', () => {
       }],
       yAxes: [{
         scaleLabel: { display: true, labelString: 'Score' },
-        ticks: { beginAtZero: false, reverse: true },
+        ticks: {
+          callback: options.scales.yAxes[0].ticks.callback, beginAtZero: false, reverse: true,
+        },
       }],
     },
   });
@@ -46,8 +50,17 @@ it('Option with lower is better', () => {
       }],
       yAxes: [{
         scaleLabel: { display: true, labelString: 'Execution time (ms)' },
-        ticks: { beginAtZero: false, reverse: false },
+        ticks: {
+          callback: options.scales.yAxes[0].ticks.callback, beginAtZero: false, reverse: false,
+        },
       }],
     },
   });
+});
+
+it('Tests that numbers are added commas and numbers', () => {
+  expect(addPunctuationToNumbers('1000000')).toStrictEqual('1,000,000');
+  expect(addPunctuationToNumbers('1000')).toStrictEqual('1,000');
+  expect(addPunctuationToNumbers('5.20')).toStrictEqual('5.20');
+  expect(addPunctuationToNumbers('5')).toStrictEqual('5');
 });
