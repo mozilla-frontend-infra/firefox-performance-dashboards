@@ -39,7 +39,7 @@
     "typeface-roboto": "^0.0.75"
   },
   "devDependencies": {
-    "@neutrinojs/airbnb": "9.0.0-rc.3",
+    "@neutrinojs/airbnb": "9.0.0-rc.4",
     "@neutrinojs/jest": "9.0.0-rc.3",
     "@neutrinojs/react": "9.0.0-rc.3",
     "codecov": "3.5.0",
