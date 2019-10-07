@@ -41,7 +41,7 @@
   "devDependencies": {
     "@neutrinojs/airbnb": "9.0.0-rc.3",
     "@neutrinojs/jest": "9.0.0-rc.3",
-    "@neutrinojs/react": "9.0.0-rc.3",
+    "@neutrinojs/react": "9.0.0-rc.4",
     "codecov": "3.6.1",
     "eslint": "5.16.0",
     "fetch-mock": "7.3.9",
