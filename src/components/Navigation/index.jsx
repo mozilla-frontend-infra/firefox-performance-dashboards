@@ -26,13 +26,6 @@ const Slider = Loadable({
 });
 
 class Navigation extends Component {
-  static propTypes = {
-    classes: PropTypes.shape().isRequired,
-    benchmark: PropTypes.string.isRequired,
-    platform: PropTypes.string.isRequired,
-    dayRange: PropTypes.number.isRequired,
-  };
-
   handlePathChange = (event) => {
     const { name, value } = event.target;
     const {
@@ -84,6 +77,13 @@ class Navigation extends Component {
     );
   }
 }
+
+Navigation.propTypes = {
+  classes: PropTypes.shape().isRequired,
+  benchmark: PropTypes.string.isRequired,
+  platform: PropTypes.string.isRequired,
+  dayRange: PropTypes.number.isRequired,
+};
 
 // withRouter() allow us to use this.props.history to push a new address
 export default withRouter(withStyles(styles)(Navigation));

@@ -3,7 +3,7 @@ export const dataToChartJSformat = (data = []) => data.map(({ datetime, value })
   y: value,
 }));
 
-export const addPunctuationToNumbers = value => value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+export const addPunctuationToNumbers = (value) => value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
 const chartJsOptions = (reverse, scaleLabel) => ({
   maintainAspectRatio: false,
@@ -21,7 +21,7 @@ const chartJsOptions = (reverse, scaleLabel) => ({
     yAxes: [
       {
         ticks: {
-          callback: value => addPunctuationToNumbers(value),
+          callback: (value) => addPunctuationToNumbers(value),
           beginAtZero: false,
           reverse,
         },

@@ -1,4 +1,4 @@
-export const convertToSeconds = value => parseInt(value, 10) * 24 * 3600;
+export const convertToSeconds = (value) => parseInt(value, 10) * 24 * 3600;
 
 export const generateLastDaysLabel = (numDays) => {
   const multipleDays = numDays > 1;
