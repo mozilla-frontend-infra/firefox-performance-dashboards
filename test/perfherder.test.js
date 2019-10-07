@@ -1,4 +1,3 @@
-/* global describe it */
 import fetchMock from 'fetch-mock';
 import {
   perfDataUrls,
@@ -32,7 +31,7 @@ const PROJECT = 'mozilla-central';
 const TIMERANGE = 3 * 24 * 3600;
 
 const downcastDatetimesToStrings = (data) => {
-  const newData = Object.assign({}, data);
+  const newData = { ...data };
   Object.keys(newData).forEach((node) => {
     newData[node].data.forEach((datum, index) => {
       newData[node].data[index].datetime = new Date(datum.push_timestamp * 1000);

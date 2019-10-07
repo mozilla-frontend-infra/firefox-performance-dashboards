@@ -53,28 +53,6 @@ const fixUrl = (url, dayRange) => {
 };
 
 class PerferhderGraph extends React.Component {
-  static propTypes = {
-    classes: PropTypes.shape({}).isRequired,
-    extraLink: PropTypes.string,
-    dayRange: PropTypes.number.isRequired,
-    includeSubtests: PropTypes.bool,
-    series: PropTypes.arrayOf(PropTypes.shape({
-      color: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
-      frameworkId: PropTypes.number.isRequired,
-      option: PropTypes.string.isRequired,
-      platform: PropTypes.string.isRequired,
-      suite: PropTypes.string.isRequired,
-    })).isRequired,
-    title: PropTypes.string.isRequired,
-    yLabel: PropTypes.string.isRequired,
-  };
-
-  static defaultProps = {
-    extraLink: undefined,
-    includeSubtests: false,
-  };
-
   state = {
     data: {},
     fetchedData: false,
@@ -186,5 +164,27 @@ class PerferhderGraph extends React.Component {
     );
   }
 }
+
+PerferhderGraph.propTypes = {
+  classes: PropTypes.shape({}).isRequired,
+  extraLink: PropTypes.string,
+  dayRange: PropTypes.number.isRequired,
+  includeSubtests: PropTypes.bool,
+  series: PropTypes.arrayOf(PropTypes.shape({
+    color: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    frameworkId: PropTypes.number.isRequired,
+    option: PropTypes.string.isRequired,
+    platform: PropTypes.string.isRequired,
+    suite: PropTypes.string.isRequired,
+  })).isRequired,
+  title: PropTypes.string.isRequired,
+  yLabel: PropTypes.string.isRequired,
+};
+
+PerferhderGraph.defaultProps = {
+  extraLink: undefined,
+  includeSubtests: false,
+};
 
 export default withStyles(styles)(PerferhderGraph);

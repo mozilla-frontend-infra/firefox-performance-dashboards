@@ -1992,7 +1992,7 @@ const processSeries = (seriesConfig, viewConfig) => {
   if (!seriesConfig.platform) {
     const { platforms } = viewConfig;
     platforms.forEach((pf) => {
-      const newSeriesConfig = Object.assign({}, seriesConfig);
+      const newSeriesConfig = { ...seriesConfig };
       // Chrome jobs only run on -shippable platforms
       newSeriesConfig.platform = seriesConfig.suite.endsWith('-chromium') ? `${pf}-shippable` : pf;
       result.push(newSeriesConfig);

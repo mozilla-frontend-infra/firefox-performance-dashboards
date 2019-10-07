@@ -16,18 +16,6 @@ const styles = () => ({
 
 // eslint-disable-next-line
 class App extends Component {
-  static propTypes = {
-    classes: PropTypes.shape({}).isRequired,
-    benchmark: PropTypes.string.isRequired,
-    viewConfig: PropTypes.shape({
-      label: PropTypes.string.isRequired,
-      platform: PropTypes.arrayOf(PropTypes.string),
-      benchmarks: PropTypes.arrayOf(PropTypes.string).isRequired,
-    }).isRequired,
-    viewPlatform: PropTypes.string.isRequired,
-    dayRange: PropTypes.number.isRequired,
-  };
-
   render() {
     const {
       classes, benchmark, viewConfig, viewPlatform, dayRange,
@@ -60,5 +48,17 @@ class App extends Component {
     );
   }
 }
+
+App.propTypes = {
+  classes: PropTypes.shape({}).isRequired,
+  benchmark: PropTypes.string.isRequired,
+  viewConfig: PropTypes.shape({
+    label: PropTypes.string.isRequired,
+    platform: PropTypes.arrayOf(PropTypes.string),
+    benchmarks: PropTypes.arrayOf(PropTypes.string).isRequired,
+  }).isRequired,
+  viewPlatform: PropTypes.string.isRequired,
+  dayRange: PropTypes.number.isRequired,
+};
 
 export default withStyles(styles)(App);

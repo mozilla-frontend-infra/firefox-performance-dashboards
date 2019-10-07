@@ -27,6 +27,7 @@ class Slider extends Component {
   constructor(props) {
     super(props);
     const { selectedValue } = props;
+    // eslint-disable-next-line react/state-in-constructor
     this.state = {
       selectedValue,
     };

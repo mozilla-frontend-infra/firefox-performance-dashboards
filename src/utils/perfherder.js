@@ -35,7 +35,7 @@ export const perfDataUrls = ({ frameworkId, project }, signatureIds, timeRange) 
   return urls;
 };
 
-const tranformData = data => data.map(datum => ({
+const tranformData = (data) => data.map((datum) => ({
   datetime: new Date(datum.push_timestamp * 1000),
   ...datum,
 }));
@@ -66,7 +66,7 @@ const perfherderGraphUrl = (
   const hash = '#';
   // We are escaping the hash sign  because it messes up with Chrome's DevTools code unpacking
   let baseDataUrl = `${TREEHERDER}/perf.html${hash}/graphs?timerange=${timeRange}`;
-  baseDataUrl += `&${signatureIds.sort().map(id => `series=${project},${id},1,${frameworkId}`).join('&')}`;
+  baseDataUrl += `&${signatureIds.sort().map((id) => `series=${project},${id},1,${frameworkId}`).join('&')}`;
   return baseDataUrl;
 };
 
@@ -84,7 +84,7 @@ const transformOptionCollectionHash = (optionCollectionHash) => {
     // and we wanted "options" to look like this instead:
     // "options":["debug", "memleak"]
     options[optionCollection.option_collection_hash] = optionCollection.options.map(
-      keys => keys.name,
+      (keys) => keys.name,
     );
   });
   return options;
@@ -159,7 +159,7 @@ const parentSignatureInfo = async (seriesConfig) => {
 };
 
 const fetchSubtestsData = async (seriesConfig, subtestsInfo, timeRange) => {
-  const signatureIds = Object.values(subtestsInfo).map(v => v.id);
+  const signatureIds = Object.values(subtestsInfo).map((v) => v.id);
   const subtestsData = {};
   const dataPoints = await fetchPerfData(seriesConfig, signatureIds, timeRange);
 
