@@ -1,10 +1,10 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { render } from '@testing-library/react';
 import 'raf/polyfill';
 import Slider from '../../src/components/Slider';
 
 it('renders correctly', () => {
-  const wrapper = mount(
+  const { asFragment } = render(
     <Slider
       identifier="test"
       label="Test"
@@ -15,5 +15,5 @@ it('renders correctly', () => {
       handleSliderChange={() => {}}
     />,
   );
-  expect(wrapper).toMatchSnapshot();
+  expect(asFragment()).toMatchSnapshot();
 });
