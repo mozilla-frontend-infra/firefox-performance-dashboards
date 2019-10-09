@@ -9,7 +9,10 @@ expect.addSnapshotSerializer(
     mode: 'deep',
     map(json) {
       // skips deep rendering of React components
-      return /^[A-Z]/.test(json.type) ? { ...json, props: undefined } : json;
+      if (/^[A-Z]/.test(json.type)) {
+        return json.children ? json.children[0] : undefined;
+      }
+      return json;
     },
   }),
 );

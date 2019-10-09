@@ -1,85 +1,64 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<WithStyles(Slider)>
-  <form
-    autoComplete="off"
-    className="Slider-root-1"
+<form
+  autoComplete="off"
+  className="Slider-root-1"
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root Slider-label-2 MuiInputLabel-animated"
+    htmlFor="test"
   >
-    <WithStyles(ForwardRef(InputLabel))>
-      <ForwardRef(InputLabel)>
-        <WithStyles(ForwardRef(FormLabel))>
-          <ForwardRef(FormLabel)>
-            <label
-              className="MuiFormLabel-root MuiInputLabel-root Slider-label-2 MuiInputLabel-animated"
-              htmlFor="test"
-            >
-              Test
-            </label>
-          </ForwardRef(FormLabel)>
-        </WithStyles(ForwardRef(FormLabel))>
-      </ForwardRef(InputLabel)>
-    </WithStyles(ForwardRef(InputLabel))>
-    <WithStyles(ForwardRef(Tooltip))>
-      <ForwardRef(Tooltip)>
-        <WithStyles(ForwardRef(Slider))>
-          <ForwardRef(Slider)>
-            <span
-              aria-describedby={null}
-              className="MuiSlider-root MuiSlider-colorPrimary"
-              onDragEnd={[Function]}
-              onMouseDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              onTouchEnd={[Function]}
-              onTouchStart={[Function]}
-              title="test"
-            >
-              <span
-                className="MuiSlider-rail"
-              />
-              <span
-                className="MuiSlider-track"
-                style={
-                  Object {
-                    "left": "0%",
-                    "width": "25%",
-                  }
-                }
-              />
-              <input
-                type="hidden"
-                value="15"
-              />
-              <WithStyles(ValueLabel)>
-                <span
-                  aria-labelledby="test"
-                  aria-orientation="horizontal"
-                  aria-valuemax={30}
-                  aria-valuemin={10}
-                  aria-valuenow={15}
-                  className="MuiSlider-thumb MuiSlider-thumbColorPrimary"
-                  data-index={0}
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseOver={[Function]}
-                  role="slider"
-                  style={
-                    Object {
-                      "left": "25%",
-                    }
-                  }
-                  tabIndex={0}
-                />
-              </WithStyles(ValueLabel)>
-            </span>
-          </ForwardRef(Slider)>
-        </WithStyles(ForwardRef(Slider))>
-        <ForwardRef(Popper) />
-      </ForwardRef(Tooltip)>
-    </WithStyles(ForwardRef(Tooltip))>
-  </form>
-</WithStyles(Slider)>
+    Test
+  </label>
+  <span
+    aria-describedby={null}
+    className="MuiSlider-root MuiSlider-colorPrimary"
+    onDragEnd={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    onTouchEnd={[Function]}
+    onTouchStart={[Function]}
+    title="test"
+  >
+    <span
+      className="MuiSlider-rail"
+    />
+    <span
+      className="MuiSlider-track"
+      style={
+        Object {
+          "left": "0%",
+          "width": "25%",
+        }
+      }
+    />
+    <input
+      type="hidden"
+      value="15"
+    />
+    <span
+      aria-labelledby="test"
+      aria-orientation="horizontal"
+      aria-valuemax={30}
+      aria-valuemin={10}
+      aria-valuenow={15}
+      className="MuiSlider-thumb MuiSlider-thumbColorPrimary"
+      data-index={0}
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+      role="slider"
+      style={
+        Object {
+          "left": "25%",
+        }
+      }
+      tabIndex={0}
+    />
+  </span>
+</form>
 `;
