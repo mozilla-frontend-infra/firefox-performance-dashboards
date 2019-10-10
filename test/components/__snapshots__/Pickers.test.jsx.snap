@@ -1,40 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div
-  className="Pickers-root-1"
->
-  <form
-    autoComplete="off"
-    className="Picker-root-2"
+<DocumentFragment>
+  <div
+    class="Pickers-root-1"
   >
-    <div
-      className="MuiFormControl-root-3"
+    <form
+      autocomplete="off"
+      class="Picker-root-2"
     >
-      <label
-        className="MuiFormLabel-root-18 MuiFormLabel-filled-22 MuiInputLabel-root-7 MuiInputLabel-formControl-12 MuiInputLabel-animated-15 MuiInputLabel-shrink-14"
-        data-shrink={true}
-      >
-        Platform
-      </label>
       <div
-        className="MuiInputBase-root-45 MuiInput-root-32 MuiInput-underline-36 MuiInputBase-formControl-46 MuiInput-formControl-33"
-        onClick={[Function]}
+        class="MuiFormControl-root MuiTextField-root"
       >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          data-shrink="true"
+        >
+          Platform
+        </label>
         <div
-          className="MuiSelect-root-25"
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
         >
           <div
-            aria-haspopup="true"
-            aria-pressed="false"
-            className="MuiSelect-select-26 MuiSelect-selectMenu-29 MuiInputBase-input-55 MuiInput-input-40"
+            aria-haspopup="listbox"
+            class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input MuiInputBase-inputSelect"
             id="select-platform"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
             role="button"
-            tabIndex={0}
+            tabindex="0"
           >
             Windows 10 64bit
           </div>
@@ -45,7 +37,7 @@ exports[`renders correctly 1`] = `
           />
           <svg
             aria-hidden="true"
-            className="MuiSvgIcon-root-62 MuiSelect-icon-31"
+            class="MuiSvgIcon-root MuiSelect-icon"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
@@ -56,39 +48,29 @@ exports[`renders correctly 1`] = `
           </svg>
         </div>
       </div>
-    </div>
-  </form>
-  <form
-    autoComplete="off"
-    className="Picker-root-2"
-  >
-    <div
-      className="MuiFormControl-root-3"
+    </form>
+    <form
+      autocomplete="off"
+      class="Picker-root-2"
     >
-      <label
-        className="MuiFormLabel-root-18 MuiFormLabel-filled-22 MuiInputLabel-root-7 MuiInputLabel-formControl-12 MuiInputLabel-animated-15 MuiInputLabel-shrink-14"
-        data-shrink={true}
-      >
-        Benchmark
-      </label>
       <div
-        className="MuiInputBase-root-45 MuiInput-root-32 MuiInput-underline-36 MuiInputBase-formControl-46 MuiInput-formControl-33"
-        onClick={[Function]}
+        class="MuiFormControl-root MuiTextField-root"
       >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          data-shrink="true"
+        >
+          Benchmark
+        </label>
         <div
-          className="MuiSelect-root-25"
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
         >
           <div
-            aria-haspopup="true"
-            aria-pressed="false"
-            className="MuiSelect-select-26 MuiSelect-selectMenu-29 MuiInputBase-input-55 MuiInput-input-40"
+            aria-haspopup="listbox"
+            class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input MuiInputBase-inputSelect"
             id="select-benchmark"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
             role="button"
-            tabIndex={0}
+            tabindex="0"
           >
             Overview
           </div>
@@ -99,7 +81,7 @@ exports[`renders correctly 1`] = `
           />
           <svg
             aria-hidden="true"
-            className="MuiSvgIcon-root-62 MuiSelect-icon-31"
+            class="MuiSvgIcon-root MuiSelect-icon"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
@@ -110,7 +92,7 @@ exports[`renders correctly 1`] = `
           </svg>
         </div>
       </div>
-    </div>
-  </form>
-</div>
+    </form>
+  </div>
+</DocumentFragment>
 `;

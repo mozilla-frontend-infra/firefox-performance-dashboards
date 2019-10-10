@@ -1,77 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<form
-  autoComplete="off"
-  className="Slider-root-1"
->
-  <label
-    className="MuiFormLabel-root-14 MuiInputLabel-root-3 MuiInputLabel-animated-11 Slider-label-2"
-    htmlFor="test"
+<DocumentFragment>
+  <form
+    autocomplete="off"
+    class="Slider-root-1"
   >
-    Test
-  </label>
-  <div
-    aria-describedby={null}
-    aria-labelledby="test"
-    aria-orientation="horizontal"
-    aria-valuemax={30}
-    aria-valuemin={10}
-    aria-valuenow={15}
-    className="MuiSlider-root-29"
-    onClick={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    onTouchStartCapture={[Function]}
-    role="slider"
-    title="test"
-  >
-    <div
-      className="MuiSlider-container-30"
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root Slider-label-2 MuiInputLabel-animated"
+      for="test"
     >
-      <div
-        className="MuiSlider-track-31 MuiSlider-trackBefore-32"
-        style={
-          Object {
-            "width": "25%",
-          }
-        }
+      Test
+    </label>
+    <span
+      class="MuiSlider-root MuiSlider-colorPrimary"
+      title="test"
+    >
+      <span
+        class="MuiSlider-rail"
       />
-      <button
-        className="MuiButtonBase-root-42 MuiSlider-thumb-34"
-        onBlur={[Function]}
-        onContextMenu={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        onTouchStartCapture={[Function]}
-        style={
-          Object {
-            "left": "25%",
-          }
-        }
-        tabIndex="0"
-        type="button"
+      <span
+        class="MuiSlider-track"
+        style="left: 0%; width: 25%;"
       />
-      <div
-        className="MuiSlider-track-31 MuiSlider-trackAfter-33"
-        style={
-          Object {
-            "width": "calc(100% - 5px)",
-          }
-        }
+      <input
+        type="hidden"
+        value="15"
       />
-    </div>
-  </div>
-</form>
+      <span
+        aria-labelledby="test"
+        aria-orientation="horizontal"
+        aria-valuemax="30"
+        aria-valuemin="10"
+        aria-valuenow="15"
+        class="MuiSlider-thumb MuiSlider-thumbColorPrimary"
+        data-index="0"
+        role="slider"
+        style="left: 25%;"
+        tabindex="0"
+      />
+    </span>
+  </form>
+</DocumentFragment>
 `;
