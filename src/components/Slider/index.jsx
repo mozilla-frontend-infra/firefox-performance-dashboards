@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
-import MuiSlider from '@material-ui/lab/Slider';
+import MuiSlider from '@material-ui/core/Slider';
 import Tooltip from '@material-ui/core/Tooltip';
 
 const styles = () => ({
