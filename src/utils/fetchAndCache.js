@@ -34,7 +34,8 @@ export default async function fetchAndCache(url, maxAge = 5 * 60 * 1000) {
       headers,
     });
     // put in cache, and forget it (there is no recovery if it throws, but that's ok).
-    cache.put(url, cacheResponse).catch(() => {});
+    // eslint-disable-next-line no-console
+    cache.put(url, cacheResponse).catch(console.error);
   }
   return response;
 }
