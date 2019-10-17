@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Picker from '../Picker';
 import { BENCHMARKS, CONFIG } from '../../config';
+import { generateLastDaysLabel } from '../../utils/timeRangeUtils';
 
 const styles = () => ({
   root: {
@@ -13,7 +14,7 @@ const styles = () => ({
 });
 
 const Pickers = ({
-  classes, benchmark, onChange, platform,
+  classes, benchmark, onChange, platform, dayRange,
 }) => (
   <div className={classes.root}>
     <Picker
@@ -45,6 +46,17 @@ const Pickers = ({
         }, [{ value: 'overview', label: 'Overview' }])
       }
     />
+    <Picker
+      key="Time range"
+      identifier="numDays"
+      topLabel="Time range"
+      onSelection={onChange}
+      selectedValue={dayRange}
+      options={CONFIG.dayRange.map((numDays) => ({
+        value: numDays,
+        label: generateLastDaysLabel(numDays),
+      }))}
+    />
   </div>
 );
 
@@ -53,6 +65,7 @@ Pickers.propTypes = ({
   benchmark: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   platform: PropTypes.string.isRequired,
+  dayRange: PropTypes.number.isRequired,
 });
 
 export default withStyles(styles)(Pickers);

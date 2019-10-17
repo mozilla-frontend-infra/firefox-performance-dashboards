@@ -225,6 +225,7 @@ export const CONFIG = {
     colors: [COLORS.firefox, COLORS.chromium],
     labels: ['Firefox', 'Chromium'],
   },
+  dayRange: [1, 2, 7, 14, 30, 60, 90, 365],
   views: {
     linux64: {
       label: 'Linux 64bit',
