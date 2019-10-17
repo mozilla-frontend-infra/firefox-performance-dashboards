@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import Loadable from 'react-loadable';
-import { generateLastDaysLabel } from '../../utils/timeRangeUtils';
 import Loading from '../Loading';
 
 const styles = () => ({
@@ -20,11 +19,6 @@ const Pickers = Loadable({
   loading: Loading,
 });
 
-const Slider = Loadable({
-  loader: () => import(/* webpackChunkName: 'Slider' */ '../Slider'),
-  loading: Loading,
-});
-
 class Navigation extends Component {
   handlePathChange = (event) => {
     const { name, value } = event.target;
@@ -38,19 +32,16 @@ class Navigation extends Component {
 
     let newPlatform = platform;
     let newBenchmark = benchmark;
+    let newDayRange = dayRange;
     if (name === 'platform') {
       newPlatform = value;
       newBenchmark = 'overview';
+    } else if (name === 'numDays') {
+      newDayRange = value;
     } else {
       newBenchmark = value;
     }
-    history.push(`/${newPlatform}/${newBenchmark}?numDays=${dayRange}`);
-  };
-
-  handleSearchParamChange = (searchParam, value) => {
-    // eslint-disable-next-line react/prop-types
-    const { history } = this.props;
-    history.push(`?${searchParam}=${value}`);
+    history.push(`/${newPlatform}/${newBenchmark}?numDays=${newDayRange}`);
   };
 
   render() {
@@ -63,15 +54,7 @@ class Navigation extends Component {
           onChange={this.handlePathChange}
           platform={platform}
           benchmark={benchmark}
-        />
-        <Slider
-          identifier="dayRange"
-          label="Time range"
-          searchParam="numDays"
-          selectedValue={dayRange}
-          options={{ min: 1, max: 365, step: 1 }}
-          onChangeUpdateTooltipFunc={generateLastDaysLabel}
-          handleSliderChange={this.handleSearchParamChange}
+          dayRange={dayRange}
         />
       </div>
     );

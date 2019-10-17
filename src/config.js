@@ -2205,6 +2205,7 @@ export const CONFIG = {
     colors: [COLORS.firefox, COLORS.chromium, COLORS.chrome],
     labels: ['Firefox', 'Chromium', 'Chrome'],
   },
+  dayRange: [1, 2, 7, 14, 30, 60, 90, 365],
   platformTransformations: {
     // If the suite ends with the pattern modify the platform
     '-chromium': appendShippable,

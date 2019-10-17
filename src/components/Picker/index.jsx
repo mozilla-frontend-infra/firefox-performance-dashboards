@@ -28,15 +28,20 @@ const Picker = ({
   </form>
 );
 
+const NumberOrString = PropTypes.oneOfType([
+  PropTypes.string,
+  PropTypes.number,
+]);
+
 Picker.propTypes = {
   classes: PropTypes.shape().isRequired,
   identifier: PropTypes.string.isRequired,
   onSelection: PropTypes.func.isRequired,
   options: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string.isRequired,
-    value: PropTypes.string.isRequired,
+    value: NumberOrString.isRequired,
   })).isRequired,
-  selectedValue: PropTypes.string.isRequired,
+  selectedValue: NumberOrString.isRequired,
   topLabel: PropTypes.string.isRequired,
 };
 
