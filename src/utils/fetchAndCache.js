@@ -3,7 +3,7 @@
  * @param {string|URL} url
  * @param {number} maxAge max cache duration in ms
  */
-export default async function fetchAndCache(url, maxAge = 10 * 60 * 1000) {
+export default async function fetchAndCache(url, maxAge = 5 * 60 * 1000) {
   if (!('caches' in window)) {
     return fetch(url);
   }
