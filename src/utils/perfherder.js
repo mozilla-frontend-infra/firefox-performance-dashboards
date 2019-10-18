@@ -1,5 +1,6 @@
 import isEqual from 'lodash.isequal';
 import { stringify } from 'query-string';
+import fetchAndCache from './fetchAndCache';
 
 export const TREEHERDER = 'https://treeherder.mozilla.org';
 const PROJECT = 'mozilla-central';
@@ -47,7 +48,7 @@ const fetchPerfData = async (seriesConfig, signatureIds, timeRange) => {
   const dataPoints = {};
   await Promise.all(perfDataUrls(seriesConfig, signatureIds, timeRange)
     .map(async (url) => {
-      const data = await (await fetch(url)).json();
+      const data = await (await fetchAndCache(url)).json();
       Object.keys(data).forEach((hash) => {
         if (!dataPoints[hash]) {
           dataPoints[hash] = [];
@@ -71,7 +72,7 @@ const perfherderGraphUrl = (
 };
 
 const queryAllTreeherderOptions = async () => {
-  const response = await fetch(`${TREEHERDER}/api/optioncollectionhash/`);
+  const response = await fetchAndCache(`${TREEHERDER}/api/optioncollectionhash/`);
   return response.json();
 };
 
@@ -96,12 +97,12 @@ const treeherderOptions = async () => {
 };
 
 const queryPlatformSignatures = async (seriesConfig) => {
-  const response = await fetch(platformSuitesUrl(seriesConfig));
+  const response = await fetchAndCache(platformSuitesUrl(seriesConfig));
   return response.json();
 };
 
 const querySubtests = async ({ project }, parentHash) => {
-  const response = await fetch(`${signaturesUrl(project)}?parent_signature=${parentHash}`);
+  const response = await fetchAndCache(`${signaturesUrl(project)}?parent_signature=${parentHash}`);
   return response.json();
 };
 
