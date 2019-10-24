@@ -19,6 +19,9 @@ module.exports = {
       html: {
         title: 'Firefox Performance Dashboard',
       },
+      minify: {
+        source: false,
+      },
     }),
     jest(),
   ],
