@@ -26,16 +26,21 @@ export default async function fetchAndCache(url, maxAge = 5 * 60 * 1000) {
 
   // cache response
   if (cache && response.ok) {
-    const clonedResponse = response.clone();
-    const headers = new Headers(response.headers);
-    const expiryDate = new Date(Date.now() + maxAge);
-    headers.set('Expires', expiryDate.toString());
-    const cacheResponse = new Response(await clonedResponse.blob(), {
-      headers,
-    });
-    // put in cache, and forget it (there is no recovery if it throws, but that's ok).
-    // eslint-disable-next-line no-console
-    cache.put(url, cacheResponse).catch(console.error);
+    try {
+      const clonedResponse = response.clone();
+      const headers = new Headers(response.headers);
+      const expiryDate = new Date(Date.now() + maxAge);
+      headers.set('Expires', expiryDate.toUTCString());
+      const cacheResponse = new Response(await clonedResponse.blob(), {
+        headers,
+      });
+      // put in cache, and forget it (there is no recovery if it throws, but that's ok).
+      // eslint-disable-next-line no-console
+      cache.put(url, cacheResponse).catch(console.error);
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.error('Failed cache response.', error);
+    }
   }
   return response;
 }
