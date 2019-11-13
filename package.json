@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@neutrinojs/airbnb": "9.0.0-rc.4",
-    "@neutrinojs/jest": "9.0.0-rc.4",
+    "@neutrinojs/jest": "9.0.0-rc.5",
     "@neutrinojs/react": "9.0.0-rc.4",
     "@testing-library/react": "9.3.2",
     "codecov": "3.6.1",
