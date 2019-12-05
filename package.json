@@ -5,6 +5,10 @@
   "repository": "git@github.com:armenzg/js-perf-dashboard.git",
   "author": "Armen Zambrano G. <armenzg@gmail.com>",
   "license": "MPL-2.0",
+  "engines": {
+    "node": ">=10",
+    "yarn": ">=1.17.0"
+  },
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development",
