@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import Router from './components/Router';
 
 Raven.config(
-  'https://7d4b85013ba648c0bd32ce069fde5755@sentry.io/1851579',
+  'https://a46514ae1f2d42cd83c10d1bb8f4141e@sentry.prod.mozaws.net/436',
 ).install();
 
 ReactDOM.render(<Router />, document.getElementById('root'));
