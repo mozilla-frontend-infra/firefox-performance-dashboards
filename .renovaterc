@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "automergePatch",
+    "schedule:earlyMondays"
+  ],
+  "minor": {
+    "enabled": false
+  }
+}
