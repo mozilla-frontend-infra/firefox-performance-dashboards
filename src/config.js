@@ -16,7 +16,6 @@ import {
   BENCHMARKS as awsyBenchmarks,
 } from './awsy';
 
-console.log(process.env.DASHBOARD);
 const BENCHMARKS = process.env.DASHBOARD === 'awfy' ? awfyBenchmarks : awsyBenchmarks;
 const queryInfo = process.env.DASHBOARD === 'awfy' ? awfyQueryInfo : awsyQueryInfo;
 const CONFIG = process.env.DASHBOARD === 'awfy' ? awfyConfig : awsyConfig;
