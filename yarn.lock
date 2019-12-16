@@ -9,7 +9,7 @@
   dependencies:
     "@babel/highlight" "^7.0.0"
 
-"@babel/core@^7.1.0", "@babel/core@^7.7.2":
+"@babel/core@^7.1.0", "@babel/core@^7.7.2", "@babel/core@^7.7.5":
   version "7.7.5"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.7.5.tgz#ae1323cd035b5160293307f50647e83f8ba62f7e"
   integrity sha512-M42+ScN4+1S9iB6f+TL7QBpoQETxbclx+KNoKJABghnKYE+fMzSGqst0BZJc8CpI625bwPwYgUyRvxZ+0mZzpw==
@@ -1049,16 +1049,16 @@
     file-loader "^4.2.0"
     url-loader "^2.2.0"
 
-"@neutrinojs/jest@9.0.0-rc.5":
-  version "9.0.0-rc.5"
-  resolved "https://registry.yarnpkg.com/@neutrinojs/jest/-/jest-9.0.0-rc.5.tgz#bcdac4e2014173b93bdd0555b75805555c7d3e5b"
-  integrity sha512-6h759SlktEsDmlGoBZdwwrouqpYB35ZhxhLugceuDfB40daKP4VLjiRZsBM5yi5JrH27kx7w1PUB5EOdw6tC1w==
+"@neutrinojs/jest@9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@neutrinojs/jest/-/jest-9.0.0.tgz#be7ac3b30e6ca30a9ac35cb2af783279621704b3"
+  integrity sha512-e78ULTUew78HfGskfUHONG4YIkx+NtBCF9V5bIr363ppwlCsZ/ONV4GBdqg0dDEH4LlM3MLYpAOyIDJwoA1z/w==
   dependencies:
-    "@babel/core" "^7.7.2"
+    "@babel/core" "^7.7.5"
     babel-core "^7.0.0-bridge.0"
     babel-jest "^24.9.0"
     deepmerge "^1.5.2"
-    eslint-plugin-jest "^23.0.3"
+    eslint-plugin-jest "^23.1.1"
     lodash.omit "^4.5.0"
 
 "@neutrinojs/react@9.0.0-rc.5":
@@ -3452,7 +3452,7 @@ eslint-plugin-import@^2.19.1:
     read-pkg-up "^2.0.0"
     resolve "^1.12.0"
 
-eslint-plugin-jest@^23.0.3:
+eslint-plugin-jest@^23.1.1:
   version "23.1.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-23.1.1.tgz#1220ab53d5a4bf5c3c4cd07c0dabc6199d4064dd"
   integrity sha512-2oPxHKNh4j1zmJ6GaCBuGcb8FVZU7YjFUOJzGOPnl9ic7VA/MGAskArLJiRIlnFUmi1EUxY+UiATAy8dv8s5JA==
