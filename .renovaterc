@@ -1,5 +1,6 @@
 {
   "extends": [
+    "group:monorepos",
     "schedule:earlyMondays"
   ],
   "minor": {
@@ -8,6 +9,7 @@
   "separateMinorPatch": true,
   "patch": {
     "automerge": true
+    "automergeType": "branch"
   },
   "lockFileMaintenance": {
     "automerge": true
