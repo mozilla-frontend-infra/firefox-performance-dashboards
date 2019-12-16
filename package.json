@@ -46,7 +46,7 @@
     "@neutrinojs/airbnb": "9.0.0-rc.5",
     "@neutrinojs/jest": "9.0.0-rc.5",
     "@neutrinojs/react": "9.0.0-rc.5",
-    "@testing-library/react": "9.3.2",
+    "@testing-library/react": "9.3.3",
     "codecov": "3.6.1",
     "eslint": "6.7.2",
     "fetch-mock": "8.0.1",
