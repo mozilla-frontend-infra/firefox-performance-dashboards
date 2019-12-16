@@ -978,18 +978,18 @@
     prop-types "^15.7.2"
     react-is "^16.8.0"
 
-"@neutrinojs/airbnb@9.0.0-rc.5":
-  version "9.0.0-rc.5"
-  resolved "https://registry.yarnpkg.com/@neutrinojs/airbnb/-/airbnb-9.0.0-rc.5.tgz#4286445a3b1ca3d3d658c8d7fdc07ac8df7766e6"
-  integrity sha512-p3iRiy7nnnzE4WK+3vxnhBtrJccZXXvzpBvNuaCZDNXpGlMCaq99Q/MZBnEwCxMWJhxzdLIA1sOEOujHh7LO/Q==
+"@neutrinojs/airbnb@9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@neutrinojs/airbnb/-/airbnb-9.0.0.tgz#b3e2ab7d932c5d556419d649d4731c5c4249098f"
+  integrity sha512-HEFaUudFmKAmO/WnXe9Y/nKb52X40tLwiEOP3zTsuTo3HoG2Bt9T5qzhaqqHS3A/C0FqjxHBjDWWITmT++SoDg==
   dependencies:
-    "@neutrinojs/eslint" "9.0.0-rc.5"
+    "@neutrinojs/eslint" "9.0.0"
     eslint-config-airbnb "^18.0.1"
     eslint-config-airbnb-base "^14.0.0"
-    eslint-plugin-import "^2.18.2"
+    eslint-plugin-import "^2.19.1"
     eslint-plugin-jsx-a11y "^6.2.3"
-    eslint-plugin-react "^7.16.0"
-    eslint-plugin-react-hooks "^2.2.0"
+    eslint-plugin-react "^7.17.0"
+    eslint-plugin-react-hooks "^2.3.0"
 
 "@neutrinojs/clean@9.0.0-rc.5":
   version "9.0.0-rc.5"
@@ -1011,13 +1011,13 @@
   resolved "https://registry.yarnpkg.com/@neutrinojs/dev-server/-/dev-server-9.0.0-rc.5.tgz#b9e1f47baa9cfec70e5b77dd12c5642af9527ff4"
   integrity sha512-2Yd44QwRMcpSb5NGfWRl2rufcw8zGcfQIdc1w6eTpQ1CaS3ykKT6P0N/WPRwtF/HhmwHzG/be8jLMaiJ084Eyw==
 
-"@neutrinojs/eslint@9.0.0-rc.5":
-  version "9.0.0-rc.5"
-  resolved "https://registry.yarnpkg.com/@neutrinojs/eslint/-/eslint-9.0.0-rc.5.tgz#7429bb2b5bb0ca128f09465aa9bc9aba5939a616"
-  integrity sha512-88MNvoDJdybJAlrPsLSJrWpM9o5FrpJi3h/S4KWoEQA7a/t647HTc3h5jdW/yFEC1H2a5T8FEK1nD1HKUgn5jw==
+"@neutrinojs/eslint@9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@neutrinojs/eslint/-/eslint-9.0.0.tgz#e666eec88a48aa0d3d35be11fc8209916c663a49"
+  integrity sha512-PjVQYQVqxY7R5Ozl0OTZKg0bfiS6dRTLQzrwFZ3PO+ZtS6412TsCih7looYkIRS+/NBWMd5AVGuqp0DptNke1g==
   dependencies:
     babel-eslint "^10.0.3"
-    eslint-loader "^3.0.2"
+    eslint-loader "^3.0.3"
     eslint-plugin-babel "^5.3.0"
 
 "@neutrinojs/font-loader@9.0.0-rc.5":
@@ -3403,7 +3403,7 @@ eslint-import-resolver-node@^0.3.2:
     debug "^2.6.9"
     resolve "^1.5.0"
 
-eslint-loader@^3.0.2:
+eslint-loader@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/eslint-loader/-/eslint-loader-3.0.3.tgz#e018e3d2722381d982b1201adb56819c73b480ca"
   integrity sha512-+YRqB95PnNvxNp1HEjQmvf9KNvCin5HXYYseOXVC2U0KEcw4IkQ2IQEBG46j7+gW39bMzeu0GsUhVbBY3Votpw==
@@ -3434,7 +3434,7 @@ eslint-plugin-eslint-plugin@^2.1.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-eslint-plugin/-/eslint-plugin-eslint-plugin-2.1.0.tgz#a7a00f15a886957d855feacaafee264f039e62d5"
   integrity sha512-kT3A/ZJftt28gbl/Cv04qezb/NQ1dwYIbi8lyf806XMxkus7DvOVCLIfTXMrorp322Pnoez7+zabXH29tADIDg==
 
-eslint-plugin-import@^2.18.2:
+eslint-plugin-import@^2.19.1:
   version "2.19.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.19.1.tgz#5654e10b7839d064dd0d46cd1b88ec2133a11448"
   integrity sha512-x68131aKoCZlCae7rDXKSAQmbT5DQuManyXo2sK6fJJ0aK5CWAkv6A6HJZGgqC8IhjQxYPgo6/IY4Oz8AFsbBw==
@@ -3474,12 +3474,12 @@ eslint-plugin-jsx-a11y@^6.2.3:
     has "^1.0.3"
     jsx-ast-utils "^2.2.1"
 
-eslint-plugin-react-hooks@^2.2.0:
+eslint-plugin-react-hooks@^2.2.0, eslint-plugin-react-hooks@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-2.3.0.tgz#53e073961f1f5ccf8dd19558036c1fac8c29d99a"
   integrity sha512-gLKCa52G4ee7uXzdLiorca7JIQZPPXRAQDXV83J4bUEeUuc5pIEyZYAZ45Xnxe5IuupxEqHS+hUhSLIimK1EMw==
 
-eslint-plugin-react@^7.16.0:
+eslint-plugin-react@^7.16.0, eslint-plugin-react@^7.17.0:
   version "7.17.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.17.0.tgz#a31b3e134b76046abe3cd278e7482bd35a1d12d7"
   integrity sha512-ODB7yg6lxhBVMeiH1c7E95FLD4E/TwmFjltiU+ethv7KPdCwgiFuOZg9zNRHyufStTDLl/dEFqI2Q1VPmCd78A==
