@@ -5174,7 +5174,7 @@ istanbul-reports@^2.2.6:
   dependencies:
     handlebars "^4.1.2"
 
-javascript-stringify@^2.0.0:
+javascript-stringify@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/javascript-stringify/-/javascript-stringify-2.0.1.tgz#6ef358035310e35d667c675ed63d3eb7c1aa19e5"
   integrity sha512-yV+gqbd5vaOYjqlbk16EG89xB5udgjqQF3C5FAORDg4f/IS1Yc5ERCv5e/57yBcfJYw05V5JyIXabhwb75Xxow==
@@ -6371,14 +6371,14 @@ neo-async@^2.5.0, neo-async@^2.6.0, neo-async@^2.6.1:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
 
-neutrino@9.0.0-rc.5:
-  version "9.0.0-rc.5"
-  resolved "https://registry.yarnpkg.com/neutrino/-/neutrino-9.0.0-rc.5.tgz#470aa6404672eb0c775429e43bc0d3d29faa2531"
-  integrity sha512-QCmcJnUHMdxgiMepv/Os3ITEmkpyHfNxzqJS+OwB/Ggc+9t6GPCn4U7dCPKsE5G7JUqaoDO2HOxOvujhpU+ZfA==
+neutrino@9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/neutrino/-/neutrino-9.0.0.tgz#d340d291bf3953fc4615c567abe79530b0fda1e7"
+  integrity sha512-Y8rQ/9Inng1gXTsxoP5HW95sKKf4tVYqZ7C3g0pC28UVhHZkasZgEP6J3nWtpfG9ammOLRvBiru0oIeFBsxikg==
   dependencies:
     lodash.clonedeep "^4.5.0"
     semver "^6.3.0"
-    webpack-chain "^6.0.0"
+    webpack-chain "^6.1.0"
     yargs-parser "^16.1.0"
 
 nice-try@^1.0.4:
@@ -9177,13 +9177,13 @@ webidl-conversions@^4.0.2:
   resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-4.0.2.tgz#a855980b1f0b6b359ba1d5d9fb39ae941faa63ad"
   integrity sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==
 
-webpack-chain@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/webpack-chain/-/webpack-chain-6.0.0.tgz#9c36525a1271a54e7bfd1791199b395f400ae4f1"
-  integrity sha512-NK62XgJOOSmYs4kaXFIKKeClpuOVHY7m6e4XwxbVX/2HAUboH6xFCTVXMVv8+jB6K8o/UGjlo1Cv3XXOyNAAGw==
+webpack-chain@^6.1.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/webpack-chain/-/webpack-chain-6.2.0.tgz#bcea7b0ad5feae6845d70e6fd7a048953f8ae77c"
+  integrity sha512-Kt/TCt6p4sL8YJ49m6/mMkU1gkGJUMu/6yevWbWnaHYTdKc7U6hNAm0d9RSdLIN28CGonmYD5FkABqE1UuNTTw==
   dependencies:
     deepmerge "^1.5.2"
-    javascript-stringify "^2.0.0"
+    javascript-stringify "^2.0.1"
 
 webpack-cli@3.3.10:
   version "3.3.10"
