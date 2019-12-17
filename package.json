@@ -11,8 +11,7 @@
   },
   "scripts": {
     "build": "webpack --mode production",
-    "start-awfy": "webpack-dev-server --define process.env.DASHBOARD='\"awfy\"' --mode development",
-    "start-awsy": "webpack-dev-server --define process.env.DASHBOARD='\"awsy\"' --mode development",
+    "start": "webpack-dev-server --mode development",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "lint": "eslint --cache --ext mjs,jsx,js --format codeframe \".*.js\" src test",

@@ -16,10 +16,10 @@ import {
   BENCHMARKS as awsyBenchmarks,
 } from './awsy';
 
-const BENCHMARKS = process.env.DASHBOARD === 'awfy' ? awfyBenchmarks : awsyBenchmarks;
-const queryInfo = process.env.DASHBOARD === 'awfy' ? awfyQueryInfo : awsyQueryInfo;
-const CONFIG = process.env.DASHBOARD === 'awfy' ? awfyConfig : awsyConfig;
-const TIMERANGE_UPPER_LIMIT = process.env.DASHBOARD === 'awfy' ? awsyTimeRange : awfyTimeRange;
+const BENCHMARKS = process.env.DASHBOARD === 'awsy' ? awsyBenchmarks : awfyBenchmarks;
+const queryInfo = process.env.DASHBOARD === 'awsy' ? awsyQueryInfo : awfyQueryInfo;
+const CONFIG = process.env.DASHBOARD === 'awsy' ? awsyConfig : awfyConfig;
+const TIMERANGE_UPPER_LIMIT = process.env.DASHBOARD === 'awsy' ? awsyTimeRange : awfyTimeRange;
 
 export {
   queryInfo, CONFIG, TIMERANGE_UPPER_LIMIT, BENCHMARKS,
