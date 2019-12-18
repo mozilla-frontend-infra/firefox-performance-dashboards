@@ -185,7 +185,7 @@ PerferhderGraph.propTypes = {
 PerferhderGraph.defaultProps = {
   extraLink: undefined,
   includeSubtests: false,
-  yLabel: 'Execution time (ms)',
+  yLabel: undefined,
 };
 
 export default withStyles(styles)(PerferhderGraph);
