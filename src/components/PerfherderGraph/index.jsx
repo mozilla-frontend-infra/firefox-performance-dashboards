@@ -179,12 +179,13 @@ PerferhderGraph.propTypes = {
     suite: PropTypes.string.isRequired,
   })).isRequired,
   title: PropTypes.string.isRequired,
-  yLabel: PropTypes.string.isRequired,
+  yLabel: PropTypes.string,
 };
 
 PerferhderGraph.defaultProps = {
   extraLink: undefined,
   includeSubtests: false,
+  yLabel: 'Execution time (ms)',
 };
 
 export default withStyles(styles)(PerferhderGraph);
