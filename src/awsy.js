@@ -319,3 +319,7 @@ export const queryInfo = (viewConfig, benchmark) => {
 
   return info;
 };
+
+export default {
+  queryInfo, BENCHMARKS, CONFIG, TIMERANGE_UPPER_LIMIT,
+};

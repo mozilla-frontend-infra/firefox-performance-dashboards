@@ -1,21 +1,16 @@
-import {
-  queryInfo as awfyQueryInfo,
-  CONFIG as awfyConfig,
-  TIMERANGE_UPPER_LIMIT as awfyTimeRange,
-  BENCHMARKS as awfyBenchmarks,
-} from './awfy';
+import awfy from './awfy';
+import awsy from './awsy';
 
-import {
-  queryInfo as awsyQueryInfo,
-  CONFIG as awsyConfig,
-  TIMERANGE_UPPER_LIMIT as awsyTimeRange,
-  BENCHMARKS as awsyBenchmarks,
-} from './awsy';
+let config = {};
+if (process.env.DASHBOARD === 'awfy') {
+  config = { ...awfy };
+} else if (process.env.DASHBOARD === 'awsy') {
+  config = { ...awsy };
+}
 
-const BENCHMARKS = process.env.DASHBOARD === 'awsy' ? awsyBenchmarks : awfyBenchmarks;
-const queryInfo = process.env.DASHBOARD === 'awsy' ? awsyQueryInfo : awfyQueryInfo;
-const CONFIG = process.env.DASHBOARD === 'awsy' ? awsyConfig : awfyConfig;
-const TIMERANGE_UPPER_LIMIT = process.env.DASHBOARD === 'awsy' ? awsyTimeRange : awfyTimeRange;
+const {
+  queryInfo, BENCHMARKS, CONFIG, TIMERANGE_UPPER_LIMIT,
+} = config;
 
 export {
   queryInfo, CONFIG, TIMERANGE_UPPER_LIMIT, BENCHMARKS,
