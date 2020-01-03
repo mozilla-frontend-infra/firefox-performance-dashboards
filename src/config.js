@@ -1,7 +1,3 @@
-/* eslint-disable no-console */
-/* eslint-disable no-constant-condition */
-/* eslint-disable no-self-compare */
-
 import {
   queryInfo as awfyQueryInfo,
   CONFIG as awfyConfig,

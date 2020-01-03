@@ -1,8 +1,5 @@
 /* eslint-disable no-unused-vars */
-const TALOS_FRAMEWORK_ID = 1;
 const AWSY_FRAMEWORK_ID = 4;
-const RAPTOR_FRAMEWORK_ID = 10;
-const JSBENCH_FRAMEWORK_ID = 11;
 
 const COLORS = {
   chromium: '#4285F4',
@@ -198,8 +195,6 @@ export const BENCHMARKS = {
     yLabel: 'Bytes',
   },
 };
-
-const ANDROID_SUITES = [];
 
 const DEFAULT_SUITES = [
   'Base Content Explicit',
