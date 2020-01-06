@@ -19,6 +19,9 @@ module.exports = {
       html: {
         title: 'Firefox Performance Dashboard',
       },
+      env: {
+        DASHBOARD: 'awfy',
+      },
     }),
     jest(),
   ],

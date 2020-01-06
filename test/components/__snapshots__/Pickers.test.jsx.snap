@@ -23,9 +23,8 @@ exports[`renders correctly 1`] = `
         >
           <div
             aria-haspopup="listbox"
-            aria-labelledby=" mui-component-select-platform"
-            class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
-            id="mui-component-select-platform"
+            class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input MuiInputBase-inputSelect"
+            id="select-platform"
             role="button"
             tabindex="0"
           >
@@ -68,9 +67,8 @@ exports[`renders correctly 1`] = `
         >
           <div
             aria-haspopup="listbox"
-            aria-labelledby=" mui-component-select-benchmark"
-            class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
-            id="mui-component-select-benchmark"
+            class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input MuiInputBase-inputSelect"
+            id="select-benchmark"
             role="button"
             tabindex="0"
           >
@@ -113,9 +111,8 @@ exports[`renders correctly 1`] = `
         >
           <div
             aria-haspopup="listbox"
-            aria-labelledby=" mui-component-select-numDays"
-            class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
-            id="mui-component-select-numDays"
+            class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input MuiInputBase-inputSelect"
+            id="select-numDays"
             role="button"
             tabindex="0"
           >
