@@ -1,14 +1,15 @@
-# Firefox performance dashboard
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+# Firefox performance dashboards
 
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 [![codecov](https://codecov.io/gh/mozilla-frontend-infra/firefox-performance-dashboard/branch/master/graph/badge.svg)](https://codecov.io/gh/mozilla-frontend-infra/firefox-performance-dashboard)
 [![Build status][travis-image]][travis-url]
 
-The Firefox performance dashboard allows seeing what Firefox's current performance is.
+The Firefox Performance dashboards permits creating independent dashboards with graphs tracking data from [Perfherder](https://wiki.mozilla.org/EngineeringProductivity/Projects/Perfherder).
 
-You can file issues in [here](https://github.com/mozilla-frontend-infra/firefox-performance-dashboard/issues).
+Some dashboards:
+
+* [AreWeFastYet](https://arewefastyet.com) tracks various Firefox performance benchmarks
+* [AreWeSlimYet](https://awsy.netlify.com) tracks various Firefox memory metrics
 
 ## Requirements
 
@@ -16,6 +17,9 @@ You can file issues in [here](https://github.com/mozilla-frontend-infra/firefox-
 * [Yarn Package Manager](https://yarnpkg.com/en/docs/install)
 
 ## Set up
+
+**NOTE**: To choose a dashboard different than the default one define the `DASHBOARD` environment
+variable and set its value to one of the values defined in `src/config.js` (e.g. `awsy`).
 
 Checkout the code and run:
 
