@@ -1,3 +1,4 @@
+/* eslint-disable jest/expect-expect */
 import fetchMock from 'fetch-mock';
 import {
   perfDataUrls,

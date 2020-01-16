@@ -1,5 +1,6 @@
 import { BENCHMARKS, CONFIG, queryInfo } from '../src/config';
 
+// eslint-disable-next-line jest/expect-expect
 it('Verify all benchmarks are defined', () => {
   Object.values(CONFIG.views).map(({ benchmarks }) => (
     benchmarks.forEach((benchmarkKey) => {
