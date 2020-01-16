@@ -50,7 +50,7 @@
     "codecov": "3.6.1",
     "eslint": "6.7.2",
     "fetch-mock": "8.0.3",
-    "husky": "3.1.0",
+    "husky": "4.0.10",
     "jest": "24.9.0",
     "lint-staged": "9.5.0",
     "neutrino": "9.0.0",
