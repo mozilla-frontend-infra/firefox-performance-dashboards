@@ -2,7 +2,3 @@
   from = "/*"
   to = "/"
   status = 200
-
-[build.environment]
-  NODE_VERSION = "10.16.0"
-  YARN_VERSION="1.19.2"
