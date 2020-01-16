@@ -13,6 +13,15 @@
       "contributions": [
         "projectManagement"
       ]
+    },
+    {
+      "login": "divyanshu-rawat",
+      "name": "Divyanshu Rawat",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/13464678?v=4",
+      "profile": "http://www.divyanshurawat.in",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
