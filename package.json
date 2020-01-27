@@ -43,7 +43,7 @@
     "@neutrinojs/jest": "9.0.0",
     "@neutrinojs/react": "9.0.0",
     "@testing-library/react": "9.3.3",
-    "codecov": "3.6.1",
+    "codecov": "3.6.2",
     "eslint": "6.7.2",
     "fetch-mock": "8.0.3",
     "husky": "4.0.10",
