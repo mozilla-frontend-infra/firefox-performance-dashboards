@@ -45,7 +45,7 @@
     "@testing-library/react": "9.3.3",
     "codecov": "3.6.5",
     "eslint": "6.7.2",
-    "fetch-mock": "8.0.3",
+    "fetch-mock": "9.2.1",
     "husky": "4.0.10",
     "jest": "25.1.0",
     "lint-staged": "10.0.8",
