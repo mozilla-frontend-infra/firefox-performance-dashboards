@@ -24,7 +24,7 @@ it('Query info', () => {
           frameworkId: 10,
           suite: 'raptor-wasm-misc-firefox',
           option: 'opt',
-          platform: 'linux64',
+          platform: 'linux64-shippable',
         },
         {
           color: 'red',
@@ -32,7 +32,7 @@ it('Query info', () => {
           frameworkId: 10,
           suite: 'raptor-wasm-misc-baseline-firefox',
           option: 'opt',
-          platform: 'linux64',
+          platform: 'linux64-shippable',
         },
         {
           color: 'brown',
@@ -40,7 +40,7 @@ it('Query info', () => {
           frameworkId: 10,
           suite: 'raptor-wasm-misc-ion-firefox',
           option: 'opt',
-          platform: 'linux64',
+          platform: 'linux64-shippable',
         },
         {
           color: 'yellow',
@@ -48,7 +48,7 @@ it('Query info', () => {
           frameworkId: 10,
           suite: 'raptor-wasm-misc-cranelift-firefox',
           option: 'opt',
-          platform: 'linux64',
+          platform: 'linux64-shippable',
         },
         {
           color: '#4285F4',
