@@ -368,6 +368,7 @@ export const BENCHMARKS = {
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'ares6-sm',
         option: 'opt',
+        platform: 'linux64',
       },
       'ares6-v8': {
         color: COLORS.chromium,
@@ -375,6 +376,7 @@ export const BENCHMARKS = {
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'ares6-v8',
         option: 'opt',
+        platform: 'linux64',
       },
     },
     labels: ['SpiderMonkey', 'Chromium v8'],
@@ -414,6 +416,7 @@ export const BENCHMARKS = {
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'octane-sm',
         option: 'opt',
+        platform: 'linux64',
       },
       'octane-v8': {
         color: COLORS.chromium,
@@ -421,6 +424,7 @@ export const BENCHMARKS = {
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'octane-v8',
         option: 'opt',
+        platform: 'linux64',
       },
     },
     labels: ['SpiderMonkey', 'Chromium v8'],
@@ -434,6 +438,7 @@ export const BENCHMARKS = {
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'six-speed-sm',
         option: 'opt',
+        platform: 'linux64',
       },
       'six-speed-v8': {
         color: COLORS.chromium,
@@ -441,6 +446,7 @@ export const BENCHMARKS = {
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'six-speed-v8',
         option: 'opt',
+        platform: 'linux64',
       },
     },
     labels: ['SpiderMonkey', 'Chromium v8'],
@@ -454,6 +460,7 @@ export const BENCHMARKS = {
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'sunspider-sm',
         option: 'opt',
+        platform: 'linux64',
       },
     },
     labels: ['SpiderMonkey'],
@@ -467,6 +474,7 @@ export const BENCHMARKS = {
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'web-tooling-benchmark-sm',
         option: 'opt',
+        platform: 'linux64',
       },
       'web-tooling-benchmark-v8': {
         color: COLORS.chromium,
@@ -474,6 +482,7 @@ export const BENCHMARKS = {
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'web-tooling-benchmark-v8',
         option: 'opt',
+        platform: 'linux64',
       },
     },
     labels: ['SpiderMonkey', 'Chromium v8'],
@@ -2193,11 +2202,6 @@ const DEFAULT_SUITES = [
   'wasm-godot',
 ];
 
-const appendShippable = (platform) => {
-  const suffix = '-shippable';
-  return platform.endsWith(suffix) ? platform : `${platform}${suffix}`;
-};
-
 export const CONFIG = {
   default: {
     landingPath: '/win10/overview?numDays=60',
@@ -2206,15 +2210,10 @@ export const CONFIG = {
     labels: ['Firefox', 'Chromium', 'Chrome'],
   },
   dayRange: [1, 2, 7, 14, 30, 60, 90, 365],
-  platformTransformations: {
-    // If the suite ends with the pattern modify the platform
-    '-chromium': appendShippable,
-    '-chrome': appendShippable,
-  },
   views: {
     linux64: {
       label: 'Linux 64bit',
-      platforms: ['linux64'],
+      platforms: ['linux64-shippable'],
       benchmarks: DEFAULT_SUITES
         .concat([
           'assorted-dom', 'ares6-jsshell', 'octane', 'six-speed',
@@ -2228,12 +2227,12 @@ export const CONFIG = {
     },
     win7: {
       label: 'Windows 7 32bit',
-      platforms: ['windows7-32'],
+      platforms: ['windows7-32-shippable'],
       benchmarks: DEFAULT_SUITES,
     },
     win10: {
       label: 'Windows 10 64bit',
-      platforms: ['windows10-64'],
+      platforms: ['windows10-64-shippable'],
       benchmarks: DEFAULT_SUITES,
     },
     win10ref2017: {
@@ -2264,9 +2263,7 @@ const processSeries = (seriesConfig, viewConfig) => {
     const { platforms } = viewConfig;
     platforms.forEach((pf) => {
       const newSeriesConfig = { ...seriesConfig };
-      // Chrome jobs only run on -shippable platforms
-      newSeriesConfig.platform = seriesConfig.suite.endsWith('-chromium')
-        || seriesConfig.suite.endsWith('-chrome') ? `${pf}-shippable` : pf;
+      newSeriesConfig.platform = pf;
       result.push(newSeriesConfig);
     });
   } else {
