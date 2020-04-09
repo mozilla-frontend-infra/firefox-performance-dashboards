@@ -6,6 +6,8 @@ const COLORS = {
   chrome: '#00cc00',
   chromium: '#4285F4',
   firefox: '#e55525',
+  fennec: '#4285F4',
+  geckoview: '#e55525',
 };
 
 export const BENCHMARKS = {
@@ -1271,843 +1273,495 @@ export const BENCHMARKS = {
     },
     label: 'Tp6 Wikipedia',
   },
-  'speedometer-geckoview': {
+  'speedometer-android': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-speedometer-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-speedometer-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-speedometer-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-speedometer-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Speedometer',
   },
   'tp6m-amazon': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-amazon-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-amazon-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-amazon-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-amazon-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 Amazon',
   },
   'tp6m-facebook': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-facebook-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-facebook-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-facebook-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-facebook-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 Facebook',
   },
   'tp6m-google': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-google-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-google-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-google-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-google-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 Google',
   },
   'tp6m-youtube': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-youtube-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-youtube-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-youtube-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-youtube-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 YouTube',
   },
   'tp6m-bing': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-bing-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-bing-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-bing-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-bing-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 Bing',
   },
   'tp6m-bing-restaurants': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-bing-restaurants-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-bing-restaurants-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-bing-restaurants-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-bing-restaurants-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 Bing restaurants',
   },
   'tp6m-ebay-kleinanzeigen': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-ebay-kleinanzeigen-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-ebay-kleinanzeigen-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-ebay-kleinanzeigen-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-ebay-kleinanzeigen-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 Ebay kleinanzeigen',
   },
   'tp6m-ebay-kleinanzeigen-search': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-ebay-kleinanzeigen-search-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-ebay-kleinanzeigen-search-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-ebay-kleinanzeigen-search-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-ebay-kleinanzeigen-search-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 Ebay kleinanzeigen (search)',
   },
   'tp6m-instagram': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-instagram-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-instagram-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-instagram-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-instagram-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 Instagram',
   },
   'tp6m-google-maps': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-google-maps-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-google-maps-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-google-maps-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-google-maps-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 Google Maps',
   },
   'tp6m-google-restaurants': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-google-restaurants-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-google-restaurants-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-google-restaurants-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-google-restaurants-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 Google restaurants',
   },
   'tp6m-booking': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-booking-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-booking-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-booking-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-booking-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 Booking',
   },
   'tp6m-cnn': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-cnn-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-cnn-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-cnn-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-cnn-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 CNN',
   },
   'tp6m-cnn-ampstories': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-cnn-ampstories-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-cnn-ampstories-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-cnn-ampstories-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-cnn-ampstories-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 CNN AMP Stories',
   },
   'tp6m-amazon-search': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-amazon-search-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-amazon-search-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-amazon-search-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-amazon-search-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 Amazon search',
   },
   'tp6m-wikipedia': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-wikipedia-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-wikipedia-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-wikipedia-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-wikipedia-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 Wikipedia',
   },
   'tp6m-youtube-watch': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-youtube-watch-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-youtube-watch-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-youtube-watch-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-youtube-watch-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 YouTube watch',
   },
   'tp6m-bbc': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-bbc-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-bbc-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-bbc-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-bbc-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 BBC',
   },
   'tp6m-reddit': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-reddit-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-reddit-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-reddit-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-reddit-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 Reddit',
   },
   'tp6m-stackoverflow': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-stackoverflow-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-stackoverflow-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-stackoverflow-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-stackoverflow-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 Stackoverflow',
   },
   'tp6m-imdb': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-imdb-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-imdb-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-imdb-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-imdb-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 Imdb',
   },
   'tp6m-jianshu': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-jianshu-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-jianshu-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-jianshu-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-jianshu-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 Jianshu',
   },
   'tp6m-microsoft-support': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-microsoft--supportgeckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-microsoft-support-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-microsoft--supportgeckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-microsoft-support-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 Microsoft support',
   },
   'tp6m-allrecipes': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-allrecipes-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-allrecipes-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-allrecipes-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-allrecipes-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 All Recipes',
   },
   'tp6m-espn': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-espn-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-espn-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-espn-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-espn-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 Espn',
   },
   'tp6m-web-de': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-web-de-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-web-de-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-web-de-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-web-de-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 Web De',
   },
   'tp6m-facebook-cristiano': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-facebook-cristiano-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-facebook-cristiano-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-facebook-cristiano-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-facebook-cristiano-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 Facebook (Cristiano)',
   },
   'tp6m-aframeio-animation': {
     compare: {
-      motoG5: {
-        color: COLORS.firefox,
-        label: 'Moto G5 (armv7)',
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-aframeio-animation-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-g5-7-0-arm7-api-16',
+        suite: 'raptor-tp6m-aframeio-animation-fennec68',
       },
-      pixel2arm7: {
-        color: COLORS.chromium,
-        label: 'Pixel 2 (arm7)',
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-tp6m-aframeio-animation-geckoview',
-        option: 'pgo',
-        platform: 'android-hw-p2-8-0-arm7-api-16',
-      },
-      pixel2arm64: {
-        color: '#45a1ff',
-        label: 'Pixel 2 (ARM64)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-aframeio-animation-geckoview',
-        option: 'opt',
-        platform: 'android-hw-p2-8-0-android-aarch64',
       },
     },
     label: 'Tp6 Aframe.io (Animation)',
@@ -2115,7 +1769,7 @@ export const BENCHMARKS = {
 };
 
 const ANDROID_SUITES = [
-  'speedometer-geckoview',
+  'speedometer-android',
   'tp6m-aframeio-animation',
   'tp6m-allrecipes',
   'tp6m-amazon',
@@ -2246,9 +1900,17 @@ export const CONFIG = {
       platforms: ['windows10-aarch64'],
       benchmarks: DEFAULT_SUITES,
     },
-    android: {
-      label: 'Android',
+    androidMotoG5: {
+      label: 'Android (Moto G5)',
+      platforms: ['android-hw-g5-7-0-arm7-api-16'],
       benchmarks: ANDROID_SUITES,
+      option: 'pgo',
+    },
+    androidPixel2: {
+      label: 'Android (Pixel 2)',
+      platforms: ['android-hw-p2-8-0-android-aarch64'],
+      benchmarks: ANDROID_SUITES,
+      option: 'pgo',
     },
   },
 };
