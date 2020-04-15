@@ -19,7 +19,7 @@ it('Query info', () => {
       benchmarkUID: 'wasm-misc',
       compare: [
         {
-          color: '#e55525',
+          color: '#FFA056',
           label: 'Firefox (tiering)',
           frameworkId: 10,
           suite: 'raptor-wasm-misc-firefox',
@@ -51,7 +51,7 @@ it('Query info', () => {
           platform: 'linux64-shippable',
         },
         {
-          color: '#4285F4',
+          color: '#9DD866',
           label: 'Chromium',
           frameworkId: 10,
           suite: 'raptor-wasm-misc-chromium',

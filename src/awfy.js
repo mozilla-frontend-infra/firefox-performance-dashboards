@@ -1,13 +1,15 @@
 const TALOS_FRAMEWORK_ID = 1;
 const RAPTOR_FRAMEWORK_ID = 10;
 const JSBENCH_FRAMEWORK_ID = 11;
+const BROWSERTIME_FRAMEWORK_ID = 13;
 
 const COLORS = {
-  chrome: '#00cc00',
-  chromium: '#4285F4',
-  firefox: '#e55525',
-  fennec: '#4285F4',
-  geckoview: '#e55525',
+  chrome: '#0B84A5',
+  chromium: '#9DD866',
+  fennec: '#9DD866',
+  geckoview: '#6F4E7C',
+  fenix: '#FFA056',
+  firefox: '#FFA056',
 };
 
 export const BENCHMARKS = {
@@ -1296,8 +1298,49 @@ export const BENCHMARKS = {
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-speedometer-geckoview',
       },
+      fenix: {
+        color: COLORS.fenix,
+        label: 'Fenix',
+        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        suite: 'speedometer',
+        option: 'pgo',
+        extraOptions: ['fenix'],
+      },
     },
     label: 'Speedometer',
+  },
+  'tp6m-amazon-cold': {
+    compare: {
+      chrome: {
+        color: COLORS.chrome,
+        label: 'Chrome',
+        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        suite: 'amazon-cold',
+        extraOptions: ['chrome-m'],
+      },
+      fennec: {
+        color: COLORS.fennec,
+        label: 'Fennec',
+        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        suite: 'amazon-cold',
+        extraOptions: ['fennec'],
+      },
+      geckoview: {
+        color: COLORS.geckoview,
+        label: 'GeckoView',
+        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        suite: 'amazon-cold',
+        extraOptions: ['geckoview'],
+      },
+      fenix: {
+        color: COLORS.fenix,
+        label: 'Fenix',
+        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        suite: 'amazon-cold',
+        extraOptions: ['fenix'],
+      },
+    },
+    label: 'Tp6 Amazon (cold)',
   },
   'tp6m-amazon': {
     compare: {
@@ -1314,7 +1357,7 @@ export const BENCHMARKS = {
         suite: 'raptor-tp6m-amazon-geckoview',
       },
     },
-    label: 'Tp6 Amazon',
+    label: 'Tp6 Amazon (warm)',
   },
   'tp6m-facebook': {
     compare: {
@@ -1807,6 +1850,7 @@ const ANDROID_SUITES = [
   'tp6m-wikipedia',
   'tp6m-youtube',
   'tp6m-youtube-watch',
+  'tp6m-amazon-cold',
 ];
 
 const DEFAULT_SUITES = [
