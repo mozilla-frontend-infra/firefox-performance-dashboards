@@ -23,7 +23,7 @@ exports[`renders correctly 1`] = `
         >
           <div
             aria-haspopup="listbox"
-            aria-labelledby=" mui-component-select-platform"
+            aria-labelledby="mui-component-select-platform"
             class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
             id="mui-component-select-platform"
             role="button"
@@ -32,15 +32,16 @@ exports[`renders correctly 1`] = `
             Windows 10 64bit
           </div>
           <input
+            aria-hidden="true"
+            class="MuiSelect-nativeInput"
             name="platform"
-            type="hidden"
+            tabindex="-1"
             value="win10"
           />
           <svg
             aria-hidden="true"
             class="MuiSvgIcon-root MuiSelect-icon"
             focusable="false"
-            role="presentation"
             viewBox="0 0 24 24"
           >
             <path
@@ -68,7 +69,7 @@ exports[`renders correctly 1`] = `
         >
           <div
             aria-haspopup="listbox"
-            aria-labelledby=" mui-component-select-benchmark"
+            aria-labelledby="mui-component-select-benchmark"
             class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
             id="mui-component-select-benchmark"
             role="button"
@@ -77,15 +78,16 @@ exports[`renders correctly 1`] = `
             Overview
           </div>
           <input
+            aria-hidden="true"
+            class="MuiSelect-nativeInput"
             name="benchmark"
-            type="hidden"
+            tabindex="-1"
             value="overview"
           />
           <svg
             aria-hidden="true"
             class="MuiSvgIcon-root MuiSelect-icon"
             focusable="false"
-            role="presentation"
             viewBox="0 0 24 24"
           >
             <path
@@ -113,7 +115,7 @@ exports[`renders correctly 1`] = `
         >
           <div
             aria-haspopup="listbox"
-            aria-labelledby=" mui-component-select-numDays"
+            aria-labelledby="mui-component-select-numDays"
             class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
             id="mui-component-select-numDays"
             role="button"
@@ -122,15 +124,16 @@ exports[`renders correctly 1`] = `
             Last 60 days
           </div>
           <input
+            aria-hidden="true"
+            class="MuiSelect-nativeInput"
             name="numDays"
-            type="hidden"
+            tabindex="-1"
             value="60"
           />
           <svg
             aria-hidden="true"
             class="MuiSvgIcon-root MuiSelect-icon"
             focusable="false"
-            role="presentation"
             viewBox="0 0 24 24"
           >
             <path
