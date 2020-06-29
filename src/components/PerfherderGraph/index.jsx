@@ -52,7 +52,7 @@ const fixUrl = (url, dayRange) => {
   return `${baseUrl}?${newParams}`;
 };
 
-class PerferhderGraph extends React.Component {
+class PerfherderGraph extends React.Component {
   state = {
     data: {},
     fetchedData: false,
@@ -165,7 +165,7 @@ class PerferhderGraph extends React.Component {
   }
 }
 
-PerferhderGraph.propTypes = {
+PerfherderGraph.propTypes = {
   classes: PropTypes.shape({}).isRequired,
   extraLink: PropTypes.string,
   dayRange: PropTypes.number.isRequired,
@@ -182,10 +182,10 @@ PerferhderGraph.propTypes = {
   yLabel: PropTypes.string,
 };
 
-PerferhderGraph.defaultProps = {
+PerfherderGraph.defaultProps = {
   extraLink: undefined,
   includeSubtests: false,
   yLabel: undefined,
 };
 
-export default withStyles(styles)(PerferhderGraph);
+export default withStyles(styles)(PerfherderGraph);

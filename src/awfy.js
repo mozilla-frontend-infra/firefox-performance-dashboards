@@ -1961,7 +1961,6 @@ export const CONFIG = {
 // Upper limit for the time range slider measured in days
 export const TIMERANGE_UPPER_LIMIT = 365;
 
-
 const processSeries = (seriesConfig, viewConfig) => {
   const result = [];
   // The Android benchmarks have a platform defined per series
