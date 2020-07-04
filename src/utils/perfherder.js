@@ -126,20 +126,23 @@ const signaturesForPlatformSuite = async (seriesConfig) => {
   return filteredSignatures;
 };
 
-const findParentSignatureInfo = ({ option = 'pgo', extraOptions }, signatures, options) => {
+const findParentSignatureInfo = ({ option = 'pgo', application, extraOptions }, signatures, options) => {
   const result = [];
   // Each signature is a potential candidate
   Object.keys(signatures).forEach((hash) => {
     const signature = signatures[hash];
     const optionCollection = options[signature.option_collection_hash];
     if (optionCollection && optionCollection.includes(option)) {
-      if (!signature.extra_options && !extraOptions) {
-        result.push(signature);
-      } else if (
-        signature.extra_options && extraOptions
-        && isEqual(signature.extra_options, extraOptions)
-      ) {
-        result.push(signature);
+      if (!application || (
+        signature.application && application && isEqual(signature.application, application))) {
+        if (!signature.extra_options && !extraOptions) {
+          result.push(signature);
+        } else if (
+          signature.extra_options && extraOptions
+          && isEqual(signature.extra_options, extraOptions)
+        ) {
+          result.push(signature);
+        }
       }
     }
   });

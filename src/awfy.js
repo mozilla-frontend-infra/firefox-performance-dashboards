@@ -6,7 +6,7 @@ const BROWSERTIME_FRAMEWORK_ID = 13;
 const COLORS = {
   chrome: '#0B84A5',
   chromium: '#9DD866',
-  fennec68: '#9DD866',
+  fennec: '#9DD866',
   geckoview: '#6F4E7C',
   fenix: '#FFA056',
   firefox: '#FFA056',
@@ -497,21 +497,28 @@ export const BENCHMARKS = {
       fennec: {
         color: COLORS.fennec,
         label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-speedometer-fennec68',
+        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        suite: 'speedometer',
+        option: 'opt',
+        application: 'fennec',
+        extraOptions: ['fennec'],
       },
       geckoview: {
         color: COLORS.geckoview,
         label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-speedometer-geckoview',
+        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        suite: 'speedometer',
+        option: 'opt',
+        application: 'geckoview',
+        extraOptions: ['geckoview'],
       },
       fenix: {
         color: COLORS.fenix,
         label: 'Fenix',
         frameworkId: BROWSERTIME_FRAMEWORK_ID,
         suite: 'speedometer',
-        option: 'pgo',
+        option: 'opt',
+        application: 'fenix',
         extraOptions: ['fenix'],
       },
     },
@@ -584,7 +591,9 @@ Object.keys(DESKTOP_SITES).forEach((key) => {
 });
 
 const MOBILE_APPS = {
-  fennec68: 'Fennec',
+  'chrome-m': 'Chrome',
+  fenix: 'Fenix',
+  fennec: 'Fennec',
   geckoview: 'GeckoView',
 };
 
@@ -622,18 +631,19 @@ const MOBILE_SUITES = [
   'speedometer-android',
 ];
 
-Object.keys(MOBILE_SITES).forEach((key) => {
-  const suite = `tp6m-${key}`;
-  BENCHMARKS[`tp6m-${key}`] = { compare: {}, label: `Tp6 ${MOBILE_SITES[key]}` };
+Object.keys(MOBILE_SITES).forEach((siteKey) => {
+  BENCHMARKS[siteKey] = { compare: {}, label: `Tp6 ${MOBILE_SITES[siteKey]}` };
   Object.keys(MOBILE_APPS).forEach((appKey) => {
-    BENCHMARKS[suite].compare[appKey] = {
+    BENCHMARKS[siteKey].compare[appKey] = {
       color: COLORS[appKey],
       label: MOBILE_APPS[appKey],
-      frameworkId: RAPTOR_FRAMEWORK_ID,
-      suite: `raptor-${suite}-${appKey}`,
+      frameworkId: BROWSERTIME_FRAMEWORK_ID,
+      suite: siteKey,
+      application: appKey,
+      option: 'opt',
     };
   });
-  MOBILE_SUITES.push(suite);
+  MOBILE_SUITES.push(siteKey);
 });
 
 export const CONFIG = {
@@ -681,15 +691,13 @@ export const CONFIG = {
     },
     androidMotoG5: {
       label: 'Android (Moto G5)',
-      platforms: ['android-hw-g5-7-0-arm7-api-16'],
+      platforms: ['android-hw-g5-7-0-arm7-api-16', 'android-hw-g5-7-0-arm7-api-16-shippable'],
       benchmarks: MOBILE_SUITES,
-      option: 'pgo',
     },
     androidPixel2: {
       label: 'Android (Pixel 2)',
-      platforms: ['android-hw-p2-8-0-android-aarch64'],
+      platforms: ['android-hw-p2-8-0-android-aarch64', 'android-hw-p2-8-0-android-aarch64-shippable'],
       benchmarks: MOBILE_SUITES,
-      option: 'pgo',
     },
   },
 };
