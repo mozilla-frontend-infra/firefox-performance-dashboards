@@ -632,9 +632,10 @@ const MOBILE_SUITES = [
 ];
 
 Object.keys(MOBILE_SITES).forEach((siteKey) => {
-  BENCHMARKS[siteKey] = { compare: {}, label: `Tp6 ${MOBILE_SITES[siteKey]}` };
+  const bmKey = `tp6m-${siteKey}`;
+  BENCHMARKS[bmKey] = { compare: {}, label: `Tp6 ${MOBILE_SITES[siteKey]}` };
   Object.keys(MOBILE_APPS).forEach((appKey) => {
-    BENCHMARKS[siteKey].compare[appKey] = {
+    BENCHMARKS[bmKey].compare[appKey] = {
       color: COLORS[appKey],
       label: MOBILE_APPS[appKey],
       frameworkId: BROWSERTIME_FRAMEWORK_ID,
@@ -643,7 +644,7 @@ Object.keys(MOBILE_SITES).forEach((siteKey) => {
       option: 'opt',
     };
   });
-  MOBILE_SUITES.push(siteKey);
+  MOBILE_SUITES.push(bmKey);
 });
 
 export const CONFIG = {
