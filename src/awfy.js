@@ -492,1366 +492,72 @@ export const BENCHMARKS = {
     labels: ['SpiderMonkey', 'Chromium v8'],
     label: 'Web Tooling (JS shell)',
   },
-  'tp6-amazon': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-amazon-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-amazon-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-amazon-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Amazon',
-  },
-  'tp6-docs': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-docs-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-docs-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-docs-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Docs',
-  },
-  'tp6-facebook': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-facebook-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-facebook-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-facebook-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Facebook',
-  },
-  'tp6-google': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-google-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-google-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-google-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Google',
-  },
-  'tp6-sheets': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-sheets-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-sheets-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-sheets-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Sheets',
-  },
-  'tp6-slides': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-slides-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-slides-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-slides-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Slides',
-  },
-  'tp6-youtube': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-youtube-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-youtube-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-youtube-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 YouTube',
-  },
-  'tp6-imdb': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-imdb-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-imdb-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-imdb-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Imdb',
-  },
-  'tp6-imgur': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-imgur-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-imgur-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-imgur-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Imgur',
-  },
-  'tp6-fandom': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-fandom-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-fandom-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-fandom-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Fandom',
-  },
-  'tp6-bing': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-bing-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-bing-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-bing-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Bing',
-  },
-  'tp6-yandex': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-yandex-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-yandex-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-yandex-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Yandex',
-  },
-  'tp6-apple': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-apple-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-apple-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-apple-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Apple',
-  },
-  'tp6-microsoft': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-microsoft-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-microsoft-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-microsoft-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Microsoft',
-  },
-  'tp6-reddit': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-reddit-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-reddit-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-reddit-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Reddit',
-  },
-  'tp6-yahoo-news': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-yahoo-news-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-yahoo-news-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-yahoo-news-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Yahoo News',
-  },
-  'tp6-instagram': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-instagram-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-instagram-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-instagram-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Instagram',
-  },
-  'tp6-twitch': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-twitch-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-twitch-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-twitch-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Twitch',
-  },
-  'tp6-twitter': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-twitter-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-twitter-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-twitter-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Twitter',
-  },
-  'tp6-yahoo-mail': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-yahoo-mail-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-yahoo-mail-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-yahoo-mail-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Yahoo Mail',
-  },
-  'tp6-binast-instagram': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-binast-instagram-firefox',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Binast Instagram',
-  },
-  'tp6-ebay': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-ebay-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-ebay-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-ebay-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Ebay',
-  },
-  'tp6-google-mail': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-google-mail-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-google-mail-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-google-mail-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Google Mail',
-  },
-  'tp6-linkedin': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-linkedin-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-linkedin-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-linkedin-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Linkedin',
-  },
-  'tp6-netflix': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-netflix-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-netflix-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-netflix-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Netflix',
-  },
-  'tp6-office': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-office-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-office-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-office-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Office',
-  },
-  'tp6-outlook': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-outlook-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-outlook-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-outlook-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Outlook',
-  },
-  'tp6-paypal': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-paypal-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-paypal-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-paypal-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 PayPal',
-  },
-  'tp6-pinterest': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-pinterest-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-pinterest-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-pinterest-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Pinterest',
-  },
-  'tp6-tumblr': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-tumblr-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-tumblr-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-tumblr-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Tumblr',
-  },
-  'tp6-wikipedia': {
-    compare: {
-      firefox: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-wikipedia-firefox',
-        option: 'opt',
-      },
-      chromium: {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-wikipedia-chromium',
-        option: 'opt',
-      },
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6-wikipedia-chrome',
-        option: 'opt',
-      },
-    },
-    label: 'Tp6 Wikipedia',
-  },
   'speedometer-android': {
     compare: {
       fennec: {
         color: COLORS.fennec,
         label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-speedometer-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-speedometer-geckoview',
-      },
-      fenix: {
-        color: COLORS.fenix,
-        label: 'Fenix',
         frameworkId: BROWSERTIME_FRAMEWORK_ID,
         suite: 'speedometer',
-        option: 'pgo',
-        extraOptions: ['fenix'],
-      },
-    },
-    label: 'Speedometer',
-  },
-  'tp6m-amazon-cold': {
-    compare: {
-      chrome: {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
-        suite: 'amazon-cold',
-        extraOptions: ['chrome-m'],
-      },
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
-        suite: 'amazon-cold',
+        option: 'opt',
+        application: 'fennec',
         extraOptions: ['fennec'],
       },
       geckoview: {
         color: COLORS.geckoview,
         label: 'GeckoView',
         frameworkId: BROWSERTIME_FRAMEWORK_ID,
-        suite: 'amazon-cold',
+        suite: 'speedometer',
+        option: 'opt',
+        application: 'geckoview',
         extraOptions: ['geckoview'],
       },
       fenix: {
         color: COLORS.fenix,
         label: 'Fenix',
         frameworkId: BROWSERTIME_FRAMEWORK_ID,
-        suite: 'amazon-cold',
+        suite: 'speedometer',
+        option: 'opt',
+        application: 'fenix',
         extraOptions: ['fenix'],
       },
     },
-    label: 'Tp6 Amazon (cold)',
-  },
-  'tp6m-amazon': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-amazon-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-amazon-geckoview',
-      },
-    },
-    label: 'Tp6 Amazon (warm)',
-  },
-  'tp6m-facebook': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-facebook-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-facebook-geckoview',
-      },
-    },
-    label: 'Tp6 Facebook',
-  },
-  'tp6m-google': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-google-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-google-geckoview',
-      },
-    },
-    label: 'Tp6 Google',
-  },
-  'tp6m-youtube': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-youtube-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-youtube-geckoview',
-      },
-    },
-    label: 'Tp6 YouTube',
-  },
-  'tp6m-bing': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-bing-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-bing-geckoview',
-      },
-    },
-    label: 'Tp6 Bing',
-  },
-  'tp6m-bing-restaurants': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-bing-restaurants-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-bing-restaurants-geckoview',
-      },
-    },
-    label: 'Tp6 Bing restaurants',
-  },
-  'tp6m-ebay-kleinanzeigen': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-ebay-kleinanzeigen-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-ebay-kleinanzeigen-geckoview',
-      },
-    },
-    label: 'Tp6 Ebay kleinanzeigen',
-  },
-  'tp6m-ebay-kleinanzeigen-search': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-ebay-kleinanzeigen-search-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-ebay-kleinanzeigen-search-geckoview',
-      },
-    },
-    label: 'Tp6 Ebay kleinanzeigen (search)',
-  },
-  'tp6m-instagram': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-instagram-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-instagram-geckoview',
-      },
-    },
-    label: 'Tp6 Instagram',
-  },
-  'tp6m-google-maps': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-google-maps-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-google-maps-geckoview',
-      },
-    },
-    label: 'Tp6 Google Maps',
-  },
-  'tp6m-google-restaurants': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-google-restaurants-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-google-restaurants-geckoview',
-      },
-    },
-    label: 'Tp6 Google restaurants',
-  },
-  'tp6m-booking': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-booking-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-booking-geckoview',
-      },
-    },
-    label: 'Tp6 Booking',
-  },
-  'tp6m-cnn': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-cnn-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-cnn-geckoview',
-      },
-    },
-    label: 'Tp6 CNN',
-  },
-  'tp6m-cnn-ampstories': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-cnn-ampstories-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-cnn-ampstories-geckoview',
-      },
-    },
-    label: 'Tp6 CNN AMP Stories',
-  },
-  'tp6m-amazon-search': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-amazon-search-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-amazon-search-geckoview',
-      },
-    },
-    label: 'Tp6 Amazon search',
-  },
-  'tp6m-wikipedia': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-wikipedia-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-wikipedia-geckoview',
-      },
-    },
-    label: 'Tp6 Wikipedia',
-  },
-  'tp6m-youtube-watch': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-youtube-watch-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-youtube-watch-geckoview',
-      },
-    },
-    label: 'Tp6 YouTube watch',
-  },
-  'tp6m-bbc': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-bbc-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-bbc-geckoview',
-      },
-    },
-    label: 'Tp6 BBC',
-  },
-  'tp6m-reddit': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-reddit-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-reddit-geckoview',
-      },
-    },
-    label: 'Tp6 Reddit',
-  },
-  'tp6m-stackoverflow': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-stackoverflow-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-stackoverflow-geckoview',
-      },
-    },
-    label: 'Tp6 Stackoverflow',
-  },
-  'tp6m-imdb': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-imdb-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-imdb-geckoview',
-      },
-    },
-    label: 'Tp6 Imdb',
-  },
-  'tp6m-jianshu': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-jianshu-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-jianshu-geckoview',
-      },
-    },
-    label: 'Tp6 Jianshu',
-  },
-  'tp6m-microsoft-support': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-microsoft-support-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-microsoft-support-geckoview',
-      },
-    },
-    label: 'Tp6 Microsoft support',
-  },
-  'tp6m-allrecipes': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-allrecipes-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-allrecipes-geckoview',
-      },
-    },
-    label: 'Tp6 All Recipes',
-  },
-  'tp6m-espn': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-espn-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-espn-geckoview',
-      },
-    },
-    label: 'Tp6 Espn',
-  },
-  'tp6m-web-de': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-web-de-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-web-de-geckoview',
-      },
-    },
-    label: 'Tp6 Web De',
-  },
-  'tp6m-facebook-cristiano': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-facebook-cristiano-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-facebook-cristiano-geckoview',
-      },
-    },
-    label: 'Tp6 Facebook (Cristiano)',
-  },
-  'tp6m-aframeio-animation': {
-    compare: {
-      fennec: {
-        color: COLORS.fennec,
-        label: 'Fennec',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-aframeio-animation-fennec68',
-      },
-      geckoview: {
-        color: COLORS.geckoview,
-        label: 'GeckoView',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-tp6m-aframeio-animation-geckoview',
-      },
-    },
-    label: 'Tp6 Aframe.io (Animation)',
+    label: 'Speedometer',
   },
 };
 
-const ANDROID_SUITES = [
-  'speedometer-android',
-  'tp6m-aframeio-animation',
-  'tp6m-allrecipes',
-  'tp6m-amazon',
-  'tp6m-amazon-search',
-  'tp6m-bbc',
-  'tp6m-bing',
-  'tp6m-bing-restaurants',
-  'tp6m-booking',
-  'tp6m-cnn',
-  'tp6m-cnn-ampstories',
-  'tp6m-ebay-kleinanzeigen',
-  'tp6m-ebay-kleinanzeigen-search',
-  'tp6m-espn',
-  'tp6m-facebook-cristiano',
-  'tp6m-facebook',
-  'tp6m-google',
-  'tp6m-google-maps',
-  'tp6m-google-restaurants',
-  'tp6m-imdb',
-  'tp6m-instagram',
-  'tp6m-jianshu',
-  'tp6m-microsoft-support',
-  'tp6m-reddit',
-  'tp6m-stackoverflow',
-  'tp6m-web-de',
-  'tp6m-wikipedia',
-  'tp6m-youtube',
-  'tp6m-youtube-watch',
-  'tp6m-amazon-cold',
-];
+const DESKTOP_SITES = {
+  apple: 'Apple',
+  amazon: 'Amazon',
+  bing: 'Bing',
+  docs: 'Google Docs',
+  ebay: 'Ebay',
+  facebook: 'Facebook',
+  fandom: 'Fandom',
+  google: 'Google',
+  'google-mail': 'Google Mail',
+  imdb: 'IMDb',
+  imgur: 'Imgur',
+  instagram: 'Instagram',
+  linkedin: 'LinkedIn',
+  microsoft: 'Microsoft',
+  netflix: 'Netflix',
+  office: 'Office',
+  outlook: 'Outlook',
+  paypal: 'PayPal',
+  pinterest: 'Pinterest',
+  reddit: 'Reddit',
+  sheets: 'Google Sheets',
+  slides: 'Google Slides',
+  twitch: 'Twitch',
+  twitter: 'Twitter',
+  tumblr: 'Tumblr',
+  wikipedia: 'Wikipedia',
+  yandex: 'Yandex',
+  'yahoo-mail': 'Yahoo Mail',
+  'yahoo-news': 'Yahoo News',
+  youtube: 'YouTube',
+};
 
 const DEFAULT_SUITES = [
   'ares6',
@@ -1865,40 +571,81 @@ const DEFAULT_SUITES = [
   'speedometer',
   'stylebench',
   'sunspider',
-  'tp6-amazon',
-  'tp6-apple',
-  'tp6-binast-instagram',
-  'tp6-bing',
-  'tp6-docs',
-  'tp6-ebay',
-  'tp6-facebook',
-  'tp6-google',
-  'tp6-google-mail',
-  'tp6-imdb',
-  'tp6-imgur',
-  'tp6-instagram',
-  'tp6-linkedin',
-  'tp6-netflix',
-  'tp6-microsoft',
-  'tp6-office',
-  'tp6-outlook',
-  'tp6-paypal',
-  'tp6-pinterest',
-  'tp6-reddit',
-  'tp6-sheets',
-  'tp6-slides',
-  'tp6-tumblr',
-  'tp6-twitch',
-  'tp6-twitter',
-  'tp6-fandom',
-  'tp6-wikipedia',
-  'tp6-yahoo-mail',
-  'tp6-yahoo-news',
-  'tp6-yandex',
-  'tp6-youtube',
   'webaudio',
   'wasm-godot',
 ];
+
+Object.keys(DESKTOP_SITES).forEach((key) => {
+  const suite = `tp6-${key}`;
+  BENCHMARKS[`tp6-${key}`] = { compare: {}, label: `Tp6 ${DESKTOP_SITES[key]}` };
+  ['Firefox', 'Chromium', 'Chrome'].forEach((app) => {
+    BENCHMARKS[suite].compare[app.toLowerCase()] = {
+      color: COLORS[app.toLowerCase()],
+      label: app,
+      frameworkId: RAPTOR_FRAMEWORK_ID,
+      suite: `raptor-${suite}-${app.toLowerCase()}`,
+      option: 'opt',
+    };
+  });
+  DEFAULT_SUITES.push(suite);
+});
+
+const MOBILE_APPS = {
+  'chrome-m': 'Chrome',
+  fenix: 'Fenix',
+  fennec: 'Fennec',
+  geckoview: 'GeckoView',
+};
+
+const MOBILE_SITES = {
+  allrecipes: 'All Recipes',
+  amazon: 'Amazon',
+  'amazon-search': 'Amazon Search',
+  bbc: 'BBC',
+  bing: 'Bing',
+  'bing-restaurants': 'Bing Restaurants',
+  booking: 'Booking',
+  cnn: 'CNN',
+  'cnn-ampstories': 'CNN AMP Stories',
+  'ebay-kleinanzeigen': 'Ebay Kleinanzeigen',
+  'ebay-kleinanzeigen-search': 'Ebay Kleinanzeigen Search',
+  espn: 'ESPN',
+  'facebook-cristiano': 'Facebook (Cristiano)',
+  facebook: 'Facebook',
+  google: 'Google',
+  'google-maps': 'Google Maps',
+  'google-restaurants': 'Google Restaurants',
+  imdb: 'IMDb',
+  instagram: 'Instagram',
+  jianshu: 'Jianshu',
+  'microsoft-support': 'Microsoft Support',
+  reddit: 'Reddit',
+  stackoverflow: 'StackOverflow',
+  'web-de': 'Web De',
+  wikipedia: 'Wikipedia',
+  youtube: 'YouTube',
+  'youtube-watch': 'YouTube Watch',
+};
+
+const MOBILE_SUITES = [
+  'speedometer-android',
+];
+
+Object.keys(MOBILE_SITES).forEach((siteKey) => {
+  const bmKey = `tp6m-${siteKey}`;
+  BENCHMARKS[bmKey] = { compare: {}, label: `Tp6 ${MOBILE_SITES[siteKey]}` };
+  Object.keys(MOBILE_APPS).forEach((appKey) => {
+    BENCHMARKS[bmKey].compare[appKey] = {
+      color: COLORS[appKey],
+      label: MOBILE_APPS[appKey],
+      frameworkId: BROWSERTIME_FRAMEWORK_ID,
+      suite: siteKey,
+      application: appKey,
+      option: 'opt',
+    };
+  });
+  MOBILE_SUITES.push(bmKey);
+});
 
 export const CONFIG = {
   default: {
@@ -1945,15 +692,13 @@ export const CONFIG = {
     },
     androidMotoG5: {
       label: 'Android (Moto G5)',
-      platforms: ['android-hw-g5-7-0-arm7-api-16'],
-      benchmarks: ANDROID_SUITES,
-      option: 'pgo',
+      platforms: ['android-hw-g5-7-0-arm7-api-16', 'android-hw-g5-7-0-arm7-api-16-shippable'],
+      benchmarks: MOBILE_SUITES,
     },
     androidPixel2: {
       label: 'Android (Pixel 2)',
-      platforms: ['android-hw-p2-8-0-android-aarch64'],
-      benchmarks: ANDROID_SUITES,
-      option: 'pgo',
+      platforms: ['android-hw-p2-8-0-android-aarch64', 'android-hw-p2-8-0-android-aarch64-shippable'],
+      benchmarks: MOBILE_SUITES,
     },
   },
 };
