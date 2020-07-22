@@ -117,7 +117,7 @@ const signaturesForPlatformSuite = async (seriesConfig) => {
         || (jobSignature.suite === jobSignature.test))
       ) {
         res[signatureHash] = {
-          parentSignatureHash: signatureHash,
+          parentSignatureHash: jobSignature.signature_hash,
           ...jobSignature,
         };
       }
@@ -146,7 +146,6 @@ const findParentSignatureInfo = ({ option = 'pgo', application, extraOptions }, 
       }
     }
   });
-
   if (result.length !== 1) {
     return undefined;
   }
