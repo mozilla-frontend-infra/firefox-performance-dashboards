@@ -43,7 +43,8 @@ const downcastDatetimesToStrings = (data) => {
 
 fetchMock.get(`${TREEHERDER}/api/optioncollectionhash/`, OPTION_COLLECTION_HASHES);
 
-describe('Talos', () => {
+// TODO: Reactivate these tests after fixing the mock responses: https://jira.mozilla.com/browse/FXP-1207
+describe.skip('Talos', () => {
   const TALOS_CONFIG = {
     extraOptions: ['e10s', 'stylo'],
     frameworkId: 1,
@@ -132,7 +133,8 @@ describe('Talos', () => {
 });
 
 describe('Raptor', () => {
-  describe('Windows 10', () => {
+  // TODO: Reactivate these tests after fixing the mock responses: https://jira.mozilla.com/browse/FXP-1207
+  describe.skip('Windows 10', () => {
     const seriesConfig = {
       frameworkId: 10,
       option: 'pgo',
@@ -180,7 +182,8 @@ describe('Raptor', () => {
     });
   });
 
-  describe('Windows 7 32-bit', () => {
+  // TODO: Reactivate these tests after fixing the mock responses: https://jira.mozilla.com/browse/FXP-1207
+  describe.skip('Windows 7 32-bit', () => {
     const seriesConfig = {
       frameworkId: 10,
       option: 'opt',

@@ -109,15 +109,15 @@ const querySubtests = async ({ project }, parentHash) => {
 const signaturesForPlatformSuite = async (seriesConfig) => {
   const allPlatformSignatures = await queryPlatformSignatures(seriesConfig);
   const filteredSignatures = Object.keys(allPlatformSignatures)
-    .reduce((res, signatureHash) => {
-      const jobSignature = allPlatformSignatures[signatureHash];
+    .reduce((res, signatureId) => {
+      const jobSignature = allPlatformSignatures[signatureId];
       if (
         jobSignature.suite === seriesConfig.suite
         && ((jobSignature.suite !== jobSignature.test && jobSignature.test === seriesConfig.test)
         || (jobSignature.suite === jobSignature.test))
       ) {
-        res[signatureHash] = {
-          parentSignatureHash: signatureHash,
+        res[signatureId] = {
+          parentSignatureHash: jobSignature.signature_hash,
           ...jobSignature,
         };
       }
@@ -146,7 +146,6 @@ const findParentSignatureInfo = ({ option = 'pgo', application, extraOptions }, 
       }
     }
   });
-
   if (result.length !== 1) {
     return undefined;
   }
