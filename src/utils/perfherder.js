@@ -106,6 +106,18 @@ const querySubtests = async ({ project }, parentHash) => {
   return response.json();
 };
 
+const remapResponse = (response) => {
+  const remappedResponse = {};
+  Object.keys(response).forEach(
+    ((key) => {
+      const value = response[key];
+      remappedResponse[value.signature_hash] = value;
+    }
+    ),
+  );
+  return remappedResponse;
+};
+
 const signaturesForPlatformSuite = async (seriesConfig) => {
   const allPlatformSignatures = await queryPlatformSignatures(seriesConfig);
   const filteredSignatures = Object.keys(allPlatformSignatures)
@@ -199,8 +211,9 @@ export const queryPerformanceData = async (
     };
   } else {
     const subtestsMeta = await querySubtests(seriesConfig, parentInfo.parentSignatureHash);
-    subtestsMeta[parentInfo.parentSignatureHash] = parentInfo;
-    const subtestsData = await fetchSubtestsData(seriesConfig, subtestsMeta, timeRange);
+    const remappedSubtestsMeta = remapResponse(subtestsMeta);
+    remappedSubtestsMeta[parentInfo.parentSignatureHash] = parentInfo;
+    const subtestsData = await fetchSubtestsData(seriesConfig, remappedSubtestsMeta, timeRange);
     Object.keys(subtestsData).forEach((hash) => { perfData[hash] = subtestsData[hash]; });
   }
 
