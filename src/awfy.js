@@ -1,3 +1,5 @@
+import { PROJECT, ALT_PROJECT } from './utils/perfherder';
+
 const TALOS_FRAMEWORK_ID = 1;
 const RAPTOR_FRAMEWORK_ID = 10;
 const JSBENCH_FRAMEWORK_ID = 11;
@@ -20,6 +22,7 @@ export const BENCHMARKS = {
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-assorted-dom-firefox',
+        project: ALT_PROJECT,
         option: 'opt',
       },
       'raptor-assorted-dom-chromium': {
@@ -39,6 +42,7 @@ export const BENCHMARKS = {
         label: 'Firefox',
         frameworkId: TALOS_FRAMEWORK_ID,
         suite: 'kraken',
+        project: ALT_PROJECT,
         option: 'opt',
         extraOptions: ['e10s', 'stylo'],
       },
@@ -52,6 +56,7 @@ export const BENCHMARKS = {
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-motionmark-animometer-firefox',
+        project: ALT_PROJECT,
         option: 'opt',
       },
       'raptor-motionmark-animometer-chromium': {
@@ -78,6 +83,7 @@ export const BENCHMARKS = {
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-motionmark-htmlsuite-firefox',
+        project: ALT_PROJECT,
         option: 'opt',
       },
       'raptor-motionmark-htmlsuite-chromium': {
@@ -104,6 +110,7 @@ export const BENCHMARKS = {
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-speedometer-firefox',
+        project: ALT_PROJECT,
         option: 'opt',
       },
       'raptor-speedometer-chromium': {
@@ -130,6 +137,7 @@ export const BENCHMARKS = {
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-stylebench-firefox',
+        project: ALT_PROJECT,
         option: 'opt',
       },
       'raptor-stylebench-chromium': {
@@ -156,6 +164,7 @@ export const BENCHMARKS = {
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-sunspider-firefox',
+        project: ALT_PROJECT,
         option: 'opt',
       },
       'raptor-sunspider-chromium': {
@@ -182,6 +191,7 @@ export const BENCHMARKS = {
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-webaudio-firefox',
+        project: ALT_PROJECT,
         option: 'opt',
       },
       'raptor-webaudio-chromium': {
@@ -208,6 +218,7 @@ export const BENCHMARKS = {
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-unity-webgl-firefox',
+        project: ALT_PROJECT,
         option: 'opt',
       },
       'raptor-unity-webgl-chromium': {
@@ -227,6 +238,7 @@ export const BENCHMARKS = {
         label: 'Firefox',
         frameworkId: TALOS_FRAMEWORK_ID,
         suite: 'displaylist_mutate',
+        project: ALT_PROJECT,
         option: 'opt',
         extraOptions: ['e10s', 'stylo'],
       },
@@ -240,6 +252,7 @@ export const BENCHMARKS = {
         label: 'Firefox',
         frameworkId: TALOS_FRAMEWORK_ID,
         suite: 'glvideo',
+        project: ALT_PROJECT,
         test: 'Mean tick time across 100 ticks: ',
         option: 'opt',
         extraOptions: ['e10s', 'stylo'],
@@ -254,6 +267,7 @@ export const BENCHMARKS = {
         label: 'Firefox',
         frameworkId: TALOS_FRAMEWORK_ID,
         suite: 'rasterflood_gradient',
+        project: ALT_PROJECT,
         option: 'opt',
         extraOptions: ['e10s', 'stylo'],
       },
@@ -267,6 +281,7 @@ export const BENCHMARKS = {
         label: 'Firefox',
         frameworkId: TALOS_FRAMEWORK_ID,
         suite: 'rasterflood_svg',
+        project: ALT_PROJECT,
         option: 'opt',
         extraOptions: ['e10s', 'stylo'],
       },
@@ -322,6 +337,7 @@ export const BENCHMARKS = {
         label: 'Firefox (tiering)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-godot-firefox',
+        project: ALT_PROJECT,
         option: 'opt',
       },
       'raptor-wasm-godot-baseline-firefox': {
@@ -329,6 +345,7 @@ export const BENCHMARKS = {
         label: 'Firefox (wasm-baseline)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-godot-baseline-firefox',
+        project: ALT_PROJECT,
         option: 'opt',
       },
       'raptor-wasm-godot-ion-firefox': {
@@ -336,6 +353,7 @@ export const BENCHMARKS = {
         label: 'Firefox (wasm-ion)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-godot-ion-firefox',
+        project: ALT_PROJECT,
         option: 'opt',
       },
       'raptor-wasm-godot-cranelift-firefox': {
@@ -371,6 +389,7 @@ export const BENCHMARKS = {
         label: 'SpiderMonkey',
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'ares6-sm',
+        project: ALT_PROJECT,
         option: 'opt',
       },
       'ares6-v8': {
@@ -391,6 +410,7 @@ export const BENCHMARKS = {
         label: 'Firefox',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-ares6-firefox',
+        project: ALT_PROJECT,
         option: 'opt',
       },
       'raptor-ares6-chromium': {
@@ -417,6 +437,7 @@ export const BENCHMARKS = {
         label: 'SpiderMonkey',
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'octane-sm',
+        project: ALT_PROJECT,
         option: 'opt',
       },
       'octane-v8': {
@@ -437,6 +458,7 @@ export const BENCHMARKS = {
         label: 'SpiderMonkey',
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'six-speed-sm',
+        project: ALT_PROJECT,
         option: 'opt',
       },
       'six-speed-v8': {
@@ -457,6 +479,7 @@ export const BENCHMARKS = {
         label: 'SpiderMonkey',
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'sunspider-sm',
+        project: ALT_PROJECT,
         option: 'opt',
       },
     },
@@ -470,8 +493,8 @@ export const BENCHMARKS = {
         label: 'SpiderMonkey',
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'web-tooling-benchmark-sm',
+        project: ALT_PROJECT,
         option: 'opt',
-        platform: 'linux64',
       },
       'web-tooling-benchmark-v8': {
         color: COLORS.chromium,
@@ -479,7 +502,6 @@ export const BENCHMARKS = {
         frameworkId: JSBENCH_FRAMEWORK_ID,
         suite: 'web-tooling-benchmark-v8',
         option: 'opt',
-        platform: 'linux64',
       },
     },
     labels: ['SpiderMonkey', 'Chromium v8'],
@@ -635,7 +657,11 @@ Object.keys(MOBILE_SITES).forEach((siteKey) => {
       suite: siteKey,
       application: appKey,
       option: 'opt',
+      extraOptions: ['cold'],
     };
+    if (!['fenix', 'chrome-m'].includes(appKey)) {
+      BENCHMARKS[bmKey].compare[appKey].project = ALT_PROJECT;
+    }
   });
   MOBILE_SUITES.push(bmKey);
 });
@@ -677,6 +703,7 @@ export const CONFIG = {
       label: 'Windows 10 64bit (2017 reference laptop)',
       platforms: ['windows10-64-ux', 'windows10-64-ref-hw-2017'],
       benchmarks: DEFAULT_SUITES,
+      project: PROJECT,
     },
     androidMotoG5: {
       label: 'Android (Moto G5)',
@@ -697,16 +724,18 @@ export const TIMERANGE_UPPER_LIMIT = 365;
 
 const processSeries = (seriesConfig, viewConfig) => {
   const result = [];
+  // We can have the project property configured on the view
+  const overwrittenProject = viewConfig.project ? { project: viewConfig.project } : {};
   // The Android benchmarks have a platform defined per series
   if (!seriesConfig.platform) {
     const { platforms } = viewConfig;
     platforms.forEach((pf) => {
-      const newSeriesConfig = { ...seriesConfig };
+      const newSeriesConfig = { ...seriesConfig, ...overwrittenProject };
       newSeriesConfig.platform = pf;
       result.push(newSeriesConfig);
     });
   } else {
-    result.push(seriesConfig);
+    result.push({ ...seriesConfig, ...overwrittenProject });
   }
   return result;
 };
