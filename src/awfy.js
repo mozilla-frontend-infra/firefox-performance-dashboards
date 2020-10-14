@@ -678,11 +678,6 @@ export const CONFIG = {
       platforms: ['windows10-64-ux', 'windows10-64-ref-hw-2017'],
       benchmarks: DEFAULT_SUITES,
     },
-    windows10Aarch64: {
-      label: 'Windows 10 ARM64',
-      platforms: ['windows10-aarch64'],
-      benchmarks: DEFAULT_SUITES,
-    },
     androidMotoG5: {
       label: 'Android (Moto G5)',
       platforms: ['android-hw-g5-7-0-arm7-api-16', 'android-hw-g5-7-0-arm7-api-16-shippable'],
