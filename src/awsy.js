@@ -247,11 +247,6 @@ export const CONFIG = {
       platforms: ['windows10-64-shippable-qr'],
       benchmarks: DEFAULT_SUITES,
     },
-    windows10Aarch64: {
-      label: 'Windows 10 ARM64',
-      platforms: ['windows10-aarch64'],
-      benchmarks: DEFAULT_SUITES,
-    },
     android: {
       label: 'Android',
       platforms: ['android-em-4-3-armv7-api16'],
