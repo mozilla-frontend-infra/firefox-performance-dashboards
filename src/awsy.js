@@ -247,11 +247,6 @@ export const CONFIG = {
       platforms: ['windows10-64-shippable-qr'],
       benchmarks: DEFAULT_SUITES,
     },
-    android: {
-      label: 'Android',
-      platforms: ['android-em-4-3-armv7-api16'],
-      benchmarks: ['Resident Memory'],
-    },
   },
 };
 
