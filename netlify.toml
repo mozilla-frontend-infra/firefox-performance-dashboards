@@ -1,3 +1,6 @@
+[context.http3.environment]
+  DASHBOARD = "h3"
+
 [[redirects]]
   from = "/*"
   to = "/"
