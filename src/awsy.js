@@ -258,11 +258,6 @@ export const CONFIG = {
       platforms: ['windows10-64-shippable'],
       benchmarks: DEFAULT_SUITES,
     },
-    win10Qr: {
-      label: 'Windows 10 64bit Qr',
-      platforms: ['windows10-64-shippable-qr'],
-      benchmarks: DEFAULT_SUITES,
-    },
   },
 };
 
