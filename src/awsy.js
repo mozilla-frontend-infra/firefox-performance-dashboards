@@ -6,16 +6,27 @@ const AWSY_FRAMEWORK_ID = 4;
 const COLORS = {
   chromium: '#4285F4',
   firefox: '#e55525',
+  'firefox-webrender': '#e5ca0f',
+  'firefox-fission': '#92110c',
 };
 
 export const BENCHMARKS = {
   'Base Content Explicit': {
     compare: {
-      foo: {
+      'base-content-explicit-firefox': {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: AWSY_FRAMEWORK_ID,
         suite: 'Base Content Explicit',
+        project: ALT_PROJECT,
+        option: 'opt',
+      },
+      'base-content-explicit-firefox-webrender': {
+        color: COLORS['firefox-webrender'],
+        label: 'Firefox-Webrender',
+        frameworkId: AWSY_FRAMEWORK_ID,
+        suite: 'Base Content Explicit',
+        platformSuffix: '-qr',
         project: ALT_PROJECT,
         option: 'opt',
       },
@@ -25,11 +36,20 @@ export const BENCHMARKS = {
   },
   'Base Content Heap Unclassified': {
     compare: {
-      foo: {
+      'base-content-heap-unclassified-firefox': {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: AWSY_FRAMEWORK_ID,
         suite: 'Base Content Heap Unclassified',
+        project: ALT_PROJECT,
+        option: 'opt',
+      },
+      'base-content-heap-unclassified-firefox-webrender': {
+        color: COLORS['firefox-webrender'],
+        label: 'Firefox-Webrender',
+        frameworkId: AWSY_FRAMEWORK_ID,
+        suite: 'Base Content Heap Unclassified',
+        platformSuffix: '-qr',
         project: ALT_PROJECT,
         option: 'opt',
       },
@@ -39,11 +59,20 @@ export const BENCHMARKS = {
   },
   'Base Content JS': {
     compare: {
-      foo: {
+      'base-content-js-firefox': {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: AWSY_FRAMEWORK_ID,
         suite: 'Base Content JS',
+        project: ALT_PROJECT,
+        option: 'opt',
+      },
+      'base-content-js-firefox-webrender': {
+        color: COLORS['firefox-webrender'],
+        label: 'Firefox-Webrender',
+        frameworkId: AWSY_FRAMEWORK_ID,
+        suite: 'Base Content JS',
+        platformSuffix: '-qr',
         project: ALT_PROJECT,
         option: 'opt',
       },
@@ -53,11 +82,20 @@ export const BENCHMARKS = {
   },
   'Base Content Resident Unique Memory': {
     compare: {
-      foo: {
+      'base-content-unique-resident-firefox': {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: AWSY_FRAMEWORK_ID,
         suite: 'Base Content Resident Unique Memory',
+        project: ALT_PROJECT,
+        option: 'opt',
+      },
+      'base-content-unique-resident-firefox-webrender': {
+        color: COLORS['firefox-webrender'],
+        label: 'Firefox-Webrender',
+        frameworkId: AWSY_FRAMEWORK_ID,
+        suite: 'Base Content Resident Unique Memory',
+        platformSuffix: '-qr',
         project: ALT_PROJECT,
         option: 'opt',
       },
@@ -67,11 +105,20 @@ export const BENCHMARKS = {
   },
   'Explicit Memory': {
     compare: {
-      foo: {
+      'explicit-memory-firefox': {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: AWSY_FRAMEWORK_ID,
         suite: 'Explicit Memory',
+        project: ALT_PROJECT,
+        option: 'opt',
+      },
+      'explicit-memory-firefox-webrender': {
+        color: COLORS['firefox-webrender'],
+        label: 'Firefox-Webrender',
+        frameworkId: AWSY_FRAMEWORK_ID,
+        suite: 'Explicit Memory',
+        platformSuffix: '-qr',
         project: ALT_PROJECT,
         option: 'opt',
       },
@@ -81,12 +128,21 @@ export const BENCHMARKS = {
   },
   'Heap Unclassified': {
     compare: {
-      foo: {
+      'heap-unclassified-firefox': {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: AWSY_FRAMEWORK_ID,
         suite: 'Heap Unclassified',
         project: ALT_PROJECT,
+        option: 'opt',
+      },
+      'heap-unclassified-firefox-webrender': {
+        color: COLORS['firefox-webrender'],
+        label: 'Firefox-Webrender',
+        frameworkId: AWSY_FRAMEWORK_ID,
+        suite: 'Heap Unclassified',
+        project: ALT_PROJECT,
+        platformSuffix: '-qr',
         option: 'opt',
       },
     },
@@ -95,11 +151,20 @@ export const BENCHMARKS = {
   },
   Images: {
     compare: {
-      foo: {
+      'images-firefox': {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: AWSY_FRAMEWORK_ID,
         suite: 'Images',
+        project: ALT_PROJECT,
+        option: 'opt',
+      },
+      'images-firefox-webrender': {
+        color: COLORS['firefox-webrender'],
+        label: 'Firefox-Webrender',
+        frameworkId: AWSY_FRAMEWORK_ID,
+        suite: 'Images',
+        platformSuffix: '-qr',
         project: ALT_PROJECT,
         option: 'opt',
       },
@@ -109,11 +174,20 @@ export const BENCHMARKS = {
   },
   JS: {
     compare: {
-      foo: {
+      'js-firefox': {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: AWSY_FRAMEWORK_ID,
         suite: 'JS',
+        project: ALT_PROJECT,
+        option: 'opt',
+      },
+      'js-firefox-webrender': {
+        color: COLORS['firefox-webrender'],
+        label: 'Firefox-Webrender',
+        frameworkId: AWSY_FRAMEWORK_ID,
+        suite: 'JS',
+        platformSuffix: '-qr',
         project: ALT_PROJECT,
         option: 'opt',
       },
@@ -123,11 +197,20 @@ export const BENCHMARKS = {
   },
   'Resident Memory': {
     compare: {
-      foo: {
+      'resident-memory-firefox': {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: AWSY_FRAMEWORK_ID,
         suite: 'Resident Memory',
+        project: ALT_PROJECT,
+        option: 'opt',
+      },
+      'resident-memory-firefox-webrender': {
+        color: COLORS['firefox-webrender'],
+        label: 'Firefox-Webrender',
+        frameworkId: AWSY_FRAMEWORK_ID,
+        suite: 'Resident Memory',
+        platformSuffix: '-qr',
         project: ALT_PROJECT,
         option: 'opt',
       },
@@ -137,7 +220,7 @@ export const BENCHMARKS = {
   },
   'Explicit Memory Tp6': {
     compare: {
-      foo: {
+      'explicit-memory-tp6-firefox': {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: AWSY_FRAMEWORK_ID,
@@ -146,13 +229,32 @@ export const BENCHMARKS = {
         option: 'opt',
         extraOptions: ['tp6'],
       },
+      'explicit-memory-tp6-firefox-webrender': {
+        color: COLORS['firefox-webrender'],
+        label: 'Firefox-Webrender',
+        frameworkId: AWSY_FRAMEWORK_ID,
+        suite: 'Explicit Memory',
+        platformSuffix: '-qr',
+        project: ALT_PROJECT,
+        option: 'opt',
+        extraOptions: ['tp6'],
+      },
+      'explicit-memory-tp6-firefox-fission': {
+        color: COLORS['firefox-fission'],
+        label: 'Firefox-Fission',
+        frameworkId: AWSY_FRAMEWORK_ID,
+        suite: 'Explicit Memory',
+        platformSuffix: '-qr',
+        option: 'opt',
+        extraOptions: ['fission', 'tp6'],
+      },
     },
     label: 'Explicit Memory Tp6',
     yLabel: 'Bytes',
   },
   'Heap Unclassified Tp6': {
     compare: {
-      foo: {
+      'heap-unclassified-tp6-firefox': {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: AWSY_FRAMEWORK_ID,
@@ -161,13 +263,32 @@ export const BENCHMARKS = {
         option: 'opt',
         extraOptions: ['tp6'],
       },
+      'heap-unclassified-tp6-firefox-webrender': {
+        color: COLORS['firefox-webrender'],
+        label: 'Firefox-Webrender',
+        frameworkId: AWSY_FRAMEWORK_ID,
+        suite: 'Heap Unclassified',
+        platformSuffix: '-qr',
+        project: ALT_PROJECT,
+        option: 'opt',
+        extraOptions: ['tp6'],
+      },
+      'heap-unclassified-tp6-firefox-fission': {
+        color: COLORS['firefox-fission'],
+        label: 'Firefox-Fission',
+        frameworkId: AWSY_FRAMEWORK_ID,
+        suite: 'Heap Unclassified',
+        platformSuffix: '-qr',
+        option: 'opt',
+        extraOptions: ['fission', 'tp6'],
+      },
     },
     label: 'Heap Unclassified Tp6',
     yLabel: 'Bytes',
   },
   'Images Tp6': {
     compare: {
-      foo: {
+      'images-tp6-firefox': {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: AWSY_FRAMEWORK_ID,
@@ -176,13 +297,32 @@ export const BENCHMARKS = {
         option: 'opt',
         extraOptions: ['tp6'],
       },
+      'images-tp6-firefox-webrender': {
+        color: COLORS['firefox-webrender'],
+        label: 'Firefox-Webrender',
+        frameworkId: AWSY_FRAMEWORK_ID,
+        suite: 'Images',
+        platformSuffix: '-qr',
+        project: ALT_PROJECT,
+        option: 'opt',
+        extraOptions: ['tp6'],
+      },
+      'images-tp6-firefox-fission': {
+        color: COLORS['firefox-fission'],
+        label: 'Firefox-Fission',
+        frameworkId: AWSY_FRAMEWORK_ID,
+        suite: 'Images',
+        platformSuffix: '-qr',
+        option: 'opt',
+        extraOptions: ['fission', 'tp6'],
+      },
     },
     label: 'Images Tp6',
     yLabel: 'Bytes',
   },
   'JS Tp6': {
     compare: {
-      foo: {
+      'js-tp6-firefox': {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: AWSY_FRAMEWORK_ID,
@@ -191,13 +331,32 @@ export const BENCHMARKS = {
         option: 'opt',
         extraOptions: ['tp6'],
       },
+      'js-tp6-firefox-webrender': {
+        color: COLORS['firefox-webrender'],
+        label: 'Firefox-Webrender',
+        frameworkId: AWSY_FRAMEWORK_ID,
+        suite: 'JS',
+        platformSuffix: '-qr',
+        project: ALT_PROJECT,
+        option: 'opt',
+        extraOptions: ['tp6'],
+      },
+      'js-tp6-firefox-fission': {
+        color: COLORS['firefox-fission'],
+        label: 'Firefox-Fission',
+        frameworkId: AWSY_FRAMEWORK_ID,
+        suite: 'JS',
+        platformSuffix: '-qr',
+        option: 'opt',
+        extraOptions: ['fission', 'tp6'],
+      },
     },
     label: 'JS Tp6',
     yLabel: 'Bytes',
   },
   'Resident Memory Tp6': {
     compare: {
-      foo: {
+      'resident-memory-tp6-firefox': {
         color: COLORS.firefox,
         label: 'Firefox',
         frameworkId: AWSY_FRAMEWORK_ID,
@@ -205,6 +364,25 @@ export const BENCHMARKS = {
         project: ALT_PROJECT,
         option: 'opt',
         extraOptions: ['tp6'],
+      },
+      'resident-memory-tp6-firefox-webrender': {
+        color: COLORS['firefox-webrender'],
+        label: 'Firefox-Webrender',
+        frameworkId: AWSY_FRAMEWORK_ID,
+        suite: 'Resident Memory',
+        platformSuffix: '-qr',
+        project: ALT_PROJECT,
+        option: 'opt',
+        extraOptions: ['tp6'],
+      },
+      'resident-memory-tp6-firefox-fission': {
+        color: COLORS['firefox-fission'],
+        label: 'Firefox-Fission',
+        frameworkId: AWSY_FRAMEWORK_ID,
+        suite: 'Resident Memory',
+        platformSuffix: '-qr',
+        option: 'opt',
+        extraOptions: ['fission', 'tp6'],
       },
     },
     label: 'Resident Memory Tp6',
