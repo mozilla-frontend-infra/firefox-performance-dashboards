@@ -1,4 +1,5 @@
 import { ALT_PROJECT } from './utils/perfherder';
+import { queryInfoGen } from './config-utils';
 
 /* eslint-disable no-unused-vars */
 const AWSY_FRAMEWORK_ID = 4;
@@ -443,61 +444,9 @@ export const CONFIG = {
 export const TIMERANGE_UPPER_LIMIT = 365;
 
 
-const processSeries = (seriesConfig, viewConfig) => {
-  const result = [];
-  // The Android benchmarks have a platform defined per series
-  if (!seriesConfig.platform) {
-    const { platforms } = viewConfig;
-    platforms.forEach((pf) => {
-      const newSeriesConfig = { ...seriesConfig };
-      // Chrome jobs only run on -shippable platforms
-      newSeriesConfig.platform = seriesConfig.suite.endsWith('-chromium') ? `${pf}-shippable` : pf;
-      result.push(newSeriesConfig);
-    });
-  } else {
-    result.push(seriesConfig);
-  }
-  return result;
-};
-
 // Given a view configuration return a data structure with the data
 // structure needed to query Treeherder
-export const queryInfo = (viewConfig, benchmark) => {
-  const info = {};
-  const { benchmarks } = viewConfig;
-  if (benchmark === 'overview' && benchmarks) {
-    benchmarks.forEach((configUID) => {
-      info[configUID] = {
-        compare: [],
-        benchmarkUID: configUID,
-        includeSubtests: false,
-        label: BENCHMARKS[configUID].label,
-        yLabel: BENCHMARKS[configUID].yLabel,
-      };
-      // We need to set the platform for fetching data from Treeherder
-      Object.values(BENCHMARKS[configUID].compare).forEach((seriesConfig) => {
-        const oneOrMoreSeries = processSeries(seriesConfig, viewConfig);
-        info[configUID].compare = info[configUID].compare.concat(oneOrMoreSeries);
-      });
-    });
-  } else {
-    Object.values(BENCHMARKS[benchmark].compare).forEach((seriesConfig) => {
-      if (!info[benchmark]) {
-        info[benchmark] = {
-          compare: [],
-          benchmarkUID: benchmark,
-          includeSubtests: true,
-          label: BENCHMARKS[benchmark].label,
-          yLabel: BENCHMARKS[benchmark].yLabel,
-        };
-      }
-      const oneOrMoreSeries = processSeries(seriesConfig, viewConfig);
-      info[benchmark].compare = info[benchmark].compare.concat(oneOrMoreSeries);
-    });
-  }
-
-  return info;
-};
+export const queryInfo = (viewConfig, benchmark) => queryInfoGen(BENCHMARKS, viewConfig, benchmark);
 
 export default {
   queryInfo, BENCHMARKS, CONFIG, TIMERANGE_UPPER_LIMIT,
