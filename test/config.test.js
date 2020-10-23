@@ -1,4 +1,5 @@
 import { BENCHMARKS, CONFIG, queryInfo } from '../src/config';
+import { ALT_PROJECT } from '../src/utils/perfherder';
 
 // eslint-disable-next-line jest/expect-expect
 it('Verify all benchmarks are defined', () => {
@@ -63,5 +64,51 @@ it('Query info', () => {
       label: 'WebAssembly Embenchen',
       yLabel: undefined,
     },
+  });
+});
+
+
+it('Query info - suite with explicit project and platformSuffix ', () => {
+  const benchmarks = queryInfo(CONFIG.views.linux64, 'rasterflood_svg');
+  expect(benchmarks).toStrictEqual({
+    rasterflood_svg:
+          {
+            benchmarkUID: 'rasterflood_svg',
+            compare: [{
+              color: '#FFA056',
+              label: 'Firefox',
+              frameworkId: 1,
+              suite: 'rasterflood_svg',
+              project: ALT_PROJECT,
+              option: 'opt',
+              platform: 'linux64-shippable',
+              extraOptions: ['e10s', 'stylo'],
+            },
+            {
+              color: '#e5ca0f',
+              label: 'Firefox-Webrender',
+              frameworkId: 1,
+              suite: 'rasterflood_svg',
+              platformSuffix: '-qr',
+              project: ALT_PROJECT,
+              option: 'opt',
+              platform: 'linux64-shippable-qr',
+              extraOptions: ['e10s', 'stylo'],
+            },
+            {
+              color: '#92110c',
+              label: 'Firefox-Fission',
+              frameworkId: 1,
+              suite: 'rasterflood_svg',
+              platformSuffix: '-qr',
+              option: 'opt',
+              platform: 'linux64-shippable-qr',
+              extraOptions: ['e10s', 'fission', 'stylo'],
+            },
+            ],
+            includeSubtests: true,
+            label: 'Rasterflood SVG',
+            yLabel: undefined,
+          },
   });
 });
