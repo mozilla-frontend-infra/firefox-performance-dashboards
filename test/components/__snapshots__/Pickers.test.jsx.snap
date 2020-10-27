@@ -61,23 +61,68 @@ exports[`renders correctly 1`] = `
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
           data-shrink="true"
         >
-          Benchmark
+          Category
         </label>
         <div
           class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
         >
           <div
             aria-haspopup="listbox"
-            aria-labelledby=" mui-component-select-benchmark"
+            aria-labelledby=" mui-component-select-category"
             class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
-            id="mui-component-select-benchmark"
+            id="mui-component-select-category"
+            role="button"
+            tabindex="0"
+          >
+            Benchmarks
+          </div>
+          <input
+            name="category"
+            type="hidden"
+            value="benchmarks"
+          />
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSelect-icon"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </form>
+    <form
+      autocomplete="off"
+      class="Picker-root-2"
+    >
+      <div
+        class="MuiFormControl-root MuiTextField-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          data-shrink="true"
+        >
+          Results
+        </label>
+        <div
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+        >
+          <div
+            aria-haspopup="listbox"
+            aria-labelledby=" mui-component-select-results"
+            class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+            id="mui-component-select-results"
             role="button"
             tabindex="0"
           >
             Overview
           </div>
           <input
-            name="benchmark"
+            name="results"
             type="hidden"
             value="overview"
           />
