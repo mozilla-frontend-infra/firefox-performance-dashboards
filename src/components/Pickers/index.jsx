@@ -14,7 +14,7 @@ const styles = () => ({
 });
 
 const Pickers = ({
-  classes, benchmark, onChange, platform, dayRange,
+  classes, benchmark, category, onChange, platform, dayRange,
 }) => (
   <div className={classes.root}>
     <Picker
@@ -31,13 +31,26 @@ const Pickers = ({
       }
     />
     <Picker
+      key="Category selection"
+      identifier="category"
+      topLabel="Category"
+      onSelection={onChange}
+      selectedValue={category}
+      options={
+            Object.entries(CONFIG.views[platform].benchmarks).map(
+              ([catKey, catValue]) => ({ value: catKey, label: catValue.label }),
+            )
+        }
+    />
+    {CONFIG.views[platform].benchmarks[category] && (
+    <Picker
       key="Benchmark selection"
-      identifier="benchmark"
-      topLabel="Benchmark"
+      identifier="results"
+      topLabel="Results"
       onSelection={onChange}
       selectedValue={benchmark}
       options={
-        CONFIG.views[platform].benchmarks.sort().reduce((res, benchmarkKey) => {
+        CONFIG.views[platform].benchmarks[category].suites.sort().reduce((res, benchmarkKey) => {
           res.push({
             value: benchmarkKey,
             label: BENCHMARKS[benchmarkKey].label,
@@ -46,6 +59,7 @@ const Pickers = ({
         }, [{ value: 'overview', label: 'Overview' }])
       }
     />
+    ) }
     <Picker
       key="Time range"
       identifier="numDays"

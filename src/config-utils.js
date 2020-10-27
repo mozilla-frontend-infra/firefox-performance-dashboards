@@ -19,24 +19,26 @@ export const processSeries = (seriesConfig, viewConfig) => {
 
 // Given a view configuration return a data structure with the data
 // structure needed to query Treeherder
-export const queryInfoGen = (allBenchmarks, viewConfig, benchmark) => {
+export const queryInfoGen = (allBenchmarks, viewConfig, benchmark, category) => {
   const info = {};
   const { benchmarks } = viewConfig;
   if (benchmark === 'overview' && allBenchmarks) {
-    benchmarks.forEach((configUID) => {
-      info[configUID] = {
-        compare: [],
-        benchmarkUID: configUID,
-        includeSubtests: false,
-        label: allBenchmarks[configUID].label,
-        yLabel: allBenchmarks[configUID].yLabel,
-      };
-      // We need to set the platform for fetching data from Treeherder
-      Object.values(allBenchmarks[configUID].compare).forEach((seriesConfig) => {
-        const oneOrMoreSeries = processSeries(seriesConfig, viewConfig);
-        info[configUID].compare = info[configUID].compare.concat(oneOrMoreSeries);
+    if (category in benchmarks) {
+      benchmarks[category].suites.forEach((configUID) => {
+        info[configUID] = {
+          compare: [],
+          benchmarkUID: configUID,
+          includeSubtests: false,
+          label: allBenchmarks[configUID].label,
+          yLabel: allBenchmarks[configUID].yLabel,
+        };
+        // We need to set the platform for fetching data from Treeherder
+        Object.values(allBenchmarks[configUID].compare).forEach((seriesConfig) => {
+          const oneOrMoreSeries = processSeries(seriesConfig, viewConfig);
+          info[configUID].compare = info[configUID].compare.concat(oneOrMoreSeries);
+        });
       });
-    });
+    }
   } else {
     Object.values(allBenchmarks[benchmark].compare).forEach((seriesConfig) => {
       if (!info[benchmark]) {

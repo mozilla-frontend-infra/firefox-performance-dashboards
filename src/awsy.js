@@ -391,26 +391,31 @@ export const BENCHMARKS = {
   },
 };
 
-const DEFAULT_SUITES = [
-  'Base Content Explicit',
-  'Base Content Heap Unclassified',
-  'Base Content JS',
-  'Base Content Resident Unique Memory',
-  'Explicit Memory',
-  'Heap Unclassified',
-  'Images',
-  'JS',
-  'Resident Memory',
-  'Explicit Memory Tp6',
-  'Heap Unclassified Tp6',
-  'Images Tp6',
-  'JS Tp6',
-  'Resident Memory Tp6',
-];
+export const DEFAULT_CATEGORIES = {
+  memory: {
+    suites: [
+      'Base Content Explicit',
+      'Base Content Heap Unclassified',
+      'Base Content JS',
+      'Base Content Resident Unique Memory',
+      'Explicit Memory',
+      'Heap Unclassified',
+      'Images',
+      'JS',
+      'Resident Memory',
+      'Explicit Memory Tp6',
+      'Heap Unclassified Tp6',
+      'Images Tp6',
+      'JS Tp6',
+      'Resident Memory Tp6',
+    ],
+    label: 'Memory',
+  },
+};
 
 export const CONFIG = {
   default: {
-    landingPath: '/win10/overview?numDays=60',
+    landingPath: '/win10/memory/overview?numDays=60',
     dayRange: 60, // # days
     colors: [COLORS.firefox, COLORS.chromium],
     labels: ['Firefox', 'Chromium'],
@@ -420,22 +425,22 @@ export const CONFIG = {
     linux64: {
       label: 'Linux 64bit',
       platforms: ['linux1804-64-shippable'],
-      benchmarks: DEFAULT_SUITES,
+      benchmarks: DEFAULT_CATEGORIES,
     },
     mac: {
       label: 'Mac OS X',
       platforms: ['macosx1014-64-shippable'],
-      benchmarks: DEFAULT_SUITES,
+      benchmarks: DEFAULT_CATEGORIES,
     },
     win7: {
       label: 'Windows 7 32bit',
       platforms: ['windows7-32-shippable'],
-      benchmarks: DEFAULT_SUITES,
+      benchmarks: DEFAULT_CATEGORIES,
     },
     win10: {
       label: 'Windows 10 64bit',
       platforms: ['windows10-64-shippable'],
-      benchmarks: DEFAULT_SUITES,
+      benchmarks: DEFAULT_CATEGORIES,
     },
   },
 };
@@ -446,7 +451,8 @@ export const TIMERANGE_UPPER_LIMIT = 365;
 
 // Given a view configuration return a data structure with the data
 // structure needed to query Treeherder
-export const queryInfo = (viewConfig, benchmark) => queryInfoGen(BENCHMARKS, viewConfig, benchmark);
+export const queryInfo = (viewConfig, benchmark, category) => queryInfoGen(BENCHMARKS, viewConfig,
+  benchmark, category);
 
 export default {
   queryInfo, BENCHMARKS, CONFIG, TIMERANGE_UPPER_LIMIT,

@@ -11,14 +11,14 @@ const Router = () => (
     <Switch>
       <Redirect from="/win10Laptops/:benchmark" to="/win10ref2017/:benchmark" />
       <Route
-        path="/:platform/:benchmark"
+        path="/:platform/:category/:benchmark"
         render={({ match }) => {
-          const { platform, benchmark } = match.params;
+          const { platform, benchmark, category } = match.params;
           // eslint-disable-next-line no-restricted-globals
           const searchParams = new URLSearchParams(location.search);
           const numDays = searchParams.get('numDays');
           const dayRange = numDays ? Math.round(numDays) : CONFIG.default.dayRange;
-          if (!validCombination(platform, benchmark, dayRange)) {
+          if (!validCombination(platform, benchmark, dayRange, category)) {
             return <Redirect to={CONFIG.default.landingPath} />;
           }
           return (
@@ -27,6 +27,7 @@ const Router = () => (
               viewPlatform={platform}
               benchmark={benchmark}
               dayRange={dayRange}
+              category={category}
             />
           );
         }}

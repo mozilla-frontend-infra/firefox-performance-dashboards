@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core';
 import PropTypes from 'prop-types';
+import Loadable from 'react-loadable';
 import Footer from '../Footer';
 import Navigation from '../Navigation';
 import PerfherderGraph from '../PerfherderGraph';
 import { queryInfo } from '../../config';
+import Loading from '../Loading';
 
 const sortByLabel = (a, b) => (a.label <= b.label ? -1 : 1);
 
@@ -14,22 +16,31 @@ const styles = () => ({
   },
 });
 
+const LoadableEmptyState = Loadable({
+  loader: () => import(/* webpackChunkName: 'EmptyState' */ '../EmptyState'),
+  loading: Loading,
+});
+
 // eslint-disable-next-line
 class App extends Component {
   render() {
     const {
-      classes, benchmark, viewConfig, viewPlatform, dayRange,
+      classes, category, benchmark, viewConfig, viewPlatform, dayRange,
     } = this.props;
-    const benchmarks = queryInfo(viewConfig, benchmark);
+    const benchmarks = queryInfo(viewConfig, benchmark, category);
 
     return (
       <div className={classes.container}>
+        {(Object.values(benchmarks).length !== 0)
+        && (
         <Navigation
           platform={viewPlatform}
+          category={category}
           benchmark={benchmark}
           dayRange={dayRange}
         />
-        {Object.values(benchmarks).sort(sortByLabel).map(({
+        )}
+        {Object.values(benchmarks).length ? Object.values(benchmarks).sort(sortByLabel).map(({
           benchmarkUID, compare, label, includeSubtests, yLabel,
         }) => (
           <div key={label}>
@@ -42,7 +53,7 @@ class App extends Component {
               yLabel={yLabel}
             />
           </div>
-        ))}
+        )) : <LoadableEmptyState text="Category not available for the selected Platform" />}
         <Footer />
       </div>
     );
@@ -55,7 +66,7 @@ App.propTypes = {
   viewConfig: PropTypes.shape({
     label: PropTypes.string.isRequired,
     platform: PropTypes.arrayOf(PropTypes.string),
-    benchmarks: PropTypes.arrayOf(PropTypes.string).isRequired,
+    benchmarks: PropTypes.shape({}).isRequired,
   }).isRequired,
   viewPlatform: PropTypes.string.isRequired,
   dayRange: PropTypes.number.isRequired,
