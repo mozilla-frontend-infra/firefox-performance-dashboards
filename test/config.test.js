@@ -142,7 +142,7 @@ it('Query info - suite with explicit project and platformSuffix ', () => {
           project: ALT_PROJECT,
           option: 'opt',
           platform: 'linux64-shippable-qr',
-          extraOptions: ['e10s', 'stylo'],
+          extraOptions: ['e10s', 'stylo', 'webrender'],
         },
         {
           color: '#e5ca0f',
@@ -153,7 +153,7 @@ it('Query info - suite with explicit project and platformSuffix ', () => {
           project: ALT_PROJECT,
           option: 'opt',
           platform: 'linux1804-64-shippable-qr',
-          extraOptions: ['e10s', 'stylo'],
+          extraOptions: ['e10s', 'stylo', 'webrender'],
         },
         {
           color: '#92110c',
@@ -163,7 +163,7 @@ it('Query info - suite with explicit project and platformSuffix ', () => {
           platformSuffix: '-qr',
           option: 'opt',
           platform: 'linux64-shippable-qr',
-          extraOptions: ['e10s', 'fission', 'stylo'],
+          extraOptions: ['e10s', 'fission', 'stylo', 'webrender'],
         },
         {
           color: '#92110c',
@@ -173,7 +173,7 @@ it('Query info - suite with explicit project and platformSuffix ', () => {
           platformSuffix: '-qr',
           option: 'opt',
           platform: 'linux1804-64-shippable-qr',
-          extraOptions: ['e10s', 'fission', 'stylo'],
+          extraOptions: ['e10s', 'fission', 'stylo', 'webrender'],
         },
         ],
         includeSubtests: true,
