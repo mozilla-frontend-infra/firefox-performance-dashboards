@@ -6,10 +6,14 @@ import App from '../App';
 import { CONFIG } from '../../config';
 import validCombination from '../../utils/validCombination';
 
+
 const Router = () => (
   <BrowserRouter>
     <Switch>
       <Redirect from="/win10Laptops/:benchmark" to="/win10ref2017/:benchmark" />
+      <Redirect exact from="/:platform/tp6-:site" to="/:platform/page-load/tp6-:site" />
+      {(process.env.DASHBOARD === 'awsy') && <Redirect exact from="/:platform/:benchmark" to="/:platform/memory/:benchmark" /> }
+      {(process.env.DASHBOARD === 'awfy') && <Redirect exact from="/:platform/:benchmark" to="/:platform/benchmarks/:benchmark" /> }
       <Route
         path="/:platform/:category/:benchmark"
         render={({ match }) => {
