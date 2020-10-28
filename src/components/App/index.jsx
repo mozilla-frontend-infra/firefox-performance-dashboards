@@ -28,7 +28,6 @@ class App extends Component {
       classes, category, benchmark, viewConfig, viewPlatform, dayRange,
     } = this.props;
     const benchmarks = queryInfo(viewConfig, benchmark, category);
-
     return (
       <div className={classes.container}>
         {(Object.values(benchmarks).length !== 0)
@@ -66,7 +65,7 @@ App.propTypes = {
   viewConfig: PropTypes.shape({
     label: PropTypes.string.isRequired,
     platform: PropTypes.arrayOf(PropTypes.string),
-    benchmarks: PropTypes.shape({}).isRequired,
+    categories: PropTypes.shape({}).isRequired,
   }).isRequired,
   viewPlatform: PropTypes.string.isRequired,
   dayRange: PropTypes.number.isRequired,

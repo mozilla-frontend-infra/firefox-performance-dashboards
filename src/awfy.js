@@ -9,6 +9,7 @@ const BROWSERTIME_FRAMEWORK_ID = 13;
 
 const COLORS = {
   chrome: '#0B84A5',
+  'chrome-m': '#0B84A5',
   chromium: '#9DD866',
   fennec: '#9DD866',
   geckoview: '#6F4E7C',
@@ -1020,39 +1021,39 @@ export const CONFIG = {
     linux64: {
       label: 'Linux 64bit',
       platforms: ['linux64-shippable', 'linux1804-64-shippable'],
-      benchmarks: LINUX_CATEGORIES,
+      categories: LINUX_CATEGORIES,
     },
     mac: {
       label: 'Mac OS X',
       platforms: ['macosx1014-64-shippable'],
-      benchmarks: DEFAULT_CATEGORIES,
+      categories: DEFAULT_CATEGORIES,
     },
     win7: {
       label: 'Windows 7 32bit',
       platforms: ['windows7-32-shippable'],
-      benchmarks: DEFAULT_CATEGORIES,
+      categories: DEFAULT_CATEGORIES,
     },
     win10: {
       label: 'Windows 10 64bit',
       platforms: ['windows10-64-shippable'],
-      benchmarks: DEFAULT_CATEGORIES,
+      categories: DEFAULT_CATEGORIES,
     },
 
     win10ref2017: {
       label: 'Windows 10 64bit (2017 reference laptop)',
       platforms: ['windows10-64-ux', 'windows10-64-ref-hw-2017'],
-      benchmarks: DEFAULT_CATEGORIES,
+      categories: DEFAULT_CATEGORIES,
       project: PROJECT,
     },
     androidMotoG5: {
       label: 'Android (Moto G5)',
       platforms: ['android-hw-g5-7-0-arm7-api-16', 'android-hw-g5-7-0-arm7-api-16-shippable'],
-      benchmarks: MOBILE_CATEGORIES,
+      categories: MOBILE_CATEGORIES,
     },
     androidPixel2: {
       label: 'Android (Pixel 2)',
       platforms: ['android-hw-p2-8-0-android-aarch64', 'android-hw-p2-8-0-android-aarch64-shippable'],
-      benchmarks: MOBILE_CATEGORIES,
+      categories: MOBILE_CATEGORIES,
     },
   },
 };

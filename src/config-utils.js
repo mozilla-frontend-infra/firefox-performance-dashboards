@@ -21,10 +21,10 @@ export const processSeries = (seriesConfig, viewConfig) => {
 // structure needed to query Treeherder
 export const queryInfoGen = (allBenchmarks, viewConfig, benchmark, category) => {
   const info = {};
-  const { benchmarks } = viewConfig;
+  const { categories } = viewConfig;
   if (benchmark === 'overview' && allBenchmarks) {
-    if (category in benchmarks) {
-      benchmarks[category].suites.forEach((configUID) => {
+    if (category in categories) {
+      categories[category].suites.forEach((configUID) => {
         info[configUID] = {
           compare: [],
           benchmarkUID: configUID,

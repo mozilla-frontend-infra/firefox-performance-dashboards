@@ -37,12 +37,12 @@ const Pickers = ({
       onSelection={onChange}
       selectedValue={category}
       options={
-            Object.entries(CONFIG.views[platform].benchmarks).map(
+            Object.entries(CONFIG.views[platform].categories).map(
               ([catKey, catValue]) => ({ value: catKey, label: catValue.label }),
             )
         }
     />
-    {CONFIG.views[platform].benchmarks[category] && (
+    {CONFIG.views[platform].categories[category] && (
     <Picker
       key="Benchmark selection"
       identifier="results"
@@ -50,7 +50,7 @@ const Pickers = ({
       onSelection={onChange}
       selectedValue={benchmark}
       options={
-        CONFIG.views[platform].benchmarks[category].suites.sort().reduce((res, benchmarkKey) => {
+        CONFIG.views[platform].categories[category].suites.sort().reduce((res, benchmarkKey) => {
           res.push({
             value: benchmarkKey,
             label: BENCHMARKS[benchmarkKey].label,

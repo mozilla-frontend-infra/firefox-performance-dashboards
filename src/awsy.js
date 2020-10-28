@@ -425,22 +425,22 @@ export const CONFIG = {
     linux64: {
       label: 'Linux 64bit',
       platforms: ['linux1804-64-shippable'],
-      benchmarks: DEFAULT_CATEGORIES,
+      categories: DEFAULT_CATEGORIES,
     },
     mac: {
       label: 'Mac OS X',
       platforms: ['macosx1014-64-shippable'],
-      benchmarks: DEFAULT_CATEGORIES,
+      categories: DEFAULT_CATEGORIES,
     },
     win7: {
       label: 'Windows 7 32bit',
       platforms: ['windows7-32-shippable'],
-      benchmarks: DEFAULT_CATEGORIES,
+      categories: DEFAULT_CATEGORIES,
     },
     win10: {
       label: 'Windows 10 64bit',
       platforms: ['windows10-64-shippable'],
-      benchmarks: DEFAULT_CATEGORIES,
+      categories: DEFAULT_CATEGORIES,
     },
   },
 };
