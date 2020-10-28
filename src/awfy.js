@@ -1,6 +1,6 @@
 import { PROJECT, ALT_PROJECT } from './utils/perfherder';
 import { queryInfoGen } from './config-utils';
-import { BENCHMARKS as AWSY_BENCHMARKS, DEFAULT_CATEGORIES as AWSY_CATERGORIES } from './awsy';
+import { BENCHMARKS as AWSY_BENCHMARKS, DEFAULT_CATEGORIES as AWSY_CATEGORIES } from './awsy';
 
 const TALOS_FRAMEWORK_ID = 1;
 const RAPTOR_FRAMEWORK_ID = 10;
@@ -891,7 +891,7 @@ const DEFAULT_CATEGORIES = {
     suites: [],
     label: 'Page Load',
   },
-  ...AWSY_CATERGORIES,
+  ...AWSY_CATEGORIES,
 };
 
 Object.keys(DESKTOP_SITES).forEach((key) => {
