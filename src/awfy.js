@@ -1,5 +1,6 @@
 import { PROJECT, ALT_PROJECT } from './utils/perfherder';
 import { queryInfoGen } from './config-utils';
+import { BENCHMARKS as AWSY_BENCHMARKS, DEFAULT_CATEGORIES as AWSY_CATEGORIES } from './awsy';
 
 const TALOS_FRAMEWORK_ID = 1;
 const RAPTOR_FRAMEWORK_ID = 10;
@@ -8,6 +9,7 @@ const BROWSERTIME_FRAMEWORK_ID = 13;
 
 const COLORS = {
   chrome: '#0B84A5',
+  'chrome-m': '#0B84A5',
   chromium: '#9DD866',
   fennec: '#9DD866',
   geckoview: '#6F4E7C',
@@ -19,7 +21,7 @@ const COLORS = {
   'firefox-fission': '#92110c',
 };
 
-export const BENCHMARKS = {
+export const AWFY_BENCHMARKS = {
   'assorted-dom': {
     compare: {
       'raptor-assorted-dom-firefox': {
@@ -844,6 +846,8 @@ export const BENCHMARKS = {
   },
 };
 
+export const BENCHMARKS = { ...AWFY_BENCHMARKS, ...AWSY_BENCHMARKS };
+
 const DESKTOP_SITES = {
   apple: 'Apple',
   amazon: 'Amazon',
@@ -877,21 +881,18 @@ const DESKTOP_SITES = {
   youtube: 'YouTube',
 };
 
-const DEFAULT_SUITES = [
-  'ares6',
-  'displaylist_mutate',
-  'glvideo',
-  'kraken',
-  'motionmark-animometer',
-  'motionmark-htmlsuite',
-  'rasterflood_gradient',
-  'rasterflood_svg',
-  'speedometer',
-  'stylebench',
-  'sunspider',
-  'webaudio',
-  'wasm-godot',
-];
+const DEFAULT_CATEGORIES = {
+  benchmarks: {
+    suites: ['ares6', 'displaylist_mutate', 'glvideo', 'kraken', 'motionmark-animometer', 'motionmark-htmlsuite',
+      'rasterflood_gradient', 'rasterflood_svg', 'speedometer', 'stylebench', 'sunspider', 'webaudio', 'wasm-godot'],
+    label: 'Benchmarks',
+  },
+  'page-load': {
+    suites: [],
+    label: 'Page Load',
+  },
+  ...AWSY_CATEGORIES,
+};
 
 Object.keys(DESKTOP_SITES).forEach((key) => {
   const suite = `tp6-${key}`;
@@ -916,8 +917,17 @@ Object.keys(DESKTOP_SITES).forEach((key) => {
       extraOptions: ((app === 'Firefox-Fission') ? ['fission'] : []).concat(['webrender']),
     };
   });
-  DEFAULT_SUITES.push(suite);
+  DEFAULT_CATEGORIES['page-load'].suites.push(suite);
 });
+
+const LINUX_CATEGORIES = {
+  ...DEFAULT_CATEGORIES,
+  benchmarks: {
+    ...DEFAULT_CATEGORIES.benchmarks,
+    suites: DEFAULT_CATEGORIES.benchmarks.suites.concat('assorted-dom', 'ares6-jsshell', 'octane', 'six-speed',
+      'sunspider-jsbench', 'unity-webgl', 'wasm-misc', 'web-tooling'),
+  },
+};
 
 const MOBILE_APPS = {
   'chrome-m': 'Chrome',
@@ -956,9 +966,18 @@ const MOBILE_SITES = {
   'youtube-watch': 'YouTube Watch',
 };
 
-const MOBILE_SUITES = [
-  'speedometer-android',
-];
+
+const MOBILE_CATEGORIES = {
+  benchmarks: {
+    suites: ['speedometer-android'],
+    label: 'Benchmarks',
+  },
+  'page-load': {
+    suites: [],
+    label: 'Page Load',
+  },
+};
+
 
 Object.keys(MOBILE_SITES).forEach((siteKey) => {
   const bmKey = `tp6m-${siteKey}`;
@@ -987,12 +1006,12 @@ Object.keys(MOBILE_SITES).forEach((siteKey) => {
     option: 'opt',
     extraOptions: ['cold'],
   };
-  MOBILE_SUITES.push(bmKey);
+  MOBILE_CATEGORIES['page-load'].suites.push(bmKey);
 });
 
 export const CONFIG = {
   default: {
-    landingPath: '/win10/overview?numDays=60',
+    landingPath: '/win10/benchmarks/overview?numDays=60',
     dayRange: 60, // # days
     colors: [COLORS.firefox, COLORS.chromium, COLORS.chrome],
     labels: ['Firefox', 'Chromium', 'Chrome'],
@@ -1001,43 +1020,40 @@ export const CONFIG = {
   views: {
     linux64: {
       label: 'Linux 64bit',
-      platforms: ['linux64-shippable'],
-      benchmarks: DEFAULT_SUITES
-        .concat([
-          'assorted-dom', 'ares6-jsshell', 'octane', 'six-speed',
-          'sunspider-jsbench', 'unity-webgl', 'wasm-misc',
-          'web-tooling']),
+      platforms: ['linux64-shippable', 'linux1804-64-shippable'],
+      categories: LINUX_CATEGORIES,
     },
     mac: {
       label: 'Mac OS X',
       platforms: ['macosx1014-64-shippable'],
-      benchmarks: DEFAULT_SUITES,
+      categories: DEFAULT_CATEGORIES,
     },
     win7: {
       label: 'Windows 7 32bit',
       platforms: ['windows7-32-shippable'],
-      benchmarks: DEFAULT_SUITES,
+      categories: DEFAULT_CATEGORIES,
     },
     win10: {
       label: 'Windows 10 64bit',
       platforms: ['windows10-64-shippable'],
-      benchmarks: DEFAULT_SUITES,
+      categories: DEFAULT_CATEGORIES,
     },
+
     win10ref2017: {
       label: 'Windows 10 64bit (2017 reference laptop)',
       platforms: ['windows10-64-ux', 'windows10-64-ref-hw-2017'],
-      benchmarks: DEFAULT_SUITES,
+      categories: DEFAULT_CATEGORIES,
       project: PROJECT,
     },
     androidMotoG5: {
       label: 'Android (Moto G5)',
       platforms: ['android-hw-g5-7-0-arm7-api-16', 'android-hw-g5-7-0-arm7-api-16-shippable'],
-      benchmarks: MOBILE_SUITES,
+      categories: MOBILE_CATEGORIES,
     },
     androidPixel2: {
       label: 'Android (Pixel 2)',
       platforms: ['android-hw-p2-8-0-android-aarch64', 'android-hw-p2-8-0-android-aarch64-shippable'],
-      benchmarks: MOBILE_SUITES,
+      categories: MOBILE_CATEGORIES,
     },
   },
 };
@@ -1047,7 +1063,8 @@ export const TIMERANGE_UPPER_LIMIT = 365;
 
 // Given a view configuration return a data structure with the data
 // structure needed to query Treeherder
-export const queryInfo = (viewConfig, benchmark) => queryInfoGen(BENCHMARKS, viewConfig, benchmark);
+export const queryInfo = (viewConfig, benchmark, category) => queryInfoGen(BENCHMARKS, viewConfig,
+  benchmark, category);
 
 export default {
   queryInfo, BENCHMARKS, CONFIG, TIMERANGE_UPPER_LIMIT,

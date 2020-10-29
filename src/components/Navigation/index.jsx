@@ -26,33 +26,39 @@ class Navigation extends Component {
       // eslint-disable-next-line react/prop-types
       history,
       platform,
+      category,
       benchmark,
       dayRange,
     } = this.props;
 
     let newPlatform = platform;
+    let newCategory = category;
     let newBenchmark = benchmark;
     let newDayRange = dayRange;
     if (name === 'platform') {
       newPlatform = value;
+      newBenchmark = 'overview';
+    } else if (name === 'category') {
+      newCategory = value;
       newBenchmark = 'overview';
     } else if (name === 'numDays') {
       newDayRange = value;
     } else {
       newBenchmark = value;
     }
-    history.push(`/${newPlatform}/${newBenchmark}?numDays=${newDayRange}`);
+    history.push(`/${newPlatform}/${newCategory}/${newBenchmark}?numDays=${newDayRange}`);
   };
 
   render() {
     const {
-      classes, platform, benchmark, dayRange,
+      classes, platform, category, benchmark, dayRange,
     } = this.props;
     return (
       <div className={classes.root}>
         <Pickers
           onChange={this.handlePathChange}
           platform={platform}
+          category={category}
           benchmark={benchmark}
           dayRange={dayRange}
         />

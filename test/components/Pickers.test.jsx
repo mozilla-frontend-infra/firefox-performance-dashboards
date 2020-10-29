@@ -8,6 +8,7 @@ it('renders correctly', () => {
     <Pickers
       platform="win10"
       benchmark="overview"
+      category="benchmarks"
       dayRange={60}
       onChange={() => {}}
     />,
