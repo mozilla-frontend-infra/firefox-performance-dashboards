@@ -11,7 +11,7 @@ const Router = () => (
   <BrowserRouter>
     <Switch>
       <Redirect from="/win10Laptops/:benchmark" to="/win10ref2017/:benchmark" />
-      <Redirect exact from="/:platform/tp6-:site" to="/:platform/page-load/tp6-:site" />
+      <Redirect exact from="/:platform/tp6-:site" to="/:platform/cold-page-load/tp6-:site" />
       <Redirect exact from="/:platform/tp6m-:site" to="/:platform/page-load/tp6m-:site" />
       {(process.env.DASHBOARD === 'awsy') && <Redirect exact from="/:platform/:benchmark" to="/:platform/memory/:benchmark" /> }
       {(process.env.DASHBOARD === 'awfy') && <Redirect exact from="/:platform/:benchmark" to="/:platform/benchmarks/:benchmark" /> }
