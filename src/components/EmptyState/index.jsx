@@ -23,9 +23,9 @@ const styles = () => ({
 const EmptyState = ({ classes, text }) => {
   const history = useHistory();
   return (
-    <Grid container justify="center" alignItems="center" direction="column" spacing="2" className={classes.container}>
+    <Grid container justify="center" alignItems="center" direction="column" spacing={2} className={classes.container}>
       <Grid item>
-        <WarningOutlined fontSize="large" className={classes.icon} iconStyle={classes.icon} />
+        <WarningOutlined fontSize="large" className={classes.icon} />
       </Grid>
       <Grid item>
         <Typography variant="h5">No results</Typography>
