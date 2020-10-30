@@ -27,7 +27,6 @@ describe('fetchWrapper', () => {
     expect(global.fetch).toHaveBeenCalledTimes(1);
   });
 
-
   it('should get the promise from cache', () => {
     global.fetch = jest.fn(() => new Promise(() => {
     }));
@@ -41,6 +40,14 @@ describe('fetchWrapper', () => {
     global.fetch = jest.fn(() => Promise.resolve(mockResponse));
     return fetchWrapper('http://example.com').then((res) => {
       expect(res).not.toBe(mockResponse);
+    });
+  });
+
+  it('should remove the promise from cache when rejected ', () => {
+    global.fetch = jest.fn(() => Promise.reject(new Error('failed fetch')));
+    return fetchWrapper('http://example.com').catch(() => {
+      fetchWrapper('http://example.com');
+      expect(global.fetch).toHaveBeenCalledTimes(2);
     });
   });
 });
