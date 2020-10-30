@@ -13,9 +13,8 @@ const COLORS = {
   chromium: '#9DD866',
   fennec: '#9DD866',
   geckoview: '#6F4E7C',
-  'geckoview-webrender': '#16bcde',
   fenix: '#FFA056',
-  'fenix-webrender': '#4c3146',
+  'fenix-webrender': '#e5ca0f',
   firefox: '#FFA056',
   'firefox-webrender': '#e5ca0f',
   'firefox-fission': '#92110c',
@@ -887,37 +886,67 @@ const DEFAULT_CATEGORIES = {
       'rasterflood_gradient', 'rasterflood_svg', 'speedometer', 'stylebench', 'sunspider', 'webaudio', 'wasm-godot'],
     label: 'Benchmarks',
   },
-  'page-load': {
+  'cold-page-load': {
     suites: [],
-    label: 'Page Load',
+    label: 'Cold Page Load',
+  },
+  'warm-page-load': {
+    suites: [],
+    label: 'Warm Page Load',
   },
   ...AWSY_CATEGORIES,
 };
 
-Object.keys(DESKTOP_SITES).forEach((key) => {
-  const suite = `tp6-${key}`;
-  BENCHMARKS[`tp6-${key}`] = { compare: {}, label: `Tp6 ${DESKTOP_SITES[key]}` };
-  ['Firefox', 'Chromium', 'Chrome'].forEach((app) => {
-    BENCHMARKS[suite].compare[app.toLowerCase()] = {
-      color: COLORS[app.toLowerCase()],
-      label: app,
-      frameworkId: RAPTOR_FRAMEWORK_ID,
-      suite: `raptor-${suite}-${app.toLowerCase()}`,
-      option: 'opt',
-    };
+const DESKTOP_APPS = {
+  firefox: {
+    name: 'firefox',
+    label: 'Firefox',
+  },
+  'firefox-fission': {
+    name: 'firefox',
+    label: 'Firefox-Fission',
+    platformSuffix: '-qr',
+    extraOptions: ['fission', 'webrender'],
+  },
+  'firefox-webrender': {
+    name: 'firefox',
+    label: 'Firefox-WebRender',
+    platformSuffix: '-qr',
+    extraOptions: ['webrender'],
+  },
+  chrome: {
+    name: 'chrome',
+    label: 'Chrome',
+  },
+  chromium: {
+    name: 'chromium',
+    label: 'Chromium',
+  },
+};
+
+Object.entries(DESKTOP_SITES).forEach(([siteKey, siteLabel]) => {
+  ['cold', 'warm'].forEach((cacheVariant) => {
+    const bmKey = `tp6-${siteKey}-${cacheVariant}`;
+    BENCHMARKS[bmKey] = { compare: {}, label: siteLabel };
+    Object.entries(DESKTOP_APPS).forEach(([appKey, app]) => {
+      BENCHMARKS[bmKey].compare[appKey] = {
+        color: COLORS[appKey],
+        label: app.label,
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: `raptor-tp6-${siteKey}-${app.name}`,
+        platformSuffix: app.platformSuffix,
+        option: 'opt',
+        extraOptions: app.extraOptions,
+      };
+      if (cacheVariant === 'cold') {
+        BENCHMARKS[bmKey].compare[appKey].suite += '-cold';
+        if (['firefox', 'firefox-webrender'].includes(appKey)) {
+          BENCHMARKS[bmKey].compare[appKey].project = ALT_PROJECT;
+        }
+      }
+    });
+    DEFAULT_CATEGORIES[`${cacheVariant}-page-load`].suites.push(bmKey);
   });
-  ['Firefox-WebRender', 'Firefox-Fission'].forEach((app) => {
-    BENCHMARKS[suite].compare[app.toLowerCase()] = {
-      color: COLORS[app.toLowerCase()],
-      label: app,
-      frameworkId: RAPTOR_FRAMEWORK_ID,
-      suite: `raptor-${suite}-firefox`,
-      platformSuffix: '-qr',
-      option: 'opt',
-      extraOptions: ((app === 'Firefox-Fission') ? ['fission'] : []).concat(['webrender']),
-    };
-  });
-  DEFAULT_CATEGORIES['page-load'].suites.push(suite);
 });
 
 const LINUX_CATEGORIES = {
@@ -930,10 +959,30 @@ const LINUX_CATEGORIES = {
 };
 
 const MOBILE_APPS = {
-  'chrome-m': 'Chrome',
-  fenix: 'Fenix',
-  fennec: 'Fennec',
-  geckoview: 'GeckoView',
+  'chrome-m': {
+    name: 'chrome-m',
+    label: 'Chrome',
+  },
+  fenix: {
+    name: 'fenix',
+    label: 'Fenix',
+    project: 'fenix',
+  },
+  'fenix-webrender': {
+    name: 'fenix',
+    label: 'Fenix-WebRender',
+    extraOptions: ['webrender'],
+  },
+  fennec: {
+    name: 'fennec',
+    label: 'Fennec',
+    extraOptions: ['nocondprof'],
+  },
+  geckoview: {
+    name: 'geckoview',
+    label: 'GeckoView',
+    project: ALT_PROJECT,
+  },
 };
 
 const MOBILE_SITES = {
@@ -972,41 +1021,39 @@ const MOBILE_CATEGORIES = {
     suites: ['speedometer-android'],
     label: 'Benchmarks',
   },
-  'page-load': {
+  'cold-page-load': {
     suites: [],
-    label: 'Page Load',
+    label: 'Cold Page Load',
+  },
+  'warm-page-load': {
+    suites: [],
+    label: 'Warm Page Load',
   },
 };
 
 
-Object.keys(MOBILE_SITES).forEach((siteKey) => {
-  const bmKey = `tp6m-${siteKey}`;
-  BENCHMARKS[bmKey] = { compare: {}, label: `Tp6 ${MOBILE_SITES[siteKey]}` };
-  Object.keys(MOBILE_APPS).forEach((appKey) => {
-    BENCHMARKS[bmKey].compare[appKey] = {
-      color: COLORS[appKey],
-      label: MOBILE_APPS[appKey],
-      frameworkId: BROWSERTIME_FRAMEWORK_ID,
-      suite: siteKey,
-      application: appKey,
-      option: 'opt',
-      extraOptions: ['cold'],
-    };
-    if (!['fenix', 'chrome-m'].includes(appKey)) {
-      BENCHMARKS[bmKey].compare[appKey].project = ALT_PROJECT;
-    }
+Object.entries(MOBILE_SITES).forEach(([siteKey, siteLabel]) => {
+  ['cold', 'warm'].forEach((cacheVariant) => {
+    const bmKey = `tp6m-${siteKey}=${cacheVariant}`;
+    BENCHMARKS[bmKey] = { compare: {}, label: siteLabel };
+    Object.entries(MOBILE_APPS).forEach(([appKey, app]) => {
+      BENCHMARKS[bmKey].compare[appKey] = {
+        color: COLORS[appKey],
+        label: app.label,
+        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        suite: siteKey,
+        application: app.name,
+        platformSuffix: app.platformSuffix,
+        project: app.project,
+        option: 'opt',
+        extraOptions: [cacheVariant],
+      };
+      if (Array.isArray(app.extraOptions)) {
+        BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
+      }
+    });
+    MOBILE_CATEGORIES[`${cacheVariant}-page-load`].suites.push(bmKey);
   });
-  BENCHMARKS[bmKey].compare['fenix-webrender'] = {
-    color: COLORS['fenix-webrender'],
-    label: 'Fenix-Webrender',
-    frameworkId: BROWSERTIME_FRAMEWORK_ID,
-    suite: siteKey,
-    platformSuffix: '-qr',
-    application: 'fenix',
-    option: 'opt',
-    extraOptions: ['cold'],
-  };
-  MOBILE_CATEGORIES['page-load'].suites.push(bmKey);
 });
 
 export const CONFIG = {
