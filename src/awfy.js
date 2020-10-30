@@ -847,6 +847,23 @@ export const AWFY_BENCHMARKS = {
 
 export const BENCHMARKS = { ...AWFY_BENCHMARKS, ...AWSY_BENCHMARKS };
 
+const LIVE_SITES = {
+  'booking-sf': 'Booking.com',
+  discord: 'Discord',
+  expedia: 'Expedia',
+  fashionbeans: 'FashionBeans',
+  'google-accounts': 'Google Accounts',
+  'imdb-firefox': 'IMDb',
+  'medium-article': 'Medium',
+  nytimes: 'The New York Times',
+  'people-article': 'People',
+  'reddit-thread': 'Reddit',
+  'rumble-fox': 'Rumble',
+  'stackoverflow-question': 'StackOverflow',
+  'urbandictionary-define': 'Urban Dictionary',
+  'wikia-marvel': 'Wikia',
+};
+
 const DESKTOP_SITES = {
   apple: 'Apple',
   amazon: 'Amazon',
@@ -1023,18 +1040,26 @@ const MOBILE_CATEGORIES = {
   },
   'cold-page-load': {
     suites: [],
-    label: 'Cold Page Load',
+    label: 'Cold Page Load (Recorded)',
+  },
+  'cold-page-load-live': {
+    suites: [],
+    label: 'Cold Page Load (Live)',
   },
   'warm-page-load': {
     suites: [],
-    label: 'Warm Page Load',
+    label: 'Warm Page Load (Recorded)',
+  },
+  'warm-page-load-live': {
+    suites: [],
+    label: 'Warm Page Load (Live)',
   },
 };
 
 
 Object.entries(MOBILE_SITES).forEach(([siteKey, siteLabel]) => {
   ['cold', 'warm'].forEach((cacheVariant) => {
-    const bmKey = `tp6m-${siteKey}=${cacheVariant}`;
+    const bmKey = `tp6m-${siteKey}-${cacheVariant}`;
     BENCHMARKS[bmKey] = { compare: {}, label: siteLabel };
     Object.entries(MOBILE_APPS).forEach(([appKey, app]) => {
       BENCHMARKS[bmKey].compare[appKey] = {
@@ -1053,6 +1078,29 @@ Object.entries(MOBILE_SITES).forEach(([siteKey, siteLabel]) => {
       }
     });
     MOBILE_CATEGORIES[`${cacheVariant}-page-load`].suites.push(bmKey);
+  });
+});
+
+Object.entries(LIVE_SITES).forEach(([siteKey, siteLabel]) => {
+  ['cold', 'warm'].forEach((cacheVariant) => {
+    const bmKey = `tp6m-${siteKey}-${cacheVariant}-live`;
+    BENCHMARKS[bmKey] = { compare: {}, label: siteLabel };
+    Object.entries(MOBILE_APPS).forEach(([appKey, app]) => {
+      BENCHMARKS[bmKey].compare[appKey] = {
+        color: COLORS[appKey],
+        label: app.label,
+        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        suite: siteKey,
+        application: app.name,
+        platformSuffix: app.platformSuffix,
+        option: 'opt',
+        extraOptions: [cacheVariant, 'live'],
+      };
+      if (Array.isArray(app.extraOptions)) {
+        BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
+      }
+    });
+    MOBILE_CATEGORIES[`${cacheVariant}-page-load-live`].suites.push(bmKey);
   });
 });
 
