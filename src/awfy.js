@@ -848,7 +848,7 @@ export const AWFY_BENCHMARKS = {
 export const BENCHMARKS = { ...AWFY_BENCHMARKS, ...AWSY_BENCHMARKS };
 
 const LIVE_SITES = {
-  'booking-sf': 'Booking.com',
+  'booking-sf': 'Booking (hotel)',
   discord: 'Discord',
   expedia: 'Expedia',
   fashionbeans: 'FashionBeans',
@@ -1005,17 +1005,17 @@ const MOBILE_APPS = {
 const MOBILE_SITES = {
   allrecipes: 'All Recipes',
   amazon: 'Amazon',
-  'amazon-search': 'Amazon Search',
+  'amazon-search': 'Amazon (search)',
   bbc: 'BBC',
   bing: 'Bing',
-  'bing-restaurants': 'Bing Restaurants',
+  'bing-restaurants': 'Bing (restaurants)',
   booking: 'Booking',
   cnn: 'CNN',
   'cnn-ampstories': 'CNN AMP Stories',
   'ebay-kleinanzeigen': 'Ebay Kleinanzeigen',
-  'ebay-kleinanzeigen-search': 'Ebay Kleinanzeigen Search',
+  'ebay-kleinanzeigen-search': 'Ebay Kleinanzeigen (search)',
   espn: 'ESPN',
-  'facebook-cristiano': 'Facebook (Cristiano)',
+  'facebook-cristiano': 'Facebook (page)',
   facebook: 'Facebook',
   google: 'Google',
   'google-maps': 'Google Maps',
