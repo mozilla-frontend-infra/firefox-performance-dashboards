@@ -1,3 +1,5 @@
+import { queryInfoGen } from './config-utils';
+
 const BROWSERTIME_FRAMEWORK_ID = 13;
 
 const COLORS = {
@@ -91,7 +93,7 @@ export const BENCHMARKS = {
   },
 };
 
-const DEFAULT_SUITES = [
+export const DEFAULT_SUITES = [
   'g-image',
   'youtube-noscroll',
   'youtube-scroll',
@@ -110,6 +112,7 @@ const PAUSE_DURATION = [
   '35s',
   '60s',
 ];
+
 
 Object.keys(SITES_LIST).forEach((siteKey) => {
   PAUSE_DURATION.forEach((dur) => {
@@ -135,107 +138,15 @@ Object.keys(SITES_LIST).forEach((siteKey) => {
   });
 });
 
-export const CONFIG = {
-  default: {
-    landingPath: '/win10/overview?numDays=60',
-    dayRange: 60, // # days
-    colors: [COLORS.http3, COLORS.http2],
-    labels: ['HTTP3', 'HTTP2'],
-  },
-  dayRange: [1, 2, 7, 14, 30, 60, 90, 365],
-  views: {
-    linux64: {
-      label: 'Linux 64bit',
-      platforms: ['linux64-shippable'],
-      benchmarks: DEFAULT_SUITES,
-    },
-    mac: {
-      label: 'Mac OS X',
-      platforms: ['macosx1014-64-shippable'],
-      benchmarks: DEFAULT_SUITES,
-    },
-    win7: {
-      label: 'Windows 7 32bit',
-      platforms: ['windows7-32-shippable'],
-      benchmarks: DEFAULT_SUITES,
-    },
-    win10: {
-      label: 'Windows 10 64bit',
-      platforms: ['windows10-64-shippable'],
-      benchmarks: DEFAULT_SUITES,
-    },
-    win10ref2017: {
-      label: 'Windows 10 64bit (2017 reference laptop)',
-      platforms: ['windows10-64-ux', 'windows10-64-ref-hw-2017'],
-      benchmarks: DEFAULT_SUITES,
-    },
-    windows10Aarch64: {
-      label: 'Windows 10 ARM64',
-      platforms: ['windows10-aarch64'],
-      benchmarks: DEFAULT_SUITES,
-    },
-  },
-};
-
 // Upper limit for the time range slider measured in days
 export const TIMERANGE_UPPER_LIMIT = 365;
 
 
-const processSeries = (seriesConfig, viewConfig) => {
-  const result = [];
-  // The Android benchmarks have a platform defined per series
-  if (!seriesConfig.platform) {
-    const { platforms } = viewConfig;
-    platforms.forEach((pf) => {
-      const newSeriesConfig = { ...seriesConfig };
-      newSeriesConfig.platform = pf;
-      result.push(newSeriesConfig);
-    });
-  } else {
-    result.push(seriesConfig);
-  }
-  return result;
-};
-
 // Given a view configuration return a data structure with the data
 // structure needed to query Treeherder
-export const queryInfo = (viewConfig, benchmark) => {
-  const info = {};
-  const { benchmarks } = viewConfig;
-  if (benchmark === 'overview' && benchmarks) {
-    benchmarks.forEach((configUID) => {
-      info[configUID] = {
-        compare: [],
-        benchmarkUID: configUID,
-        includeSubtests: false,
-        label: BENCHMARKS[configUID].label,
-        yLabel: BENCHMARKS[configUID].yLabel,
-      };
-      // We need to set the platform for fetching data from Treeherder
-      Object.values(BENCHMARKS[configUID].compare).forEach((seriesConfig) => {
-        const oneOrMoreSeries = processSeries(seriesConfig, viewConfig);
-        info[configUID].compare = info[configUID].compare.concat(oneOrMoreSeries);
-      });
-    });
-  } else {
-    Object.values(BENCHMARKS[benchmark].compare).forEach((seriesConfig) => {
-      if (!info[benchmark]) {
-        info[benchmark] = {
-          compare: [],
-          benchmarkUID: benchmark,
-          includeSubtests: true,
-          label: BENCHMARKS[benchmark].label,
-          yLabel: BENCHMARKS[benchmark].yLabel,
-        };
-      }
-      const oneOrMoreSeries = processSeries(seriesConfig, viewConfig);
-      info[benchmark].compare = info[benchmark].compare.concat(oneOrMoreSeries);
-    });
-  }
-
-  return info;
-};
+export const queryInfo = (viewConfig, benchmark, category) => queryInfoGen(BENCHMARKS, viewConfig,
+  benchmark, category);
 
 export default {
-  queryInfo, BENCHMARKS, CONFIG, TIMERANGE_UPPER_LIMIT,
+  queryInfo, BENCHMARKS, TIMERANGE_UPPER_LIMIT,
 };

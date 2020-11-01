@@ -1,6 +1,7 @@
 import { PROJECT, ALT_PROJECT } from './utils/perfherder';
 import { queryInfoGen } from './config-utils';
 import { BENCHMARKS as AWSY_BENCHMARKS, DEFAULT_CATEGORIES as AWSY_CATEGORIES } from './awsy';
+import { BENCHMARKS as H3_BENCHMARKS, DEFAULT_SUITES as H3_SUITES } from './h3';
 
 const TALOS_FRAMEWORK_ID = 1;
 const RAPTOR_FRAMEWORK_ID = 10;
@@ -845,7 +846,7 @@ export const AWFY_BENCHMARKS = {
   },
 };
 
-export const BENCHMARKS = { ...AWFY_BENCHMARKS, ...AWSY_BENCHMARKS };
+export const BENCHMARKS = { ...AWFY_BENCHMARKS, ...AWSY_BENCHMARKS, ...H3_BENCHMARKS };
 
 const DESKTOP_SITES = {
   apple: 'Apple',
@@ -895,6 +896,10 @@ const DEFAULT_CATEGORIES = {
     label: 'Warm Page Load',
   },
   ...AWSY_CATEGORIES,
+  network: {
+    suites: H3_SUITES,
+    label: 'Network',
+  },
 };
 
 const DESKTOP_APPS = {
