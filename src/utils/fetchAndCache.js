@@ -1,3 +1,5 @@
+import fetchWrapper from './fetchWrapper';
+
 /**
  * Fetch and cache a request
  * @param {string|URL} url
@@ -5,7 +7,7 @@
  */
 export default async function fetchAndCache(url, maxAge = 5 * 60 * 1000) {
   if (!('caches' in window)) {
-    return fetch(url);
+    return fetchWrapper(url);
   }
 
   let cache;
@@ -22,7 +24,7 @@ export default async function fetchAndCache(url, maxAge = 5 * 60 * 1000) {
   }
 
   // otherwise fetch new data and cache
-  const response = await fetch(url);
+  const response = await fetchWrapper(url);
 
   // cache response
   if (cache && response.ok) {

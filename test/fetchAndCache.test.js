@@ -1,4 +1,8 @@
 import fetchAndCache from '../src/utils/fetchAndCache';
+import fetchWrapper from '../src/utils/fetchWrapper';
+
+jest.mock('../src/utils/fetchWrapper');
+
 
 describe('fetchAndCache', () => {
   afterEach(() => {
@@ -23,9 +27,9 @@ describe('fetchAndCache', () => {
   }
 
   it('directly fetches if cache is not supported', async () => {
-    global.fetch = jest.fn(() => Promise.resolve('FOO'));
+    fetchWrapper.mockImplementation(() => Promise.resolve('FOO'));
     const res = await fetchAndCache('http://example.com');
-    expect(global.fetch).toHaveBeenLastCalledWith('http://example.com');
+    expect(fetchWrapper).toHaveBeenLastCalledWith('http://example.com');
     expect(res).toBe('FOO');
   });
 
@@ -36,11 +40,11 @@ describe('fetchAndCache', () => {
     global.caches = {
       open: async () => ({ match: async () => mockResponse }),
     };
-    global.fetch = jest.fn(() => Promise.resolve('I SHOULD NOT BE RESOLVED'));
+    fetchWrapper.mockImplementation(() => Promise.resolve('I SHOULD NOT BE RESOLVED'));
 
     const res = await fetchAndCache('http://example.com');
     expect(res).toBe(mockResponse);
-    expect(global.fetch).not.toHaveBeenCalled();
+    expect(fetchWrapper).not.toHaveBeenCalled();
   });
 
   it('calls fetch if there is no cached copy', async () => {
@@ -51,10 +55,10 @@ describe('fetchAndCache', () => {
       open: async () => ({ match: async () => undefined }),
     };
 
-    global.fetch = jest.fn(() => Promise.resolve(mockResponse));
+    fetchWrapper.mockImplementation(() => Promise.resolve(mockResponse));
 
     const res = await fetchAndCache('http://example.com', 10);
-    expect(global.fetch).toHaveBeenLastCalledWith('http://example.com');
+    expect(fetchWrapper).toHaveBeenLastCalledWith('http://example.com');
     expect(res).toBe(mockResponse);
   });
 
@@ -65,10 +69,10 @@ describe('fetchAndCache', () => {
     global.caches = {
       open: async () => ({ match: async () => mockResponse }),
     };
-    global.fetch = jest.fn(() => Promise.resolve('MOCK'));
+    fetchWrapper.mockImplementation(() => Promise.resolve('MOCK'));
 
     const res = await fetchAndCache('http://example.com', 10);
-    expect(global.fetch).toHaveBeenLastCalledWith('http://example.com');
+    expect(fetchWrapper).toHaveBeenLastCalledWith('http://example.com');
     expect(res).toBe('MOCK');
   });
 });
