@@ -551,11 +551,11 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-wasm-misc-baseline-firefox',
         option: 'opt',
       },
-      'raptor-wasm-misc-ion-firefox': {
+      'raptor-wasm-misc-optimizing-firefox': {
         color: 'brown',
-        label: 'Firefox (wasm-ion)',
+        label: 'Firefox (wasm-optimizing)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-wasm-misc-ion-firefox',
+        suite: 'raptor-wasm-misc-optimizing-firefox',
         option: 'opt',
       },
       'raptor-wasm-misc-cranelift-firefox': {
@@ -574,7 +574,7 @@ export const AWFY_BENCHMARKS = {
       },
     },
     colors: [COLORS.firefox, 'red', 'brown', COLORS.chromium, COLORS.chrome],
-    labels: ['Firefox (tiering)', 'Firefox (wasm-baseline)', 'Firefox (wasm-ion)', 'Chromium'],
+    labels: ['Firefox (tiering)', 'Firefox (wasm-baseline)', 'Firefox (wasm-optimizing)', 'Chromium'],
     label: 'WebAssembly Embenchen',
   },
   'wasm-godot': {
@@ -595,11 +595,11 @@ export const AWFY_BENCHMARKS = {
         project: ALT_PROJECT,
         option: 'opt',
       },
-      'raptor-wasm-godot-ion-firefox': {
+      'raptor-wasm-godot-optimizing-firefox': {
         color: 'brown',
-        label: 'Firefox (wasm-ion)',
+        label: 'Firefox (wasm-optimizing)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-wasm-godot-ion-firefox',
+        suite: 'raptor-wasm-godot-optimizing-firefox',
         project: ALT_PROJECT,
         option: 'opt',
       },
@@ -645,7 +645,7 @@ export const AWFY_BENCHMARKS = {
       },
     },
     colors: [COLORS.firefox, 'red', 'brown', COLORS.chromium, COLORS.chrome],
-    labels: ['Firefox (tiering)', 'Firefox (wasm-baseline)', 'Firefox (wasm-ion)', 'Chromium', 'Chrome'],
+    labels: ['Firefox (tiering)', 'Firefox (wasm-baseline)', 'Firefox (wasm-optimizing)', 'Chromium', 'Chrome'],
     label: 'WebAssembly Godot',
   },
   'ares6-jsshell': {
