@@ -67,22 +67,6 @@ it('Query info', () => {
           platform: 'linux1804-64-shippable',
         },
         {
-          color: 'yellow',
-          label: 'Firefox (wasm-cranelift)',
-          frameworkId: 10,
-          suite: 'raptor-wasm-misc-cranelift-firefox',
-          option: 'opt',
-          platform: 'linux64-shippable',
-        },
-        {
-          color: 'yellow',
-          label: 'Firefox (wasm-cranelift)',
-          frameworkId: 10,
-          suite: 'raptor-wasm-misc-cranelift-firefox',
-          option: 'opt',
-          platform: 'linux1804-64-shippable',
-        },
-        {
           color: '#9DD866',
           label: 'Chromium',
           frameworkId: 10,
