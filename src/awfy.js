@@ -558,13 +558,6 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-wasm-misc-ion-firefox',
         option: 'opt',
       },
-      'raptor-wasm-misc-cranelift-firefox': {
-        color: 'yellow',
-        label: 'Firefox (wasm-cranelift)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-wasm-misc-cranelift-firefox',
-        option: 'opt',
-      },
       'raptor-wasm-misc-chromium': {
         color: COLORS.chromium,
         label: 'Chromium',
@@ -601,13 +594,6 @@ export const AWFY_BENCHMARKS = {
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-godot-ion-firefox',
         project: ALT_PROJECT,
-        option: 'opt',
-      },
-      'raptor-wasm-godot-cranelift-firefox': {
-        color: 'yellow',
-        label: 'Firefox (wasm-cranelift)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-wasm-godot-cranelift-firefox',
         option: 'opt',
       },
       'raptor-wasm-godot-chromium': {
