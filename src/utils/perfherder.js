@@ -152,7 +152,7 @@ const findParentSignatureInfo = ({ option = 'pgo', application, extraOptions }, 
           result.push(signature);
         } else if (
           signature.extra_options && extraOptions
-          && isEqual(signature.extra_options, extraOptions)
+          && isEqual(signature.extra_options.sort(), extraOptions.sort())
         ) {
           result.push(signature);
         }

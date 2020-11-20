@@ -834,6 +834,23 @@ export const AWFY_BENCHMARKS = {
 
 export const BENCHMARKS = { ...AWFY_BENCHMARKS, ...AWSY_BENCHMARKS, ...H3_BENCHMARKS };
 
+const LIVE_SITES = {
+  'booking-sf': 'Booking (hotel)',
+  discord: 'Discord',
+  expedia: 'Expedia',
+  fashionbeans: 'FashionBeans',
+  'google-accounts': 'Google Accounts',
+  'imdb-firefox': 'IMDb (title)',
+  'medium-article': 'Medium',
+  nytimes: 'The New York Times',
+  'people-article': 'People',
+  'reddit-thread': 'Reddit (thread)',
+  'rumble-fox': 'Rumble',
+  'stackoverflow-question': 'StackOverflow (question)',
+  'urbandictionary-define': 'Urban Dictionary',
+  'wikia-marvel': 'Wikia',
+};
+
 const DESKTOP_SITES = {
   apple: 'Apple',
   amazon: 'Amazon',
@@ -979,17 +996,17 @@ const MOBILE_APPS = {
 const MOBILE_SITES = {
   allrecipes: 'All Recipes',
   amazon: 'Amazon',
-  'amazon-search': 'Amazon Search',
+  'amazon-search': 'Amazon (search)',
   bbc: 'BBC',
   bing: 'Bing',
-  'bing-restaurants': 'Bing Restaurants',
+  'bing-restaurants': 'Bing (restaurants)',
   booking: 'Booking',
   cnn: 'CNN',
   'cnn-ampstories': 'CNN AMP Stories',
   'ebay-kleinanzeigen': 'Ebay Kleinanzeigen',
-  'ebay-kleinanzeigen-search': 'Ebay Kleinanzeigen Search',
+  'ebay-kleinanzeigen-search': 'Ebay Kleinanzeigen (search)',
   espn: 'ESPN',
-  'facebook-cristiano': 'Facebook (Cristiano)',
+  'facebook-cristiano': 'Facebook (page)',
   facebook: 'Facebook',
   google: 'Google',
   'google-maps': 'Google Maps',
@@ -1006,6 +1023,7 @@ const MOBILE_SITES = {
   'youtube-watch': 'YouTube Watch',
 };
 
+const MOBILE_LIVE_SITES = { ...MOBILE_SITES, ...LIVE_SITES };
 
 const MOBILE_CATEGORIES = {
   benchmarks: {
@@ -1014,18 +1032,26 @@ const MOBILE_CATEGORIES = {
   },
   'cold-page-load': {
     suites: [],
-    label: 'Cold Page Load',
+    label: 'Cold Page Load (Recorded)',
+  },
+  'cold-page-load-live': {
+    suites: [],
+    label: 'Cold Page Load (Live)',
   },
   'warm-page-load': {
     suites: [],
-    label: 'Warm Page Load',
+    label: 'Warm Page Load (Recorded)',
+  },
+  'warm-page-load-live': {
+    suites: [],
+    label: 'Warm Page Load (Live)',
   },
 };
 
 
 Object.entries(MOBILE_SITES).forEach(([siteKey, siteLabel]) => {
   ['cold', 'warm'].forEach((cacheVariant) => {
-    const bmKey = `tp6m-${siteKey}=${cacheVariant}`;
+    const bmKey = `tp6m-${siteKey}-${cacheVariant}`;
     BENCHMARKS[bmKey] = { compare: {}, label: siteLabel };
     Object.entries(MOBILE_APPS).forEach(([appKey, app]) => {
       BENCHMARKS[bmKey].compare[appKey] = {
@@ -1044,6 +1070,34 @@ Object.entries(MOBILE_SITES).forEach(([siteKey, siteLabel]) => {
       }
     });
     MOBILE_CATEGORIES[`${cacheVariant}-page-load`].suites.push(bmKey);
+  });
+});
+
+Object.entries(MOBILE_LIVE_SITES).forEach(([siteKey, siteLabel]) => {
+  ['cold', 'warm'].forEach((cacheVariant) => {
+    const bmKey = `tp6m-${siteKey}-${cacheVariant}-live`;
+    BENCHMARKS[bmKey] = { compare: {}, label: siteLabel };
+    Object.entries(MOBILE_APPS).forEach(([appKey, app]) => {
+      BENCHMARKS[bmKey].compare[appKey] = {
+        color: COLORS[appKey],
+        label: app.label,
+        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        suite: siteKey,
+        application: app.name,
+        platformSuffix: app.platformSuffix,
+        project: app.project,
+        option: 'opt',
+        extraOptions: [cacheVariant, 'live'],
+      };
+      if (app.name === 'fenix') {
+        // fenix live sites are running on mozilla-central
+        BENCHMARKS[bmKey].compare[appKey].project = PROJECT;
+      }
+      if (Array.isArray(app.extraOptions)) {
+        BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
+      }
+    });
+    MOBILE_CATEGORIES[`${cacheVariant}-page-load-live`].suites.push(bmKey);
   });
 });
 
