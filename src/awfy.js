@@ -11,11 +11,14 @@ const BROWSERTIME_FRAMEWORK_ID = 13;
 const COLORS = {
   chrome: '#0B84A5',
   'chrome-m': '#0B84A5',
+  'chrome-m-ncp': '#0016a5',
   chromium: '#9DD866',
   fennec: '#9DD866',
   geckoview: '#6F4E7C',
   fenix: '#FFA056',
+  'fenix-ncp': '#ff6d00',
   'fenix-webrender': '#e5ca0f',
+  'fenix-webrender-ncp': '#5ae500',
   firefox: '#FFA056',
   'firefox-webrender': '#e5ca0f',
   'firefox-fission': '#92110c',
@@ -971,15 +974,31 @@ const MOBILE_APPS = {
     name: 'chrome-m',
     label: 'Chrome',
   },
+  'chrome-m-ncp': {
+    name: 'chrome-m',
+    label: 'Chrome (nocondprof)',
+    extraOptions: ['nocondprof'],
+  },
   fenix: {
     name: 'fenix',
     label: 'Fenix',
     project: 'fenix',
   },
+  'fenix-ncp': {
+    name: 'fenix',
+    label: 'Fenix (nocondprof)',
+    project: 'fenix',
+    extraOptions: ['nocondprof'],
+  },
   'fenix-webrender': {
     name: 'fenix',
     label: 'Fenix-WebRender',
     extraOptions: ['webrender'],
+  },
+  'fenix-webrender-ncp': {
+    name: 'fenix',
+    label: 'Fenix-WebRender (nocondprof)',
+    extraOptions: ['webrender', 'nocondprof'],
   },
   fennec: {
     name: 'fennec',
@@ -991,6 +1010,12 @@ const MOBILE_APPS = {
     label: 'GeckoView',
     project: ALT_PROJECT,
   },
+  // 'geckoview-ncp': {
+  //   name: 'geckoview',
+  //   label: 'GeckoView (nocondprof)',
+  //   project: ALT_PROJECT,
+  //   extraOptions: ['nocondprof'],
+  // },
 };
 
 const MOBILE_SITES = {
