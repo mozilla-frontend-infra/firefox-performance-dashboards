@@ -1,3 +1,5 @@
+const fetch = require('node-fetch');
+
 export const promiseCache = {};
 /**
  * Simple wrapper over fetch, for avoiding duplicate API calls
