@@ -1,8 +1,9 @@
+import assert from 'assert';
 import { perfDataUrls, queryPerformanceData } from '../src/utils/perfherder';
 
-import LINUX64_KRAKEN_EXPECTED_DATA from './mocks/linux64/kraken/expected';
-import WIN10_TP5O_EXPECTED_DATA from './mocks/win10/Tp5o/expected';
-import WIN10_SESSION_RESTORE_EXPECTED_DATA from './mocks/win10/SessionRestore/expected';
+import LINUX64_KRAKEN_EXPECTED_DATA from './mocks/linux64/kraken/expected.json';
+import WIN10_TP5O_EXPECTED_DATA from './mocks/win10/Tp5o/expected.json';
+import WIN10_SESSION_RESTORE_EXPECTED_DATA from './mocks/win10/SessionRestore/expected.json';
 import MAC_STYLEBENCH_SIGNATURES from './mocks/mac/StyleBench/signatures';
 import MAC_STYLEBENCH_URLS from './mocks/mac/StyleBench/urls';
 
@@ -12,8 +13,6 @@ const { Polly } = require('@pollyjs/core');
 const { setupPolly } = require('setup-polly-jest');
 const NodeHttpAdapter = require('@pollyjs/adapter-node-http');
 const FSPersister = require('@pollyjs/persister-fs');
-
-const assert = require('assert');
 
 Polly.register(NodeHttpAdapter);
 Polly.register(FSPersister);

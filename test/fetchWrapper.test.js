@@ -1,6 +1,8 @@
 import fetchWrapper from '../src/utils/fetchWrapper';
 
+// eslint-disable-next-line global-require
 jest.mock('node-fetch', () => require('fetch-mock-jest').sandbox());
+
 const fetchMock = require('node-fetch');
 
 
