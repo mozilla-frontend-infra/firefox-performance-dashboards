@@ -7,6 +7,7 @@ import Navigation from '../Navigation';
 import PerfherderGraph from '../PerfherderGraph';
 import { queryInfo } from '../../config';
 import Loading from '../Loading';
+import Description from '../Description';
 
 const sortByLabel = (a, b) => (a.label <= b.label ? -1 : 1);
 
@@ -39,6 +40,9 @@ class App extends Component {
           dayRange={dayRange}
         />
         )}
+        <Description
+          category={category}
+        />
         {Object.values(benchmarks).length ? Object.values(benchmarks).sort(sortByLabel).map(({
           benchmarkUID, compare, label, includeSubtests, yLabel,
         }) => (
