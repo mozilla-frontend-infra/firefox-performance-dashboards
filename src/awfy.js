@@ -1048,7 +1048,6 @@ const MOBILE_CATEGORIES = {
   },
 };
 
-
 Object.entries(MOBILE_SITES).forEach(([siteKey, siteLabel]) => {
   ['cold', 'warm'].forEach((cacheVariant) => {
     const bmKey = `tp6m-${siteKey}-${cacheVariant}`;
