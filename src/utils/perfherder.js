@@ -1,6 +1,7 @@
 import isEqual from 'lodash.isequal';
 import { stringify } from 'query-string';
 import fetchAndCache from './fetchAndCache';
+import hasSameExtraOptions from './extraOptionsUtils';
 
 export const TREEHERDER = 'https://treeherder.mozilla.org';
 export const PROJECT = 'mozilla-central';
@@ -139,7 +140,9 @@ const signaturesForPlatformSuite = async (seriesConfig) => {
   return filteredSignatures;
 };
 
-const findParentSignatureInfo = ({ option = 'pgo', application, extraOptions }, signatures, options) => {
+const findParentSignatureInfo = ({
+  option = 'pgo', application, extraOptions, ignoredExtraOptions,
+}, signatures, options) => {
   const result = [];
   // Each signature is a potential candidate
   Object.keys(signatures).forEach((hash) => {
@@ -148,17 +151,13 @@ const findParentSignatureInfo = ({ option = 'pgo', application, extraOptions }, 
     if (optionCollection && optionCollection.includes(option)) {
       if (!application || (
         signature.application && application && isEqual(signature.application, application))) {
-        if (!signature.extra_options && !extraOptions) {
-          result.push(signature);
-        } else if (
-          signature.extra_options && extraOptions
-          && isEqual(signature.extra_options.sort(), extraOptions.sort())
-        ) {
+        if (hasSameExtraOptions(signature.extra_options, extraOptions, ignoredExtraOptions)) {
           result.push(signature);
         }
       }
     }
   });
+  console.log('result.length', result.length);
   if (result.length !== 1) {
     return undefined;
   }

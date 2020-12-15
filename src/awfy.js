@@ -973,32 +973,19 @@ const MOBILE_APPS = {
   'chrome-m': {
     name: 'chrome-m',
     label: 'Chrome',
-  },
-  'chrome-m-ncp': {
-    name: 'chrome-m',
-    label: 'Chrome (nocondprof)',
-    extraOptions: ['nocondprof'],
+    ignoredExtraOptions: ['nocondprof'],
   },
   fenix: {
     name: 'fenix',
     label: 'Fenix',
     project: 'fenix',
-  },
-  'fenix-ncp': {
-    name: 'fenix',
-    label: 'Fenix (nocondprof)',
-    project: 'fenix',
-    extraOptions: ['nocondprof'],
+    ignoredExtraOptions: ['nocondprof'],
   },
   'fenix-webrender': {
     name: 'fenix',
     label: 'Fenix-WebRender',
     extraOptions: ['webrender'],
-  },
-  'fenix-webrender-ncp': {
-    name: 'fenix',
-    label: 'Fenix-WebRender (nocondprof)',
-    extraOptions: ['webrender', 'nocondprof'],
+    ignoredExtraOptions: ['nocondprof'],
   },
   fennec: {
     name: 'fennec',
@@ -1009,13 +996,8 @@ const MOBILE_APPS = {
     name: 'geckoview',
     label: 'GeckoView',
     project: ALT_PROJECT,
+    ignoredExtraOptions: ['nocondprof'],
   },
-  // 'geckoview-ncp': {
-  //   name: 'geckoview',
-  //   label: 'GeckoView (nocondprof)',
-  //   project: ALT_PROJECT,
-  //   extraOptions: ['nocondprof'],
-  // },
 };
 
 const MOBILE_SITES = {
@@ -1089,6 +1071,7 @@ Object.entries(MOBILE_SITES).forEach(([siteKey, siteLabel]) => {
         project: app.project,
         option: 'opt',
         extraOptions: [cacheVariant],
+        ignoredExtraOptions: app.ignoredExtraOptions,
       };
       if (Array.isArray(app.extraOptions)) {
         BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
@@ -1113,6 +1096,7 @@ Object.entries(MOBILE_LIVE_SITES).forEach(([siteKey, siteLabel]) => {
         project: app.project,
         option: 'opt',
         extraOptions: [cacheVariant, 'live'],
+        ignoredExtraOptions: app.ignoredExtraOptions,
       };
       if (app.name === 'fenix') {
         // fenix live sites are running on mozilla-central
