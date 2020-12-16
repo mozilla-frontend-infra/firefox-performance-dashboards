@@ -1,14 +1,15 @@
-describe('fetchWrapper', () => {
-  let fetchWrapper;
+import fetchWrapper from '../src/utils/fetchWrapper';
 
+// eslint-disable-next-line global-require
+jest.mock('node-fetch', () => require('fetch-mock-jest').sandbox());
+
+const fetchMock = require('node-fetch');
+
+
+describe('fetchWrapper', () => {
   afterEach(() => {
     jest.clearAllMocks();
   });
-
-  beforeEach(() => import('../src/utils/fetchWrapper').then((module) => {
-    fetchWrapper = module.default;
-    jest.resetModules();
-  }));
 
   class Response {
     constructor(body) {
@@ -21,33 +22,31 @@ describe('fetchWrapper', () => {
   }
 
   it('should call fetch if the promise is not in cache', () => {
-    global.fetch = jest.fn(() => new Promise(() => {
-    }));
+    fetchMock.mock('http://example.com/', 200);
     fetchWrapper('http://example.com');
-    expect(global.fetch).toHaveBeenCalledTimes(1);
+    expect(fetchMock).toHaveBeenCalledTimes(1);
   });
 
   it('should get the promise from cache', () => {
-    global.fetch = jest.fn(() => new Promise(() => {
-    }));
-    fetchWrapper('http://example.com');
-    fetchWrapper('http://example.com');
-    expect(global.fetch).toHaveBeenCalledTimes(1);
+    fetchMock.mock('http://example2.com/', 200);
+    fetchWrapper('http://example2.com');
+    fetchWrapper('http://example2.com');
+    expect(fetchMock).toHaveBeenCalledTimes(1);
   });
 
   it('should resolves with a cloned Response object ', () => {
     const mockResponse = new Response('foo');
-    global.fetch = jest.fn(() => Promise.resolve(mockResponse));
-    return fetchWrapper('http://example.com').then((res) => {
+    fetchMock.mock('http://example3.com', Promise.resolve(mockResponse));
+    return fetchWrapper('http://example3.com').then((res) => {
       expect(res).not.toBe(mockResponse);
     });
   });
 
   it('should remove the promise from cache when rejected ', () => {
-    global.fetch = jest.fn(() => Promise.reject(new Error('failed fetch')));
-    return fetchWrapper('http://example.com').catch(() => {
-      fetchWrapper('http://example.com');
-      expect(global.fetch).toHaveBeenCalledTimes(2);
+    fetchMock.mock('http://example4.com', { throw: new Error('Error') });
+    return fetchWrapper('http://example4.com').catch(() => {
+      fetchWrapper('http://example4.com');
+      expect(fetchMock).toHaveBeenCalledTimes(2);
     });
   });
 });

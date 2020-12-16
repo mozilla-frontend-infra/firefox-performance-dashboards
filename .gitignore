@@ -63,3 +63,6 @@ typings/
 # package.lock.json
 package-lock.json
 build/
+
+# IDE files
+.idea/
