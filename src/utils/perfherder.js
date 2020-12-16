@@ -25,6 +25,7 @@ export const perfDataUrls = ({ frameworkId, project }, signatureIds, timeRange) 
   const baseParams = stringify({
     framework: frameworkId,
     interval: timeRange,
+    no_retriggers: true,
   });
     // To guarantee order for tests
   signatureIds.sort();
