@@ -14,6 +14,7 @@ const COLORS = {
   chromium: '#9DD866',
   fennec: '#9DD866',
   geckoview: '#6F4E7C',
+  'geckoview-webrender': '#92110c',
   fenix: '#FFA056',
   'fenix-webrender': '#e5ca0f',
   firefox: '#FFA056',
@@ -970,6 +971,7 @@ const MOBILE_APPS = {
   'chrome-m': {
     name: 'chrome-m',
     label: 'Chrome',
+    extraOptions: ['nocondprof'],
   },
   fenix: {
     name: 'fenix',
@@ -979,7 +981,7 @@ const MOBILE_APPS = {
   'fenix-webrender': {
     name: 'fenix',
     label: 'Fenix-WebRender',
-    extraOptions: ['webrender'],
+    extraOptions: ['webrender', 'nocondprof'],
   },
   fennec: {
     name: 'fennec',
@@ -990,6 +992,13 @@ const MOBILE_APPS = {
     name: 'geckoview',
     label: 'GeckoView',
     project: ALT_PROJECT,
+    extraOptions: ['nocondprof'],
+  },
+  'geckoview-webrender': {
+    name: 'geckoview',
+    label: 'GeckoView WebRender',
+    project: ALT_PROJECT,
+    extraOptions: ['webrender', 'nocondprof'],
   },
 };
 
