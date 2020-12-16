@@ -1,9 +1,6 @@
 import assert from 'assert';
 import { perfDataUrls, queryPerformanceData } from '../src/utils/perfherder';
 
-import LINUX64_KRAKEN_EXPECTED_DATA from './mocks/linux64/kraken/expected.json';
-import WIN10_TP5O_EXPECTED_DATA from './mocks/win10/Tp5o/expected.json';
-import WIN10_SESSION_RESTORE_EXPECTED_DATA from './mocks/win10/SessionRestore/expected.json';
 import MAC_STYLEBENCH_SIGNATURES from './mocks/mac/StyleBench/signatures';
 import MAC_STYLEBENCH_URLS from './mocks/mac/StyleBench/urls';
 
@@ -18,16 +15,15 @@ Polly.register(NodeHttpAdapter);
 Polly.register(FSPersister);
 
 const TIMERANGE = 2 * 24 * 3600;
+const TALOS_ID = 1;
+const LINUX = 'linux64-shippable';
+const WINDOWS = 'windows10-64-shippable';
 
-const downcastDatetimesToStrings = (data) => {
-  const newData = { ...data };
-  Object.keys(newData).forEach((node) => {
-    newData[node].data.forEach((datum, index) => {
-      newData[node].data[index].datetime = new Date(datum.push_timestamp * 1000);
-    });
-  });
-  return newData;
-};
+// These tests use the fetch responses available in /recordings.
+// If there is no recordings to be used, polly will do the real request
+// and persist the responses as recordings.
+// The /recordings folder should be deleted once in a while and `yarn test`
+// command should be run to generate fresh recordings.
 
 describe('Perfherder', () => {
   setupPolly({
@@ -42,13 +38,13 @@ describe('Perfherder', () => {
 
   const TALOS_CONFIG = {
     extraOptions: ['e10s', 'stylo'],
-    frameworkId: 1,
+    frameworkId: TALOS_ID,
   };
 
   describe('Linux64', () => {
     it('Kraken (no subtests)', async () => {
       const seriesConfig = {
-        platform: 'linux64-shippable',
+        platform: LINUX,
         suite: 'kraken',
         option: 'opt',
         project: 'autoland',
@@ -60,13 +56,21 @@ describe('Perfherder', () => {
         { includeSubtests: false, timeRange: TIMERANGE },
       );
 
-      assert.deepEqual(data, downcastDatetimesToStrings(LINUX64_KRAKEN_EXPECTED_DATA));
+      expect(Object.keys(data)).toHaveLength(1);
+      Object.keys(data).forEach((node) => {
+        expect(data[node].data.length).toBeGreaterThanOrEqual(1);
+        expect(data[node].meta.parentSignatureHash).toEqual(node);
+        expect(data[node].meta.framework_id).toEqual(TALOS_ID);
+        expect(data[node].meta.machine_platform).toEqual(LINUX);
+        expect(data[node].meta.suite).toEqual('kraken');
+      });
+      // assert.deepEqual(data, downcastDatetimesToStrings(LINUX64_KRAKEN_EXPECTED_DATA));
     });
   });
 
   describe('Windows 10', () => {
     const seriesConfig = {
-      platform: 'windows10-64-shippable',
+      platform: WINDOWS,
       project: 'autoland',
       option: 'opt',
       ...TALOS_CONFIG,
@@ -76,14 +80,30 @@ describe('Perfherder', () => {
       seriesConfig.suite = 'tp5o';
 
       const data = await queryPerformanceData(seriesConfig, { timeRange: TIMERANGE });
-      assert.deepEqual(data, downcastDatetimesToStrings(WIN10_TP5O_EXPECTED_DATA));
+      // assert.deepEqual(data, downcastDatetimesToStrings(WIN10_TP5O_EXPECTED_DATA));
+      expect(Object.keys(data)).toHaveLength(1);
+      Object.keys(data).forEach((node) => {
+        expect(data[node].data.length).toBeGreaterThanOrEqual(1);
+        expect(data[node].meta.parentSignatureHash).toEqual(node);
+        expect(data[node].meta.framework_id).toEqual(TALOS_ID);
+        expect(data[node].meta.machine_platform).toEqual(WINDOWS);
+        expect(data[node].meta.suite).toEqual('tp5o');
+      });
     });
 
     it('sessionrestore', async () => {
       seriesConfig.suite = 'sessionrestore';
 
       const data = await queryPerformanceData(seriesConfig, { timeRange: TIMERANGE });
-      assert.deepEqual(data, downcastDatetimesToStrings(WIN10_SESSION_RESTORE_EXPECTED_DATA));
+      // assert.deepEqual(data, downcastDatetimesToStrings(WIN10_SESSION_RESTORE_EXPECTED_DATA));
+      expect(Object.keys(data)).toHaveLength(1);
+      Object.keys(data).forEach((node) => {
+        expect(data[node].data.length).toBeGreaterThanOrEqual(1);
+        expect(data[node].meta.parentSignatureHash).toEqual(node);
+        expect(data[node].meta.framework_id).toEqual(TALOS_ID);
+        expect(data[node].meta.machine_platform).toEqual(WINDOWS);
+        expect(data[node].meta.suite).toEqual('sessionrestore');
+      });
     });
   });
 
