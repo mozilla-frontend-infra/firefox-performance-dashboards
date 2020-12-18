@@ -38,6 +38,7 @@ class App extends Component {
       classes, category, benchmark, viewConfig, viewPlatform, dayRange,
     } = this.props;
     const benchmarks = queryInfo(viewConfig, benchmark, category);
+    const predefinedResults = Object.values(benchmarks).length === 1;
     return (
       <div className={classes.container}>
         {(Object.values(benchmarks).length !== 0)
@@ -47,6 +48,7 @@ class App extends Component {
           category={category}
           benchmark={benchmark}
           dayRange={dayRange}
+          predefinedResults={predefinedResults}
           ref={this.navigationRef}
         />
         )}

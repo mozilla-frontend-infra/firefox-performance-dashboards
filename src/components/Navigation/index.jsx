@@ -24,22 +24,6 @@ class Navigation extends Component {
     benchmarks: [],
   };
 
-  /* eslint-disable react/no-did-update-set-state */
-  componentDidUpdate(prevProps) {
-    const {
-      platform, category, dayRange,
-    } = this.props;
-    if (
-      platform !== prevProps.platform
-      || category !== prevProps.category
-      || dayRange !== prevProps.dayRange
-    ) {
-      this.setState({
-        benchmarks: [],
-      });
-    }
-  }
-
   handlePathChange = (event) => {
     const { name, value } = event.target;
     const {
@@ -66,6 +50,11 @@ class Navigation extends Component {
     } else {
       newBenchmark = value;
     }
+    if (name !== 'results') {
+      this.setState({
+        benchmarks: [],
+      });
+    }
     history.push(`/${newPlatform}/${newCategory}/${newBenchmark}?numDays=${newDayRange}`);
   };
 
@@ -80,7 +69,7 @@ class Navigation extends Component {
 
   render() {
     const {
-      classes, platform, category, benchmark, dayRange,
+      classes, platform, category, benchmark, dayRange, predefinedResults,
     } = this.props;
     const { benchmarks } = this.state;
     return (
@@ -91,6 +80,7 @@ class Navigation extends Component {
           category={category}
           benchmark={benchmark}
           resultsBenchmarks={benchmarks}
+          predefinedResults={predefinedResults}
           dayRange={dayRange}
         />
       </div>
