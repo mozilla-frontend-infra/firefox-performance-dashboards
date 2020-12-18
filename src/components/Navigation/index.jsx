@@ -20,6 +20,10 @@ const Pickers = Loadable({
 });
 
 class Navigation extends Component {
+  state = {
+    benchmarks: [],
+  };
+
   handlePathChange = (event) => {
     const { name, value } = event.target;
     const {
@@ -46,13 +50,28 @@ class Navigation extends Component {
     } else {
       newBenchmark = value;
     }
+    if (name !== 'results') {
+      this.setState({
+        benchmarks: [],
+      });
+    }
     history.push(`/${newPlatform}/${newCategory}/${newBenchmark}?numDays=${newDayRange}`);
+  };
+
+  updateBenchmarks = (benchmark) => {
+    const { benchmarks } = this.state;
+    if (!benchmarks.includes(benchmark)) {
+      this.setState({
+        benchmarks: [...benchmarks, benchmark],
+      });
+    }
   };
 
   render() {
     const {
-      classes, platform, category, benchmark, dayRange,
+      classes, platform, category, benchmark, dayRange, predefinedResults,
     } = this.props;
+    const { benchmarks } = this.state;
     return (
       <div className={classes.root}>
         <Pickers
@@ -61,6 +80,8 @@ class Navigation extends Component {
           category={category}
           benchmark={benchmark}
           dayRange={dayRange}
+          resultsBenchmarks={benchmarks}
+          predefinedResults={predefinedResults}
         />
       </div>
     );
@@ -74,5 +95,19 @@ Navigation.propTypes = {
   dayRange: PropTypes.number.isRequired,
 };
 
-// withRouter() allow us to use this.props.history to push a new address
-export default withRouter(withStyles(styles)(Navigation));
+/* eslint-disable react/jsx-props-no-spreading */
+const withRouterAndRef = (Wrapped) => {
+  const WithRouter = withRouter(({ forwardRef, ...otherProps }) => (
+    <Wrapped ref={forwardRef} {...otherProps} />
+  ));
+  const WithRouterAndRef = React.forwardRef((props, ref) => (
+    <WithRouter {...props} forwardRef={ref} />
+  ));
+  const name = Wrapped.displayName || Wrapped.name;
+  WithRouterAndRef.displayName = `withRouterAndRef(${name})`;
+  return WithRouterAndRef;
+};
+
+// withRouterAndRef() allow us to use this.props.history to push a new address and to forward refs
+// this is necessary because withRouter() HOC doesn't yet support forward refs
+export default withRouterAndRef(withStyles(styles)(Navigation));

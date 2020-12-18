@@ -14,7 +14,7 @@ const styles = () => ({
 });
 
 const Pickers = ({
-  classes, benchmark, category, onChange, platform, dayRange,
+  classes, benchmark, category, onChange, platform, dayRange, resultsBenchmarks, predefinedResults,
 }) => (
   <div className={classes.root}>
     <Picker
@@ -50,13 +50,22 @@ const Pickers = ({
       onSelection={onChange}
       selectedValue={benchmark}
       options={
-        CONFIG.views[platform].categories[category].suites.sort().reduce((res, benchmarkKey) => {
-          res.push({
-            value: benchmarkKey,
-            label: BENCHMARKS[benchmarkKey].label,
-          });
-          return res;
-        }, [{ value: 'overview', label: 'Overview' }])
+        predefinedResults
+          ? (CONFIG.views[platform].categories[category].suites
+            .sort().reduce((res, benchmarkKey) => {
+              res.push({
+                value: benchmarkKey,
+                label: BENCHMARKS[benchmarkKey].label,
+              });
+              return res;
+            }, [{ value: 'overview', label: 'Overview' }]))
+          : (resultsBenchmarks.sort().reduce((res, benchmarkKey) => {
+            res.push({
+              value: benchmarkKey,
+              label: BENCHMARKS[benchmarkKey].label,
+            });
+            return res;
+          }, [{ value: 'overview', label: 'Overview' }]))
       }
     />
     ) }

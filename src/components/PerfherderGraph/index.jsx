@@ -136,7 +136,9 @@ class PerferhderGraph extends React.Component {
   }
 
   render() {
-    const { classes, extraLink } = this.props;
+    const {
+      classes, extraLink, handleData, benchmarkUID,
+    } = this.props;
     const { data, fetchedData } = this.state;
     return (
       <div>
@@ -145,6 +147,7 @@ class PerferhderGraph extends React.Component {
           chartJsData, chartJsOptions, jointUrl, title, overview,
         }) => (
           <div key={title}>
+            {handleData(benchmarkUID)}
             <h2 className={classes.benchmarkTitle}>{title}</h2>
             <a href={jointUrl} target="_blank" rel="noopener noreferrer">
               <LinkIcon className={classes.linkIcon} />
