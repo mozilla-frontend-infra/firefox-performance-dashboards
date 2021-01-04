@@ -26,11 +26,11 @@ const LoadableEmptyState = Loadable({
 class App extends Component {
   constructor(props) {
     super(props);
-    this.navigationRef = React.createRef();
+    this.navRef = React.createRef();
   }
 
   handleData = (benchmarkUID) => {
-    this.navigationRef.current.updateBenchmarks(benchmarkUID);
+    this.navRef.current.updateBenchmarks(benchmarkUID);
   };
 
   render() {
@@ -49,7 +49,7 @@ class App extends Component {
           benchmark={benchmark}
           dayRange={dayRange}
           predefinedResults={predefinedResults}
-          ref={this.navigationRef}
+          ref={this.navRef}
         />
         )}
         <Description
