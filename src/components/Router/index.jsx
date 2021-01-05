@@ -6,7 +6,6 @@ import App from '../App';
 import { CONFIG } from '../../config';
 import validCombination from '../../utils/validCombination';
 
-
 const Router = () => (
   <BrowserRouter>
     <Switch>

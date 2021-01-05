@@ -448,7 +448,6 @@ export const CONFIG = {
 // Upper limit for the time range slider measured in days
 export const TIMERANGE_UPPER_LIMIT = 365;
 
-
 // Given a view configuration return a data structure with the data
 // structure needed to query Treeherder
 export const queryInfo = (viewConfig, benchmark, category) => queryInfoGen(BENCHMARKS, viewConfig,
