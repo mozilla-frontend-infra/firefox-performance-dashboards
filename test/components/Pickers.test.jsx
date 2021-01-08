@@ -4,6 +4,10 @@ import 'raf/polyfill';
 import Pickers from '../../src/components/Pickers';
 import { CONFIG } from '../../src/config';
 
+function handleChange() {
+
+}
+
 it('renders correctly', () => {
   const { asFragment } = render(
     <Pickers
@@ -13,6 +17,9 @@ it('renders correctly', () => {
       dayRange={60}
       resultsBenchmarks={CONFIG.views.win10.categories.benchmarks.suites}
       onChange={() => {}}
+      labels={['Firefox']}
+      selectedLabels={['Firefox']}
+      onMultipleSelect={handleChange}
     />,
   );
   expect(asFragment()).toMatchSnapshot();

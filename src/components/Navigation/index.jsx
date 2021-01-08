@@ -71,7 +71,7 @@ class Navigation extends Component {
 
   render() {
     const {
-      classes, platform, category, benchmark, dayRange,
+      classes, platform, category, benchmark, dayRange, labels, selectedLabels, onMultipleSelect,
     } = this.props;
     return (
       <div className={classes.root}>
@@ -81,6 +81,9 @@ class Navigation extends Component {
           category={category}
           benchmark={benchmark}
           dayRange={dayRange}
+          labels={labels}
+          selectedLabels={selectedLabels}
+          onMultipleSelect={onMultipleSelect}
         />
       </div>
     );

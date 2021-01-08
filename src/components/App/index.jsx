@@ -29,6 +29,10 @@ class App extends Component {
     this.navigationRef = React.createRef();
   }
 
+  state = {
+    selectedLabels: [],
+  };
+
   handleData = (benchmarkUID) => {
     const { benchmark, viewPlatform, category } = this.props;
     const itemKey = `(${viewPlatform}, ${category})`;
@@ -37,11 +41,21 @@ class App extends Component {
     }
   };
 
+   handleChange = (event) => {
+    this.setState(() => ({
+      selectedLabels: [...event.target.value],
+    }));
+  };
+
   render() {
     const {
       classes, category, benchmark, viewConfig, viewPlatform, dayRange,
     } = this.props;
     const benchmarks = queryInfo(viewConfig, benchmark, category);
+    const labels = Object.values(benchmarks)
+      .map(({ compare }) => (compare.map(({ label }) => (label))));
+    const allLabels = [...new Set(labels.flat(1))];
+    const { selectedLabels } = this.state;
     return (
       <div className={classes.container}>
         {(Object.values(benchmarks).length !== 0)
@@ -52,6 +66,9 @@ class App extends Component {
           benchmark={benchmark}
           dayRange={dayRange}
           ref={this.navigationRef}
+          labels={allLabels}
+          selectedLabels={selectedLabels}
+          onMultipleSelect={this.handleChange}
         />
         )}
         <Description
@@ -70,6 +87,8 @@ class App extends Component {
               yLabel={yLabel}
               handleData={this.handleData}
               benchmarkUID={benchmarkUID}
+              label={allLabels[0]}
+              selectedLabels={selectedLabels}
             />
           </div>
         )) : <LoadableEmptyState text="Category not available for the selected Platform" />}
