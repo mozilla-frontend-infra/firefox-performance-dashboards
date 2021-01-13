@@ -1,3 +1,5 @@
+const TTL = 1000 * 60 * 60 * 24; // 24 hours
+
 export const getUnexpiredItem = (key) => {
   const itemStr = localStorage.getItem(key);
   if (!itemStr) {
@@ -15,15 +17,13 @@ export const getUnexpiredItem = (key) => {
 
 export const setOrUpdateItem = (key, benchmarkUID) => {
   const now = new Date();
-  const ttl = 1000 * 60 * 60 * 24; // 24 hours
 
   let item = getUnexpiredItem(key);
 
-  item = item || { expiry: now.getTime() + ttl, value: [] };
+  item = item || { expiry: now.getTime() + TTL, value: [] };
 
   if (!item.value.includes(benchmarkUID)) {
     item.value.push(benchmarkUID);
+    localStorage.setItem(key, JSON.stringify(item));
   }
-
-  localStorage.setItem(key, JSON.stringify(item));
 };

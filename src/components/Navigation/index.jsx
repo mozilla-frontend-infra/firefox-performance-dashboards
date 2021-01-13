@@ -4,6 +4,7 @@ import { withRouter } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import Loadable from 'react-loadable';
 import Loading from '../Loading';
+import { setOrUpdateItem } from '../../utils/localStorageUtils';
 
 const styles = () => ({
   root: {
@@ -20,6 +21,10 @@ const Pickers = Loadable({
 });
 
 class Navigation extends Component {
+  state = {
+    benchmarks: [],
+  };
+
   handlePathChange = (event) => {
     const { name, value } = event.target;
     const {
@@ -46,12 +51,33 @@ class Navigation extends Component {
     } else {
       newBenchmark = value;
     }
+    if (name !== 'results') {
+      this.setState({
+        benchmarks: [],
+      });
+    }
     history.push(`/${newPlatform}/${newCategory}/${newBenchmark}?numDays=${newDayRange}`);
+  };
+
+  addBenchmarkToLocalStorage = (benchmarkUID, category, platform) => {
+    const itemName = `(${platform}, ${category})`;
+    setOrUpdateItem(itemName, benchmarkUID);
+  };
+
+  updateBenchmarks = (benchmark) => {
+    const { category, platform } = this.props;
+    const { benchmarks } = this.state;
+    this.addBenchmarkToLocalStorage(benchmark, category, platform);
+    if (!benchmarks.includes(benchmark)) {
+      this.setState({
+        benchmarks: [...benchmarks, benchmark],
+      });
+    }
   };
 
   render() {
     const {
-      classes, platform, category, benchmark, dayRange, predefinedResults,
+      classes, platform, category, benchmark, dayRange,
     } = this.props;
     return (
       <div className={classes.root}>
@@ -61,7 +87,6 @@ class Navigation extends Component {
           category={category}
           benchmark={benchmark}
           dayRange={dayRange}
-          predefinedResults={predefinedResults}
         />
       </div>
     );

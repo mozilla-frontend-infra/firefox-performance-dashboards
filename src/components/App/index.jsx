@@ -8,7 +8,6 @@ import PerfherderGraph from '../PerfherderGraph';
 import { queryInfo } from '../../config';
 import Loading from '../Loading';
 import Description from '../Description';
-import { setOrUpdateItem } from '../../utils/localStorageUtils';
 
 const sortByLabel = (a, b) => (a.label <= b.label ? -1 : 1);
 
@@ -25,16 +24,16 @@ const LoadableEmptyState = Loadable({
 
 // eslint-disable-next-line
 class App extends Component {
-
-  addBenchmarkToLocalStorage = (benchmarkUID) => {
-    const { category, viewPlatform } = this.props;
-    const itemName = `(${viewPlatform}, ${category})`;
-
-    setOrUpdateItem(itemName, benchmarkUID);
-  };
+  constructor(props) {
+    super(props);
+    this.navigationRef = React.createRef();
+  }
 
   handleData = (benchmarkUID) => {
-    this.addBenchmarkToLocalStorage(benchmarkUID);
+    const { benchmark } = this.props;
+    if (benchmark === 'overview') {
+      this.navigationRef.current.updateBenchmarks(benchmarkUID);
+    }
   };
 
   render() {
@@ -42,7 +41,6 @@ class App extends Component {
       classes, category, benchmark, viewConfig, viewPlatform, dayRange,
     } = this.props;
     const benchmarks = queryInfo(viewConfig, benchmark, category);
-    const predefinedResults = Object.values(benchmarks).length === 1;
     return (
       <div className={classes.container}>
         {(Object.values(benchmarks).length !== 0)
@@ -52,7 +50,7 @@ class App extends Component {
           category={category}
           benchmark={benchmark}
           dayRange={dayRange}
-          predefinedResults={predefinedResults}
+          ref={this.navigationRef}
         />
         )}
         <Description

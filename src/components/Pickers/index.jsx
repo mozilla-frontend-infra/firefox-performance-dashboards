@@ -15,16 +15,12 @@ const styles = () => ({
 });
 
 const Pickers = ({
-  classes, benchmark, category, onChange, platform, dayRange, predefinedResults,
+  classes, benchmark, category, onChange, platform, dayRange,
 }) => {
   const allSuites = CONFIG.views[platform].categories[category].suites;
   const itemName = `(${platform}, ${category})`;
   const item = getUnexpiredItem(itemName);
-  let results = allSuites;
-  if (!predefinedResults) {
-    results = (item) ? item.value : allSuites;
-  }
-
+  const results = (item) ? item.value : allSuites;
   return (
     <div className={classes.root}>
       <Picker
