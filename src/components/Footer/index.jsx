@@ -26,5 +26,4 @@ Footer.propTypes = {
   classes: PropTypes.shape().isRequired,
 };
 
-
 export default withStyles(styles)(Footer);

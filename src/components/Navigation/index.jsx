@@ -20,10 +20,6 @@ const Pickers = Loadable({
 });
 
 class Navigation extends Component {
-  state = {
-    benchmarks: [],
-  };
-
   handlePathChange = (event) => {
     const { name, value } = event.target;
     const {
@@ -50,28 +46,13 @@ class Navigation extends Component {
     } else {
       newBenchmark = value;
     }
-    if (name !== 'results') {
-      this.setState({
-        benchmarks: [],
-      });
-    }
     history.push(`/${newPlatform}/${newCategory}/${newBenchmark}?numDays=${newDayRange}`);
-  };
-
-  updateBenchmarks = (benchmark) => {
-    const { benchmarks } = this.state;
-    if (!benchmarks.includes(benchmark)) {
-      this.setState({
-        benchmarks: [...benchmarks, benchmark],
-      });
-    }
   };
 
   render() {
     const {
       classes, platform, category, benchmark, dayRange, predefinedResults,
     } = this.props;
-    const { benchmarks } = this.state;
     return (
       <div className={classes.root}>
         <Pickers
@@ -80,7 +61,6 @@ class Navigation extends Component {
           category={category}
           benchmark={benchmark}
           dayRange={dayRange}
-          resultsBenchmarks={benchmarks}
           predefinedResults={predefinedResults}
         />
       </div>

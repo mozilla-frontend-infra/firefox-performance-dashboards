@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Picker from '../Picker';
 import { BENCHMARKS, CONFIG } from '../../config';
 import { generateLastDaysLabel } from '../../utils/timeRangeUtils';
+import { getUnexpiredItem } from '../../utils/localStorageUtils';
 
 const styles = () => ({
   root: {
@@ -14,74 +15,73 @@ const styles = () => ({
 });
 
 const Pickers = ({
-  classes, benchmark, category, onChange, platform, dayRange, resultsBenchmarks, predefinedResults,
-}) => (
-  <div className={classes.root}>
-    <Picker
-      key="Platform selection"
-      identifier="platform"
-      topLabel="Platform"
-      onSelection={onChange}
-      selectedValue={platform}
-      options={
+  classes, benchmark, category, onChange, platform, dayRange, predefinedResults,
+}) => {
+  const allSuites = CONFIG.views[platform].categories[category].suites;
+  const itemName = `(${platform}, ${category})`;
+  const item = getUnexpiredItem(itemName);
+  let results = allSuites;
+  if (!predefinedResults) {
+    results = (item) ? item.value : allSuites;
+  }
+
+  return (
+    <div className={classes.root}>
+      <Picker
+        key="Platform selection"
+        identifier="platform"
+        topLabel="Platform"
+        onSelection={onChange}
+        selectedValue={platform}
+        options={
         Object.keys(CONFIG.views).reduce((res, platformKey) => {
           res.push({ value: platformKey, label: CONFIG.views[platformKey].label });
           return res;
         }, [])
       }
-    />
-    <Picker
-      key="Category selection"
-      identifier="category"
-      topLabel="Category"
-      onSelection={onChange}
-      selectedValue={category}
-      options={
+      />
+      <Picker
+        key="Category selection"
+        identifier="category"
+        topLabel="Category"
+        onSelection={onChange}
+        selectedValue={category}
+        options={
             Object.entries(CONFIG.views[platform].categories).map(
               ([catKey, catValue]) => ({ value: catKey, label: catValue.label }),
             )
         }
-    />
-    {CONFIG.views[platform].categories[category] && (
-    <Picker
-      key="Benchmark selection"
-      identifier="results"
-      topLabel="Results"
-      onSelection={onChange}
-      selectedValue={benchmark}
-      options={
-        predefinedResults
-          ? (CONFIG.views[platform].categories[category].suites
-            .sort().reduce((res, benchmarkKey) => {
-              res.push({
-                value: benchmarkKey,
-                label: BENCHMARKS[benchmarkKey].label,
-              });
-              return res;
-            }, [{ value: 'overview', label: 'Overview' }]))
-          : (resultsBenchmarks.sort().reduce((res, benchmarkKey) => {
-            res.push({
-              value: benchmarkKey,
-              label: BENCHMARKS[benchmarkKey].label,
-            });
-            return res;
-          }, [{ value: 'overview', label: 'Overview' }]))
-      }
-    />
-    ) }
-    <Picker
-      key="Time range"
-      identifier="numDays"
-      topLabel="Time range"
-      onSelection={onChange}
-      selectedValue={dayRange}
-      options={CONFIG.dayRange.map((numDays) => ({
-        value: numDays,
-        label: generateLastDaysLabel(numDays),
-      }))}
-    />
-  </div>
-);
+      />
+      {CONFIG.views[platform].categories[category] && (
+      <Picker
+        key="Benchmark selection"
+        identifier="results"
+        topLabel="Results"
+        onSelection={onChange}
+        selectedValue={benchmark}
+        options={results.sort().reduce((res, benchmarkKey) => {
+          res.push({
+            value: benchmarkKey,
+            label: BENCHMARKS[benchmarkKey].label,
+          });
+          return res;
+        }, [{ value: 'overview', label: 'Overview' }])}
+      />
+      ) }
+      <Picker
+        key="Time range"
+        identifier="numDays"
+        topLabel="Time range"
+        onSelection={onChange}
+        selectedValue={dayRange}
+        options={CONFIG.dayRange.map((numDays) => ({
+          value: numDays,
+          label: generateLastDaysLabel(numDays),
+        }))}
+      />
+    </div>
+  );
+};
 
 Pickers.propTypes = ({
   classes: PropTypes.shape().isRequired,

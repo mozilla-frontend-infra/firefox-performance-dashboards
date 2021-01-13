@@ -8,6 +8,7 @@ import PerfherderGraph from '../PerfherderGraph';
 import { queryInfo } from '../../config';
 import Loading from '../Loading';
 import Description from '../Description';
+import { setOrUpdateItem } from '../../utils/localStorageUtils';
 
 const sortByLabel = (a, b) => (a.label <= b.label ? -1 : 1);
 
@@ -24,13 +25,16 @@ const LoadableEmptyState = Loadable({
 
 // eslint-disable-next-line
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.navRef = React.createRef();
-  }
+
+  addBenchmarkToLocalStorage = (benchmarkUID) => {
+    const { category, viewPlatform } = this.props;
+    const itemName = `(${viewPlatform}, ${category})`;
+
+    setOrUpdateItem(itemName, benchmarkUID);
+  };
 
   handleData = (benchmarkUID) => {
-    this.navRef.current.updateBenchmarks(benchmarkUID);
+    this.addBenchmarkToLocalStorage(benchmarkUID);
   };
 
   render() {
@@ -49,7 +53,6 @@ class App extends Component {
           benchmark={benchmark}
           dayRange={dayRange}
           predefinedResults={predefinedResults}
-          ref={this.navRef}
         />
         )}
         <Description
