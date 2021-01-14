@@ -32,6 +32,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-assorted-dom-firefox',
         project: ALT_PROJECT,
         option: 'opt',
+        extraOptions: ['nocondprof'],
       },
       'raptor-assorted-dom-chromium': {
         color: COLORS.chromium,
@@ -48,7 +49,7 @@ export const AWFY_BENCHMARKS = {
         project: ALT_PROJECT,
         platformSuffix: '-qr',
         option: 'opt',
-        extraOptions: ['webrender'],
+        extraOptions: ['nocondprof', 'webrender'],
       },
       'raptor-assorted-dom-firefox-fission': {
         color: COLORS['firefox-fission'],
@@ -57,7 +58,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-assorted-dom-firefox',
         platformSuffix: '-qr',
         option: 'opt',
-        extraOptions: ['fission', 'webrender'],
+        extraOptions: ['nocondprof', 'fission', 'webrender'],
       },
 
     },
@@ -105,6 +106,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-motionmark-animometer-firefox',
         project: ALT_PROJECT,
         option: 'opt',
+        extraOptions: ['nocondprof'],
       },
       'raptor-motionmark-animometer-chromium': {
         color: COLORS.chromium,
@@ -128,7 +130,7 @@ export const AWFY_BENCHMARKS = {
         project: ALT_PROJECT,
         platformSuffix: '-qr',
         option: 'opt',
-        extraOptions: ['webrender'],
+        extraOptions: ['nocondprof', 'webrender'],
       },
       'raptor-motionmark-animometer-firefox-fission': {
         color: COLORS['firefox-fission'],
@@ -137,7 +139,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-motionmark-animometer-firefox',
         platformSuffix: '-qr',
         option: 'opt',
-        extraOptions: ['fission', 'webrender'],
+        extraOptions: ['nocondprof', 'fission', 'webrender'],
       },
     },
     label: 'MotionMark Animometer',
@@ -151,6 +153,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-motionmark-htmlsuite-firefox',
         project: ALT_PROJECT,
         option: 'opt',
+        extraOptions: ['nocondprof'],
       },
       'raptor-motionmark-htmlsuite-chromium': {
         color: COLORS.chromium,
@@ -174,7 +177,7 @@ export const AWFY_BENCHMARKS = {
         project: ALT_PROJECT,
         platformSuffix: '-qr',
         option: 'opt',
-        extraOptions: ['webrender'],
+        extraOptions: ['nocondprof', 'webrender'],
       },
       'raptor-motionmark-htmlsuite-firefox-fission': {
         color: COLORS['firefox-fission'],
@@ -183,7 +186,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-motionmark-htmlsuite-firefox',
         platformSuffix: '-qr',
         option: 'opt',
-        extraOptions: ['fission', 'webrender'],
+        extraOptions: ['nocondprof', 'fission', 'webrender'],
       },
     },
     label: 'MotionMark HtmlSuite',
@@ -197,6 +200,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-speedometer-firefox',
         project: ALT_PROJECT,
         option: 'opt',
+        extraOptions: ['nocondprof'],
       },
       'raptor-speedometer-chromium': {
         color: COLORS.chromium,
@@ -220,7 +224,7 @@ export const AWFY_BENCHMARKS = {
         project: ALT_PROJECT,
         platformSuffix: '-qr',
         option: 'opt',
-        extraOptions: ['webrender'],
+        extraOptions: ['nocondprof', 'webrender'],
       },
       'raptor-speedometer-firefox-fission': {
         color: COLORS['firefox-fission'],
@@ -229,7 +233,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-speedometer-firefox',
         platformSuffix: '-qr',
         option: 'opt',
-        extraOptions: ['fission', 'webrender'],
+        extraOptions: ['nocondprof', 'fission', 'webrender'],
       },
     },
     label: 'Speedometer',
@@ -243,6 +247,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-stylebench-firefox',
         project: ALT_PROJECT,
         option: 'opt',
+        extraOptions: ['nocondprof'],
       },
       'raptor-stylebench-chromium': {
         color: COLORS.chromium,
@@ -266,7 +271,7 @@ export const AWFY_BENCHMARKS = {
         project: ALT_PROJECT,
         platformSuffix: '-qr',
         option: 'opt',
-        extraOptions: ['webrender'],
+        extraOptions: ['nocondprof', 'webrender'],
       },
       'raptor-stylebench-firefox-fission': {
         color: COLORS['firefox-fission'],
@@ -275,7 +280,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-stylebench-firefox',
         platformSuffix: '-qr',
         option: 'opt',
-        extraOptions: ['fission', 'webrender'],
+        extraOptions: ['nocondprof', 'fission', 'webrender'],
       },
     },
     label: 'StyleBench',
@@ -289,6 +294,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-sunspider-firefox',
         project: ALT_PROJECT,
         option: 'opt',
+        extraOptions: ['nocondprof'],
       },
       'raptor-sunspider-chromium': {
         color: COLORS.chromium,
@@ -312,7 +318,7 @@ export const AWFY_BENCHMARKS = {
         project: ALT_PROJECT,
         platformSuffix: '-qr',
         option: 'opt',
-        extraOptions: ['webrender'],
+        extraOptions: ['nocondprof', 'webrender'],
       },
       'raptor-sunspider-firefox-fission': {
         color: COLORS['firefox-fission'],
@@ -321,7 +327,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-sunspider-firefox',
         platformSuffix: '-qr',
         option: 'opt',
-        extraOptions: ['fission', 'webrender'],
+        extraOptions: ['nocondprof', 'fission', 'webrender'],
       },
     },
     label: 'SunSpider',
@@ -335,6 +341,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-webaudio-firefox',
         project: ALT_PROJECT,
         option: 'opt',
+        extraOptions: ['nocondprof'],
       },
       'raptor-webaudio-chromium': {
         color: COLORS.chromium,
@@ -358,7 +365,7 @@ export const AWFY_BENCHMARKS = {
         project: ALT_PROJECT,
         platformSuffix: '-qr',
         option: 'opt',
-        extraOptions: ['webrender'],
+        extraOptions: ['nocondprof', 'webrender'],
       },
       'raptor-webaudio-firefox-fission': {
         color: COLORS['firefox-fission'],
@@ -367,7 +374,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-webaudio-firefox',
         platformSuffix: '-qr',
         option: 'opt',
-        extraOptions: ['fission', 'webrender'],
+        extraOptions: ['nocondprof', 'fission', 'webrender'],
       },
     },
     label: 'WebAudio',
@@ -381,6 +388,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-unity-webgl-firefox',
         project: ALT_PROJECT,
         option: 'opt',
+        extraOptions: ['nocondprof'],
       },
       'raptor-unity-webgl-chromium': {
         color: COLORS.chromium,
@@ -397,7 +405,7 @@ export const AWFY_BENCHMARKS = {
         project: ALT_PROJECT,
         platformSuffix: '-qr',
         option: 'opt',
-        extraOptions: ['webrender'],
+        extraOptions: ['nocondprof', 'webrender'],
       },
       'raptor-unity-webgl-firefox-fission': {
         color: COLORS['firefox-fission'],
@@ -406,7 +414,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-unity-webgl-firefox',
         platformSuffix: '-qr',
         option: 'opt',
-        extraOptions: ['fission', 'webrender'],
+        extraOptions: ['nocondprof', 'fission', 'webrender'],
       },
     },
     label: 'Unity WebGL',
@@ -544,6 +552,7 @@ export const AWFY_BENCHMARKS = {
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-misc-firefox',
         option: 'opt',
+        extraOptions: ['nocondprof'],
       },
       'raptor-wasm-misc-baseline-firefox': {
         color: 'red',
@@ -551,6 +560,7 @@ export const AWFY_BENCHMARKS = {
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-misc-baseline-firefox',
         option: 'opt',
+        extraOptions: ['nocondprof'],
       },
       'raptor-wasm-misc-ion-firefox': {
         color: 'brown',
@@ -558,6 +568,7 @@ export const AWFY_BENCHMARKS = {
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-misc-ion-firefox',
         option: 'opt',
+        extraOptions: ['nocondprof'],
       },
       'raptor-wasm-misc-chromium': {
         color: COLORS.chromium,
@@ -580,6 +591,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-wasm-godot-firefox',
         project: ALT_PROJECT,
         option: 'opt',
+        extraOptions: ['nocondprof'],
       },
       'raptor-wasm-godot-baseline-firefox': {
         color: 'red',
@@ -588,6 +600,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-wasm-godot-baseline-firefox',
         project: ALT_PROJECT,
         option: 'opt',
+        extraOptions: ['nocondprof'],
       },
       'raptor-wasm-godot-ion-firefox': {
         color: 'brown',
@@ -596,6 +609,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-wasm-godot-ion-firefox',
         project: ALT_PROJECT,
         option: 'opt',
+        extraOptions: ['nocondprof'],
       },
       'raptor-wasm-godot-chromium': {
         color: COLORS.chromium,
@@ -619,7 +633,7 @@ export const AWFY_BENCHMARKS = {
         project: ALT_PROJECT,
         platformSuffix: '-qr',
         option: 'opt',
-        extraOptions: ['webrender'],
+        extraOptions: ['nocondprof', 'webrender'],
       },
       'raptor-wasm-godot-firefox-fission': {
         color: COLORS['firefox-fission'],
@@ -628,7 +642,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-wasm-godot-firefox',
         platformSuffix: '-qr',
         option: 'opt',
-        extraOptions: ['fission', 'webrender'],
+        extraOptions: ['nocondprof', 'fission', 'webrender'],
       },
     },
     colors: [COLORS.firefox, 'red', 'brown', COLORS.chromium, COLORS.chrome],
@@ -665,6 +679,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-ares6-firefox',
         project: ALT_PROJECT,
         option: 'opt',
+        extraOptions: ['nocondprof'],
       },
       'raptor-ares6-chromium': {
         color: COLORS.chromium,
@@ -688,7 +703,7 @@ export const AWFY_BENCHMARKS = {
         project: ALT_PROJECT,
         platformSuffix: '-qr',
         option: 'opt',
-        extraOptions: ['webrender'],
+        extraOptions: ['nocondprof', 'webrender'],
       },
       'raptor-ares6-firefox-fission': {
         color: COLORS['firefox-fission'],
@@ -697,7 +712,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'raptor-ares6-firefox',
         platformSuffix: '-qr',
         option: 'opt',
-        extraOptions: ['fission', 'webrender'],
+        extraOptions: ['nocondprof', 'fission', 'webrender'],
       },
     },
     label: 'Ares6',
