@@ -8,7 +8,7 @@ export const getUnexpiredItem = (key) => {
   const item = JSON.parse(itemStr);
   const now = new Date();
 
-  if (now.getTime() - item.expiry > TTL) {
+  if (now.getTime() - item.timestamp > TTL) {
     localStorage.removeItem(key);
     return null;
   }
@@ -20,7 +20,7 @@ export const setOrUpdateItem = (key, benchmarkUID) => {
 
   let item = getUnexpiredItem(key);
 
-  item = item || { expiry: now.getTime(), value: [] };
+  item = item || { timestamp: now.getTime(), value: [] };
 
   if (!item.value.includes(benchmarkUID)) {
     item.value.push(benchmarkUID);

@@ -4,9 +4,9 @@ it('Local storage item is remove if expired', () => {
   const key = 'foo';
   const now = new Date();
   const oneDayAgo = 1000 * 60 * 60 * 25; // 25 hours ago
-  const expiry = now.getTime() - oneDayAgo;
+  const timestamp = now.getTime() - oneDayAgo;
 
-  localStorage.setItem(key, JSON.stringify({ expiry, value: [] }));
+  localStorage.setItem(key, JSON.stringify({ timestamp, value: [] }));
 
   let itemFromLocalStorage = localStorage.getItem(key);
   expect(itemFromLocalStorage).not.toBeNull();
@@ -22,9 +22,9 @@ it('Unexpired local storage item are not removed', () => {
   const key = 'foo';
   const now = new Date();
   const validTimestamp = 1000 * 60 * 60 * 23; // 23 hours ago
-  const expiry = now.getTime() - validTimestamp;
+  const timestamp = now.getTime() - validTimestamp;
 
-  const value = JSON.stringify({ expiry, value: [] });
+  const value = JSON.stringify({ timestamp, value: [] });
   localStorage.setItem(key, value);
 
   let itemFromLocalStorage = localStorage.getItem(key);
