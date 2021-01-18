@@ -25,6 +25,7 @@ it('Query info', () => {
           suite: 'raptor-wasm-misc-firefox',
           option: 'opt',
           platform: 'linux64-shippable',
+          extraOptions: ['nocondprof'],
         },
         {
           color: '#FFA056',
@@ -33,6 +34,7 @@ it('Query info', () => {
           option: 'opt',
           platform: 'linux1804-64-shippable',
           suite: 'raptor-wasm-misc-firefox',
+          extraOptions: ['nocondprof'],
         },
         {
           color: 'red',
@@ -41,6 +43,7 @@ it('Query info', () => {
           suite: 'raptor-wasm-misc-baseline-firefox',
           option: 'opt',
           platform: 'linux64-shippable',
+          extraOptions: ['nocondprof'],
         },
         {
           color: 'red',
@@ -49,6 +52,7 @@ it('Query info', () => {
           suite: 'raptor-wasm-misc-baseline-firefox',
           option: 'opt',
           platform: 'linux1804-64-shippable',
+          extraOptions: ['nocondprof'],
         },
         {
           color: 'brown',
@@ -57,6 +61,7 @@ it('Query info', () => {
           suite: 'raptor-wasm-misc-ion-firefox',
           option: 'opt',
           platform: 'linux64-shippable',
+          extraOptions: ['nocondprof'],
         },
         {
           color: 'brown',
@@ -65,6 +70,7 @@ it('Query info', () => {
           suite: 'raptor-wasm-misc-ion-firefox',
           option: 'opt',
           platform: 'linux1804-64-shippable',
+          extraOptions: ['nocondprof'],
         },
         {
           color: '#9DD866',
