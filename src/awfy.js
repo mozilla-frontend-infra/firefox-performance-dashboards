@@ -995,10 +995,12 @@ const MOBILE_APPS = {
     name: 'fenix',
     label: 'Fenix',
     project: 'fenix',
+    extraOptions: ['nocondprof'],
   },
   'fenix-webrender': {
     name: 'fenix',
     label: 'Fenix-WebRender',
+    project: 'fenix',
     extraOptions: ['webrender', 'nocondprof'],
   },
   fennec: {
