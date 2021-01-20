@@ -925,26 +925,29 @@ const DESKTOP_APPS = {
   firefox: {
     name: 'firefox',
     label: 'Firefox',
+    extraOptions: ['nocondprof'],
   },
   'firefox-fission': {
     name: 'firefox',
     label: 'Firefox-Fission',
     platformSuffix: '-qr',
-    extraOptions: ['fission', 'webrender'],
+    extraOptions: ['nocondprof', 'fission', 'webrender'],
   },
   'firefox-webrender': {
     name: 'firefox',
     label: 'Firefox-WebRender',
     platformSuffix: '-qr',
-    extraOptions: ['webrender'],
+    extraOptions: ['nocondprof', 'webrender'],
   },
   chrome: {
     name: 'chrome',
     label: 'Chrome',
+    extraOptions: ['nocondprof'],
   },
   chromium: {
     name: 'chromium',
     label: 'Chromium',
+    extraOptions: ['nocondprof'],
   },
 };
 
