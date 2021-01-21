@@ -5,7 +5,6 @@ import { withStyles } from '@material-ui/core/styles';
 import { WarningOutlined } from '@material-ui/icons';
 import PropTypes from 'prop-types';
 
-
 const styles = () => ({
   container: {
     minHeight: '600px',
