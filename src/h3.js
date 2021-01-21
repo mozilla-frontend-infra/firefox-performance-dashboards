@@ -113,6 +113,7 @@ const PAUSE_DURATION = [
   '60s',
 ];
 
+
 Object.keys(SITES_LIST).forEach((siteKey) => {
   PAUSE_DURATION.forEach((dur) => {
     const bmKey = `${siteKey}-${dur}`;
@@ -139,6 +140,7 @@ Object.keys(SITES_LIST).forEach((siteKey) => {
 
 // Upper limit for the time range slider measured in days
 export const TIMERANGE_UPPER_LIMIT = 365;
+
 
 // Given a view configuration return a data structure with the data
 // structure needed to query Treeherder

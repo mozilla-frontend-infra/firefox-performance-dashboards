@@ -96,6 +96,7 @@ it('Query info', () => {
   });
 });
 
+
 it('Query info - suite with explicit project and platformSuffix ', () => {
   const benchmarks = queryInfo(CONFIG.views.linux64, 'rasterflood_svg', 'benchmarks');
   expect(benchmarks).toStrictEqual({

@@ -49,13 +49,16 @@ class App extends Component {
 
   render() {
     const {
-      classes, category, benchmark, viewConfig, viewPlatform, dayRange,
+      classes, category, benchmark, viewConfig, viewPlatform, dayRange, selectedSeries,
     } = this.props;
     const benchmarks = queryInfo(viewConfig, benchmark, category);
     const labels = Object.values(benchmarks)
       .map(({ compare }) => (compare.map(({ label }) => (label))));
     const allLabels = [...new Set(labels.flat(1))];
-    const { selectedLabels } = this.state;
+    let selectedLabels = [];
+    if (selectedSeries !== null && selectedSeries.length !== 0) {
+      selectedLabels = selectedSeries.split(',');
+    }
     return (
       <div className={classes.container}>
         {(Object.values(benchmarks).length !== 0)
@@ -68,7 +71,6 @@ class App extends Component {
           ref={this.navigationRef}
           labels={allLabels}
           selectedLabels={selectedLabels}
-          onMultipleSelect={this.handleChange}
         />
         )}
         <Description

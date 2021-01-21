@@ -80,6 +80,7 @@ class PerferhderGraph extends React.Component {
     const {
       series, dayRange, includeSubtests, title, yLabel, selectedLabels,
     } = this.props;
+    const selectedSeries = selectedLabels.filter((item) => item !== 'All series');
     this.setState({ data: {} });
     Promise.all(series.map(async (config) => {
       const response = await queryPerfData(config, options(dayRange, includeSubtests));
@@ -124,8 +125,8 @@ class PerferhderGraph extends React.Component {
               combined = true;
             }
           });
-          const hiddenValue = (selectedLabels.length !== 0)
-            ? (!selectedLabels.includes(config.label)) : false;
+          const hiddenValue = (selectedSeries.length !== 0)
+            ? (!selectedSeries.includes(config.label)) : false;
           if (!combined) {
             state.data[graphUid].chartJsData.datasets.push({
               label: config.label,

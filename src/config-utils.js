@@ -16,6 +16,7 @@ export const processSeries = (seriesConfig, viewConfig) => {
   return result;
 };
 
+
 // Given a view configuration return a data structure with the data
 // structure needed to query Treeherder
 export const queryInfoGen = (allBenchmarks, viewConfig, benchmark, category) => {

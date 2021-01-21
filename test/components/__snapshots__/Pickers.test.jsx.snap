@@ -23,7 +23,7 @@ exports[`renders correctly 1`] = `
         >
           <div
             aria-haspopup="listbox"
-            aria-labelledby="mui-component-select-platform"
+            aria-labelledby=" mui-component-select-platform"
             class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
             id="mui-component-select-platform"
             role="button"
@@ -32,16 +32,15 @@ exports[`renders correctly 1`] = `
             Windows 10 64bit
           </div>
           <input
-            aria-hidden="true"
-            class="MuiSelect-nativeInput"
             name="platform"
-            tabindex="-1"
+            type="hidden"
             value="win10"
           />
           <svg
             aria-hidden="true"
             class="MuiSvgIcon-root MuiSelect-icon"
             focusable="false"
+            role="presentation"
             viewBox="0 0 24 24"
           >
             <path
@@ -69,7 +68,7 @@ exports[`renders correctly 1`] = `
         >
           <div
             aria-haspopup="listbox"
-            aria-labelledby="mui-component-select-category"
+            aria-labelledby=" mui-component-select-category"
             class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
             id="mui-component-select-category"
             role="button"
@@ -78,16 +77,15 @@ exports[`renders correctly 1`] = `
             Benchmarks
           </div>
           <input
-            aria-hidden="true"
-            class="MuiSelect-nativeInput"
             name="category"
-            tabindex="-1"
+            type="hidden"
             value="benchmarks"
           />
           <svg
             aria-hidden="true"
             class="MuiSvgIcon-root MuiSelect-icon"
             focusable="false"
+            role="presentation"
             viewBox="0 0 24 24"
           >
             <path
@@ -115,7 +113,7 @@ exports[`renders correctly 1`] = `
         >
           <div
             aria-haspopup="listbox"
-            aria-labelledby="mui-component-select-results"
+            aria-labelledby=" mui-component-select-results"
             class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
             id="mui-component-select-results"
             role="button"
@@ -124,16 +122,15 @@ exports[`renders correctly 1`] = `
             Overview
           </div>
           <input
-            aria-hidden="true"
-            class="MuiSelect-nativeInput"
             name="results"
-            tabindex="-1"
+            type="hidden"
             value="overview"
           />
           <svg
             aria-hidden="true"
             class="MuiSvgIcon-root MuiSelect-icon"
             focusable="false"
+            role="presentation"
             viewBox="0 0 24 24"
           >
             <path
@@ -161,7 +158,7 @@ exports[`renders correctly 1`] = `
         >
           <div
             aria-haspopup="listbox"
-            aria-labelledby="mui-component-select-numDays"
+            aria-labelledby=" mui-component-select-numDays"
             class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
             id="mui-component-select-numDays"
             role="button"
@@ -170,16 +167,15 @@ exports[`renders correctly 1`] = `
             Last 60 days
           </div>
           <input
-            aria-hidden="true"
-            class="MuiSelect-nativeInput"
             name="numDays"
-            tabindex="-1"
+            type="hidden"
             value="60"
           />
           <svg
             aria-hidden="true"
             class="MuiSvgIcon-root MuiSelect-icon"
             focusable="false"
+            role="presentation"
             viewBox="0 0 24 24"
           >
             <path
@@ -191,7 +187,7 @@ exports[`renders correctly 1`] = `
     </form>
     <div>
       <div
-        class="MuiFormControl-root MultipleSelectPicker-formControl-4"
+        class="MuiFormControl-root MultipleSelectPicker-formControl-85"
       >
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
@@ -214,15 +210,15 @@ exports[`renders correctly 1`] = `
             Firefox
           </div>
           <input
-            aria-hidden="true"
-            class="MuiSelect-nativeInput"
-            tabindex="-1"
+            name="series"
+            type="hidden"
             value="Firefox"
           />
           <svg
             aria-hidden="true"
             class="MuiSvgIcon-root MuiSelect-icon"
             focusable="false"
+            role="presentation"
             viewBox="0 0 24 24"
           >
             <path

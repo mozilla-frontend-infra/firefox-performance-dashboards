@@ -5,6 +5,7 @@ jest.mock('node-fetch', () => require('fetch-mock-jest').sandbox());
 
 const fetchMock = require('node-fetch');
 
+
 describe('fetchWrapper', () => {
   afterEach(() => {
     jest.clearAllMocks();

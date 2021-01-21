@@ -80,9 +80,11 @@ const Pickers = ({
         }))}
       />
      <MultipleSelectPicker
+      identifier="series"
       labels={labels}
       selectedLabels={selectedLabels}
-      onMultipleSelect={onMultipleSelect}
+      onSelection={onChange}
+      deselectAll={deselectAll}
     />
     </div>
   );
