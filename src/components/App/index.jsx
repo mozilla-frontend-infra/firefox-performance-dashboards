@@ -24,6 +24,18 @@ const LoadableEmptyState = Loadable({
 
 // eslint-disable-next-line
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.navigationRef = React.createRef();
+  }
+
+  handleData = (benchmarkUID) => {
+    const { benchmark } = this.props;
+    if (benchmark === 'overview') {
+      this.navigationRef.current.updateBenchmarks(benchmarkUID);
+    }
+  };
+
   render() {
     const {
       classes, category, benchmark, viewConfig, viewPlatform, dayRange,
@@ -38,6 +50,7 @@ class App extends Component {
           category={category}
           benchmark={benchmark}
           dayRange={dayRange}
+          ref={this.navigationRef}
         />
         )}
         <Description
@@ -54,6 +67,8 @@ class App extends Component {
               includeSubtests={includeSubtests}
               dayRange={dayRange}
               yLabel={yLabel}
+              handleData={this.handleData}
+              benchmarkUID={benchmarkUID}
             />
           </div>
         )) : <LoadableEmptyState text="Category not available for the selected Platform" />}
