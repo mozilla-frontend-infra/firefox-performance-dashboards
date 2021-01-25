@@ -729,6 +729,26 @@ const DESKTOP_APPS = {
   },
 };
 
+const DESKTOP_CATEGORIES = {
+  benchmarks: {
+    suites: Object.keys(AWFY_BENCHMARKS),
+    label: 'Benchmarks',
+  },
+  'cold-page-load': {
+    suites: [],
+    label: 'Cold Page Load',
+  },
+  'warm-page-load': {
+    suites: [],
+    label: 'Warm Page Load',
+  },
+  ...AWSY_CATEGORIES,
+  network: {
+    suites: H3_SUITES,
+    label: 'Network',
+  },
+};
+
 export const TALOS_TESTS = {
   kraken: { label: 'Kraken' },
   displaylist_mutate: { label: 'Displaylist mutate' },
@@ -753,6 +773,7 @@ Object.entries(TALOS_TESTS).forEach(([testKey, test]) => {
       option: 'opt',
       extraOptions: [...app.extraOptions, 'e10s', 'stylo'],
     };
+    DESKTOP_CATEGORIES.benchmarks.suites.push(testKey);
   });
 });
 
@@ -810,27 +831,6 @@ const DESKTOP_SITES = {
   youtube: 'YouTube',
 };
 
-const DEFAULT_CATEGORIES = {
-  benchmarks: {
-    suites: ['ares6', 'displaylist_mutate', 'glvideo', 'kraken', 'motionmark-animometer', 'motionmark-htmlsuite',
-      'rasterflood_gradient', 'rasterflood_svg', 'speedometer', 'stylebench', 'sunspider', 'webaudio', 'wasm-godot'],
-    label: 'Benchmarks',
-  },
-  'cold-page-load': {
-    suites: [],
-    label: 'Cold Page Load',
-  },
-  'warm-page-load': {
-    suites: [],
-    label: 'Warm Page Load',
-  },
-  ...AWSY_CATEGORIES,
-  network: {
-    suites: H3_SUITES,
-    label: 'Network',
-  },
-};
-
 Object.entries(DESKTOP_SITES).forEach(([siteKey, siteLabel]) => {
   ['cold', 'warm'].forEach((cacheVariant) => {
     const bmKey = `tp6-${siteKey}-${cacheVariant}`;
@@ -852,18 +852,9 @@ Object.entries(DESKTOP_SITES).forEach(([siteKey, siteLabel]) => {
         }
       }
     });
-    DEFAULT_CATEGORIES[`${cacheVariant}-page-load`].suites.push(bmKey);
+    DESKTOP_CATEGORIES[`${cacheVariant}-page-load`].suites.push(bmKey);
   });
 });
-
-const LINUX_CATEGORIES = {
-  ...DEFAULT_CATEGORIES,
-  benchmarks: {
-    ...DEFAULT_CATEGORIES.benchmarks,
-    suites: DEFAULT_CATEGORIES.benchmarks.suites.concat('assorted-dom', 'ares6-jsshell', 'octane', 'six-speed',
-      'sunspider-jsbench', 'unity-webgl', 'wasm-misc', 'web-tooling'),
-  },
-};
 
 const MOBILE_APPS = {
   'chrome-m': {
@@ -1021,28 +1012,28 @@ export const CONFIG = {
     linux64: {
       label: 'Linux 64bit',
       platforms: ['linux64-shippable', 'linux1804-64-shippable'],
-      categories: LINUX_CATEGORIES,
+      categories: DESKTOP_CATEGORIES,
     },
     mac: {
       label: 'Mac OS X',
       platforms: ['macosx1014-64-shippable'],
-      categories: DEFAULT_CATEGORIES,
+      categories: DESKTOP_CATEGORIES,
     },
     win7: {
       label: 'Windows 7 32bit',
       platforms: ['windows7-32-shippable'],
-      categories: DEFAULT_CATEGORIES,
+      categories: DESKTOP_CATEGORIES,
     },
     win10: {
       label: 'Windows 10 64bit',
       platforms: ['windows10-64-shippable'],
-      categories: DEFAULT_CATEGORIES,
+      categories: DESKTOP_CATEGORIES,
     },
 
     win10ref2017: {
       label: 'Windows 10 64bit (2017 reference laptop)',
       platforms: ['windows10-64-ux', 'windows10-64-ref-hw-2017'],
-      categories: DEFAULT_CATEGORIES,
+      categories: DESKTOP_CATEGORIES,
       project: PROJECT,
     },
     androidMotoG5: {
