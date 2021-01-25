@@ -64,39 +64,6 @@ export const AWFY_BENCHMARKS = {
     },
     label: 'Assorted DOM',
   },
-  kraken: {
-    compare: {
-      kraken: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: TALOS_FRAMEWORK_ID,
-        suite: 'kraken',
-        project: ALT_PROJECT,
-        option: 'opt',
-        extraOptions: ['e10s', 'stylo'],
-      },
-      'kraken-webrender': {
-        color: COLORS['firefox-webrender'],
-        label: 'Firefox-Webrender',
-        frameworkId: TALOS_FRAMEWORK_ID,
-        suite: 'kraken',
-        platformSuffix: '-qr',
-        project: ALT_PROJECT,
-        option: 'opt',
-        extraOptions: ['e10s', 'stylo', 'webrender'],
-      },
-      'kraken-fission': {
-        color: COLORS['firefox-fission'],
-        label: 'Firefox-Fission',
-        frameworkId: TALOS_FRAMEWORK_ID,
-        suite: 'kraken',
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['e10s', 'fission', 'stylo', 'webrender'],
-      },
-    },
-    label: 'Kraken',
-  },
   'motionmark-animometer': {
     compare: {
       'raptor-motionmark-animometer-firefox': {
@@ -419,131 +386,6 @@ export const AWFY_BENCHMARKS = {
     },
     label: 'Unity WebGL',
   },
-  displaylist_mutate: {
-    compare: {
-      'displaylist-firefox': {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: TALOS_FRAMEWORK_ID,
-        suite: 'displaylist_mutate',
-        project: ALT_PROJECT,
-        option: 'opt',
-        extraOptions: ['e10s', 'stylo'],
-      },
-      'displaylist-firefox-webrender': {
-        color: COLORS['firefox-webrender'],
-        label: 'Firefox-Webrender',
-        frameworkId: TALOS_FRAMEWORK_ID,
-        suite: 'displaylist_mutate',
-        platformSuffix: '-qr',
-        project: ALT_PROJECT,
-        option: 'opt',
-        extraOptions: ['e10s', 'stylo', 'webrender'],
-      },
-      'displaylist-firefox-fission': {
-        color: COLORS['firefox-fission'],
-        label: 'Firefox-Fission',
-        frameworkId: TALOS_FRAMEWORK_ID,
-        suite: 'displaylist_mutate',
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['e10s', 'fission', 'stylo', 'webrender'],
-      },
-    },
-    label: 'Displaylist mutate',
-  },
-  glvideo: {
-    compare: {
-      glvideo: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: TALOS_FRAMEWORK_ID,
-        suite: 'glvideo',
-        project: ALT_PROJECT,
-        test: 'Mean tick time across 100 ticks: ',
-        option: 'opt',
-        extraOptions: ['e10s', 'stylo'],
-      },
-      'glvideo-webrender': {
-        color: COLORS['firefox-webrender'],
-        label: 'Firefox-Webrender',
-        frameworkId: TALOS_FRAMEWORK_ID,
-        suite: 'glvideo',
-        platformSuffix: '-qr',
-        project: ALT_PROJECT,
-        test: 'Mean tick time across 100 ticks: ',
-        option: 'opt',
-        extraOptions: ['e10s', 'stylo', 'webrender'],
-      },
-    },
-    label: 'Gl Video',
-  },
-  rasterflood_gradient: {
-    compare: {
-      'rasterflood-gradient': {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: TALOS_FRAMEWORK_ID,
-        suite: 'rasterflood_gradient',
-        project: ALT_PROJECT,
-        option: 'opt',
-        extraOptions: ['e10s', 'stylo'],
-      },
-      'rasterflood-gradient-webrender': {
-        color: COLORS['firefox-webrender'],
-        label: 'Firefox-Webrender',
-        frameworkId: TALOS_FRAMEWORK_ID,
-        suite: 'rasterflood_gradient',
-        platformSuffix: '-qr',
-        project: ALT_PROJECT,
-        option: 'opt',
-        extraOptions: ['e10s', 'stylo', 'webrender'],
-      },
-      'rasterflood-gradient-fission': {
-        color: COLORS['firefox-fission'],
-        label: 'Firefox-Fission',
-        frameworkId: TALOS_FRAMEWORK_ID,
-        suite: 'rasterflood_gradient',
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['e10s', 'fission', 'stylo', 'webrender'],
-      },
-    },
-    label: 'Rasterflood (Gradient)',
-  },
-  rasterflood_svg: {
-    compare: {
-      rasterflood: {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: TALOS_FRAMEWORK_ID,
-        suite: 'rasterflood_svg',
-        project: ALT_PROJECT,
-        option: 'opt',
-        extraOptions: ['e10s', 'stylo'],
-      },
-      'rasterflood-webrender': {
-        color: COLORS['firefox-webrender'],
-        label: 'Firefox-Webrender',
-        frameworkId: TALOS_FRAMEWORK_ID,
-        suite: 'rasterflood_svg',
-        platformSuffix: '-qr',
-        project: ALT_PROJECT,
-        option: 'opt',
-        extraOptions: ['e10s', 'stylo', 'webrender'],
-      },
-      'rasterflood-fission': {
-        color: COLORS['firefox-fission'],
-        label: 'Firefox-Fission',
-        frameworkId: TALOS_FRAMEWORK_ID,
-        suite: 'rasterflood_svg',
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['e10s', 'fission', 'stylo', 'webrender'],
-      },
-    },
-    label: 'Rasterflood SVG',
-  },
   'wasm-misc': {
     compare: {
       'raptor-wasm-misc-firefox': {
@@ -848,7 +690,75 @@ export const AWFY_BENCHMARKS = {
   },
 };
 
-export const BENCHMARKS = { ...AWFY_BENCHMARKS, ...AWSY_BENCHMARKS, ...H3_BENCHMARKS };
+const DESKTOP_FIREFOX_APPS = {
+  firefox: {
+    name: 'firefox',
+    label: 'Firefox',
+    project: ALT_PROJECT,
+    extraOptions: [],
+  },
+  'firefox-fission': {
+    name: 'firefox',
+    label: 'Firefox-Fission',
+    platformSuffix: '-qr',
+    project: PROJECT,
+    extraOptions: ['fission', 'webrender'],
+  },
+  'firefox-webrender': {
+    name: 'firefox',
+    label: 'Firefox-WebRender',
+    platformSuffix: '-qr',
+    project: ALT_PROJECT,
+    extraOptions: ['webrender'],
+  },
+};
+
+const DESKTOP_APPS = {
+  ...DESKTOP_FIREFOX_APPS,
+  chrome: {
+    name: 'chrome',
+    label: 'Chrome',
+    project: PROJECT,
+    extraOptions: [],
+  },
+  chromium: {
+    name: 'chromium',
+    label: 'Chromium',
+    project: PROJECT,
+    extraOptions: [],
+  },
+};
+
+export const TALOS_TESTS = {
+  kraken: { label: 'Kraken' },
+  displaylist_mutate: { label: 'Displaylist mutate' },
+  glvideo: { label: 'Gl Video', test: 'Mean tick time across 100 ticks: ', },
+  rasterflood_gradient: { label: 'Rasterflood (Gradient)' },
+  rasterflood_svg: { label: 'Rasterflood SVG' },
+};
+
+export const TALOS_BENCHMARKS = {};
+
+Object.entries(TALOS_TESTS).forEach(([testKey, test]) => {
+  TALOS_BENCHMARKS[testKey] = { compare: {}, label: test.label };
+  Object.entries(DESKTOP_FIREFOX_APPS).forEach(([appKey, app]) => {
+    TALOS_BENCHMARKS[testKey].compare[appKey] = {
+      color: COLORS[appKey],
+      label: app.label,
+      frameworkId: TALOS_FRAMEWORK_ID,
+      suite: testKey,
+      test: test.test,
+      platformSuffix: app.platformSuffix,
+      project: app.project,
+      option: 'opt',
+      extraOptions: [...app.extraOptions, 'e10s', 'stylo'],
+    };
+  });
+});
+
+export const BENCHMARKS = {
+  ...TALOS_BENCHMARKS, ...AWFY_BENCHMARKS, ...AWSY_BENCHMARKS, ...H3_BENCHMARKS,
+};
 
 const LIVE_SITES = {
   'booking-sf': 'Booking (hotel)',
@@ -921,36 +831,6 @@ const DEFAULT_CATEGORIES = {
   },
 };
 
-const DESKTOP_APPS = {
-  firefox: {
-    name: 'firefox',
-    label: 'Firefox',
-    extraOptions: ['nocondprof'],
-  },
-  'firefox-fission': {
-    name: 'firefox',
-    label: 'Firefox-Fission',
-    platformSuffix: '-qr',
-    extraOptions: ['nocondprof', 'fission', 'webrender'],
-  },
-  'firefox-webrender': {
-    name: 'firefox',
-    label: 'Firefox-WebRender',
-    platformSuffix: '-qr',
-    extraOptions: ['nocondprof', 'webrender'],
-  },
-  chrome: {
-    name: 'chrome',
-    label: 'Chrome',
-    extraOptions: ['nocondprof'],
-  },
-  chromium: {
-    name: 'chromium',
-    label: 'Chromium',
-    extraOptions: ['nocondprof'],
-  },
-};
-
 Object.entries(DESKTOP_SITES).forEach(([siteKey, siteLabel]) => {
   ['cold', 'warm'].forEach((cacheVariant) => {
     const bmKey = `tp6-${siteKey}-${cacheVariant}`;
@@ -963,7 +843,7 @@ Object.entries(DESKTOP_SITES).forEach(([siteKey, siteLabel]) => {
         suite: `raptor-tp6-${siteKey}-${app.name}`,
         platformSuffix: app.platformSuffix,
         option: 'opt',
-        extraOptions: app.extraOptions,
+        extraOptions: ['nocondprof', ...app.extraOptions],
       };
       if (cacheVariant === 'cold') {
         BENCHMARKS[bmKey].compare[appKey].suite += '-cold';
