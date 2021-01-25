@@ -423,36 +423,32 @@ const MOBILE_APPS = {
   'chrome-m': {
     name: 'chrome-m',
     label: 'Chrome',
-    extraOptions: ['nocondprof'],
   },
   fenix: {
     name: 'fenix',
     label: 'Fenix',
     project: 'fenix',
-    extraOptions: ['nocondprof'],
   },
   'fenix-webrender': {
     name: 'fenix',
     label: 'Fenix-WebRender',
     project: 'fenix',
-    extraOptions: ['webrender', 'nocondprof'],
+    extraOptions: ['webrender'],
   },
   fennec: {
     name: 'fennec',
     label: 'Fennec',
-    extraOptions: ['nocondprof'],
   },
   geckoview: {
     name: 'geckoview',
     label: 'GeckoView',
     project: ALT_PROJECT,
-    extraOptions: ['nocondprof'],
   },
   'geckoview-webrender': {
     name: 'geckoview',
     label: 'GeckoView WebRender',
     project: ALT_PROJECT,
-    extraOptions: ['webrender', 'nocondprof'],
+    extraOptions: ['webrender'],
   },
 };
 
@@ -525,7 +521,7 @@ Object.entries(MOBILE_SITES).forEach(([siteKey, siteLabel]) => {
         platformSuffix: app.platformSuffix,
         project: app.project,
         option: 'opt',
-        extraOptions: [cacheVariant],
+        extraOptions: [cacheVariant, 'nocondprof'],
       };
       if (Array.isArray(app.extraOptions)) {
         BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
@@ -549,7 +545,7 @@ Object.entries(MOBILE_LIVE_SITES).forEach(([siteKey, siteLabel]) => {
         platformSuffix: app.platformSuffix,
         project: app.project,
         option: 'opt',
-        extraOptions: [cacheVariant, 'live'],
+        extraOptions: [cacheVariant, 'nocondprof', 'live'],
       };
       if (app.name === 'fenix') {
         // fenix live sites are running on mozilla-central
