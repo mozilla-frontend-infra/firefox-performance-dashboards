@@ -23,369 +23,6 @@ const COLORS = {
 };
 
 export const AWFY_BENCHMARKS = {
-  'assorted-dom': {
-    compare: {
-      'raptor-assorted-dom-firefox': {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-assorted-dom-firefox',
-        project: ALT_PROJECT,
-        option: 'opt',
-        extraOptions: ['nocondprof'],
-      },
-      'raptor-assorted-dom-chromium': {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-assorted-dom-chromium',
-        option: 'opt',
-      },
-      'raptor-assorted-dom-firefox-webrender': {
-        color: COLORS['firefox-webrender'],
-        label: 'Firefox-Webrender',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-assorted-dom-firefox',
-        project: ALT_PROJECT,
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['nocondprof', 'webrender'],
-      },
-      'raptor-assorted-dom-firefox-fission': {
-        color: COLORS['firefox-fission'],
-        label: 'Firefox-Fission',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-assorted-dom-firefox',
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['nocondprof', 'fission', 'webrender'],
-      },
-
-    },
-    label: 'Assorted DOM',
-  },
-  'motionmark-animometer': {
-    compare: {
-      'raptor-motionmark-animometer-firefox': {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-motionmark-animometer-firefox',
-        project: ALT_PROJECT,
-        option: 'opt',
-        extraOptions: ['nocondprof'],
-      },
-      'raptor-motionmark-animometer-chromium': {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-motionmark-animometer-chromium',
-        option: 'opt',
-      },
-      'raptor-motionmark-animometer-chrome': {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-motionmark-animometer-chrome',
-        option: 'opt',
-      },
-      'raptor-motionmark-animometer-firefox-webrender': {
-        color: COLORS['firefox-webrender'],
-        label: 'Firefox-Webrender',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-motionmark-animometer-firefox',
-        project: ALT_PROJECT,
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['nocondprof', 'webrender'],
-      },
-      'raptor-motionmark-animometer-firefox-fission': {
-        color: COLORS['firefox-fission'],
-        label: 'Firefox-Fission',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-motionmark-animometer-firefox',
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['nocondprof', 'fission', 'webrender'],
-      },
-    },
-    label: 'MotionMark Animometer',
-  },
-  'motionmark-htmlsuite': {
-    compare: {
-      'raptor-motionmark-htmlsuite-firefox': {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-motionmark-htmlsuite-firefox',
-        project: ALT_PROJECT,
-        option: 'opt',
-        extraOptions: ['nocondprof'],
-      },
-      'raptor-motionmark-htmlsuite-chromium': {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-motionmark-htmlsuite-chromium',
-        option: 'opt',
-      },
-      'raptor-motionmark-htmlsuite-chrome': {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-motionmark-htmlsuite-chrome',
-        option: 'opt',
-      },
-      'raptor-motionmark-htmlsuite-firefox-webrender': {
-        color: COLORS['firefox-webrender'],
-        label: 'Firefox-Webrender',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-motionmark-htmlsuite-firefox',
-        project: ALT_PROJECT,
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['nocondprof', 'webrender'],
-      },
-      'raptor-motionmark-htmlsuite-firefox-fission': {
-        color: COLORS['firefox-fission'],
-        label: 'Firefox-Fission',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-motionmark-htmlsuite-firefox',
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['nocondprof', 'fission', 'webrender'],
-      },
-    },
-    label: 'MotionMark HtmlSuite',
-  },
-  speedometer: {
-    compare: {
-      'raptor-speedometer-firefox': {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-speedometer-firefox',
-        project: ALT_PROJECT,
-        option: 'opt',
-        extraOptions: ['nocondprof'],
-      },
-      'raptor-speedometer-chromium': {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-speedometer-chromium',
-        option: 'opt',
-      },
-      'raptor-speedometer-chrome': {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-speedometer-chrome',
-        option: 'opt',
-      },
-      'raptor-speedometer-firefox-webrender': {
-        color: COLORS['firefox-webrender'],
-        label: 'Firefox-Webrender',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-speedometer-firefox',
-        project: ALT_PROJECT,
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['nocondprof', 'webrender'],
-      },
-      'raptor-speedometer-firefox-fission': {
-        color: COLORS['firefox-fission'],
-        label: 'Firefox-Fission',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-speedometer-firefox',
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['nocondprof', 'fission', 'webrender'],
-      },
-    },
-    label: 'Speedometer',
-  },
-  stylebench: {
-    compare: {
-      'raptor-stylebench-firefox': {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-stylebench-firefox',
-        project: ALT_PROJECT,
-        option: 'opt',
-        extraOptions: ['nocondprof'],
-      },
-      'raptor-stylebench-chromium': {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-stylebench-chromium',
-        option: 'opt',
-      },
-      'raptor-stylebench-chrome': {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-stylebench-chrome',
-        option: 'opt',
-      },
-      'raptor-stylebench-firefox-webrender': {
-        color: COLORS['firefox-webrender'],
-        label: 'Firefox-Webrender',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-stylebench-firefox',
-        project: ALT_PROJECT,
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['nocondprof', 'webrender'],
-      },
-      'raptor-stylebench-firefox-fission': {
-        color: COLORS['firefox-fission'],
-        label: 'Firefox-Fission',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-stylebench-firefox',
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['nocondprof', 'fission', 'webrender'],
-      },
-    },
-    label: 'StyleBench',
-  },
-  sunspider: {
-    compare: {
-      'raptor-sunspider-firefox': {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-sunspider-firefox',
-        project: ALT_PROJECT,
-        option: 'opt',
-        extraOptions: ['nocondprof'],
-      },
-      'raptor-sunspider-chromium': {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-sunspider-chromium',
-        option: 'opt',
-      },
-      'raptor-sunspider-chrome': {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-sunspider-chrome',
-        option: 'opt',
-      },
-      'raptor-sunspider-firefox-webrender': {
-        color: COLORS['firefox-webrender'],
-        label: 'Firefox-Webrender',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-sunspider-firefox',
-        project: ALT_PROJECT,
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['nocondprof', 'webrender'],
-      },
-      'raptor-sunspider-firefox-fission': {
-        color: COLORS['firefox-fission'],
-        label: 'Firefox-Fission',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-sunspider-firefox',
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['nocondprof', 'fission', 'webrender'],
-      },
-    },
-    label: 'SunSpider',
-  },
-  webaudio: {
-    compare: {
-      'raptor-webaudio-firefox': {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-webaudio-firefox',
-        project: ALT_PROJECT,
-        option: 'opt',
-        extraOptions: ['nocondprof'],
-      },
-      'raptor-webaudio-chromium': {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-webaudio-chromium',
-        option: 'opt',
-      },
-      'raptor-webaudio-chrome': {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-webaudio-chrome',
-        option: 'opt',
-      },
-      'raptor-webaudio-firefox-webrender': {
-        color: COLORS['firefox-webrender'],
-        label: 'Firefox-Webrender',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-webaudio-firefox',
-        project: ALT_PROJECT,
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['nocondprof', 'webrender'],
-      },
-      'raptor-webaudio-firefox-fission': {
-        color: COLORS['firefox-fission'],
-        label: 'Firefox-Fission',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-webaudio-firefox',
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['nocondprof', 'fission', 'webrender'],
-      },
-    },
-    label: 'WebAudio',
-  },
-  'unity-webgl': {
-    compare: {
-      'raptor-unity-webgl-firefox': {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-unity-webgl-firefox',
-        project: ALT_PROJECT,
-        option: 'opt',
-        extraOptions: ['nocondprof'],
-      },
-      'raptor-unity-webgl-chromium': {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-unity-webgl-chromium',
-        option: 'opt',
-      },
-      'raptor-unity-webgl-firefox-webrender': {
-        color: COLORS['firefox-webrender'],
-        label: 'Firefox-Webrender',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-unity-webgl-firefox',
-        project: ALT_PROJECT,
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['nocondprof', 'webrender'],
-      },
-      'raptor-unity-webgl-firefox-fission': {
-        color: COLORS['firefox-fission'],
-        label: 'Firefox-Fission',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-unity-webgl-firefox',
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['nocondprof', 'fission', 'webrender'],
-      },
-    },
-    label: 'Unity WebGL',
-  },
   'wasm-misc': {
     compare: {
       'raptor-wasm-misc-firefox': {
@@ -511,53 +148,6 @@ export const AWFY_BENCHMARKS = {
     },
     labels: ['SpiderMonkey', 'Chromium v8'],
     label: 'Ares6 (JS shell)',
-  },
-  ares6: {
-    compare: {
-      'raptor-ares6-firefox': {
-        color: COLORS.firefox,
-        label: 'Firefox',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-ares6-firefox',
-        project: ALT_PROJECT,
-        option: 'opt',
-        extraOptions: ['nocondprof'],
-      },
-      'raptor-ares6-chromium': {
-        color: COLORS.chromium,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-ares6-chromium',
-        option: 'opt',
-      },
-      'raptor-ares6-chrome': {
-        color: COLORS.chrome,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-ares6-chrome',
-        option: 'opt',
-      },
-      'raptor-ares6-firefox-webrender': {
-        color: COLORS['firefox-webrender'],
-        label: 'Firefox-Webrender',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-ares6-firefox',
-        project: ALT_PROJECT,
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['nocondprof', 'webrender'],
-      },
-      'raptor-ares6-firefox-fission': {
-        color: COLORS['firefox-fission'],
-        label: 'Firefox-Fission',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-ares6-firefox',
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['nocondprof', 'fission', 'webrender'],
-      },
-    },
-    label: 'Ares6',
   },
   octane: {
     compare: {
@@ -695,7 +285,6 @@ const DESKTOP_FIREFOX_APPS = {
     name: 'firefox',
     label: 'Firefox',
     project: ALT_PROJECT,
-    extraOptions: [],
   },
   'firefox-fission': {
     name: 'firefox',
@@ -718,14 +307,10 @@ const DESKTOP_APPS = {
   chrome: {
     name: 'chrome',
     label: 'Chrome',
-    project: PROJECT,
-    extraOptions: [],
   },
   chromium: {
     name: 'chromium',
     label: 'Chromium',
-    project: PROJECT,
-    extraOptions: [],
   },
 };
 
@@ -749,16 +334,15 @@ const DESKTOP_CATEGORIES = {
   },
 };
 
-export const TALOS_TESTS = {
+const TALOS_TESTS = {
   kraken: { label: 'Kraken' },
   displaylist_mutate: { label: 'Displaylist mutate' },
-  glvideo: { label: 'Gl Video', test: 'Mean tick time across 100 ticks: ', },
+  glvideo: { label: 'Gl Video', test: 'Mean tick time across 100 ticks: ' },
   rasterflood_gradient: { label: 'Rasterflood (Gradient)' },
   rasterflood_svg: { label: 'Rasterflood SVG' },
 };
 
-export const TALOS_BENCHMARKS = {};
-
+const TALOS_BENCHMARKS = {};
 Object.entries(TALOS_TESTS).forEach(([testKey, test]) => {
   TALOS_BENCHMARKS[testKey] = { compare: {}, label: test.label };
   Object.entries(DESKTOP_FIREFOX_APPS).forEach(([appKey, app]) => {
@@ -771,14 +355,55 @@ Object.entries(TALOS_TESTS).forEach(([testKey, test]) => {
       platformSuffix: app.platformSuffix,
       project: app.project,
       option: 'opt',
-      extraOptions: [...app.extraOptions, 'e10s', 'stylo'],
+      extraOptions: ['e10s', 'stylo'],
     };
+    if (Array.isArray(app.extraOptions)) {
+      TALOS_BENCHMARKS[testKey].compare[appKey].extraOptions.push(...app.extraOptions);
+    }
+    DESKTOP_CATEGORIES.benchmarks.suites.push(testKey);
+  });
+});
+
+const RAPTOR_TESTS = {
+  'assorted-dom': { label: 'Assorted DOM' },
+  'motionmark-animometer': { label: 'MotionMark Animometer' },
+  'motionmark-htmlsuite': { label: 'MotionMark HtmlSuite' },
+  speedometer: { label: 'Speedometer' },
+  stylebench: { label: 'StyleBench' },
+  sunspider: { label: 'SunSpider' },
+  webaudio: { label: 'WebAudio' },
+  'unity-webgl': { label: 'Unity WebGL' },
+  ares6: { label: 'Ares6' },
+};
+
+const RAPTOR_BENCHMARKS = {};
+Object.entries(RAPTOR_TESTS).forEach(([testKey, test]) => {
+  RAPTOR_BENCHMARKS[testKey] = { compare: {}, label: test.label };
+  Object.entries(DESKTOP_APPS).forEach(([appKey, app]) => {
+    RAPTOR_BENCHMARKS[testKey].compare[appKey] = {
+      color: COLORS[appKey],
+      label: app.label,
+      frameworkId: RAPTOR_FRAMEWORK_ID,
+      suite: `raptor-${testKey}-${app.name}`,
+      platformSuffix: app.platformSuffix,
+      project: app.project,
+      option: 'opt',
+      // FIXME: chrome raptor benchmark tests do not contain 'nocondprod' extra option
+      extraOptions: Object.keys(DESKTOP_FIREFOX_APPS).includes(appKey) ? ['nocondprof'] : app.extraOptions,
+    };
+    if (Array.isArray(app.extraOptions)) {
+      RAPTOR_BENCHMARKS[testKey].compare[appKey].extraOptions.push(...app.extraOptions);
+    }
     DESKTOP_CATEGORIES.benchmarks.suites.push(testKey);
   });
 });
 
 export const BENCHMARKS = {
-  ...TALOS_BENCHMARKS, ...AWFY_BENCHMARKS, ...AWSY_BENCHMARKS, ...H3_BENCHMARKS,
+  ...TALOS_BENCHMARKS,
+  ...RAPTOR_BENCHMARKS,
+  ...AWFY_BENCHMARKS,
+  ...AWSY_BENCHMARKS,
+  ...H3_BENCHMARKS,
 };
 
 const LIVE_SITES = {
@@ -843,8 +468,11 @@ Object.entries(DESKTOP_SITES).forEach(([siteKey, siteLabel]) => {
         suite: `raptor-tp6-${siteKey}-${app.name}`,
         platformSuffix: app.platformSuffix,
         option: 'opt',
-        extraOptions: ['nocondprof', ...app.extraOptions],
+        extraOptions: ['nocondprof'],
       };
+      if (Array.isArray(app.extraOptions)) {
+        BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
+      }
       if (cacheVariant === 'cold') {
         BENCHMARKS[bmKey].compare[appKey].suite += '-cold';
         if (['firefox', 'firefox-webrender'].includes(appKey)) {
