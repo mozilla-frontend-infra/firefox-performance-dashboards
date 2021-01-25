@@ -90,7 +90,6 @@ class Navigation extends Component {
           dayRange={dayRange}
           labels={labels}
           selectedLabels={selectedLabels}
-          deselectAll={this.deselectAll}
         />
       </div>
     );

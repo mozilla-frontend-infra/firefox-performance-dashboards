@@ -25,39 +25,29 @@ const MenuProps = {
 };
 
 const MultipleSelectPicker = ({
-  classes, labels, selectedLabels, onSelection, identifier, deselectAll,
-}) => {
-  labels.unshift('All series');
-  let selectedSeries = selectedLabels;
-  if (selectedLabels.includes('All series')) {
-    selectedSeries = labels;
-  }
-  if (deselectAll) {
-    selectedSeries = [];
-  }
-  return (
-    <div>
-      <FormControl className={classes.formControl}>
-        <InputLabel id="demo-mutiple-name-label">Series</InputLabel>
-        <Select
-          labelId="demo-mutiple-name-label"
-          id="demo-mutiple-name"
-          multiple
-          name={identifier}
-          value={selectedSeries}
-          onChange={onSelection}
-          input={<Input />}
-          MenuProps={MenuProps}
-        >
-          {labels.map((label) => (
-            <MenuItem key={label} value={label}>
-              {label}
-            </MenuItem>
-          ))}
-        </Select>
-      </FormControl>
-    </div>
-  );
-};
+  classes, labels, selectedLabels, onSelection, identifier,
+}) => (
+  <div>
+    <FormControl className={classes.formControl}>
+      <InputLabel id="demo-mutiple-name-label">Series</InputLabel>
+      <Select
+        labelId="demo-mutiple-name-label"
+        id="demo-mutiple-name"
+        multiple
+        name={identifier}
+        value={selectedLabels}
+        onChange={onSelection}
+        input={<Input />}
+        MenuProps={MenuProps}
+      >
+        {labels.map((label) => (
+          <MenuItem key={label} value={label}>
+            {label}
+          </MenuItem>
+        ))}
+      </Select>
+    </FormControl>
+  </div>
+);
 
 export default withStyles(styles)(MultipleSelectPicker);

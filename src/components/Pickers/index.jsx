@@ -16,8 +16,8 @@ const styles = () => ({
 });
 
 const Pickers = ({
-  classes, benchmark, category, onChange, platform,
-  dayRange, labels, selectedLabels, onMultipleSelect,
+  classes, benchmark, category, onChange,
+  platform, dayRange, labels, selectedLabels,
 }) => {
   const allSuites = CONFIG.views[platform].categories[category].suites;
   const itemKey = `(${platform}, ${category})`;
@@ -84,7 +84,6 @@ const Pickers = ({
       labels={labels}
       selectedLabels={selectedLabels}
       onSelection={onChange}
-      deselectAll={deselectAll}
     />
     </div>
   );

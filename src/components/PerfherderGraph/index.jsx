@@ -80,7 +80,7 @@ class PerferhderGraph extends React.Component {
     const {
       series, dayRange, includeSubtests, title, yLabel, selectedLabels,
     } = this.props;
-    const selectedSeries = selectedLabels.filter((item) => item !== 'All series');
+    const selectedSeries = selectedLabels;
     this.setState({ data: {} });
     Promise.all(series.map(async (config) => {
       const response = await queryPerfData(config, options(dayRange, includeSubtests));
