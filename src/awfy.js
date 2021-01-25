@@ -20,6 +20,8 @@ const COLORS = {
   firefox: '#FFA056',
   'firefox-webrender': '#e5ca0f',
   'firefox-fission': '#92110c',
+  sm: 'black', // FIXME: select a better colour
+  v8: 'purple', // FIXME: select a better colour
 };
 
 export const AWFY_BENCHMARKS = {
@@ -127,104 +129,6 @@ export const AWFY_BENCHMARKS = {
     colors: [COLORS.firefox, 'red', 'brown', COLORS.chromium, COLORS.chrome],
     labels: ['Firefox (tiering)', 'Firefox (wasm-baseline)', 'Firefox (wasm-optimizing)', 'Chromium', 'Chrome'],
     label: 'WebAssembly Godot',
-  },
-  'ares6-jsshell': {
-    compare: {
-      'ares6-sm': {
-        color: COLORS.firefox,
-        label: 'SpiderMonkey',
-        frameworkId: JSBENCH_FRAMEWORK_ID,
-        suite: 'ares6-sm',
-        project: ALT_PROJECT,
-        option: 'opt',
-      },
-      'ares6-v8': {
-        color: COLORS.chromium,
-        label: 'Chromium v8',
-        frameworkId: JSBENCH_FRAMEWORK_ID,
-        suite: 'ares6-v8',
-        option: 'opt',
-      },
-    },
-    labels: ['SpiderMonkey', 'Chromium v8'],
-    label: 'Ares6 (JS shell)',
-  },
-  octane: {
-    compare: {
-      'octane-sm': {
-        color: COLORS.firefox,
-        label: 'SpiderMonkey',
-        frameworkId: JSBENCH_FRAMEWORK_ID,
-        suite: 'octane-sm',
-        project: ALT_PROJECT,
-        option: 'opt',
-      },
-      'octane-v8': {
-        color: COLORS.chromium,
-        label: 'Chromium v8',
-        frameworkId: JSBENCH_FRAMEWORK_ID,
-        suite: 'octane-v8',
-        option: 'opt',
-      },
-    },
-    labels: ['SpiderMonkey', 'Chromium v8'],
-    label: 'Octane (JS shell)',
-  },
-  'six-speed': {
-    compare: {
-      'six-speed-sm': {
-        color: COLORS.firefox,
-        label: 'SpiderMonkey',
-        frameworkId: JSBENCH_FRAMEWORK_ID,
-        suite: 'six-speed-sm',
-        project: ALT_PROJECT,
-        option: 'opt',
-      },
-      'six-speed-v8': {
-        color: COLORS.chromium,
-        label: 'Chromium v8',
-        frameworkId: JSBENCH_FRAMEWORK_ID,
-        suite: 'six-speed-v8',
-        option: 'opt',
-      },
-    },
-    labels: ['SpiderMonkey', 'Chromium v8'],
-    label: 'Six Speed (JS shell)',
-  },
-  'sunspider-jsbench': {
-    compare: {
-      'sunspider-sm': {
-        color: COLORS.firefox,
-        label: 'SpiderMonkey',
-        frameworkId: JSBENCH_FRAMEWORK_ID,
-        suite: 'sunspider-sm',
-        project: ALT_PROJECT,
-        option: 'opt',
-      },
-    },
-    labels: ['SpiderMonkey'],
-    label: 'Sun Spider (JS shell)',
-  },
-  'web-tooling': {
-    compare: {
-      'web-tooling-benchmark-sm': {
-        color: COLORS.firefox,
-        label: 'SpiderMonkey',
-        frameworkId: JSBENCH_FRAMEWORK_ID,
-        suite: 'web-tooling-benchmark-sm',
-        project: ALT_PROJECT,
-        option: 'opt',
-      },
-      'web-tooling-benchmark-v8': {
-        color: COLORS.chromium,
-        label: 'Chromium v8',
-        frameworkId: JSBENCH_FRAMEWORK_ID,
-        suite: 'web-tooling-benchmark-v8',
-        option: 'opt',
-      },
-    },
-    labels: ['SpiderMonkey', 'Chromium v8'],
-    label: 'Web Tooling (JS shell)',
   },
   'speedometer-android': {
     compare: {
@@ -405,6 +309,37 @@ export const BENCHMARKS = {
   ...AWSY_BENCHMARKS,
   ...H3_BENCHMARKS,
 };
+
+const JSBENCH_APPS = {
+  sm: { label: 'SpiderMonkey', project: ALT_PROJECT },
+  v8: { label: 'Chromium v8' },
+};
+
+const JSBENCH_TESTS = {
+  ares6: { label: 'Ares 6' },
+  octane: { label: 'Octane' },
+  'six-speed': { label: 'Six Speed' },
+  sunspider: { label: 'SunSpider' },
+  'web-tooling': { label: 'Web Tooling' },
+};
+
+Object.entries(JSBENCH_TESTS).forEach(([testKey, test]) => {
+  if (!(testKey in BENCHMARKS)) {
+    BENCHMARKS[testKey] = { compare: {}, label: test.label };
+    DESKTOP_CATEGORIES.benchmarks.suites.push(testKey);
+  }
+  Object.entries(JSBENCH_APPS).forEach(([appKey, app]) => {
+    BENCHMARKS[testKey].compare[appKey] = {
+      color: COLORS[appKey],
+      label: app.label,
+      frameworkId: JSBENCH_FRAMEWORK_ID,
+      suite: `${testKey}-${appKey}`,
+      project: app.project,
+      option: 'opt',
+    };
+  });
+});
+
 
 const LIVE_SITES = {
   'booking-sf': 'Booking (hotel)',
