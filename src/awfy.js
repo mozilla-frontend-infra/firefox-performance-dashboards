@@ -341,57 +341,72 @@ Object.entries(JSBENCH_TESTS).forEach(([testKey, test]) => {
 });
 
 
-const LIVE_SITES = {
-  'booking-sf': 'Booking (hotel)',
-  discord: 'Discord',
-  expedia: 'Expedia',
-  fashionbeans: 'FashionBeans',
-  'google-accounts': 'Google Accounts',
-  'imdb-firefox': 'IMDb (title)',
-  'medium-article': 'Medium',
-  nytimes: 'The New York Times',
-  'people-article': 'People',
-  'reddit-thread': 'Reddit (thread)',
-  'rumble-fox': 'Rumble',
-  'stackoverflow-question': 'StackOverflow (question)',
-  'urbandictionary-define': 'Urban Dictionary',
-  'wikia-marvel': 'Wikia',
-};
-
-const DESKTOP_SITES = {
+const SITES = {
   apple: 'Apple',
+  allrecipes: 'All Recipes',
   amazon: 'Amazon',
+  'amazon-search': 'Amazon (search)',
+  bbc: 'BBC',
   bing: 'Bing',
+  'bing-restaurants': 'Bing (restaurants)',
+  booking: 'Booking',
+  'booking-sf': 'Booking (hotel)',
+  cnn: 'CNN',
+  'cnn-ampstories': 'CNN AMP Stories',
+  discord: 'Discord',
   docs: 'Google Docs',
   ebay: 'Ebay',
+  'ebay-kleinanzeigen': 'Ebay Kleinanzeigen',
+  'ebay-kleinanzeigen-search': 'Ebay Kleinanzeigen (search)',
+  espn: 'ESPN',
+  expedia: 'Expedia',
   facebook: 'Facebook',
+  'facebook-cristiano': 'Facebook (page)',
   fandom: 'Fandom',
+  fashionbeans: 'FashionBeans',
   google: 'Google',
+  'google-accounts': 'Google Accounts',
   'google-mail': 'Google Mail',
+  'google-maps': 'Google Maps',
+  'google-restaurants': 'Google Restaurants',
   imdb: 'IMDb',
+  'imdb-firefox': 'IMDb (title)',
   imgur: 'Imgur',
   instagram: 'Instagram',
+  jianshu: 'Jianshu',
   linkedin: 'LinkedIn',
+  'medium-article': 'Medium',
   microsoft: 'Microsoft',
+  'microsoft-support': 'Microsoft Support',
   netflix: 'Netflix',
+  nytimes: 'The New York Times',
   office: 'Office',
   outlook: 'Outlook',
   paypal: 'PayPal',
+  'people-article': 'People',
   pinterest: 'Pinterest',
   reddit: 'Reddit',
+  'reddit-thread': 'Reddit (thread)',
+  'rumble-fox': 'Rumble',
   sheets: 'Google Sheets',
   slides: 'Google Slides',
+  stackoverflow: 'StackOverflow',
+  'stackoverflow-question': 'StackOverflow (question)',
   twitch: 'Twitch',
   twitter: 'Twitter',
   tumblr: 'Tumblr',
+  'urbandictionary-define': 'Urban Dictionary',
+  'web-de': 'Web De',
+  'wikia-marvel': 'Wikia',
   wikipedia: 'Wikipedia',
   yandex: 'Yandex',
   'yahoo-mail': 'Yahoo Mail',
   'yahoo-news': 'Yahoo News',
   youtube: 'YouTube',
+  'youtube-watch': 'YouTube Watch',
 };
 
-Object.entries(DESKTOP_SITES).forEach(([siteKey, siteLabel]) => {
+Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
   ['cold', 'warm'].forEach((cacheVariant) => {
     const bmKey = `tp6-${siteKey}-${cacheVariant}`;
     BENCHMARKS[bmKey] = { compare: {}, label: siteLabel };
@@ -452,38 +467,6 @@ const MOBILE_APPS = {
   },
 };
 
-const MOBILE_SITES = {
-  allrecipes: 'All Recipes',
-  amazon: 'Amazon',
-  'amazon-search': 'Amazon (search)',
-  bbc: 'BBC',
-  bing: 'Bing',
-  'bing-restaurants': 'Bing (restaurants)',
-  booking: 'Booking',
-  cnn: 'CNN',
-  'cnn-ampstories': 'CNN AMP Stories',
-  'ebay-kleinanzeigen': 'Ebay Kleinanzeigen',
-  'ebay-kleinanzeigen-search': 'Ebay Kleinanzeigen (search)',
-  espn: 'ESPN',
-  'facebook-cristiano': 'Facebook (page)',
-  facebook: 'Facebook',
-  google: 'Google',
-  'google-maps': 'Google Maps',
-  'google-restaurants': 'Google Restaurants',
-  imdb: 'IMDb',
-  instagram: 'Instagram',
-  jianshu: 'Jianshu',
-  'microsoft-support': 'Microsoft Support',
-  reddit: 'Reddit',
-  stackoverflow: 'StackOverflow',
-  'web-de': 'Web De',
-  wikipedia: 'Wikipedia',
-  youtube: 'YouTube',
-  'youtube-watch': 'YouTube Watch',
-};
-
-const MOBILE_LIVE_SITES = { ...MOBILE_SITES, ...LIVE_SITES };
-
 const MOBILE_CATEGORIES = {
   benchmarks: {
     suites: ['speedometer-android'],
@@ -507,55 +490,41 @@ const MOBILE_CATEGORIES = {
   },
 };
 
-Object.entries(MOBILE_SITES).forEach(([siteKey, siteLabel]) => {
+Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
   ['cold', 'warm'].forEach((cacheVariant) => {
-    const bmKey = `tp6m-${siteKey}-${cacheVariant}`;
-    BENCHMARKS[bmKey] = { compare: {}, label: siteLabel };
-    Object.entries(MOBILE_APPS).forEach(([appKey, app]) => {
-      BENCHMARKS[bmKey].compare[appKey] = {
-        color: COLORS[appKey],
-        label: app.label,
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
-        suite: siteKey,
-        application: app.name,
-        platformSuffix: app.platformSuffix,
-        project: app.project,
-        option: 'opt',
-        extraOptions: [cacheVariant, 'nocondprof'],
-      };
-      if (Array.isArray(app.extraOptions)) {
-        BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
+    [true, false].forEach((live) => {
+      let category = `${cacheVariant}-page-load`;
+      let bmKey = `tp6m-${siteKey}-${cacheVariant}`;
+      if (live) {
+        bmKey += '-live';
+        category += '-live';
       }
+      BENCHMARKS[bmKey] = { compare: {}, label: siteLabel };
+      Object.entries(MOBILE_APPS).forEach(([appKey, app]) => {
+        BENCHMARKS[bmKey].compare[appKey] = {
+          color: COLORS[appKey],
+          label: app.label,
+          frameworkId: BROWSERTIME_FRAMEWORK_ID,
+          suite: siteKey,
+          application: app.name,
+          platformSuffix: app.platformSuffix,
+          project: app.project,
+          option: 'opt',
+          extraOptions: [cacheVariant, 'nocondprof'],
+        };
+        if (live) {
+          BENCHMARKS[bmKey].compare[appKey].extraOptions.push('live');
+          if (app.name === 'fenix') {
+            // fenix live sites are running on mozilla-central
+            BENCHMARKS[bmKey].compare[appKey].project = PROJECT;
+          }
+        }
+        if (Array.isArray(app.extraOptions)) {
+          BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
+        }
+      });
+      MOBILE_CATEGORIES[category].suites.push(bmKey);
     });
-    MOBILE_CATEGORIES[`${cacheVariant}-page-load`].suites.push(bmKey);
-  });
-});
-
-Object.entries(MOBILE_LIVE_SITES).forEach(([siteKey, siteLabel]) => {
-  ['cold', 'warm'].forEach((cacheVariant) => {
-    const bmKey = `tp6m-${siteKey}-${cacheVariant}-live`;
-    BENCHMARKS[bmKey] = { compare: {}, label: siteLabel };
-    Object.entries(MOBILE_APPS).forEach(([appKey, app]) => {
-      BENCHMARKS[bmKey].compare[appKey] = {
-        color: COLORS[appKey],
-        label: app.label,
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
-        suite: siteKey,
-        application: app.name,
-        platformSuffix: app.platformSuffix,
-        project: app.project,
-        option: 'opt',
-        extraOptions: [cacheVariant, 'nocondprof', 'live'],
-      };
-      if (app.name === 'fenix') {
-        // fenix live sites are running on mozilla-central
-        BENCHMARKS[bmKey].compare[appKey].project = PROJECT;
-      }
-      if (Array.isArray(app.extraOptions)) {
-        BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
-      }
-    });
-    MOBILE_CATEGORIES[`${cacheVariant}-page-load-live`].suites.push(bmKey);
   });
 });
 
