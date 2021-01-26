@@ -79,12 +79,12 @@ const Pickers = ({
           label: generateLastDaysLabel(numDays),
         }))}
       />
-     <MultipleSelectPicker
-      identifier="series"
-      labels={labels}
-      selectedLabels={selectedLabels}
-      onSelection={onChange}
-    />
+      <MultipleSelectPicker
+        identifier="series"
+        labels={labels}
+        selectedLabels={selectedLabels}
+        onSelection={onChange}
+      />
     </div>
   );
 };

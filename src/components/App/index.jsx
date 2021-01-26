@@ -29,22 +29,12 @@ class App extends Component {
     this.navigationRef = React.createRef();
   }
 
-  state = {
-    selectedLabels: [],
-  };
-
   handleData = (benchmarkUID) => {
     const { benchmark, viewPlatform, category } = this.props;
     const itemKey = `(${viewPlatform}, ${category})`;
     if (benchmark === 'overview') {
       this.navigationRef.current.updateBenchmarks(benchmarkUID, itemKey);
     }
-  };
-
-   handleChange = (event) => {
-    this.setState(() => ({
-      selectedLabels: [...event.target.value],
-    }));
   };
 
   render() {
@@ -89,7 +79,6 @@ class App extends Component {
               yLabel={yLabel}
               handleData={this.handleData}
               benchmarkUID={benchmarkUID}
-              label={allLabels[0]}
               selectedLabels={selectedLabels}
             />
           </div>

@@ -59,7 +59,7 @@ class Navigation extends Component {
         benchmarks: [],
       });
     }
-    if (newSeries.length === 0) {
+    if (newSeries.length === 0 || newSeries.includes('Clear selection')) {
       history.push(`/${newPlatform}/${newCategory}/${newBenchmark}?numDays=${newDayRange}`);
     } else {
       history.push(`/${newPlatform}/${newCategory}/${newBenchmark}?numDays=${newDayRange}&series=${newSeries}`);
