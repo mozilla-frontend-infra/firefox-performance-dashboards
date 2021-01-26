@@ -30,9 +30,10 @@ class App extends Component {
   }
 
   handleData = (benchmarkUID) => {
-    const { benchmark } = this.props;
+    const { benchmark, viewPlatform, category } = this.props;
+    const itemKey = `(${viewPlatform}, ${category})`;
     if (benchmark === 'overview') {
-      this.navigationRef.current.updateBenchmarks(benchmarkUID);
+      this.navigationRef.current.updateBenchmarks(benchmarkUID, itemKey);
     }
   };
 

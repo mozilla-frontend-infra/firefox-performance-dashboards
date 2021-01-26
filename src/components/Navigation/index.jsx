@@ -59,20 +59,14 @@ class Navigation extends Component {
     history.push(`/${newPlatform}/${newCategory}/${newBenchmark}?numDays=${newDayRange}`);
   };
 
-  addBenchmarkToLocalStorage = (benchmarkUID, category, platform) => {
-    const itemName = `(${platform}, ${category})`;
-    setOrUpdateItem(itemName, benchmarkUID);
-  };
-
-  updateBenchmarks = (benchmark) => {
-    const { category, platform } = this.props;
+  updateBenchmarks = (benchmark, itemKey) => {
     const { benchmarks } = this.state;
-    this.addBenchmarkToLocalStorage(benchmark, category, platform);
     if (!benchmarks.includes(benchmark)) {
       this.setState({
         benchmarks: [...benchmarks, benchmark],
       });
     }
+    setOrUpdateItem(itemKey, benchmarks);
   };
 
   render() {

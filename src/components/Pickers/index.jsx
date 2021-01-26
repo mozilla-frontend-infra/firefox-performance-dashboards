@@ -18,8 +18,8 @@ const Pickers = ({
   classes, benchmark, category, onChange, platform, dayRange,
 }) => {
   const allSuites = CONFIG.views[platform].categories[category].suites;
-  const itemName = `(${platform}, ${category})`;
-  const item = getUnexpiredItem(itemName);
+  const itemKey = `(${platform}, ${category})`;
+  const item = getUnexpiredItem(itemKey);
   const results = (item) ? item.value : allSuites;
   return (
     <div className={classes.root}>

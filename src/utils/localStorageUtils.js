@@ -15,15 +15,10 @@ export const getUnexpiredItem = (key) => {
   return item;
 };
 
-export const setOrUpdateItem = (key, benchmarkUID) => {
+export const setOrUpdateItem = (key, benchmarks) => {
   const now = new Date();
-
   let item = getUnexpiredItem(key);
-
   item = item || { timestamp: now.getTime(), value: [] };
-
-  if (!item.value.includes(benchmarkUID)) {
-    item.value.push(benchmarkUID);
-    localStorage.setItem(key, JSON.stringify(item));
-  }
+  item.value = [...benchmarks];
+  localStorage.setItem(key, JSON.stringify(item));
 };
