@@ -4,6 +4,7 @@ import { withRouter } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import Loadable from 'react-loadable';
 import Loading from '../Loading';
+import { setOrUpdateItem } from '../../utils/localStorageUtils';
 
 const styles = () => ({
   root: {
@@ -20,6 +21,10 @@ const Pickers = Loadable({
 });
 
 class Navigation extends Component {
+  state = {
+    benchmarks: [],
+  };
+
   handlePathChange = (event) => {
     const { name, value } = event.target;
     const {
@@ -46,7 +51,22 @@ class Navigation extends Component {
     } else {
       newBenchmark = value;
     }
+    if (name !== 'results') {
+      this.setState({
+        benchmarks: [],
+      });
+    }
     history.push(`/${newPlatform}/${newCategory}/${newBenchmark}?numDays=${newDayRange}`);
+  };
+
+  updateBenchmarks = (benchmark, itemKey) => {
+    const { benchmarks } = this.state;
+    if (!benchmarks.includes(benchmark)) {
+      this.setState({
+        benchmarks: [...benchmarks, benchmark],
+      });
+    }
+    setOrUpdateItem(itemKey, benchmarks);
   };
 
   render() {
@@ -74,5 +94,19 @@ Navigation.propTypes = {
   dayRange: PropTypes.number.isRequired,
 };
 
-// withRouter() allow us to use this.props.history to push a new address
-export default withRouter(withStyles(styles)(Navigation));
+/* eslint-disable react/jsx-props-no-spreading */
+const withRouterAndRef = (Wrapped) => {
+  const WithRouter = withRouter(({ forwardRef, ...otherProps }) => (
+    <Wrapped ref={forwardRef} {...otherProps} />
+  ));
+  const WithRouterAndRef = React.forwardRef((props, ref) => (
+    <WithRouter {...props} forwardRef={ref} />
+  ));
+  const name = Wrapped.displayName || Wrapped.name;
+  WithRouterAndRef.displayName = `withRouterAndRef(${name})`;
+  return WithRouterAndRef;
+};
+
+// withRouterAndRef() allow us to use this.props.history to push a new address and to forward refs
+// this is necessary because withRouter() HOC doesn't yet support forward refs
+export default withRouterAndRef(withStyles(styles)(Navigation));
