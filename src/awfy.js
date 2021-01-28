@@ -9,19 +9,19 @@ const JSBENCH_FRAMEWORK_ID = 11;
 const BROWSERTIME_FRAMEWORK_ID = 13;
 
 const COLORS = {
-  chrome: '#0B84A5',
-  'chrome-m': '#0B84A5',
-  chromium: '#9DD866',
+  chrome: '#446e9e',
+  'chrome-m': '#446e9e',
+  chromium: '#4f9745',
   fennec: '#9DD866',
   geckoview: '#6F4E7C',
-  'geckoview-webrender': '#92110c',
+  'geckoview-webrender': '#dc4c4e',
   fenix: '#FFA056',
-  'fenix-webrender': '#e5ca0f',
+  'fenix-webrender': '#ebc23f',
   firefox: '#FFA056',
-  'firefox-webrender': '#e5ca0f',
-  'firefox-fission': '#92110c',
-  sm: 'black', // FIXME: select a better colour
-  v8: 'purple', // FIXME: select a better colour
+  'firefox-webrender': '#ebc23f',
+  'firefox-fission': '#dc4c4e',
+  sm: '#a66e97',
+  v8: '#fe939e',
 };
 
 export const AWFY_BENCHMARKS = {
@@ -36,7 +36,7 @@ export const AWFY_BENCHMARKS = {
         extraOptions: ['nocondprof'],
       },
       'raptor-wasm-misc-baseline-firefox': {
-        color: 'red',
+        color: COLORS.sm,
         label: 'Firefox (wasm-baseline)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-misc-baseline-firefox',
@@ -44,7 +44,7 @@ export const AWFY_BENCHMARKS = {
         extraOptions: ['nocondprof'],
       },
       'raptor-wasm-misc-optimizing-firefox': {
-        color: 'brown',
+        color: COLORS.v8,
         label: 'Firefox (wasm-optimizing)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-misc-optimizing-firefox',
@@ -59,8 +59,6 @@ export const AWFY_BENCHMARKS = {
         option: 'opt',
       },
     },
-    colors: [COLORS.firefox, 'red', 'brown', COLORS.chromium, COLORS.chrome],
-    labels: ['Firefox (tiering)', 'Firefox (wasm-baseline)', 'Firefox (wasm-optimizing)', 'Chromium'],
     label: 'WebAssembly Embenchen',
   },
   'wasm-godot': {
@@ -75,7 +73,7 @@ export const AWFY_BENCHMARKS = {
         extraOptions: ['nocondprof'],
       },
       'raptor-wasm-godot-baseline-firefox': {
-        color: 'red',
+        color: COLORS.sm,
         label: 'Firefox (wasm-baseline)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-godot-baseline-firefox',
@@ -84,7 +82,7 @@ export const AWFY_BENCHMARKS = {
         extraOptions: ['nocondprof'],
       },
       'raptor-wasm-godot-optimizing-firefox': {
-        color: 'brown',
+        color: COLORS.v8,
         label: 'Firefox (wasm-optimizing)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-godot-optimizing-firefox',
@@ -108,7 +106,7 @@ export const AWFY_BENCHMARKS = {
       },
       'raptor-wasm-godot-firefox-webrender': {
         color: COLORS['firefox-webrender'],
-        label: 'Firefox-Webrender',
+        label: 'Firefox-WebRender',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-godot-firefox',
         project: ALT_PROJECT,
@@ -126,8 +124,6 @@ export const AWFY_BENCHMARKS = {
         extraOptions: ['nocondprof', 'fission', 'webrender'],
       },
     },
-    colors: [COLORS.firefox, 'red', 'brown', COLORS.chromium, COLORS.chrome],
-    labels: ['Firefox (tiering)', 'Firefox (wasm-baseline)', 'Firefox (wasm-optimizing)', 'Chromium', 'Chrome'],
     label: 'WebAssembly Godot',
   },
   'speedometer-android': {
