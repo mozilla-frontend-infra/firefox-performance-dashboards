@@ -34,12 +34,14 @@ class Navigation extends Component {
       category,
       benchmark,
       dayRange,
+      selectedLabels,
     } = this.props;
-
     let newPlatform = platform;
     let newCategory = category;
     let newBenchmark = benchmark;
     let newDayRange = dayRange;
+    let newSeries = selectedLabels;
+
     if (name === 'platform') {
       newPlatform = value;
       newBenchmark = 'overview';
@@ -48,6 +50,8 @@ class Navigation extends Component {
       newBenchmark = 'overview';
     } else if (name === 'numDays') {
       newDayRange = value;
+    } else if (name === 'series') {
+      newSeries = value;
     } else {
       newBenchmark = value;
     }
@@ -56,7 +60,11 @@ class Navigation extends Component {
         benchmarks: [],
       });
     }
-    history.push(`/${newPlatform}/${newCategory}/${newBenchmark}?numDays=${newDayRange}`);
+    if (name !== 'series' || newSeries.length === 0 || newSeries.includes('Clear selection')) {
+      history.push(`/${newPlatform}/${newCategory}/${newBenchmark}?numDays=${newDayRange}`);
+    } else {
+      history.push(`/${newPlatform}/${newCategory}/${newBenchmark}?numDays=${newDayRange}&series=${newSeries}`);
+    }
   };
 
   updateBenchmarks = (benchmark, itemKey) => {
@@ -71,7 +79,7 @@ class Navigation extends Component {
 
   render() {
     const {
-      classes, platform, category, benchmark, dayRange,
+      classes, platform, category, benchmark, dayRange, labels, selectedLabels,
     } = this.props;
     return (
       <div className={classes.root}>
@@ -81,6 +89,8 @@ class Navigation extends Component {
           category={category}
           benchmark={benchmark}
           dayRange={dayRange}
+          labels={labels}
+          selectedLabels={selectedLabels}
         />
       </div>
     );

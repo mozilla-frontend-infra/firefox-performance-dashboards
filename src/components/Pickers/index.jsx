@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Picker from '../Picker';
+import MultipleSelectPicker from '../MultipleSelectPicker';
 import { BENCHMARKS, CONFIG } from '../../config';
 import { generateLastDaysLabel } from '../../utils/timeRangeUtils';
 import { getUnexpiredItem } from '../../utils/localStorageUtils';
@@ -15,7 +16,8 @@ const styles = () => ({
 });
 
 const Pickers = ({
-  classes, benchmark, category, onChange, platform, dayRange,
+  classes, benchmark, category, onChange,
+  platform, dayRange, labels, selectedLabels,
 }) => {
   const allSuites = CONFIG.views[platform].categories[category].suites;
   const itemKey = `(${platform}, ${category})`;
@@ -76,6 +78,12 @@ const Pickers = ({
           value: numDays,
           label: generateLastDaysLabel(numDays),
         }))}
+      />
+      <MultipleSelectPicker
+        identifier="series"
+        labels={labels}
+        selectedLabels={selectedLabels}
+        onSelection={onChange}
       />
     </div>
   );

@@ -63,7 +63,9 @@ class PerferhderGraph extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    const { dayRange, includeSubtests, series } = this.props;
+    const {
+      dayRange, includeSubtests, series,
+    } = this.props;
     if (
       dayRange !== prevProps.dayRange
       || includeSubtests !== prevProps.includeSubtests
@@ -76,8 +78,9 @@ class PerferhderGraph extends React.Component {
   async fetchData() {
     let chartJsOptions;
     const {
-      series, dayRange, includeSubtests, title, yLabel,
+      series, dayRange, includeSubtests, title, yLabel, selectedLabels,
     } = this.props;
+    const selectedSeries = selectedLabels;
     this.setState({ data: {} });
     Promise.all(series.map(async (config) => {
       const response = await queryPerfData(config, options(dayRange, includeSubtests));
@@ -122,11 +125,14 @@ class PerferhderGraph extends React.Component {
               combined = true;
             }
           });
+          const hiddenValue = (selectedSeries.length !== 0)
+            ? (!selectedSeries.includes(config.label)) : false;
           if (!combined) {
             state.data[graphUid].chartJsData.datasets.push({
               label: config.label,
               backgroundColor: config.color,
               data: dataToChartJSformat(data),
+              hidden: hiddenValue,
             });
           }
           return state;

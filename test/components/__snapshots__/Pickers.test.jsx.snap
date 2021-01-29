@@ -185,6 +185,49 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
     </form>
+    <div>
+      <div
+        class="MuiFormControl-root MultipleSelectPicker-formControl-85"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          data-shrink="true"
+          id="demo-mutiple-name-label"
+        >
+          Series
+        </label>
+        <div
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+        >
+          <div
+            aria-haspopup="listbox"
+            aria-labelledby="demo-mutiple-name-label demo-mutiple-name"
+            class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+            id="demo-mutiple-name"
+            role="button"
+            tabindex="0"
+          >
+            Firefox
+          </div>
+          <input
+            name="series"
+            type="hidden"
+            value="Firefox"
+          />
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSelect-icon"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;

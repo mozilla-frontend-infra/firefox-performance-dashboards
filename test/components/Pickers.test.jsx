@@ -13,6 +13,8 @@ it('renders correctly', () => {
       dayRange={60}
       resultsBenchmarks={CONFIG.views.win10.categories.benchmarks.suites}
       onChange={() => {}}
+      labels={['Firefox']}
+      selectedLabels={['Firefox']}
     />,
   );
   expect(asFragment()).toMatchSnapshot();

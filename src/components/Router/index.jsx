@@ -21,6 +21,7 @@ const Router = () => (
           // eslint-disable-next-line no-restricted-globals
           const searchParams = new URLSearchParams(location.search);
           const numDays = searchParams.get('numDays');
+          const series = searchParams.get('series');
           const dayRange = numDays ? Math.round(numDays) : CONFIG.default.dayRange;
           if (!validCombination(platform, benchmark, dayRange, category)) {
             return <Redirect to={CONFIG.default.landingPath} />;
@@ -32,6 +33,7 @@ const Router = () => (
               benchmark={benchmark}
               dayRange={dayRange}
               category={category}
+              selectedSeries={series}
             />
           );
         }}
