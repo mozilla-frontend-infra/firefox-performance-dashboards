@@ -41,6 +41,7 @@ class Navigation extends Component {
     let newBenchmark = benchmark;
     let newDayRange = dayRange;
     let newSeries = selectedLabels;
+
     if (name === 'platform') {
       newPlatform = value;
       newBenchmark = 'overview';
