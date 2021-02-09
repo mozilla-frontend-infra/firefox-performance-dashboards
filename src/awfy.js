@@ -8,27 +8,23 @@ const RAPTOR_FRAMEWORK_ID = 10;
 const JSBENCH_FRAMEWORK_ID = 11;
 const BROWSERTIME_FRAMEWORK_ID = 13;
 
-const COLORS = {
-  chrome: '#446e9e',
-  'chrome-m': '#446e9e',
-  chromium: '#4f9745',
-  fennec: '#9DD866',
-  geckoview: '#6F4E7C',
-  'geckoview-webrender': '#dc4c4e',
-  fenix: '#FFA056',
-  'fenix-webrender': '#ebc23f',
-  firefox: '#FFA056',
-  'firefox-webrender': '#ebc23f',
-  'firefox-fission': '#dc4c4e',
-  sm: '#a66e97',
-  v8: '#fe939e',
+const PALETTE = {
+  blue: '#446e9e',
+  emerald: '#4f9745',
+  olive: '#9DD866',
+  indigo: '#6F4E7C',
+  red: '#dc4c4e',
+  orange: '#FFA056',
+  yellow: '#ebc23f',
+  violet: '#a66e97',
+  pink: '#fe939e',
 };
 
 export const AWFY_BENCHMARKS = {
   'wasm-misc': {
     compare: {
       'raptor-wasm-misc-firefox': {
-        color: COLORS.firefox,
+        color: PALETTE.orange,
         label: 'Firefox (tiering)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-misc-firefox',
@@ -36,7 +32,7 @@ export const AWFY_BENCHMARKS = {
         extraOptions: ['nocondprof'],
       },
       'raptor-wasm-misc-baseline-firefox': {
-        color: COLORS.sm,
+        color: PALETTE.violet,
         label: 'Firefox (wasm-baseline)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-misc-baseline-firefox',
@@ -44,7 +40,7 @@ export const AWFY_BENCHMARKS = {
         extraOptions: ['nocondprof'],
       },
       'raptor-wasm-misc-optimizing-firefox': {
-        color: COLORS.v8,
+        color: PALETTE.pink,
         label: 'Firefox (wasm-optimizing)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-misc-optimizing-firefox',
@@ -52,7 +48,7 @@ export const AWFY_BENCHMARKS = {
         extraOptions: ['nocondprof'],
       },
       'raptor-wasm-misc-chromium': {
-        color: COLORS.chromium,
+        color: PALETTE.emerald,
         label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-misc-chromium',
@@ -64,7 +60,7 @@ export const AWFY_BENCHMARKS = {
   'wasm-godot': {
     compare: {
       'raptor-wasm-godot-firefox': {
-        color: COLORS.firefox,
+        color: PALETTE.orange,
         label: 'Firefox (tiering)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-godot-firefox',
@@ -73,7 +69,7 @@ export const AWFY_BENCHMARKS = {
         extraOptions: ['nocondprof'],
       },
       'raptor-wasm-godot-baseline-firefox': {
-        color: COLORS.sm,
+        color: PALETTE.violet,
         label: 'Firefox (wasm-baseline)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-godot-baseline-firefox',
@@ -82,7 +78,7 @@ export const AWFY_BENCHMARKS = {
         extraOptions: ['nocondprof'],
       },
       'raptor-wasm-godot-optimizing-firefox': {
-        color: COLORS.v8,
+        color: PALETTE.pink,
         label: 'Firefox (wasm-optimizing)',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-godot-optimizing-firefox',
@@ -91,21 +87,21 @@ export const AWFY_BENCHMARKS = {
         extraOptions: ['nocondprof'],
       },
       'raptor-wasm-godot-chromium': {
-        color: COLORS.chromium,
+        color: PALETTE.emerald,
         label: 'Chromium',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-godot-chromium',
         option: 'opt',
       },
       'raptor-wasm-godot-chrome': {
-        color: COLORS.chrome,
+        color: PALETTE.blue,
         label: 'Chrome',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-godot-chrome',
         option: 'opt',
       },
       'raptor-wasm-godot-firefox-webrender': {
-        color: COLORS['firefox-webrender'],
+        color: PALETTE.yellow,
         label: 'Firefox-WebRender',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-godot-firefox',
@@ -115,7 +111,7 @@ export const AWFY_BENCHMARKS = {
         extraOptions: ['nocondprof', 'webrender'],
       },
       'raptor-wasm-godot-firefox-fission': {
-        color: COLORS['firefox-fission'],
+        color: PALETTE.red,
         label: 'Firefox-Fission',
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: 'raptor-wasm-godot-firefox',
@@ -129,7 +125,7 @@ export const AWFY_BENCHMARKS = {
   'speedometer-android': {
     compare: {
       fennec: {
-        color: COLORS.fennec,
+        color: PALETTE.olive,
         label: 'Fennec',
         frameworkId: BROWSERTIME_FRAMEWORK_ID,
         suite: 'speedometer',
@@ -138,7 +134,7 @@ export const AWFY_BENCHMARKS = {
         extraOptions: ['fennec'],
       },
       geckoview: {
-        color: COLORS.geckoview,
+        color: PALETTE.indigo,
         label: 'GeckoView',
         frameworkId: BROWSERTIME_FRAMEWORK_ID,
         suite: 'speedometer',
@@ -147,7 +143,7 @@ export const AWFY_BENCHMARKS = {
         extraOptions: ['geckoview'],
       },
       'geckoview-webrender': {
-        color: COLORS['geckoview-webrender'],
+        color: PALETTE.red,
         label: 'GeckoView-Webrender',
         frameworkId: BROWSERTIME_FRAMEWORK_ID,
         suite: 'speedometer',
@@ -157,7 +153,7 @@ export const AWFY_BENCHMARKS = {
         extraOptions: ['geckoview'],
       },
       fenix: {
-        color: COLORS.fenix,
+        color: PALETTE.orange,
         label: 'Fenix',
         frameworkId: BROWSERTIME_FRAMEWORK_ID,
         suite: 'speedometer',
@@ -166,7 +162,7 @@ export const AWFY_BENCHMARKS = {
         extraOptions: ['fenix'],
       },
       'fenix-webrender': {
-        color: COLORS['fenix-webrender'],
+        color: PALETTE.yellow,
         label: 'Fenix-Webrender',
         frameworkId: BROWSERTIME_FRAMEWORK_ID,
         suite: 'speedometer',
@@ -184,11 +180,13 @@ const DESKTOP_FIREFOX_APPS = {
   firefox: {
     name: 'firefox',
     label: 'Firefox',
+    color: PALETTE.orange,
     project: ALT_PROJECT,
   },
   'firefox-fission': {
     name: 'firefox',
     label: 'Firefox-Fission',
+    color: PALETTE.red,
     platformSuffix: '-qr',
     project: PROJECT,
     extraOptions: ['fission', 'webrender'],
@@ -196,6 +194,7 @@ const DESKTOP_FIREFOX_APPS = {
   'firefox-webrender': {
     name: 'firefox',
     label: 'Firefox-WebRender',
+    color: PALETTE.yellow,
     platformSuffix: '-qr',
     project: ALT_PROJECT,
     extraOptions: ['webrender'],
@@ -207,10 +206,12 @@ const DESKTOP_APPS = {
   chrome: {
     name: 'chrome',
     label: 'Chrome',
+    color: PALETTE.blue,
   },
   chromium: {
     name: 'chromium',
     label: 'Chromium',
+    color: PALETTE.emerald,
   },
 };
 
@@ -247,7 +248,7 @@ Object.entries(TALOS_TESTS).forEach(([testKey, test]) => {
   TALOS_BENCHMARKS[testKey] = { compare: {}, label: test.label };
   Object.entries(DESKTOP_FIREFOX_APPS).forEach(([appKey, app]) => {
     TALOS_BENCHMARKS[testKey].compare[appKey] = {
-      color: COLORS[appKey],
+      color: app.color,
       label: app.label,
       frameworkId: TALOS_FRAMEWORK_ID,
       suite: testKey,
@@ -281,7 +282,7 @@ Object.entries(RAPTOR_TESTS).forEach(([testKey, test]) => {
   RAPTOR_BENCHMARKS[testKey] = { compare: {}, label: test.label };
   Object.entries(DESKTOP_APPS).forEach(([appKey, app]) => {
     RAPTOR_BENCHMARKS[testKey].compare[appKey] = {
-      color: COLORS[appKey],
+      color: app.color,
       label: app.label,
       frameworkId: RAPTOR_FRAMEWORK_ID,
       suite: `raptor-${testKey}-${app.name}`,
@@ -307,8 +308,15 @@ export const BENCHMARKS = {
 };
 
 const JSBENCH_APPS = {
-  sm: { label: 'SpiderMonkey', project: ALT_PROJECT },
-  v8: { label: 'Chromium v8' },
+  sm: {
+    label: 'SpiderMonkey',
+    color: PALETTE.violet,
+    project: ALT_PROJECT,
+  },
+  v8: {
+    label: 'Chromium v8',
+    color: PALETTE.pink,
+  },
 };
 
 const JSBENCH_TESTS = {
@@ -326,7 +334,7 @@ Object.entries(JSBENCH_TESTS).forEach(([testKey, test]) => {
   }
   Object.entries(JSBENCH_APPS).forEach(([appKey, app]) => {
     BENCHMARKS[testKey].compare[appKey] = {
-      color: COLORS[appKey],
+      color: app.color,
       label: app.label,
       frameworkId: JSBENCH_FRAMEWORK_ID,
       suite: `${testKey}-${appKey}`,
@@ -335,7 +343,6 @@ Object.entries(JSBENCH_TESTS).forEach(([testKey, test]) => {
     };
   });
 });
-
 
 const SITES = {
   apple: 'Apple',
@@ -408,7 +415,7 @@ Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
     BENCHMARKS[bmKey] = { compare: {}, label: siteLabel };
     Object.entries(DESKTOP_APPS).forEach(([appKey, app]) => {
       BENCHMARKS[bmKey].compare[appKey] = {
-        color: COLORS[appKey],
+        color: app.color,
         label: app.label,
         frameworkId: RAPTOR_FRAMEWORK_ID,
         suite: `raptor-tp6-${siteKey}-${app.name}`,
@@ -434,30 +441,36 @@ const MOBILE_APPS = {
   'chrome-m': {
     name: 'chrome-m',
     label: 'Chrome',
+    color: PALETTE.blue,
   },
   fenix: {
     name: 'fenix',
     label: 'Fenix',
+    color: PALETTE.orange,
     project: 'fenix',
   },
   'fenix-webrender': {
     name: 'fenix',
     label: 'Fenix-WebRender',
+    color: PALETTE.yellow,
     project: 'fenix',
     extraOptions: ['webrender'],
   },
   fennec: {
     name: 'fennec',
     label: 'Fennec',
+    color: PALETTE.olive,
   },
   geckoview: {
     name: 'geckoview',
     label: 'GeckoView',
+    color: PALETTE.indigo,
     project: ALT_PROJECT,
   },
   'geckoview-webrender': {
     name: 'geckoview',
     label: 'GeckoView WebRender',
+    color: PALETTE.red,
     project: ALT_PROJECT,
     extraOptions: ['webrender'],
   },
@@ -498,7 +511,7 @@ Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
       BENCHMARKS[bmKey] = { compare: {}, label: siteLabel };
       Object.entries(MOBILE_APPS).forEach(([appKey, app]) => {
         BENCHMARKS[bmKey].compare[appKey] = {
-          color: COLORS[appKey],
+          color: app.color,
           label: app.label,
           frameworkId: BROWSERTIME_FRAMEWORK_ID,
           suite: siteKey,
@@ -528,8 +541,6 @@ export const CONFIG = {
   default: {
     landingPath: '/win10/benchmarks/overview?numDays=60',
     dayRange: 60, // # days
-    colors: [COLORS.firefox, COLORS.chromium, COLORS.chrome],
-    labels: ['Firefox', 'Chromium', 'Chrome'],
   },
   dayRange: [1, 2, 7, 14, 30, 60, 90, 365],
   views: {
