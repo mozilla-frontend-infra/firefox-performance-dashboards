@@ -345,6 +345,8 @@ Object.entries(JSBENCH_TESTS).forEach(([testKey, test]) => {
   });
 });
 
+const VISUAL_METRICS = ['SpeedIndex', 'ContentfulSpeedIndex', 'PerceptualSpeedIndex'];
+
 const SITES = {
   apple: 'Apple',
   allrecipes: 'All Recipes',
@@ -412,29 +414,28 @@ const SITES = {
 
 Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
   ['cold', 'warm'].forEach((cacheVariant) => {
-    const bmKey = `tp6-${siteKey}-${cacheVariant}`;
-    BENCHMARKS[bmKey] = { compare: {}, label: siteLabel };
-    Object.entries(DESKTOP_APPS).forEach(([appKey, app]) => {
-      BENCHMARKS[bmKey].compare[appKey] = {
-        color: app.color,
-        label: app.label,
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: `raptor-tp6-${siteKey}-${app.name}`,
-        platformSuffix: app.platformSuffix,
-        option: 'opt',
-        extraOptions: ['nocondprof'],
-      };
-      if (Array.isArray(app.extraOptions)) {
-        BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
-      }
-      if (cacheVariant === 'cold') {
-        BENCHMARKS[bmKey].compare[appKey].suite += '-cold';
-        if (['firefox', 'firefox-webrender'].includes(appKey)) {
-          BENCHMARKS[bmKey].compare[appKey].project = ALT_PROJECT;
+    VISUAL_METRICS.forEach((test) => {
+      const bmKey = `tp6-${siteKey}-${test}-${cacheVariant}`;
+      BENCHMARKS[bmKey] = { compare: {}, label: `${siteLabel} (${test})` };
+      Object.entries(DESKTOP_APPS).forEach(([appKey, app]) => {
+        BENCHMARKS[bmKey].compare[appKey] = {
+          color: app.color,
+          label: app.label,
+          frameworkId: BROWSERTIME_FRAMEWORK_ID,
+          suite: siteKey,
+          test,
+          application: app.name,
+          platformSuffix: app.platformSuffix,
+          project: app.project,
+          option: 'opt',
+          extraOptions: [cacheVariant, 'nocondprof'],
+        };
+        if (Array.isArray(app.extraOptions)) {
+          BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
         }
-      }
+      });
+      DESKTOP_CATEGORIES[`${cacheVariant}-page-load`].suites.push(bmKey);
     });
-    DESKTOP_CATEGORIES[`${cacheVariant}-page-load`].suites.push(bmKey);
   });
 });
 
@@ -502,38 +503,41 @@ const MOBILE_CATEGORIES = {
 
 Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
   ['cold', 'warm'].forEach((cacheVariant) => {
-    [true, false].forEach((live) => {
-      let category = `${cacheVariant}-page-load`;
-      let bmKey = `tp6m-${siteKey}-${cacheVariant}`;
-      if (live) {
-        bmKey += '-live';
-        category += '-live';
-      }
-      BENCHMARKS[bmKey] = { compare: {}, label: siteLabel };
-      Object.entries(MOBILE_APPS).forEach(([appKey, app]) => {
-        BENCHMARKS[bmKey].compare[appKey] = {
-          color: app.color,
-          label: app.label,
-          frameworkId: BROWSERTIME_FRAMEWORK_ID,
-          suite: siteKey,
-          application: app.name,
-          platformSuffix: app.platformSuffix,
-          project: app.project,
-          option: 'opt',
-          extraOptions: [cacheVariant, 'nocondprof'],
-        };
+    VISUAL_METRICS.forEach((test) => {
+      [true, false].forEach((live) => {
+        let category = `${cacheVariant}-page-load`;
+        let bmKey = `tp6m-${siteKey}-${test}-${cacheVariant}`;
         if (live) {
-          BENCHMARKS[bmKey].compare[appKey].extraOptions.push('live');
-          if (app.name === 'fenix') {
-            // fenix live sites are running on mozilla-central
-            BENCHMARKS[bmKey].compare[appKey].project = PROJECT;
+          bmKey += '-live';
+          category += '-live';
+        }
+        BENCHMARKS[bmKey] = { compare: {}, label: `${siteLabel} (${test})` };
+        Object.entries(MOBILE_APPS).forEach(([appKey, app]) => {
+          BENCHMARKS[bmKey].compare[appKey] = {
+            color: app.color,
+            label: app.label,
+            frameworkId: BROWSERTIME_FRAMEWORK_ID,
+            suite: siteKey,
+            test,
+            application: app.name,
+            platformSuffix: app.platformSuffix,
+            project: app.project,
+            option: 'opt',
+            extraOptions: [cacheVariant, 'nocondprof'],
+          };
+          if (live) {
+            BENCHMARKS[bmKey].compare[appKey].extraOptions.push('live');
+            if (app.name === 'fenix') {
+              // fenix live sites are running on mozilla-central
+              BENCHMARKS[bmKey].compare[appKey].project = PROJECT;
+            }
           }
-        }
-        if (Array.isArray(app.extraOptions)) {
-          BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
-        }
+          if (Array.isArray(app.extraOptions)) {
+            BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
+          }
+        });
+        MOBILE_CATEGORIES[category].suites.push(bmKey);
       });
-      MOBILE_CATEGORIES[category].suites.push(bmKey);
     });
   });
 });
