@@ -3,6 +3,7 @@ import { queryInfoGen } from './config-utils';
 import { BENCHMARKS as AWSY_BENCHMARKS, DEFAULT_CATEGORIES as AWSY_CATEGORIES } from './awsy';
 import { BENCHMARKS as H3_BENCHMARKS, DEFAULT_SUITES as H3_SUITES } from './h3';
 
+
 const TALOS_FRAMEWORK_ID = 1;
 const RAPTOR_FRAMEWORK_ID = 10;
 const JSBENCH_FRAMEWORK_ID = 11;
