@@ -223,11 +223,19 @@ const DESKTOP_CATEGORIES = {
   },
   'cold-page-load': {
     suites: [],
-    label: 'Cold Page Load',
+    label: 'Cold Page Load (Recorded)',
+  },
+  'cold-page-load-live': {
+    suites: [],
+    label: 'Cold Page Load (Live)',
   },
   'warm-page-load': {
     suites: [],
-    label: 'Warm Page Load',
+    label: 'Warm Page Load (Recorded)',
+  },
+  'warm-page-load-live': {
+    suites: [],
+    label: 'Warm Page Load (Live)',
   },
   ...AWSY_CATEGORIES,
   network: {
@@ -448,6 +456,30 @@ Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
       }
     });
     DESKTOP_CATEGORIES[`${cacheVariant}-page-load`].suites.push(bmKey);
+  });
+});
+
+Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
+  ['cold', 'warm'].forEach((cacheVariant) => {
+    const bmKey = `raptor-tp6-${siteKey}-${cacheVariant}-live`;
+    BENCHMARKS[bmKey] = { compare: {}, label: siteLabel };
+    Object.entries(DESKTOP_APPS).forEach(([appKey, app]) => {
+      BENCHMARKS[bmKey].compare[appKey] = {
+        color: app.color,
+        label: app.label,
+        frameworkId: RAPTOR_FRAMEWORK_ID,
+        suite: siteKey,
+        application: app.name,
+        platformSuffix: app.platformSuffix,
+        project: app.project,
+        option: 'opt',
+        extraOptions: [cacheVariant, 'live'],
+      };
+      if (Array.isArray(app.extraOptions)) {
+        BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
+      }
+    });
+    DESKTOP_CATEGORIES[`${cacheVariant}-page-load-live`].suites.push(bmKey);
   });
 });
 
