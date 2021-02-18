@@ -60,7 +60,7 @@
     "setup-polly-jest": "^0.9.1",
     "webpack": "4.41.6",
     "webpack-cli": "3.3.12",
-    "webpack-dev-server": "3.9.0"
+    "webpack-dev-server": "3.11.2"
   },
   "husky": {
     "hooks": {
