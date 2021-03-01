@@ -25,7 +25,6 @@ it('Query info', () => {
           suite: 'raptor-wasm-misc-firefox',
           option: 'opt',
           platform: 'linux1804-64-shippable',
-          suite: 'raptor-wasm-misc-firefox',
           extraOptions: ['nocondprof'],
         },
         {
