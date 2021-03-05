@@ -1,6 +1,6 @@
 import { queryInfoGen } from './config-utils';
 
-const BROWSERTIME_FRAMEWORK_ID = 13;
+const MOZPERFTEST_FRAMEWORK_ID = 15;
 
 const COLORS = {
   http2: '#FFA056',
@@ -13,14 +13,14 @@ export const BENCHMARKS = {
       'g-image-http2': {
         color: COLORS.http2,
         label: 'HTTP2',
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        frameworkId: MOZPERFTEST_FRAMEWORK_ID,
         suite: 'g-image',
         option: 'opt',
       },
       'g-image-http3': {
         color: COLORS.http3,
         label: 'HTTP3',
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        frameworkId: MOZPERFTEST_FRAMEWORK_ID,
         suite: 'g-image',
         option: 'opt',
         extraOptions: ['http3'],
@@ -34,14 +34,14 @@ export const BENCHMARKS = {
       'lq-fetch': {
         color: COLORS.http2,
         label: 'HTTP2',
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        frameworkId: MOZPERFTEST_FRAMEWORK_ID,
         suite: 'lq-fetch',
         option: 'opt',
       },
       'lq-fetch-http3': {
         color: COLORS.http3,
         label: 'HTTP3',
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        frameworkId: MOZPERFTEST_FRAMEWORK_ID,
         suite: 'lq-fetch',
         option: 'opt',
         extraOptions: ['http3'],
@@ -55,14 +55,14 @@ export const BENCHMARKS = {
       'youtube-noscroll-http2': {
         color: COLORS.http2,
         label: 'HTTP2',
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        frameworkId: MOZPERFTEST_FRAMEWORK_ID,
         suite: 'youtube-noscroll',
         option: 'opt',
       },
       'youtube-noscroll-http3': {
         color: COLORS.http3,
         label: 'HTTP3',
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        frameworkId: MOZPERFTEST_FRAMEWORK_ID,
         suite: 'youtube-noscroll',
         option: 'opt',
         extraOptions: ['http3'],
@@ -76,14 +76,14 @@ export const BENCHMARKS = {
       'youtube-scroll-http2': {
         color: COLORS.http2,
         label: 'HTTP2',
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        frameworkId: MOZPERFTEST_FRAMEWORK_ID,
         suite: 'youtube-scroll',
         option: 'opt',
       },
       'youtube-scroll-http3': {
         color: COLORS.http3,
         label: 'HTTP3',
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        frameworkId: MOZPERFTEST_FRAMEWORK_ID,
         suite: 'youtube-scroll',
         option: 'opt',
         extraOptions: ['http3'],
@@ -120,7 +120,7 @@ Object.keys(SITES_LIST).forEach((siteKey) => {
     BENCHMARKS[bmKey].compare.http2 = {
       color: COLORS.http2,
       label: 'HTTP2',
-      frameworkId: BROWSERTIME_FRAMEWORK_ID,
+      frameworkId: MOZPERFTEST_FRAMEWORK_ID,
       suite: siteKey,
       option: 'opt',
       extraOptions: [dur],
@@ -128,7 +128,7 @@ Object.keys(SITES_LIST).forEach((siteKey) => {
     BENCHMARKS[bmKey].compare.http3 = {
       color: COLORS.http3,
       label: 'HTTP3',
-      frameworkId: BROWSERTIME_FRAMEWORK_ID,
+      frameworkId: MOZPERFTEST_FRAMEWORK_ID,
       suite: siteKey,
       option: 'opt',
       extraOptions: [dur, 'http3'],

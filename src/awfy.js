@@ -586,7 +586,7 @@ export const CONFIG = {
   views: {
     linux64: {
       label: 'Linux 64bit',
-      platforms: ['linux64-shippable', 'linux1804-64-shippable'],
+      platforms: ['linux1804-64-shippable'],
       categories: DESKTOP_CATEGORIES,
     },
     mac: {
