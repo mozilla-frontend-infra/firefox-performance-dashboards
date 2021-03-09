@@ -9,7 +9,7 @@ import { queryInfo } from '../../config';
 import Loading from '../Loading';
 import Description from '../Description';
 
-const sortByLabel = (a, b) => (a.label <= b.label ? -1 : 1);
+const sortByLabel = (a, b) => (a.label.toLowerCase() <= b.label.toLowerCase() ? -1 : 1);
 
 const styles = () => ({
   container: {
