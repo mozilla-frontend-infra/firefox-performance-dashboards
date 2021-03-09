@@ -237,9 +237,9 @@ const DESKTOP_CATEGORIES = {
 };
 
 const TALOS_TESTS = {
-  kraken: { label: 'Kraken' },
   displaylist_mutate: { label: 'Displaylist mutate' },
   glvideo: { label: 'Gl Video', test: 'Mean tick time across 100 ticks: ' },
+  kraken: { label: 'Kraken' },
   rasterflood_gradient: { label: 'Rasterflood (Gradient)' },
   rasterflood_svg: { label: 'Rasterflood SVG' },
 };
