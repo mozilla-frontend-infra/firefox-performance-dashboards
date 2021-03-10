@@ -237,16 +237,26 @@ const DESKTOP_CATEGORIES = {
 };
 
 const TALOS_TESTS = {
-  kraken: { label: 'Kraken' },
   displaylist_mutate: { label: 'Displaylist mutate' },
   glvideo: { label: 'Gl Video', test: 'Mean tick time across 100 ticks: ' },
+  kraken: { label: 'Kraken' },
   rasterflood_gradient: { label: 'Rasterflood (Gradient)' },
   rasterflood_svg: { label: 'Rasterflood SVG' },
+  tabpaint: {},
+  tabswitch: {},
+  tart: {},
+  tp5o: {},
+  ts_paint: {},
+  tsvg_static: {},
+  tsvgr_opacity: {},
+  tsvgx: {},
+  sessionrestore: {},
+  sessionrestore_no_auto_restore: {},
 };
 
 const TALOS_BENCHMARKS = {};
 Object.entries(TALOS_TESTS).forEach(([testKey, test]) => {
-  TALOS_BENCHMARKS[testKey] = { compare: {}, label: test.label };
+  TALOS_BENCHMARKS[testKey] = { compare: {}, label: test.label || testKey };
   Object.entries(DESKTOP_FIREFOX_APPS).forEach(([appKey, app]) => {
     TALOS_BENCHMARKS[testKey].compare[appKey] = {
       color: app.color,
