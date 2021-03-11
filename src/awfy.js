@@ -256,7 +256,8 @@ const TALOS_TESTS = {
 
 const TALOS_BENCHMARKS = {};
 Object.entries(TALOS_TESTS).forEach(([testKey, test]) => {
-  TALOS_BENCHMARKS[testKey] = { compare: {}, label: test.label || testKey };
+  const docUrl = `https://firefox-source-docs.mozilla.org/testing/perfdocs/talos.html#${testKey.replaceAll('_', '-')}`;
+  TALOS_BENCHMARKS[testKey] = { compare: {}, label: test.label || testKey, docUrl };
   Object.entries(DESKTOP_FIREFOX_APPS).forEach(([appKey, app]) => {
     TALOS_BENCHMARKS[testKey].compare[appKey] = {
       color: app.color,
