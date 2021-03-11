@@ -7,6 +7,7 @@ it('Options with yLabel', () => {
     maintainAspectRatio: false,
     scales: {
       xAxes: [{
+        bounds: 'ticks',
         time: { displayFormats: { hour: 'MMM D' } },
         type: 'time',
       }],
@@ -26,6 +27,7 @@ it('Option with higher is better', () => {
     maintainAspectRatio: false,
     scales: {
       xAxes: [{
+        bounds: 'ticks',
         time: { displayFormats: { hour: 'MMM D' } },
         type: 'time',
       }],
@@ -45,6 +47,7 @@ it('Option with lower is better', () => {
     maintainAspectRatio: false,
     scales: {
       xAxes: [{
+        bounds: 'ticks',
         time: { displayFormats: { hour: 'MMM D' } },
         type: 'time',
       }],

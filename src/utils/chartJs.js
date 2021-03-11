@@ -16,6 +16,7 @@ const chartJsOptions = (reverse, scaleLabel) => ({
             hour: 'MMM D',
           },
         },
+        bounds: 'ticks',
       },
     ],
     yAxes: [

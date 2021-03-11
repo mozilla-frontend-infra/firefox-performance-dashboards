@@ -82,6 +82,12 @@ class PerferhderGraph extends React.Component {
     } = this.props;
     const selectedSeries = selectedLabels;
     this.setState({ data: {} });
+
+    // Set min/max bounds for x-axis based on dayRange
+    const maxDate = new Date();
+    const minDate = new Date();
+    minDate.setDate(maxDate.getDate() - dayRange);
+
     Promise.all(series.map(async (config) => {
       const response = await queryPerfData(config, options(dayRange, includeSubtests));
       this.setState({ fetchedData: true });
@@ -91,6 +97,10 @@ class PerferhderGraph extends React.Component {
         if (!chartJsOptions) {
           chartJsOptions = generateChartJsOptions(meta, yLabel);
         }
+        chartJsOptions.scales.xAxes[0].ticks = {
+          min: minDate,
+          max: maxDate,
+        };
         const graphUid = meta.test || `${title}-overview`;
         // Considering includeSubtests is because glvideo has the 'test' property set
         const graphTitle = !includeSubtests ? title : meta.test || title;
