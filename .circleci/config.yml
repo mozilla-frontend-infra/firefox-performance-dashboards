@@ -1,0 +1,33 @@
+version: 2.1
+
+workflows:
+  main:
+    jobs:
+      - tests
+
+jobs:
+  tests:
+    executor:
+      name: node/default
+      # The Node version here must be kept in sync with that in `package.json`.
+      tag: '12.14.1'
+    steps:
+      - checkout
+      - node/install-packages:
+          # `yarn install --frozen-lockfile` is run and cache is enabled by default for this orb configuration
+          pkg-manager: yarn
+      - run:
+          command: yarn lint
+          name: Run linting
+      - run:
+          command: yarn build
+          name: Check build
+      - run:
+          command: yarn test:coverage
+          name: Run Jest tests
+      - run:
+          command: yarn codecov
+          name: Check code coverage changes
+
+orbs:
+  node: circleci/node@4.1.0
