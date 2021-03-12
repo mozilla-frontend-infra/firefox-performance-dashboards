@@ -2,7 +2,7 @@
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 [![codecov](https://codecov.io/gh/mozilla-frontend-infra/firefox-performance-dashboard/branch/master/graph/badge.svg)](https://codecov.io/gh/mozilla-frontend-infra/firefox-performance-dashboard)
-[![Build status][travis-image]][travis-url]
+[![Build status][circleci-image]][circleci-url]
 
 The Firefox Performance dashboards permits creating independent dashboards with graphs tracking data from [Perfherder](https://wiki.mozilla.org/EngineeringProductivity/Projects/Perfherder).
 
@@ -30,8 +30,8 @@ yarn start
 
 After that open <http://localhost:5000> on your preferred browser.
 
-[travis-image]: https://travis-ci.org/mozilla-frontend-infra/firefox-performance-dashboard.svg?branch=master
-[travis-url]: https://travis-ci.org/mozilla-frontend-infra/firefox-performance-dashboard
+[circleci-image]: https://circleci.com/gh/mozilla-frontend-infra/firefox-performance-dashboard.svg?style=badge
+[circleci-url]: https://app.circleci.com/pipelines/github/mozilla-frontend-infra/firefox-performance-dashboard
 
 ## Contributors ✨
 
