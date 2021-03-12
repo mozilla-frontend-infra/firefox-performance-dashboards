@@ -8,6 +8,10 @@ it('Options with yLabel', () => {
     scales: {
       xAxes: [{
         bounds: 'ticks',
+        ticks: {
+          max: undefined,
+          min: undefined,
+        },
         time: { displayFormats: { hour: 'MMM D' } },
         type: 'time',
       }],
@@ -28,6 +32,10 @@ it('Option with higher is better', () => {
     scales: {
       xAxes: [{
         bounds: 'ticks',
+        ticks: {
+          max: undefined,
+          min: undefined,
+        },
         time: { displayFormats: { hour: 'MMM D' } },
         type: 'time',
       }],
@@ -48,6 +56,10 @@ it('Option with lower is better', () => {
     scales: {
       xAxes: [{
         bounds: 'ticks',
+        ticks: {
+          max: undefined,
+          min: undefined,
+        },
         time: { displayFormats: { hour: 'MMM D' } },
         type: 'time',
       }],

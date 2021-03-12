@@ -95,12 +95,8 @@ class PerferhderGraph extends React.Component {
       Object.values(response).forEach(({ data, meta, perfherderUrl }) => {
         const newUrl = fixUrl(perfherderUrl, dayRange);
         if (!chartJsOptions) {
-          chartJsOptions = generateChartJsOptions(meta, yLabel);
+          chartJsOptions = generateChartJsOptions(meta, yLabel, minDate, maxDate);
         }
-        chartJsOptions.scales.xAxes[0].ticks = {
-          min: minDate,
-          max: maxDate,
-        };
         const graphUid = meta.test || `${title}-overview`;
         // Considering includeSubtests is because glvideo has the 'test' property set
         const graphTitle = !includeSubtests ? title : meta.test || title;
