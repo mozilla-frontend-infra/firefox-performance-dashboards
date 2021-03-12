@@ -5,7 +5,7 @@ export const dataToChartJSformat = (data = []) => data.map(({ datetime, value })
 
 export const addPunctuationToNumbers = (value) => value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
-const chartJsOptions = (reverse, scaleLabel) => ({
+const chartJsOptions = (reverse, scaleLabel, minDate, maxDate) => ({
   maintainAspectRatio: false,
   scales: {
     xAxes: [
@@ -15,6 +15,11 @@ const chartJsOptions = (reverse, scaleLabel) => ({
           displayFormats: {
             hour: 'MMM D',
           },
+        },
+        bounds: 'ticks',
+        ticks: {
+          min: minDate,
+          max: maxDate,
         },
       },
     ],
@@ -34,9 +39,9 @@ const chartJsOptions = (reverse, scaleLabel) => ({
   },
 });
 
-export const generateChartJsOptions = (meta, yLabel) => {
+export const generateChartJsOptions = (meta, yLabel, minDate, maxDate) => {
   const higherIsBetter = (meta.lower_is_better === false);
   const reversed = higherIsBetter;
   const label = yLabel || (higherIsBetter ? 'Score' : 'Execution time (ms)');
-  return chartJsOptions(reversed, label);
+  return chartJsOptions(reversed, label, minDate, maxDate);
 };
