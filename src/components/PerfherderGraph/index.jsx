@@ -77,6 +77,7 @@ class PerferhderGraph extends React.Component {
 
   async fetchData() {
     let chartJsOptions;
+    let subtitle;
     const {
       series, dayRange, includeSubtests, title, yLabel, selectedLabels,
     } = this.props;
@@ -94,11 +95,15 @@ class PerferhderGraph extends React.Component {
         const graphUid = meta.test || `${title}-overview`;
         // Considering includeSubtests is because glvideo has the 'test' property set
         const graphTitle = !includeSubtests ? title : meta.test || title;
+        if (!includeSubtests && meta.test && meta.test !== title) {
+          subtitle = meta.test.trim();
+        }
         const dataStructure = {
           chartJsData: { datasets: [] },
           chartJsOptions,
           jointUrl: newUrl,
           title: graphTitle,
+          subtitle,
         };
         if (!meta.test) {
           dataStructure.overview = true;
@@ -150,11 +155,14 @@ class PerferhderGraph extends React.Component {
       <div>
         {!fetchedData && <CircularIndeterminate />}
         {Object.values(data).sort(sortOverviewFirst).map(({
-          chartJsData, chartJsOptions, jointUrl, title, overview,
+          chartJsData, chartJsOptions, jointUrl, title, subtitle, overview,
         }) => (
           <div key={title}>
             {handleData(benchmarkUID)}
             <h2 className={classes.benchmarkTitle}>{title}</h2>
+            {subtitle ? (
+              <h3 className={classes.benchmarkTitle}>{subtitle}</h3>
+            ) : null}
             <a href={jointUrl} target="_blank" rel="noopener noreferrer">
               <LinkIcon className={classes.linkIcon} />
             </a>
