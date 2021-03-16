@@ -595,7 +595,7 @@ export const CONFIG = {
     },
     mac: {
       label: 'Mac OS X',
-      platforms: ['macosx1014-64-shippable'],
+      platforms: ['macosx1015-64-shippable'],
       categories: DESKTOP_CATEGORIES,
     },
     win7: {
