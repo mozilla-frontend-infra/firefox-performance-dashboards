@@ -598,11 +598,6 @@ export const CONFIG = {
       platforms: ['macosx1015-64-shippable'],
       categories: DESKTOP_CATEGORIES,
     },
-    win7: {
-      label: 'Windows 7 32bit',
-      platforms: ['windows7-32-shippable'],
-      categories: DESKTOP_CATEGORIES,
-    },
     win10: {
       label: 'Windows 10 64bit',
       platforms: ['windows10-64-shippable'],
