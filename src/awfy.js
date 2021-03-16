@@ -603,13 +603,6 @@ export const CONFIG = {
       platforms: ['windows10-64-shippable'],
       categories: DESKTOP_CATEGORIES,
     },
-
-    win10ref2017: {
-      label: 'Windows 10 64bit (2017 reference laptop)',
-      platforms: ['windows10-64-ux', 'windows10-64-ref-hw-2017'],
-      categories: DESKTOP_CATEGORIES,
-      project: PROJECT,
-    },
     androidMotoG5: {
       label: 'Android (Moto G5)',
       platforms: ['android-hw-g5-7-0-arm7-api-16', 'android-hw-g5-7-0-arm7-api-16-shippable'],
