@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import BookmarkIcon from '@material-ui/icons/BookmarkBorder';
 import LinkIcon from '@material-ui/icons/Link';
 import ArrowDownward from '@material-ui/icons/ArrowDownward';
 import { withStyles } from '@material-ui/core/styles';
@@ -165,10 +166,13 @@ class PerferhderGraph extends React.Component {
         }) => (
           <div key={title}>
             {handleData(benchmarkUID)}
-            <h2 className={classes.benchmarkTitle}>{title}</h2>
+            <h2 id={benchmarkUID} className={classes.benchmarkTitle}>{title}</h2>
             {subtitle ? (
               <h3 className={classes.benchmarkTitle}>{subtitle}</h3>
             ) : null}
+            <a href={`#${benchmarkUID}`}>
+              <BookmarkIcon className={classes.linkIcon} />
+            </a>
             <a href={jointUrl} target="_blank" rel="noopener noreferrer">
               <LinkIcon className={classes.linkIcon} />
             </a>
