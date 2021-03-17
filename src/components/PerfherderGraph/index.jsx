@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
+import InfoIcon from '@material-ui/icons/Info';
 import LinkIcon from '@material-ui/icons/Link';
 import ArrowDownward from '@material-ui/icons/ArrowDownward';
 import { withStyles } from '@material-ui/core/styles';
@@ -34,6 +34,7 @@ const styles = () => ({
     margin: 10,
   },
   linkIcon: {
+    color: 'blue',
     marginBottom: -5,
   },
 });
@@ -173,7 +174,7 @@ class PerferhderGraph extends React.Component {
             ) : null}
             {docUrl ? (
               <a href={docUrl} target="_blank" rel="noopener noreferrer">
-                <HelpOutlineIcon className={classes.linkIcon} />
+                <InfoIcon className={classes.linkIcon} />
               </a>
             ) : null}
             <a href={jointUrl} target="_blank" rel="noopener noreferrer">
