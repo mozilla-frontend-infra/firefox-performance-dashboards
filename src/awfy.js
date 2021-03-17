@@ -434,35 +434,6 @@ Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
       BENCHMARKS[bmKey].compare[appKey] = {
         color: app.color,
         label: app.label,
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: `raptor-tp6-${siteKey}-${app.name}`,
-        platformSuffix: app.platformSuffix,
-        project: app.project,
-        option: 'opt',
-        extraOptions: ['nocondprof'],
-      };
-      if (Array.isArray(app.extraOptions)) {
-        BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
-      }
-      if (cacheVariant === 'cold') {
-        BENCHMARKS[bmKey].compare[appKey].suite += '-cold';
-        if (['firefox', 'firefox-webrender'].includes(appKey)) {
-          BENCHMARKS[bmKey].compare[appKey].project = ALT_PROJECT;
-        }
-      }
-    });
-    DESKTOP_CATEGORIES[`${cacheVariant}-page-load`].suites.push(bmKey);
-  });
-});
-
-Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
-  ['cold', 'warm'].forEach((cacheVariant) => {
-    const bmKey = `tp6-${siteKey}-${cacheVariant}`;
-    BENCHMARKS[bmKey] = { compare: {}, label: siteLabel };
-    Object.entries(DESKTOP_APPS).forEach(([appKey, app]) => {
-      BENCHMARKS[bmKey].compare[appKey] = {
-        color: app.color,
-        label: app.label,
         frameworkId: BROWSERTIME_FRAMEWORK_ID,
         suite: siteKey,
         test: 'SpeedIndex',
