@@ -436,50 +436,36 @@ const SITES = {
 
 Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
   ['cold', 'warm'].forEach((cacheVariant) => {
-    const bmKey = `tp6-${siteKey}-${cacheVariant}`;
-    BENCHMARKS[bmKey] = { compare: {}, label: siteLabel };
-    Object.entries(DESKTOP_APPS).forEach(([appKey, app]) => {
-      BENCHMARKS[bmKey].compare[appKey] = {
-        color: app.color,
-        label: app.label,
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
-        suite: siteKey,
-        test: 'SpeedIndex',
-        application: app.name,
-        platformSuffix: app.platformSuffix,
-        project: app.project,
-        option: 'opt',
-        extraOptions: [cacheVariant, 'nocondprof'],
-      };
-      if (Array.isArray(app.extraOptions)) {
-        BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
+    [true, false].forEach((live) => {
+      let category = `${cacheVariant}-page-load`;
+      let bmKey = `tp6-${siteKey}-${cacheVariant}`;
+      if (live) {
+        bmKey += '-live';
+        category += '-live';
       }
+      BENCHMARKS[bmKey] = { compare: {}, label: siteLabel };
+      Object.entries(DESKTOP_APPS).forEach(([appKey, app]) => {
+        BENCHMARKS[bmKey].compare[appKey] = {
+          color: app.color,
+          label: app.label,
+          frameworkId: BROWSERTIME_FRAMEWORK_ID,
+          suite: siteKey,
+          test: 'SpeedIndex',
+          application: app.name,
+          platformSuffix: app.platformSuffix,
+          project: live ? PROJECT : app.project,
+          option: 'opt',
+          extraOptions: [cacheVariant, 'nocondprof'],
+        };
+        if (live) {
+          BENCHMARKS[bmKey].compare[appKey].extraOptions.push('live');
+        }
+        if (Array.isArray(app.extraOptions)) {
+          BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
+        }
+      });
+      DESKTOP_CATEGORIES[category].suites.push(bmKey);
     });
-    DESKTOP_CATEGORIES[`${cacheVariant}-page-load`].suites.push(bmKey);
-  });
-});
-
-Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
-  ['cold', 'warm'].forEach((cacheVariant) => {
-    const bmKey = `raptor-tp6-${siteKey}-${cacheVariant}-live`;
-    BENCHMARKS[bmKey] = { compare: {}, label: siteLabel };
-    Object.entries(DESKTOP_APPS).forEach(([appKey, app]) => {
-      BENCHMARKS[bmKey].compare[appKey] = {
-        color: app.color,
-        label: app.label,
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: siteKey,
-        application: app.name,
-        platformSuffix: app.platformSuffix,
-        project: app.project,
-        option: 'opt',
-        extraOptions: [cacheVariant, 'live'],
-      };
-      if (Array.isArray(app.extraOptions)) {
-        BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
-      }
-    });
-    DESKTOP_CATEGORIES[`${cacheVariant}-page-load-live`].suites.push(bmKey);
   });
 });
 
