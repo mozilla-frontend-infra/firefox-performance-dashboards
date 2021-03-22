@@ -291,9 +291,10 @@ const RAPTOR_TESTS = {
 
 const RAPTOR_BENCHMARKS = {};
 Object.entries(RAPTOR_TESTS).forEach(([testKey, test]) => {
-  RAPTOR_BENCHMARKS[testKey] = { compare: {}, label: test.label };
+  const bmKey = `raptor-webext-desktop-${testKey}`;
+  RAPTOR_BENCHMARKS[bmKey] = { compare: {}, label: `${test.label} (webext)` };
   Object.entries(DESKTOP_APPS).forEach(([appKey, app]) => {
-    RAPTOR_BENCHMARKS[testKey].compare[appKey] = {
+    RAPTOR_BENCHMARKS[bmKey].compare[appKey] = {
       color: app.color,
       label: app.label,
       frameworkId: RAPTOR_FRAMEWORK_ID,
@@ -305,9 +306,32 @@ Object.entries(RAPTOR_TESTS).forEach(([testKey, test]) => {
       extraOptions: Object.keys(DESKTOP_FIREFOX_APPS).includes(appKey) ? ['nocondprof'] : app.extraOptions,
     };
     if (Array.isArray(app.extraOptions)) {
-      RAPTOR_BENCHMARKS[testKey].compare[appKey].extraOptions.push(...app.extraOptions);
+      RAPTOR_BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
     }
-    DESKTOP_CATEGORIES.benchmarks.suites.push(testKey);
+    DESKTOP_CATEGORIES.benchmarks.suites.push(bmKey);
+  });
+});
+
+Object.entries(RAPTOR_TESTS).forEach(([testKey, test]) => {
+  const bmKey = `raptor-browsertime-desktop-${testKey}`;
+  RAPTOR_BENCHMARKS[bmKey] = { compare: {}, label: `${test.label} (browsertime)` };
+  Object.entries(DESKTOP_APPS).forEach(([appKey, app]) => {
+    RAPTOR_BENCHMARKS[bmKey].compare[appKey] = {
+      color: app.color,
+      label: app.label,
+      frameworkId: BROWSERTIME_FRAMEWORK_ID,
+      suite: testKey,
+      application: app.name,
+      platformSuffix: app.platformSuffix,
+      project: app.project,
+      option: 'opt',
+      // FIXME: chrome raptor benchmark tests do not contain 'nocondprod' extra option
+      extraOptions: Object.keys(DESKTOP_FIREFOX_APPS).includes(appKey) ? ['nocondprof'] : app.extraOptions,
+    };
+    if (Array.isArray(app.extraOptions)) {
+      RAPTOR_BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
+    }
+    DESKTOP_CATEGORIES.benchmarks.suites.push(bmKey);
   });
 });
 
