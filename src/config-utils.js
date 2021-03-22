@@ -30,6 +30,7 @@ export const queryInfoGen = (allBenchmarks, viewConfig, benchmark, category) => 
           includeSubtests: false,
           label: allBenchmarks[configUID].label,
           yLabel: allBenchmarks[configUID].yLabel,
+          docUrl: allBenchmarks[configUID].docUrl,
         };
         // We need to set the platform for fetching data from Treeherder
         Object.values(allBenchmarks[configUID].compare).forEach((seriesConfig) => {
@@ -47,6 +48,7 @@ export const queryInfoGen = (allBenchmarks, viewConfig, benchmark, category) => 
           includeSubtests: true,
           label: allBenchmarks[benchmark].label,
           yLabel: allBenchmarks[benchmark].yLabel,
+          docUrl: allBenchmarks[benchmark].docUrl,
         };
       }
       const oneOrMoreSeries = processSeries(seriesConfig, viewConfig);

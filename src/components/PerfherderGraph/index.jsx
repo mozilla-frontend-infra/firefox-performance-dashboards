@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import InfoIcon from '@material-ui/icons/Info';
 import LinkIcon from '@material-ui/icons/Link';
 import ArrowDownward from '@material-ui/icons/ArrowDownward';
 import { withStyles } from '@material-ui/core/styles';
@@ -33,6 +34,7 @@ const styles = () => ({
     margin: 10,
   },
   linkIcon: {
+    color: 'blue',
     marginBottom: -5,
   },
 });
@@ -79,7 +81,7 @@ class PerferhderGraph extends React.Component {
     let chartJsOptions;
     let subtitle;
     const {
-      series, dayRange, includeSubtests, title, yLabel, selectedLabels,
+      series, dayRange, includeSubtests, title, docUrl, yLabel, selectedLabels,
     } = this.props;
     const selectedSeries = selectedLabels;
     this.setState({ data: {} });
@@ -110,6 +112,7 @@ class PerferhderGraph extends React.Component {
           jointUrl: newUrl,
           title: graphTitle,
           subtitle,
+          docUrl,
         };
         if (!meta.test) {
           dataStructure.overview = true;
@@ -161,13 +164,18 @@ class PerferhderGraph extends React.Component {
       <div>
         {!fetchedData && <CircularIndeterminate />}
         {Object.values(data).sort(sortOverviewFirst).map(({
-          chartJsData, chartJsOptions, jointUrl, title, subtitle, overview,
+          chartJsData, chartJsOptions, jointUrl, title, subtitle, docUrl, overview,
         }) => (
           <div key={title}>
             {handleData(benchmarkUID)}
             <h2 className={classes.benchmarkTitle}>{title}</h2>
             {subtitle ? (
               <h3 className={classes.benchmarkTitle}>{subtitle}</h3>
+            ) : null}
+            {docUrl ? (
+              <a href={docUrl} target="_blank" rel="noopener noreferrer">
+                <InfoIcon className={classes.linkIcon} />
+              </a>
             ) : null}
             <a href={jointUrl} target="_blank" rel="noopener noreferrer">
               <LinkIcon className={classes.linkIcon} />
@@ -202,6 +210,7 @@ PerferhderGraph.propTypes = {
     suite: PropTypes.string.isRequired,
   })).isRequired,
   title: PropTypes.string.isRequired,
+  docUrl: PropTypes.string,
   yLabel: PropTypes.string,
 };
 
@@ -209,6 +218,7 @@ PerferhderGraph.defaultProps = {
   extraLink: undefined,
   includeSubtests: false,
   yLabel: undefined,
+  docUrl: undefined,
 };
 
 export default withStyles(styles)(PerferhderGraph);
