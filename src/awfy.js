@@ -378,7 +378,6 @@ const SITES = {
   expedia: 'Expedia',
   facebook: 'Facebook',
   'facebook-cristiano': 'Facebook (page)',
-  'facebook-redesign': 'Facebook (redesign)',
   fandom: 'Fandom',
   fashionbeans: 'FashionBeans',
   google: 'Google',
