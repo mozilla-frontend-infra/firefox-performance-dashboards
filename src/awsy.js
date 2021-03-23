@@ -429,12 +429,7 @@ export const CONFIG = {
     },
     mac: {
       label: 'Mac OS X',
-      platforms: ['macosx1014-64-shippable'],
-      categories: DEFAULT_CATEGORIES,
-    },
-    win7: {
-      label: 'Windows 7 32bit',
-      platforms: ['windows7-32-shippable'],
+      platforms: ['macosx1015-64-shippable'],
       categories: DEFAULT_CATEGORIES,
     },
     win10: {

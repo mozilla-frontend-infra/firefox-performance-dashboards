@@ -566,25 +566,13 @@ export const CONFIG = {
     },
     mac: {
       label: 'Mac OS X',
-      platforms: ['macosx1014-64-shippable'],
-      categories: DESKTOP_CATEGORIES,
-    },
-    win7: {
-      label: 'Windows 7 32bit',
-      platforms: ['windows7-32-shippable'],
+      platforms: ['macosx1015-64-shippable'],
       categories: DESKTOP_CATEGORIES,
     },
     win10: {
       label: 'Windows 10 64bit',
       platforms: ['windows10-64-shippable'],
       categories: DESKTOP_CATEGORIES,
-    },
-
-    win10ref2017: {
-      label: 'Windows 10 64bit (2017 reference laptop)',
-      platforms: ['windows10-64-ux', 'windows10-64-ref-hw-2017'],
-      categories: DESKTOP_CATEGORIES,
-      project: PROJECT,
     },
     androidMotoG5: {
       label: 'Android (Moto G5)',
