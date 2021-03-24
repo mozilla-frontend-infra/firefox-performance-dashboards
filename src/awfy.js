@@ -213,11 +213,19 @@ const DESKTOP_CATEGORIES = {
   },
   'cold-page-load': {
     suites: [],
-    label: 'Cold Page Load',
+    label: 'Cold Page Load (Recorded)',
+  },
+  'cold-page-load-live': {
+    suites: [],
+    label: 'Cold Page Load (Live)',
   },
   'warm-page-load': {
     suites: [],
-    label: 'Warm Page Load',
+    label: 'Warm Page Load (Recorded)',
+  },
+  'warm-page-load-live': {
+    suites: [],
+    label: 'Warm Page Load (Live)',
   },
   ...AWSY_CATEGORIES,
   network: {
@@ -418,26 +426,36 @@ const SITES = {
 
 Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
   ['cold', 'warm'].forEach((cacheVariant) => {
-    const bmKey = `tp6-${siteKey}-${cacheVariant}`;
-    BENCHMARKS[bmKey] = { compare: {}, label: siteLabel };
-    Object.entries(DESKTOP_APPS).forEach(([appKey, app]) => {
-      BENCHMARKS[bmKey].compare[appKey] = {
-        color: app.color,
-        label: app.label,
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
-        suite: siteKey,
-        test: 'SpeedIndex',
-        application: app.name,
-        platformSuffix: app.platformSuffix,
-        project: app.project,
-        option: 'opt',
-        extraOptions: [cacheVariant, 'nocondprof'],
-      };
-      if (Array.isArray(app.extraOptions)) {
-        BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
+    [true, false].forEach((live) => {
+      let category = `${cacheVariant}-page-load`;
+      let bmKey = `tp6-${siteKey}-${cacheVariant}`;
+      if (live) {
+        bmKey += '-live';
+        category += '-live';
       }
+      BENCHMARKS[bmKey] = { compare: {}, label: siteLabel };
+      Object.entries(DESKTOP_APPS).forEach(([appKey, app]) => {
+        BENCHMARKS[bmKey].compare[appKey] = {
+          color: app.color,
+          label: app.label,
+          frameworkId: BROWSERTIME_FRAMEWORK_ID,
+          suite: siteKey,
+          test: 'SpeedIndex',
+          application: app.name,
+          platformSuffix: app.platformSuffix,
+          project: live ? PROJECT : app.project,
+          option: 'opt',
+          extraOptions: [cacheVariant, 'nocondprof'],
+        };
+        if (live) {
+          BENCHMARKS[bmKey].compare[appKey].extraOptions.push('live');
+        }
+        if (Array.isArray(app.extraOptions)) {
+          BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
+        }
+      });
+      DESKTOP_CATEGORIES[category].suites.push(bmKey);
     });
-    DESKTOP_CATEGORIES[`${cacheVariant}-page-load`].suites.push(bmKey);
   });
 });
 
