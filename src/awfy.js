@@ -12,7 +12,6 @@ const BROWSERTIME_FRAMEWORK_ID = 13;
 const PALETTE = {
   blue: '#446e9e',
   emerald: '#4f9745',
-  olive: '#9DD866',
   indigo: '#6F4E7C',
   red: '#dc4c4e',
   orange: '#FFA056',
@@ -125,15 +124,6 @@ export const AWFY_BENCHMARKS = {
   },
   'speedometer-android': {
     compare: {
-      fennec: {
-        color: PALETTE.olive,
-        label: 'Fennec',
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
-        suite: 'speedometer',
-        option: 'opt',
-        application: 'fennec',
-        extraOptions: ['fennec'],
-      },
       geckoview: {
         color: PALETTE.indigo,
         label: 'GeckoView',
@@ -469,11 +459,6 @@ const MOBILE_APPS = {
     color: PALETTE.yellow,
     project: 'fenix',
     extraOptions: ['webrender'],
-  },
-  fennec: {
-    name: 'fennec',
-    label: 'Fennec',
-    color: PALETTE.olive,
   },
   geckoview: {
     name: 'geckoview',
