@@ -27,7 +27,7 @@ it('Query info', () => {
           platform: 'linux1804-64-shippable',
           platformSuffix: undefined,
           project: 'autoland',
-          extraOptions: ['nocondprof'],
+          extraOptions: undefined,
         },
         {
           color: '#dc4c4e',
@@ -38,7 +38,7 @@ it('Query info', () => {
           platform: 'linux1804-64-shippable-qr',
           platformSuffix: '-qr',
           project: 'mozilla-central',
-          extraOptions: ['nocondprof', 'fission', 'webrender'],
+          extraOptions: ['fission', 'webrender'],
         },
         {
           color: '#ebc23f',
@@ -49,7 +49,7 @@ it('Query info', () => {
           platform: 'linux1804-64-shippable-qr',
           platformSuffix: '-qr',
           project: 'autoland',
-          extraOptions: ['nocondprof', 'webrender'],
+          extraOptions: ['webrender'],
         },
         {
           color: '#446e9e',
@@ -82,7 +82,7 @@ it('Query info', () => {
           platform: 'linux1804-64-shippable',
           platformSuffix: undefined,
           project: 'mozilla-central',
-          extraOptions: ['nocondprof'],
+          extraOptions: undefined,
         },
         {
           color: '#fe939e',
@@ -93,7 +93,7 @@ it('Query info', () => {
           platform: 'linux1804-64-shippable',
           platformSuffix: undefined,
           project: 'mozilla-central',
-          extraOptions: ['nocondprof'],
+          extraOptions: undefined,
         },
       ],
       docUrl: undefined,
