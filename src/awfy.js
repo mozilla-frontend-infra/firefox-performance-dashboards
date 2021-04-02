@@ -429,6 +429,7 @@ const MOBILE_APPS = {
     label: 'Fenix-WebRender',
     color: PALETTE.yellow,
     project: 'fenix',
+    platformSuffix: '-qr',
     extraOptions: ['webrender'],
   },
   geckoview: {
@@ -442,6 +443,7 @@ const MOBILE_APPS = {
     label: 'GeckoView WebRender',
     color: PALETTE.red,
     project: ALT_PROJECT,
+    platformSuffix: '-qr',
     extraOptions: ['webrender'],
   },
 };
