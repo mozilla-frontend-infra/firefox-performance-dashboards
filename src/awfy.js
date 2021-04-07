@@ -21,107 +21,6 @@ const PALETTE = {
 };
 
 export const AWFY_BENCHMARKS = {
-  'wasm-misc': {
-    compare: {
-      'raptor-wasm-misc-firefox': {
-        color: PALETTE.orange,
-        label: 'Firefox (tiering)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-wasm-misc-firefox',
-        option: 'opt',
-        extraOptions: ['nocondprof'],
-      },
-      'raptor-wasm-misc-baseline-firefox': {
-        color: PALETTE.violet,
-        label: 'Firefox (wasm-baseline)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-wasm-misc-baseline-firefox',
-        option: 'opt',
-        extraOptions: ['nocondprof'],
-      },
-      'raptor-wasm-misc-optimizing-firefox': {
-        color: PALETTE.pink,
-        label: 'Firefox (wasm-optimizing)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-wasm-misc-optimizing-firefox',
-        option: 'opt',
-        extraOptions: ['nocondprof'],
-      },
-      'raptor-wasm-misc-chromium': {
-        color: PALETTE.emerald,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-wasm-misc-chromium',
-        option: 'opt',
-      },
-    },
-    label: 'WebAssembly Embenchen',
-  },
-  'wasm-godot': {
-    compare: {
-      'raptor-wasm-godot-firefox': {
-        color: PALETTE.orange,
-        label: 'Firefox (tiering)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-wasm-godot-firefox',
-        project: ALT_PROJECT,
-        option: 'opt',
-        extraOptions: ['nocondprof'],
-      },
-      'raptor-wasm-godot-baseline-firefox': {
-        color: PALETTE.violet,
-        label: 'Firefox (wasm-baseline)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-wasm-godot-baseline-firefox',
-        project: ALT_PROJECT,
-        option: 'opt',
-        extraOptions: ['nocondprof'],
-      },
-      'raptor-wasm-godot-optimizing-firefox': {
-        color: PALETTE.pink,
-        label: 'Firefox (wasm-optimizing)',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-wasm-godot-optimizing-firefox',
-        project: ALT_PROJECT,
-        option: 'opt',
-        extraOptions: ['nocondprof'],
-      },
-      'raptor-wasm-godot-chromium': {
-        color: PALETTE.emerald,
-        label: 'Chromium',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-wasm-godot-chromium',
-        option: 'opt',
-      },
-      'raptor-wasm-godot-chrome': {
-        color: PALETTE.blue,
-        label: 'Chrome',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-wasm-godot-chrome',
-        option: 'opt',
-      },
-      'raptor-wasm-godot-firefox-webrender': {
-        color: PALETTE.yellow,
-        label: 'Firefox-WebRender',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-wasm-godot-firefox',
-        project: ALT_PROJECT,
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['nocondprof', 'webrender'],
-      },
-      'raptor-wasm-godot-firefox-fission': {
-        color: PALETTE.red,
-        label: 'Firefox-Fission',
-        frameworkId: RAPTOR_FRAMEWORK_ID,
-        suite: 'raptor-wasm-godot-firefox',
-        platformSuffix: '-qr',
-        option: 'opt',
-        extraOptions: ['nocondprof', 'fission', 'webrender'],
-      },
-    },
-    label: 'WebAssembly Godot',
-  },
   'speedometer-android': {
     compare: {
       geckoview: {
@@ -206,6 +105,30 @@ const DESKTOP_APPS = {
   },
 };
 
+const WASM_APPS = {
+  ...DESKTOP_APPS,
+  firefox: {
+    name: 'firefox',
+    label: 'Firefox (tiering)',
+    color: PALETTE.orange,
+    project: ALT_PROJECT,
+  },
+  'baseline-firefox': {
+    name: 'firefox',
+    label: 'Firefox (wasm-baseline)',
+    color: PALETTE.violet,
+    project: PROJECT,
+    suiteSuffix: 'baseline',
+  },
+  'optimizing-firefox': {
+    name: 'firefox',
+    label: 'Firefox (wasm-optimizing)',
+    color: PALETTE.pink,
+    project: PROJECT,
+    suiteSuffix: 'optimizing',
+  },
+};
+
 const DESKTOP_CATEGORIES = {
   benchmarks: {
     suites: Object.keys(AWFY_BENCHMARKS),
@@ -285,23 +208,26 @@ const RAPTOR_TESTS = {
   webaudio: { label: 'WebAudio' },
   'unity-webgl': { label: 'Unity WebGL' },
   ares6: { label: 'Ares6' },
+  'wasm-godot': { label: 'WebAssembly Godot' },
+  'wasm-misc': { label: 'WebAssembly Embenchen' },
 };
 
 const RAPTOR_BENCHMARKS = {};
 Object.entries(RAPTOR_TESTS).forEach(([testKey, test]) => {
   const bmKey = `raptor-webext-desktop-${testKey}`;
   RAPTOR_BENCHMARKS[bmKey] = { compare: {}, label: `${test.label} (webext)` };
-  Object.entries(DESKTOP_APPS).forEach(([appKey, app]) => {
+  const apps = testKey.startsWith('wasm') ? WASM_APPS : DESKTOP_APPS;
+  Object.entries(apps).forEach(([appKey, app]) => {
     RAPTOR_BENCHMARKS[bmKey].compare[appKey] = {
       color: app.color,
       label: app.label,
       frameworkId: RAPTOR_FRAMEWORK_ID,
-      suite: `raptor-${testKey}-${app.name}`,
+      suite: ['raptor', testKey, app.suiteSuffix, app.name].filter(Boolean).join('-'),
       platformSuffix: app.platformSuffix,
       project: app.project,
       option: 'opt',
       // FIXME: chrome raptor benchmark tests do not contain 'nocondprod' extra option
-      extraOptions: Object.keys(DESKTOP_FIREFOX_APPS).includes(appKey) ? ['nocondprof'] : app.extraOptions,
+      extraOptions: appKey.startsWith('chrom') ? app.extraOptions : ['nocondprof'],
     };
     if (Array.isArray(app.extraOptions)) {
       RAPTOR_BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
@@ -313,18 +239,19 @@ Object.entries(RAPTOR_TESTS).forEach(([testKey, test]) => {
 Object.entries(RAPTOR_TESTS).forEach(([testKey, test]) => {
   const bmKey = `raptor-browsertime-desktop-${testKey}`;
   RAPTOR_BENCHMARKS[bmKey] = { compare: {}, label: `${test.label} (browsertime)` };
-  Object.entries(DESKTOP_APPS).forEach(([appKey, app]) => {
+  const apps = testKey.startsWith('wasm') ? WASM_APPS : DESKTOP_APPS;
+  Object.entries(apps).forEach(([appKey, app]) => {
     RAPTOR_BENCHMARKS[bmKey].compare[appKey] = {
       color: app.color,
       label: app.label,
       frameworkId: BROWSERTIME_FRAMEWORK_ID,
-      suite: testKey,
+      suite: [testKey, app.suiteSuffix].filter(Boolean).join('-'),
       application: app.name,
       platformSuffix: app.platformSuffix,
       project: app.project,
       option: 'opt',
       // FIXME: chrome raptor benchmark tests do not contain 'nocondprod' extra option
-      extraOptions: Object.keys(DESKTOP_FIREFOX_APPS).includes(appKey) ? ['nocondprof'] : app.extraOptions,
+      extraOptions: appKey.startsWith('chrom') ? app.extraOptions : ['nocondprof'],
     };
     if (Array.isArray(app.extraOptions)) {
       RAPTOR_BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
