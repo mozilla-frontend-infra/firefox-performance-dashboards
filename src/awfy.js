@@ -226,12 +226,8 @@ Object.entries(RAPTOR_TESTS).forEach(([testKey, test]) => {
       platformSuffix: app.platformSuffix,
       project: app.project,
       option: 'opt',
-      // FIXME: chrome raptor benchmark tests do not contain 'nocondprod' extra option
-      extraOptions: appKey.startsWith('chrom') ? app.extraOptions : ['nocondprof'],
+      extraOptions: app.extraOptions,
     };
-    if (Array.isArray(app.extraOptions)) {
-      RAPTOR_BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
-    }
     DESKTOP_CATEGORIES.benchmarks.suites.push(bmKey);
   });
 });
@@ -250,12 +246,8 @@ Object.entries(RAPTOR_TESTS).forEach(([testKey, test]) => {
       platformSuffix: app.platformSuffix,
       project: app.project,
       option: 'opt',
-      // FIXME: chrome raptor benchmark tests do not contain 'nocondprod' extra option
-      extraOptions: appKey.startsWith('chrom') ? app.extraOptions : ['nocondprof'],
+      extraOptions: app.extraOptions,
     };
-    if (Array.isArray(app.extraOptions)) {
-      RAPTOR_BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
-    }
     DESKTOP_CATEGORIES.benchmarks.suites.push(bmKey);
   });
 });
@@ -398,7 +390,7 @@ Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
           platformSuffix: app.platformSuffix,
           project: live ? PROJECT : app.project,
           option: 'opt',
-          extraOptions: [cacheVariant, 'nocondprof'],
+          extraOptions: [cacheVariant],
         };
         if (live) {
           BENCHMARKS[bmKey].compare[appKey].extraOptions.push('live');
@@ -429,6 +421,7 @@ const MOBILE_APPS = {
     label: 'Fenix-WebRender',
     color: PALETTE.yellow,
     project: 'fenix',
+    platformSuffix: '-qr',
     extraOptions: ['webrender'],
   },
   geckoview: {
@@ -442,6 +435,7 @@ const MOBILE_APPS = {
     label: 'GeckoView WebRender',
     color: PALETTE.red,
     project: ALT_PROJECT,
+    platformSuffix: '-qr',
     extraOptions: ['webrender'],
   },
 };
@@ -490,7 +484,7 @@ Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
           platformSuffix: app.platformSuffix,
           project: app.project,
           option: 'opt',
-          extraOptions: [cacheVariant, 'nocondprof'],
+          extraOptions: [cacheVariant],
         };
         if (live) {
           BENCHMARKS[bmKey].compare[appKey].extraOptions.push('live');
