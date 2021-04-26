@@ -515,8 +515,13 @@ export const CONFIG = {
       categories: DESKTOP_CATEGORIES,
     },
     mac: {
-      label: 'Mac OS X',
+      label: 'macOS 10.15',
       platforms: ['macosx1015-64-shippable'],
+      categories: DESKTOP_CATEGORIES,
+    },
+    mac1014: {
+      label: 'macOS 10.14',
+      platforms: ['macosx1014-64-shippable'],
       categories: DESKTOP_CATEGORIES,
     },
     win10: {
