@@ -510,11 +510,11 @@ export const CONFIG = {
       platforms: ['linux1804-64-shippable'],
       categories: DESKTOP_CATEGORIES,
     },
-    mac11m1: {
-      label: 'macOS Big Sur (M1)',
-      platforms: ['macosx1100-64-shippable'],
-      categories: DESKTOP_CATEGORIES,
-    },
+    // mac11m1: {
+    //   label: 'macOS Big Sur (M1)',
+    //   platforms: ['macosx1100-64-shippable'],
+    //   categories: DESKTOP_CATEGORIES,
+    // },
     mac: {
       label: 'macOS Catalina',
       platforms: ['macosx1015-64-shippable'],
