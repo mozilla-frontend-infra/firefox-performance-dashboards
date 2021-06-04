@@ -5,7 +5,6 @@ import { BENCHMARKS as H3_BENCHMARKS, DEFAULT_SUITES as H3_SUITES } from './h3';
 
 
 const TALOS_FRAMEWORK_ID = 1;
-const RAPTOR_FRAMEWORK_ID = 10;
 const JSBENCH_FRAMEWORK_ID = 11;
 const BROWSERTIME_FRAMEWORK_ID = 13;
 
@@ -214,27 +213,8 @@ const RAPTOR_TESTS = {
 
 const RAPTOR_BENCHMARKS = {};
 Object.entries(RAPTOR_TESTS).forEach(([testKey, test]) => {
-  const bmKey = `raptor-webext-desktop-${testKey}`;
-  RAPTOR_BENCHMARKS[bmKey] = { compare: {}, label: `${test.label} (webext)` };
-  const apps = testKey.startsWith('wasm') ? WASM_APPS : DESKTOP_APPS;
-  Object.entries(apps).forEach(([appKey, app]) => {
-    RAPTOR_BENCHMARKS[bmKey].compare[appKey] = {
-      color: app.color,
-      label: app.label,
-      frameworkId: RAPTOR_FRAMEWORK_ID,
-      suite: ['raptor', testKey, app.suiteSuffix, app.name].filter(Boolean).join('-'),
-      platformSuffix: app.platformSuffix,
-      project: app.project,
-      option: 'opt',
-      extraOptions: app.extraOptions,
-    };
-    DESKTOP_CATEGORIES.benchmarks.suites.push(bmKey);
-  });
-});
-
-Object.entries(RAPTOR_TESTS).forEach(([testKey, test]) => {
-  const bmKey = `raptor-browsertime-desktop-${testKey}`;
-  RAPTOR_BENCHMARKS[bmKey] = { compare: {}, label: `${test.label} (browsertime)` };
+  const bmKey = `raptor-desktop-${testKey}`;
+  RAPTOR_BENCHMARKS[bmKey] = { compare: {}, label: test.label };
   const apps = testKey.startsWith('wasm') ? WASM_APPS : DESKTOP_APPS;
   Object.entries(apps).forEach(([appKey, app]) => {
     RAPTOR_BENCHMARKS[bmKey].compare[appKey] = {

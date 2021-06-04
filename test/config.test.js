@@ -13,16 +13,17 @@ it('Verify all benchmarks are defined', () => {
 });
 
 it('Query info', () => {
-  const benchmarks = queryInfo(CONFIG.views.linux64, 'raptor-webext-desktop-wasm-misc', 'benchmarks');
+  const benchmarks = queryInfo(CONFIG.views.linux64, 'raptor-desktop-wasm-misc', 'benchmarks');
   expect(benchmarks).toStrictEqual({
-    'raptor-webext-desktop-wasm-misc': {
-      benchmarkUID: 'raptor-webext-desktop-wasm-misc',
+    'raptor-desktop-wasm-misc': {
+      benchmarkUID: 'raptor-desktop-wasm-misc',
       compare: [
         {
+          application: 'firefox',
           color: '#FFA056',
           label: 'Firefox (tiering)',
-          frameworkId: 10,
-          suite: 'raptor-wasm-misc-firefox',
+          frameworkId: 13,
+          suite: 'wasm-misc',
           option: 'opt',
           platform: 'linux1804-64-shippable',
           platformSuffix: undefined,
@@ -30,10 +31,11 @@ it('Query info', () => {
           extraOptions: undefined,
         },
         {
+          application: 'firefox',
           color: '#dc4c4e',
           label: 'Firefox-Fission',
-          frameworkId: 10,
-          suite: 'raptor-wasm-misc-firefox',
+          frameworkId: 13,
+          suite: 'wasm-misc',
           option: 'opt',
           platform: 'linux1804-64-shippable-qr',
           platformSuffix: '-qr',
@@ -41,10 +43,11 @@ it('Query info', () => {
           extraOptions: ['fission', 'webrender'],
         },
         {
+          application: 'firefox',
           color: '#ebc23f',
           label: 'Firefox-WebRender',
-          frameworkId: 10,
-          suite: 'raptor-wasm-misc-firefox',
+          frameworkId: 13,
+          suite: 'wasm-misc',
           option: 'opt',
           platform: 'linux1804-64-shippable-qr',
           platformSuffix: '-qr',
@@ -52,10 +55,11 @@ it('Query info', () => {
           extraOptions: ['webrender'],
         },
         {
+          application: 'chrome',
           color: '#446e9e',
           label: 'Chrome',
-          frameworkId: 10,
-          suite: 'raptor-wasm-misc-chrome',
+          frameworkId: 13,
+          suite: 'wasm-misc',
           option: 'opt',
           platform: 'linux1804-64-shippable',
           platformSuffix: undefined,
@@ -63,10 +67,11 @@ it('Query info', () => {
           extraOptions: undefined,
         },
         {
+          application: 'chromium',
           color: '#4f9745',
           label: 'Chromium',
-          frameworkId: 10,
-          suite: 'raptor-wasm-misc-chromium',
+          frameworkId: 13,
+          suite: 'wasm-misc',
           option: 'opt',
           platform: 'linux1804-64-shippable',
           platformSuffix: undefined,
@@ -74,10 +79,11 @@ it('Query info', () => {
           extraOptions: undefined,
         },
         {
+          application: 'firefox',
           color: '#a66e97',
           label: 'Firefox (wasm-baseline)',
-          frameworkId: 10,
-          suite: 'raptor-wasm-misc-baseline-firefox',
+          frameworkId: 13,
+          suite: 'wasm-misc-baseline',
           option: 'opt',
           platform: 'linux1804-64-shippable',
           platformSuffix: undefined,
@@ -85,10 +91,11 @@ it('Query info', () => {
           extraOptions: undefined,
         },
         {
+          application: 'firefox',
           color: '#fe939e',
           label: 'Firefox (wasm-optimizing)',
-          frameworkId: 10,
-          suite: 'raptor-wasm-misc-optimizing-firefox',
+          frameworkId: 13,
+          suite: 'wasm-misc-optimizing',
           option: 'opt',
           platform: 'linux1804-64-shippable',
           platformSuffix: undefined,
@@ -98,7 +105,7 @@ it('Query info', () => {
       ],
       docUrl: undefined,
       includeSubtests: true,
-      label: 'WebAssembly Embenchen (webext)',
+      label: 'WebAssembly Embenchen',
       yLabel: undefined,
     },
   });
