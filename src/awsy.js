@@ -47,6 +47,7 @@ const AWSY_TESTS = {
 
 export const BENCHMARKS = {};
 Object.entries(AWSY_TESTS).forEach(([testKey, test]) => {
+  const docUrl = `https://firefox-source-docs.mozilla.org/testing/perfdocs/awsy.html#${testKey.toLowerCase().replace(/[_\s]/g, '-')}`;
   [true, false].forEach((tp6) => {
     let bmKey = testKey;
     let label = test.label || testKey;
@@ -54,7 +55,12 @@ Object.entries(AWSY_TESTS).forEach(([testKey, test]) => {
       bmKey += '-tp6';
       label += ' (TP6)';
     }
-    BENCHMARKS[bmKey] = { compare: {}, label, yLabel: 'Bytes' };
+    BENCHMARKS[bmKey] = {
+      compare: {},
+      label,
+      yLabel: 'Bytes',
+      docUrl,
+    };
     Object.entries(DESKTOP_FIREFOX_APPS).forEach(([appKey, app]) => {
       BENCHMARKS[bmKey].compare[appKey] = {
         color: app.color,
