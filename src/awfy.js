@@ -520,6 +520,11 @@ export const CONFIG = {
       platforms: ['android-hw-p2-8-0-android-aarch64', 'android-hw-p2-8-0-android-aarch64-shippable'],
       categories: MOBILE_CATEGORIES,
     },
+    androidGalaxyS7: {
+      label: 'Android (Galaxy S7)',
+      platforms: ['android-hw-s7-8-0-android-aarch64-shippable'],
+      categories: MOBILE_CATEGORIES,
+    },
   },
 };
 
