@@ -29,15 +29,6 @@ export const AWFY_BENCHMARKS = {
         suite: 'speedometer',
         option: 'opt',
         application: 'geckoview',
-      },
-      'geckoview-webrender': {
-        color: PALETTE.red,
-        label: 'GeckoView-Webrender',
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
-        suite: 'speedometer',
-        platformSuffix: '-qr',
-        option: 'opt',
-        application: 'geckoview',
         extraOptions: ['webrender'],
       },
       fenix: {
@@ -45,15 +36,6 @@ export const AWFY_BENCHMARKS = {
         label: 'Fenix',
         frameworkId: BROWSERTIME_FRAMEWORK_ID,
         suite: 'speedometer',
-        option: 'opt',
-        application: 'fenix',
-      },
-      'fenix-webrender': {
-        color: PALETTE.yellow,
-        label: 'Fenix-Webrender',
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
-        suite: 'speedometer',
-        platformSuffix: '-qr',
         option: 'opt',
         application: 'fenix',
         extraOptions: ['webrender'],
@@ -69,22 +51,14 @@ const DESKTOP_FIREFOX_APPS = {
     label: 'Firefox',
     color: PALETTE.orange,
     project: ALT_PROJECT,
+    extraOptions: ['webrender'],
   },
   'firefox-fission': {
     name: 'firefox',
     label: 'Firefox-Fission',
     color: PALETTE.red,
-    platformSuffix: '-qr',
     project: PROJECT,
     extraOptions: ['fission', 'webrender'],
-  },
-  'firefox-webrender': {
-    name: 'firefox',
-    label: 'Firefox-WebRender',
-    color: PALETTE.yellow,
-    platformSuffix: '-qr',
-    project: ALT_PROJECT,
-    extraOptions: ['webrender'],
   },
 };
 
@@ -109,6 +83,7 @@ const WASM_APPS = {
     label: 'Firefox (tiering)',
     color: PALETTE.orange,
     project: ALT_PROJECT,
+    extraOptions: ['webrender'],
   },
   'baseline-firefox': {
     name: 'firefox',
@@ -116,6 +91,7 @@ const WASM_APPS = {
     color: PALETTE.violet,
     project: PROJECT,
     suiteSuffix: 'baseline',
+    extraOptions: ['webrender'],
   },
   'optimizing-firefox': {
     name: 'firefox',
@@ -123,6 +99,7 @@ const WASM_APPS = {
     color: PALETTE.pink,
     project: PROJECT,
     suiteSuffix: 'optimizing',
+    extraOptions: ['webrender'],
   },
 };
 
@@ -389,13 +366,6 @@ const MOBILE_APPS = {
     label: 'Fenix',
     color: PALETTE.orange,
     project: 'fenix',
-  },
-  'fenix-webrender': {
-    name: 'fenix',
-    label: 'Fenix-WebRender',
-    color: PALETTE.yellow,
-    project: 'fenix',
-    platformSuffix: '-qr',
     extraOptions: ['webrender'],
   },
   geckoview: {
@@ -403,13 +373,6 @@ const MOBILE_APPS = {
     label: 'GeckoView',
     color: PALETTE.indigo,
     project: ALT_PROJECT,
-  },
-  'geckoview-webrender': {
-    name: 'geckoview',
-    label: 'GeckoView WebRender',
-    color: PALETTE.red,
-    project: ALT_PROJECT,
-    platformSuffix: '-qr',
     extraOptions: ['webrender'],
   },
 };
@@ -485,42 +448,42 @@ export const CONFIG = {
   views: {
     linux64: {
       label: 'Linux 64bit',
-      platforms: ['linux1804-64-shippable'],
+      platforms: ['linux1804-64-shippable-qr'],
       categories: DESKTOP_CATEGORIES,
     },
     // mac11m1: {
     //   label: 'macOS Big Sur (M1)',
-    //   platforms: ['macosx1100-64-shippable'],
+    //   platforms: ['macosx1100-64-shippable-qr'],
     //   categories: DESKTOP_CATEGORIES,
     // },
     mac: {
       label: 'macOS Catalina',
-      platforms: ['macosx1015-64-shippable'],
+      platforms: ['macosx1015-64-shippable-qr'],
       categories: DESKTOP_CATEGORIES,
     },
     mac1014: {
       label: 'macOS Mojave',
-      platforms: ['macosx1014-64-shippable'],
+      platforms: ['macosx1014-64-shippable-qr'],
       categories: DESKTOP_CATEGORIES,
     },
     win10: {
       label: 'Windows 10 64bit',
-      platforms: ['windows10-64-shippable'],
+      platforms: ['windows10-64-shippable-qr'],
       categories: DESKTOP_CATEGORIES,
     },
     androidMotoG5: {
       label: 'Android (Moto G5)',
-      platforms: ['android-hw-g5-7-0-arm7-api-16', 'android-hw-g5-7-0-arm7-api-16-shippable'],
+      platforms: ['android-hw-g5-7-0-arm7-api-16-shippable-qr'],
       categories: MOBILE_CATEGORIES,
     },
     androidPixel2: {
       label: 'Android (Pixel 2)',
-      platforms: ['android-hw-p2-8-0-android-aarch64', 'android-hw-p2-8-0-android-aarch64-shippable'],
+      platforms: ['android-hw-p2-8-0-android-aarch64-shippable-qr'],
       categories: MOBILE_CATEGORIES,
     },
     androidGalaxyS7: {
       label: 'Android (Galaxy S7)',
-      platforms: ['android-hw-s7-8-0-android-aarch64-shippable'],
+      platforms: ['android-hw-s7-8-0-android-aarch64-shippable-qr'],
       categories: MOBILE_CATEGORIES,
     },
   },
