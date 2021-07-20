@@ -29,7 +29,6 @@ export const AWFY_BENCHMARKS = {
         suite: 'speedometer',
         option: 'opt',
         application: 'geckoview',
-        extraOptions: ['geckoview'],
       },
       'geckoview-webrender': {
         color: PALETTE.red,
@@ -39,7 +38,7 @@ export const AWFY_BENCHMARKS = {
         platformSuffix: '-qr',
         option: 'opt',
         application: 'geckoview',
-        extraOptions: ['geckoview'],
+        extraOptions: ['webrender'],
       },
       fenix: {
         color: PALETTE.orange,
@@ -48,7 +47,6 @@ export const AWFY_BENCHMARKS = {
         suite: 'speedometer',
         option: 'opt',
         application: 'fenix',
-        extraOptions: ['fenix'],
       },
       'fenix-webrender': {
         color: PALETTE.yellow,
@@ -58,7 +56,7 @@ export const AWFY_BENCHMARKS = {
         platformSuffix: '-qr',
         option: 'opt',
         application: 'fenix',
-        extraOptions: ['fenix'],
+        extraOptions: ['webrender'],
       },
     },
     label: 'Speedometer',
