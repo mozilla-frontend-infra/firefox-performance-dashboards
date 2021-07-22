@@ -25,7 +25,7 @@
   "dependencies": {
     "@material-ui/core": "^4",
     "@material-ui/icons": "^4",
-    "chart.js": "^2",
+    "chart.js": "^3.0.0",
     "fetch-mock-jest": "^1.5.1",
     "lodash.isequal": "^4.5.0",
     "node-fetch": "^2.6.1",
