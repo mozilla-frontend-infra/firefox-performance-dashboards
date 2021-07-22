@@ -30,7 +30,7 @@
     "lodash.isequal": "^4.5.0",
     "node-fetch": "^2.6.1",
     "prop-types": "^15",
-    "query-string": "^6",
+    "query-string": "^7.0.0",
     "raven-js": "^3.27.2",
     "react": "^16",
     "react-chartjs-2": "^2",
