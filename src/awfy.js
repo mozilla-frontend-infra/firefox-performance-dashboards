@@ -3,7 +3,6 @@ import { queryInfoGen } from './config-utils';
 import { BENCHMARKS as AWSY_BENCHMARKS, DEFAULT_CATEGORIES as AWSY_CATEGORIES } from './awsy';
 import { BENCHMARKS as H3_BENCHMARKS, DEFAULT_SUITES as H3_SUITES } from './h3';
 
-
 const TALOS_FRAMEWORK_ID = 1;
 const JSBENCH_FRAMEWORK_ID = 11;
 const BROWSERTIME_FRAMEWORK_ID = 13;
@@ -302,6 +301,7 @@ const SITES = {
   google: 'Google',
   'google-accounts': 'Google Accounts',
   'google-docs': 'Google Docs',
+  'google-docs-canvas': 'Google Docs Canvas Preview',
   'google-search': 'Google',
   'google-slides': 'Google Slides',
   'google-mail': 'Google Mail',
