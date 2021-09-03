@@ -183,6 +183,7 @@ const RAPTOR_TESTS = {
   ares6: { label: 'Ares6' },
   'wasm-godot': { label: 'WebAssembly Godot' },
   'wasm-misc': { label: 'WebAssembly Embenchen' },
+  jetstream2: { label: 'JetStream 2' },
 };
 
 const RAPTOR_BENCHMARKS = {};
