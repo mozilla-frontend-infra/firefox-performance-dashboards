@@ -59,14 +59,14 @@ Object.entries(AWSY_TESTS).forEach(([testKey, test]) => {
       if (Array.isArray(BENCHMARKS[testKey].compare[appKey].extraOptions)) {
         BENCHMARKS[testKey].compare[appKey].extraOptions.push(...test.extraOptions);
       } else {
-        BENCHMARKS[testKey].compare[appKey].extraOptions = test.extraOptions;
+        BENCHMARKS[testKey].compare[appKey].extraOptions = test.extraOptions.slice();
       }
     }
     if (Array.isArray(app.extraOptions)) {
       if (Array.isArray(BENCHMARKS[testKey].compare[appKey].extraOptions)) {
         BENCHMARKS[testKey].compare[appKey].extraOptions.push(...app.extraOptions);
       } else {
-        BENCHMARKS[testKey].compare[appKey].extraOptions = app.extraOptions;
+        BENCHMARKS[testKey].compare[appKey].extraOptions = app.extraOptions.slice();
       }
     }
   });
