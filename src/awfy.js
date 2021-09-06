@@ -469,7 +469,7 @@ export const CONFIG = {
     },
     win10: {
       label: 'Windows 10 64bit',
-      platforms: ['windows10-64-shippable-qr'],
+      platforms: ['windows10-64-shippable-qr', 'windows10-64-2004-shippable-qr'],
       categories: DESKTOP_CATEGORIES,
     },
     androidMotoG5: {

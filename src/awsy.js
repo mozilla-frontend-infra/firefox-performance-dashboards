@@ -1,4 +1,4 @@
-import { PROJECT, ALT_PROJECT } from './utils/perfherder';
+import { ALT_PROJECT } from './utils/perfherder';
 import { queryInfoGen } from './config-utils';
 
 const AWSY_FRAMEWORK_ID = 4;
@@ -6,7 +6,6 @@ const AWSY_FRAMEWORK_ID = 4;
 const PALETTE = {
   red: '#dc4c4e',
   orange: '#FFA056',
-  yellow: '#ebc23f',
 };
 
 const DESKTOP_FIREFOX_APPS = {
@@ -20,16 +19,8 @@ const DESKTOP_FIREFOX_APPS = {
     name: 'firefox',
     label: 'Firefox-Fission',
     color: PALETTE.red,
-    platformSuffix: '-qr',
-    project: PROJECT,
-    extraOptions: ['fission'],
-  },
-  'firefox-webrender': {
-    name: 'firefox',
-    label: 'Firefox-WebRender',
-    color: PALETTE.yellow,
-    platformSuffix: '-qr',
     project: ALT_PROJECT,
+    extraOptions: ['fission'],
   },
 };
 
@@ -101,17 +92,17 @@ export const CONFIG = {
   views: {
     linux64: {
       label: 'Linux 64bit',
-      platforms: ['linux1804-64-shippable'],
+      platforms: ['linux1804-64-shippable-qr'],
       categories: DEFAULT_CATEGORIES,
     },
     mac: {
       label: 'Mac OS X',
-      platforms: ['macosx1015-64-shippable'],
+      platforms: ['macosx1015-64-shippable-qr'],
       categories: DEFAULT_CATEGORIES,
     },
     win10: {
       label: 'Windows 10 64bit',
-      platforms: ['windows10-64-shippable'],
+      platforms: ['windows10-64-shippable-qr', 'windows10-64-2004-shippable-qr'],
       categories: DEFAULT_CATEGORIES,
     },
   },
