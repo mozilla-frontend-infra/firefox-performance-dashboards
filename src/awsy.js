@@ -29,48 +29,46 @@ const AWSY_TESTS = {
   'Base Content Heap Unclassified': {},
   'Base Content JS': {},
   'Base Content Resident Unique Memory': {},
-  'Explicit Memory': {},
-  'Heap Unclassified': {},
-  Images: {},
-  JS: {},
-  'Resident Memory': {},
+  'Explicit Memory': { extraOptions: ['tp6'] },
+  'Heap Unclassified': { extraOptions: ['tp6'] },
+  Images: { extraOptions: ['tp6'] },
+  JS: { extraOptions: ['tp6'] },
+  'Resident Memory': { extraOptions: ['tp6'] },
 };
 
 export const BENCHMARKS = {};
 Object.entries(AWSY_TESTS).forEach(([testKey, test]) => {
   const docUrl = `https://firefox-source-docs.mozilla.org/testing/perfdocs/awsy.html#${testKey.toLowerCase().replace(/[_\s]/g, '-')}`;
-  [true, false].forEach((tp6) => {
-    let bmKey = testKey;
-    let label = test.label || testKey;
-    if (tp6) {
-      bmKey += '-tp6';
-      label += ' (TP6)';
-    }
-    BENCHMARKS[bmKey] = {
-      compare: {},
-      label,
-      yLabel: 'Bytes',
-      docUrl,
+  BENCHMARKS[testKey] = {
+    compare: {},
+    label: test.label || testKey,
+    yLabel: 'Bytes',
+    docUrl,
+  };
+  Object.entries(DESKTOP_FIREFOX_APPS).forEach(([appKey, app]) => {
+    BENCHMARKS[testKey].compare[appKey] = {
+      color: app.color,
+      label: app.label,
+      frameworkId: AWSY_FRAMEWORK_ID,
+      suite: testKey,
+      platformSuffix: app.platformSuffix,
+      project: app.project,
+      option: 'opt',
     };
-    Object.entries(DESKTOP_FIREFOX_APPS).forEach(([appKey, app]) => {
-      BENCHMARKS[bmKey].compare[appKey] = {
-        color: app.color,
-        label: app.label,
-        frameworkId: AWSY_FRAMEWORK_ID,
-        suite: testKey,
-        platformSuffix: app.platformSuffix,
-        project: app.project,
-        option: 'opt',
-        extraOptions: tp6 ? ['tp6'] : undefined,
-      };
-      if (Array.isArray(app.extraOptions)) {
-        if (Array.isArray(BENCHMARKS[bmKey].compare[appKey].extraOptions)) {
-          BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
-        } else {
-          BENCHMARKS[bmKey].compare[appKey].extraOptions = app.extraOptions;
-        }
+    if (Array.isArray(test.extraOptions)) {
+      if (Array.isArray(BENCHMARKS[testKey].compare[appKey].extraOptions)) {
+        BENCHMARKS[testKey].compare[appKey].extraOptions.push(...test.extraOptions);
+      } else {
+        BENCHMARKS[testKey].compare[appKey].extraOptions = test.extraOptions;
       }
-    });
+    }
+    if (Array.isArray(app.extraOptions)) {
+      if (Array.isArray(BENCHMARKS[testKey].compare[appKey].extraOptions)) {
+        BENCHMARKS[testKey].compare[appKey].extraOptions.push(...app.extraOptions);
+      } else {
+        BENCHMARKS[testKey].compare[appKey].extraOptions = app.extraOptions;
+      }
+    }
   });
 });
 
