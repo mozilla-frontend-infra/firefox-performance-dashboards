@@ -1,4 +1,4 @@
-import { PROJECT, ALT_PROJECT } from './utils/perfherder';
+import { ALT_PROJECT } from './utils/perfherder';
 import { queryInfoGen } from './config-utils';
 
 const AWSY_FRAMEWORK_ID = 4;
@@ -6,7 +6,6 @@ const AWSY_FRAMEWORK_ID = 4;
 const PALETTE = {
   red: '#dc4c4e',
   orange: '#FFA056',
-  yellow: '#ebc23f',
 };
 
 const DESKTOP_FIREFOX_APPS = {
@@ -20,16 +19,8 @@ const DESKTOP_FIREFOX_APPS = {
     name: 'firefox',
     label: 'Firefox-Fission',
     color: PALETTE.red,
-    platformSuffix: '-qr',
-    project: PROJECT,
-    extraOptions: ['fission'],
-  },
-  'firefox-webrender': {
-    name: 'firefox',
-    label: 'Firefox-WebRender',
-    color: PALETTE.yellow,
-    platformSuffix: '-qr',
     project: ALT_PROJECT,
+    extraOptions: ['fission'],
   },
 };
 
@@ -38,48 +29,46 @@ const AWSY_TESTS = {
   'Base Content Heap Unclassified': {},
   'Base Content JS': {},
   'Base Content Resident Unique Memory': {},
-  'Explicit Memory': {},
-  'Heap Unclassified': {},
-  Images: {},
-  JS: {},
-  'Resident Memory': {},
+  'Explicit Memory': { extraOptions: ['tp6'] },
+  'Heap Unclassified': { extraOptions: ['tp6'] },
+  Images: { extraOptions: ['tp6'] },
+  JS: { extraOptions: ['tp6'] },
+  'Resident Memory': { extraOptions: ['tp6'] },
 };
 
 export const BENCHMARKS = {};
 Object.entries(AWSY_TESTS).forEach(([testKey, test]) => {
   const docUrl = `https://firefox-source-docs.mozilla.org/testing/perfdocs/awsy.html#${testKey.toLowerCase().replace(/[_\s]/g, '-')}`;
-  [true, false].forEach((tp6) => {
-    let bmKey = testKey;
-    let label = test.label || testKey;
-    if (tp6) {
-      bmKey += '-tp6';
-      label += ' (TP6)';
-    }
-    BENCHMARKS[bmKey] = {
-      compare: {},
-      label,
-      yLabel: 'Bytes',
-      docUrl,
+  BENCHMARKS[testKey] = {
+    compare: {},
+    label: test.label || testKey,
+    yLabel: 'Bytes',
+    docUrl,
+  };
+  Object.entries(DESKTOP_FIREFOX_APPS).forEach(([appKey, app]) => {
+    BENCHMARKS[testKey].compare[appKey] = {
+      color: app.color,
+      label: app.label,
+      frameworkId: AWSY_FRAMEWORK_ID,
+      suite: testKey,
+      platformSuffix: app.platformSuffix,
+      project: app.project,
+      option: 'opt',
     };
-    Object.entries(DESKTOP_FIREFOX_APPS).forEach(([appKey, app]) => {
-      BENCHMARKS[bmKey].compare[appKey] = {
-        color: app.color,
-        label: app.label,
-        frameworkId: AWSY_FRAMEWORK_ID,
-        suite: testKey,
-        platformSuffix: app.platformSuffix,
-        project: app.project,
-        option: 'opt',
-        extraOptions: tp6 ? ['tp6'] : undefined,
-      };
-      if (Array.isArray(app.extraOptions)) {
-        if (Array.isArray(BENCHMARKS[bmKey].compare[appKey].extraOptions)) {
-          BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
-        } else {
-          BENCHMARKS[bmKey].compare[appKey].extraOptions = app.extraOptions;
-        }
+    if (Array.isArray(test.extraOptions)) {
+      if (Array.isArray(BENCHMARKS[testKey].compare[appKey].extraOptions)) {
+        BENCHMARKS[testKey].compare[appKey].extraOptions.push(...test.extraOptions);
+      } else {
+        BENCHMARKS[testKey].compare[appKey].extraOptions = test.extraOptions.slice();
       }
-    });
+    }
+    if (Array.isArray(app.extraOptions)) {
+      if (Array.isArray(BENCHMARKS[testKey].compare[appKey].extraOptions)) {
+        BENCHMARKS[testKey].compare[appKey].extraOptions.push(...app.extraOptions);
+      } else {
+        BENCHMARKS[testKey].compare[appKey].extraOptions = app.extraOptions.slice();
+      }
+    }
   });
 });
 
@@ -101,17 +90,17 @@ export const CONFIG = {
   views: {
     linux64: {
       label: 'Linux 64bit',
-      platforms: ['linux1804-64-shippable'],
+      platforms: ['linux1804-64-shippable-qr'],
       categories: DEFAULT_CATEGORIES,
     },
     mac: {
       label: 'Mac OS X',
-      platforms: ['macosx1015-64-shippable'],
+      platforms: ['macosx1015-64-shippable-qr'],
       categories: DEFAULT_CATEGORIES,
     },
     win10: {
       label: 'Windows 10 64bit',
-      platforms: ['windows10-64-shippable'],
+      platforms: ['windows10-64-shippable-qr', 'windows10-64-2004-shippable-qr'],
       categories: DEFAULT_CATEGORIES,
     },
   },
