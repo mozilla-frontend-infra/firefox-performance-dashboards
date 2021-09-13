@@ -94,7 +94,7 @@ export const CONFIG = {
       categories: DEFAULT_CATEGORIES,
     },
     mac: {
-      label: 'Mac OS X',
+      label: 'macOS 10.15 "Catalina"',
       platforms: ['macosx1015-64-shippable-qr'],
       categories: DEFAULT_CATEGORIES,
     },
