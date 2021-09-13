@@ -453,17 +453,17 @@ export const CONFIG = {
       categories: DESKTOP_CATEGORIES,
     },
     // mac11m1: {
-    //   label: 'macOS Big Sur (M1)',
+    //   label: 'macOS 11 "Big Sur" (M1)',
     //   platforms: ['macosx1100-64-shippable-qr'],
     //   categories: DESKTOP_CATEGORIES,
     // },
     mac: {
-      label: 'macOS Catalina',
+      label: 'macOS 10.15 "Catalina"',
       platforms: ['macosx1015-64-shippable-qr'],
       categories: DESKTOP_CATEGORIES,
     },
     mac1014: {
-      label: 'macOS Mojave',
+      label: 'macOS 10.14 "Mojave"',
       platforms: ['macosx1014-64-shippable-qr'],
       categories: DESKTOP_CATEGORIES,
     },
