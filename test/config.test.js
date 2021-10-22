@@ -1,5 +1,4 @@
 import { BENCHMARKS, CONFIG, queryInfo } from '../src/config';
-import { ALT_PROJECT } from '../src/utils/perfherder';
 
 // eslint-disable-next-line jest/expect-expect
 it('Verify all benchmarks are defined', () => {
@@ -27,7 +26,7 @@ it('Query info', () => {
           option: 'opt',
           platform: 'linux1804-64-shippable-qr',
           platformSuffix: undefined,
-          project: 'autoland',
+          project: undefined,
           extraOptions: ['webrender'],
         },
         {
@@ -39,7 +38,7 @@ it('Query info', () => {
           option: 'opt',
           platform: 'linux1804-64-shippable-qr',
           platformSuffix: undefined,
-          project: 'mozilla-central',
+          project: undefined,
           extraOptions: ['fission', 'webrender'],
         },
         {
@@ -51,7 +50,7 @@ it('Query info', () => {
           option: 'opt',
           platform: 'linux1804-64-shippable-qr',
           platformSuffix: undefined,
-          project: undefined,
+          project: 'mozilla-central',
           extraOptions: undefined,
         },
         {
@@ -63,7 +62,7 @@ it('Query info', () => {
           option: 'opt',
           platform: 'linux1804-64-shippable-qr',
           platformSuffix: undefined,
-          project: undefined,
+          project: 'mozilla-central',
           extraOptions: undefined,
         },
         {
@@ -75,7 +74,7 @@ it('Query info', () => {
           option: 'opt',
           platform: 'linux1804-64-shippable-qr',
           platformSuffix: undefined,
-          project: 'mozilla-central',
+          project: undefined,
           extraOptions: ['webrender'],
         },
         {
@@ -87,7 +86,7 @@ it('Query info', () => {
           option: 'opt',
           platform: 'linux1804-64-shippable-qr',
           platformSuffix: undefined,
-          project: 'mozilla-central',
+          project: undefined,
           extraOptions: ['webrender'],
         },
       ],
@@ -111,7 +110,7 @@ it('Query info - suite with explicit project and platformSuffix ', () => {
         frameworkId: 1,
         suite: 'rasterflood_svg',
         platformSuffix: undefined,
-        project: ALT_PROJECT,
+        project: undefined,
         option: 'opt',
         platform: 'linux1804-64-shippable-qr',
         extraOptions: ['e10s', 'stylo', 'webrender'],
@@ -123,7 +122,7 @@ it('Query info - suite with explicit project and platformSuffix ', () => {
         frameworkId: 1,
         suite: 'rasterflood_svg',
         platformSuffix: undefined,
-        project: 'mozilla-central',
+        project: undefined,
         option: 'opt',
         platform: 'linux1804-64-shippable-qr',
         extraOptions: ['e10s', 'stylo', 'fission', 'webrender'],
