@@ -3,8 +3,8 @@ import { stringify } from 'query-string';
 import fetchAndCache from './fetchAndCache';
 
 export const TREEHERDER = 'https://treeherder.mozilla.org';
-export const PROJECT = 'mozilla-central';
-export const ALT_PROJECT = 'autoland';
+export const PROJECT = 'mozilla-beta';
+export const ALT_PROJECT = 'mozilla-central';
 const DEFAULT_TIMERANGE = 14 * 24 * 3600;
 
 export const signaturesUrl = (project = PROJECT) => (
@@ -26,7 +26,7 @@ export const perfDataUrls = ({ frameworkId, project }, signatureIds, timeRange) 
     interval: timeRange,
     no_retriggers: true,
   });
-    // To guarantee order for tests
+  // To guarantee order for tests
   signatureIds.sort();
   const urls = [];
   for (let i = 0; i < (signatureIds.length) / 100; i += 1) {
@@ -128,7 +128,7 @@ const signaturesForPlatformSuite = async (seriesConfig) => {
       if (
         jobSignature.suite === seriesConfig.suite
         && ((jobSignature.suite !== jobSignature.test && jobSignature.test === seriesConfig.test)
-        || (jobSignature.suite === jobSignature.test))
+          || (jobSignature.suite === jobSignature.test))
       ) {
         res[signatureId] = {
           parentSignatureHash: jobSignature.signature_hash,

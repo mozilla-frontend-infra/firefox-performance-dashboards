@@ -1,4 +1,4 @@
-import { PROJECT, ALT_PROJECT } from './utils/perfherder';
+import { ALT_PROJECT } from './utils/perfherder';
 import { queryInfoGen } from './config-utils';
 import { BENCHMARKS as AWSY_BENCHMARKS, DEFAULT_CATEGORIES as AWSY_CATEGORIES } from './awsy';
 import { BENCHMARKS as H3_BENCHMARKS, DEFAULT_SUITES as H3_SUITES } from './h3';
@@ -49,14 +49,12 @@ const DESKTOP_FIREFOX_APPS = {
     name: 'firefox',
     label: 'Firefox',
     color: PALETTE.orange,
-    project: ALT_PROJECT,
     extraOptions: ['webrender'],
   },
   'firefox-fission': {
     name: 'firefox',
     label: 'Firefox-Fission',
     color: PALETTE.red,
-    project: PROJECT,
     extraOptions: ['fission', 'webrender'],
   },
 };
@@ -67,11 +65,13 @@ const DESKTOP_APPS = {
     name: 'chrome',
     label: 'Chrome',
     color: PALETTE.blue,
+    project: ALT_PROJECT,
   },
   chromium: {
     name: 'chromium',
     label: 'Chromium',
     color: PALETTE.emerald,
+    project: ALT_PROJECT,
   },
 };
 
@@ -81,14 +81,12 @@ const WASM_APPS = {
     name: 'firefox',
     label: 'Firefox (tiering)',
     color: PALETTE.orange,
-    project: ALT_PROJECT,
     extraOptions: ['webrender'],
   },
   'baseline-firefox': {
     name: 'firefox',
     label: 'Firefox (wasm-baseline)',
     color: PALETTE.violet,
-    project: PROJECT,
     suiteSuffix: 'baseline',
     extraOptions: ['webrender'],
   },
@@ -96,7 +94,6 @@ const WASM_APPS = {
     name: 'firefox',
     label: 'Firefox (wasm-optimizing)',
     color: PALETTE.pink,
-    project: PROJECT,
     suiteSuffix: 'optimizing',
     extraOptions: ['webrender'],
   },
@@ -219,11 +216,11 @@ const JSBENCH_APPS = {
   sm: {
     label: 'SpiderMonkey',
     color: PALETTE.violet,
-    project: ALT_PROJECT,
   },
   v8: {
     label: 'Chromium v8',
     color: PALETTE.pink,
+    project: ALT_PROJECT,
   },
 };
 
@@ -340,7 +337,7 @@ Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
           test: 'SpeedIndex',
           application: app.name,
           platformSuffix: app.platformSuffix,
-          project: live ? PROJECT : app.project,
+          project: live ? ALT_PROJECT : app.project,
           option: 'opt',
           extraOptions: [cacheVariant],
         };
@@ -373,7 +370,6 @@ const MOBILE_APPS = {
     name: 'geckoview',
     label: 'GeckoView',
     color: PALETTE.indigo,
-    project: ALT_PROJECT,
     extraOptions: ['webrender'],
   },
 };
@@ -428,7 +424,7 @@ Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
           BENCHMARKS[bmKey].compare[appKey].extraOptions.push('live');
           if (app.name === 'fenix') {
             // fenix live sites are running on mozilla-central
-            BENCHMARKS[bmKey].compare[appKey].project = PROJECT;
+            BENCHMARKS[bmKey].compare[appKey].project = ALT_PROJECT;
           }
         }
         if (Array.isArray(app.extraOptions)) {
