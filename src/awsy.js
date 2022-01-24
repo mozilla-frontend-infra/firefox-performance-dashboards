@@ -15,13 +15,6 @@ const DESKTOP_FIREFOX_APPS = {
     color: PALETTE.orange,
     project: ALT_PROJECT,
   },
-  'firefox-fission': {
-    name: 'firefox',
-    label: 'Firefox-Fission',
-    color: PALETTE.red,
-    project: ALT_PROJECT,
-    extraOptions: ['fission'],
-  },
 };
 
 const AWSY_TESTS = {
