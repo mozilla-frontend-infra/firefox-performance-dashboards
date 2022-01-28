@@ -50,13 +50,6 @@ const DESKTOP_FIREFOX_APPS = {
     label: 'Firefox',
     color: PALETTE.orange,
     project: ALT_PROJECT,
-    extraOptions: ['webrender'],
-  },
-  'firefox-fission': {
-    name: 'firefox',
-    label: 'Firefox-Fission',
-    color: PALETTE.red,
-    project: PROJECT,
     extraOptions: ['fission', 'webrender'],
   },
 };
@@ -81,8 +74,8 @@ const WASM_APPS = {
     name: 'firefox',
     label: 'Firefox (tiering)',
     color: PALETTE.orange,
-    project: ALT_PROJECT,
-    extraOptions: ['webrender'],
+    project: PROJECT,
+    extraOptions: ['fission', 'webrender'],
   },
   'baseline-firefox': {
     name: 'firefox',
@@ -90,7 +83,7 @@ const WASM_APPS = {
     color: PALETTE.violet,
     project: PROJECT,
     suiteSuffix: 'baseline',
-    extraOptions: ['webrender'],
+    extraOptions: ['fission', 'webrender'],
   },
   'optimizing-firefox': {
     name: 'firefox',
@@ -98,7 +91,7 @@ const WASM_APPS = {
     color: PALETTE.pink,
     project: PROJECT,
     suiteSuffix: 'optimizing',
-    extraOptions: ['webrender'],
+    extraOptions: ['fission', 'webrender'],
   },
 };
 
