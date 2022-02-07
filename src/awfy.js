@@ -177,6 +177,7 @@ const RAPTOR_TESTS = {
   'wasm-godot': { label: 'WebAssembly Godot' },
   'wasm-misc': { label: 'WebAssembly Embenchen' },
   jetstream2: { label: 'JetStream 2' },
+  'matrix-react-bench': { label: 'Matrix React' },
 };
 
 const RAPTOR_BENCHMARKS = {};
