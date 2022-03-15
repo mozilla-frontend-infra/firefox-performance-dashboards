@@ -468,7 +468,7 @@ export const CONFIG = {
     },
     androidMotoG5: {
       label: 'Android (Moto G5)',
-      platforms: ['android-hw-g5-7-0-arm7-api-16-shippable-qr'],
+      platforms: ['android-hw-g5-7-0-arm7-shippable-qr', 'android-hw-g5-7-0-arm7-api-16-shippable-qr'],
       categories: MOBILE_CATEGORIES,
     },
     androidPixel2: {
