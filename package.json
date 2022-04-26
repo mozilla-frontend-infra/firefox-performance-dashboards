@@ -54,7 +54,7 @@
     "fetch-mock": "9.2.2",
     "husky": "4.0.10",
     "jest": "26.6.3",
-    "lint-staged": "10.0.10",
+    "lint-staged": "12.4.1",
     "neutrino": "9.0.0",
     "raf": "3.4.1",
     "setup-polly-jest": "^0.9.1",
