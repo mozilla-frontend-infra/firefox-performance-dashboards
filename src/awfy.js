@@ -481,6 +481,11 @@ export const CONFIG = {
       platforms: ['android-hw-s7-8-0-android-aarch64-shippable-qr'],
       categories: MOBILE_CATEGORIES,
     },
+    androidGalaxyA51: {
+      label: 'Android (Samsung Galaxy A51)',
+      platforms: ['android-hw-a51-11-0-aarch64-shippable-qr'],
+      categories: MOBILE_CATEGORIES,
+    },
   },
 };
 
