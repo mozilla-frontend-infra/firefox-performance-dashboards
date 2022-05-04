@@ -467,17 +467,17 @@ export const CONFIG = {
       categories: DESKTOP_CATEGORIES,
     },
     androidMotoG5: {
-      label: 'Android (Moto G5)',
+      label: 'Android (Motorola Moto G5)',
       platforms: ['android-hw-g5-7-0-arm7-shippable-qr', 'android-hw-g5-7-0-arm7-api-16-shippable-qr'],
       categories: MOBILE_CATEGORIES,
     },
     androidPixel2: {
-      label: 'Android (Pixel 2)',
+      label: 'Android (Google Pixel 2)',
       platforms: ['android-hw-p2-8-0-android-aarch64-shippable-qr'],
       categories: MOBILE_CATEGORIES,
     },
     androidGalaxyS7: {
-      label: 'Android (Galaxy S7)',
+      label: 'Android (Samsung Galaxy S7)',
       platforms: ['android-hw-s7-8-0-android-aarch64-shippable-qr'],
       categories: MOBILE_CATEGORIES,
     },
