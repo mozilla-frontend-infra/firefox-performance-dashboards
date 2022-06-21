@@ -3,8 +3,8 @@ import { stringify } from 'query-string';
 import fetchAndCache from './fetchAndCache';
 
 export const TREEHERDER = 'https://treeherder.mozilla.org';
-export const PROJECT = 'mozilla-central';
-export const ALT_PROJECT = 'autoland';
+export const PROJECT = 'mozilla-beta';
+export const ALT_PROJECT = 'mozilla-beta';
 const DEFAULT_TIMERANGE = 14 * 24 * 3600;
 
 export const signaturesUrl = (project = PROJECT) => (

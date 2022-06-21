@@ -331,7 +331,7 @@ Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
           label: app.label,
           frameworkId: BROWSERTIME_FRAMEWORK_ID,
           suite: siteKey,
-          test: 'SpeedIndex',
+          test: 'loadtime',
           application: app.name,
           platformSuffix: app.platformSuffix,
           project: live ? PROJECT : app.project,
