@@ -27,7 +27,7 @@ it('Query info', () => {
           option: 'opt',
           platform: 'linux1804-64-shippable-qr',
           platformSuffix: undefined,
-          project: 'mozilla-central',
+          project: 'mozilla-beta',
           extraOptions: ['fission', 'webrender'],
         },
         {
@@ -63,7 +63,7 @@ it('Query info', () => {
           option: 'opt',
           platform: 'linux1804-64-shippable-qr',
           platformSuffix: undefined,
-          project: 'mozilla-central',
+          project: 'mozilla-beta',
           extraOptions: ['fission', 'webrender'],
         },
         {
@@ -75,7 +75,7 @@ it('Query info', () => {
           option: 'opt',
           platform: 'linux1804-64-shippable-qr',
           platformSuffix: undefined,
-          project: 'mozilla-central',
+          project: 'mozilla-beta',
           extraOptions: ['fission', 'webrender'],
         },
       ],
