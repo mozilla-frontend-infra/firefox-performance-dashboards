@@ -14,6 +14,7 @@ const DESKTOP_FIREFOX_APPS = {
     label: 'Firefox',
     color: PALETTE.orange,
     project: ALT_PROJECT,
+    extraOptions: ['fission'],
   },
 };
 
