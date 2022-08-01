@@ -420,10 +420,8 @@ Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
         };
         if (live) {
           BENCHMARKS[bmKey].compare[appKey].extraOptions.push('live');
-          if (app.name === 'fenix') {
-            // fenix live sites are running on mozilla-central
-            BENCHMARKS[bmKey].compare[appKey].project = PROJECT;
-          }
+          // live sites are running on mozilla-central
+          BENCHMARKS[bmKey].compare[appKey].project = PROJECT;
         }
         if (Array.isArray(app.extraOptions)) {
           BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
