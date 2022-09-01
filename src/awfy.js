@@ -356,10 +356,10 @@ const MOBILE_APPS = {
     label: 'Chrome',
     color: PALETTE.blue,
   },
-  'fenix': {
+  fenix: {
     name: 'fenix',
     label: 'Fenix-nofis',
-    color: PALETTE.orange,    
+    color: PALETTE.orange,
     project: 'fenix',
     extraOptions: ['webrender'],
   },
@@ -370,10 +370,10 @@ const MOBILE_APPS = {
     project: 'fenix',
     extraOptions: ['webrender', 'fission'],
   },
-  'geckoview': {
+  geckoview: {
     name: 'geckoview',
     label: 'GeckoView-nofis',
-    color: PALETTE.indigo,    
+    color: PALETTE.indigo,
     project: ALT_PROJECT,
     extraOptions: ['webrender'],
   },
