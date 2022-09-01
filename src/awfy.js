@@ -356,19 +356,33 @@ const MOBILE_APPS = {
     label: 'Chrome',
     color: PALETTE.blue,
   },
-  fenix: {
+  'fenix': {
     name: 'fenix',
-    label: 'Fenix',
-    color: PALETTE.orange,
+    label: 'Fenix-nofis',
+    color: PALETTE.orange,    
     project: 'fenix',
     extraOptions: ['webrender'],
   },
-  geckoview: {
+  'fenix-fission': {
+    name: 'fenix',
+    label: 'Fenix-fission',
+    color: PALETTE.emerald,
+    project: 'fenix',
+    extraOptions: ['webrender', 'fission'],
+  },
+  'geckoview': {
     name: 'geckoview',
-    label: 'GeckoView',
-    color: PALETTE.indigo,
+    label: 'GeckoView-nofis',
+    color: PALETTE.indigo,    
     project: ALT_PROJECT,
     extraOptions: ['webrender'],
+  },
+  'geckoview-fission': {
+    name: 'geckoview',
+    label: 'GeckoView-fission',
+    color: PALETTE.red,
+    project: ALT_PROJECT,
+    extraOptions: ['webrender', 'fission'],
   },
 };
 
