@@ -358,17 +358,31 @@ const MOBILE_APPS = {
   },
   fenix: {
     name: 'fenix',
-    label: 'Fenix',
+    label: 'Fenix-nofis',
     color: PALETTE.orange,
     project: 'fenix',
     extraOptions: ['webrender'],
   },
+  'fenix-fission': {
+    name: 'fenix',
+    label: 'Fenix-fission',
+    color: PALETTE.emerald,
+    project: 'fenix',
+    extraOptions: ['webrender', 'fission'],
+  },
   geckoview: {
     name: 'geckoview',
-    label: 'GeckoView',
+    label: 'GeckoView-nofis',
     color: PALETTE.indigo,
     project: ALT_PROJECT,
     extraOptions: ['webrender'],
+  },
+  'geckoview-fission': {
+    name: 'geckoview',
+    label: 'GeckoView-fission',
+    color: PALETTE.red,
+    project: ALT_PROJECT,
+    extraOptions: ['webrender', 'fission'],
   },
 };
 
