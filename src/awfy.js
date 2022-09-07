@@ -381,7 +381,7 @@ const MOBILE_APPS = {
     name: 'geckoview',
     label: 'GeckoView-fission',
     color: PALETTE.red,
-    project: ALT_PROJECT,
+    project: PROJECT,
     extraOptions: ['webrender', 'fission'],
   },
 };
