@@ -31,7 +31,6 @@
     "node-fetch": "^2.6.1",
     "prop-types": "^15",
     "query-string": "^6",
-    "raven-js": "^3.27.2",
     "react": "^16",
     "react-chartjs-2": "^2",
     "react-dom": "^16",
