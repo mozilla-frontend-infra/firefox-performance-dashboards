@@ -66,6 +66,11 @@ const DESKTOP_APPS = {
     label: 'Chromium',
     color: PALETTE.emerald,
   },
+  safari: {
+    name: 'safari',
+    label: 'Safari',
+    color: PALETTE.yellow,
+  },
 };
 
 const WASM_APPS = {
