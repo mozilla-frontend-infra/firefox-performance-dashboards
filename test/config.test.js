@@ -55,6 +55,18 @@ it('Query info', () => {
           extraOptions: undefined,
         },
         {
+          application: 'safari',
+          color: '#ebc23f',
+          extraOptions: undefined,
+          frameworkId: 13,
+          label: 'Safari',
+          option: 'opt',
+          platform: 'linux1804-64-shippable-qr',
+          platformSuffix: undefined,
+          project: undefined,
+          suite: 'wasm-misc',
+        },
+        {
           application: 'firefox',
           color: '#a66e97',
           label: 'Firefox (wasm-baseline)',
