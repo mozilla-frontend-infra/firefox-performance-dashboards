@@ -60,6 +60,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'speedometer3',
         option: 'opt',
         application: 'fenix',
+        project: 'firefox-android',
         extraOptions: ['webrender'],
       },
     },
