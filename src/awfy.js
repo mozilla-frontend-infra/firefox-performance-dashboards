@@ -21,6 +21,15 @@ const PALETTE = {
 export const AWFY_BENCHMARKS = {
   'speedometer-android': {
     compare: {
+      'chrome-m': {
+        color: PALETTE.blue,
+        label: 'Chrome',
+        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        suite: 'speedometer',
+        option: 'opt',
+        application: 'chrome-m',
+        project: PROJECT,
+      },
       geckoview: {
         color: PALETTE.indigo,
         label: 'GeckoView',
@@ -28,6 +37,7 @@ export const AWFY_BENCHMARKS = {
         suite: 'speedometer',
         option: 'opt',
         application: 'geckoview',
+        project: ALT_PROJECT,
         extraOptions: ['webrender'],
       },
       fenix: {
@@ -37,10 +47,45 @@ export const AWFY_BENCHMARKS = {
         suite: 'speedometer',
         option: 'opt',
         application: 'fenix',
+        project: ALT_PROJECT,
         extraOptions: ['webrender'],
       },
     },
     label: 'Speedometer',
+  },
+  'speedometer3-android': {
+    compare: {
+      'chrome-m': {
+        color: PALETTE.blue,
+        label: 'Chrome',
+        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        suite: 'speedometer3',
+        option: 'opt',
+        application: 'chrome-m',
+        project: PROJECT,
+      },
+      geckoview: {
+        color: PALETTE.indigo,
+        label: 'GeckoView',
+        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        suite: 'speedometer3',
+        option: 'opt',
+        application: 'geckoview',
+        project: ALT_PROJECT,
+        extraOptions: ['webrender'],
+      },
+      fenix: {
+        color: PALETTE.orange,
+        label: 'Fenix',
+        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        suite: 'speedometer3',
+        option: 'opt',
+        application: 'fenix',
+        project: ALT_PROJECT,
+        extraOptions: ['webrender'],
+      },
+    },
+    label: 'Speedometer 3',
   },
 };
 
@@ -169,6 +214,7 @@ const RAPTOR_TESTS = {
   'motionmark-animometer': { label: 'MotionMark Animometer' },
   'motionmark-htmlsuite': { label: 'MotionMark HtmlSuite' },
   speedometer: { label: 'Speedometer' },
+  speedometer3: { label: 'Speedometer 3' },
   stylebench: { label: 'StyleBench' },
   sunspider: { label: 'SunSpider' },
   webaudio: { label: 'WebAudio' },
@@ -388,7 +434,7 @@ const MOBILE_APPS = {
 
 const MOBILE_CATEGORIES = {
   benchmarks: {
-    suites: ['speedometer-android'],
+    suites: ['speedometer-android', 'speedometer3-android'],
     label: 'Benchmarks',
   },
   'cold-page-load': {
