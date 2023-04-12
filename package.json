@@ -66,5 +66,6 @@
       "pre-commit": "lint-staged",
       "pre-push": "yarn test"
     }
-  }
+  },
+  "packageManager": "yarn@1.22.19"
 }

@@ -10,7 +10,7 @@ jobs:
     executor:
       name: node/default
       # The Node version here must be kept in sync with that in `package.json`.
-      tag: '12.14.1'
+      tag: '16.16.0'
     steps:
       - checkout
       - node/install-packages:
@@ -30,4 +30,4 @@ jobs:
           name: Check code coverage changes
 
 orbs:
-  node: circleci/node@4.1.1
+  node: circleci/node@5.1.0
