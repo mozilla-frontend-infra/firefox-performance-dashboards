@@ -483,11 +483,6 @@ export const CONFIG = {
       platforms: ['windows10-64-shippable-qr', 'windows10-64-2004-shippable-qr'],
       categories: DESKTOP_CATEGORIES,
     },
-    androidMotoG5: {
-      label: 'Android (Motorola Moto G5)',
-      platforms: ['android-hw-g5-7-0-arm7-shippable-qr', 'android-hw-g5-7-0-arm7-api-16-shippable-qr'],
-      categories: MOBILE_CATEGORIES,
-    },
     androidGalaxyS7: {
       label: 'Android (Samsung Galaxy S7)',
       platforms: ['android-hw-s7-8-0-android-aarch64-shippable-qr'],
