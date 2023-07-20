@@ -61,11 +61,6 @@ const DESKTOP_APPS = {
     label: 'Chrome',
     color: PALETTE.blue,
   },
-  chromium: {
-    name: 'chromium',
-    label: 'Chromium',
-    color: PALETTE.emerald,
-  },
   safari: {
     name: 'safari',
     label: 'Safari',
