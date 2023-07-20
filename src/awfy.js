@@ -460,7 +460,7 @@ export const CONFIG = {
   views: {
     linux64: {
       label: 'Linux 64bit',
-      platforms: ['linux1804-64-shippable-qr'],
+      platforms: ['linux64-shippable', 'linux1804-64-shippable-qr'],
       categories: DESKTOP_CATEGORIES,
     },
     // mac11m1: {
