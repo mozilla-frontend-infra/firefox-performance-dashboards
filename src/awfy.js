@@ -231,7 +231,7 @@ const JSBENCH_TESTS = {
   octane: { label: 'Octane' },
   'six-speed': { label: 'Six Speed' },
   sunspider: { label: 'SunSpider' },
-  'web-tooling': { label: 'Web Tooling' },
+  'web-tooling-benchmark': { label: 'Web Tooling' },
 };
 
 Object.entries(JSBENCH_TESTS).forEach(([testKey, test]) => {
