@@ -184,7 +184,7 @@ const fetchSubtestsData = async (seriesConfig, subtestsInfo, timeRange) => {
     subtestsData[subtestHash] = {
       data: dataPoints[subtestHash],
       meta: subtestsInfo[subtestHash], // Original object from Perfherder
-      perfherderUrl: perfherderGraphUrl(seriesConfig, [subtestHash]),
+      perfherderUrl: perfherderGraphUrl(seriesConfig, [dataPoints[subtestHash][0].signature_id]),
     };
   });
 
