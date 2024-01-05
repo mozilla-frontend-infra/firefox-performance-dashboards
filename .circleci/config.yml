@@ -30,4 +30,4 @@ jobs:
           name: Check code coverage changes
 
 orbs:
-  node: circleci/node@4.1.1
+  node: circleci/node@5.2.0
