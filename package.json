@@ -57,7 +57,7 @@
     "neutrino": "9.0.0",
     "raf": "3.4.1",
     "setup-polly-jest": "^0.9.1",
-    "webpack": "4.46.0",
+    "webpack": "5.91.0",
     "webpack-cli": "3.3.12",
     "webpack-dev-server": "3.11.3"
   },
