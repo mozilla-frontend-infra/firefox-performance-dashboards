@@ -367,7 +367,7 @@ const MOBILE_APPS = {
     name: 'fenix',
     label: 'Fenix-fission',
     color: PALETTE.emerald,
-    project: ALT_PROJECT,
+    project: PROJECT,
     extraOptions: ['webrender', 'fission'],
   },
   geckoview: {
