@@ -360,14 +360,14 @@ const MOBILE_APPS = {
     name: 'fenix',
     label: 'Fenix-nofis',
     color: PALETTE.orange,
-    project: 'firefox-android',
+    project: ALT_PROJECT,
     extraOptions: ['webrender'],
   },
   'fenix-fission': {
     name: 'fenix',
     label: 'Fenix-fission',
     color: PALETTE.emerald,
-    project: 'firefox-android',
+    project: ALT_PROJECT,
     extraOptions: ['webrender', 'fission'],
   },
   geckoview: {
