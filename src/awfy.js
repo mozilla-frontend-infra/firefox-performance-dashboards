@@ -51,7 +51,7 @@ export const AWFY_BENCHMARKS = {
         extraOptions: ['webrender'],
       },
     },
-    label: 'Speedometer',
+    label: 'Speedometer 2',
   },
   'speedometer3-android': {
     compare: {
@@ -213,7 +213,7 @@ const RAPTOR_TESTS = {
   'assorted-dom': { label: 'Assorted DOM' },
   'motionmark-animometer': { label: 'MotionMark Animometer' },
   'motionmark-htmlsuite': { label: 'MotionMark HtmlSuite' },
-  speedometer: { label: 'Speedometer' },
+  speedometer: { label: 'Speedometer 2' },
   speedometer3: { label: 'Speedometer 3' },
   stylebench: { label: 'StyleBench' },
   sunspider: { label: 'SunSpider' },
