@@ -6,6 +6,7 @@ import { BENCHMARKS as H3_BENCHMARKS, DEFAULT_SUITES as H3_SUITES } from './h3';
 const TALOS_FRAMEWORK_ID = 1;
 const JSBENCH_FRAMEWORK_ID = 11;
 const BROWSERTIME_FRAMEWORK_ID = 13;
+const MOZPERFTEST_FRAMEWORK_ID = 15;
 
 const PALETTE = {
   blue: '#446e9e',
@@ -492,6 +493,42 @@ Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
   });
 });
 
+const MOZPERF_APPS = {
+  fenix: {
+    name: 'fenix',
+    label: 'Fenix',
+    color: PALETTE.orange,
+    project: PROJECT,
+  },
+  focus: {
+    name: 'focus',
+    label: 'Focus',
+    color: PALETTE.red,
+    project: PROJECT,
+  },
+};
+
+const MOZPERF_TESTS = {
+  AndroidStartup: { label: 'Startup' },
+};
+
+Object.entries(MOZPERF_TESTS).forEach(([testKey, test]) => {
+  const bmKey = `mozperftest-${testKey}`;
+  BENCHMARKS[bmKey] = { compare: {}, label: test.label };
+  Object.entries(MOZPERF_APPS).forEach(([appKey, app]) => {
+    BENCHMARKS[bmKey].compare[appKey] = {
+      color: app.color,
+      label: app.label,
+      frameworkId: MOZPERFTEST_FRAMEWORK_ID,
+      suite: [testKey, app.name].filter(Boolean).join(':'),
+      application: 'firefox',
+      project: PROJECT,
+      option: 'opt',
+    };
+    MOBILE_CATEGORIES.benchmarks.suites.push(bmKey);
+  });
+});
+
 export const CONFIG = {
   default: {
     landingPath: '/win10/benchmarks/overview?numDays=60',
@@ -526,7 +563,7 @@ export const CONFIG = {
     },
     androidGalaxyA51: {
       label: 'Android (Samsung Galaxy A51)',
-      platforms: ['android-hw-a51-11-0-aarch64-shippable-qr'],
+      platforms: ['android-hw-a51-11-0-aarch64-shippable', 'android-hw-a51-11-0-aarch64-shippable-qr'],
       categories: MOBILE_CATEGORIES,
     },
   },
