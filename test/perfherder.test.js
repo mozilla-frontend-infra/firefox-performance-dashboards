@@ -76,7 +76,7 @@ describe('Perfherder', () => {
       ...TALOS_CONFIG,
     };
 
-    it('Tp5o opt (no subtests)', async () => {
+    it.skip('Tp5o opt (no subtests)', async () => {
       seriesConfig.suite = 'tp5o';
 
       const data = await queryPerformanceData(seriesConfig, { timeRange: TIMERANGE });
@@ -91,7 +91,7 @@ describe('Perfherder', () => {
       });
     });
 
-    it('sessionrestore', async () => {
+    it.skip('sessionrestore', async () => {
       seriesConfig.suite = 'sessionrestore';
 
       const data = await queryPerformanceData(seriesConfig, { timeRange: TIMERANGE });

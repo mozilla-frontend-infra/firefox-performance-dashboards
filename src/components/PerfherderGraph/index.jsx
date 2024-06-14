@@ -125,9 +125,9 @@ class PerferhderGraph extends React.Component {
             // We need to merge two different perfherder URLs
             // We're joining the different series for each subbenchmark
             const queryString = newUrl.split('?')[1];
-            const parsedUrl = parse(queryString);
+            const parsedUrl = parse(queryString).series.split(',');
             // eslint-disable-next-line no-param-reassign
-            state.data[graphUid].jointUrl += `&series=${parsedUrl.series}`;
+            state.data[graphUid].jointUrl += `&series=${parsedUrl[0]},${meta.id},${parsedUrl[2]},${parsedUrl[3]}`;
           }
           let combined = false;
           // This is useful when we want to combine different series. For instance, a benchmark
