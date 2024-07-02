@@ -481,7 +481,7 @@ export const CONFIG = {
     win11: {
       label: 'Windows 11 64bit',
       platforms: ['windows11-64-shippable-qr'],
-      categories: DEFAULT_CATEGORIES,
+      categories: DESKTOP_CATEGORIES,
     },
     androidGalaxyA51: {
       label: 'Android (Samsung Galaxy A51)',
