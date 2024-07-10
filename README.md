@@ -33,6 +33,17 @@ After that open <http://localhost:5000> on your preferred browser.
 [circleci-image]: https://circleci.com/gh/mozilla-frontend-infra/firefox-performance-dashboard.svg?style=badge
 [circleci-url]: https://app.circleci.com/pipelines/github/mozilla-frontend-infra/firefox-performance-dashboard
 
+## Debugging tips
+
+* If `yarn start` fails, try running:
+
+```bash
+export NODE_OPTIONS=--openssl-legacy-provide
+yarn start
+```
+
+* If developing locally on MacOS, the default port (5000) may not always work. There is a likelihood you would have to disable the `AirPlay Receiver` on the OS, which by default listens on port 5000
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
