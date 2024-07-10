@@ -114,7 +114,7 @@ const DESKTOP_APPS = {
   safari_tp: {
     name: 'safari-tp',
     label: 'Safari Technology Preview',
-    color: PALETTE.violet,
+    color: PALETTE.indigo,
   },
 };
 

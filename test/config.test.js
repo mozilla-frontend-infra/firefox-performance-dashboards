@@ -92,7 +92,7 @@ it('Query info', () => {
         },
         {
           application: 'safari-tp',
-          color: '#a66e97',
+          color: '#6F4E7C',
           extraOptions: undefined,
           frameworkId: 13,
           label: 'Safari Technology Preview',
@@ -104,7 +104,7 @@ it('Query info', () => {
         },
         {
           application: 'safari-tp',
-          color: '#a66e97',
+          color: '#6F4E7C',
           extraOptions: undefined,
           frameworkId: 13,
           label: 'Safari Technology Preview',
