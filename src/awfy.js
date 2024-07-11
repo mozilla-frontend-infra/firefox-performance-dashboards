@@ -111,6 +111,11 @@ const DESKTOP_APPS = {
     label: 'Safari',
     color: PALETTE.yellow,
   },
+  safari_tp: {
+    name: 'safari-tp',
+    label: 'Safari Technology Preview',
+    color: PALETTE.indigo,
+  },
 };
 
 const WASM_APPS = {
