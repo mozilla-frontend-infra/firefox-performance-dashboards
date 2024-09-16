@@ -519,11 +519,6 @@ export const CONFIG = {
       platforms: ['macosx1015-64-shippable-qr'],
       categories: DESKTOP_CATEGORIES,
     },
-    mac1014: {
-      label: 'macOS 10.14 "Mojave"',
-      platforms: ['macosx1014-64-shippable-qr'],
-      categories: DESKTOP_CATEGORIES,
-    },
     mac1400: {
       label: 'macOS 14.5 "Sonoma"',
       platforms: ['macosx1400-64-shippable-qr'],
