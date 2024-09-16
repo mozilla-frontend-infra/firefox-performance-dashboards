@@ -218,6 +218,8 @@ const RAPTOR_TESTS = {
   'assorted-dom': { label: 'Assorted DOM' },
   'motionmark-animometer': { label: 'MotionMark Animometer' },
   'motionmark-htmlsuite': { label: 'MotionMark HtmlSuite' },
+  'motionmark-1-3': { label: 'MotionMark 1.3' },
+  'motionmark-htmlsuite-1-3': { label: 'MotionMark HtmlSuite 1.3' },
   speedometer: { label: 'Speedometer 2' },
   speedometer3: { label: 'Speedometer 3' },
   stylebench: { label: 'StyleBench' },
