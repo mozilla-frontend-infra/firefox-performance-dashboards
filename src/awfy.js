@@ -499,7 +499,7 @@ Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
 
 export const CONFIG = {
   default: {
-    landingPath: '/win10/benchmarks/overview?numDays=60',
+    landingPath: '/win11/benchmarks/overview?numDays=60',
     dayRange: 60, // # days
   },
   dayRange: [1, 2, 7, 14, 30, 60, 90, 365],
