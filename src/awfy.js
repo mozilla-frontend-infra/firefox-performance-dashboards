@@ -218,6 +218,8 @@ const RAPTOR_TESTS = {
   'assorted-dom': { label: 'Assorted DOM' },
   'motionmark-animometer': { label: 'MotionMark Animometer' },
   'motionmark-htmlsuite': { label: 'MotionMark HtmlSuite' },
+  'motionmark-1-3': { label: 'MotionMark 1.3' },
+  'motionmark-htmlsuite-1-3': { label: 'MotionMark HtmlSuite 1.3' },
   speedometer: { label: 'Speedometer 2' },
   speedometer3: { label: 'Speedometer 3' },
   stylebench: { label: 'StyleBench' },
@@ -499,7 +501,7 @@ Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
 
 export const CONFIG = {
   default: {
-    landingPath: '/win10/benchmarks/overview?numDays=60',
+    landingPath: '/win11/benchmarks/overview?numDays=60',
     dayRange: 60, // # days
   },
   dayRange: [1, 2, 7, 14, 30, 60, 90, 365],
@@ -517,11 +519,6 @@ export const CONFIG = {
     mac: {
       label: 'macOS 10.15 "Catalina"',
       platforms: ['macosx1015-64-shippable-qr'],
-      categories: DESKTOP_CATEGORIES,
-    },
-    mac1014: {
-      label: 'macOS 10.14 "Mojave"',
-      platforms: ['macosx1014-64-shippable-qr'],
       categories: DESKTOP_CATEGORIES,
     },
     mac1400: {
