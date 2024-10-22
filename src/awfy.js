@@ -536,14 +536,9 @@ export const CONFIG = {
       platforms: ['windows11-64-shippable-qr'],
       categories: DESKTOP_CATEGORIES,
     },
-    androidGalaxyA51: {
-      label: 'Android (Samsung Galaxy A51)',
-      platforms: ['android-hw-a51-11-0-aarch64-shippable-qr'],
-      categories: MOBILE_CATEGORIES,
-    },
     androidGalaxyA55: {
       label: 'Android (Samsung Galaxy A55)',
-      platforms: ['android-hw-a55-14-0-android-aarch64-shippable-qr'],
+      platforms: ['android-hw-a55-14-0-aarch64-shippable'],
       categories: MOBILE_CATEGORIES,
     },
   },
