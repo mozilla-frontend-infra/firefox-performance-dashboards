@@ -86,11 +86,6 @@ const DESKTOP_APPS = {
     label: 'Chrome',
     color: PALETTE.blue,
   },
-  safari: {
-    name: 'safari',
-    label: 'Safari',
-    color: PALETTE.yellow,
-  },
   safari_tp: {
     name: 'safari-tp',
     label: 'Safari Technology Preview',
