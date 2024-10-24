@@ -16,18 +16,19 @@ const PALETTE = {
   yellow: '#ebc23f',
   violet: '#a66e97',
   pink: '#fe939e',
+  cyan: '#00FFFF',
 };
 
 export const AWFY_BENCHMARKS = {
   'speedometer-android': {
     compare: {
-      'chrome-m': {
-        color: PALETTE.blue,
+      'cstm-car-m': {
+        color: PALETTE.cyan,
         label: 'Chrome',
         frameworkId: BROWSERTIME_FRAMEWORK_ID,
         suite: 'speedometer',
         option: 'opt',
-        application: 'chrome-m',
+        application: 'cstm-car-m',
         project: PROJECT,
       },
       fenix: {
@@ -45,13 +46,13 @@ export const AWFY_BENCHMARKS = {
   },
   'speedometer3-android': {
     compare: {
-      'chrome-m': {
-        color: PALETTE.blue,
+      'cstm-car-m': {
+        color: PALETTE.cyan,
         label: 'Chrome',
         frameworkId: BROWSERTIME_FRAMEWORK_ID,
         suite: 'speedometer3',
         option: 'opt',
-        application: 'chrome-m',
+        application: 'cstm-car-m',
         project: PROJECT,
       },
       fenix: {
@@ -82,9 +83,9 @@ const DESKTOP_FIREFOX_APPS = {
 const DESKTOP_APPS = {
   ...DESKTOP_FIREFOX_APPS,
   chrome: {
-    name: 'chrome',
+    name: 'custom-car',
     label: 'Chrome',
-    color: PALETTE.blue,
+    color: PALETTE.cyan,
   },
   safari_tp: {
     name: 'safari-tp',
@@ -383,6 +384,11 @@ const MOBILE_APPS = {
     name: 'chrome-m',
     label: 'Chrome',
     color: PALETTE.blue,
+  },
+  'cstm-car-m': {
+    name: 'cstm-car-m',
+    label: 'Chrome',
+    color: PALETTE.cyan,
   },
   fenix: {
     name: 'fenix',
