@@ -33,7 +33,7 @@ export const AWFY_BENCHMARKS = {
       },
       fenix: {
         color: PALETTE.orange,
-        label: 'Fenix',
+        label: 'Firefox',
         frameworkId: BROWSERTIME_FRAMEWORK_ID,
         suite: 'speedometer',
         option: 'opt',
@@ -57,7 +57,7 @@ export const AWFY_BENCHMARKS = {
       },
       fenix: {
         color: PALETTE.orange,
-        label: 'Fenix',
+        label: 'Firefox',
         frameworkId: BROWSERTIME_FRAMEWORK_ID,
         suite: 'speedometer3',
         option: 'opt',
