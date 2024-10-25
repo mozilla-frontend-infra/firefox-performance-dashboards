@@ -380,11 +380,6 @@ Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
 });
 
 const MOBILE_APPS = {
-  'chrome-m': {
-    name: 'chrome-m',
-    label: 'Chrome',
-    color: PALETTE.blue,
-  },
   'cstm-car-m': {
     name: 'cstm-car-m',
     label: 'Chrome',
