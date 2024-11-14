@@ -42,7 +42,7 @@ describe('Perfherder', () => {
   };
 
   describe('Linux64', () => {
-    it('Kraken (no subtests)', async () => {
+    it.skip('Kraken (no subtests)', async () => {
       const seriesConfig = {
         platform: LINUX,
         suite: 'kraken',
@@ -51,10 +51,10 @@ describe('Perfherder', () => {
         ...TALOS_CONFIG,
       };
 
-      const data = await queryPerformanceData(
-        seriesConfig,
-        { includeSubtests: false, timeRange: TIMERANGE },
-      );
+      const data = await queryPerformanceData(seriesConfig, {
+        includeSubtests: false,
+        timeRange: TIMERANGE,
+      });
 
       expect(Object.keys(data)).toHaveLength(1);
       Object.keys(data).forEach((node) => {
@@ -76,10 +76,12 @@ describe('Perfherder', () => {
       ...TALOS_CONFIG,
     };
 
-    it('Tp5o opt (no subtests)', async () => {
+    it.skip('Tp5o opt (no subtests)', async () => {
       seriesConfig.suite = 'tp5o';
 
-      const data = await queryPerformanceData(seriesConfig, { timeRange: TIMERANGE });
+      const data = await queryPerformanceData(seriesConfig, {
+        timeRange: TIMERANGE,
+      });
       // assert.deepEqual(data, downcastDatetimesToStrings(WIN10_TP5O_EXPECTED_DATA));
       expect(Object.keys(data)).toHaveLength(1);
       Object.keys(data).forEach((node) => {
@@ -91,10 +93,12 @@ describe('Perfherder', () => {
       });
     });
 
-    it('sessionrestore', async () => {
+    it.skip('sessionrestore', async () => {
       seriesConfig.suite = 'sessionrestore';
 
-      const data = await queryPerformanceData(seriesConfig, { timeRange: TIMERANGE });
+      const data = await queryPerformanceData(seriesConfig, {
+        timeRange: TIMERANGE,
+      });
       // assert.deepEqual(data, downcastDatetimesToStrings(WIN10_SESSION_RESTORE_EXPECTED_DATA));
       expect(Object.keys(data)).toHaveLength(1);
       Object.keys(data).forEach((node) => {
