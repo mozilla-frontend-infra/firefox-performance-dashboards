@@ -3,16 +3,13 @@ import { ALT_PROJECT } from '../src/utils/perfherder';
 
 // eslint-disable-next-line jest/expect-expect
 it('Verify all benchmarks are defined', () => {
-  Object.values(CONFIG.views).map(({ categories }) =>
-    Object.values(categories).forEach(({ suites }) =>
-      suites.forEach((benchmarkKey) => {
-        if (!(benchmarkKey in BENCHMARKS)) {
-          // eslint-disable-next-line
+  // eslint-disable-next-line max-len
+  Object.values(CONFIG.views).map(({ categories }) => Object.values(categories).forEach(({ suites }) => suites.forEach((benchmarkKey) => {
+    if (!(benchmarkKey in BENCHMARKS)) {
+      // eslint-disable-next-line
           console.log(benchmarkKey);
-        }
-      }),
-    ),
-  );
+    }
+  })));
 });
 
 it.skip('Query info', () => {
