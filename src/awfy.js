@@ -526,6 +526,11 @@ export const CONFIG = {
       platforms: ['macosx1400-64-shippable-qr'],
       categories: DESKTOP_CATEGORIES,
     },
+    mac1470: {
+      label: 'macOS 14.7 "Sonoma"',
+      platforms: ['macosx1470-64-shippable'],
+      categories: DESKTOP_CATEGORIES,
+    },
     win10: {
       label: 'Windows 10 64bit',
       platforms: ['windows10-64-shippable-qr', 'windows10-64-2004-shippable-qr'],
