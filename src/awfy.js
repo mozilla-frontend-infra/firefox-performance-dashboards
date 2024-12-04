@@ -1,6 +1,9 @@
 import { PROJECT, ALT_PROJECT } from './utils/perfherder';
 import { queryInfoGen } from './config-utils';
-import { BENCHMARKS as AWSY_BENCHMARKS, DEFAULT_CATEGORIES as AWSY_CATEGORIES } from './awsy';
+import {
+  BENCHMARKS as AWSY_BENCHMARKS,
+  DEFAULT_CATEGORIES as AWSY_CATEGORIES,
+} from './awsy';
 import { BENCHMARKS as H3_BENCHMARKS, DEFAULT_SUITES as H3_SUITES } from './h3';
 
 const TALOS_FRAMEWORK_ID = 1;
@@ -21,28 +24,19 @@ const PALETTE = {
 export const AWFY_BENCHMARKS = {
   'speedometer-android': {
     compare: {
-      'chrome-m': {
-        color: PALETTE.blue,
+      'cstm-car-m': {
+        color: PALETTE.cyan,
         label: 'Chrome',
         frameworkId: BROWSERTIME_FRAMEWORK_ID,
         suite: 'speedometer',
         option: 'opt',
-        application: 'chrome-m',
+        application: 'cstm-car-m',
         project: PROJECT,
       },
-      geckoview: {
-        color: PALETTE.indigo,
-        label: 'GeckoView',
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
-        suite: 'speedometer',
-        option: 'opt',
-        application: 'geckoview',
-        project: ALT_PROJECT,
-        extraOptions: ['webrender'],
-      },
+
       fenix: {
         color: PALETTE.orange,
-        label: 'Fenix',
+        label: 'Firefox',
         frameworkId: BROWSERTIME_FRAMEWORK_ID,
         suite: 'speedometer',
         option: 'opt',
@@ -55,28 +49,19 @@ export const AWFY_BENCHMARKS = {
   },
   'speedometer3-android': {
     compare: {
-      'chrome-m': {
-        color: PALETTE.blue,
+      'cstm-car-m': {
+        color: PALETTE.cyan,
         label: 'Chrome',
         frameworkId: BROWSERTIME_FRAMEWORK_ID,
         suite: 'speedometer3',
         option: 'opt',
-        application: 'chrome-m',
+        application: 'cstm-car-m',
         project: PROJECT,
       },
-      geckoview: {
-        color: PALETTE.indigo,
-        label: 'GeckoView',
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
-        suite: 'speedometer3',
-        option: 'opt',
-        application: 'geckoview',
-        project: ALT_PROJECT,
-        extraOptions: ['webrender'],
-      },
+
       fenix: {
         color: PALETTE.orange,
-        label: 'Fenix',
+        label: 'Firefox',
         frameworkId: BROWSERTIME_FRAMEWORK_ID,
         suite: 'speedometer3',
         option: 'opt',
@@ -102,15 +87,11 @@ const DESKTOP_FIREFOX_APPS = {
 const DESKTOP_APPS = {
   ...DESKTOP_FIREFOX_APPS,
   chrome: {
-    name: 'chrome',
+    name: 'custom-car',
     label: 'Chrome',
-    color: PALETTE.blue,
+    color: PALETTE.cyan,
   },
-  safari: {
-    name: 'safari',
-    label: 'Safari',
-    color: PALETTE.yellow,
-  },
+
   safari_tp: {
     name: 'safari-tp',
     label: 'Safari Technology Preview',
@@ -193,8 +174,15 @@ const TALOS_TESTS = {
 
 const TALOS_BENCHMARKS = {};
 Object.entries(TALOS_TESTS).forEach(([testKey, test]) => {
-  const docUrl = `https://firefox-source-docs.mozilla.org/testing/perfdocs/talos.html#${testKey.replace(/_/g, '-')}`;
-  TALOS_BENCHMARKS[testKey] = { compare: {}, label: test.label || testKey, docUrl };
+  const docUrl = `https://firefox-source-docs.mozilla.org/testing/perfdocs/talos.html#${testKey.replace(
+    /_/g,
+    '-',
+  )}`;
+  TALOS_BENCHMARKS[testKey] = {
+    compare: {},
+    label: test.label || testKey,
+    docUrl,
+  };
   Object.entries(DESKTOP_FIREFOX_APPS).forEach(([appKey, app]) => {
     TALOS_BENCHMARKS[testKey].compare[appKey] = {
       color: app.color,
@@ -208,7 +196,9 @@ Object.entries(TALOS_TESTS).forEach(([testKey, test]) => {
       extraOptions: ['e10s', 'stylo'],
     };
     if (Array.isArray(app.extraOptions)) {
-      TALOS_BENCHMARKS[testKey].compare[appKey].extraOptions.push(...app.extraOptions);
+      TALOS_BENCHMARKS[testKey].compare[appKey].extraOptions.push(
+        ...app.extraOptions,
+      );
     }
     DESKTOP_CATEGORIES.benchmarks.suites.push(testKey);
   });
@@ -395,7 +385,9 @@ Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
           BENCHMARKS[bmKey].compare[appKey].extraOptions.push('live');
         }
         if (Array.isArray(app.extraOptions)) {
-          BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
+          BENCHMARKS[bmKey].compare[appKey].extraOptions.push(
+            ...app.extraOptions,
+          );
         }
       });
       DESKTOP_CATEGORIES[category].suites.push(bmKey);
@@ -404,10 +396,10 @@ Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
 });
 
 const MOBILE_APPS = {
-  'chrome-m': {
-    name: 'chrome-m',
+  'cstm-car-m': {
+    name: 'cstm-car-m',
     label: 'Chrome',
-    color: PALETTE.blue,
+    color: PALETTE.cyan,
   },
   fenix: {
     name: 'fenix',
@@ -420,20 +412,6 @@ const MOBILE_APPS = {
     name: 'fenix',
     label: 'Fenix-fission',
     color: PALETTE.emerald,
-    project: PROJECT,
-    extraOptions: ['webrender', 'fission'],
-  },
-  geckoview: {
-    name: 'geckoview',
-    label: 'GeckoView-nofis',
-    color: PALETTE.indigo,
-    project: ALT_PROJECT,
-    extraOptions: ['webrender'],
-  },
-  'geckoview-fission': {
-    name: 'geckoview',
-    label: 'GeckoView-fission',
-    color: PALETTE.red,
     project: PROJECT,
     extraOptions: ['webrender', 'fission'],
   },
@@ -491,7 +469,9 @@ Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
           BENCHMARKS[bmKey].compare[appKey].project = PROJECT;
         }
         if (Array.isArray(app.extraOptions)) {
-          BENCHMARKS[bmKey].compare[appKey].extraOptions.push(...app.extraOptions);
+          BENCHMARKS[bmKey].compare[appKey].extraOptions.push(
+            ...app.extraOptions,
+          );
         }
       });
       MOBILE_CATEGORIES[category].suites.push(bmKey);
@@ -533,7 +513,10 @@ export const CONFIG = {
     },
     win10: {
       label: 'Windows 10 64bit',
-      platforms: ['windows10-64-shippable-qr', 'windows10-64-2004-shippable-qr'],
+      platforms: [
+        'windows10-64-shippable-qr',
+        'windows10-64-2004-shippable-qr',
+      ],
       categories: DESKTOP_CATEGORIES,
     },
     win11: {
@@ -554,9 +537,12 @@ export const TIMERANGE_UPPER_LIMIT = 365;
 
 // Given a view configuration return a data structure with the data
 // structure needed to query Treeherder
-export const queryInfo = (viewConfig, benchmark, category) => queryInfoGen(BENCHMARKS, viewConfig,
-  benchmark, category);
+// eslint-disable-next-line max-len
+export const queryInfo = (viewConfig, benchmark, category) => queryInfoGen(BENCHMARKS, viewConfig, benchmark, category);
 
 export default {
-  queryInfo, BENCHMARKS, CONFIG, TIMERANGE_UPPER_LIMIT,
+  queryInfo,
+  BENCHMARKS,
+  CONFIG,
+  TIMERANGE_UPPER_LIMIT,
 };
