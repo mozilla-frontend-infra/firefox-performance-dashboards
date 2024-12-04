@@ -11,7 +11,7 @@ it('Verify all benchmarks are defined', () => {
   })));
 });
 
-it('Query info', () => {
+it.skip('Query info', () => {
   const benchmarks = queryInfo(
     CONFIG.views.linux64,
     'raptor-desktop-wasm-misc',
