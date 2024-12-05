@@ -69,7 +69,7 @@ class App extends Component {
         {Object.values(benchmarks).length ? Object.values(benchmarks).sort(sortByLabel).map(({
           benchmarkUID, compare, label, docUrl, includeSubtests, yLabel,
         }) => (
-          <div key={label}>
+          <div key={benchmarkUID}>
             <PerfherderGraph
               extraLink={`/${viewPlatform}/${category}/${benchmarkUID}?numDays=${dayRange}`}
               title={label}

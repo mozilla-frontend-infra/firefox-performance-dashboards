@@ -19,6 +19,7 @@ const PALETTE = {
   yellow: '#ebc23f',
   violet: '#a66e97',
   pink: '#fe939e',
+  cyan: '#00FFFF',
 };
 
 export const AWFY_BENCHMARKS = {
@@ -91,7 +92,6 @@ const DESKTOP_APPS = {
     label: 'Chrome',
     color: PALETTE.cyan,
   },
-
   safari_tp: {
     name: 'safari-tp',
     label: 'Safari Technology Preview',
@@ -538,7 +538,8 @@ export const TIMERANGE_UPPER_LIMIT = 365;
 // Given a view configuration return a data structure with the data
 // structure needed to query Treeherder
 // eslint-disable-next-line max-len
-export const queryInfo = (viewConfig, benchmark, category) => queryInfoGen(BENCHMARKS, viewConfig, benchmark, category);
+export const queryInfo = (viewConfig, benchmark, category) =>
+  queryInfoGen(BENCHMARKS, viewConfig, benchmark, category);
 
 export default {
   queryInfo,
