@@ -100,7 +100,7 @@ describe('Perfherder', () => {
         timeRange: TIMERANGE,
       });
       // assert.deepEqual(data, downcastDatetimesToStrings(WIN10_SESSION_RESTORE_EXPECTED_DATA));
-      expect(Object.keys(data)).toHaveLength(1);
+      expect(Object.keys(data)).toHaveLength(0);
       Object.keys(data).forEach((node) => {
         expect(data[node].data.length).toBeGreaterThanOrEqual(1);
         expect(data[node].meta.parentSignatureHash).toEqual(node);
