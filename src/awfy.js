@@ -538,8 +538,7 @@ export const TIMERANGE_UPPER_LIMIT = 365;
 // Given a view configuration return a data structure with the data
 // structure needed to query Treeherder
 // eslint-disable-next-line max-len
-export const queryInfo = (viewConfig, benchmark, category) =>
-  queryInfoGen(BENCHMARKS, viewConfig, benchmark, category);
+export const queryInfo = (viewConfig, benchmark, category) => queryInfoGen(BENCHMARKS, viewConfig, benchmark, category);
 
 export default {
   queryInfo,
