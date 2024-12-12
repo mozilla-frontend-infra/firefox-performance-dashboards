@@ -1,166 +1,146 @@
+/* eslint-disable max-len */
 import { BENCHMARKS, CONFIG, queryInfo } from '../src/config';
 import { ALT_PROJECT } from '../src/utils/perfherder';
 
 // eslint-disable-next-line jest/expect-expect
 it('Verify all benchmarks are defined', () => {
-  Object.values(CONFIG.views).map(({ categories }) => Object.values(categories)
-    .forEach(({ suites }) => suites.forEach((benchmarkKey) => {
-      if (!(benchmarkKey in BENCHMARKS)) {
-        // eslint-disable-next-line
-        console.log(benchmarkKey);
-      }
-    })));
+  Object.values(CONFIG.views).map(({ categories }) => Object.values(categories).forEach(({ suites }) => suites.forEach((benchmarkKey) => {
+    if (!(benchmarkKey in BENCHMARKS)) {
+      console.log(benchmarkKey);
+    }
+  })));
 });
 
 it('Query info', () => {
-  const benchmarks = queryInfo(CONFIG.views.linux64, 'raptor-desktop-wasm-misc', 'benchmarks');
+  const benchmarks = queryInfo(
+    CONFIG.views.linux64,
+    'raptor-desktop-wasm-misc',
+    'benchmarks',
+  );
+
   expect(benchmarks).toStrictEqual({
     'raptor-desktop-wasm-misc': {
       benchmarkUID: 'raptor-desktop-wasm-misc',
       compare: [
         {
-          application: 'firefox',
           color: '#FFA056',
           label: 'Firefox (tiering)',
           frameworkId: 13,
           suite: 'wasm-misc',
-          option: 'opt',
-          platform: 'linux64-shippable',
+          application: 'firefox',
           platformSuffix: undefined,
           project: 'mozilla-central',
+          option: 'opt',
           extraOptions: ['fission', 'webrender'],
+          platform: 'linux64-shippable',
         },
         {
-          application: 'firefox',
           color: '#FFA056',
           label: 'Firefox (tiering)',
           frameworkId: 13,
           suite: 'wasm-misc',
-          option: 'opt',
-          platform: 'linux1804-64-shippable-qr',
+          application: 'firefox',
           platformSuffix: undefined,
           project: 'mozilla-central',
+          option: 'opt',
           extraOptions: ['fission', 'webrender'],
+          platform: 'linux1804-64-shippable-qr',
         },
         {
-          application: 'chrome',
-          color: '#446e9e',
+          color: '#00FFFF',
           label: 'Chrome',
           frameworkId: 13,
           suite: 'wasm-misc',
-          option: 'opt',
-          platform: 'linux64-shippable',
+          application: 'custom-car',
           platformSuffix: undefined,
           project: undefined,
+          option: 'opt',
           extraOptions: undefined,
+          platform: 'linux64-shippable',
         },
         {
-          application: 'chrome',
-          color: '#446e9e',
+          color: '#00FFFF',
           label: 'Chrome',
           frameworkId: 13,
           suite: 'wasm-misc',
+          application: 'custom-car',
+          platformSuffix: undefined,
+          project: undefined,
           option: 'opt',
+          extraOptions: undefined,
           platform: 'linux1804-64-shippable-qr',
-          platformSuffix: undefined,
-          project: undefined,
-          extraOptions: undefined,
         },
         {
-          application: 'safari',
-          color: '#ebc23f',
-          extraOptions: undefined,
-          frameworkId: 13,
-          label: 'Safari',
-          option: 'opt',
-          platform: 'linux64-shippable',
-          platformSuffix: undefined,
-          project: undefined,
-          suite: 'wasm-misc',
-        },
-        {
-          application: 'safari',
-          color: '#ebc23f',
-          extraOptions: undefined,
-          frameworkId: 13,
-          label: 'Safari',
-          option: 'opt',
-          platform: 'linux1804-64-shippable-qr',
-          platformSuffix: undefined,
-          project: undefined,
-          suite: 'wasm-misc',
-        },
-        {
-          application: 'safari-tp',
           color: '#6F4E7C',
-          extraOptions: undefined,
-          frameworkId: 13,
           label: 'Safari Technology Preview',
-          option: 'opt',
-          platform: 'linux64-shippable',
-          platformSuffix: undefined,
-          project: undefined,
+          frameworkId: 13,
           suite: 'wasm-misc',
-        },
-        {
           application: 'safari-tp',
-          color: '#6F4E7C',
-          extraOptions: undefined,
-          frameworkId: 13,
-          label: 'Safari Technology Preview',
-          option: 'opt',
-          platform: 'linux1804-64-shippable-qr',
           platformSuffix: undefined,
           project: undefined,
-          suite: 'wasm-misc',
+          option: 'opt',
+          extraOptions: undefined,
+          platform: 'linux64-shippable',
         },
         {
-          application: 'firefox',
+          color: '#6F4E7C',
+          label: 'Safari Technology Preview',
+          frameworkId: 13,
+          suite: 'wasm-misc',
+          application: 'safari-tp',
+          platformSuffix: undefined,
+          project: undefined,
+          option: 'opt',
+          extraOptions: undefined,
+          platform: 'linux1804-64-shippable-qr',
+        },
+        {
           color: '#a66e97',
           label: 'Firefox (wasm-baseline)',
           frameworkId: 13,
           suite: 'wasm-misc-baseline',
-          option: 'opt',
-          platform: 'linux64-shippable',
+          application: 'firefox',
           platformSuffix: undefined,
           project: 'mozilla-central',
+          option: 'opt',
           extraOptions: ['fission', 'webrender'],
+          platform: 'linux64-shippable',
         },
         {
-          application: 'firefox',
           color: '#a66e97',
           label: 'Firefox (wasm-baseline)',
           frameworkId: 13,
           suite: 'wasm-misc-baseline',
-          option: 'opt',
-          platform: 'linux1804-64-shippable-qr',
+          application: 'firefox',
           platformSuffix: undefined,
           project: 'mozilla-central',
+          option: 'opt',
           extraOptions: ['fission', 'webrender'],
+          platform: 'linux1804-64-shippable-qr',
         },
         {
-          application: 'firefox',
           color: '#fe939e',
           label: 'Firefox (wasm-optimizing)',
           frameworkId: 13,
           suite: 'wasm-misc-optimizing',
+          application: 'firefox',
+          platformSuffix: undefined,
+          project: 'mozilla-central',
           option: 'opt',
+          extraOptions: ['fission', 'webrender'],
           platform: 'linux64-shippable',
-          platformSuffix: undefined,
-          project: 'mozilla-central',
-          extraOptions: ['fission', 'webrender'],
         },
         {
-          application: 'firefox',
           color: '#fe939e',
           label: 'Firefox (wasm-optimizing)',
           frameworkId: 13,
           suite: 'wasm-misc-optimizing',
-          option: 'opt',
-          platform: 'linux1804-64-shippable-qr',
+          application: 'firefox',
           platformSuffix: undefined,
           project: 'mozilla-central',
+          option: 'opt',
           extraOptions: ['fission', 'webrender'],
+          platform: 'linux1804-64-shippable-qr',
         },
       ],
       docUrl: undefined,
@@ -172,37 +152,42 @@ it('Query info', () => {
 });
 
 it('Query info - suite with explicit project and platformSuffix ', () => {
-  const benchmarks = queryInfo(CONFIG.views.linux64, 'rasterflood_svg', 'benchmarks');
+  const benchmarks = queryInfo(
+    CONFIG.views.linux64,
+    'rasterflood_svg',
+    'benchmarks',
+  );
   expect(benchmarks).toStrictEqual({
-    rasterflood_svg:
-    {
+    rasterflood_svg: {
       benchmarkUID: 'rasterflood_svg',
-      compare: [{
-        color: '#FFA056',
-        label: 'Firefox',
-        frameworkId: 1,
-        suite: 'rasterflood_svg',
-        platformSuffix: undefined,
-        project: ALT_PROJECT,
-        option: 'opt',
-        platform: 'linux64-shippable',
-        extraOptions: ['e10s', 'stylo', 'fission', 'webrender'],
-        test: undefined,
-      },
-      {
-        color: '#FFA056',
-        label: 'Firefox',
-        frameworkId: 1,
-        suite: 'rasterflood_svg',
-        platformSuffix: undefined,
-        project: ALT_PROJECT,
-        option: 'opt',
-        platform: 'linux1804-64-shippable-qr',
-        extraOptions: ['e10s', 'stylo', 'fission', 'webrender'],
-        test: undefined,
-      },
+      compare: [
+        {
+          color: '#FFA056',
+          label: 'Firefox',
+          frameworkId: 1,
+          suite: 'rasterflood_svg',
+          platformSuffix: undefined,
+          project: ALT_PROJECT,
+          option: 'opt',
+          platform: 'linux64-shippable',
+          extraOptions: ['e10s', 'stylo', 'fission', 'webrender'],
+          test: undefined,
+        },
+        {
+          color: '#FFA056',
+          label: 'Firefox',
+          frameworkId: 1,
+          suite: 'rasterflood_svg',
+          platformSuffix: undefined,
+          project: ALT_PROJECT,
+          option: 'opt',
+          platform: 'linux1804-64-shippable-qr',
+          extraOptions: ['e10s', 'stylo', 'fission', 'webrender'],
+          test: undefined,
+        },
       ],
-      docUrl: 'https://firefox-source-docs.mozilla.org/testing/perfdocs/talos.html#rasterflood-svg',
+      docUrl:
+        'https://firefox-source-docs.mozilla.org/testing/perfdocs/talos.html#rasterflood-svg',
       includeSubtests: true,
       label: 'Rasterflood SVG',
       yLabel: undefined,
