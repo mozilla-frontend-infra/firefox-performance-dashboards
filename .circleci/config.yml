@@ -23,7 +23,7 @@ jobs:
           command: yarn build
           name: Check build
       - run:
-          command: yarn test:coverage -u
+          command: yarn test:coverage
           name: Run Jest tests
       - run:
           command: yarn codecov
