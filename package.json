@@ -29,6 +29,7 @@
     "chart.js": "^2",
     "fetch-mock-jest": "^1.5.1",
     "fsevents": "^2.3.3",
+    "loader-utils": "^3.3.1",
     "lodash.isequal": "^4.5.0",
     "minimist": "^1.2.8",
     "node-fetch": "^2.6.1",
