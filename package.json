@@ -28,6 +28,7 @@
     "@material-ui/icons": "^4",
     "chart.js": "^2",
     "fetch-mock-jest": "^1.5.1",
+    "fsevents": "^2.3.3",
     "lodash.isequal": "^4.5.0",
     "node-fetch": "^2.6.1",
     "prop-types": "^15",
