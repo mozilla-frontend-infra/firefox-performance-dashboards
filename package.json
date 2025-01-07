@@ -29,7 +29,6 @@
     "chart.js": "^2",
     "eventsource": "^1.0.7",
     "fetch-mock-jest": "^1.5.1",
-    "fsevents": "^2.3.3",
     "json-schema": "^0.4.0",
     "loader-utils": "^3.3.1",
     "lodash.isequal": "^4.5.0",
