@@ -5,6 +5,9 @@
   "repository": "git@github.com:armenzg/js-perf-dashboard.git",
   "author": "Armen Zambrano G. <armenzg@gmail.com>",
   "license": "MPL-2.0",
+  "engines": {
+    "node": "^18.18.0"
+  },
   "scripts": {
     "build": "webpack --config webpack/webpack.config.js --env env=production",
     "start": "webpack serve --config webpack/webpack.config.js --env env=development --open",
