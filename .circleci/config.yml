@@ -13,6 +13,20 @@ jobs:
       tag: '^18.18.0'
     steps:
       - checkout
+      - run:
+          name: Install NVM
+          command: |
+            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            nvm install 18 # Install desired Node.js version
+      - run:
+          name: Use Node.js 18
+          command: |
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            nvm use 18
+            node -v
       - node/install-packages:
           # `yarn install --frozen-lockfile` is run and cache is enabled by default for this orb configuration
           pkg-manager: yarn
@@ -30,4 +44,4 @@ jobs:
           name: Check code coverage changes
 
 orbs:
-  node: circleci/node@4.1.1
+  node: circleci/node@5.1.0
