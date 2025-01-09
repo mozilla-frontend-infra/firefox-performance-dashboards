@@ -1,6 +1,7 @@
 module.exports = {
   root: true,
   env: {
+    es6: true,
     browser: true,
     node: true,
   },
@@ -22,15 +23,23 @@ module.exports = {
       version: 'detect',
     },
   },
+  parser: '@babel/eslint-parser',
   overrides: [
     {
       // JavaScript linting
       files: ['src/**/*.js', 'src/**/*.jsx', 'webpack/**/*.js'],
-      parser: 'espree',
+      parser: '@babel/eslint-parser',
       parserOptions: {
         ecmaVersion: 12,
         sourceType: 'module',
+        ecmaFeatures: {
+          jsx: true, // Enable JSX if you're using React
+        },
       },
     },
   ],
+  rules: {
+    'no-unused-vars': 'off',
+    'react/prop-types': 'off',
+  },
 };
