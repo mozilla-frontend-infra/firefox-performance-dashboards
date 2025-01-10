@@ -67,3 +67,6 @@ build/
 
 # IDE files
 .idea/
+
+# Local Netlify folder
+.netlify
