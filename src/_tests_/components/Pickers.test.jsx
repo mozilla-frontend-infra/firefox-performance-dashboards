@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import 'raf/polyfill';
-import Pickers from '../../src/components/Pickers';
-import { CONFIG } from '../../src/config';
+import Pickers from '../../components/Pickers';
+import { CONFIG } from '../../config';
 
 it('renders correctly', () => {
   const { asFragment } = render(

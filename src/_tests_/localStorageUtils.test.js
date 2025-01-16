@@ -1,4 +1,4 @@
-import { getUnexpiredItem } from '../src/utils/localStorageUtils';
+import { getUnexpiredItem } from '../utils/localStorageUtils';
 
 it('Local storage item is remove if expired', () => {
   const key = 'foo';

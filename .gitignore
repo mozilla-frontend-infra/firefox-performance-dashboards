@@ -62,7 +62,6 @@ typings/
 
 # package.lock.json
 package-lock.json
-yarn.lock
 build/
 
 # IDE files

@@ -1,4 +1,5 @@
-import fetchWrapper from '../src/utils/fetchWrapper';
+import fetchWrapper from '../utils/fetchWrapper';
+import { expect } from '@jest/globals';
 
 // eslint-disable-next-line global-require
 jest.mock('node-fetch', () => require('fetch-mock-jest').sandbox());
@@ -33,7 +34,7 @@ describe('fetchWrapper', () => {
     expect(fetchMock).toHaveBeenCalledTimes(1);
   });
 
-  it('should resolves with a cloned Response object ', () => {
+  it('should resolves with a cloned Response object', () => {
     const mockResponse = new Response('foo');
     fetchMock.mock('http://example3.com', Promise.resolve(mockResponse));
     return fetchWrapper('http://example3.com').then((res) => {
@@ -41,11 +42,14 @@ describe('fetchWrapper', () => {
     });
   });
 
-  it('should remove the promise from cache when rejected ', () => {
+  it('should remove the promise from cache when rejected', () => {
     fetchMock.mock('http://example4.com', { throw: new Error('Error') });
-    return fetchWrapper('http://example4.com').catch(() => {
-      fetchWrapper('http://example4.com');
-      expect(fetchMock).toHaveBeenCalledTimes(2);
-    });
+    return fetchWrapper('http://example4.com')
+      .catch(() => {
+        fetchWrapper('http://example4.com');
+      })
+      .finally(() => {
+        expect(fetchMock).toHaveBeenCalledTimes(2);
+      });
   });
 });
