@@ -9,8 +9,8 @@
     "node": ">=18.18.0"
   },
   "scripts": {
-    "build": "webpack --config webpack/webpack.config.js --env env=production",
-    "start": "webpack serve --config webpack/webpack.config.js --env env=development --open",
+    "build": "webpack --env env=production",
+    "start": "webpack serve --env env=development --open",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "lint": "eslint 'src/**/*.{js,jsx}'",
@@ -27,7 +27,6 @@
     "@material-ui/icons": "^4",
     "chart.js": "^2",
     "fetch-mock-jest": "^1.5.1",
-    "html-webpack-plugin": "^5.6.3",
     "lodash.isequal": "^4.5.0",
     "node-fetch": "^2.6.1",
     "prop-types": "^15",
@@ -64,6 +63,7 @@
     "eslint-plugin-react": "^7.37.3",
     "eslint-plugin-testing-library": "^7.1.1",
     "fetch-mock": "9.2.2",
+    "html-webpack-plugin": "^5.6.3",
     "husky": "4.0.10",
     "jest": "29.0.0",
     "jest-environment-jsdom": "^29.7.0",
