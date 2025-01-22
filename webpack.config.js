@@ -44,10 +44,12 @@ const config = {
       },
     ],
   },
+  output: {
+    path: path.resolve(__dirname, 'build'),
+    filename: '[name].[chunkhash].js',
+  },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, './public/index.html'),
-    }),
+    new HtmlWebpackPlugin(),
     new webpack.DefinePlugin({
       'process.env.REACT_APP_DASHBOARD': JSON.stringify('awfy'),
     }),

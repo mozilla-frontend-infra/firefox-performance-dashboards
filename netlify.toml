@@ -2,6 +2,4 @@
   from = "/*"
   to = "/"
   status = 200
-[build]
-  node_version = "18.18.0"
 
