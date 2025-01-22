@@ -49,7 +49,9 @@ const config = {
     filename: '[name].[chunkhash].js',
   },
   plugins: [
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './public/index.html'),
+    }),
     new webpack.DefinePlugin({
       'process.env.REACT_APP_DASHBOARD': JSON.stringify('awfy'),
     }),
