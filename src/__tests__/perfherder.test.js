@@ -1,5 +1,5 @@
 import assert from 'assert';
-import { perfDataUrls, queryPerformanceData } from '../src/utils/perfherder';
+import { perfDataUrls, queryPerformanceData } from '../utils/perfherder';
 
 import MAC_STYLEBENCH_SIGNATURES from './mocks/mac/StyleBench/signatures';
 import MAC_STYLEBENCH_URLS from './mocks/mac/StyleBench/urls';
@@ -51,10 +51,10 @@ describe('Perfherder', () => {
         ...TALOS_CONFIG,
       };
 
-      const data = await queryPerformanceData(
-        seriesConfig,
-        { includeSubtests: false, timeRange: TIMERANGE },
-      );
+      const data = await queryPerformanceData(seriesConfig, {
+        includeSubtests: false,
+        timeRange: TIMERANGE,
+      });
 
       expect(Object.keys(data)).toHaveLength(1);
       Object.keys(data).forEach((node) => {
@@ -79,7 +79,9 @@ describe('Perfherder', () => {
     it('Tp5o opt (no subtests)', async () => {
       seriesConfig.suite = 'tp5o';
 
-      const data = await queryPerformanceData(seriesConfig, { timeRange: TIMERANGE });
+      const data = await queryPerformanceData(seriesConfig, {
+        timeRange: TIMERANGE,
+      });
       // assert.deepEqual(data, downcastDatetimesToStrings(WIN10_TP5O_EXPECTED_DATA));
       expect(Object.keys(data)).toHaveLength(1);
       Object.keys(data).forEach((node) => {
@@ -94,7 +96,9 @@ describe('Perfherder', () => {
     it('sessionrestore', async () => {
       seriesConfig.suite = 'sessionrestore';
 
-      const data = await queryPerformanceData(seriesConfig, { timeRange: TIMERANGE });
+      const data = await queryPerformanceData(seriesConfig, {
+        timeRange: TIMERANGE,
+      });
       // assert.deepEqual(data, downcastDatetimesToStrings(WIN10_SESSION_RESTORE_EXPECTED_DATA));
       expect(Object.keys(data)).toHaveLength(1);
       Object.keys(data).forEach((node) => {
@@ -119,6 +123,7 @@ describe('Perfherder', () => {
       it('the perfDataUrls should match', async () => {
         const urls = perfDataUrls(seriesConfig, signatureIds, 14 * 24 * 3600);
         assert.deepEqual(urls, MAC_STYLEBENCH_URLS);
+        expect(urls).toEqual(MAC_STYLEBENCH_URLS);
       });
     });
   });

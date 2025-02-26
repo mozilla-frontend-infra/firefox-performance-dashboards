@@ -1,7 +1,7 @@
-import fetchAndCache from '../src/utils/fetchAndCache';
-import fetchWrapper from '../src/utils/fetchWrapper';
+import fetchAndCache from '../utils/fetchAndCache';
+import fetchWrapper from '../utils/fetchWrapper';
 
-jest.mock('../src/utils/fetchWrapper');
+jest.mock('../utils/fetchWrapper');
 
 describe('fetchAndCache', () => {
   afterEach(() => {
@@ -39,7 +39,9 @@ describe('fetchAndCache', () => {
     global.caches = {
       open: async () => ({ match: async () => mockResponse }),
     };
-    fetchWrapper.mockImplementation(() => Promise.resolve('I SHOULD NOT BE RESOLVED'));
+    fetchWrapper.mockImplementation(() =>
+      Promise.resolve('I SHOULD NOT BE RESOLVED'),
+    );
 
     const res = await fetchAndCache('http://example.com');
     expect(res).toBe(mockResponse);

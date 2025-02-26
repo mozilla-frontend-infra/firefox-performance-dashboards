@@ -1,19 +1,26 @@
-import { BENCHMARKS, CONFIG, queryInfo } from '../src/config';
-import { ALT_PROJECT } from '../src/utils/perfherder';
+import { BENCHMARKS, CONFIG, queryInfo } from '../config';
+import { ALT_PROJECT } from '../utils/perfherder';
 
 // eslint-disable-next-line jest/expect-expect
 it('Verify all benchmarks are defined', () => {
-  Object.values(CONFIG.views).map(({ categories }) => Object.values(categories)
-    .forEach(({ suites }) => suites.forEach((benchmarkKey) => {
-      if (!(benchmarkKey in BENCHMARKS)) {
-        // eslint-disable-next-line
-        console.log(benchmarkKey);
-      }
-    })));
+  Object.values(CONFIG.views).map(({ categories }) =>
+    Object.values(categories).forEach(({ suites }) =>
+      suites.forEach((benchmarkKey) => {
+        if (!(benchmarkKey in BENCHMARKS)) {
+          // eslint-disable-next-line
+          console.log(benchmarkKey);
+        }
+      }),
+    ),
+  );
 });
 
 it('Query info', () => {
-  const benchmarks = queryInfo(CONFIG.views.linux64, 'raptor-desktop-wasm-misc', 'benchmarks');
+  const benchmarks = queryInfo(
+    CONFIG.views.linux64,
+    'raptor-desktop-wasm-misc',
+    'benchmarks',
+  );
   expect(benchmarks).toStrictEqual({
     'raptor-desktop-wasm-misc': {
       benchmarkUID: 'raptor-desktop-wasm-misc',
@@ -171,38 +178,43 @@ it('Query info', () => {
   });
 });
 
-it('Query info - suite with explicit project and platformSuffix ', () => {
-  const benchmarks = queryInfo(CONFIG.views.linux64, 'rasterflood_svg', 'benchmarks');
+it('Query info - suite with explicit project and platformSuffix', () => {
+  const benchmarks = queryInfo(
+    CONFIG.views.linux64,
+    'rasterflood_svg',
+    'benchmarks',
+  );
   expect(benchmarks).toStrictEqual({
-    rasterflood_svg:
-    {
+    rasterflood_svg: {
       benchmarkUID: 'rasterflood_svg',
-      compare: [{
-        color: '#FFA056',
-        label: 'Firefox',
-        frameworkId: 1,
-        suite: 'rasterflood_svg',
-        platformSuffix: undefined,
-        project: ALT_PROJECT,
-        option: 'opt',
-        platform: 'linux64-shippable',
-        extraOptions: ['e10s', 'stylo', 'fission', 'webrender'],
-        test: undefined,
-      },
-      {
-        color: '#FFA056',
-        label: 'Firefox',
-        frameworkId: 1,
-        suite: 'rasterflood_svg',
-        platformSuffix: undefined,
-        project: ALT_PROJECT,
-        option: 'opt',
-        platform: 'linux1804-64-shippable-qr',
-        extraOptions: ['e10s', 'stylo', 'fission', 'webrender'],
-        test: undefined,
-      },
+      compare: [
+        {
+          color: '#FFA056',
+          label: 'Firefox',
+          frameworkId: 1,
+          suite: 'rasterflood_svg',
+          platformSuffix: undefined,
+          project: ALT_PROJECT,
+          option: 'opt',
+          platform: 'linux64-shippable',
+          extraOptions: ['e10s', 'stylo', 'fission', 'webrender'],
+          test: undefined,
+        },
+        {
+          color: '#FFA056',
+          label: 'Firefox',
+          frameworkId: 1,
+          suite: 'rasterflood_svg',
+          platformSuffix: undefined,
+          project: ALT_PROJECT,
+          option: 'opt',
+          platform: 'linux1804-64-shippable-qr',
+          extraOptions: ['e10s', 'stylo', 'fission', 'webrender'],
+          test: undefined,
+        },
       ],
-      docUrl: 'https://firefox-source-docs.mozilla.org/testing/perfdocs/talos.html#rasterflood-svg',
+      docUrl:
+        'https://firefox-source-docs.mozilla.org/testing/perfdocs/talos.html#rasterflood-svg',
       includeSubtests: true,
       label: 'Rasterflood SVG',
       yLabel: undefined,
