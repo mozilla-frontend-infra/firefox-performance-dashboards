@@ -45,8 +45,9 @@ const config = {
     ],
   },
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, './build'),
     filename: '[name].[chunkhash].js',
+    publicPath: '/', // Default base path
   },
   plugins: [
     new HtmlWebpackPlugin({
