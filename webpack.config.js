@@ -59,15 +59,9 @@ const config = {
 };
 
 module.exports = (env) => {
-  if (env.env === 'development') {
-    config.mode = 'development';
-    config.devtool = 'eval-source-map';
-  }
-
   if (env.env === 'production') {
     config.mode = 'production';
     config.devtool = 'source-map';
   }
-
   return config;
 };
