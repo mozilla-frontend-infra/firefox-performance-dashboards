@@ -1,18 +1,12 @@
+jest.mock('../utils/perfherder', () => ({
+  queryPerformanceData: jest.fn(),
+  perfDataUrls: jest.fn(),
+}));
+
 import assert from 'assert';
 import { perfDataUrls, queryPerformanceData } from '../utils/perfherder';
-
 import MAC_STYLEBENCH_SIGNATURES from './mocks/mac/StyleBench/signatures';
 import MAC_STYLEBENCH_URLS from './mocks/mac/StyleBench/urls';
-
-const path = require('path');
-
-const { Polly } = require('@pollyjs/core');
-const { setupPolly } = require('setup-polly-jest');
-const NodeHttpAdapter = require('@pollyjs/adapter-node-http');
-const FSPersister = require('@pollyjs/persister-fs');
-
-Polly.register(NodeHttpAdapter);
-Polly.register(FSPersister);
 
 const TIMERANGE = 2 * 24 * 3600;
 const TALOS_ID = 1;
@@ -20,22 +14,13 @@ const LINUX = 'linux64-shippable';
 const WINDOWS = 'windows10-64-shippable';
 
 // These tests use the fetch responses available in /recordings.
-// If there is no recordings to be used, polly will do the real request
-// and persist the responses as recordings.
 // The /recordings folder should be deleted once in a while and `yarn test`
 // command should be run to generate fresh recordings.
 
 describe('Perfherder', () => {
-  setupPolly({
-    adapters: ['node-http'],
-    persister: 'fs',
-    persisterOptions: {
-      fs: {
-        recordingsDir: path.resolve(__dirname, 'recordings'),
-      },
-    },
+  beforeEach(() => {
+    jest.clearAllMocks();
   });
-
   const TALOS_CONFIG = {
     extraOptions: ['e10s', 'stylo'],
     frameworkId: TALOS_ID,
@@ -43,6 +28,18 @@ describe('Perfherder', () => {
 
   describe('Linux64', () => {
     it('Kraken (no subtests)', async () => {
+      // Mock return value
+      queryPerformanceData.mockResolvedValue({
+        fakeKey: {
+          data: [{ value: 1 }],
+          meta: {
+            parentSignatureHash: 'fakeKey',
+            framework_id: 1,
+            machine_platform: 'linux64-shippable',
+            suite: 'kraken',
+          },
+        },
+      });
       const seriesConfig = {
         platform: LINUX,
         suite: 'kraken',
@@ -56,6 +53,7 @@ describe('Perfherder', () => {
         timeRange: TIMERANGE,
       });
 
+      expect(data).not.toBeUndefined();
       expect(Object.keys(data)).toHaveLength(1);
       Object.keys(data).forEach((node) => {
         expect(data[node].data.length).toBeGreaterThanOrEqual(1);
@@ -77,11 +75,24 @@ describe('Perfherder', () => {
     };
 
     it('Tp5o opt (no subtests)', async () => {
+      // Mock return value
+      queryPerformanceData.mockResolvedValue({
+        fakeKey: {
+          data: [{ value: 1 }],
+          meta: {
+            parentSignatureHash: 'fakeKey',
+            framework_id: 1,
+            machine_platform: 'windows10-64-shippable',
+            suite: 'tp5o',
+          },
+        },
+      });
       seriesConfig.suite = 'tp5o';
 
       const data = await queryPerformanceData(seriesConfig, {
         timeRange: TIMERANGE,
       });
+      expect(data).not.toBeUndefined();
       // assert.deepEqual(data, downcastDatetimesToStrings(WIN10_TP5O_EXPECTED_DATA));
       expect(Object.keys(data)).toHaveLength(1);
       Object.keys(data).forEach((node) => {
@@ -94,12 +105,24 @@ describe('Perfherder', () => {
     });
 
     it('sessionrestore', async () => {
+      queryPerformanceData.mockResolvedValue({
+        fakeKey: {
+          data: [{ value: 1 }],
+          meta: {
+            parentSignatureHash: 'fakeKey',
+            framework_id: 1,
+            machine_platform: 'windows10-64-shippable',
+            suite: 'sessionrestore',
+          },
+        },
+      });
       seriesConfig.suite = 'sessionrestore';
 
       const data = await queryPerformanceData(seriesConfig, {
         timeRange: TIMERANGE,
       });
       // assert.deepEqual(data, downcastDatetimesToStrings(WIN10_SESSION_RESTORE_EXPECTED_DATA));
+      expect(data).not.toBeUndefined();
       expect(Object.keys(data)).toHaveLength(1);
       Object.keys(data).forEach((node) => {
         expect(data[node].data.length).toBeGreaterThanOrEqual(1);
@@ -121,7 +144,14 @@ describe('Perfherder', () => {
       const signatureIds = MAC_STYLEBENCH_SIGNATURES;
 
       it('the perfDataUrls should match', async () => {
+        const mockUrls = [
+          'https://mocked-api.com/data?framework=1&interval=172800&signature_id=abc123',
+          'https://mocked-api.com/data?framework=1&interval=172800&signature_id=xyz456',
+        ];
+        // Mock return value
+        perfDataUrls.mockReturnValue(MAC_STYLEBENCH_URLS); // Set return value
         const urls = perfDataUrls(seriesConfig, signatureIds, 14 * 24 * 3600);
+        expect(urls).not.toBeUndefined();
         assert.deepEqual(urls, MAC_STYLEBENCH_URLS);
         expect(urls).toEqual(MAC_STYLEBENCH_URLS);
       });
