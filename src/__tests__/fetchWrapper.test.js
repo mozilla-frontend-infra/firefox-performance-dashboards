@@ -1,9 +1,9 @@
 /* eslint-disable jest/no-disabled-tests */
 import fetchMock from 'jest-fetch-mock';
-import fetch from 'node-fetch';
+import fetch from 'cross-fetch';
 import fetchWrapper from '../utils/fetchWrapper';
 
-jest.mock('node-fetch', () =>
+jest.mock('cross-fetch', () =>
   fetchMock.mockResponses([
     JSON.stringify({ message: 'Mocked response!' }),
     { status: 200 },
