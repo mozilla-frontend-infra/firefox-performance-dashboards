@@ -1,19 +1,5 @@
 import fetch from 'node-fetch';
 
-jest.mock('node-fetch', () =>
-  jest.fn((url) => {
-    console.log('Mock fetch called with:', url);
-
-    return Promise.resolve({
-      ok: true,
-      status: 200,
-      json: jest.fn().mockResolvedValue({ message: 'Hello, world!' }),
-      text: async () =>
-        JSON.stringify({ message: 'This is real mocked data!' }),
-    });
-  }),
-);
-
 export const promiseCache = {};
 /**
  * Simple wrapper over fetch, for avoiding duplicate API calls
