@@ -6,14 +6,29 @@ module.exports = {
   roots: ['<rootDir>/src'],
   collectCoverageFrom: ['src/**/*.{js,jsx}'],
   coveragePathIgnorePatterns: ['__tests__', 'index'],
+
   // Test environment that simulates a browser (using jsdom)
   testEnvironment: 'jsdom',
   testPathIgnorePatterns: ['/node_modules/', '<rootDir>/src/__tests__/mocks/'],
 
   // Jest transformations -- this adds support for TypeScript and ES6+ syntax
   transform: {
-    '^.+\\.jsx?$': 'babel-jest', // Use babel-jest for JavaScript files
+    '^.+\\.(j)sx?$': [
+      '@swc/jest',
+      {
+        jsc: {
+          transform: {
+            react: {
+              runtime: 'automatic',
+            },
+          },
+        },
+      },
+    ],
   },
+  transformIgnorePatterns: [
+    '/node_modules/(?!(taskcluster-client-web|data-uri-to-buffer|fetch-blob|formdata-polyfill|node-fetch)/)',
+  ],
 
   // Module file extensions for importing
   moduleFileExtensions: ['js', 'jsx', 'json', 'node'],
