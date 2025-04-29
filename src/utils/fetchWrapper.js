@@ -1,31 +1,35 @@
-const fetch = require('node-fetch');
+import fetch from 'cross-fetch';
 
 export const promiseCache = {};
 /**
  * Simple wrapper over fetch, for avoiding duplicate API calls
  * @param url
  */
-const fetchWrapper = (url) => {
+const fetchWrapper = async (url) => {
   if (promiseCache[url]) {
-    return promiseCache[url].then((res) => res.clone());
+    const cachedResponse = await promiseCache[url];
+    return cachedResponse.clone();
   }
 
-  const fetchPromise = fetch(url);
-
-  promiseCache[url] = fetchPromise
-    .then((res) => {
-      // once resolved, can be removed
-      delete promiseCache[url];
-      return res;
-    })
-
-    .catch((err) => {
-      delete promiseCache[url];
-      throw err;
+  try {
+    // Fetch and store the response in cache
+    const fetchPromise = fetch(url).then((res) => {
+      if (!res.ok) throw new Error(`Fetch failed with status ${res.status}`);
+      const cloned = res.clone();
+      return cloned;
     });
 
-  // required to clone the Response object, to allow it to be reused
-  return promiseCache[url].then((res) => res.clone());
+    promiseCache[url] = fetchPromise;
+
+    const response = await fetchPromise;
+    delete promiseCache[url];
+
+    //required to clone the Response object, to allow it to be reused
+    return response;
+  } catch (err) {
+    delete promiseCache[url];
+    throw err;
+  }
 };
 
 export default fetchWrapper;
