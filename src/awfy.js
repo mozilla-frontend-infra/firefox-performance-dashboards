@@ -230,6 +230,7 @@ const RAPTOR_TESTS = {
   'wasm-godot': { label: 'WebAssembly Godot' },
   'wasm-misc': { label: 'WebAssembly Embenchen' },
   jetstream2: { label: 'JetStream 2' },
+  jetstream3: { label: 'JetStream 3' },
   'matrix-react-bench': { label: 'Matrix React' },
 };
 
@@ -516,14 +517,9 @@ export const CONFIG = {
     //   platforms: ['macosx1100-64-shippable-qr'],
     //   categories: DESKTOP_CATEGORIES,
     // },
-    mac: {
-      label: 'macOS 10.15 "Catalina"',
-      platforms: ['macosx1015-64-shippable-qr'],
-      categories: DESKTOP_CATEGORIES,
-    },
-    mac1400: {
-      label: 'macOS 14.5 "Sonoma"',
-      platforms: ['macosx1400-64-shippable-qr'],
+    mac1500: {
+      label: 'macOS 15.0 "Sequoia"',
+      platforms: ['macosx1500-aarch64-shippable'],
       categories: DESKTOP_CATEGORIES,
     },
     mac1470: {
