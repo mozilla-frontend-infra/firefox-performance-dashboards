@@ -518,12 +518,12 @@ export const CONFIG = {
     //   categories: DESKTOP_CATEGORIES,
     // },
     mac1500: {
-      label: 'macOS 15.0 "Sequoia"',
+      label: 'macOS 15.0 "Sequoia" (AArch64)',
       platforms: ['macosx1500-aarch64-shippable'],
       categories: DESKTOP_CATEGORIES,
     },
     mac1470: {
-      label: 'macOS 14.7 "Sonoma"',
+      label: 'macOS 14.7 "Sonoma" (x64)',
       platforms: ['macosx1470-64-shippable'],
       categories: DESKTOP_CATEGORIES,
     },
