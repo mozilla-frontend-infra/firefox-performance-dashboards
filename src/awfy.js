@@ -18,42 +18,6 @@ const PALETTE = {
   pink: '#fe939e',
 };
 
-// // Some tests we don't run on autoland (ALT_PROJECT) e.g. js2 and js3
-// // So for such important tests we should force PROJECT for all platforms
-// const PROJECT_TEST_OVERRIDE = new Set([
-//   'jetstream2',
-//   'jetstream3',
-// ]);
-//
-// // Due to limited Apple Silicon hardware, outside of Speedometer 2 & 3
-// // we do not have autoland data on benchmarks. So for this platform use PROJECT
-// const PROJECT_PLATFORM_OVERRIDE = new Set([
-//   'macosx1500-aarch64-shippable',
-// ]);
-//
-// // As mentioned above, we need PROJECT to display motionmark with on Apple Silicon
-// const PROJECT_PLATFORM_TEST_OVERRIDE = [
-//   'motionmark-1-3',
-//   'motionmark-htmlsuite-1-3',
-// ];
-//
-// // Use this transformation to determine if the specific test/platform project needs
-// // to be set to PROJECT or not
-// const shouldForceProject = (suite, platform) => {
-//   if (PROJECT_TEST_OVERRIDE.has(suite)) {
-//     return true;
-//   }
-//
-//   if (
-//     PROJECT_PLATFORM_TEST_OVERRIDE.some(prefix => suite.startsWith(prefix)) &&
-//     PROJECT_PLATFORM_OVERRIDE.has(platform)
-//   ) {
-//     return true;
-//   }
-//
-//   return false;
-// };
-//
 export const AWFY_BENCHMARKS = {
   'speedometer-android': {
     compare: {
@@ -209,68 +173,6 @@ const DESKTOP_CATEGORIES = {
   },
 };
 
-const MOBILE_CATEGORIES = {
-  benchmarks: {
-    suites: ['speedometer-android', 'speedometer3-android'],
-    label: 'Benchmarks',
-  },
-  'cold-page-load': {
-    suites: [],
-    label: 'Cold Page Load (Recorded)',
-  },
-  'cold-page-load-live': {
-    suites: [],
-    label: 'Cold Page Load (Live)',
-  },
-  'warm-page-load': {
-    suites: [],
-    label: 'Warm Page Load (Recorded)',
-  },
-  'warm-page-load-live': {
-    suites: [],
-    label: 'Warm Page Load (Live)',
-  },
-};
-
-export const CONFIG = {
-  default: {
-    landingPath: '/win11/benchmarks/overview?numDays=60',
-    dayRange: 60, // # days
-  },
-  dayRange: [1, 2, 7, 14, 30, 60, 90, 365],
-  views: {
-    linux64: {
-      label: 'Linux 64bit',
-      platforms: ['linux64-shippable', 'linux1804-64-shippable-qr'],
-      categories: DESKTOP_CATEGORIES,
-    },
-    // mac11m1: {
-    //   label: 'macOS 11 "Big Sur" (M1)',
-    //   platforms: ['macosx1100-64-shippable-qr'],
-    //   categories: DESKTOP_CATEGORIES,
-    // },
-    mac1500: {
-      label: 'macOS 15.0 "Sequoia" (AArch64)',
-      platforms: ['macosx1500-aarch64-shippable'],
-      categories: DESKTOP_CATEGORIES,
-    },
-    mac1470: {
-      label: 'macOS 14.7 "Sonoma" (x64)',
-      platforms: ['macosx1470-64-shippable'],
-      categories: DESKTOP_CATEGORIES,
-    },
-    win11: {
-      label: 'Windows 11 64bit',
-      platforms: ['windows11-64-shippable-qr', 'windows11-64-24h2-shippable'],
-      categories: DESKTOP_CATEGORIES,
-    },
-    androidGalaxyA55: {
-      label: 'Android (Samsung Galaxy A55)',
-      platforms: ['android-hw-a55-14-0-aarch64-shippable'],
-      categories: MOBILE_CATEGORIES,
-    },
-  },
-};
 const TALOS_TESTS = {
   displaylist_mutate: { label: 'Displaylist mutate' },
   glvideo: { label: 'Gl Video', test: 'Mean tick time across 100 ticks: ' },
@@ -331,39 +233,23 @@ const RAPTOR_TESTS = {
 };
 
 const RAPTOR_BENCHMARKS = {};
-
-Object.entries(CONFIG.views).forEach(([viewKey, view]) => {
-  const platforms = view.platforms;
-  platforms.forEach(platform => {
-    Object.entries(RAPTOR_TESTS).forEach(([testKey, test]) => {
-      const bmKey = `raptor-desktop-${testKey}`;
-      if (!RAPTOR_BENCHMARKS[bmKey]) {
-        RAPTOR_BENCHMARKS[bmKey] = { compare: {}, label: test.label };
-      }
-      const apps = testKey.startsWith('wasm') ? WASM_APPS : DESKTOP_APPS;
-      Object.entries(apps).forEach(([appKey, app]) => {
-        // const suite = [testKey, app.suiteSuffix].filter(Boolean).join('-');
-        const project = shouldForceProject(testKey, platform)
-          ? PROJECT
-          : (app.project || PROJECT);
-        // Optionally distinguish apps by platform
-        const compareKey = appKey;
-        RAPTOR_BENCHMARKS[bmKey].compare[compareKey] = {
-          color: app.color,
-          label: app.label,
-          frameworkId: BROWSERTIME_FRAMEWORK_ID,
-          suite: [testKey, app.suiteSuffix].filter(Boolean).join('-'),
-          application: app.name,
-          platformSuffix: app.platformSuffix,
-          project,
-          option: 'opt',
-          extraOptions: app.extraOptions,
-        };
-        if (!DESKTOP_CATEGORIES.benchmarks.suites.includes(bmKey)) {
-          DESKTOP_CATEGORIES.benchmarks.suites.push(bmKey);
-        }
-      });
-    });
+Object.entries(RAPTOR_TESTS).forEach(([testKey, test]) => {
+  const bmKey = `raptor-desktop-${testKey}`;
+  RAPTOR_BENCHMARKS[bmKey] = { compare: {}, label: test.label };
+  const apps = testKey.startsWith('wasm') ? WASM_APPS : DESKTOP_APPS;
+  Object.entries(apps).forEach(([appKey, app]) => {
+    RAPTOR_BENCHMARKS[bmKey].compare[appKey] = {
+      color: app.color,
+      label: app.label,
+      frameworkId: BROWSERTIME_FRAMEWORK_ID,
+      suite: [testKey, app.suiteSuffix].filter(Boolean).join('-'),
+      application: app.name,
+      platformSuffix: app.platformSuffix,
+      project: app.project,
+      option: 'opt',
+      extraOptions: app.extraOptions,
+    };
+    DESKTOP_CATEGORIES.benchmarks.suites.push(bmKey);
   });
 });
 
@@ -552,6 +438,28 @@ const MOBILE_APPS = {
   },
 };
 
+const MOBILE_CATEGORIES = {
+  benchmarks: {
+    suites: ['speedometer-android', 'speedometer3-android'],
+    label: 'Benchmarks',
+  },
+  'cold-page-load': {
+    suites: [],
+    label: 'Cold Page Load (Recorded)',
+  },
+  'cold-page-load-live': {
+    suites: [],
+    label: 'Cold Page Load (Live)',
+  },
+  'warm-page-load': {
+    suites: [],
+    label: 'Warm Page Load (Recorded)',
+  },
+  'warm-page-load-live': {
+    suites: [],
+    label: 'Warm Page Load (Live)',
+  },
+};
 
 Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
   ['cold', 'warm'].forEach((cacheVariant) => {
@@ -590,6 +498,45 @@ Object.entries(SITES).forEach(([siteKey, siteLabel]) => {
   });
 });
 
+export const CONFIG = {
+  default: {
+    landingPath: '/win11/benchmarks/overview?numDays=60',
+    dayRange: 60, // # days
+  },
+  dayRange: [1, 2, 7, 14, 30, 60, 90, 365],
+  views: {
+    linux64: {
+      label: 'Linux 64bit',
+      platforms: ['linux64-shippable', 'linux1804-64-shippable-qr'],
+      categories: DESKTOP_CATEGORIES,
+    },
+    // mac11m1: {
+    //   label: 'macOS 11 "Big Sur" (M1)',
+    //   platforms: ['macosx1100-64-shippable-qr'],
+    //   categories: DESKTOP_CATEGORIES,
+    // },
+    mac1500: {
+      label: 'macOS 15.0 "Sequoia" (AArch64)',
+      platforms: ['macosx1500-aarch64-shippable'],
+      categories: DESKTOP_CATEGORIES,
+    },
+    mac1470: {
+      label: 'macOS 14.7 "Sonoma" (x64)',
+      platforms: ['macosx1470-64-shippable'],
+      categories: DESKTOP_CATEGORIES,
+    },
+    win11: {
+      label: 'Windows 11 64bit',
+      platforms: ['windows11-64-shippable-qr', 'windows11-64-24h2-shippable'],
+      categories: DESKTOP_CATEGORIES,
+    },
+    androidGalaxyA55: {
+      label: 'Android (Samsung Galaxy A55)',
+      platforms: ['android-hw-a55-14-0-aarch64-shippable'],
+      categories: MOBILE_CATEGORIES,
+    },
+  },
+};
 
 // Upper limit for the time range slider measured in days
 export const TIMERANGE_UPPER_LIMIT = 365;
