@@ -7,11 +7,11 @@ import { CONFIG } from '../../config';
 it('renders correctly', () => {
   const { asFragment } = render(
     <Pickers
-      platform="win10"
+      platform="win11"
       benchmark="overview"
       category="benchmarks"
       dayRange={60}
-      resultsBenchmarks={CONFIG.views.win10.categories.benchmarks.suites}
+      resultsBenchmarks={CONFIG.views.win11.categories.benchmarks.suites}
       onChange={() => {}}
       labels={['Firefox']}
       selectedLabels={['Firefox']}

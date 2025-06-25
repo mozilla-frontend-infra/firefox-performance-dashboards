@@ -216,8 +216,6 @@ Object.entries(TALOS_TESTS).forEach(([testKey, test]) => {
 
 const RAPTOR_TESTS = {
   'assorted-dom': { label: 'Assorted DOM' },
-  'motionmark-animometer': { label: 'MotionMark Animometer' },
-  'motionmark-htmlsuite': { label: 'MotionMark HtmlSuite' },
   'motionmark-1-3': { label: 'MotionMark 1.3' },
   'motionmark-htmlsuite-1-3': { label: 'MotionMark HtmlSuite 1.3' },
   speedometer: { label: 'Speedometer 2' },
@@ -230,6 +228,7 @@ const RAPTOR_TESTS = {
   'wasm-godot': { label: 'WebAssembly Godot' },
   'wasm-misc': { label: 'WebAssembly Embenchen' },
   jetstream2: { label: 'JetStream 2' },
+  jetstream3: { label: 'JetStream 3' },
   'matrix-react-bench': { label: 'Matrix React' },
 };
 
@@ -516,24 +515,14 @@ export const CONFIG = {
     //   platforms: ['macosx1100-64-shippable-qr'],
     //   categories: DESKTOP_CATEGORIES,
     // },
-    mac: {
-      label: 'macOS 10.15 "Catalina"',
-      platforms: ['macosx1015-64-shippable-qr'],
-      categories: DESKTOP_CATEGORIES,
-    },
-    mac1400: {
-      label: 'macOS 14.5 "Sonoma"',
-      platforms: ['macosx1400-64-shippable-qr'],
+    mac1500: {
+      label: 'macOS 15.0 "Sequoia" (AArch64)',
+      platforms: ['macosx1500-aarch64-shippable'],
       categories: DESKTOP_CATEGORIES,
     },
     mac1470: {
-      label: 'macOS 14.7 "Sonoma"',
+      label: 'macOS 14.7 "Sonoma" (x64)',
       platforms: ['macosx1470-64-shippable'],
-      categories: DESKTOP_CATEGORIES,
-    },
-    win10: {
-      label: 'Windows 10 64bit',
-      platforms: ['windows10-64-shippable-qr', 'windows10-64-2004-shippable-qr'],
       categories: DESKTOP_CATEGORIES,
     },
     win11: {

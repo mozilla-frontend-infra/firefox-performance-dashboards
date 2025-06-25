@@ -29,14 +29,14 @@ exports[`renders correctly 1`] = `
             role="button"
             tabindex="0"
           >
-            Windows 10 64bit
+            Windows 11 64bit
           </div>
           <input
             aria-hidden="true"
             class="MuiSelect-nativeInput"
             name="platform"
             tabindex="-1"
-            value="win10"
+            value="win11"
           />
           <svg
             aria-hidden="true"
