@@ -30,16 +30,6 @@ export const AWFY_BENCHMARKS = {
         application: 'chrome-m',
         project: PROJECT,
       },
-      geckoview: {
-        color: PALETTE.indigo,
-        label: 'GeckoView',
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
-        suite: 'speedometer',
-        option: 'opt',
-        application: 'geckoview',
-        project: ALT_PROJECT,
-        extraOptions: ['webrender'],
-      },
       fenix: {
         color: PALETTE.orange,
         label: 'Fenix',
@@ -63,16 +53,6 @@ export const AWFY_BENCHMARKS = {
         option: 'opt',
         application: 'chrome-m',
         project: PROJECT,
-      },
-      geckoview: {
-        color: PALETTE.indigo,
-        label: 'GeckoView',
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
-        suite: 'speedometer3',
-        option: 'opt',
-        application: 'geckoview',
-        project: ALT_PROJECT,
-        extraOptions: ['webrender'],
       },
       fenix: {
         color: PALETTE.orange,
