@@ -87,6 +87,30 @@ export const AWFY_BENCHMARKS = {
     },
     label: 'Speedometer 3',
   },
+  'jetstream3-android': {
+    compare: {
+      'chrome-m': {
+        color: PALETTE.blue,
+        label: 'Chrome',
+        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        suite: 'jetstream3',
+        option: 'opt',
+        application: 'chrome-m',
+        project: PROJECT,
+      },
+      fenix: {
+        color: PALETTE.orange,
+        label: 'Fenix',
+        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        suite: 'jetstream3',
+        option: 'opt',
+        application: 'fenix',
+        project: ALT_PROJECT,
+        extraOptions: ['webrender'],
+      },
+    },
+    label: 'JetStream 3',
+  },
 };
 
 const DESKTOP_FIREFOX_APPS = {
