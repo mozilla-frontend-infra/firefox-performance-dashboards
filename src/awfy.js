@@ -444,7 +444,7 @@ const MOBILE_APPS = {
 
 const MOBILE_CATEGORIES = {
   benchmarks: {
-    suites: ['speedometer-android', 'speedometer3-android'],
+    suites: ['speedometer-android', 'speedometer3-android', 'jetstream3-android'],
     label: 'Benchmarks',
   },
   'cold-page-load': {
