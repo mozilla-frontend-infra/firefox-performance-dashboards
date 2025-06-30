@@ -30,16 +30,6 @@ export const AWFY_BENCHMARKS = {
         application: 'chrome-m',
         project: PROJECT,
       },
-      geckoview: {
-        color: PALETTE.indigo,
-        label: 'GeckoView',
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
-        suite: 'speedometer',
-        option: 'opt',
-        application: 'geckoview',
-        project: ALT_PROJECT,
-        extraOptions: ['webrender'],
-      },
       fenix: {
         color: PALETTE.orange,
         label: 'Fenix',
@@ -64,16 +54,6 @@ export const AWFY_BENCHMARKS = {
         application: 'chrome-m',
         project: PROJECT,
       },
-      geckoview: {
-        color: PALETTE.indigo,
-        label: 'GeckoView',
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
-        suite: 'speedometer3',
-        option: 'opt',
-        application: 'geckoview',
-        project: ALT_PROJECT,
-        extraOptions: ['webrender'],
-      },
       fenix: {
         color: PALETTE.orange,
         label: 'Fenix',
@@ -86,6 +66,30 @@ export const AWFY_BENCHMARKS = {
       },
     },
     label: 'Speedometer 3',
+  },
+  'jetstream3-android': {
+    compare: {
+      'chrome-m': {
+        color: PALETTE.blue,
+        label: 'Chrome',
+        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        suite: 'jetstream3',
+        option: 'opt',
+        application: 'chrome-m',
+        project: PROJECT,
+      },
+      fenix: {
+        color: PALETTE.orange,
+        label: 'Fenix',
+        frameworkId: BROWSERTIME_FRAMEWORK_ID,
+        suite: 'jetstream3',
+        option: 'opt',
+        application: 'fenix',
+        project: ALT_PROJECT,
+        extraOptions: ['webrender'],
+      },
+    },
+    label: 'JetStream 3',
   },
 };
 
@@ -440,7 +444,7 @@ const MOBILE_APPS = {
 
 const MOBILE_CATEGORIES = {
   benchmarks: {
-    suites: ['speedometer-android', 'speedometer3-android'],
+    suites: ['speedometer-android', 'speedometer3-android', 'jetstream3-android'],
     label: 'Benchmarks',
   },
   'cold-page-load': {
