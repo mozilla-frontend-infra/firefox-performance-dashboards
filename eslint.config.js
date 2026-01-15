@@ -1,12 +1,12 @@
-import globals from "globals";
-import js from "@eslint/js";
-import reactPlugin from "eslint-plugin-react";
-import importPlugin from "eslint-plugin-import";
-import jestPlugin from "eslint-plugin-jest";
-import prettierConfig from "eslint-config-prettier";
-import babelParser from "@babel/eslint-parser";
+const globals = require("globals");
+const js = require("@eslint/js");
+const reactPlugin = require("eslint-plugin-react");
+const importPlugin = require("eslint-plugin-import");
+const jestPlugin = require("eslint-plugin-jest");
+const prettierConfig = require("eslint-config-prettier");
+const babelParser = require("@babel/eslint-parser");
 
-export default [
+module.exports = [
   // Global ignores
   {
     ignores: ["coverage/**", "build/**"],

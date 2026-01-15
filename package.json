@@ -1,7 +1,6 @@
 {
   "name": "js-perf-dashboard",
   "version": "1.0.0",
-  "type": "module",
   "main": "index.js",
   "repository": "git@github.com:armenzg/js-perf-dashboard.git",
   "author": "Armen Zambrano G. <armenzg@gmail.com>",

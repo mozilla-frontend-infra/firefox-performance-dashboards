@@ -10,12 +10,12 @@ jobs:
     executor:
       name: node/default
       # The Node version here must be kept in sync with that in `package.json`.
-      tag: '18.18.0'
+      tag: "18.18.0"
     steps:
       - checkout
-      - node/install-packages:
-          # `yarn install --frozen-lockfile` is run and cache is enabled by default for this orb configuration
-          pkg-manager: yarn
+      - run:
+          command: yarn install
+          name: Install dependencies
       - run:
           command: yarn lint
           name: Run linting
