@@ -13,8 +13,9 @@ jobs:
       tag: "18.18.0"
     steps:
       - checkout
-      - run:
-          command: yarn add --dev globals
+      - node/install-packages:
+          # `yarn install --frozen-lockfile` is run and cache is enabled by default for this orb configuration
+          pkg-manager: yarn
       - run:
           command: yarn lint
           name: Run linting
