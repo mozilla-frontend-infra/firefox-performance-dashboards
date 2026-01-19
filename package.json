@@ -51,7 +51,7 @@
     "@pollyjs/core": "^5.0.0",
     "@pollyjs/persister-fs": "^5.0.0",
     "@testing-library/dom": "^10.4.0",
-    "@testing-library/react": "10.0.0",
+    "@testing-library/react": "10.0.6",
     "babel-loader": "^9.2.1",
     "babel-preset-jest": "^29.6.3",
     "codecov": "3.7.2",
