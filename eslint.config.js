@@ -24,7 +24,6 @@ module.exports = [
         ...globals.browser,
         ...globals.es2024,
         ...globals.node,
-        AVAILABLE_STAGING_LOCALES: true,
       },
       parser: babelParser,
       parserOptions: {
