@@ -90,6 +90,7 @@ export const AWFY_BENCHMARKS = {
       },
     },
     label: 'JetStream 3',
+    yLabel: 'Score',
   },
 };
 
@@ -232,14 +233,14 @@ const RAPTOR_TESTS = {
   'wasm-godot': { label: 'WebAssembly Godot' },
   'wasm-misc': { label: 'WebAssembly Embenchen' },
   jetstream2: { label: 'JetStream 2' },
-  jetstream3: { label: 'JetStream 3' },
+  jetstream3: { label: 'JetStream 3', yLabel: 'Score' },
   'matrix-react-bench': { label: 'Matrix React' },
 };
 
 const RAPTOR_BENCHMARKS = {};
 Object.entries(RAPTOR_TESTS).forEach(([testKey, test]) => {
   const bmKey = `raptor-desktop-${testKey}`;
-  RAPTOR_BENCHMARKS[bmKey] = { compare: {}, label: test.label };
+  RAPTOR_BENCHMARKS[bmKey] = { compare: {}, label: test.label, ...(test.yLabel && { yLabel: test.yLabel }) };
   const apps = testKey.startsWith('wasm') ? WASM_APPS : DESKTOP_APPS;
   Object.entries(apps).forEach(([appKey, app]) => {
     RAPTOR_BENCHMARKS[bmKey].compare[appKey] = {
