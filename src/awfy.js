@@ -19,30 +19,6 @@ const PALETTE = {
 };
 
 export const AWFY_BENCHMARKS = {
-  'speedometer-android': {
-    compare: {
-      'chrome-m': {
-        color: PALETTE.blue,
-        label: 'Chrome',
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
-        suite: 'speedometer',
-        option: 'opt',
-        application: 'chrome-m',
-        project: PROJECT,
-      },
-      fenix: {
-        color: PALETTE.orange,
-        label: 'Fenix',
-        frameworkId: BROWSERTIME_FRAMEWORK_ID,
-        suite: 'speedometer',
-        option: 'opt',
-        application: 'fenix',
-        project: ALT_PROJECT,
-        extraOptions: ['webrender'],
-      },
-    },
-    label: 'Speedometer 2',
-  },
   'speedometer3-android': {
     compare: {
       'chrome-m': {
@@ -222,7 +198,6 @@ const RAPTOR_TESTS = {
   'assorted-dom': { label: 'Assorted DOM' },
   'motionmark-1-3': { label: 'MotionMark 1.3' },
   'motionmark-htmlsuite-1-3': { label: 'MotionMark HtmlSuite 1.3' },
-  speedometer: { label: 'Speedometer 2' },
   speedometer3: { label: 'Speedometer 3' },
   stylebench: { label: 'StyleBench' },
   sunspider: { label: 'SunSpider' },
@@ -444,7 +419,7 @@ const MOBILE_APPS = {
 
 const MOBILE_CATEGORIES = {
   benchmarks: {
-    suites: ['speedometer-android', 'speedometer3-android', 'jetstream3-android'],
+    suites: ['speedometer3-android', 'jetstream3-android'],
     label: 'Benchmarks',
   },
   'cold-page-load': {
