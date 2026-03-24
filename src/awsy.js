@@ -87,6 +87,11 @@ export const CONFIG = {
       platforms: ['linux1804-64-shippable-qr'],
       categories: DEFAULT_CATEGORIES,
     },
+    linux2404: {
+      label: 'Ubuntu 24.04 64bit',
+      platforms: ['linux2404-64-shippable'],
+      categories: DEFAULT_CATEGORIES,
+    },
     mac: {
       label: 'macOS 10.15 "Catalina"',
       platforms: ['macosx1015-64-shippable-qr'],
