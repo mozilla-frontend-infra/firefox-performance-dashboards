@@ -514,6 +514,11 @@ export const CONFIG = {
       platforms: ['linux64-shippable', 'linux1804-64-shippable-qr'],
       categories: DESKTOP_CATEGORIES,
     },
+    linux2404: {
+      label: 'Ubuntu 24.04 64bit',
+      platforms: ['linux2404-64-shippable'],
+      categories: DESKTOP_CATEGORIES,
+    },
     // mac11m1: {
     //   label: 'macOS 11 "Big Sur" (M1)',
     //   platforms: ['macosx1100-64-shippable-qr'],
