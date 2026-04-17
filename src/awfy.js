@@ -536,7 +536,7 @@ export const CONFIG = {
     },
     win11: {
       label: 'Windows 11 64bit',
-      platforms: ['windows11-64-shippable-qr', 'windows11-64-24h2-shippable'],
+      platforms: ['windows11-64-shippable-qr', 'windows11-64-24h2-shippable', 'windows11-64-25h2-shippable'],
       categories: DESKTOP_CATEGORIES,
     },
     androidGalaxyA55: {
