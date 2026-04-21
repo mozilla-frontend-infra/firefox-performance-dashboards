@@ -64,7 +64,7 @@
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-testing-library": "^7.16.2",
     "fetch-mock": "9.2.2",
-    "globals": "^17.4.0",
+    "globals": "^17.5.0",
     "html-webpack-plugin": "^5.6.3",
     "husky": "4.0.10",
     "jest": "29.0.3",
