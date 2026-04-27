@@ -1134,9 +1134,9 @@
   integrity sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==
 
 "@eslint/js@^9.39.2":
-  version "9.39.2"
-  resolved "https://registry.yarnpkg.com/@eslint/js/-/js-9.39.2.tgz#2d4b8ec4c3ea13c1b3748e0c97ecd766bdd80599"
-  integrity sha512-q1mjIoW1VX4IvSocvM/vbTiveKC4k9eLrajNEuSsmjymSDEbpGddtpfOoN7YGAqBK3NG+uqo8ia4PDTt8buCYA==
+  version "9.39.4"
+  resolved "https://registry.yarnpkg.com/@eslint/js/-/js-9.39.4.tgz#a3f83bfc6fd9bf33a853dfacd0b49b398eb596c1"
+  integrity sha512-nE7DEIchvtiFTwBw4Lfbu59PG+kCofhjsKaCWzxTpt4lfRjRMqG6uMBzKXuEcyXhOHoUp9riAm7/aWYGhXZ9cw==
 
 "@humanwhocodes/config-array@^0.13.0":
   version "0.13.0"
