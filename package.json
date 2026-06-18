@@ -76,7 +76,7 @@
     "regenerator-runtime": "^0.14.1",
     "setup-polly-jest": "^0.9.1",
     "webpack": "^5.107.2",
-    "webpack-cli": "^6.0.1",
+    "webpack-cli": "^7.0.0",
     "webpack-dev-server": "^5.2.5",
     "webpack-merge": "^6.0.1"
   },
