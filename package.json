@@ -40,12 +40,12 @@
     "typeface-roboto": "^1.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.29.7",
-    "@babel/eslint-parser": "^7.29.7",
-    "@babel/plugin-transform-runtime": "^7.29.7",
-    "@babel/preset-env": "^7.29.7",
-    "@babel/preset-react": "^7.29.7",
-    "@babel/runtime": "^7.29.7",
+    "@babel/core": "^8.0.0",
+    "@babel/eslint-parser": "^8.0.0",
+    "@babel/plugin-transform-runtime": "^8.0.0",
+    "@babel/preset-env": "^8.0.0",
+    "@babel/preset-react": "^8.0.0",
+    "@babel/runtime": "^8.0.0",
     "@eslint/js": "^9.39.2",
     "@pollyjs/adapter-fetch": "^5.0.0",
     "@pollyjs/adapter-node-http": "^5.0.0",
