@@ -503,6 +503,7 @@ export const CONFIG = {
       label: 'macOS 15.0 "Sequoia" (AArch64)',
       platforms: ['macosx1500-aarch64-shippable'],
       categories: DESKTOP_CATEGORIES,
+      project: PROJECT,
     },
     mac1470: {
       label: 'macOS 14.7 "Sonoma" (x64)',
