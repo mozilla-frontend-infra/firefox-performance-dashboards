@@ -4250,10 +4250,10 @@ eslint-plugin-import@^2.32.0:
     string.prototype.trimend "^1.0.9"
     tsconfig-paths "^3.15.0"
 
-eslint-plugin-jest-dom@^5.10.1:
-  version "5.10.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest-dom/-/eslint-plugin-jest-dom-5.10.2.tgz#22c18bc31c6f5090063056787c6cfcee8251231d"
-  integrity sha512-Ij9pCRrBNPEUKqg0oMUv8aMjGzPKdpayOarDW3zWmYdtQ2dt7lZ7myppA2KwJMUJhhHAtSWY5Pgg7iMjC6w6JA==
+eslint-plugin-jest-dom@^5.11.0:
+  version "5.11.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest-dom/-/eslint-plugin-jest-dom-5.11.0.tgz#c3509c80a6106f42a9100b7f313ca3f166968e39"
+  integrity sha512-w6ejV2uyb9vLpII6ga8J62IKjHIbU68V4cBWkqNylTXxAPn5uAJ71OlLJhZ9kJF2UJZtAQSxcgH/SR0HjxnHtg==
   dependencies:
     requireindex "^1.2.0"
 
