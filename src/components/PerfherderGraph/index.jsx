@@ -97,9 +97,9 @@ class PerferhderGraph extends React.Component {
       // We can have multiple subtests for a single call to queryPerfData
       Object.values(response).forEach(({ data, meta, perfherderUrl }) => {
         const newUrl = fixUrl(perfherderUrl, dayRange);
-        if (!chartJsOptions) {
-          chartJsOptions = generateChartJsOptions(meta, yLabel, minDate, maxDate);
-        }
+        // Use yLabel only for the parent/overview; subtests derive their label from lower_is_better
+        const isOverview = !meta.test;
+        chartJsOptions = generateChartJsOptions(meta, isOverview ? yLabel : undefined, minDate, maxDate);
         const graphUid = meta.test || `${title}-overview`;
         // Considering includeSubtests is because glvideo has the 'test' property set
         const graphTitle = !includeSubtests ? title : meta.test || title;
